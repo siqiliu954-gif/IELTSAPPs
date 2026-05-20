@@ -1,52 +1,23991 @@
 export const words = [
-  { word: "abandon", phonetic: "/əˈbændən/", meaning: "放弃；抛弃", example: "He abandoned the plan.", example_cn: "他放弃了这个计划。" },
-  { word: "abstract", phonetic: "/ˈæbstrækt/", meaning: "抽象的；摘要", example: "The concept is abstract.", example_cn: "这个概念很抽象。" },
-  { word: "academy", phonetic: "/əˈkædəmi/", meaning: "学院；学会", example: "She studied at the Royal Academy.", example_cn: "她在皇家学院学习。" },
-  { word: "access", phonetic: "/ˈækses/", meaning: "通道；访问；获取", example: "Students have access to the library.", example_cn: "学生可以使用图书馆。" },
-  { word: "accommodate", phonetic: "/əˈkɒmədeɪt/", meaning: "容纳；提供住宿；适应", example: "The hotel can accommodate 200 guests.", example_cn: "酒店可容纳200位客人。" },
-  { word: "accompany", phonetic: "/əˈkʌmpəni/", meaning: "陪伴；伴随", example: "She accompanied me to the station.", example_cn: "她陪我去车站。" },
-  { word: "accomplish", phonetic: "/əˈkʌmplɪʃ/", meaning: "完成；实现", example: "We accomplished our goal.", example_cn: "我们实现了目标。" },
-  { word: "accumulate", phonetic: "/əˈkjuːmjəleɪt/", meaning: "积累；积聚", example: "Dust accumulates quickly.", example_cn: "灰尘很快积聚。" },
-  { word: "accurate", phonetic: "/ˈækjərət/", meaning: "准确的；精确的", example: "The data is accurate.", example_cn: "数据是准确的。" },
-  { word: "achieve", phonetic: "/əˈtʃiːv/", meaning: "达到；取得", example: "She achieved her dream.", example_cn: "她实现了梦想。" },
-  { word: "acknowledge", phonetic: "/əkˈnɒlɪdʒ/", meaning: "承认；确认", example: "He acknowledged his mistake.", example_cn: "他承认了错误。" },
-  { word: "acquire", phonetic: "/əˈkwaɪər/", meaning: "获得；习得", example: "She acquired new skills.", example_cn: "她获得了新技能。" },
-  { word: "adapt", phonetic: "/əˈdæpt/", meaning: "适应；改编", example: "Animals adapt to their environment.", example_cn: "动物适应环境。" },
-  { word: "adequate", phonetic: "/ˈædɪkwət/", meaning: "足够的；适当的", example: "The supply is adequate.", example_cn: "供应是足够的。" },
-  { word: "adjust", phonetic: "/əˈdʒʌst/", meaning: "调整；适应", example: "Adjust the seat height.", example_cn: "调整座椅高度。" },
-  { word: "administration", phonetic: "/ədˌmɪnɪˈstreɪʃn/", meaning: "管理；行政", example: "The administration made the decision.", example_cn: "管理层做了决定。" },
-  { word: "adolescent", phonetic: "/ˌædəˈlesnt/", meaning: "青少年", example: "The program targets adolescents.", example_cn: "该项目针对青少年。" },
-  { word: "advocate", phonetic: "/ˈædvəkeɪt/", meaning: "倡导；提倡", example: "She advocates for animal rights.", example_cn: "她倡导动物权利。" },
-  { word: "affect", phonetic: "/əˈfekt/", meaning: "影响；感动", example: "The weather affects crops.", example_cn: "天气影响庄稼。" },
-  { word: "aggregate", phonetic: "/ˈæɡrɪɡət/", meaning: "总计；集合", example: "The aggregate score was 85.", example_cn: "总分为85。" },
-  { word: "aid", phonetic: "/eɪd/", meaning: "援助；帮助", example: "First aid is essential.", example_cn: "急救是必要的。" },
-  { word: "allocate", phonetic: "/ˈæləkeɪt/", meaning: "分配；拨出", example: "Funds were allocated for research.", example_cn: "资金被分配给研究。" },
-  { word: "alter", phonetic: "/ˈɔːltər/", meaning: "改变；修改", example: "He altered the document.", example_cn: "他修改了文件。" },
-  { word: "alternative", phonetic: "/ɔːlˈtɜːnətɪv/", meaning: "替代的；替代方案", example: "We need an alternative plan.", example_cn: "我们需要备选方案。" },
-  { word: "ambiguous", phonetic: "/æmˈbɪɡjuəs/", meaning: "模棱两可的", example: "The statement was ambiguous.", example_cn: "该声明模棱两可。" },
-  { word: "amend", phonetic: "/əˈmend/", meaning: "修改；修订", example: "The law was amended.", example_cn: "法律被修订了。" },
-  { word: "analogy", phonetic: "/əˈnælədʒi/", meaning: "类比；比喻", example: "She used an analogy to explain.", example_cn: "她用类比来解释。" },
-  { word: "analyse", phonetic: "/ˈænəlaɪz/", meaning: "分析", example: "We need to analyse the data.", example_cn: "我们需要分析数据。" },
-  { word: "ancestor", phonetic: "/ˈænsestər/", meaning: "祖先；祖宗", example: "Our ancestors lived here.", example_cn: "我们的祖先住在这里。" },
-  { word: "annual", phonetic: "/ˈænjuəl/", meaning: "年度的；每年的", example: "The annual report is published.", example_cn: "年度报告已发布。" },
-  { word: "anticipate", phonetic: "/ænˈtɪsɪpeɪt/", meaning: "预期；期望", example: "We anticipate growth next year.", example_cn: "我们预计明年增长。" },
-  { word: "apparent", phonetic: "/əˈpærənt/", meaning: "明显的；表面上的", example: "The reason was apparent.", example_cn: "原因很明显。" },
-  { word: "append", phonetic: "/əˈpend/", meaning: "附加；添加", example: "Please append your signature.", example_cn: "请附上你的签名。" },
-  { word: "appreciate", phonetic: "/əˈpriːʃieɪt/", meaning: "欣赏；感激；升值", example: "I appreciate your help.", example_cn: "我感激你的帮助。" },
-  { word: "approach", phonetic: "/əˈprəʊtʃ/", meaning: "方法；靠近", example: "Try a different approach.", example_cn: "尝试不同的方法。" },
-  { word: "appropriate", phonetic: "/əˈprəʊpriət/", meaning: "适当的；合适的", example: "Wear appropriate clothing.", example_cn: "穿合适的衣服。" },
-  { word: "approximate", phonetic: "/əˈprɒksɪmət/", meaning: "大约的；近似的", example: "The approximate cost is $100.", example_cn: "大约花费100美元。" },
-  { word: "arbitrary", phonetic: "/ˈɑːbɪtrəri/", meaning: "任意的；武断的", example: "The decision seemed arbitrary.", example_cn: "这个决定似乎很武断。" },
-  { word: "area", phonetic: "/ˈeəriə/", meaning: "地区；领域；面积", example: "The area is rural.", example_cn: "该地区是农村。" },
-  { word: "aspect", phonetic: "/ˈæspekt/", meaning: "方面；层面", example: "Consider every aspect.", example_cn: "考虑每个方面。" },
-  { word: "assemble", phonetic: "/əˈsembl/", meaning: "集合；组装", example: "We assembled the furniture.", example_cn: "我们组装了家具。" },
-  { word: "assess", phonetic: "/əˈses/", meaning: "评估；评定", example: "Teachers assess students' work.", example_cn: "老师评估学生的作业。" },
-  { word: "assign", phonetic: "/əˈsaɪn/", meaning: "分配；指派", example: "He was assigned a new task.", example_cn: "他被分配了新任务。" },
-  { word: "assist", phonetic: "/əˈsɪst/", meaning: "帮助；协助", example: "Can I assist you?", example_cn: "我能帮你吗？" },
-  { word: "assume", phonetic: "/əˈsjuːm/", meaning: "假设；承担", example: "Don't assume the worst.", example_cn: "别假设最坏的情况。" },
-  { word: "assure", phonetic: "/əˈʃʊər/", meaning: "保证；使确信", example: "I assure you it's safe.", example_cn: "我向你保证它是安全的。" },
-  { word: "attach", phonetic: "/əˈtætʃ/", meaning: "附上；系上", example: "Attach the file to the email.", example_cn: "把文件附加到邮件。" },
-  { word: "attain", phonetic: "/əˈteɪn/", meaning: "达到；获得", example: "She attained a high rank.", example_cn: "她获得高等级。" },
-  { word: "attitude", phonetic: "/ˈætɪtjuːd/", meaning: "态度；看法", example: "A positive attitude helps.", example_cn: "积极的态度有帮助。" },
-  { word: "attribute", phonetic: "/əˈtrɪbjuːt/", meaning: "属性；归因于", example: "She attributes her success to hard work.", example_cn: "她把成功归因于努力。" },
+  {
+    "word": "sensible",
+    "phonetic": "'sensɪb(ə)l",
+    "meaning": "可感觉的；明智的",
+    "example": "She seems very sensible.",
+    "example_cn": "她好像很明智。"
+  },
+  {
+    "word": "sign",
+    "phonetic": "saɪn",
+    "meaning": "记号；标志；征兆",
+    "example": "A paw print in the dust was a sign that a tiger was close.",
+    "example_cn": "沙土里的一个爪印表明附近有老虎。"
+  },
+  {
+    "word": "as",
+    "phonetic": "æz; əz",
+    "meaning": "与...形成对照",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "explicit",
+    "phonetic": "ɪk'splɪsɪt; ek-",
+    "meaning": "清楚的，明确的",
+    "example": "The contrast could not have been made more explicit.",
+    "example_cn": "这个对比再清楚不过了。"
+  },
+  {
+    "word": "wreck",
+    "phonetic": "rek",
+    "meaning": "破坏，船舶失事；失事船只",
+    "example": "He was still alive when they pulled him from the wreck.",
+    "example_cn": "他们把他从失事的车辆中拖出来时，他还活着。"
+  },
+  {
+    "word": "ravage",
+    "phonetic": "'rævɪdʒ",
+    "meaning": "毁坏，蹂躏；抢劫，掠夺",
+    "example": "a country ravaged by civil war",
+    "example_cn": "遭受内战重创的国家"
+  },
+  {
+    "word": "wreathe",
+    "phonetic": "riːð",
+    "meaning": "覆盖，包围",
+    "example": "The ship was wreathed in smoke.",
+    "example_cn": "那艘船笼罩在浓烟中。"
+  },
+  {
+    "word": "impede",
+    "phonetic": "ɪm'piːd",
+    "meaning": "妨碍；阻碍",
+    "example": "Storms at sea impeded our progress.",
+    "example_cn": "海上风暴阻碍了我们的航程。"
+  },
+  {
+    "word": "thesis",
+    "phonetic": "'θiːsɪs",
+    "meaning": "(学位)论文",
+    "example": "Cynthia’s still working on her thesis.",
+    "example_cn": "辛西娅还在写论文。"
+  },
+  {
+    "word": "precedent",
+    "phonetic": "'presɪd(ə)nt",
+    "meaning": "先例，前例",
+    "example": "a legal precedent",
+    "example_cn": "判例"
+  },
+  {
+    "word": "lofty",
+    "phonetic": "'lɒftɪ",
+    "meaning": "极高的，高尚的，高傲的",
+    "example": "He stayed at the Four Seasons Hotel, from whose lofty heights he could see across New York.",
+    "example_cn": "他住在四季酒店，从酒店高处可以看到纽约的全景。"
+  },
+  {
+    "word": "fridge",
+    "phonetic": "frɪdʒ",
+    "meaning": "冰箱",
+    "example": "Then all three of you sign the contract and post in on the fridge.",
+    "example_cn": "然后你们三个人要都在协议上签名，并把它贴在冰箱上。"
+  },
+  {
+    "word": "immune",
+    "phonetic": "ɪ'mjuːn",
+    "meaning": "免除的；安全的，不受影响的",
+    "example": "Once we’ve had the disease, we’re immune for life.",
+    "example_cn": "我们一旦得过这种病，就获得了终身免疫力。"
+  },
+  {
+    "word": "scratch",
+    "phonetic": "skrætʃ",
+    "meaning": "抓；搔，挖",
+    "example": "John yawned and scratched his leg.",
+    "example_cn": "约翰打了个呵欠，挠了挠腿。"
+  },
+  {
+    "word": "circulate",
+    "phonetic": "'sɜːkjʊleɪt",
+    "meaning": "循环，流通",
+    "example": "Swimming helps to get the blood circulating through the muscles.",
+    "example_cn": "游泳有助于肌肉的血液循环。"
+  },
+  {
+    "word": "nitrogen",
+    "phonetic": "'naɪtrədʒ(ə)n",
+    "meaning": "[化]氮",
+    "example": "Well, we know nitrogen has what?",
+    "example_cn": "对于氮气我们知道什么？"
+  },
+  {
+    "word": "alone",
+    "phonetic": "ə'ləʊn",
+    "meaning": "孤独的(地)",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "sieve",
+    "phonetic": "sɪv",
+    "meaning": "(细)筛，过滤网",
+    "example": "Press the raspberries through a fine sieve to form a puree.",
+    "example_cn": "用一把细筛子把黑莓压榨成浓汁。"
+  },
+  {
+    "word": "spiral",
+    "phonetic": "'spaɪr(ə)l",
+    "meaning": "螺旋形的",
+    "example": "...a spiral staircase.",
+    "example_cn": "…一段旋梯。"
+  },
+  {
+    "word": "mercenary",
+    "phonetic": "'mɜːsɪn(ə)rɪ",
+    "meaning": "唯利是图的，为钱的",
+    "example": "She did it for purely mercenary reasons.",
+    "example_cn": "她这么做纯粹是为了钱。"
+  },
+  {
+    "word": "mechanism",
+    "phonetic": "'mek(ə)nɪz(ə)m",
+    "meaning": "机械装置；机构；机制",
+    "example": "the brake mechanism",
+    "example_cn": "刹车装置"
+  },
+  {
+    "word": "integrate",
+    "phonetic": "'ɪntɪgreɪt",
+    "meaning": "使一体化，取消种族隔离",
+    "example": "He didn't integrate successfully into the Italian way of life.",
+    "example_cn": "他没有成功融入到意大利的生活方式中去。"
+  },
+  {
+    "word": "earnest",
+    "phonetic": "'ɜːnɪst",
+    "meaning": "认真的，坚决的",
+    "example": "a rather earnest young man",
+    "example_cn": "相当认真的一个年轻人"
+  },
+  {
+    "word": "adolescence",
+    "phonetic": "ædə'les(ə)ns",
+    "meaning": "青春，青春期",
+    "example": "Some young people suddenly become self-conscious and tongue-tied in early adolescence.",
+    "example_cn": "一些年青人在青春期早期突然变得害羞结舌。"
+  },
+  {
+    "word": "grave",
+    "phonetic": "greɪv",
+    "meaning": "严重的",
+    "example": "Matthew’s life is in grave danger .",
+    "example_cn": "马修的生命危在旦夕。"
+  },
+  {
+    "word": "intrigue",
+    "phonetic": "ɪn'triːg",
+    "meaning": "用诡计取得；激起的兴趣",
+    "example": "Other people’s houses always intrigued her.",
+    "example_cn": "别人的房子总令她好奇。"
+  },
+  {
+    "word": "claim",
+    "phonetic": "kleɪm",
+    "meaning": "要求；款项；要求权；要求之物",
+    "example": "The Maldives pressed its claim to hold the summit.",
+    "example_cn": "马尔代夫一再要求主办这场峰会。"
+  },
+  {
+    "word": "opt",
+    "phonetic": "ɒpt",
+    "meaning": "挑选，选择",
+    "example": "Depending on your circumstances you can opt for one method or the other.",
+    "example_cn": "根据自己的情况，你可以选择这种或那种方法。"
+  },
+  {
+    "word": "stipulate",
+    "phonetic": "'stɪpjʊleɪt",
+    "meaning": "规定，约定",
+    "example": "Laws stipulate the maximum interest rate that banks can charge.",
+    "example_cn": "法律对银行可以收取的最高利率作了规定。"
+  },
+  {
+    "word": "eradicate",
+    "phonetic": "ɪ'rædɪkeɪt",
+    "meaning": "根除；消除",
+    "example": "an attempt to eradicate inflation",
+    "example_cn": "为消除通货膨胀所作的努力"
+  },
+  {
+    "word": "delirium",
+    "phonetic": "dɪ'lɪrɪəm",
+    "meaning": "神智昏迷，说胡话；极度兴奋",
+    "example": "Before she died she had fits of delirium.",
+    "example_cn": "去世前她一阵阵地胡言乱语。"
+  },
+  {
+    "word": "pole",
+    "phonetic": "pəʊl",
+    "meaning": "极",
+    "example": "the distance from pole to equator",
+    "example_cn": "地极到赤道的距离"
+  },
+  {
+    "word": "herd",
+    "phonetic": "hɜːd",
+    "meaning": "兽群，牧口群，牧人",
+    "example": "You have to be an individual; it’s no use running with the herd.",
+    "example_cn": "你必须特立独行，随大溜没有用处。"
+  },
+  {
+    "word": "stitch",
+    "phonetic": "stɪtʃ",
+    "meaning": "缝纫；缝线；(肋部)突然剧痛",
+    "example": "He had to have ten stitches in his head.",
+    "example_cn": "他头上不得不缝了十针。"
+  },
+  {
+    "word": "slag",
+    "phonetic": "slæg",
+    "meaning": "矿渣，炉渣，熔渣",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "consolidate",
+    "phonetic": "kən'sɒlɪdeɪt",
+    "meaning": "巩固;",
+    "example": "The company has consolidated its position as the country’s leading gas supplier.",
+    "example_cn": "这家公司巩固了作为该国主要煤气供应商的地位。"
+  },
+  {
+    "word": "civic",
+    "phonetic": "'sɪvɪk",
+    "meaning": "城市的；市民的",
+    "example": "Jackson spent the day meeting with local religious and civic leaders.",
+    "example_cn": "杰克逊那天与当地的宗教领袖和市领导会面。"
+  },
+  {
+    "word": "clash",
+    "phonetic": "klæʃ",
+    "meaning": "金属碰撞声；互碰；时间冲突；抵触",
+    "example": "Troops clashed near the border.",
+    "example_cn": "军队在边境附近发生了冲突。"
+  },
+  {
+    "word": "distract",
+    "phonetic": "dɪ'strækt",
+    "meaning": "分散(注意力等)",
+    "example": "Try not to distract the other students.",
+    "example_cn": "尽量不要让其他学生分心。"
+  },
+  {
+    "word": "strap",
+    "phonetic": "stræp",
+    "meaning": "皮带，带",
+    "example": "a bra strap",
+    "example_cn": "胸罩肩带"
+  },
+  {
+    "word": "format",
+    "phonetic": "'fɔːmæt",
+    "meaning": "格式，版式；形式，方式",
+    "example": "The courses were run to a consistent format.",
+    "example_cn": "这些课程的编排是有连续性的。"
+  },
+  {
+    "word": "company",
+    "phonetic": "'kʌmp(ə)nɪ",
+    "meaning": "伴随；人群；同伴；公司",
+    "example": "Which company do you work for?",
+    "example_cn": "你在哪家公司上班？"
+  },
+  {
+    "word": "trench",
+    "phonetic": "tren(t)ʃ",
+    "meaning": "地沟",
+    "example": "Workers dug a trench for gas lines.",
+    "example_cn": "工人们挖了一条沟来铺设煤气管道。"
+  },
+  {
+    "word": "vain",
+    "phonetic": "veɪn",
+    "meaning": "徒劳的，无效果的；自负的；不尊敬的",
+    "example": "Men can be just as vain as women.",
+    "example_cn": "男人有时会和女人一样虚荣。"
+  },
+  {
+    "word": "exempt",
+    "phonetic": "ɪg'zem(p)t; eg-",
+    "meaning": "免除，被豁免的",
+    "example": "So we have the current argument over how much of the derivative market will be exempt from regulation.",
+    "example_cn": "所以我们就看到了当前有关衍生产品市场到底有多大份额可以得到规则的豁免的辩论。"
+  },
+  {
+    "word": "mask",
+    "phonetic": "mɑːsk",
+    "meaning": "面具；口罩",
+    "example": "a surgical face mask",
+    "example_cn": "外科手术口罩"
+  },
+  {
+    "word": "dwell",
+    "phonetic": "dwel",
+    "meaning": "居住；详述",
+    "example": "They dwelt in the forest.",
+    "example_cn": "他们住在森林里。"
+  },
+  {
+    "word": "misgiving",
+    "phonetic": "mɪs'gɪvɪŋ",
+    "meaning": "怀疑，疑虑",
+    "example": "Opponents of nuclear energy have deep misgivings about its safety.",
+    "example_cn": "反核能人士非常担心核能的安全性。"
+  },
+  {
+    "word": "vex",
+    "phonetic": "veks",
+    "meaning": "使烦恼，使苦恼",
+    "example": "It vexed me to think of others gossiping behind my back.",
+    "example_cn": "想到别人在我背后说闲话让我很恼火。"
+  },
+  {
+    "word": "fare",
+    "phonetic": "feə",
+    "meaning": "车(船)费",
+    "example": "He could barely afford the fare.",
+    "example_cn": "他几乎付不起车费。"
+  },
+  {
+    "word": "external",
+    "phonetic": "ɪk'stɜːn(ə)l; ek-",
+    "meaning": "外面的，外部的",
+    "example": "the external appearance of the building",
+    "example_cn": "大楼的外观"
+  },
+  {
+    "word": "sue",
+    "phonetic": "s(j)uː",
+    "meaning": "控诉，控告；请求",
+    "example": "If the builders don’t fulfil their side of the contract, we’ll sue.",
+    "example_cn": "如果建筑商不履行合同，我们就要提出起诉。"
+  },
+  {
+    "word": "haphazard",
+    "phonetic": "hæp'hæzəd",
+    "meaning": "杂乱的(地)，任意的(地)",
+    "example": "It was strings of words borrowed from the different languages around them and put together in sort of haphazard ways.",
+    "example_cn": "它只不过是从身边的不同语言当中,借用了一些单词串,以随意的方式将它们放在一起"
+  },
+  {
+    "word": "allot",
+    "phonetic": "ə'lɒt",
+    "meaning": "分配；拨给",
+    "example": "The seats are allotted to the candidates who have won the most votes.",
+    "example_cn": "这些席位被分配给了赢得了最多选票的候选人。"
+  },
+  {
+    "word": "psychiatry",
+    "phonetic": "saɪ'kaɪətrɪ",
+    "meaning": "精神病学",
+    "example": "In it, he argued that psychiatry was a branch of medical science and should be investigated by observation and experimentation like the other natural sciences.",
+    "example_cn": "在书中，他主张精神病学是医学的一个分支，应当像其他自然科学一样以观察和实验为研究手段。"
+  },
+  {
+    "word": "out",
+    "phonetic": "aʊt",
+    "meaning": "of",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "posture",
+    "phonetic": "'pɒstʃə",
+    "meaning": "姿势，姿态；态度",
+    "example": "her upright posture",
+    "example_cn": "她笔挺的姿势"
+  },
+  {
+    "word": "recycle",
+    "phonetic": "riː'saɪk(ə)l",
+    "meaning": "使再循环；回收利用",
+    "example": "We take all our bottles to be recycled.",
+    "example_cn": "我们把我们所有的瓶子都回收利用。"
+  },
+  {
+    "word": "expose",
+    "phonetic": "ɪk'spəʊz; ek-",
+    "meaning": "揭发, 使暴露，使曝光\"",
+    "example": "The film exposes the utter horror of war.",
+    "example_cn": "这部电影揭示了战争的极端恐怖。"
+  },
+  {
+    "word": "perception",
+    "phonetic": "pə'sepʃ(ə)n",
+    "meaning": "感觉；知觉",
+    "example": "And when they do, what do you think their perception will be?",
+    "example_cn": "当他们这样做时，你觉得他们的知觉是怎样的？"
+  },
+  {
+    "word": "paranoia",
+    "phonetic": ",pærə'nɒɪə",
+    "meaning": "偏执狂；妄想狂",
+    "example": "They capitalize on panic and paranoia.",
+    "example_cn": "他们利用恐慌和偏执狂。"
+  },
+  {
+    "word": "alongside",
+    "phonetic": "əlɒŋ'saɪd",
+    "meaning": "在旁，靠近",
+    "example": "We use the whiteboards alongside one of the walls, where you just write down your name if you have a question.",
+    "example_cn": "用其中一面墙壁旁边的白色书写板，如果有问题，你只要在那里写下你的名字。"
+  },
+  {
+    "word": "canteen",
+    "phonetic": "kæn'tiːn",
+    "meaning": "食堂；小卖部；餐具箱；水壶",
+    "example": "Rennie had eaten his supper in the canteen.",
+    "example_cn": "伦尼已在食堂吃过晚饭。"
+  },
+  {
+    "word": "supreme",
+    "phonetic": "suː'priːm",
+    "meaning": "最高的；最大的，最重要的",
+    "example": "the Supreme Allied Commander in Europe",
+    "example_cn": "欧洲盟军最高指挥官"
+  },
+  {
+    "word": "reasonable",
+    "phonetic": "'riːz(ə)nəb(ə)l",
+    "meaning": "明智的；合理的；公平的",
+    "example": "a reasonable request",
+    "example_cn": "合情合理的要求"
+  },
+  {
+    "word": "naught",
+    "phonetic": "nɔːt",
+    "meaning": "=naught无，零",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "unfold",
+    "phonetic": "ʌn'fəʊld",
+    "meaning": "展开，打开",
+    "example": "He unfolded the map.",
+    "example_cn": "他展开地图。"
+  },
+  {
+    "word": "cushion",
+    "phonetic": "'kʊʃ(ə)n",
+    "meaning": "垫子，坐垫，垫状物",
+    "example": "a velvet cushion",
+    "example_cn": "天鹅绒垫子"
+  },
+  {
+    "word": "mimic",
+    "phonetic": "'mɪmɪk",
+    "meaning": "假装的，模仿的，草拟的",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "vicinity",
+    "phonetic": "vɪ'sɪnɪtɪ",
+    "meaning": "邻近，附近",
+    "example": "The stolen car was found in the vicinity of the station.",
+    "example_cn": "被盗汽车在车站附近被发现。"
+  },
+  {
+    "word": "toss",
+    "phonetic": "tɒs",
+    "meaning": "扔，掷；摇摆",
+    "example": "Toss the carrots in some butter before serving.",
+    "example_cn": "上桌前把胡萝卜放在黄油里搅拌一下。"
+  },
+  {
+    "word": "refine",
+    "phonetic": "rɪ'faɪn",
+    "meaning": "精炼，提纯；使文雅",
+    "example": "oil refining",
+    "example_cn": "石油的提炼"
+  },
+  {
+    "word": "shred",
+    "phonetic": "ʃred",
+    "meaning": "碎片；最少量",
+    "example": "Cut the cabbage into fine long shreds.",
+    "example_cn": "把这棵卷心菜切成细长条。"
+  },
+  {
+    "word": "disperse",
+    "phonetic": "dɪ'spɜːs",
+    "meaning": "(使)散开，使疏开，使分散",
+    "example": "Police used tear gas to disperse the crowd.",
+    "example_cn": "警察用催泪瓦斯驱散人群。"
+  },
+  {
+    "word": "edition",
+    "phonetic": "ɪ'dɪʃ(ə)n",
+    "meaning": "版本，版次",
+    "example": "a paperback edition",
+    "example_cn": "平装本"
+  },
+  {
+    "word": "fetter",
+    "phonetic": "'fetə",
+    "meaning": "脚镣; 束缚",
+    "example": "fettered by family responsibilities",
+    "example_cn": "受家庭责任的束缚"
+  },
+  {
+    "word": "renaissance",
+    "phonetic": "rɪ'neɪsəns",
+    "meaning": "文艺复兴；复兴，勃发",
+    "example": "...the Renaissance masterpieces in London's galleries.",
+    "example_cn": "…伦敦美术馆里文艺复兴时期的杰作。"
+  },
+  {
+    "word": "proceeding",
+    "phonetic": "prəʊ'siːdɪŋ",
+    "meaning": "程序，进程；活动，诉讼",
+    "example": "John is taking legal proceedings against his ex-partner.",
+    "example_cn": "约翰在对他的前合伙人提起法律诉讼。"
+  },
+  {
+    "word": "abridge",
+    "phonetic": "ə'brɪdʒ",
+    "meaning": "(书等)删节",
+    "example": "Article 33 A book publisher may alter or abridge a work with the permission of the copyright owner.",
+    "example_cn": "第三十三条图书出版者经作者许可，可以对作品修改、删节。"
+  },
+  {
+    "word": "dome",
+    "phonetic": "dəʊm",
+    "meaning": "圆屋顶",
+    "example": "...the dome of the Capitol.",
+    "example_cn": "…国会大厦的穹顶。"
+  },
+  {
+    "word": "reckon",
+    "phonetic": "'rek(ə)n",
+    "meaning": "计算",
+    "example": "The expression ‘full moon’ means the fourteenth day of the moon reckoned from its first appearance.",
+    "example_cn": "所谓“满月”是指从新月初现算起的第14天。"
+  },
+  {
+    "word": "rarely",
+    "phonetic": "'reəlɪ",
+    "meaning": "非常地，难得",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "rural",
+    "phonetic": "'rʊər(ə)l",
+    "meaning": "农村的",
+    "example": "a rural setting",
+    "example_cn": "乡村环境"
+  },
+  {
+    "word": "imitation",
+    "phonetic": "ɪmɪ'teɪʃ(ə)n",
+    "meaning": "模仿，仿造，仿制品，人造",
+    "example": "The remake of ‘Casablanca’ was a pale imitation (= something that is much less good than the thing it imitates ) of the original movie.",
+    "example_cn": "重拍的《卡萨布兰卡》远不如原版。"
+  },
+  {
+    "word": "steward",
+    "phonetic": "'stjuːəd",
+    "meaning": "乘务员，服务员，组织者",
+    "example": "race stewards",
+    "example_cn": "比赛组织者"
+  },
+  {
+    "word": "abound",
+    "phonetic": "ə'baʊnd",
+    "meaning": "多；富于",
+    "example": "Rumors of such coordination abound, but as with many rumors, they have no basis in fact.",
+    "example_cn": "关于这类协调的谣传很多；但如同许多其他谣传一样，它们没有事实根据。"
+  },
+  {
+    "word": "colonial",
+    "phonetic": "kə'ləʊnɪəl",
+    "meaning": "殖民地的，关于殖民的",
+    "example": "the struggle against colonial rule",
+    "example_cn": "反抗殖民统治的斗争"
+  },
+  {
+    "word": "immense",
+    "phonetic": "ɪ'mens",
+    "meaning": "广大的，巨大的",
+    "example": "People who travel by rail still read an immense amount.",
+    "example_cn": "人们坐火车旅行时仍然会读很多书。"
+  },
+  {
+    "word": "placard",
+    "phonetic": "'plækɑːd",
+    "meaning": "招贴，布告",
+    "example": "a huge placard saying ‘Welcome to Derbyville’",
+    "example_cn": "印有“欢迎来到德比维尔”的巨幅标语牌"
+  },
+  {
+    "word": "client",
+    "phonetic": "'klaɪənt",
+    "meaning": "律师等的当事人，委托人；商店的顾客",
+    "example": "a meeting with an important client",
+    "example_cn": "与一位重要客户的会面"
+  },
+  {
+    "word": "flavour",
+    "phonetic": "'fleɪvə",
+    "meaning": "味，风味，调味，特点",
+    "example": "Which flavour do you want - chocolate or vanilla?",
+    "example_cn": "你要哪种味道的，巧克力还是香草？"
+  },
+  {
+    "word": "exchange",
+    "phonetic": "ɪks'tʃeɪndʒ; eks-",
+    "meaning": "交换；兑换",
+    "example": "Four of my cassettes for your Madonna CD is a fair exchange.",
+    "example_cn": "我用四盒磁带换你的麦当娜激光唱片很公平。"
+  },
+  {
+    "word": "pamphlet",
+    "phonetic": "ˈpæmflɪt",
+    "meaning": "小册子",
+    "example": "a political pamphlet",
+    "example_cn": "政治宣传册"
+  },
+  {
+    "word": "module",
+    "phonetic": "'mɒdjuːl",
+    "meaning": "量度单位；建筑用的标准部件",
+    "example": "a module in mathematics",
+    "example_cn": "数学课的一个单元"
+  },
+  {
+    "word": "gentle",
+    "phonetic": "'dʒent(ə)l",
+    "meaning": "文雅的；有礼貌的",
+    "example": "Arthur was a very gentle, caring person.",
+    "example_cn": "阿瑟是一个非常温柔体贴的人。"
+  },
+  {
+    "word": "annoy",
+    "phonetic": "ə'nɒɪ",
+    "meaning": "使烦恼，使生气",
+    "example": "What annoyed him most was that he had received no apology.",
+    "example_cn": "最令他生气的是没人向他道歉。"
+  },
+  {
+    "word": "luminous",
+    "phonetic": "'luːmɪnəs",
+    "meaning": "发光的；发亮的",
+    "example": "luminous paint",
+    "example_cn": "发光涂料"
+  },
+  {
+    "word": "exclaim",
+    "phonetic": "ɪk'skleɪm; ek-",
+    "meaning": "呼叫，惊叫",
+    "example": "‘No!’ she exclaimed in shock.",
+    "example_cn": "“不！”她惊呼道。"
+  },
+  {
+    "word": "pertinent",
+    "phonetic": "'pɜːtɪnənt",
+    "meaning": "贴切的，中肯的",
+    "example": "He asked me a lot of very pertinent questions .",
+    "example_cn": "他问了我许多直接相关的问题。"
+  },
+  {
+    "word": "certify",
+    "phonetic": "'sɜːtɪfaɪ",
+    "meaning": "(发给证书)证明",
+    "example": "The accounts were certified by an auditor.",
+    "example_cn": "这些账目经审计员核实过。"
+  },
+  {
+    "word": "revenue",
+    "phonetic": "'revənjuː",
+    "meaning": "(国家的)年收入；税收",
+    "example": "advertising revenue",
+    "example_cn": "广告收入"
+  },
+  {
+    "word": "insurance",
+    "phonetic": "ɪn'ʃʊər(ə)ns",
+    "meaning": "保险",
+    "example": "Your father took out insurance to cover the mortgage.",
+    "example_cn": "你父亲购买了抵押借款保险。"
+  },
+  {
+    "word": "authority",
+    "phonetic": "ɔː'θɒrɪtɪ",
+    "meaning": "威信；当局；权威；权力",
+    "example": "an agreement between the US and Colombian authorities",
+    "example_cn": "美国和哥伦比亚当局的一份协议"
+  },
+  {
+    "word": "endorse",
+    "phonetic": "ɪn'dɔːs; en-",
+    "meaning": "背书，签署(姓名)，赞同",
+    "example": "I can endorse their opinion wholeheartedly.",
+    "example_cn": "我可以全心全意地支持他们的观点。"
+  },
+  {
+    "word": "wrap",
+    "phonetic": "ræp",
+    "meaning": "包裹",
+    "example": "I’ve still got a few Christmas presents to wrap up.",
+    "example_cn": "我还有一些圣诞礼物要包起来。"
+  },
+  {
+    "word": "lenient",
+    "phonetic": "'liːnɪənt",
+    "meaning": "宽大的，宽厚的",
+    "example": "the lenient sentences handed down by some judges",
+    "example_cn": "一些法官作出的宽大判决"
+  },
+  {
+    "word": "pompous",
+    "phonetic": "'pɒmpəs",
+    "meaning": "自负的，夸大的",
+    "example": "He seems rather pompous.",
+    "example_cn": "他看上去相当自负。"
+  },
+  {
+    "word": "decorate",
+    "phonetic": "'dekəreɪt",
+    "meaning": "装饰；油漆；授勋",
+    "example": "Children’s pictures decorated the walls of the classroom.",
+    "example_cn": "教室的墙上装点着儿童画。"
+  },
+  {
+    "word": "infinite",
+    "phonetic": "'ɪnfɪnət",
+    "meaning": "无限的，无穷的",
+    "example": "The universe is infinite.",
+    "example_cn": "宇宙是无限的。"
+  },
+  {
+    "word": "perplex",
+    "phonetic": "pə'pleks",
+    "meaning": "迷惑，困惑",
+    "example": "Shea’s symptoms perplexed the doctors.",
+    "example_cn": "谢伊的症状令医生们困惑。"
+  },
+  {
+    "word": "snatch",
+    "phonetic": "snætʃ",
+    "meaning": "抢夺，迅速获得",
+    "example": "Mick snatched the cards from Archie's hand.",
+    "example_cn": "米克一把夺过阿彻手里的牌。"
+  },
+  {
+    "word": "sweep",
+    "phonetic": "swiːp",
+    "meaning": "扫，扫除；连绵区域",
+    "example": "The kitchen needs a good sweep.",
+    "example_cn": "厨房需要好好扫一扫了。"
+  },
+  {
+    "word": "odor",
+    "phonetic": "'əʊdə",
+    "meaning": "气味，香气；臭气",
+    "example": "The researchers demonstrate that it is possible to generate odor in a compact device that can fit on the back of a TV with potentially thousands of odors.",
+    "example_cn": "研究员表示，将一个可以散发上千种气味的小型设备安装在电视背后，从而实现电视(根据情景)生成气味是可能的。"
+  },
+  {
+    "word": "rip",
+    "phonetic": "rɪp",
+    "meaning": "撕裂，撕开；扯破",
+    "example": "Her clothes had all been ripped.",
+    "example_cn": "她的衣服都被撕破了。"
+  },
+  {
+    "word": "livestock",
+    "phonetic": "'laɪvstɒk",
+    "meaning": "家畜，牲畜",
+    "example": "The heavy rains and flooding killed scores of livestock.",
+    "example_cn": "大雨和洪水淹死了许多家畜。"
+  },
+  {
+    "word": "unlikely",
+    "phonetic": "ʌn'laɪklɪ",
+    "meaning": "未必的，不大可能的",
+    "example": "Donna might be able to come tomorrow, but it’s very unlikely.",
+    "example_cn": "唐娜明天也许能来，不过这可能性很小。"
+  },
+  {
+    "word": "signature",
+    "phonetic": "'sɪgnətʃə",
+    "meaning": "签名",
+    "example": "Her signature is totally illegible (= cannot be read ) .",
+    "example_cn": "她的签字完全无法辨认。"
+  },
+  {
+    "word": "grieve",
+    "phonetic": "griːv",
+    "meaning": "(使)悲痛，(使)伤心",
+    "example": "People need time to grieve after the death of a loved one.",
+    "example_cn": "人们在所爱之人去世后会有一段悲伤期。"
+  },
+  {
+    "word": "dizzy",
+    "phonetic": "'dɪzɪ",
+    "meaning": "使人头晕的，眩晕的",
+    "example": "The heat and the champagne made him feel dizzy .",
+    "example_cn": "高温和香槟酒使他感到眩晕。"
+  },
+  {
+    "word": "ancestor",
+    "phonetic": "'ænsestə",
+    "meaning": "祖先",
+    "example": "My ancestors were French.",
+    "example_cn": "我的祖先是法国人。"
+  },
+  {
+    "word": "vanish",
+    "phonetic": "'vænɪʃ",
+    "meaning": "消失",
+    "example": "My keys were here a minute ago but now they’ve vanished.",
+    "example_cn": "我的钥匙刚刚还在这里，现在却不翼而飞了。"
+  },
+  {
+    "word": "gallery",
+    "phonetic": "'gæl(ə)rɪ",
+    "meaning": "画廊，美术品陈列室；剧场顶层",
+    "example": "an exhibition of African art at the Hayward Gallery",
+    "example_cn": "海沃德美术馆的非洲艺术展览"
+  },
+  {
+    "word": "manual",
+    "phonetic": "'mænjʊ(ə)l",
+    "meaning": "手工的，用手的",
+    "example": "People in manual occupations have a lower life expectancy.",
+    "example_cn": "干体力活的人预期寿命较短。"
+  },
+  {
+    "word": "whereas",
+    "phonetic": "weər'æz",
+    "meaning": "鉴于；反之",
+    "example": "He had never done anything for them, whereas they had done everything for him.",
+    "example_cn": "他从未为他们做过任何事，反之他们却为他做了所有事。"
+  },
+  {
+    "word": "glare",
+    "phonetic": "gleə",
+    "meaning": "眩目地照射，闪耀，瞪视",
+    "example": "She gave him a hostile glare.",
+    "example_cn": "她狠狠地瞪了他一眼。"
+  },
+  {
+    "word": "fret",
+    "phonetic": "fret",
+    "meaning": "烦恼，侵蚀",
+    "example": "Don’t fret – everything will be all right.",
+    "example_cn": "别担心——一切都会好的。"
+  },
+  {
+    "word": "admission",
+    "phonetic": "əd'mɪʃ(ə)n",
+    "meaning": "准入，接纳，承认",
+    "example": "Reese, by his own admission , lacks the necessary experience.",
+    "example_cn": "里斯自己也承认缺乏必要的经验。"
+  },
+  {
+    "word": "criminal",
+    "phonetic": "'krɪmɪn(ə)l",
+    "meaning": "罪犯",
+    "example": "Police have described the man as a violent and dangerous criminal.",
+    "example_cn": "警方形容那名男子是个凶暴而危险的罪犯。"
+  },
+  {
+    "word": "drastic",
+    "phonetic": "'dræstɪk; 'drɑː-",
+    "meaning": "激烈的，猛烈的",
+    "example": "drastic cuts in government spending",
+    "example_cn": "政府开支的急剧削减"
+  },
+  {
+    "word": "lucid",
+    "phonetic": "'luːsɪd",
+    "meaning": "清楚的，易懂的，神智清醒的",
+    "example": "You must write in a clear and lucid style.",
+    "example_cn": "你的写作风格一定要清楚易懂。"
+  },
+  {
+    "word": "simultaneous",
+    "phonetic": ",sɪm(ə)l'teɪnɪəs",
+    "meaning": "同时发生的",
+    "example": "They grabbed each other’s hands in simultaneous panic.",
+    "example_cn": "他们俩同时惊慌起来，相互抓住对方的手。"
+  },
+  {
+    "word": "static",
+    "phonetic": "'stætɪk",
+    "meaning": "静止的，固定的",
+    "example": "Economists predict that house prices will remain static for a long period.",
+    "example_cn": "经济学家预测，房价将长期保持稳定。"
+  },
+  {
+    "word": "redundant",
+    "phonetic": "rɪ'dʌnd(ə)nt",
+    "meaning": "多余的，过剩的",
+    "example": "the removal of redundant information",
+    "example_cn": "多余信息的删除"
+  },
+  {
+    "word": "be",
+    "phonetic": "biː",
+    "meaning": "at",
+    "example": "Don’t disturb me while I’m working.",
+    "example_cn": "我工作的时候不要打扰我。"
+  },
+  {
+    "word": "elite",
+    "phonetic": "[eɪˈliːt]",
+    "meaning": "社会精华(的)，高贵者(的)",
+    "example": "...a government comprised mainly of the elite.",
+    "example_cn": "…主要由精英组成的政府。"
+  },
+  {
+    "word": "economic",
+    "phonetic": ",iːkə'nɒmɪk; ek-",
+    "meaning": "经济的；经济学的，便宜的",
+    "example": "Economic growth is slow.",
+    "example_cn": "经济增长缓慢。"
+  },
+  {
+    "word": "destine",
+    "phonetic": "'destɪn",
+    "meaning": "命中注定；预定",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "janitor",
+    "phonetic": "'dʒænɪtə",
+    "meaning": "看门人，管门人",
+    "example": "Ed Roberts had been a school janitor for a long time.",
+    "example_cn": "埃德·罗伯茨做学校的看门人已很久了。"
+  },
+  {
+    "word": "thermometer",
+    "phonetic": "θə'mɒmɪtə",
+    "meaning": "温度计",
+    "example": "The thermometer registered over 100˚C.",
+    "example_cn": "温度计显示高于100摄氏度。"
+  },
+  {
+    "word": "advertise",
+    "phonetic": "'ædvətaɪz",
+    "meaning": "做广告",
+    "example": "They no longer advertise alcohol or cigarettes at sporting events.",
+    "example_cn": "他们不再在体育赛事上做烟酒广告了。"
+  },
+  {
+    "word": "commence",
+    "phonetic": "kə'mens",
+    "meaning": "开始",
+    "example": "Work will commence on the new building immediately.",
+    "example_cn": "新大楼即将破土动工。"
+  },
+  {
+    "word": "project",
+    "phonetic": "prəˈdʒekt; ˈprɒdʒekt",
+    "meaning": "方案，计划",
+    "example": "The project aims to provide an analysis of children’s emotions.",
+    "example_cn": "该计划旨在对儿童情绪作出分析。"
+  },
+  {
+    "word": "retail",
+    "phonetic": "'riːteɪl",
+    "meaning": "零售，零卖",
+    "example": "a retail price of £8.99",
+    "example_cn": "8.99英镑的零售价"
+  },
+  {
+    "word": "rear",
+    "phonetic": "rɪə",
+    "meaning": "后部，后面",
+    "example": "He settled back in the rear of the taxi.",
+    "example_cn": "他在出租车后座，往后靠着坐好了。"
+  },
+  {
+    "word": "vital",
+    "phonetic": "'vaɪt(ə)l",
+    "meaning": "生命的；必需的；极期重要的",
+    "example": "The work she does is absolutely vital.",
+    "example_cn": "她所做的工作至关重要。"
+  },
+  {
+    "word": "mission",
+    "phonetic": "'mɪʃ(ə)n",
+    "meaning": "代表团；使命",
+    "example": "He was sent on over 200 missions before being killed in action.",
+    "example_cn": "在阵亡之前他奉命执行过200多次军事任务。"
+  },
+  {
+    "word": "paralyse",
+    "phonetic": "'pærəlaɪz",
+    "meaning": "使麻痹，使瘫痪",
+    "example": "Her legs were partly paralysed in the crash.",
+    "example_cn": "在撞车事故中她的双腿部分瘫痪。"
+  },
+  {
+    "word": "massive",
+    "phonetic": "'mæsɪv",
+    "meaning": "巨大的",
+    "example": "The bell is massive, weighing over 40 tons.",
+    "example_cn": "那口钟非常大，有40多吨重。"
+  },
+  {
+    "word": "glacier",
+    "phonetic": "'glæsɪə; 'gleɪsɪə",
+    "meaning": "冰河，冰川",
+    "example": "The glacier calved a large iceberg.",
+    "example_cn": "冰川崩解而产生一个大冰山。"
+  },
+  {
+    "word": "oxide",
+    "phonetic": "'ɒksaɪd",
+    "meaning": "[化]氧化物2003-2-23 16:18:00举报帖子",
+    "example": "iron oxide",
+    "example_cn": "氧化铁"
+  },
+  {
+    "word": "occur",
+    "phonetic": "ə'kɜː",
+    "meaning": "发生；想起，想到；存在",
+    "example": "A third of accidental deaths occur in the home.",
+    "example_cn": "有三分之一的意外死亡发生在家里。"
+  },
+  {
+    "word": "carry",
+    "phonetic": "'kærɪ",
+    "meaning": "传送，运送；带有；支持；赞同",
+    "example": "The ship was carrying drugs.",
+    "example_cn": "这艘船上载有毒品。"
+  },
+  {
+    "word": "loan",
+    "phonetic": "ləʊn",
+    "meaning": "借出物，贷款；借出",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "overlook",
+    "phonetic": "əʊvə'lʊk",
+    "meaning": "俯视；忽略；宽恕",
+    "example": "It is easy to overlook a small detail like that.",
+    "example_cn": "那样的小细节很容易被忽略。"
+  },
+  {
+    "word": "periscope",
+    "phonetic": "'perɪskəʊp",
+    "meaning": "潜望镜",
+    "example": "Submarines are most vulnerable to detection when the submarine commander uses a periscope to assess the situation on the surface.",
+    "example_cn": "当潜艇指挥官使用潜望镜对海面态势进行评估的时候最容易被探测到也最容易被攻击。"
+  },
+  {
+    "word": "typical",
+    "phonetic": "'tɪpɪk(ə)l",
+    "meaning": "典型的",
+    "example": "typical British weather",
+    "example_cn": "典型的英国天气"
+  },
+  {
+    "word": "priority",
+    "phonetic": "praɪ'ɒrɪtɪ",
+    "meaning": "优先权",
+    "example": "Members receive priority bookings and reduced ticket prices to all concerts.",
+    "example_cn": "会员可优先预订所有音乐会的门票，并享受优惠票价。"
+  },
+  {
+    "word": "weave",
+    "phonetic": "wiːv",
+    "meaning": "织，编；编排；迂回",
+    "example": "hand-woven scarves",
+    "example_cn": "手织围巾"
+  },
+  {
+    "word": "overt",
+    "phonetic": "əʊ'vɜːt; 'əʊvət",
+    "meaning": "公开的，明显的，公然的",
+    "example": "an overt attempt to silence their political opponents",
+    "example_cn": "他们想压制政敌言论的明显企图"
+  },
+  {
+    "word": "flank",
+    "phonetic": "flæŋk",
+    "meaning": "胁，侧翼，包抄的侧翼",
+    "example": "We were attacked on our left flank.",
+    "example_cn": "我们的左翼受到攻击。"
+  },
+  {
+    "word": "overcome",
+    "phonetic": "əʊvə'kʌm",
+    "meaning": "克服；压倒",
+    "example": "He struggled to overcome his shyness.",
+    "example_cn": "他努力克服自己的羞怯。"
+  },
+  {
+    "word": "alter",
+    "phonetic": "'ɔːltə; 'ɒl-",
+    "meaning": "改变，改做",
+    "example": "Her face hadn’t altered much over the years.",
+    "example_cn": "过了这么多年，她的容貌并没有多大改变。"
+  },
+  {
+    "word": "interval",
+    "phonetic": "'ɪntəv(ə)l",
+    "meaning": "间隔的时间，间隔；间歇",
+    "example": "He left the room, returning after a short interval with a message.",
+    "example_cn": "他离开房间，过了一会儿就带回来一条消息。"
+  },
+  {
+    "word": "sheer",
+    "phonetic": "ʃɪə",
+    "meaning": "全然的，绝对的",
+    "example": "There was a sheer drop just outside my window.",
+    "example_cn": "就在我的窗外有一个陡坡。"
+  },
+  {
+    "word": "slight",
+    "phonetic": "slaɪt",
+    "meaning": "细长的，轻微的",
+    "example": "a slight improvement",
+    "example_cn": "些许的改进"
+  },
+  {
+    "word": "simulate",
+    "phonetic": "'sɪmjʊleɪt",
+    "meaning": "假装；模拟",
+    "example": "a machine that simulates conditions in space",
+    "example_cn": "一台模拟太空环境的机器"
+  },
+  {
+    "word": "convenience",
+    "phonetic": "kən'viːnɪəns",
+    "meaning": "便利，方便的设施",
+    "example": "Ready meals sell well because of their convenience.",
+    "example_cn": "即食餐因为方便销路好。"
+  },
+  {
+    "word": "electronic",
+    "phonetic": "ɪˌlekˈtrɒnɪk",
+    "meaning": "电子的，用电子操纵的",
+    "example": "electronic games",
+    "example_cn": "电子游戏"
+  },
+  {
+    "word": "verbal",
+    "phonetic": "'vɜːb(ə)l",
+    "meaning": "言语的，字句的；口头的",
+    "example": "verbal skills",
+    "example_cn": "语言技能"
+  },
+  {
+    "word": "mildew",
+    "phonetic": "'mɪldjuː",
+    "meaning": "霉，发霉",
+    "example": "The room smelled of mildew.",
+    "example_cn": "该房间有股霉味。"
+  },
+  {
+    "word": "disposition",
+    "phonetic": "dɪspə'zɪʃ(ə)n",
+    "meaning": "性情，气质；布置；配置",
+    "example": "the disposition of assets on death",
+    "example_cn": "身后财产的处置"
+  },
+  {
+    "word": "marvel",
+    "phonetic": "'mɑːv(ə)l",
+    "meaning": "令人惊奇的事；创造奇迹",
+    "example": "The whale, like the dolphin, has become a symbol of the marvels of creation.",
+    "example_cn": "鲸，和海豚一样，已经成为造物杰作的象征。"
+  },
+  {
+    "word": "freight",
+    "phonetic": "freɪt",
+    "meaning": "运货，货物",
+    "example": "freight services",
+    "example_cn": "货运公司"
+  },
+  {
+    "word": "tease",
+    "phonetic": "tiːz",
+    "meaning": "取笑，嘲笑；戏弄",
+    "example": "Don’t get upset. I was only teasing .",
+    "example_cn": "别生气，我只是在逗你玩。"
+  },
+  {
+    "word": "intermittent",
+    "phonetic": "ɪntə'mɪt(ə)nt",
+    "meaning": "间歇的，断断续续的",
+    "example": "The weather forecast is for sun, with intermittent showers.",
+    "example_cn": "天气预报为晴，有阵雨。"
+  },
+  {
+    "word": "tame",
+    "phonetic": "teɪm",
+    "meaning": "驯服了的；(人)顺从的，听话的",
+    "example": "If you have a tame doctor, he might give you a sick note.",
+    "example_cn": "要是你的医生好说话，他可能会给你开个病假条。"
+  },
+  {
+    "word": "sluggish",
+    "phonetic": "'slʌgɪʃ",
+    "meaning": "不活泼的，呆滞的",
+    "example": "Alex woke late, feeling tired and sluggish.",
+    "example_cn": "亚历克斯醒得很晚，感到很倦怠。"
+  },
+  {
+    "word": "fulfil",
+    "phonetic": "fʊl'fɪl",
+    "meaning": "完成，履行",
+    "example": "There is little doubt that the scheme fulfils a need for our community.",
+    "example_cn": "毫无疑问，这计划会满足我们社区的需求。"
+  },
+  {
+    "word": "compass",
+    "phonetic": "'kʌmpəs",
+    "meaning": "指南针；圆规；界限",
+    "example": "a map and compass",
+    "example_cn": "地图和指南针"
+  },
+  {
+    "word": "paternity",
+    "phonetic": "pə'tɜːnɪtɪ",
+    "meaning": "父系，父系后裔",
+    "example": "The paternity of the child is in dispute.",
+    "example_cn": "这个孩子的生父是谁尚有疑问。"
+  },
+  {
+    "word": "ferocious",
+    "phonetic": "fə'rəʊʃəs",
+    "meaning": "凶猛的，凶残的",
+    "example": "a ferocious, hungry lion",
+    "example_cn": "一头凶猛的饿狮"
+  },
+  {
+    "word": "intense",
+    "phonetic": "ɪn'tens",
+    "meaning": "强烈的，剧烈的，热情的",
+    "example": "Young people today are under intense pressure to succeed.",
+    "example_cn": "如今的年轻人面临要出人头地的巨大压力。"
+  },
+  {
+    "word": "humidity",
+    "phonetic": "hjʊ'mɪdɪtɪ",
+    "meaning": "湿气，空气湿度",
+    "example": "The room is kept at 72 degrees and 50% relative humidity.",
+    "example_cn": "房间的温度保持在72度，相对湿度50%。"
+  },
+  {
+    "word": "elaborate",
+    "phonetic": "ɪ'læb(ə)rət",
+    "meaning": "复杂的；详尽的",
+    "example": "pure silks embroidered with elaborate patterns",
+    "example_cn": "绣有精美图案的真丝衣服"
+  },
+  {
+    "word": "underlying",
+    "phonetic": "ʌndə'laɪɪŋ",
+    "meaning": "含蓄的，潜在的；在下面的",
+    "example": "To stop a problem you have to understand its underlying causes.",
+    "example_cn": "要解决问题，你得了解其潜在原因。"
+  },
+  {
+    "word": "endow",
+    "phonetic": "ɪn'daʊ; en-",
+    "meaning": "捐款，资助",
+    "example": "The ambassador has endowed a $1 million public-service fellowships programme.",
+    "example_cn": "大使资助了一个100万美元的公共服务奖学金项目。"
+  },
+  {
+    "word": "anticipate",
+    "phonetic": "æn'tɪsɪpeɪt",
+    "meaning": "占先，预先处理；预料",
+    "example": "Sales are better than anticipated.",
+    "example_cn": "销量比预期要好。"
+  },
+  {
+    "word": "offshore",
+    "phonetic": "'ɒfʃɔː; ɒf'ʃɔː",
+    "meaning": "离岸的(地)；近海的(地)",
+    "example": "The building can accommodate all of the offshore workers and protect them from hurricane damage.",
+    "example_cn": "这个建筑能容纳所有的海上工人并且保护他们不受飓风的伤害。"
+  },
+  {
+    "word": "detriment",
+    "phonetic": "'detrɪm(ə)nt",
+    "meaning": "损害，损伤",
+    "example": "Work hard to succeed but not to the detriment of others.",
+    "example_cn": "在不损害他人利益的前提下为成功艰苦奋斗。"
+  },
+  {
+    "word": "nourishment",
+    "phonetic": "'nʌrɪʃm(ə)nt",
+    "meaning": "食物",
+    "example": "His favorite fruits and vegetables as well as 55 lb. of bamboo will be on board for nourishment.",
+    "example_cn": "除了它最喜爱的水果和蔬菜以外还有55磅的竹子将会作为它在飞机上的食物。"
+  },
+  {
+    "word": "lick",
+    "phonetic": "lɪk",
+    "meaning": "舔；(火焰)卷过；(波浪)轻拍",
+    "example": "The dog jumped up and licked her face.",
+    "example_cn": "那只狗跳起来舔她的脸。"
+  },
+  {
+    "word": "marsh",
+    "phonetic": "mɑːʃ",
+    "meaning": "沼泽，湿地",
+    "example": "He led them away from a marsh.",
+    "example_cn": "他把他们带离沼泽。"
+  },
+  {
+    "word": "perspire",
+    "phonetic": "pə'spaɪə",
+    "meaning": "出汗，流汗",
+    "example": "Willie was perspiring heavily .",
+    "example_cn": "威利大汗淋漓。"
+  },
+  {
+    "word": "gauge",
+    "phonetic": "geɪdʒ",
+    "meaning": "标准尺寸,(铁道)轨矩;雨量器；(电线)直径 \"",
+    "example": "a 12-gauge shotgun",
+    "example_cn": "12号口径的猎枪"
+  },
+  {
+    "word": "explode",
+    "phonetic": "ɪk'spləʊd; ek-",
+    "meaning": "(使)爆炸，爆发",
+    "example": "The device was thrown at an army patrol but failed to explode.",
+    "example_cn": "炸弹投向了陆军巡逻队，但没有爆炸。"
+  },
+  {
+    "word": "fringe",
+    "phonetic": "frɪn(d)ʒ",
+    "meaning": "缘饰，毛边，边缘，刘海",
+    "example": "a tall girl with straight brown hair and a fringe",
+    "example_cn": "一头棕色直发、留着刘海的高个子女孩"
+  },
+  {
+    "word": "fascinating",
+    "phonetic": "'fæsɪneɪtɪŋ",
+    "meaning": "迷人的",
+    "example": "a fascinating book",
+    "example_cn": "一本引人入胜的书"
+  },
+  {
+    "word": "uneasy",
+    "phonetic": "ʌn'iːzɪ",
+    "meaning": "不自在的",
+    "example": "She eventually fell into an uneasy sleep.",
+    "example_cn": "她终于睡着了，但睡得并不踏实。"
+  },
+  {
+    "word": "expedition",
+    "phonetic": "ekspɪ'dɪʃ(ə)n",
+    "meaning": "远征，探险(队)，考察(队)",
+    "example": "an expedition to the North Pole",
+    "example_cn": "北极探险"
+  },
+  {
+    "word": "organism",
+    "phonetic": "'ɔːg(ə)nɪz(ə)m",
+    "meaning": "生物；有机体；有机的组织",
+    "example": "All living organisms have to adapt to changes in environmental conditions.",
+    "example_cn": "一切生物都要适应环境条件的变化。"
+  },
+  {
+    "word": "swallow",
+    "phonetic": "'swɒləʊ",
+    "meaning": "吞，咽",
+    "example": "He swallowed the last of his coffee and asked for the bill.",
+    "example_cn": "他喝完最后一口咖啡，要求结账。"
+  },
+  {
+    "word": "spare",
+    "phonetic": "speə",
+    "meaning": "空闲的；剩余的",
+    "example": "Have you got any spare boxes?",
+    "example_cn": "你有没有多余的盒子？"
+  },
+  {
+    "word": "means",
+    "phonetic": "miːnz",
+    "meaning": "方法，手段，金钱，财富",
+    "example": "The only means of communication was sign language.",
+    "example_cn": "唯一的交流方法是手语。"
+  },
+  {
+    "word": "proportion",
+    "phonetic": "prə'pɔːʃ(ə)n",
+    "meaning": "比率，比例；大小，容积",
+    "example": "The proportion of women in the profession had risen to 17.3%.",
+    "example_cn": "从事那个职业的女性比例已经增长到17.3%。"
+  },
+  {
+    "word": "microfilm",
+    "phonetic": "'maɪkrə(ʊ)fɪlm",
+    "meaning": "微缩胶片",
+    "example": "It was to harbor drawers brimming with reference books, microfilm and bibliographic cards.",
+    "example_cn": "操作台的抽屉里塞满了参考书、缩微胶片和各种书目卡片。"
+  },
+  {
+    "word": "obscene",
+    "phonetic": "əb'siːn",
+    "meaning": "(文学，图画)猥亵的，淫秽的",
+    "example": "Bradford made an obscene gesture.",
+    "example_cn": "布拉德福德做了个下流手势。"
+  },
+  {
+    "word": "meek",
+    "phonetic": "miːk",
+    "meaning": "温顺的，谦逊的",
+    "example": "He was always so meek and mild .",
+    "example_cn": "他总是那么温顺。"
+  },
+  {
+    "word": "herb",
+    "phonetic": "hɜːb",
+    "meaning": "草本植物;药草",
+    "example": "Sprinkle the dish with chopped fresh herbs.",
+    "example_cn": "在菜肴上撒些切碎的新鲜香草。"
+  },
+  {
+    "word": "mansion",
+    "phonetic": "'mænʃ(ə)n",
+    "meaning": "大厦，官邸",
+    "example": "a beautiful country mansion",
+    "example_cn": "漂亮的乡村宅第"
+  },
+  {
+    "word": "minute",
+    "phonetic": "'mɪnɪt",
+    "meaning": "分，备忘录",
+    "example": "It takes me ten minutes to walk to work.",
+    "example_cn": "我步行上班要用十分钟。"
+  },
+  {
+    "word": "outcry",
+    "phonetic": "'aʊtkraɪ",
+    "meaning": "公开反对",
+    "example": "The closure of the local hospital has caused a huge public outcry.",
+    "example_cn": "当地医院的关闭激起了大规模的公众抗议。"
+  },
+  {
+    "word": "preface",
+    "phonetic": "ˈpref.ɪs",
+    "meaning": "序言；为加序",
+    "example": "...the preface to Kelman's novel.",
+    "example_cn": "…凯尔曼小说的前言。"
+  },
+  {
+    "word": "sediment",
+    "phonetic": "'sedɪm(ə)nt",
+    "meaning": "沉积物，沉淀",
+    "example": "a thick layer of sediment",
+    "example_cn": "一层厚厚的沉积物"
+  },
+  {
+    "word": "resign",
+    "phonetic": "rɪ'zaɪn",
+    "meaning": "放弃；辞去",
+    "example": "A hospital administrator has resigned over claims he lied to get the job.",
+    "example_cn": "一位医院主管因为有人声称他的职位是骗来的而辞职了。"
+  },
+  {
+    "word": "torch",
+    "phonetic": "tɔːtʃ",
+    "meaning": "火把；手电筒",
+    "example": "We shone our torches around the cavern.",
+    "example_cn": "我们用手电筒照着山洞。"
+  },
+  {
+    "word": "deteriorate",
+    "phonetic": "dɪ'tɪərɪəreɪt",
+    "meaning": "恶化，败坏",
+    "example": "Ethel’s health has deteriorated.",
+    "example_cn": "埃塞尔的健康状况恶化了。"
+  },
+  {
+    "word": "degenerate",
+    "phonetic": "dɪ'dʒen(ə)rət",
+    "meaning": "堕落(的)，颓废(的)",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "characterize",
+    "phonetic": "'kærəktəraiz",
+    "meaning": "表示的特征",
+    "example": "Bright colours characterize his paintings.",
+    "example_cn": "明亮的色彩是他绘画作品的特点。"
+  },
+  {
+    "word": "parade",
+    "phonetic": "pə'reɪd",
+    "meaning": "阅兵整队；列队行进，游行；夸耀；炫示",
+    "example": "Young athletes will get a chance to parade their skills.",
+    "example_cn": "年轻运动员将有机会一展身手。"
+  },
+  {
+    "word": "let",
+    "phonetic": "let",
+    "meaning": "允许，让，出租",
+    "example": "I can’t come out tonight – my dad won’t let me.",
+    "example_cn": "今天晚上我不能出来，我爸爸不允许。"
+  },
+  {
+    "word": "swing",
+    "phonetic": "swɪŋ",
+    "meaning": "摆动，摇动；旋转，转向",
+    "example": "Let your arms swing as you walk.",
+    "example_cn": "边走边摆动双臂。"
+  },
+  {
+    "word": "incongruous",
+    "phonetic": "ɪn'kɒŋgrʊəs",
+    "meaning": "不适宜的",
+    "example": "The new theatre looks utterly incongruous in its setting.",
+    "example_cn": "这座新剧院和周围的环境格格不入。"
+  },
+  {
+    "word": "inventory",
+    "phonetic": "'ɪnv(ə)nt(ə)rɪ",
+    "meaning": "详细目录，存货清单；存货盘存",
+    "example": "...one inventory of twelve sails for each yacht.",
+    "example_cn": "…为每艘游艇配备12张帆的存货。"
+  },
+  {
+    "word": "choir",
+    "phonetic": "'kwaɪə",
+    "meaning": "(教会的)歌唱队，唱诗班",
+    "example": "He joined a church choir at the age of eight.",
+    "example_cn": "他八岁时加入了一个教堂唱诗班。"
+  },
+  {
+    "word": "hatch",
+    "phonetic": "hætʃ",
+    "meaning": "孵出，策划",
+    "example": "The eggs take three days to hatch.",
+    "example_cn": "这些蛋要三天时间才能孵化。"
+  },
+  {
+    "word": "demonstrate",
+    "phonetic": "'demənstreɪt",
+    "meaning": "论证，证明；示威",
+    "example": "The study demonstrates the link between poverty and malnutrition.",
+    "example_cn": "这项研究证明了贫困与营养不良之间的联系。"
+  },
+  {
+    "word": "conversion",
+    "phonetic": "kən'vɜːʃ(ə)n",
+    "meaning": "变换，转化，改变；兑换",
+    "example": "...the conversion of disused rail lines into cycle routes.",
+    "example_cn": "…把废弃的铁路改变成自行车道。"
+  },
+  {
+    "word": "dearth",
+    "phonetic": "dɜːθ",
+    "meaning": "缺乏，供应不足",
+    "example": "Construction had slowed because of a dearth of labourers.",
+    "example_cn": "建筑进程缓慢是因为劳动力不足。"
+  },
+  {
+    "word": "profane",
+    "phonetic": "prə'feɪn",
+    "meaning": "亵神的，亵渎的",
+    "example": "profane language",
+    "example_cn": "亵渎的语言"
+  },
+  {
+    "word": "cluster",
+    "phonetic": "'klʌstə",
+    "meaning": "一串，一簇",
+    "example": "a diamond cluster ring",
+    "example_cn": "群镶钻戒"
+  },
+  {
+    "word": "revolt",
+    "phonetic": "rɪ'vəʊlt",
+    "meaning": "反抗；厌恶",
+    "example": "The prime minister is now facing a revolt by members of his own party.",
+    "example_cn": "首相现在面临着党内倒戈。"
+  },
+  {
+    "word": "secular",
+    "phonetic": "'sekjʊlə",
+    "meaning": "现世的，世俗的；非宗教的",
+    "example": "secular education",
+    "example_cn": "世俗教育"
+  },
+  {
+    "word": "agenda",
+    "phonetic": "ə'dʒendə",
+    "meaning": "议事日程",
+    "example": "The Republicans have stuck to their conservative agenda.",
+    "example_cn": "共和党人坚持自己的保守议题。"
+  },
+  {
+    "word": "loop",
+    "phonetic": "luːp",
+    "meaning": "环状物，绳圈，环",
+    "example": "Mrs. Morrell reached for a loop of garden hose.",
+    "example_cn": "莫雷尔夫人伸手去拿一圈橡胶软管。"
+  },
+  {
+    "word": "conscientious",
+    "phonetic": ",kɒnʃɪ'enʃəs",
+    "meaning": "认真的，诚心诚意的",
+    "example": "A conscientious teacher may feel inclined to take work home.",
+    "example_cn": "一个认真负责的教师可能会想着把工作带回家去做。"
+  },
+  {
+    "word": "revenge",
+    "phonetic": "rɪ'ven(d)ʒ",
+    "meaning": "报复，报仇",
+    "example": "The poor murdered girl must be revenged.",
+    "example_cn": "一定要为被害的可怜女孩报仇。"
+  },
+  {
+    "word": "friction",
+    "phonetic": "'frɪkʃ(ə)n",
+    "meaning": "摩擦，不和，倾轧",
+    "example": "Putting oil on both surfaces reduces friction.",
+    "example_cn": "两面都上油可减小摩擦力。"
+  },
+  {
+    "word": "diversion",
+    "phonetic": "daɪ'vɜːʃ(ə)n; dɪ-",
+    "meaning": "转向；水遣；改道",
+    "example": "A slight diversion in the road is causing major headaches for businesses along El Camino Real.",
+    "example_cn": "马路上的一小段绕行道让国王大道沿街的商家十分头疼。"
+  },
+  {
+    "word": "check",
+    "phonetic": "tʃek",
+    "meaning": "检查，核对，控制",
+    "example": "Check the tiles carefully before you buy them.",
+    "example_cn": "购买之前要把瓷砖仔细检查一下。"
+  },
+  {
+    "word": "proceed",
+    "phonetic": "prə'siːd",
+    "meaning": "进行；着手",
+    "example": "Before proceeding further, we must define our terms.",
+    "example_cn": "我们必须先定义术语，然后再往下展开。"
+  },
+  {
+    "word": "chase",
+    "phonetic": "tʃeɪs",
+    "meaning": "追逐，追赶",
+    "example": "The dogs saw him running and chased him.",
+    "example_cn": "那些狗看到他在跑就追他。"
+  },
+  {
+    "word": "plea",
+    "phonetic": "pliː",
+    "meaning": "(法律)抗辩；请求，恳求，托词，口实",
+    "example": "Caldwell made a plea for donations.",
+    "example_cn": "考德威尔恳求捐款。"
+  },
+  {
+    "word": "mobilize",
+    "phonetic": "'məʊbəlaɪz",
+    "meaning": "动员",
+    "example": "an attempt to mobilize popular opinion",
+    "example_cn": "鼓动公众舆论的尝试"
+  },
+  {
+    "word": "yearn",
+    "phonetic": "jɜːn",
+    "meaning": "想念，渴望",
+    "example": "He yearned for freedom.",
+    "example_cn": "他曾渴望自由。"
+  },
+  {
+    "word": "personnel",
+    "phonetic": "pɜːsə'nel",
+    "meaning": "职员，人员，人事",
+    "example": "All personnel are to receive security badges.",
+    "example_cn": "所有人员都将拿到安保徽章。"
+  },
+  {
+    "word": "vice",
+    "phonetic": "vaɪs",
+    "meaning": "罪恶；不道德行为",
+    "example": "the fight against vice on the streets",
+    "example_cn": "打击街头犯罪"
+  },
+  {
+    "word": "paddle",
+    "phonetic": "'pæd(ə)l",
+    "meaning": "短桨",
+    "example": "Each man had a paddle for an hour and then a rest.",
+    "example_cn": "每人划一小时桨， 然后休息一下。"
+  },
+  {
+    "word": "clutch",
+    "phonetic": "klʌtʃ",
+    "meaning": "抓住，攫住",
+    "example": "He clutched at a pillar for support.",
+    "example_cn": "他猛地抓住一根柱子作支撑。"
+  },
+  {
+    "word": "pedestrian",
+    "phonetic": "pɪˈdestrɪən",
+    "meaning": "行人(的)",
+    "example": "Ingrid was a walker, even in Los Angeles, where a pedestrian is a rare sight.",
+    "example_cn": "英格丽德是个步行者，即使在行人少见的洛杉矶也是如此。"
+  },
+  {
+    "word": "graphic",
+    "phonetic": "'græfɪk",
+    "meaning": "图解的；书写的；生动的",
+    "example": "...fine and graphic arts.",
+    "example_cn": "…美术与制图艺术。"
+  },
+  {
+    "word": "mercantile",
+    "phonetic": "'mɜːk(ə)ntaɪl",
+    "meaning": "商业的；贸易的",
+    "example": "mercantile law",
+    "example_cn": "商法"
+  },
+  {
+    "word": "console",
+    "phonetic": "kən'səʊl",
+    "meaning": "控制台，仪表板；落地柜",
+    "example": "No one could console her when Peter died.",
+    "example_cn": "彼得去世时没人能够安慰她。"
+  },
+  {
+    "word": "tremendous",
+    "phonetic": "trɪ'mendəs",
+    "meaning": "巨大的，极大的；非常的，极好的",
+    "example": "Suddenly, there was a tremendous bang, and the whole station shook.",
+    "example_cn": "突然一声巨响，整个车站都晃动了。"
+  },
+  {
+    "word": "decrease",
+    "phonetic": "dɪ'kriːs",
+    "meaning": "减少，减少，减少量",
+    "example": "The number of people who have the disease has decreased significantly in recent years.",
+    "example_cn": "近年来，这种病的患者人数明显下降。"
+  },
+  {
+    "word": "performance",
+    "phonetic": "pə'fɔːm(ə)ns",
+    "meaning": "执行；成绩；演出",
+    "example": "This evening’s performance will begin at 8.00 pm.",
+    "example_cn": "今晚的演出8点开始。"
+  },
+  {
+    "word": "attempt",
+    "phonetic": "ə'tem(p)t",
+    "meaning": "尝试，企图",
+    "example": "He made no attempt to hide his anger.",
+    "example_cn": "他毫不掩饰自己的愤怒。"
+  },
+  {
+    "word": "naked",
+    "phonetic": "'neɪkɪd",
+    "meaning": "裸体的；无遮蔽的",
+    "example": "The children ran naked through the yard.",
+    "example_cn": "孩子们光着身子跑过院子。"
+  },
+  {
+    "word": "female",
+    "phonetic": "'fiːmeɪl",
+    "meaning": "女性(的)，[语]阴性(的)",
+    "example": "Hay fever affects males more than females.",
+    "example_cn": "男性感染花粉热多于女性。"
+  },
+  {
+    "word": "raid",
+    "phonetic": "reɪd",
+    "meaning": "袭击",
+    "example": "a bombing raid",
+    "example_cn": "轰炸"
+  },
+  {
+    "word": "miserable",
+    "phonetic": "'mɪz(ə)rəb(ə)l",
+    "meaning": "悲惨的，使人难受的",
+    "example": "They endured hours of backbreaking work in miserable conditions.",
+    "example_cn": "他们在恶劣条件下忍受长时间的繁重劳动。"
+  },
+  {
+    "word": "innocent",
+    "phonetic": "'ɪnəs(ə)nt",
+    "meaning": "无罪的，无害的，天真的",
+    "example": "Nobody would believe that I was innocent.",
+    "example_cn": "没人肯相信我是清白的。"
+  },
+  {
+    "word": "stack",
+    "phonetic": "stæk",
+    "meaning": "堆；大量；书库",
+    "example": "stacks of dirty dishes",
+    "example_cn": "一摞摞脏盘子"
+  },
+  {
+    "word": "humble",
+    "phonetic": "'hʌmbl",
+    "meaning": "谦卑的，恭顺的，简陋的",
+    "example": "a modest and humble man",
+    "example_cn": "一个谦卑的男人"
+  },
+  {
+    "word": "shamble",
+    "phonetic": "'ʃæmb(ə)l",
+    "meaning": "蹒跚，拖沓",
+    "example": "Zombies shamble up the rows of the grid toward your house, and if they get past your defenses, well, you know.",
+    "example_cn": "僵尸们在网格的每一行向你的房子蹒跚而行，如果他们越过了你的防线，那么，你知道的。"
+  },
+  {
+    "word": "ribbon",
+    "phonetic": "'rɪbən",
+    "meaning": "缎带，丝带，带状物",
+    "example": "little girls with ribbons in their hair",
+    "example_cn": "头发上系着丝带的小姑娘们"
+  },
+  {
+    "word": "tyrannical",
+    "phonetic": "tɪ'rænɪk(ə)l; taɪ-",
+    "meaning": "暴君的，专制的",
+    "example": "a tyrannical parent",
+    "example_cn": "一位专横的家长"
+  },
+  {
+    "word": "aerial",
+    "phonetic": "'eərɪəl",
+    "meaning": "空气的；空中的 (无线电)天线",
+    "example": "Weeks of aerial bombardment had destroyed factories and motorways.",
+    "example_cn": "数周的空袭已经摧毁了各工厂和公路。"
+  },
+  {
+    "word": "astronomy",
+    "phonetic": "ə'strɒnəmɪ",
+    "meaning": "天文学",
+    "example": "Do you know anything about astronomy?",
+    "example_cn": "你懂天文学吗?"
+  },
+  {
+    "word": "segment",
+    "phonetic": "'segm(ə)nt",
+    "meaning": "切片，部分；段，节",
+    "example": "Decorate with orange segments.",
+    "example_cn": "用几瓣橙子作点缀。"
+  },
+  {
+    "word": "downtown",
+    "phonetic": "'daʊntaʊn",
+    "meaning": "在城市的商业区",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "defraud",
+    "phonetic": "dɪ'frɔːd",
+    "meaning": "欺骗，欺诈",
+    "example": "He faces charges of theft and conspiracy to defraud (= a secret plan to cheat someone, made by two or more people ) .",
+    "example_cn": "他面临偷窃和合谋诈骗的指控。"
+  },
+  {
+    "word": "improvise",
+    "phonetic": "'ɪmprəvaɪz",
+    "meaning": "即席创作，临时凑成",
+    "example": "I forgot to bring my notes, so I had to improvise.",
+    "example_cn": "我忘了带笔记，只好临时发挥。"
+  },
+  {
+    "word": "oppress",
+    "phonetic": "ə'pres",
+    "meaning": "压迫，压制；压抑",
+    "example": "native tribes oppressed by the authorities",
+    "example_cn": "受到当局压迫的土著部落"
+  },
+  {
+    "word": "flabby",
+    "phonetic": "'flæbɪ",
+    "meaning": "(肌肉)不结实的；软弱的",
+    "example": "intellectually flabby arguments",
+    "example_cn": "说不通的论据"
+  },
+  {
+    "word": "essay",
+    "phonetic": "'eseɪ",
+    "meaning": "文章，小品文，随笔",
+    "example": "We asked Jason to write an essay about his hometown.",
+    "example_cn": "我们让杰森写一篇关于他家乡的短文。"
+  },
+  {
+    "word": "racket",
+    "phonetic": "'rækɪt",
+    "meaning": "吵闹声；球拍",
+    "example": "The old machine used to make an awful racket .",
+    "example_cn": "这台旧机器以前噪音大得吓人。"
+  },
+  {
+    "word": "flaw",
+    "phonetic": "flɔː",
+    "meaning": "缺点，瑕疵",
+    "example": "A design flaw (= a mistake or weakness in the way something was made ) caused the engine to explode.",
+    "example_cn": "一个设计缺陷导致了引擎爆炸。"
+  },
+  {
+    "word": "nominate",
+    "phonetic": "'nɒmɪneɪt",
+    "meaning": "提名",
+    "example": "This week one of them will be nominated by the Democratic Party for the presidency of the United States.",
+    "example_cn": "本周他们中的一人将被民主党提名为美国总统职位的候选人。"
+  },
+  {
+    "word": "syllabus",
+    "phonetic": "'sɪləbəs",
+    "meaning": "教学大纲",
+    "example": "The course syllabus consisted mainly of novels by African-American authors, male and female.",
+    "example_cn": "该课程的教学大纲主要包括了非裔美国男女作家的小说。"
+  },
+  {
+    "word": "stiff",
+    "phonetic": "stɪf",
+    "meaning": "坚硬的；费劲的；不易弯的",
+    "example": "a shirt with a stiff collar",
+    "example_cn": "领子挺括的衬衫"
+  },
+  {
+    "word": "toxic",
+    "phonetic": "'tɒksɪk",
+    "meaning": "有毒的，中毒的",
+    "example": "fumes from a toxic waste dump",
+    "example_cn": "有毒废料堆产生的毒气"
+  },
+  {
+    "word": "rampant",
+    "phonetic": "'ræmp(ə)nt",
+    "meaning": "(指植物)繁茂的；蔓生的；不能控制的",
+    "example": "Pickpocketing is rampant in the downtown area.",
+    "example_cn": "闹市区扒窃活动猖獗。"
+  },
+  {
+    "word": "propulsion",
+    "phonetic": "",
+    "meaning": "推进，推进力",
+    "example": "But magnetic propulsion has some drawbacks.",
+    "example_cn": "但是磁力推进有一些缺陷。"
+  },
+  {
+    "word": "telling",
+    "phonetic": "'telɪŋ",
+    "meaning": "有效的；有力的",
+    "example": "a telling argument",
+    "example_cn": "有说服力的论点"
+  },
+  {
+    "word": "throughout",
+    "phonetic": "θruː'aʊt",
+    "meaning": "遍及",
+    "example": "a large organization with offices throughout the world",
+    "example_cn": "在世界各地都设有办事处的一家大型机构"
+  },
+  {
+    "word": "highlight",
+    "phonetic": "'haɪlaɪt",
+    "meaning": "光线最强处，最突出部分",
+    "example": "...a match that is likely to prove one of the highlights of the tournament.",
+    "example_cn": "…可能是本届锦标赛最精彩的赛事之一。"
+  },
+  {
+    "word": "devise",
+    "phonetic": "dɪ'vaɪz",
+    "meaning": "设计，想出",
+    "example": "She devised a method for quicker communications between offices.",
+    "example_cn": "她想出一种加快办公室之间通信联络的方法。"
+  },
+  {
+    "word": "wield",
+    "phonetic": "wiːld",
+    "meaning": "使用，行使",
+    "example": "The Church wields immense power in Ireland.",
+    "example_cn": "在爱尔兰，教会操纵着大权。"
+  },
+  {
+    "word": "enormous",
+    "phonetic": "ɪ'nɔːməs",
+    "meaning": "巨大的，庞大的",
+    "example": "an enormous bunch of flowers",
+    "example_cn": "巨大的花束"
+  },
+  {
+    "word": "fade",
+    "phonetic": "feɪd",
+    "meaning": "(使)褪色，逐渐消失",
+    "example": "Hopes of a peace settlement are beginning to fade.",
+    "example_cn": "达成和平协议的希望日渐渺茫。"
+  },
+  {
+    "word": "exhilarate",
+    "phonetic": "ɪg'zɪləreɪt; eg-",
+    "meaning": "使振奋，使高兴",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "slum",
+    "phonetic": "slʌm",
+    "meaning": "平民窟; 陋巷",
+    "example": "a slum area",
+    "example_cn": "贫民区"
+  },
+  {
+    "word": "peer",
+    "phonetic": "pɪə",
+    "meaning": "同等；同辈",
+    "example": "American children did less well in math than their peers in Japan.",
+    "example_cn": "美国儿童的数学成绩不如日本的同龄儿童。"
+  },
+  {
+    "word": "slogan",
+    "phonetic": "'sləʊg(ə)n",
+    "meaning": "标语，口号",
+    "example": "an advertising slogan",
+    "example_cn": "一句广告口号"
+  },
+  {
+    "word": "transaction",
+    "phonetic": "træn'zækʃ(ə)n; trɑːn-; -'sæk-",
+    "meaning": "办理，处理；执行；事务，事项，交易",
+    "example": "The bank charges a fixed rate for each transaction.",
+    "example_cn": "银行对每一笔业务收取固定费用。"
+  },
+  {
+    "word": "incorporate",
+    "phonetic": "ɪn'kɔːpəreɪt",
+    "meaning": "结合，合并，组成公司",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "discard",
+    "phonetic": "dɪ'skɑːd",
+    "meaning": "抛弃，遗弃",
+    "example": "Read the manufacturer's guidelines before discarding the box.",
+    "example_cn": "先阅读制造商的说明书再把盒子丢掉。"
+  },
+  {
+    "word": "grope",
+    "phonetic": "grəʊp",
+    "meaning": "暗中摸索",
+    "example": "With his left hand he groped for the knob, turned it, and pulled the door open.",
+    "example_cn": "他用左手摸索到门把手，转动把手，把门拉开。"
+  },
+  {
+    "word": "triple",
+    "phonetic": "'trɪp(ə)l",
+    "meaning": "三部分合成的，三方的",
+    "example": "a triple murder investigation",
+    "example_cn": "对一宗三重谋杀案的调查"
+  },
+  {
+    "word": "variety",
+    "phonetic": "və'raɪətɪ",
+    "meaning": "多样化；种；变种；综艺演出",
+    "example": "The girls come from a variety of different backgrounds.",
+    "example_cn": "这些女孩出身背景各不相同。"
+  },
+  {
+    "word": "detrimental",
+    "phonetic": ",detrɪ'ment(ə)l",
+    "meaning": "有害的，不利的",
+    "example": "the detrimental effect of pollution on the environment",
+    "example_cn": "污染对环境的不利影响"
+  },
+  {
+    "word": "hitherto",
+    "phonetic": "hɪðə'tuː; 'hɪðətuː",
+    "meaning": "到目前为止，迄今",
+    "example": "a species of fish hitherto unknown in the West",
+    "example_cn": "迄今在西方还不为人知的一种鱼"
+  },
+  {
+    "word": "indispensable",
+    "phonetic": "ɪndɪ'spensəb(ə)l",
+    "meaning": "必不可少的，必需的",
+    "example": "Mobile phones have become an indispensable part of our lives.",
+    "example_cn": "移动电话已经成为我们生活中的必需品。"
+  },
+  {
+    "word": "porcelain",
+    "phonetic": "'pɔːs(ə)lɪn",
+    "meaning": "瓷器",
+    "example": "a porcelain vase",
+    "example_cn": "瓷花瓶"
+  },
+  {
+    "word": "mania",
+    "phonetic": "'meɪnɪə",
+    "meaning": "疯狂；躁狂症，狂热，癖好",
+    "example": "The mania for dinosaurs began in the late 1800s.",
+    "example_cn": "恐龙热兴起于19世纪晚期。"
+  },
+  {
+    "word": "neurosis",
+    "phonetic": ",njʊə'rəʊsɪs",
+    "meaning": "神经官能病，精神性神经病",
+    "example": "He was anxious to the point of neurosis.",
+    "example_cn": "他的忧虑达到了神经机能病症状的程度。"
+  },
+  {
+    "word": "dot",
+    "phonetic": "dɒt",
+    "meaning": "小点，小圆点",
+    "example": "a pattern of dots",
+    "example_cn": "圆点图案"
+  },
+  {
+    "word": "utterly",
+    "phonetic": "'ʌtəlɪ ",
+    "meaning": "完全地，十足地",
+    "example": "You look utterly miserable.",
+    "example_cn": "你看起来很痛苦。"
+  },
+  {
+    "word": "evaporate",
+    "phonetic": "ɪ'væpəreɪt",
+    "meaning": "使蒸发，使脱水，消失",
+    "example": "Most of the water had evaporated.",
+    "example_cn": "大部分的水都蒸发了。"
+  },
+  {
+    "word": "quest",
+    "phonetic": "kwest",
+    "meaning": "寻找，追求",
+    "example": "They journeyed to the distant Molucca islands in quest of spices.",
+    "example_cn": "他们远赴摩鹿加群岛寻找香料。"
+  },
+  {
+    "word": "coarse",
+    "phonetic": "kɔːs",
+    "meaning": "粗(糙)的; 粗俗的",
+    "example": "a jacket of coarse wool",
+    "example_cn": "粗羊毛夹克衫"
+  },
+  {
+    "word": "resume",
+    "phonetic": "rɪˈzjuːm; ˈrɛzjʊmeɪ",
+    "meaning": "重新开始；继续；重新占用",
+    "example": "She hopes to resume work after the baby is born.",
+    "example_cn": "她想生完孩子后继续工作。"
+  },
+  {
+    "word": "integrity",
+    "phonetic": "ɪn'tegrɪtɪ",
+    "meaning": "诚实，正直",
+    "example": "I have always regarded him as a man of integrity.",
+    "example_cn": "我一直把他当作一个正直诚实的人。"
+  },
+  {
+    "word": "contention",
+    "phonetic": "kən'tenʃ(ə)n",
+    "meaning": "竞争，斗争；争论",
+    "example": "His case has become a source of contention between civil liberties activists and the government.",
+    "example_cn": "他的案子已变成了公民自由活动家们和政府之间的争论缘由。"
+  },
+  {
+    "word": "universal",
+    "phonetic": "juːnɪ'vɜːs(ə)l",
+    "meaning": "全体的，普遍的；全球的",
+    "example": "free universal healthcare",
+    "example_cn": "免费的全民保健制度"
+  },
+  {
+    "word": "opponent",
+    "phonetic": "ə'pəʊnənt",
+    "meaning": "对手，敌手，反对者",
+    "example": "Graf’s opponent in today’s final will be Sukova.",
+    "example_cn": "格拉芙今天的决赛对手将是苏科娃。"
+  },
+  {
+    "word": "solar",
+    "phonetic": "'səʊlə",
+    "meaning": "太阳的",
+    "example": "a solar eclipse",
+    "example_cn": "日食"
+  },
+  {
+    "word": "consist",
+    "phonetic": "kən'sɪst",
+    "meaning": "组成; 存在",
+    "example": "My diet consisted almost exclusively of chocolate-covered cookies and glasses of milk.",
+    "example_cn": "我的饮食几乎只包含裹上巧克力的曲奇饼和一杯杯牛奶。"
+  },
+  {
+    "word": "reptile",
+    "phonetic": "'reptaɪl",
+    "meaning": "爬行动物；爬虫",
+    "example": "Bird evolved from reptiles, so the first bird must have come out of an egg--laid by a reptile.",
+    "example_cn": "禽类是由爬虫类进化而来，所以，第一只禽鸟肯定是从爬虫类孵化的蛋里出来的。"
+  },
+  {
+    "word": "headstrong",
+    "phonetic": "'hedstrɒŋ",
+    "meaning": "任性的；顽固的",
+    "example": "He's young, very headstrong, but he's a good man underneath.",
+    "example_cn": "他年轻、任性，但骨子里是个好人。"
+  },
+  {
+    "word": "complicated",
+    "phonetic": "'kɒmplɪkeɪtɪd",
+    "meaning": "结构复杂的；困难的",
+    "example": "a complicated pattern",
+    "example_cn": "复杂的图案"
+  },
+  {
+    "word": "deprive",
+    "phonetic": "dɪ'praɪv",
+    "meaning": "剥夺，使丧失",
+    "example": "They've been deprived of the fuel necessary to heat their homes.",
+    "example_cn": "他们无法得到住房取暖必需的燃料。"
+  },
+  {
+    "word": "helicopter",
+    "phonetic": "'helɪkɒptə",
+    "meaning": "直升飞机",
+    "example": "You can helicopter to the island.",
+    "example_cn": "你可以乘坐直升机去那个岛。"
+  },
+  {
+    "word": "grief",
+    "phonetic": "griːf",
+    "meaning": "悲伤，悲痛",
+    "example": "Every change in our lives brings with it griefs.",
+    "example_cn": "我们生活当中的每一个变化都有让人伤心的一面。"
+  },
+  {
+    "word": "commission",
+    "phonetic": "kə'mɪʃ(ə)n",
+    "meaning": "委任；佣金；军事任职；考察团",
+    "example": "The Government set up a commission to investigate allegations of police violence.",
+    "example_cn": "政府成立了一个委员会调查对警察施暴行为的指控。"
+  },
+  {
+    "word": "rehabilitate",
+    "phonetic": "riːə'bɪlɪteɪt",
+    "meaning": "恢复地位；使残疾者恢复正常的生活",
+    "example": "a special unit for rehabilitating stroke patients",
+    "example_cn": "协助中风患者康复的特殊病房"
+  },
+  {
+    "word": "sheet",
+    "phonetic": "ʃiːt",
+    "meaning": "被单；薄板",
+    "example": "I’ll go and find you some clean sheets and blankets.",
+    "example_cn": "我去给你们找些干净的床单和毯子。"
+  },
+  {
+    "word": "port",
+    "phonetic": "pɔːt",
+    "meaning": "港口，舱门，舱口；(船、飞机)左舷",
+    "example": "Britain’s largest port",
+    "example_cn": "英国最大的港口城市"
+  },
+  {
+    "word": "outline",
+    "phonetic": "'aʊtlaɪn",
+    "meaning": "外形，轮廓；大纲，纲要",
+    "example": "a research proposal outline",
+    "example_cn": "研究计划梗概"
+  },
+  {
+    "word": "eject",
+    "phonetic": "ɪ'dʒekt",
+    "meaning": "驱逐，排出",
+    "example": "Officials used guard dogs to eject the protesters.",
+    "example_cn": "官员们用护卫犬驱走抗议者。"
+  },
+  {
+    "word": "opportunity",
+    "phonetic": "ɒpə'tjuːnɪtɪ",
+    "meaning": "机会",
+    "example": "There are fewer opportunities for new graduates this year.",
+    "example_cn": "今年新毕业的大学生就业机会较少。"
+  },
+  {
+    "word": "savage",
+    "phonetic": "'sævɪdʒ",
+    "meaning": "未开化的；凶猛的",
+    "example": "a savage dog",
+    "example_cn": "一条凶猛的狗"
+  },
+  {
+    "word": "approximate",
+    "phonetic": "ə'prɒksɪmət",
+    "meaning": "近似的，约略的",
+    "example": "What is the approximate number of students in each class?",
+    "example_cn": "每个班大致有多少学生？"
+  },
+  {
+    "word": "gesture",
+    "phonetic": "'dʒestʃə",
+    "meaning": "姿势，手势；表示",
+    "example": "Luke made an obscene gesture with his finger.",
+    "example_cn": "卢克用手指做了一个下流的手势。"
+  },
+  {
+    "word": "cape",
+    "phonetic": "keɪp",
+    "meaning": "岬；海角",
+    "example": "Cape Cod",
+    "example_cn": "科德角"
+  },
+  {
+    "word": "commute",
+    "phonetic": "kə'mjuːt",
+    "meaning": "交换，兑换；减轻；经常往来",
+    "example": "Baldry’s 20-year prison sentence was commuted to three years.",
+    "example_cn": "鲍德里二十年的刑期被减至三年。"
+  },
+  {
+    "word": "hazardous",
+    "phonetic": "'hæzədəs",
+    "meaning": "冒险的",
+    "example": "the disposal of hazardous waste",
+    "example_cn": "有害废弃物的处理"
+  },
+  {
+    "word": "curve",
+    "phonetic": "kɜːv",
+    "meaning": "曲线",
+    "example": "The curve illustrates costs per capita.",
+    "example_cn": "这条曲线显示人均费用。"
+  },
+  {
+    "word": "catalogue",
+    "phonetic": "'kæt(ə)lɒg",
+    "meaning": "目录；编目",
+    "example": "a mail order catalog",
+    "example_cn": "邮购商品目录"
+  },
+  {
+    "word": "abrasion",
+    "phonetic": "ə'breɪʒ(ə)n",
+    "meaning": "磨损，擦伤处",
+    "example": "She was treated for cuts and abrasions.",
+    "example_cn": "她因划伤和擦伤而接受治疗。"
+  },
+  {
+    "word": "agitation",
+    "phonetic": "ædʒɪ'teɪʃ(ə)n",
+    "meaning": "摇动，焦虑",
+    "example": "She was in a state of considerable agitation.",
+    "example_cn": "她处于相当焦虑的状态。"
+  },
+  {
+    "word": "accountable",
+    "phonetic": "ə'kaʊntəb(ə)l",
+    "meaning": "for",
+    "example": "But I also believe that everyone who comments here should be accountable: in other words that the rest of us should be able to see who they are.",
+    "example_cn": "但我同样认为，在这里发表评论的每一个人都应当受到问责：换而言之，在其发言时，我们其他人应当能够知道他们是谁。"
+  },
+  {
+    "word": "custom",
+    "phonetic": "'kʌstəm",
+    "meaning": "习俗，惯例；光顾；海关",
+    "example": "He awoke early, as was his custom.",
+    "example_cn": "他很早醒来，这是他的习惯。"
+  },
+  {
+    "word": "sporadic",
+    "phonetic": "spə'rædɪk",
+    "meaning": "偶而发生的",
+    "example": "There has been sporadic violence downtown.",
+    "example_cn": "市中心时有暴力事件发生。"
+  },
+  {
+    "word": "towel",
+    "phonetic": "'taʊəl",
+    "meaning": "毛巾，手巾",
+    "example": "Have you got a clean towel I could use?",
+    "example_cn": "你有没有干净毛巾给我用？"
+  },
+  {
+    "word": "knob",
+    "phonetic": "nɒb",
+    "meaning": "圆形把手，旋纽，圆形突出物",
+    "example": "He thought the door was locked, but he turned the knob and the door opened.",
+    "example_cn": "他本以为门是锁住的，但是转了一下把手门就开了。"
+  },
+  {
+    "word": "invariably",
+    "phonetic": "ɪn'veərɪəblɪ",
+    "meaning": "不变地，永恒地",
+    "example": "It invariably rains when I go there.",
+    "example_cn": "我每次去那儿都下雨。"
+  },
+  {
+    "word": "plumb",
+    "phonetic": "plʌm",
+    "meaning": "铅锤，测锺",
+    "example": "Psychologists try to plumb the deepest mysteries of the human psyche.",
+    "example_cn": "心理学家试图探究人类心理最深层的奥秘。"
+  },
+  {
+    "word": "triumph",
+    "phonetic": "'traɪʌmf",
+    "meaning": "凯旋；成功",
+    "example": "Winning the championship is a great personal triumph .",
+    "example_cn": "赢得冠军是伟大的个人成就。"
+  },
+  {
+    "word": "forum",
+    "phonetic": "'fɔːrəm",
+    "meaning": "论坛",
+    "example": "Members of the council agreed that was an important forum for discussion.",
+    "example_cn": "理事会成员们一致认为那是一个用于讨论的重要论坛。"
+  },
+  {
+    "word": "decompose",
+    "phonetic": "diːkəm'pəʊz",
+    "meaning": "腐败；分解，腐烂",
+    "example": "a partially decomposed body",
+    "example_cn": "部分腐烂的尸体"
+  },
+  {
+    "word": "confident",
+    "phonetic": "'kɒnfɪd(ə)nt",
+    "meaning": "确信的，有把握的",
+    "example": "Despite her disability, Philippa is very confident.",
+    "example_cn": "菲莉帕虽然有残疾，却很自信。"
+  },
+  {
+    "word": "liberal",
+    "phonetic": "'lɪb(ə)r(ə)l",
+    "meaning": "慷慨的，大方的，胸怀宽大的",
+    "example": "a liberal supply of drinks",
+    "example_cn": "饮料的充足供应"
+  },
+  {
+    "word": "sway",
+    "phonetic": "sweɪ",
+    "meaning": "摇摆；统治，支配",
+    "example": "The trees swayed gently in the breeze.",
+    "example_cn": "树木在和风中轻轻摇曳。"
+  },
+  {
+    "word": "perplexity",
+    "phonetic": "pə'pleksɪtɪ",
+    "meaning": "(正式用语)困惑，窘困，令人困惑的事或物",
+    "example": "moral perplexities",
+    "example_cn": "道德难题"
+  },
+  {
+    "word": "prospective",
+    "phonetic": "prə'spektɪv",
+    "meaning": "预期的; 未来的",
+    "example": "The story should act as a warning to other prospective buyers.",
+    "example_cn": "这篇报道应该可以对其他可能的购买者起到警告作用。"
+  },
+  {
+    "word": "straightforward",
+    "phonetic": "streɪt'fɔːwəd",
+    "meaning": "正直的，坦率的，老实的，简明易懂的",
+    "example": "This area of law is far from straightforward (= complicated ) .",
+    "example_cn": "法律的这个领域很复杂。"
+  },
+  {
+    "word": "marble",
+    "phonetic": "'mɑːb(ə)l",
+    "meaning": "大理石，(游戏用的)玻璃弹子",
+    "example": "The columns were of white marble.",
+    "example_cn": "柱子是白色的大理石。"
+  },
+  {
+    "word": "registrar",
+    "phonetic": "'redʒɪstrɑː; ,redʒɪ'strɑː",
+    "meaning": "登记员，记录员",
+    "example": "The groom knew immediately that something was wrong when the registrar at Derry's Guildhall unexpectedly claimed that there was unfinished paperwork just before the ceremony began.",
+    "example_cn": "当时，在婚礼仪式开始之前，市政厅的登记员意外地宣布还有一些文件没有完成，新郎立即意识到出现了一些误会。"
+  },
+  {
+    "word": "prototype",
+    "phonetic": "'prəʊtətaɪp",
+    "meaning": "原型",
+    "example": "But how do you come up with the architecture for this evolutionary prototype?",
+    "example_cn": "但是你将如何为这个进化的原型提出系统的架构呢？"
+  },
+  {
+    "word": "oust",
+    "phonetic": "aʊst",
+    "meaning": "驱赶，驱逐",
+    "example": "The leaders have been ousted from power by nationalists.",
+    "example_cn": "那些领导人已被民族主义者赶下了台。"
+  },
+  {
+    "word": "trespass",
+    "phonetic": "'trespəs",
+    "meaning": "非法侵入；侵夺，侵占",
+    "example": "Stephen Leckar has 30 minutes to represent Jones, and he tries to advance a second argument in this case: The very act of installing the GPS device on a private vehicle constitutes a trespass.",
+    "example_cn": "琼斯的律师斯蒂文·莱卡有30分钟时间替琼斯辩护，他又提出了一个新论点：警方在琼斯私人汽车上装跟踪器的做法本身构成“非法入侵”。"
+  },
+  {
+    "word": "enzyme",
+    "phonetic": "'enzaɪm",
+    "meaning": "酶",
+    "example": "It is believed that it inhibits an enzyme that promotes cell proliferation in tumours.",
+    "example_cn": "据信它能抑制一种能在肿瘤中促进细胞增殖的酶的生成。"
+  },
+  {
+    "word": "smuggle",
+    "phonetic": "'smʌg(ə)l",
+    "meaning": "走私，私运",
+    "example": "My message is \"If you try to smuggle drugs you are stupid.\"",
+    "example_cn": "我的讯息是，“你若企图走私毒品，那是犯傻。”"
+  },
+  {
+    "word": "petition",
+    "phonetic": "pɪ'tɪʃ(ə)n",
+    "meaning": "祈求，请求；请愿，请求书",
+    "example": "Local residents have drawn up a petition to protest the hospital closure.",
+    "example_cn": "当地居民已草拟了一份请愿书，抗议关闭医院。"
+  },
+  {
+    "word": "tract",
+    "phonetic": "trækt",
+    "meaning": "地带；系统",
+    "example": "Fossils can only tell us so much about the shape of the vocal tract because much of it is soft tissue.",
+    "example_cn": "因为发音系统大部分是软组织，无缘变成化石，现存的化石也只能告诉我们一点呼吸道的形状。"
+  },
+  {
+    "word": "falter",
+    "phonetic": "'fɔːltə; 'fɒl-",
+    "meaning": "蹒跚；声音发抖；支吾",
+    "example": "Laurie’s voice faltered as she tried to thank him.",
+    "example_cn": "劳丽想谢谢他，却说得结结巴巴的。"
+  },
+  {
+    "word": "marine",
+    "phonetic": "mə'riːn",
+    "meaning": "海的，海运的",
+    "example": "the enormous variety of marine life",
+    "example_cn": "海洋生物繁多的种类"
+  },
+  {
+    "word": "fraction",
+    "phonetic": "'frækʃ(ə)n",
+    "meaning": "小部分；片断；分数",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "multitude",
+    "phonetic": "'mʌltɪtjuːd",
+    "meaning": "大批，大群；众多",
+    "example": "I had never seen such a multitude of stars before.",
+    "example_cn": "我以前从未见过这么多的星星。"
+  },
+  {
+    "word": "plunder",
+    "phonetic": "'plʌndə",
+    "meaning": "抢劫，掠夺",
+    "example": "The rich provinces of Asia Minor were plundered by the invaders.",
+    "example_cn": "小亚细亚的富饶地区遭到侵略者的劫掠。"
+  },
+  {
+    "word": "activate",
+    "phonetic": "'æktɪveɪt",
+    "meaning": "使活动，触发",
+    "example": "Cooking fumes may activate the alarm.",
+    "example_cn": "烹调时的油烟可能会触发警报器。"
+  },
+  {
+    "word": "treatise",
+    "phonetic": "'triːtɪs; -ɪz",
+    "meaning": "专题论文",
+    "example": "...Locke's Treatise on Civil Government.",
+    "example_cn": "...洛克的《政府论》。"
+  },
+  {
+    "word": "contemplate",
+    "phonetic": "'kɒntempleɪt; -təm-",
+    "meaning": "仔细考虑；注视；打算；预计",
+    "example": "He had even contemplated suicide.",
+    "example_cn": "他甚至想过自杀。"
+  },
+  {
+    "word": "fibre",
+    "phonetic": "'faɪbə",
+    "meaning": "纤维，结构；质地，性格",
+    "example": "Fruit and vegetables are high in fibre content .",
+    "example_cn": "水果和蔬菜的纤维素含量很高。"
+  },
+  {
+    "word": "reel",
+    "phonetic": "riːl",
+    "meaning": "卷，轴；(胶片)一盘",
+    "example": "the final reel",
+    "example_cn": "影片结尾部分"
+  },
+  {
+    "word": "misfortune",
+    "phonetic": "mɪs'fɔːtʃuːn; -tʃ(ə)n",
+    "meaning": "不幸，灾祸",
+    "example": "It seems the banks always profit from farmers’ misfortunes.",
+    "example_cn": "银行似乎总是从农民的不幸中获益。"
+  },
+  {
+    "word": "delicious",
+    "phonetic": "dɪ'lɪʃəs",
+    "meaning": "美味的；可口的",
+    "example": "‘The meal was absolutely delicious,’ she said politely.",
+    "example_cn": "“这顿饭味道好极了。” 她礼貌地说道。"
+  },
+  {
+    "word": "certainty",
+    "phonetic": "'sɜːt(ə)ntɪ; -tɪn-",
+    "meaning": "必然的事，必然，确实，肯定",
+    "example": "The result is impossible to predict with any degree of certainty .",
+    "example_cn": "这一结果完全无法确切预测。"
+  },
+  {
+    "word": "expedient",
+    "phonetic": "ɪk'spiːdɪənt; ek-",
+    "meaning": "有用的，有利的",
+    "example": "This solution is politically expedient but may well cause long-term problems.",
+    "example_cn": "这种解决方法是政治上的权宜之计，但会引起长远的问题。"
+  },
+  {
+    "word": "throat",
+    "phonetic": "θrəʊt",
+    "meaning": "咽喉，嗓子",
+    "example": "The singer complained of a sore throat after Wednesday’s show.",
+    "example_cn": "星期三演出后，这位歌手说喉咙痛。"
+  },
+  {
+    "word": "disdain",
+    "phonetic": "dɪs'deɪn; -z-",
+    "meaning": "蔑视, 轻视 \"",
+    "example": "a look of complete disdain",
+    "example_cn": "极为鄙视的样子"
+  },
+  {
+    "word": "inferior",
+    "phonetic": "ɪn'fɪərɪə",
+    "meaning": "地位(能力)低的人",
+    "example": "It was a gentleman's duty always to be civil, even to his inferiors.",
+    "example_cn": "一个绅士的责任是一直保持彬彬有礼，即使是对比自己地位低的人。"
+  },
+  {
+    "word": "magnanimous",
+    "phonetic": "mæg'nænɪməs",
+    "meaning": "慷慨的，宽宏大量的",
+    "example": "a magnanimous gesture",
+    "example_cn": "宽宏大量的姿态"
+  },
+  {
+    "word": "abortion",
+    "phonetic": "ə'bɔːʃ(ə)n",
+    "meaning": "流产；(计划)失败",
+    "example": "She decided to have an abortion .",
+    "example_cn": "她决定做人工流产。"
+  },
+  {
+    "word": "commentary",
+    "phonetic": "'kɒmənt(ə)rɪ",
+    "meaning": "集注；评论",
+    "example": "political commentary",
+    "example_cn": "政论"
+  },
+  {
+    "word": "plankton",
+    "phonetic": "'plæŋ(k)t(ə)n; -tɒn",
+    "meaning": "浮游生物",
+    "example": "...its usual diet of plankton and other small organisms.",
+    "example_cn": "...它通常赖以为食的浮游生物和其他微生物。"
+  },
+  {
+    "word": "succession",
+    "phonetic": "sək'seʃ(ə)n",
+    "meaning": "连续；继续；一连串；继承权",
+    "example": "She won the championship four times in succession.",
+    "example_cn": "她连续四次夺得冠军。"
+  },
+  {
+    "word": "compile",
+    "phonetic": "kəm'paɪl",
+    "meaning": "编辑，编写",
+    "example": "The document was compiled by the Department of Health.",
+    "example_cn": "这份文件是由卫生部汇编的。"
+  },
+  {
+    "word": "dimension",
+    "phonetic": "dɪ'menʃ(ə)n; daɪ-",
+    "meaning": "尺寸，尺度，大小",
+    "example": "a rectangle with the dimensions 5cm × 2cm",
+    "example_cn": "长五厘米、宽两厘米的长方形"
+  },
+  {
+    "word": "traction",
+    "phonetic": "'trækʃ(ə)n",
+    "meaning": "拖，牵，牵引力",
+    "example": "This process gives your vehicle the best chance of holding traction on the steep hill, because both the gearbox and the brakes are locking you in place.",
+    "example_cn": "以上一系列操作会让你的车子尽可能在陡坡上保持住牵引力，因为此时变速箱和制动器都起到了锁定车辆的作用。"
+  },
+  {
+    "word": "reverent",
+    "phonetic": "'rev(ə)r(ə)nt",
+    "meaning": "恭敬的，虔诚的",
+    "example": "a hushed reverent voice",
+    "example_cn": "毕恭毕敬的低语声"
+  },
+  {
+    "word": "stubborn",
+    "phonetic": "'stʌbən",
+    "meaning": "顽固的，坚定的",
+    "example": "Why are you so stubborn?",
+    "example_cn": "你怎么这么固执？"
+  },
+  {
+    "word": "cemetery",
+    "phonetic": "",
+    "meaning": "公墓，墓地",
+    "example": "Her father was laid in a cemetery.",
+    "example_cn": "她父亲安葬在一处公墓。"
+  },
+  {
+    "word": "classic",
+    "phonetic": "'klæsɪk",
+    "meaning": "第一流的，最优秀的；传统的",
+    "example": "Roy scored a classic goal in the 90th minute.",
+    "example_cn": "罗伊在第90分钟时踢进了漂亮的一球。"
+  },
+  {
+    "word": "melancholy",
+    "phonetic": "'melənkəlɪ",
+    "meaning": "忧郁，悲哀",
+    "example": "He sank into deep melancholy.",
+    "example_cn": "他陷入深深的忧郁之中。"
+  },
+  {
+    "word": "ultimately",
+    "phonetic": "'ʌltɪmətlɪ",
+    "meaning": "最后，最终",
+    "example": "Ultimately, the decision rests with the child’s parents.",
+    "example_cn": "最终，决定权在这孩子的父母手中。"
+  },
+  {
+    "word": "laborious",
+    "phonetic": "lə'bɔːrɪəs",
+    "meaning": "吃力的，努力的，不流畅",
+    "example": "the laborious business of drying the crops",
+    "example_cn": "把收获的庄稼晒干这一艰苦的工作"
+  },
+  {
+    "word": "notion",
+    "phonetic": "'nəʊʃ(ə)n",
+    "meaning": "概念，观念",
+    "example": "She had no notion what he meant.",
+    "example_cn": "她根本不明白他是什么意思。"
+  },
+  {
+    "word": "ensemble",
+    "phonetic": "ɒn'sɒmb(ə)l",
+    "meaning": "全体；演唱组",
+    "example": "...an ensemble of young musicians.",
+    "example_cn": "…一个由年轻音乐家组成的乐团。"
+  },
+  {
+    "word": "adapt",
+    "phonetic": "ə'dæpt",
+    "meaning": "使适应，改编",
+    "example": "The ability to adapt is a definite asset in this job.",
+    "example_cn": "适应能力是做这份工作的绝对有利条件。"
+  },
+  {
+    "word": "maltreat",
+    "phonetic": "mæl'triːt",
+    "meaning": "虐待",
+    "example": "The hostages said they were hungry but had not been maltreated.",
+    "example_cn": "人质说他们挨了饿，但没有受到虐待。"
+  },
+  {
+    "word": "fidelity",
+    "phonetic": "fɪ'delɪtɪ",
+    "meaning": "忠诚，忠实; 精确",
+    "example": "the importance of marital fidelity",
+    "example_cn": "对婚姻忠贞的重要性"
+  },
+  {
+    "word": "nap",
+    "phonetic": "næp",
+    "meaning": "小睡，打盹",
+    "example": "an afternoon nap",
+    "example_cn": "午睡"
+  },
+  {
+    "word": "foam",
+    "phonetic": "fəʊm",
+    "meaning": "泡沫",
+    "example": "a foam mattress",
+    "example_cn": "海绵橡胶床垫"
+  },
+  {
+    "word": "sculpture",
+    "phonetic": "'skʌlptʃə",
+    "meaning": "雕塑；雕刻",
+    "example": "...stone sculptures of figures and animals.",
+    "example_cn": "…人物及动物石雕。"
+  },
+  {
+    "word": "charm",
+    "phonetic": "tʃɑːm",
+    "meaning": "吸引力，可爱之处，迷人；行魔法",
+    "example": "Joe’s boyish charm",
+    "example_cn": "乔身上的稚趣"
+  },
+  {
+    "word": "accuse",
+    "phonetic": "ə'kjuːz",
+    "meaning": "控告",
+    "example": "The professor stands accused of (=  has been accused of  ) stealing his student’s ideas and publishing them.",
+    "example_cn": "那位教授被指控剽窃学生的观点拿去发表。"
+  },
+  {
+    "word": "ratio",
+    "phonetic": "'reɪʃɪəʊ",
+    "meaning": "比率",
+    "example": "The ratio between the two sides is one to four.",
+    "example_cn": "双方人数对比是一对四。"
+  },
+  {
+    "word": "cement",
+    "phonetic": "sɪ'ment",
+    "meaning": "水泥；结合剂",
+    "example": "a bag of cement",
+    "example_cn": "一袋水泥"
+  },
+  {
+    "word": "cure",
+    "phonetic": "kjʊə; kjɔː",
+    "meaning": "治愈；加工处理",
+    "example": "Many types of cancer can now be cured.",
+    "example_cn": "现在许多癌症都可以治好。"
+  },
+  {
+    "word": "upbringing",
+    "phonetic": "'ʌpbrɪŋɪŋ",
+    "meaning": "抚育，抚养；教养",
+    "example": "Mike had had a strict upbringing.",
+    "example_cn": "迈克从小家教很严。"
+  },
+  {
+    "word": "agreement",
+    "phonetic": "ə'griːm(ə)nt",
+    "meaning": "同意；协议",
+    "example": "Please read the agreement and sign it.",
+    "example_cn": "请阅读协议书并签字。"
+  },
+  {
+    "word": "unify",
+    "phonetic": "'juːnɪfaɪ",
+    "meaning": "使联合，统一，使相同，一致",
+    "example": "Strong support for the war has unified the nation.",
+    "example_cn": "对战争的坚决支持使这个国家团结了起来。"
+  },
+  {
+    "word": "maintenance",
+    "phonetic": "'meɪnt(ə)nəns; -tɪn-",
+    "meaning": "维持，抚养；生活费",
+    "example": "the cost of repairs and maintenance",
+    "example_cn": "维修保养费"
+  },
+  {
+    "word": "mischief",
+    "phonetic": "'mɪstʃɪf",
+    "meaning": "伤害，损害",
+    "example": "If you try to lift that box, you’ll do yourself a mischief.",
+    "example_cn": "你要是想搬那个箱子，会伤着自己的。"
+  },
+  {
+    "word": "centenary",
+    "phonetic": "sen'tiːnərɪ; -'ten-",
+    "meaning": "百年的；百年纪念",
+    "example": "Some say he was alluding to the centenary of the Fabian Society, founded in 1884.",
+    "example_cn": "有些人说他是暗示1884年成立的费边社成立一百年。"
+  },
+  {
+    "word": "twilight",
+    "phonetic": "'twaɪlaɪt",
+    "meaning": "黎明，黄昏；曙光",
+    "example": "They returned at twilight.",
+    "example_cn": "他们在黄昏时返回。"
+  },
+  {
+    "word": "accommodation",
+    "phonetic": "əkɒmə'deɪʃ(ə)n",
+    "meaning": "住宿",
+    "example": "The price for the holiday includes flights and accommodation.",
+    "example_cn": "度假的价格包括机票和住宿。"
+  },
+  {
+    "word": "intimate",
+    "phonetic": "'ɪntɪmət",
+    "meaning": "亲密的，私人的，秘密的，精湛的",
+    "example": "an intimate friend of Picasso’s",
+    "example_cn": "毕加索的一个密友"
+  },
+  {
+    "word": "inject",
+    "phonetic": "ɪn'dʒekt",
+    "meaning": "注射；注入，灌入",
+    "example": "His son was injected with strong drugs.",
+    "example_cn": "他的儿子被注射了强效的药。"
+  },
+  {
+    "word": "heir",
+    "phonetic": "eə",
+    "meaning": "继承人",
+    "example": "Jonson was his political heir as leader of the party.",
+    "example_cn": "琼森是他的政治接班人，他将担任该党派的领袖。"
+  },
+  {
+    "word": "postgraduate",
+    "phonetic": "pəʊs(t)'grædjʊət",
+    "meaning": "大学毕业后的，研究院的",
+    "example": "postgraduate degrees",
+    "example_cn": "研究生学位"
+  },
+  {
+    "word": "engrave",
+    "phonetic": "ɪn'greɪv; en-",
+    "meaning": "刻上；铭记",
+    "example": "Your wedding ring can be engraved with a personal inscription at no extra cost.",
+    "example_cn": "你的结婚戒指可以刻上个人题字不另收费。"
+  },
+  {
+    "word": "festival",
+    "phonetic": "'festɪv(ə)l",
+    "meaning": "节日(的)，表演会期(的)",
+    "example": "Christmas is one of the main festivals in the Christian Calendar.",
+    "example_cn": "圣诞节是基督教历的重大节日之一。"
+  },
+  {
+    "word": "mishap",
+    "phonetic": "'mɪshæp",
+    "meaning": "不幸的事，不幸；灾祸",
+    "example": "I had a slight mishap with one of the glasses.",
+    "example_cn": "我犯了一个小小的错误，把其中的一个玻璃杯打破了。"
+  },
+  {
+    "word": "characteristic",
+    "phonetic": "kærəktə'rɪstɪk",
+    "meaning": "特有的，表示特征的；特性",
+    "example": "Genes determine the characteristics of every living thing.",
+    "example_cn": "基因决定每个生物的特征。"
+  },
+  {
+    "word": "on",
+    "phonetic": "ɒn",
+    "meaning": "在上",
+    "example": "I wanted to punch him on the nose.",
+    "example_cn": "我真想一拳打到他鼻子上。"
+  },
+  {
+    "word": "numerate",
+    "phonetic": "'njuːm(ə)rət",
+    "meaning": "数学基础好的",
+    "example": "Where children respect a parent and know that he or she demands good behavior in school, even mediocre or loutish teachers can pull off the trick④of producing modestly literate and numerate children.",
+    "example_cn": "如果孩子尊重父母，并且知道父母要求自己好好上学，即便是平庸的或是很笨的老师也能够成功地教出一般水平的能读会算的小学生。"
+  },
+  {
+    "word": "ridge",
+    "phonetic": "rɪdʒ",
+    "meaning": "山脊，脊，岭",
+    "example": "We made our way carefully along the ridge.",
+    "example_cn": "我们沿着山脊小心前行。"
+  },
+  {
+    "word": "threshold",
+    "phonetic": "'θreʃəʊld; 'θreʃ,həʊld",
+    "meaning": "门槛；开始；开端，入门",
+    "example": "She opened the door and stepped across the threshold.",
+    "example_cn": "她打开门，跨过门槛。"
+  },
+  {
+    "word": "profit",
+    "phonetic": "'prɒfɪt",
+    "meaning": "利益；利润",
+    "example": "The shop’s daily profit is usually around $500.",
+    "example_cn": "这家商店每天的利润一般在500美元左右。"
+  },
+  {
+    "word": "premise",
+    "phonetic": "'premɪs",
+    "meaning": "前提；房屋",
+    "example": "Schools may earn extra money by renting out their premises.",
+    "example_cn": "学校通过出租房屋场地可以获取额外收入。"
+  },
+  {
+    "word": "seam",
+    "phonetic": "siːm",
+    "meaning": "线缝，接缝",
+    "example": "She was repairing Billy’s trousers, where the seam had come undone.",
+    "example_cn": "她在补比利裤子的开线处。"
+  },
+  {
+    "word": "paraphrase",
+    "phonetic": "'pærəfreɪz",
+    "meaning": "释文，意译",
+    "example": "To paraphrase Finkelstein, mathematics is a language, like English.",
+    "example_cn": "芬克尔斯坦的意思是，数学是一门语言，就像英语一样。"
+  },
+  {
+    "word": "underestimate",
+    "phonetic": "ʌndər'estɪmeɪt",
+    "meaning": "低估",
+    "example": "None of us should ever underestimate the degree of difficulty women face in career advancement.",
+    "example_cn": "我们谁都不应低估妇女在职业发展中所面临的困难程度。"
+  },
+  {
+    "word": "automobile",
+    "phonetic": "'ɔːtəməbiːl",
+    "meaning": "汽车",
+    "example": "the automobile industry",
+    "example_cn": "汽车工业"
+  },
+  {
+    "word": "square",
+    "phonetic": "skweə",
+    "meaning": "正方形的；直角的",
+    "example": "a large square room",
+    "example_cn": "一个正方形的大房间"
+  },
+  {
+    "word": "manuscript",
+    "phonetic": "'mænjʊskrɪpt",
+    "meaning": "手稿，原稿",
+    "example": "Unfortunately, parts of the original manuscript have been lost.",
+    "example_cn": "遗憾的是，部分原始手稿丢失了。"
+  },
+  {
+    "word": "gravity",
+    "phonetic": "'grævɪtɪ",
+    "meaning": "地球引力；重量；严重性",
+    "example": "the force of gravity",
+    "example_cn": "重力"
+  },
+  {
+    "word": "condition",
+    "phonetic": "kən'dɪʃ(ə)n",
+    "meaning": "条件，状况，环境",
+    "example": "Conditions in the prison were atrocious.",
+    "example_cn": "这座监狱的条件糟透了。"
+  },
+  {
+    "word": "specialize",
+    "phonetic": "'speʃəlaiz",
+    "meaning": "专门研究",
+    "example": "\"You must specialize, \" he says.",
+    "example_cn": "“你必须做到专门化。” 他说。"
+  },
+  {
+    "word": "undermine",
+    "phonetic": "ʌndə'maɪn",
+    "meaning": "(暗中)破坏；(逐渐)削弱",
+    "example": "economic policies that threaten to undermine the health care system",
+    "example_cn": "可能会损害医疗保健制度的经济政策"
+  },
+  {
+    "word": "motif",
+    "phonetic": "məʊ'tiːf",
+    "meaning": "主题，基本花纹",
+    "example": "The theme of creation is a recurrent motif in Celtic mythology.",
+    "example_cn": "天地万物的创造是凯尔特神话中反复出现的主题。"
+  },
+  {
+    "word": "fatuous",
+    "phonetic": "'fætjʊəs",
+    "meaning": "愚昧的；蠢的",
+    "example": "fatuous questions",
+    "example_cn": "愚昧的问题"
+  },
+  {
+    "word": "underwrite",
+    "phonetic": "ʌndə'raɪt; 'ʌndəraɪt",
+    "meaning": "给保险；同意赔款(海上保险)",
+    "example": "The government has agreed to underwrite the project with a grant of £5 million.",
+    "example_cn": "政府同意拨款 500 万英镑资助该项目。"
+  },
+  {
+    "word": "dairy",
+    "phonetic": "'deərɪ",
+    "meaning": "牛奶及乳品店，牛奶场",
+    "example": "In my childhood, local dairies bought milk from local farmers.",
+    "example_cn": "在我小时候，本地的乳品公司向当地农场主收购牛奶。"
+  },
+  {
+    "word": "conquest",
+    "phonetic": "'kɒŋkwest",
+    "meaning": "征服，征服地，掠取物",
+    "example": "the Norman Conquest (= the conquest of England by the Normans )",
+    "example_cn": "诺曼征服"
+  },
+  {
+    "word": "drown",
+    "phonetic": "draʊn",
+    "meaning": "淹死，(高声音)遮掩(低声音)",
+    "example": "Many people drowned when the boat overturned.",
+    "example_cn": "船翻后许多人淹死了。"
+  },
+  {
+    "word": "pseudonym",
+    "phonetic": "'sjuːdənɪm",
+    "meaning": "假名；笔名",
+    "example": "Both plays were published under the pseudonym of Philip Dayre.",
+    "example_cn": "两个剧本都是以菲利普·戴尔的笔名发表的。"
+  },
+  {
+    "word": "coordinate",
+    "phonetic": "kəʊ'ɔ:dɪneɪt",
+    "meaning": "使协调",
+    "example": "The agencies are working together to co-ordinate policy on food safety.",
+    "example_cn": "这些机构在共同合作为食品安全政策做协调工作。"
+  },
+  {
+    "word": "designate",
+    "phonetic": "'dezɪgneɪt",
+    "meaning": "把定名为，指派，标出",
+    "example": "Buildings are designated by red squares on the map.",
+    "example_cn": "在地图上建筑物用红色方块标明。"
+  },
+  {
+    "word": "athlete",
+    "phonetic": "'æθliːt",
+    "meaning": "运动员；体育家",
+    "example": "a professional athlete",
+    "example_cn": "一位专业运动员"
+  },
+  {
+    "word": "underline",
+    "phonetic": "ʌndə'laɪn",
+    "meaning": "划线于之下，强调",
+    "example": "This tragic incident underlines the need for immediate action.",
+    "example_cn": "这一悲剧事件突显了立即采取行动的必要性。"
+  },
+  {
+    "word": "loath",
+    "phonetic": "ləʊθ",
+    "meaning": "不愿意的",
+    "example": "Sarah was loath to tell her mother what had happened.",
+    "example_cn": "萨拉不愿意告诉母亲所发生的事。"
+  },
+  {
+    "word": "meddle",
+    "phonetic": "'med(ə)l",
+    "meaning": "干涉(预)",
+    "example": "He accused the US of meddling in China’s internal affairs .",
+    "example_cn": "他指责美国干涉中国内政。"
+  },
+  {
+    "word": "myth",
+    "phonetic": "mɪθ",
+    "meaning": "神话，传说；虚构的人或物",
+    "example": "a book of Greek myths",
+    "example_cn": "一本关于希腊神话的图书"
+  },
+  {
+    "word": "coil",
+    "phonetic": "kɒɪl",
+    "meaning": "一卷；一圈",
+    "example": "the coil in a light bulb",
+    "example_cn": "灯丝"
+  },
+  {
+    "word": "enthusiasm",
+    "phonetic": "ɪn'θjuːzɪæz(ə)m; en-",
+    "meaning": "娱乐，招待，表演",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "guild",
+    "phonetic": "gɪld",
+    "meaning": "行会；同业公会",
+    "example": "the Women’s Guild",
+    "example_cn": "妇女协会"
+  },
+  {
+    "word": "excerpt",
+    "phonetic": "'eksɜːpt",
+    "meaning": "摘录，节录",
+    "example": "...an excerpt from Tchaikovsky's Nutcracker.",
+    "example_cn": "…柴可夫斯基的《胡桃夹子》选段。"
+  },
+  {
+    "word": "jolt",
+    "phonetic": "dʒəʊlt; dʒɒlt",
+    "meaning": "颠簸，颠簸而行",
+    "example": "We jolted along rough wet roads through an endless banana plantation.",
+    "example_cn": "我们沿崎岖潮湿的公路颠簸着驶过无边无际的香蕉种植园。"
+  },
+  {
+    "word": "nobility",
+    "phonetic": "nə(ʊ)'bɪlɪtɪ",
+    "meaning": "高贵，高尚；贵族",
+    "example": "the nobility of his intentions",
+    "example_cn": "他崇高的志向"
+  },
+  {
+    "word": "novelty",
+    "phonetic": "'nɒv(ə)ltɪ",
+    "meaning": "新颖；新奇；新奇的事物",
+    "example": "Many toys have no attraction beyond their novelty value.",
+    "example_cn": "许多玩具除了有些新奇感之外，别无吸引力。"
+  },
+  {
+    "word": "garment",
+    "phonetic": "'gɑːm(ə)nt",
+    "meaning": "(一件)衣服(长袍、外套)",
+    "example": "She pulled the garment on and zipped it up.",
+    "example_cn": "她穿上衣服并拉好拉链。"
+  },
+  {
+    "word": "obedient",
+    "phonetic": "ə'biːdɪənt",
+    "meaning": "服从的，顺从的",
+    "example": "an obedient child",
+    "example_cn": "听话的孩子"
+  },
+  {
+    "word": "drill",
+    "phonetic": "drɪl",
+    "meaning": "钻，钻头，操练，练习",
+    "example": "an electric drill",
+    "example_cn": "电钻"
+  },
+  {
+    "word": "dodge",
+    "phonetic": "dɒdʒ",
+    "meaning": "躲闪，躲开",
+    "example": "He ran across the courtyard, dodging a storm of bullets.",
+    "example_cn": "他跑过院子，躲避雨点般的子弹。"
+  },
+  {
+    "word": "gymnasium",
+    "phonetic": "dʒɪm'neɪzɪəm",
+    "meaning": "体育馆",
+    "example": "The next day, the arsonist was arrested at a gymnasium.",
+    "example_cn": "第二天，纵火犯在一家体育馆被逮捕了。"
+  },
+  {
+    "word": "part",
+    "phonetic": "pɑːt",
+    "meaning": "部分；地区；职责",
+    "example": "For part of the day, you will be outside doing practical work.",
+    "example_cn": "你们每天将有一部分时间在户外实际操作。"
+  },
+  {
+    "word": "deflate",
+    "phonetic": "dɪ'fleɪt",
+    "meaning": "使(轮胎)瘪下去 降低重要性",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "clasp",
+    "phonetic": "klɑːsp",
+    "meaning": "扣子；紧握；拥抱",
+    "example": "the firm clasp of her hand",
+    "example_cn": "她有力的握手"
+  },
+  {
+    "word": "drench",
+    "phonetic": "dren(t)ʃ",
+    "meaning": "使淋透，使湿透",
+    "example": "In the early morning they had got drenched in the grass.",
+    "example_cn": "一大清早他们在草丛里弄得浑身湿透。"
+  },
+  {
+    "word": "ecology",
+    "phonetic": "ɪ'kɒlədʒɪ; e-",
+    "meaning": "生态学",
+    "example": "the natural ecology of the Earth",
+    "example_cn": "地球的自然生态"
+  },
+  {
+    "word": "guardian",
+    "phonetic": "'gɑːdɪən",
+    "meaning": "监护人; 保护人",
+    "example": "Destiny's legal guardian was her grandmother.",
+    "example_cn": "德斯蒂妮的法定监护人是她的祖母。"
+  },
+  {
+    "word": "pit",
+    "phonetic": "pɪt",
+    "meaning": "坑，凹部；修理部",
+    "example": "an inspection pit",
+    "example_cn": "汽车检修坑"
+  },
+  {
+    "word": "conflict",
+    "phonetic": "'kɒnflɪkt",
+    "meaning": "战斗；斗争；意见(分歧)",
+    "example": "efforts to resolve the conflict",
+    "example_cn": "解决武装冲突的努力"
+  },
+  {
+    "word": "sympathetic",
+    "phonetic": "sɪmpə'θetɪk",
+    "meaning": "同情的，有同情心的",
+    "example": "a sympathetic friend",
+    "example_cn": "一个有同情心的朋友"
+  },
+  {
+    "word": "objective",
+    "phonetic": "əb'dʒektɪv",
+    "meaning": "客观的；真实的",
+    "example": "Scientists need to be objective when doing research.",
+    "example_cn": "科学家做研究时要客观。"
+  },
+  {
+    "word": "electrical",
+    "phonetic": "ɪ'lektrɪk(ə)l",
+    "meaning": "电的，电气科学的",
+    "example": "The fire was caused by an electrical fault.",
+    "example_cn": "大火是电力故障引起的。"
+  },
+  {
+    "word": "turbulent",
+    "phonetic": "'tɜːbjʊl(ə)nt",
+    "meaning": "狂暴的，骚乱的，汹涌的",
+    "example": "the turbulent times of the French Revolution",
+    "example_cn": "法国大革命的动荡时期"
+  },
+  {
+    "word": "invade",
+    "phonetic": "ɪn'veɪd",
+    "meaning": "侵略；侵犯，蜂拥而至",
+    "example": "The Romans invaded Britain 2,000 years ago.",
+    "example_cn": "2,000年前古罗马人入侵了英国。"
+  },
+  {
+    "word": "permanent",
+    "phonetic": "'pɜːm(ə)nənt",
+    "meaning": "永久性的，持久的",
+    "example": "He gave up a permanent job in order to freelance.",
+    "example_cn": "他放弃了固定工作，为的是当一名自由职业者。"
+  },
+  {
+    "word": "fundamental",
+    "phonetic": "fʌndə'ment(ə)l",
+    "meaning": "基础的；十分重要的",
+    "example": "We have to tackle the fundamental cause of the problem.",
+    "example_cn": "我们必须解决问题的根本原因。"
+  },
+  {
+    "word": "receipt",
+    "phonetic": "rɪ'siːt",
+    "meaning": "收到；收据",
+    "example": "Keep your receipt in case you want to bring it back.",
+    "example_cn": "保留收据以备退货之需。"
+  },
+  {
+    "word": "profuse",
+    "phonetic": "prə'fjuːs",
+    "meaning": "极其丰富的；很多的；大量的",
+    "example": "He made profuse apologies .",
+    "example_cn": "他不住地道歉。"
+  },
+  {
+    "word": "extort",
+    "phonetic": "ɪk'stɔːt; ek-",
+    "meaning": "强取，勒索",
+    "example": "Corrupt government officials were extorting money from him.",
+    "example_cn": "腐败的政府官员那时正向他勒索钱财。"
+  },
+  {
+    "word": "spacious",
+    "phonetic": "'speɪʃəs",
+    "meaning": "广阔的，宽敞的",
+    "example": "a spacious living area",
+    "example_cn": "宽敞的居住空间"
+  },
+  {
+    "word": "velocity",
+    "phonetic": "vəˈlɒsəti",
+    "meaning": "速度，速率",
+    "example": "the velocity of light",
+    "example_cn": "光速"
+  },
+  {
+    "word": "checkup",
+    "phonetic": "'tʃekʌp",
+    "meaning": "检查，体格检查",
+    "example": "It’s important to have regular checkups .",
+    "example_cn": "定期做体检是很重要的。"
+  },
+  {
+    "word": "landscape",
+    "phonetic": "'læn(d)skeɪp",
+    "meaning": "风景，景色，风景画",
+    "example": "the beauty of the New England landscape",
+    "example_cn": "新英格兰风光之美"
+  },
+  {
+    "word": "convene",
+    "phonetic": "kən'viːn",
+    "meaning": "召集，召唤，集合",
+    "example": "a report by experts convened by the National Institutes of Health",
+    "example_cn": "由全国健康协会召集的专家提出的一份报告"
+  },
+  {
+    "word": "cork",
+    "phonetic": "kɔːk",
+    "meaning": "软木",
+    "example": "a cork bulletin board",
+    "example_cn": "软木公告板"
+  },
+  {
+    "word": "increment",
+    "phonetic": "'ɪŋkrɪm(ə)nt",
+    "meaning": "增值，增额",
+    "example": "Any time you want to add another test, just add another row to your datapool and increment the counter value in the loop.",
+    "example_cn": "在您想要增加另一个测试时，只要向您的数据池中增加另一行，并在循环中增加计数器的值。"
+  },
+  {
+    "word": "host",
+    "phonetic": "həʊst",
+    "meaning": "主人; 许多，一大群，旅店老板",
+    "example": "Our host greeted us at the door.",
+    "example_cn": "主人在门口迎接我们。"
+  },
+  {
+    "word": "suspense",
+    "phonetic": "sə'spens",
+    "meaning": "(新闻、决定)不确定，悬而未决",
+    "example": "The suspense over the two remaining hostages ended last night when the police discovered the bullet ridden bodies.",
+    "example_cn": "有关剩下两名人质的悬念在昨晚警方发现布满弹孔的尸体后结束了。"
+  },
+  {
+    "word": "infringe",
+    "phonetic": "ɪn'frɪn(d)ʒ",
+    "meaning": "触犯；违反，侵害",
+    "example": "A backup copy of a computer program does not infringe copyright.",
+    "example_cn": "计算机程序的备份不侵犯版权。"
+  },
+  {
+    "word": "discern",
+    "phonetic": "dɪ'sɜːn",
+    "meaning": "看出，辨出",
+    "example": "We could just discern a town in the distance.",
+    "example_cn": "我们依稀看到远处有一座城镇。"
+  },
+  {
+    "word": "shimmer",
+    "phonetic": "'ʃɪmə",
+    "meaning": "发微光，发闪光；微光",
+    "example": "The lake shimmered in the moonlight.",
+    "example_cn": "月色下，湖面波光粼粼。"
+  },
+  {
+    "word": "medal",
+    "phonetic": "'med(ə)l",
+    "meaning": "奖章；纪念章",
+    "example": "She won a gold medal at the last Olympics.",
+    "example_cn": "她在上届奥运会上赢得一枚金牌。"
+  },
+  {
+    "word": "negation",
+    "phonetic": "nɪ'geɪʃ(ə)n",
+    "meaning": "否定；否认",
+    "example": "Much of what passes for Christianity is a negation of Christ’s teachings.",
+    "example_cn": "许多被认为是基督教的东西，和基督的教诲是相悖的。"
+  },
+  {
+    "word": "venture",
+    "phonetic": "'ventʃə",
+    "meaning": "冒险，冒险事业",
+    "example": "...a Russian-American joint venture.",
+    "example_cn": "…一个俄美合资的风险项目。"
+  },
+  {
+    "word": "fantastic",
+    "phonetic": "fæn'tæstɪk",
+    "meaning": "奇异的；荒谬的，极好的",
+    "example": "You look fantastic!",
+    "example_cn": "你看上去棒极了！"
+  },
+  {
+    "word": "line",
+    "phonetic": "laɪn",
+    "meaning": "线；皱纹；外形；行列",
+    "example": "Draw a straight line across the top of the page.",
+    "example_cn": "在这一页的上方画一条直线。"
+  },
+  {
+    "word": "suspend",
+    "phonetic": "sə'spend",
+    "meaning": "吊，悬挂，悬浮；暂停",
+    "example": "Sales of the drug will be suspended until more tests are completed.",
+    "example_cn": "这种药品在完成进一步检验之前将暂停销售。"
+  },
+  {
+    "word": "faint",
+    "phonetic": "feɪnt",
+    "meaning": "微弱的，不清楚的",
+    "example": "She gave a faint smile.",
+    "example_cn": "她淡淡一笑。"
+  },
+  {
+    "word": "due",
+    "phonetic": "djuː",
+    "meaning": "应支付的，正当的，预定应到的(to)，由于",
+    "example": "Any money due you will be sent by cheque through the post.",
+    "example_cn": "应该支付给你的款项将会以支票邮寄给你。"
+  },
+  {
+    "word": "reticent",
+    "phonetic": "'retɪs(ə)nt",
+    "meaning": "沉默寡言的；言不如意的",
+    "example": "She is so reticent about her achievements.",
+    "example_cn": "她对于自己的成就如此缄默。"
+  },
+  {
+    "word": "deduce",
+    "phonetic": "dɪ'djuːs",
+    "meaning": "演绎，推论",
+    "example": "Alison cleverly deduced that I was the author of the letter.",
+    "example_cn": "艾莉森聪明地推断出我是这封信的作者。"
+  },
+  {
+    "word": "renovation",
+    "phonetic": ",renə'veɪʃn",
+    "meaning": "修理，恢复",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "recite",
+    "phonetic": "rɪ'saɪt",
+    "meaning": "背诵，列举",
+    "example": "She recited a poem that she had learnt at school.",
+    "example_cn": "她背诵了一首学校里学的诗。"
+  },
+  {
+    "word": "dubious",
+    "phonetic": "'djuːbɪəs",
+    "meaning": "半信半疑的",
+    "example": "My parents were a bit dubious about it all at first but we soon convinced them.",
+    "example_cn": "起初我父母亲对此尚心存疑虑，但很快我们便说服了他们。"
+  },
+  {
+    "word": "invalid",
+    "phonetic": "ˈɪnvəlɪd；ɪnˈvælɪd",
+    "meaning": "无效的，作废的",
+    "example": "Without the right date stamped on it, your ticket will be invalid.",
+    "example_cn": "票上若没有加盖正确日期就是废票。"
+  },
+  {
+    "word": "exuberant",
+    "phonetic": "ɪg'z(j)uːb(ə)r(ə)nt; eg-",
+    "meaning": "茂盛的，精力充沛的",
+    "example": "So the exuberant young girl with dark hair and blue eyes decided to become a screen actress.",
+    "example_cn": "因此，这个充满活力的年轻黑发碧眼女孩决定成为一名荧屏演员。"
+  },
+  {
+    "word": "autonomy",
+    "phonetic": "ɔː'tɒnəmɪ",
+    "meaning": "自治，自治权",
+    "example": "campaigners who want greater autonomy for Corsica",
+    "example_cn": "希望科西嘉有更多自治权的活动家"
+  },
+  {
+    "word": "damp",
+    "phonetic": "dæmp",
+    "meaning": "潮湿(的)，湿气，使潮湿",
+    "example": "Damp had stained the walls.",
+    "example_cn": "墙上留下了潮湿的痕迹。"
+  },
+  {
+    "word": "aspire",
+    "phonetic": "ə'spaɪə",
+    "meaning": "渴望",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "transmission",
+    "phonetic": "trænz'mɪʃ(ə)n; trɑːnz-; -ns-",
+    "meaning": "传递，播送电视节目；汽车传动系统",
+    "example": "worldwide data transmission",
+    "example_cn": "全球数据传输"
+  },
+  {
+    "word": "toast",
+    "phonetic": "təʊst",
+    "meaning": "烤面包，烤火",
+    "example": "I had a piece of toast for breakfast.",
+    "example_cn": "我早饭吃了一片吐司。"
+  },
+  {
+    "word": "circus",
+    "phonetic": "'sɜːkəs",
+    "meaning": "马戏表演；广场",
+    "example": "Piccadilly Circus",
+    "example_cn": "皮卡迪利广场"
+  },
+  {
+    "word": "qualification",
+    "phonetic": ",kwɒlɪfɪ'keɪʃ(ə)n",
+    "meaning": "资格；条件；限制",
+    "example": "He left school without any qualifications.",
+    "example_cn": "他离校时没有拿到任何文凭。"
+  },
+  {
+    "word": "lounge",
+    "phonetic": "laʊn(d)ʒ",
+    "meaning": "懒洋洋地倚、躺；闲逛",
+    "example": "Nathan was lounging on the grass bank outside the cottage.",
+    "example_cn": "内森正懒洋洋地躺在小屋外的草堤上。"
+  },
+  {
+    "word": "dip",
+    "phonetic": "dɪp",
+    "meaning": "蘸湿；斜坡；短时间游泳",
+    "example": "Are you coming in for a dip?",
+    "example_cn": "你游一会儿吗？"
+  },
+  {
+    "word": "tenacious",
+    "phonetic": "tɪ'neɪʃəs",
+    "meaning": "抓紧的，顽强的",
+    "example": "a tenacious negotiator",
+    "example_cn": "锲而不舍的谈判者"
+  },
+  {
+    "word": "rub",
+    "phonetic": "rʌb",
+    "meaning": "摩擦",
+    "example": "You’ll have to rub harder if you want to get it clean.",
+    "example_cn": "如果你想把它弄干净，就得更使劲地擦。"
+  },
+  {
+    "word": "chasm",
+    "phonetic": "'kæz(ə)m",
+    "meaning": "断层，裂口；巨大分歧，差别",
+    "example": "a rope bridge across the chasm",
+    "example_cn": "峡谷上的索桥"
+  },
+  {
+    "word": "mind",
+    "phonetic": "maɪnd",
+    "meaning": "想法",
+    "example": "It is impossible to understand the complex nature of the human mind .",
+    "example_cn": "要想了解人类思维复杂的特性是不可能的。"
+  },
+  {
+    "word": "justify",
+    "phonetic": "'dʒʌstɪfaɪ",
+    "meaning": "证明是正当的或有理的，为辩护",
+    "example": "Ministers must appear before Parliament and justify their actions.",
+    "example_cn": "大臣们必须就自己的行为向议会作出解释。"
+  },
+  {
+    "word": "transfer",
+    "phonetic": "træns'fɜː; trɑːns-; -nz-",
+    "meaning": "转让；转业；调任",
+    "example": "Ideas that work well in one school often don’t transfer well to another.",
+    "example_cn": "在一所学校行得通的理念套用在另一所学校上往往行不通。"
+  },
+  {
+    "word": "physique",
+    "phonetic": "fɪ'ziːk",
+    "meaning": "体格，体魄",
+    "example": "She didn’t have the physique to be a dancer.",
+    "example_cn": "她没有当舞蹈演员的体形。"
+  },
+  {
+    "word": "technician",
+    "phonetic": "tek'nɪʃ(ə)n",
+    "meaning": "技术人员",
+    "example": "a laboratory technician",
+    "example_cn": "实验室技术人员"
+  },
+  {
+    "word": "protein",
+    "phonetic": "'prəʊtiːn",
+    "meaning": "蛋白质",
+    "example": "Where do you get your protein?",
+    "example_cn": "你从哪里获得蛋白质？"
+  },
+  {
+    "word": "ambiguous",
+    "phonetic": "æm'bɪgjʊəs",
+    "meaning": "有歧义的；暧昧的",
+    "example": "The language in the Minister’s statement is highly ambiguous.",
+    "example_cn": "部长的声明措辞很含糊。"
+  },
+  {
+    "word": "fascinate",
+    "phonetic": "'fæsɪneɪt",
+    "meaning": "使神魂颠倒，迷住",
+    "example": "The idea of travelling through time fascinates me.",
+    "example_cn": "穿越时光的想法深深吸引着我。"
+  },
+  {
+    "word": "gradual",
+    "phonetic": "'grædʒʊəl",
+    "meaning": "逐渐的，不陡的",
+    "example": "There has been a gradual change in climate.",
+    "example_cn": "气候渐渐发生了变化。"
+  },
+  {
+    "word": "recruit",
+    "phonetic": "rɪ'kruːt",
+    "meaning": "招募，吸收",
+    "example": "We’re having difficulty recruiting enough qualified staff.",
+    "example_cn": "我们难以招聘到足够的合格职员。"
+  },
+  {
+    "word": "convey",
+    "phonetic": "kən'veɪ",
+    "meaning": "传达；运送；转达",
+    "example": "All this information can be conveyed in a simple diagram.",
+    "example_cn": "所有这些信息可以通过一张简单的图表来表示。"
+  },
+  {
+    "word": "obligation",
+    "phonetic": "ɒblɪ'geɪʃ(ə)n",
+    "meaning": "义务，责任",
+    "example": "Employers have an obligation to treat all employees equally.",
+    "example_cn": "雇主有责任对所有员工一视同仁。"
+  },
+  {
+    "word": "testimony",
+    "phonetic": "'testɪmənɪ",
+    "meaning": "证据，证言",
+    "example": "Barker’s testimony is crucial to the prosecution’s case.",
+    "example_cn": "巴克的证词对控方的指控起到了关键作用。"
+  },
+  {
+    "word": "fragment",
+    "phonetic": "'frægm(ə)nt",
+    "meaning": "碎片，片断",
+    "example": "glass fragments",
+    "example_cn": "玻璃碎片"
+  },
+  {
+    "word": "moderate",
+    "phonetic": "'mɒd(ə)rət",
+    "meaning": "适度的",
+    "example": "Even moderate amounts of alcohol can be dangerous.",
+    "example_cn": "喝酒即使不多也会有危险。"
+  },
+  {
+    "word": "endeavor",
+    "phonetic": "ɪn'devə",
+    "meaning": "努力，力图",
+    "example": "She improved visibly from day to day, until Martin wondered if he was doing right, for he knew that all her compliance and endeavor was for his sake.",
+    "example_cn": "她一天比一天进步了，直到马丁怀疑起自己的做法是否得体。 因为他明白她的这一切迁就和努力都是为了他。"
+  },
+  {
+    "word": "sort",
+    "phonetic": "sɔːt",
+    "meaning": "种类",
+    "example": "Most of the victims developed psychological problems of one sort or another (= of various different types ) .",
+    "example_cn": "大多数受害者都出现了这样那样的心理问题。"
+  },
+  {
+    "word": "conceal",
+    "phonetic": "kən'siːl",
+    "meaning": "隐藏，隐蔽",
+    "example": "The shadows concealed her as she crept up to the house.",
+    "example_cn": "她借着阴影蹑手蹑脚地走向房子。"
+  },
+  {
+    "word": "mandate",
+    "phonetic": "'mændeɪt",
+    "meaning": "命令，训令；授权(选民对代表)",
+    "example": "Matters debated in meetings do not become a mandate automatically.",
+    "example_cn": "会议上讨论的事宜并不能自动成为一项指令。"
+  },
+  {
+    "word": "crumple",
+    "phonetic": "'krʌmp(ə)l",
+    "meaning": "把弄皱,",
+    "example": "She crumpled the paper in her hand.",
+    "example_cn": "她把手中的纸揉成了一团。"
+  },
+  {
+    "word": "arch",
+    "phonetic": "ɑːtʃ",
+    "meaning": "拱",
+    "example": "When she passed under the arch leading out of the park, Mira whooped with delight.",
+    "example_cn": "从通向公园外的拱门下走过时，米拉高兴地喊叫起来。"
+  },
+  {
+    "word": "supervise",
+    "phonetic": "'suːpəvaɪz; 'sjuː-",
+    "meaning": "监督，管理，指导",
+    "example": "Griffiths closely supervised the research.",
+    "example_cn": "格里菲思密切指导该项研究。"
+  },
+  {
+    "word": "territory",
+    "phonetic": "'terɪt(ə)rɪ",
+    "meaning": "领土，区域",
+    "example": "Hong Kong is a Chinese territory.",
+    "example_cn": "香港是中国的领土。"
+  },
+  {
+    "word": "swift",
+    "phonetic": "swɪft",
+    "meaning": "快的；迅速的，敏捷的",
+    "example": "My letter received a swift reply.",
+    "example_cn": "我的信很快就得到了回复。"
+  },
+  {
+    "word": "robust",
+    "phonetic": "rə(ʊ)'bʌst",
+    "meaning": "强健的",
+    "example": "a robust man of six feet four",
+    "example_cn": "一个身高六英尺四英寸的壮汉"
+  },
+  {
+    "word": "unravel",
+    "phonetic": ",ʌn'rævəl",
+    "meaning": "拆散(线团)；解决",
+    "example": "Detectives are still trying to unravel the mystery surrounding his death.",
+    "example_cn": "侦探们仍在试图解开他的死亡之谜。"
+  },
+  {
+    "word": "responsive",
+    "phonetic": "rɪ'spɒnsɪv",
+    "meaning": "易于做出迅速反应的",
+    "example": "With an election coming soon, your representative should be very responsive to your request.",
+    "example_cn": "大选在即，你们的代表应该对你们的要求作出迅速积极的反应。"
+  },
+  {
+    "word": "weld",
+    "phonetic": "weld",
+    "meaning": "焊接熔接",
+    "example": "The new handle will have to be welded on.",
+    "example_cn": "新的把手得焊上去。"
+  },
+  {
+    "word": "accumulate",
+    "phonetic": "ə'kjuːmjʊleɪt",
+    "meaning": "积累，积聚",
+    "example": "What is the moral of this fable? If you want to accumulate enduring wealth, do not lend to grasshoppers.",
+    "example_cn": "这则故事的寓意是什么？如果你希望积累长久的财富，就不要借钱给蚱蜢。"
+  },
+  {
+    "word": "oval",
+    "phonetic": "'əʊv(ə)l",
+    "meaning": "卵形(的)，椭圆形(的)",
+    "example": "Using 2 spoons, form the cheese into small balls or ovals.",
+    "example_cn": "用两把勺把干酪挤成小圆球状或椭圆球状。"
+  },
+  {
+    "word": "gratitude",
+    "phonetic": "'grætɪtjuːd",
+    "meaning": "感激，感恩",
+    "example": "I cherish for you the liveliest feeling of affection and gratitude.",
+    "example_cn": "我对你怀有最强烈的爱和感激之情。"
+  },
+  {
+    "word": "circumference",
+    "phonetic": "sə'kʌmf(ə)r(ə)ns",
+    "meaning": "圆周，圆周长度",
+    "example": "...a scientist calculating the Earth's circumference.",
+    "example_cn": "…一位正在计算地球周长的科学家。"
+  },
+  {
+    "word": "congestion",
+    "phonetic": "kən'dʒestʃ(ə)n",
+    "meaning": "拥挤，混杂",
+    "example": "The problems of traffic congestion will not disappear in a hurry.",
+    "example_cn": "交通堵塞问题不会很快消失。"
+  },
+  {
+    "word": "sociology",
+    "phonetic": "səʊsɪ'ɒlədʒɪ; səʊʃɪ-",
+    "meaning": "社会学",
+    "example": "Out with every theory of human behavior, from linguistics to sociology.",
+    "example_cn": "从语言学、社会学的人类行为原理里解脱吧。"
+  },
+  {
+    "word": "pinnacle",
+    "phonetic": "'pɪnək(ə)l",
+    "meaning": "尖塔，尖顶，山峰；(喻)顶峰",
+    "example": "the pinnacle of academic achievement",
+    "example_cn": "学术成就的顶峰"
+  },
+  {
+    "word": "prevalent",
+    "phonetic": "'prev(ə)l(ə)nt",
+    "meaning": "流行的，普遍的",
+    "example": "the prevalent belief in astrology",
+    "example_cn": "对占星术的普遍相信"
+  },
+  {
+    "word": "hereditary",
+    "phonetic": "hɪ'redɪt(ə)rɪ",
+    "meaning": "遗传的; 世袭的",
+    "example": "a hereditary peer",
+    "example_cn": "世袭贵族"
+  },
+  {
+    "word": "speciality",
+    "phonetic": ",speʃɪ'ælɪtɪ",
+    "meaning": "特性；特长",
+    "example": "...seafood, paella, and other specialities.",
+    "example_cn": "…海鲜、西班牙肉菜饭及其他特色食品。"
+  },
+  {
+    "word": "stock",
+    "phonetic": "stɒk",
+    "meaning": "存货；供给；股票",
+    "example": "We have a huge stock of quality carpets on sale.",
+    "example_cn": "我们备有大量优质地毯出售。"
+  },
+  {
+    "word": "propose",
+    "phonetic": "prə'pəʊz",
+    "meaning": "提议；求婚",
+    "example": "the changes currently proposed by the local planning authorities",
+    "example_cn": "目前由地方规划局提议的改革"
+  },
+  {
+    "word": "epoch",
+    "phonetic": "'iːpɒk; 'epɒk",
+    "meaning": "新纪元，新时代",
+    "example": "the Victorian epoch",
+    "example_cn": "维多利亚时代"
+  },
+  {
+    "word": "mirage",
+    "phonetic": "'mɪrɑːʒ; mɪ'rɑːʒ",
+    "meaning": "海市蜃楼，幻想",
+    "example": "Perhaps we are just chasing a mirage.",
+    "example_cn": "也许我们只是在追逐一个梦。"
+  },
+  {
+    "word": "supplementary",
+    "phonetic": ",sʌplɪ'ment(ə)rɪ",
+    "meaning": "补充的，附加的",
+    "example": "supplementary information",
+    "example_cn": "补充信息"
+  },
+  {
+    "word": "chart",
+    "phonetic": "tʃɑːt",
+    "meaning": "海图；图表",
+    "example": "a chart showing last year’s sales",
+    "example_cn": "显示去年销售情况的一份图表"
+  },
+  {
+    "word": "unemployment",
+    "phonetic": "ʌnɪm'plɒɪm(ə)nt; -em-",
+    "meaning": "失业",
+    "example": "a town where there is high unemployment",
+    "example_cn": "高失业率城镇"
+  },
+  {
+    "word": "fallacy",
+    "phonetic": "'fæləsɪ",
+    "meaning": "谬论",
+    "example": "It’s a common fallacy that a neutered dog will become fat and lazy.",
+    "example_cn": "说阉割过的狗会变得又胖又懒，这是普遍的谬见。"
+  },
+  {
+    "word": "incline",
+    "phonetic": "ɪn'klaɪn",
+    "meaning": "低头，屈身，倾斜，倾向于",
+    "example": "The telescope is inclined at an angle of 43 degrees.",
+    "example_cn": "这架望远镜以43度角倾斜。"
+  },
+  {
+    "word": "prohibit",
+    "phonetic": "prə(ʊ)'hɪbɪt",
+    "meaning": "禁止",
+    "example": "Smoking is strictly prohibited inside the factory.",
+    "example_cn": "厂区严禁吸烟。"
+  },
+  {
+    "word": "zoology",
+    "phonetic": "zuː'ɒlədʒɪ; zəʊ-",
+    "meaning": "动物学",
+    "example": "The scholarship money she won helped her attend Cornell University, where she majored in zoology.",
+    "example_cn": "她赢得的奖学金帮助她上康奈尔大学，在那里他主修动物学。"
+  },
+  {
+    "word": "elicit",
+    "phonetic": "ɪ'lɪsɪt",
+    "meaning": "引出，诱出",
+    "example": "When her knock elicited no response, she opened the door and peeped in.",
+    "example_cn": "敲门没有回应，她便推开门往里张望。"
+  },
+  {
+    "word": "numerical",
+    "phonetic": "njuː'merɪk(ə)l",
+    "meaning": "数字的，用数字表示的",
+    "example": "a numerical code",
+    "example_cn": "数字密码"
+  },
+  {
+    "word": "solvent",
+    "phonetic": "'sɒlv(ə)nt",
+    "meaning": "能偿还的",
+    "example": "They're going to have to show that the company is now solvent.",
+    "example_cn": "他们将不得不证明公司现在是具备偿债能力的。"
+  },
+  {
+    "word": "correspondence",
+    "phonetic": "kɒrɪ'spɒnd(ə)ns",
+    "meaning": "通信；符合",
+    "example": "The magazine is unable to enter into any correspondence on medical matters.",
+    "example_cn": "本杂志无法答复有关医学方面的来信。"
+  },
+  {
+    "word": "epidemic",
+    "phonetic": "epɪ'demɪk",
+    "meaning": "(疾病)流行性的，传染的",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "disrupt",
+    "phonetic": "dɪs'rʌpt",
+    "meaning": "使分裂，瓦解",
+    "example": "Traffic was disrupted by a hoax bomb.",
+    "example_cn": "有人虚报有炸弹，造成了交通混乱。"
+  },
+  {
+    "word": "humiliate",
+    "phonetic": "hjʊ'mɪlɪeɪt",
+    "meaning": "使羞辱，使丢脸",
+    "example": "Her boss humiliated her in front of all her colleagues.",
+    "example_cn": "她的老板在所有同事面前羞辱了她。"
+  },
+  {
+    "word": "medium",
+    "phonetic": "'miːdɪəm",
+    "meaning": "媒介；中庸间，适中",
+    "example": "Advertising is a powerful medium.",
+    "example_cn": "广告是具有强大影响力的传播媒介。"
+  },
+  {
+    "word": "ripple",
+    "phonetic": "'rɪp(ə)l",
+    "meaning": "涟漪，波纹",
+    "example": "ripples on the surface of the pond",
+    "example_cn": "池面上的涟漪"
+  },
+  {
+    "word": "curse",
+    "phonetic": "kɜːs",
+    "meaning": "诅咒，祸因，骂人话",
+    "example": "He muttered a curse under his breath.",
+    "example_cn": "他低声骂了一句。"
+  },
+  {
+    "word": "scandal",
+    "phonetic": "'skænd(ə)l",
+    "meaning": "冒犯或引起反感的行动；流言，诽谤",
+    "example": "He loved gossip and scandal.",
+    "example_cn": "他喜欢闲话和流言蜚语。"
+  },
+  {
+    "word": "counsel",
+    "phonetic": "'kaʊns(ə)l",
+    "meaning": "劝告；评议；忠告；律师",
+    "example": "He had always been able to count on her wise counsel.",
+    "example_cn": "他总是能够指望她明智的忠告。"
+  },
+  {
+    "word": "stagger",
+    "phonetic": "'stægə",
+    "meaning": "摇晃；蹒跚",
+    "example": "He managed to stagger home.",
+    "example_cn": "他好不容易才蹒跚着走回家。"
+  },
+  {
+    "word": "capsule",
+    "phonetic": "'kæpsjuːl; -sjʊl",
+    "meaning": "荚；装一剂药的小囊；密封舱",
+    "example": "a space capsule orbiting the Earth",
+    "example_cn": "沿地球轨道飞行的太空舱"
+  },
+  {
+    "word": "imperative",
+    "phonetic": "ɪm'perətɪv",
+    "meaning": "紧急的，必要的，强制的，祈使语气",
+    "example": "It is imperative that politicians should be good communicators.",
+    "example_cn": "政治家应该是很好的沟通者，这很重要。"
+  },
+  {
+    "word": "recipe",
+    "phonetic": "'resɪpɪ",
+    "meaning": "食谱，烹饪法",
+    "example": "a recipe book",
+    "example_cn": "一本烹饪书"
+  },
+  {
+    "word": "drift",
+    "phonetic": "drɪft",
+    "meaning": "漂流，流浪",
+    "example": "Smoke drifted up from the jungle ahead of us.",
+    "example_cn": "我们前方的丛林里有烟升起。"
+  },
+  {
+    "word": "hum",
+    "phonetic": "hʌm",
+    "meaning": "嗡嗡叫，嘈杂声",
+    "example": "Machines hummed on the factory floor.",
+    "example_cn": "机器在车间里嗡嗡作响。"
+  },
+  {
+    "word": "generic",
+    "phonetic": "dʒɪ'nerɪk",
+    "meaning": "一般的，普通的",
+    "example": "Parmesan is a generic term used to describe a family of hard Italian cheeses.",
+    "example_cn": "巴尔马干酪是一个用来描述一类坚硬的意大利奶酪的通用名称。"
+  },
+  {
+    "word": "referendum",
+    "phonetic": ",refə'rendəm",
+    "meaning": "公民投票、复决权",
+    "example": "The city council agreed to hold a referendum on the issue in November.",
+    "example_cn": "市政会同意在11月就此问题进行全民投票。"
+  },
+  {
+    "word": "fluid",
+    "phonetic": "'fluːɪd",
+    "meaning": "流体",
+    "example": "He is not allowed solid food yet, only fluids.",
+    "example_cn": "他还不能吃固体食物，只能进流食。"
+  },
+  {
+    "word": "authentic",
+    "phonetic": "ɔː'θentɪk",
+    "meaning": "真实的，可靠的",
+    "example": "an authentic work by Picasso",
+    "example_cn": "毕加索的真迹"
+  },
+  {
+    "word": "swamp",
+    "phonetic": "swɒmp",
+    "meaning": "沼泽地，使淹没",
+    "example": "I spent one whole night by a swamp behind the road listening to frogs.",
+    "example_cn": "我整个晚上都在这条路后面的一个沼泽地旁听蛙鸣。"
+  },
+  {
+    "word": "shrug",
+    "phonetic": "ʃrʌg",
+    "meaning": "耸肩",
+    "example": "I just shrugged my shoulders and ignored him.",
+    "example_cn": "我只是耸耸肩，没有理睬他。"
+  },
+  {
+    "word": "flush",
+    "phonetic": "flʌʃ",
+    "meaning": "奔流，兴奋，激动",
+    "example": "She felt a sudden flush of anger.",
+    "example_cn": "她突然感到一阵愤怒。"
+  },
+  {
+    "word": "repatriate",
+    "phonetic": "riː'pætrɪeɪt; -'peɪ-",
+    "meaning": "遣返；返回",
+    "example": "After the war, prisoners were repatriated.",
+    "example_cn": "战后，战俘被遣返。"
+  },
+  {
+    "word": "parachute",
+    "phonetic": "'pærəʃuːt",
+    "meaning": "降落伞",
+    "example": "a parachute jump",
+    "example_cn": "跳伞"
+  },
+  {
+    "word": "dam",
+    "phonetic": "dæm",
+    "meaning": "水坝，筑坝，抑制，阻拦",
+    "example": "Once she allowed her anger to show, it could not be dammed up again.",
+    "example_cn": "她一旦发起脾气来就不可收拾。"
+  },
+  {
+    "word": "warden",
+    "phonetic": "'wɔːd(ə)n",
+    "meaning": "管理员，监护人",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "pursuit",
+    "phonetic": "pə'sjuːt",
+    "meaning": "追赶；追求；从事，消遣",
+    "example": "The quarterback sprinted toward the end zone with Jansen in hot pursuit (= following closely behind ) .",
+    "example_cn": "那名四分卫快速冲向底线区，詹森穷追不舍。"
+  },
+  {
+    "word": "catch",
+    "phonetic": "kætʃ",
+    "meaning": "抓；接球；逮住；赶(车)",
+    "example": "He was caught red-handed (= as he was doing something wrong ) taking money from the cash register.",
+    "example_cn": "他从现金出纳机偷钱时被当场抓住。"
+  },
+  {
+    "word": "plot",
+    "phonetic": "plɒt",
+    "meaning": "小块土地；阴谋，情节",
+    "example": "The plot was a little confusing.",
+    "example_cn": "情节有些费解。"
+  },
+  {
+    "word": "reverse",
+    "phonetic": "rɪ'vɜːs",
+    "meaning": "相反(的)；颠倒(的)",
+    "example": "I owe you nothing. If anything, the reverse is true (= you owe me ) .",
+    "example_cn": "我不欠你什么。 如果说欠的话，是你欠我才对。"
+  },
+  {
+    "word": "purity",
+    "phonetic": "'pjʊərɪtɪ",
+    "meaning": "纯净；纯洁",
+    "example": "the purity of tap water",
+    "example_cn": "自来水的纯净度"
+  },
+  {
+    "word": "statistics",
+    "phonetic": "stə'tɪstɪks",
+    "meaning": "统计，统计数字；统计学",
+    "example": "statistics for earnings by different age groups",
+    "example_cn": ""
+  },
+  {
+    "word": "tenable",
+    "phonetic": "'tenəb(ə)l",
+    "meaning": "可防守的，守得住的；可保持的，可维持的",
+    "example": "an idea which is no longer tenable",
+    "example_cn": "不再成立的观点"
+  },
+  {
+    "word": "tangible",
+    "phonetic": "'tæn(d)ʒɪb(ə)l",
+    "meaning": "可触知的；明确的；确实的",
+    "example": "The scheme must have tangible benefits for the unemployed.",
+    "example_cn": "这个计划一定要对失业者有实实在在的好处。"
+  },
+  {
+    "word": "dismiss",
+    "phonetic": "dɪs'mɪs",
+    "meaning": "解散；解雇；不考虑；消除",
+    "example": "The government has dismissed criticisms that the country’s health policy is a mess.",
+    "example_cn": "有人认为国家医疗政策一塌糊涂，政府对这种批评持否认态度。"
+  },
+  {
+    "word": "invoice",
+    "phonetic": "'ɪnvɒɪs",
+    "meaning": "开发票",
+    "example": "The agency invoices the client who then pays the full amount to the agency.",
+    "example_cn": "那个代销处给客户开具发票，然后客户向代销处支付全部的款项。"
+  },
+  {
+    "word": "nutrition",
+    "phonetic": "njʊ'trɪʃ(ə)n",
+    "meaning": "营养，营养学",
+    "example": "Nutrition and exercise are essential to fitness and health.",
+    "example_cn": "营养和运动是保持健康所必不可少的。"
+  },
+  {
+    "word": "gaunt",
+    "phonetic": "gɔːnt",
+    "meaning": "憔悴的，瘦弱的；荒凉的",
+    "example": "the old man’s gaunt face",
+    "example_cn": "老人那瘦削的脸庞"
+  },
+  {
+    "word": "defendant",
+    "phonetic": "dɪ'fend(ə)nt",
+    "meaning": "被告",
+    "example": "We find the defendant not guilty.",
+    "example_cn": "我们裁定被告无罪。"
+  },
+  {
+    "word": "fluctuate",
+    "phonetic": "'flʌktʃʊeɪt; -tjʊ-",
+    "meaning": "(物价)涨落，起落，波动",
+    "example": "Insect populations fluctuate wildly from year to year.",
+    "example_cn": "昆虫的数量每年变化很大。"
+  },
+  {
+    "word": "enhance",
+    "phonetic": "ɪn'hɑːns; -hæns; en-",
+    "meaning": "提高(强度、力量、数量等)，增加(进)",
+    "example": "Good lighting will enhance any room.",
+    "example_cn": "良好的照明能给房间增色不少。"
+  },
+  {
+    "word": "terrific",
+    "phonetic": "tə'rɪfɪk",
+    "meaning": "可怕的，非常的",
+    "example": "That’s a terrific idea!",
+    "example_cn": "这个主意真棒！"
+  },
+  {
+    "word": "display",
+    "phonetic": "dɪ'spleɪ",
+    "meaning": "展览，陈列",
+    "example": "a dazzling display (= very good display ) of flowers",
+    "example_cn": "令人目眩神迷的花卉展"
+  },
+  {
+    "word": "symphony",
+    "phonetic": "'sɪmf(ə)nɪ",
+    "meaning": "交响乐曲",
+    "example": "Bruckner’s Fifth Symphony",
+    "example_cn": "布鲁克纳的《第五交响曲》"
+  },
+  {
+    "word": "tonic",
+    "phonetic": "'tɒnɪk",
+    "meaning": "滋补品，补药；强身的，健体的",
+    "example": "A lot of people need a tonic at the end of the winter.",
+    "example_cn": "很多人冬末需要进补。"
+  },
+  {
+    "word": "tissue",
+    "phonetic": "'tɪʃuː; 'tɪsjuː",
+    "meaning": "生理组织；薄纸；棉纸；织物；一套",
+    "example": "a box of tissues",
+    "example_cn": "一盒面巾纸"
+  },
+  {
+    "word": "tuition",
+    "phonetic": "tjuː'ɪʃ(ə)n",
+    "meaning": "教学，学费",
+    "example": "I had to have extra tuition in maths.",
+    "example_cn": "我不得不上数学补习课。"
+  },
+  {
+    "word": "journal",
+    "phonetic": "'dʒɜːn(ə)l",
+    "meaning": "学术性刊物，期刊；日记",
+    "example": "the British Medical Journal",
+    "example_cn": "《英国医学杂志》"
+  },
+  {
+    "word": "kernel",
+    "phonetic": "'kɜːn(ə)l",
+    "meaning": "果核，果仁，核心",
+    "example": "The kernel of that message was that peace must not be a source of advantage or disadvantage for anyone.",
+    "example_cn": "那一信息的核心是和平绝不应该成为对任何人有利或不利的根源。"
+  },
+  {
+    "word": "thumb",
+    "phonetic": "θʌm",
+    "meaning": "大拇指",
+    "example": "a baby sucking its thumb",
+    "example_cn": "吮着大拇指的婴儿"
+  },
+  {
+    "word": "prospectus",
+    "phonetic": "prə'spektəs",
+    "meaning": "说明书，简介",
+    "example": "...a prospectus for a new issue of stock.",
+    "example_cn": "…新发行股票的招股说明书。"
+  },
+  {
+    "word": "diagnose",
+    "phonetic": "'daɪəgnəʊz; -'nəʊz",
+    "meaning": "诊断(疾病)",
+    "example": "How did they diagnose you?",
+    "example_cn": "他们怎么给你的诊断的？"
+  },
+  {
+    "word": "extra",
+    "phonetic": "'ekstrə",
+    "meaning": "额外的/地，非常，另外；额外的人",
+    "example": "There are no hidden extras.",
+    "example_cn": "没有任何隐蔽的额外费用。"
+  },
+  {
+    "word": "dwindle",
+    "phonetic": "'dwɪnd(ə)l",
+    "meaning": "缩小, 减小\"",
+    "example": "The elephant population is dwindling.",
+    "example_cn": "大象的数量在减少。"
+  },
+  {
+    "word": "patch",
+    "phonetic": "pætʃ",
+    "meaning": "补钉；眼罩；斑点；小块土地",
+    "example": "Look out for icy patches on the road.",
+    "example_cn": "小心路上结冰的地方。"
+  },
+  {
+    "word": "sketch",
+    "phonetic": "sketʃ",
+    "meaning": "草图，素描;",
+    "example": "So if we just sketch that.",
+    "example_cn": "那么如果我们把那画个草图。"
+  },
+  {
+    "word": "mean",
+    "phonetic": "miːn",
+    "meaning": "难看的，简陋的；吝啬的，自私的",
+    "example": "He’s too mean to buy a present for his wife.",
+    "example_cn": "他很吝啬，给他妻子买件礼物都不肯。"
+  },
+  {
+    "word": "trace",
+    "phonetic": "treɪs",
+    "meaning": "痕迹；足迹；微量",
+    "example": "There was no trace of anyone having entered the room since then.",
+    "example_cn": "没有任何迹象表明在那以后有人进过这房间。"
+  },
+  {
+    "word": "defence",
+    "phonetic": "dɪ'fens",
+    "meaning": "防卫 防护 防御物 辩护 被告律师",
+    "example": "The land was flat, giving no scope for defence.",
+    "example_cn": "土地非常平坦，无法做防卫之用。"
+  },
+  {
+    "word": "expulsion",
+    "phonetic": "ɪk'spʌlʃ(ə)n; ek-",
+    "meaning": "驱逐; 开除",
+    "example": "The headmaster threatened the boys with expulsion.",
+    "example_cn": "校长警告这几名男生说要开除他们。"
+  },
+  {
+    "word": "potential",
+    "phonetic": "pəˈtenʃl",
+    "meaning": "潜在的;",
+    "example": "The company has identified 60 potential customers.",
+    "example_cn": "该公司已确定了60位潜在的客户。"
+  },
+  {
+    "word": "passport",
+    "phonetic": "'pɑːspɔːt",
+    "meaning": "护照，保障，手段",
+    "example": "I have an Irish passport.",
+    "example_cn": "我持爱尔兰护照。"
+  },
+  {
+    "word": "craft",
+    "phonetic": "krɑːft",
+    "meaning": "工艺；手工业；船；技巧；诡计",
+    "example": "traditional rural crafts",
+    "example_cn": "传统的乡村手工艺"
+  },
+  {
+    "word": "gleam",
+    "phonetic": "gliːm",
+    "meaning": "微光，闪光，短暂而微弱的闪现",
+    "example": "His teeth gleamed under his moustache.",
+    "example_cn": "他的八字须下面，牙齿晶莹发亮。"
+  },
+  {
+    "word": "overflow",
+    "phonetic": "əʊvə'fləʊ",
+    "meaning": "泛滥，溢出",
+    "example": "The drains flooded and water overflowed down the main street.",
+    "example_cn": "下水道被淹，水溢到了大街上。"
+  },
+  {
+    "word": "solemn",
+    "phonetic": "'sɒləm",
+    "meaning": "庄严的，严肃的，隆重的",
+    "example": "a solemn expression",
+    "example_cn": "严肃的表情"
+  },
+  {
+    "word": "vegetation",
+    "phonetic": "vedʒɪ'teɪʃ(ə)n",
+    "meaning": "植被",
+    "example": "Lefkas has an abundance of lush green vegetation.",
+    "example_cn": "莱夫卡斯有葱郁茂盛的植被。"
+  },
+  {
+    "word": "pliable",
+    "phonetic": "",
+    "meaning": "易弯的，柔韧的；易受影响的",
+    "example": "a shoe made of soft pliable leather",
+    "example_cn": "柔韧的皮革做成的鞋子"
+  },
+  {
+    "word": "apprehension",
+    "phonetic": "æprɪ'henʃ(ə)n",
+    "meaning": "理解；忧虑",
+    "example": "a feeling of apprehension",
+    "example_cn": "担忧的心情"
+  },
+  {
+    "word": "rave",
+    "phonetic": "reɪv",
+    "meaning": "胡言乱语；热衷谈论",
+    "example": "He was still ranting and raving the next morning.",
+    "example_cn": "第二天上午他仍在大叫大嚷。"
+  },
+  {
+    "word": "locomotive",
+    "phonetic": "ləʊkə'məʊtɪv",
+    "meaning": "运动的，移动的",
+    "example": "an increase in locomotive power",
+    "example_cn": "运动力的增加"
+  },
+  {
+    "word": "entrepreneur",
+    "phonetic": "ˌɒntrəprəˈnɜː(r)",
+    "meaning": "[法]企业家, 演出承包人 \"",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "doubtful",
+    "phonetic": "'daʊtfʊl; -f(ə)l",
+    "meaning": "有疑问的；怀疑的",
+    "example": "‘Everything’s going to be all right, you’ll see.’ Jenny looked doubtful .",
+    "example_cn": "“一切都会顺顺当当的，你等着看好了。” 珍妮看起来不大相信的样子。"
+  },
+  {
+    "word": "morbid",
+    "phonetic": "'mɔːbɪd",
+    "meaning": "疾病的，病态的",
+    "example": "The trip was made all the worse by Frankie’s morbid fear of flying.",
+    "example_cn": "弗朗基对坐飞机有种病态的恐惧，使得旅途变得更加糟糕。"
+  },
+  {
+    "word": "violent",
+    "phonetic": "'vaɪəl(ə)nt",
+    "meaning": "猛烈的，凶暴的；由暴力引起的；强烈的",
+    "example": "the increase in violent crime",
+    "example_cn": "暴力犯罪的增多"
+  },
+  {
+    "word": "exemplify",
+    "phonetic": "ɪg'zemplɪfaɪ; eg-",
+    "meaning": "举例说明，作为的例证",
+    "example": "Problems are exemplified in the report.",
+    "example_cn": "问题都在报告中作了举例说明。"
+  },
+  {
+    "word": "cease",
+    "phonetic": "siːs",
+    "meaning": "停止",
+    "example": "The things people will do for charity never cease to amaze me (= I am always surprised by them ) .",
+    "example_cn": "人们的慈善义举总是让我感到惊讶。"
+  },
+  {
+    "word": "rotate",
+    "phonetic": "rə(ʊ)'teɪt",
+    "meaning": "旋转，轮流",
+    "example": "The Earth rotates on its axis once every 24 hours.",
+    "example_cn": "地球每24小时绕地轴自转一周。"
+  },
+  {
+    "word": "solution",
+    "phonetic": "sə'luːʃ(ə)n",
+    "meaning": "解决困难，解答问题；溶解；溶液",
+    "example": "The best solution would be for them to separate.",
+    "example_cn": "最好的解决方法是他们分开。"
+  },
+  {
+    "word": "identify",
+    "phonetic": "aɪ'dentɪfaɪ",
+    "meaning": "认出，认为与一致",
+    "example": "He was too far away to be able to identify faces.",
+    "example_cn": "他离得太远，没法看面孔认出谁是谁。"
+  },
+  {
+    "word": "paramount",
+    "phonetic": "'pærəmaʊnt",
+    "meaning": "最高的；首要的",
+    "example": "During a war the interests of the state are paramount, and those of the individual come last.",
+    "example_cn": "战争时期国家利益是首要的，个人利益置于最后。"
+  },
+  {
+    "word": "combine",
+    "phonetic": "kəm'baɪn",
+    "meaning": "联合；连结",
+    "example": "Diets are most effective when combined with exercise.",
+    "example_cn": "节食和锻炼相结合是最有效的。"
+  },
+  {
+    "word": "avalanche",
+    "phonetic": "'ævəlɑːnʃ",
+    "meaning": "雪崩；大量涌来",
+    "example": "Two skiers were killed in the avalanche.",
+    "example_cn": "两名滑雪者在雪崩中丧生。"
+  },
+  {
+    "word": "apparatus",
+    "phonetic": "ˌæpəˈreɪtəs",
+    "meaning": "仪器；设备",
+    "example": "Astronauts have special breathing apparatus.",
+    "example_cn": "航天员有专门的呼吸装装备。"
+  },
+  {
+    "word": "ditch",
+    "phonetic": "dɪtʃ",
+    "meaning": "排水沟，沟渠",
+    "example": "Both vehicles ended up in a ditch.",
+    "example_cn": "两辆车都掉进了沟里。"
+  },
+  {
+    "word": "range",
+    "phonetic": "reɪn(d)ʒ",
+    "meaning": "排列",
+    "example": "In the dining room, team photographs were ranged along the wall.",
+    "example_cn": "餐厅里，球队的照片排列在墙上。"
+  },
+  {
+    "word": "colossal",
+    "phonetic": "kə'lɒs(ə)l",
+    "meaning": "庞大的",
+    "example": "a colossal statue of the King",
+    "example_cn": "国王的巨大雕像"
+  },
+  {
+    "word": "slim",
+    "phonetic": "slɪm",
+    "meaning": "细长的；苗条的",
+    "example": "a slim young woman",
+    "example_cn": "身材苗条的年轻女子"
+  },
+  {
+    "word": "pavement",
+    "phonetic": "'peɪvm(ə)nt",
+    "meaning": "[英]人行道",
+    "example": "A small group of journalists waited on the pavement outside her house.",
+    "example_cn": "有一小群记者守候在她家外面的人行道上。"
+  },
+  {
+    "word": "random",
+    "phonetic": "'rændəm",
+    "meaning": "随便；无目的的，任意的",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "disturb",
+    "phonetic": "dɪ'stɜːb",
+    "meaning": "打扰，扰乱",
+    "example": "Sorry to disturb you, but I have an urgent message.",
+    "example_cn": "对不起打扰一下，我有个紧急消息。"
+  },
+  {
+    "word": "terrify",
+    "phonetic": "'terɪfaɪ",
+    "meaning": "恐吓",
+    "example": "Her husband’s violence terrified her.",
+    "example_cn": "丈夫的暴力行为让她感到害怕。"
+  },
+  {
+    "word": "keep",
+    "phonetic": "kiːp",
+    "meaning": "使保持某一状态，阻止，保留，履行，保卫",
+    "example": "You can keep it. I don’t need it any more.",
+    "example_cn": "你留着吧，我不需要了。"
+  },
+  {
+    "word": "physician",
+    "phonetic": "fɪ'zɪʃ(ə)n",
+    "meaning": "医生",
+    "example": "...your family physician.",
+    "example_cn": "…你的家庭医生。"
+  },
+  {
+    "word": "precious",
+    "phonetic": "'preʃəs",
+    "meaning": "宝贵的，珍贵的",
+    "example": "planes delivering precious supplies of medicine and food",
+    "example_cn": "运送药品、食品等宝贵物资的飞机"
+  },
+  {
+    "word": "insane",
+    "phonetic": "ɪn'seɪn",
+    "meaning": "愚蠢的; 疯狂的",
+    "example": "That’s an insane risk.",
+    "example_cn": "那是疯狂的冒险之举。"
+  },
+  {
+    "word": "code",
+    "phonetic": "",
+    "meaning": "规则；代号；密码",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "entitle",
+    "phonetic": "ɪn'taɪt(ə)l; en-",
+    "meaning": "给(书)题名；给予权利",
+    "example": "...a performance entitled \"United States.\"",
+    "example_cn": "…一场名为“合众国”的演出。"
+  },
+  {
+    "word": "alternative",
+    "phonetic": "ɔːl'tɜːnətɪv; ɒl-",
+    "meaning": "两者选一",
+    "example": "An alternative route is along the Via Unione.",
+    "example_cn": "另一条路线是沿着联合路走。"
+  },
+  {
+    "word": "criterion",
+    "phonetic": "kraɪ'tɪərɪən",
+    "meaning": "判断的标准(pl-ria)",
+    "example": "the criteria we use to select candidates",
+    "example_cn": "我们挑选候选人的标准"
+  },
+  {
+    "word": "ward",
+    "phonetic": "wɔːd",
+    "meaning": "(房屋中的)隔间；(尤指)病房",
+    "example": "the other patients in the ward",
+    "example_cn": "病房里的其他病人"
+  },
+  {
+    "word": "assess",
+    "phonetic": "ə'ses",
+    "meaning": "估值，评价",
+    "example": "The test was to assess aptitude rather than academic achievement.",
+    "example_cn": "该测试将评估能力而不是学业成绩。"
+  },
+  {
+    "word": "flesh",
+    "phonetic": "fleʃ",
+    "meaning": "肉，肉体，果肉",
+    "example": "a freshwater fish with firm white flesh",
+    "example_cn": "一种肉色雪白、肉质紧实的淡水鱼"
+  },
+  {
+    "word": "stuntman",
+    "phonetic": "'stʌntmæn",
+    "meaning": "替身演员",
+    "example": "Both Jacky Chan and Jet Li don't like to use stuntman in their films.",
+    "example_cn": "成龙和李连杰在电影中都不爱用替身演员。"
+  },
+  {
+    "word": "via",
+    "phonetic": "ˈvaɪə，ˈviːə",
+    "meaning": "径，由",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "framework",
+    "phonetic": "'freɪmwɜːk",
+    "meaning": "构架，框架",
+    "example": "We have to act within the existing legal framework.",
+    "example_cn": "我们必须在现行的法律框架下行事。"
+  },
+  {
+    "word": "pose",
+    "phonetic": "pəʊz",
+    "meaning": "摆姿势；提出；姿势",
+    "example": "In her book she poses the question ‘How much do we need to be happy?’",
+    "example_cn": "她在书里提出了这样一个问题﹕“我们要拥有多少才能快乐？”"
+  },
+  {
+    "word": "competitive",
+    "phonetic": "kəm'petɪtɪv",
+    "meaning": "比赛的",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "confine",
+    "phonetic": "kən'faɪn",
+    "meaning": "限制，禁闭",
+    "example": "Vaughan is confined to a wheelchair .",
+    "example_cn": "沃恩离不开轮椅。"
+  },
+  {
+    "word": "natal",
+    "phonetic": "'neɪt(ə)l",
+    "meaning": "出生的；诞生的",
+    "example": "Green turtles return to their natal island to breed.",
+    "example_cn": "绿毛龟回到它们出生的岛上繁殖。"
+  },
+  {
+    "word": "flame",
+    "phonetic": "fleɪm",
+    "meaning": "火焰，火舌",
+    "example": "Flames poured out of the windows of the building.",
+    "example_cn": "火焰从大楼窗口冒出来。"
+  },
+  {
+    "word": "surmount",
+    "phonetic": "sə'maʊnt",
+    "meaning": "克服，越过",
+    "example": "He has had to surmount immense physical disabilities.",
+    "example_cn": "他不得不克服严重的身体残疾。"
+  },
+  {
+    "word": "comparable",
+    "phonetic": "'kɒmp(ə)rəb(ə)l",
+    "meaning": "可比较的",
+    "example": "A car of comparable size would cost far more abroad.",
+    "example_cn": "同样大小的汽车在国外要贵得多。"
+  },
+  {
+    "word": "transparent",
+    "phonetic": "træn'spær(ə)nt; trɑːn-; -'speə-",
+    "meaning": "透明的",
+    "example": "a transparent plastic container",
+    "example_cn": "透明的塑料容器"
+  },
+  {
+    "word": "lens",
+    "phonetic": "lenz",
+    "meaning": "透镜；眼睛水晶体",
+    "example": "a standard 50mm lens",
+    "example_cn": "50毫米标准镜头"
+  },
+  {
+    "word": "crush",
+    "phonetic": "krʌʃ",
+    "meaning": "压碎，压坏，弄皱，压垮；挤入",
+    "example": "His leg was crushed in the accident.",
+    "example_cn": "他的腿在事故中被压断。"
+  },
+  {
+    "word": "condemn",
+    "phonetic": "kən'dem",
+    "meaning": "谴责，迫使；判刑；宣告(建筑)不宜使用",
+    "example": "Politicians were quick to condemn the bombing.",
+    "example_cn": "政治家们立即对爆炸事件进行了谴责。"
+  },
+  {
+    "word": "precedence",
+    "phonetic": "'presɪd(ə)ns; prɪ'siːd(ə)ns",
+    "meaning": "在前，优先",
+    "example": "Guests were seated in order of precedence .",
+    "example_cn": "宾客们按席次就座。"
+  },
+  {
+    "word": "organ",
+    "phonetic": "'ɔːg(ə)n",
+    "meaning": "器官；报刊；风琴",
+    "example": "...damage to the muscles and internal organs.",
+    "example_cn": "…对肌肉和内脏的损伤。"
+  },
+  {
+    "word": "staple",
+    "phonetic": "'steɪp(ə)l",
+    "meaning": "主要产品；名产；纤维；主要成分，主食",
+    "example": "staples like flour and rice",
+    "example_cn": "面粉和大米等主食"
+  },
+  {
+    "word": "differentiate",
+    "phonetic": ",dɪfə'renʃɪeɪt",
+    "meaning": "区别，区分",
+    "example": "What differentiates these two periods of history?",
+    "example_cn": "这两个历史时期的差别在哪里？"
+  },
+  {
+    "word": "engage",
+    "phonetic": "ɪn'geɪdʒ; en-",
+    "meaning": "雇用；从事；订婚；吸引；啮合",
+    "example": "She engaged the clutch and the car moved.",
+    "example_cn": "她踩下离合器，汽车便开动了。"
+  },
+  {
+    "word": "truant",
+    "phonetic": "'truːənt",
+    "meaning": "旷课者；逃学者",
+    "example": "persistent truants",
+    "example_cn": "老是逃学的学生"
+  },
+  {
+    "word": "embassy",
+    "phonetic": "'embəsɪ",
+    "meaning": "大使馆",
+    "example": "the American Embassy in Paris",
+    "example_cn": "美国驻巴黎大使馆"
+  },
+  {
+    "word": "alienate",
+    "phonetic": "'eɪlɪəneɪt",
+    "meaning": "离间，使疏远",
+    "example": "The latest tax proposals will alienate many voters.",
+    "example_cn": "最新的纳税提案将失去远许多选民的支持。"
+  },
+  {
+    "word": "obligatory",
+    "phonetic": "ə'blɪgət(ə)rɪ",
+    "meaning": "(法律或道义上)必须的，应尽的",
+    "example": "She offered him the obligatory cup of tea.",
+    "example_cn": "她照例给他端来一杯茶。"
+  },
+  {
+    "word": "predominant",
+    "phonetic": "prɪ'dɒmɪnənt",
+    "meaning": "主要的，占优势的",
+    "example": "the predominant group in society",
+    "example_cn": "社会中的主导群体"
+  },
+  {
+    "word": "indifferent",
+    "phonetic": "ɪn'dɪf(ə)r(ə)nt",
+    "meaning": "不感兴趣的，不关心的，质量不高的",
+    "example": "an indifferent cook",
+    "example_cn": "手艺平平的厨师"
+  },
+  {
+    "word": "delete",
+    "phonetic": "dɪ'liːt",
+    "meaning": "删除文字，擦去(字迹)",
+    "example": "His name was deleted from the list.",
+    "example_cn": "他的名字从名单上删掉了。"
+  },
+  {
+    "word": "cart",
+    "phonetic": "kɑːt",
+    "meaning": "马车",
+    "example": "Cars are prohibited, so transportation is by electric cart or by horse and buggy.",
+    "example_cn": "由于汽车被禁止使用，交通依赖于电车或轻便马车。"
+  },
+  {
+    "word": "translucent",
+    "phonetic": "træns'luːs(ə)nt; trɑːns-; -nz-",
+    "meaning": "透明的，半透明的",
+    "example": "Blue veins showed through her translucent skin.",
+    "example_cn": "她半透明的皮肤下青筋显现。"
+  },
+  {
+    "word": "posterity",
+    "phonetic": "pɒ'sterɪtɪ",
+    "meaning": "后裔，子孙，后代",
+    "example": "A photographer recorded the scene on video for posterity.",
+    "example_cn": "一位摄影师为子孙后代摄下了这个场面。"
+  },
+  {
+    "word": "curriculum",
+    "phonetic": "kə'rɪkjʊləm",
+    "meaning": "学校的课程",
+    "example": "Languages are an essential part of the school curriculum.",
+    "example_cn": "语言是学校课程中必不可少的部分。"
+  },
+  {
+    "word": "forgive",
+    "phonetic": "fə'gɪv",
+    "meaning": "原谅，宽恕",
+    "example": "He didn’t look the sort of man to forgive and forget (= forgive someone and no longer think about it ) .",
+    "example_cn": "他看上去不是那种不记仇的人。"
+  },
+  {
+    "word": "component",
+    "phonetic": "kəm'pəʊnənt",
+    "meaning": "组成部分；零件",
+    "example": "companies that make electronic components for computer products",
+    "example_cn": "为计算机产品生产电子零件的公司"
+  },
+  {
+    "word": "granular",
+    "phonetic": "'grænjʊlə",
+    "meaning": "颗粒状的，细粒的",
+    "example": "...a granular fertilizer.",
+    "example_cn": "...一种粒状化肥。"
+  },
+  {
+    "word": "scrutiny",
+    "phonetic": "'skruːtɪnɪ",
+    "meaning": "细察，调查",
+    "example": "Their activities have come under police scrutiny .",
+    "example_cn": "他们的活动受到警方的严密监视。"
+  },
+  {
+    "word": "wary",
+    "phonetic": "'weərɪ",
+    "meaning": "谨慎的，小心的",
+    "example": "Keep a wary eye on the weather before you set sail.",
+    "example_cn": "出航前要密切注意天气。"
+  },
+  {
+    "word": "relevant",
+    "phonetic": "ˈreləvənt",
+    "meaning": "有关的，切题的，中肯的",
+    "example": "Relevant documents were presented in court.",
+    "example_cn": "法庭上出示了相关的文件。"
+  },
+  {
+    "word": "spiritual",
+    "phonetic": "'spɪrɪtʃʊəl; -tjʊəl",
+    "meaning": "精神的，心灵的；神圣的，超自然的",
+    "example": "Painting helps fill a spiritual need for beauty.",
+    "example_cn": "绘画可以满足对美的精神需求。"
+  },
+  {
+    "word": "hectic",
+    "phonetic": "'hektɪk",
+    "meaning": "闹哄哄的，兴奋的",
+    "example": "I’ve had a pretty hectic day.",
+    "example_cn": "我忙乱了一整天。"
+  },
+  {
+    "word": "phenomenal",
+    "phonetic": "fɪ'nɒmɪn(ə)l",
+    "meaning": "非凡的，出众的，庞大的",
+    "example": "the phenomenal success of computer games in recent years",
+    "example_cn": "近年来电脑游戏的惊人成功"
+  },
+  {
+    "word": "guarantee",
+    "phonetic": "gær(ə)n'tiː",
+    "meaning": "保证; 担保，保证人，担保物",
+    "example": "The bank will only lend me money if my parents guarantee the loan.",
+    "example_cn": "只有我父母作担保，银行才会给我贷款。"
+  },
+  {
+    "word": "lame",
+    "phonetic": "leɪm",
+    "meaning": "跛的；瘸的，不能说服人的",
+    "example": "a lame attempt to deflect criticism",
+    "example_cn": "转移批评的一个无力的尝试"
+  },
+  {
+    "word": "nuance",
+    "phonetic": "'njuːɑːns",
+    "meaning": "(意义、意见、颜色)细微差别",
+    "example": "He was aware of every nuance in her voice.",
+    "example_cn": "他听得出她声音中的每一个细微变化。"
+  },
+  {
+    "word": "destination",
+    "phonetic": ",destɪ'neɪʃ(ə)n",
+    "meaning": "目的地",
+    "example": "Ellis Island has become one of America's most popular tourist destinations.",
+    "example_cn": "埃利斯岛已经成为美国最受欢迎的游览地之一。"
+  },
+  {
+    "word": "irrespective",
+    "phonetic": "ɪrɪ'spektɪv",
+    "meaning": "不考虑的，不顾的",
+    "example": "The modularity system can then match you with what you need irrespective of which module provides it.",
+    "example_cn": "模块化系统可以很好地匹配您的需求，而不需要考虑是哪个模块提供的。"
+  },
+  {
+    "word": "drudgery",
+    "phonetic": "'drʌdʒərɪ",
+    "meaning": "苦工，重活，单调乏味的工作",
+    "example": "We cannot hope for cheap food, but we can improve skills, boost productivity, reduce drudgery and enhance people's quality of life.",
+    "example_cn": "我们不能把希望放在廉价食品上，但是我们可以改善技能，促进生产力，减少单调的苦工，并提高人们的生活质量。"
+  },
+  {
+    "word": "saline",
+    "phonetic": "'seɪlaɪn",
+    "meaning": "含盐的；咸的",
+    "example": "saline solution",
+    "example_cn": "盐溶液"
+  },
+  {
+    "word": "descent",
+    "phonetic": "dɪ'sent",
+    "meaning": "下降；斜坡；血流",
+    "example": "Passengers must fasten their seat belts prior to descent.",
+    "example_cn": "乘客在飞机降落之前必须系好安全带。"
+  },
+  {
+    "word": "cognitive",
+    "phonetic": "'kɒɡnɪtɪv",
+    "meaning": "认识的",
+    "example": "cognitive psychology",
+    "example_cn": "认知心理学"
+  },
+  {
+    "word": "submerge",
+    "phonetic": "səb'mɜːdʒ",
+    "meaning": "放于水下；使沉没",
+    "example": "Hippos are unable to submerge in the few remaining water holes.",
+    "example_cn": "河马无法淹没在仅存的几个水坑里。"
+  },
+  {
+    "word": "concoct",
+    "phonetic": "kən'kɒkt",
+    "meaning": "调合；编造(故事等)",
+    "example": "John concocted an elaborate excuse for being late.",
+    "example_cn": "约翰为迟到编了一个巧妙的借口。"
+  },
+  {
+    "word": "anxiety",
+    "phonetic": "æŋ'zaɪətɪ",
+    "meaning": "忧虑；渴望",
+    "example": "Her voice was full of anxiety.",
+    "example_cn": "她的声音饱含焦虑。"
+  },
+  {
+    "word": "ungainly",
+    "phonetic": "ʌn'geɪnlɪ",
+    "meaning": "笨拙的，难看的",
+    "example": "a tall ungainly teenager",
+    "example_cn": "一个动作笨拙的高个子少年"
+  },
+  {
+    "word": "impetus",
+    "phonetic": "'ɪmpɪtəs",
+    "meaning": "动力，原动力，推动，激励",
+    "example": "The discovery gave fresh impetus to the research.",
+    "example_cn": "这个发现为研究带来新动力。"
+  },
+  {
+    "word": "asylum",
+    "phonetic": "ə'saɪləm",
+    "meaning": "避难所；疯人院；避难",
+    "example": "He applied for asylum in 1987 after fleeing the police back home.",
+    "example_cn": "他于1987年逃脱本国的警察之后申请了避难许可。"
+  },
+  {
+    "word": "conjunction",
+    "phonetic": "kən'dʒʌŋ(k)ʃ(ə)n",
+    "meaning": "连词；联合；连接",
+    "example": "The two clauses are joined by a conjunction.",
+    "example_cn": "这两个分句由一个连词连在一起。"
+  },
+  {
+    "word": "one",
+    "phonetic": "wʌn",
+    "meaning": "一",
+    "example": "I don’t have any ones.",
+    "example_cn": "我没有一美元的纸币。"
+  },
+  {
+    "word": "visualize",
+    "phonetic": "'vizjuəlaiz",
+    "meaning": "使形象化；想象",
+    "example": "I tried to visualize the house while he was describing it.",
+    "example_cn": "我一边听他描述，一边想象那房子的样子。"
+  },
+  {
+    "word": "ephemeral",
+    "phonetic": "ɪ'fem(ə)r(ə)l; -'fiːm-",
+    "meaning": "短暂的",
+    "example": "Fashion is by nature ephemeral.",
+    "example_cn": "从本质上说，时尚不过是一时的潮流。"
+  },
+  {
+    "word": "pants",
+    "phonetic": "pæn(t)s",
+    "meaning": "裤子",
+    "example": "She was wearing dark blue pants and a white sweater.",
+    "example_cn": "她穿着深蓝色长裤和白色毛衣。"
+  },
+  {
+    "word": "thermostat",
+    "phonetic": "'θɜːməstæt",
+    "meaning": "恒温器",
+    "example": "Turn off your thermostat when you’re not home.",
+    "example_cn": "当你不在家的时候关掉恒温器。"
+  },
+  {
+    "word": "stimulate",
+    "phonetic": "'stɪmjʊleɪt",
+    "meaning": "刺激，促进",
+    "example": "Her interest in art was stimulated by her father.",
+    "example_cn": "她对艺术的兴趣是她父亲激发的。"
+  },
+  {
+    "word": "manufacture",
+    "phonetic": "mænjʊ'fæktʃə",
+    "meaning": "大量制造加工",
+    "example": "the company that manufactured the drug",
+    "example_cn": "生产这种药的公司"
+  },
+  {
+    "word": "defiance",
+    "phonetic": "dɪ'faɪəns",
+    "meaning": "挑战，挑衅；违抗；蔑视",
+    "example": "...his courageous defiance of the government.",
+    "example_cn": "…他对政府的大胆蔑视。"
+  },
+  {
+    "word": "moreover",
+    "phonetic": "mɔːr'əʊvə",
+    "meaning": "加之，而且",
+    "example": "The rent is reasonable and, moreover, the location is perfect.",
+    "example_cn": "租金合理，而且位置也非常好。"
+  },
+  {
+    "word": "veto",
+    "phonetic": "'viːtəʊ",
+    "meaning": "否决，否决权，禁止",
+    "example": "The Senate had a sufficient majority to override the presidential veto (= not accept his refusal ).",
+    "example_cn": "参议院有足够的多数票可以推翻总统的否决。"
+  },
+  {
+    "word": "combat",
+    "phonetic": "'kɒmbæt; 'kʌm-",
+    "meaning": "战斗，搏斗",
+    "example": "We flew over 200 combat missions in the war.",
+    "example_cn": "我们在战争中执行过两百多次战斗飞行任务。"
+  },
+  {
+    "word": "symptom",
+    "phonetic": "'sɪm(p)təm",
+    "meaning": "症状，症候，征兆",
+    "example": "One of the most common symptoms of schizophrenia is hearing imaginary voices.",
+    "example_cn": "精神分裂症最常见的症状之一是幻听。"
+  },
+  {
+    "word": "casual",
+    "phonetic": "'kæʒjʊəl; -zj-",
+    "meaning": "偶然的，碰巧的；随便的；临时的",
+    "example": "Jean felt more comfortable in casual clothes .",
+    "example_cn": "琼穿上便服感到更舒服。"
+  },
+  {
+    "word": "concerted",
+    "phonetic": "kən'sɜːtɪd",
+    "meaning": "商定的，一致的",
+    "example": "Libraries have made a concerted effort to attract young people.",
+    "example_cn": "各图书馆同心协力吸引年轻人。"
+  },
+  {
+    "word": "subsidiary",
+    "phonetic": "səb'sɪdɪərɪ",
+    "meaning": "辅助的；附属的",
+    "example": "a subsidiary hypothesis",
+    "example_cn": "一个附带假设"
+  },
+  {
+    "word": "insolent",
+    "phonetic": "'ɪns(ə)l(ə)nt",
+    "meaning": "蛮横的，粗鲁的",
+    "example": "an insolent tone of voice",
+    "example_cn": "傲慢的语气"
+  },
+  {
+    "word": "permit",
+    "phonetic": "pə'mɪt",
+    "meaning": "允许；许可",
+    "example": "Smoking is only permitted in the public lounge.",
+    "example_cn": "只允许在公共休息室里抽烟。"
+  },
+  {
+    "word": "dreary",
+    "phonetic": "'drɪərɪ",
+    "meaning": "沉闷的，阴沉的",
+    "example": "the same dreary routine",
+    "example_cn": "一成不变的、乏味的日常事务"
+  },
+  {
+    "word": "merit",
+    "phonetic": "'merɪt",
+    "meaning": "价值，优点，功绩",
+    "example": "The merit of the report is its realistic assessment of the changes required.",
+    "example_cn": "这份报告的优点就是它对所要求的变动进行了实事求是的评估。"
+  },
+  {
+    "word": "torrent",
+    "phonetic": "'tɒr(ə)nt",
+    "meaning": "(湍，激，洪)流",
+    "example": "After five days of heavy rain the Telle river was a raging torrent (= a very violent torrent ) .",
+    "example_cn": "下了五天的大雨之后，泰勒河急流汹涌。"
+  },
+  {
+    "word": "flatter",
+    "phonetic": "'flætə",
+    "meaning": "阿谀，使高兴；(肖像)等胜过(真人真物)",
+    "example": "That dress really flatters your figure.",
+    "example_cn": "那件连衣裙很显你的身材。"
+  },
+  {
+    "word": "layoff",
+    "phonetic": "'leɪɒf",
+    "meaning": "临时解雇，停工",
+    "example": "It will close more than 200 stores nationwide resulting in the layoffs of an estimated 2,000 employees.",
+    "example_cn": "在全国范围内将关闭二百多家商店，造成约两千人失业。"
+  },
+  {
+    "word": "evaluate",
+    "phonetic": "ɪ'væljʊeɪt",
+    "meaning": "估的价，定的值",
+    "example": "You should be able to evaluate your own work.",
+    "example_cn": "你应该能够评估自己的工作。"
+  },
+  {
+    "word": "vent",
+    "phonetic": "vent",
+    "meaning": "出口；发泄",
+    "example": "Children give vent to their anger in various ways.",
+    "example_cn": "儿童用各种方法发泄怒气。"
+  },
+  {
+    "word": "compact",
+    "phonetic": "kəm'pækt",
+    "meaning": "紧密的，紧凑的",
+    "example": "The bushes grew in a compact mass.",
+    "example_cn": "灌木长成茂密的一片。"
+  },
+  {
+    "word": "productivity",
+    "phonetic": "prɒdʌk'tɪvɪtɪ",
+    "meaning": "生产能力；生产率",
+    "example": "high productivity levels in manufacturing",
+    "example_cn": "制造业中的高生产率"
+  },
+  {
+    "word": "unconditional",
+    "phonetic": "ʌnkən'dɪʃ(ə)n(ə)l",
+    "meaning": "绝对的，无条件的",
+    "example": "the unconditional release of all political prisoners",
+    "example_cn": "所有政治犯的无条件释放"
+  },
+  {
+    "word": "lurk",
+    "phonetic": "lɜːk",
+    "meaning": "埋伏，潜伏",
+    "example": "a dark formless danger, lurking in the shadows",
+    "example_cn": "一种潜藏在阴影里的无形危险"
+  },
+  {
+    "word": "stress",
+    "phonetic": "stres",
+    "meaning": "压力；重压",
+    "example": "Your headaches are due to stress.",
+    "example_cn": "你的头痛是压力造成的。"
+  },
+  {
+    "word": "zest",
+    "phonetic": "zest",
+    "meaning": "乐趣；滋味，风味; 兴趣",
+    "example": "The danger of being caught added a certain zest to the affair.",
+    "example_cn": "被捉奸的危险为这件风流韵事增添了一些刺激性。"
+  },
+  {
+    "word": "rival",
+    "phonetic": "'raɪvl",
+    "meaning": "竞争者，对手",
+    "example": "This gives the company a competitive advantage over its rivals.",
+    "example_cn": "这使该公司与其对手相比具有一项竞争优势。"
+  },
+  {
+    "word": "fragrance",
+    "phonetic": "'freɪgr(ə)ns",
+    "meaning": "香味，香气",
+    "example": "...a shrubby plant with a strong characteristic fragrance.",
+    "example_cn": "…一种有独特浓郁香味的灌木。"
+  },
+  {
+    "word": "comply",
+    "phonetic": "kəm'plaɪ",
+    "meaning": "遵守，照做",
+    "example": "The newspaper was asked by federal agents for assistance and agreed to comply.",
+    "example_cn": "联邦探员要求这家报社给予协助，报社同意配合。"
+  },
+  {
+    "word": "trustworthy",
+    "phonetic": "'trʌs(t)wɜːðɪ",
+    "meaning": "可信赖的，可靠的",
+    "example": "He is a trustworthy and level-headed leader.",
+    "example_cn": "他是个可信赖的、头脑冷静的领导。"
+  },
+  {
+    "word": "stain",
+    "phonetic": "steɪn",
+    "meaning": "染料，着色剂，污点，沾污处",
+    "example": "Be careful you don’t stain the carpet.",
+    "example_cn": "当心别把地毯弄脏了。"
+  },
+  {
+    "word": "patent",
+    "phonetic": "'pæt(ə)nt; 'peɪt(ə)nt",
+    "meaning": "明显的；获得专利的",
+    "example": "a patent lock",
+    "example_cn": "专利锁"
+  },
+  {
+    "word": "harassment",
+    "phonetic": "'hærəsm(ə)nt; hə'ræsm(ə)nt",
+    "meaning": "烦忧，困扰",
+    "example": "African-Americans have been complaining about police harassment for years.",
+    "example_cn": "美国黑人多年来一直抱怨受到警察的骚扰。"
+  },
+  {
+    "word": "dwarf",
+    "phonetic": "dwɔːf",
+    "meaning": "矮子，矮小的动植物",
+    "example": "Snow White and the Seven Dwarfs",
+    "example_cn": "《白雪公主和七个小矮人》"
+  },
+  {
+    "word": "appraisal",
+    "phonetic": "ə'preɪz(ə)l",
+    "meaning": "估价，评价；鉴定",
+    "example": "What is needed in such cases is a calm appraisal of the situation.",
+    "example_cn": "在此类情况下需要的是对形势的冷静估计。"
+  },
+  {
+    "word": "painstaking",
+    "phonetic": "'peɪnzteɪkɪŋ",
+    "meaning": "极小心的；勤恳的",
+    "example": "The work had been done with painstaking attention to detail.",
+    "example_cn": "这项工作被一丝不苟地完成了。"
+  },
+  {
+    "word": "frail",
+    "phonetic": "freɪl",
+    "meaning": "脆弱的；脆弱的",
+    "example": "{\"COLLOINEXA\":[\"frail elderly people\"]}",
+    "example_cn": "年老体衰者"
+  },
+  {
+    "word": "competence",
+    "phonetic": "'kɒmpɪt(ə)ns",
+    "meaning": "能力，胜任，权限",
+    "example": "Typing is considered by most employers to be a basic competence.",
+    "example_cn": "大多数雇主认为打字是一项基本技能。"
+  },
+  {
+    "word": "airing",
+    "phonetic": "'eərɪŋ",
+    "meaning": "通风；讨论",
+    "example": "give them an airing.",
+    "example_cn": "把室内盆栽植物搬出去透透气。"
+  },
+  {
+    "word": "deny",
+    "phonetic": "dɪ'naɪ",
+    "meaning": "否认, 否定，拒绝一项要求\"",
+    "example": "The government denied the existence of poverty among 16- and 17-year-olds.",
+    "example_cn": "政府否认十六七岁的青少年当中存在贫困问题。"
+  },
+  {
+    "word": "residence",
+    "phonetic": "'rezɪd(ə)ns",
+    "meaning": "居住；住处；住宅",
+    "example": "the ambassador’s official residence",
+    "example_cn": "大使官邸"
+  },
+  {
+    "word": "achieve",
+    "phonetic": "ə'tʃiːv",
+    "meaning": "完成，达到",
+    "example": "Frances achieved very good exam results.",
+    "example_cn": "弗朗西丝考试取得了优异成绩。"
+  },
+  {
+    "word": "intellect",
+    "phonetic": "'ɪntəlekt",
+    "meaning": "智力，才智",
+    "example": "Do the emotions develop in parallel with the intellect?",
+    "example_cn": "情感与智力同步发展吗？"
+  },
+  {
+    "word": "commonplace",
+    "phonetic": "'kɒmənpleɪs",
+    "meaning": "普通的，平凡的",
+    "example": "Car thefts are commonplace in this part of town.",
+    "example_cn": "镇上的这个地段盗车案屡见不鲜。"
+  },
+  {
+    "word": "drowse",
+    "phonetic": "draʊz",
+    "meaning": "瞌睡",
+    "example": "I was drowsing in front of the television when you called.",
+    "example_cn": "我正坐在电视机前打瞌睡，恰好你打电话来。"
+  },
+  {
+    "word": "aquatic",
+    "phonetic": "ə'kwætɪk; -'kwɒt-",
+    "meaning": "水产的；(运行)水上的",
+    "example": "an aquatic plant",
+    "example_cn": "水生植物"
+  },
+  {
+    "word": "cheer",
+    "phonetic": "tʃɪə",
+    "meaning": "振奋，高兴，欢呼",
+    "example": "A great cheer went up from the crowd.",
+    "example_cn": "人群中爆发出巨大的欢呼声。"
+  },
+  {
+    "word": "charity",
+    "phonetic": "'tʃærɪtɪ",
+    "meaning": "赈济款、物；慈善团体；博爱",
+    "example": "Several charities sent aid to the flood victims.",
+    "example_cn": "有几家慈善机构已向洪灾灾民送去了救援物资。"
+  },
+  {
+    "word": "lock",
+    "phonetic": "lɒk",
+    "meaning": "把（…）锁住；被锁住",
+    "example": "The wheels suddenly locked.",
+    "example_cn": "轮子突然卡住不动了。"
+  },
+  {
+    "word": "posthumous",
+    "phonetic": "'pɒstjʊməs",
+    "meaning": "遗腹的；父亡后出生的；死后的；身后的",
+    "example": "a posthumous collection of his articles",
+    "example_cn": "他身后出版的文集"
+  },
+  {
+    "word": "puncture",
+    "phonetic": "'pʌŋ(k)tʃə",
+    "meaning": "小孔，刺孔",
+    "example": "She was cycling home when she had a puncture .",
+    "example_cn": "她骑车回家途中轮胎被扎破了。"
+  },
+  {
+    "word": "aupair",
+    "phonetic": "",
+    "meaning": "国外来的(姑娘)帮助料理家务换取住宿的",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "corporate",
+    "phonetic": "'kɔːp(ə)rət",
+    "meaning": "社团的；法人的；共同的",
+    "example": "corporate responsibility",
+    "example_cn": "共同的责任"
+  },
+  {
+    "word": "proclaim",
+    "phonetic": "prə'kleɪm",
+    "meaning": "宣告，声明",
+    "example": "The President proclaimed the republic’s independence.",
+    "example_cn": "总统宣布共和国独立。"
+  },
+  {
+    "word": "fame",
+    "phonetic": "feɪm",
+    "meaning": "名声，名誉",
+    "example": "He claims he is not really interested in fame.",
+    "example_cn": "他称自己对出名真的没有兴趣。"
+  },
+  {
+    "word": "trifle",
+    "phonetic": "'traɪf(ə)l",
+    "meaning": "小事，无价值的东西；少量的钱",
+    "example": "There’s no point in arguing over trifles.",
+    "example_cn": "为琐事争吵毫无意义。"
+  },
+  {
+    "word": "pervade",
+    "phonetic": "pə'veɪd",
+    "meaning": "遍及，弥漫",
+    "example": "A spirit of hopelessness pervaded the country.",
+    "example_cn": "一种无望的情绪笼罩着该国。"
+  },
+  {
+    "word": "scar",
+    "phonetic": "skɑː",
+    "meaning": "伤疤，伤痕，(喻)内心创伤",
+    "example": "He had a long, curved scar on his right cheek.",
+    "example_cn": "他的右脸上有一道弯弯的长疤。"
+  },
+  {
+    "word": "unconscious",
+    "phonetic": "ʌn'kɒnʃəs",
+    "meaning": "无畏的，大胆的",
+    "example": "She was found alive but unconscious.",
+    "example_cn": "她被找到时还活着，但已不省人事。"
+  },
+  {
+    "word": "investigate",
+    "phonetic": "ɪn'vestɪgeɪt",
+    "meaning": "调查，调查研究",
+    "example": "The state police are investigating the incident.",
+    "example_cn": "州警察正调查此事。"
+  },
+  {
+    "word": "oasis",
+    "phonetic": "əʊ'eɪsɪs",
+    "meaning": "(沙漠中的)绿洲",
+    "example": "The immaculately tended gardens are an oasis in the midst of Cairo's urban sprawl.",
+    "example_cn": "那些打理得非常整洁的花园是杂乱扩张的开罗市区中的一片绿洲。"
+  },
+  {
+    "word": "hard",
+    "phonetic": "hɑːd",
+    "meaning": "坚硬的；困难的；难忍的；严厉的；结实的",
+    "example": "a hard wooden chair",
+    "example_cn": "一把硬木椅"
+  },
+  {
+    "word": "orthodox",
+    "phonetic": "'ɔːθədɒks",
+    "meaning": "正(传)统的",
+    "example": "orthodox medical treatments",
+    "example_cn": "传统疗法"
+  },
+  {
+    "word": "salvage",
+    "phonetic": "'sælvɪdʒ",
+    "meaning": "(从火灾及其他灾难中)抢救财物救助",
+    "example": "a massive salvage operation",
+    "example_cn": "大规模的抢救行动"
+  },
+  {
+    "word": "confusion",
+    "phonetic": "kən'fjuːʒ(ə)n",
+    "meaning": "混乱，混同",
+    "example": "To avoid confusion, the teams wore different colours.",
+    "example_cn": "为了避免混淆，各队穿着不同颜色的服装。"
+  },
+  {
+    "word": "exceptional",
+    "phonetic": "ɪk'sepʃ(ə)n(ə)l; ek-",
+    "meaning": "异常的，优越的",
+    "example": "an exceptional student",
+    "example_cn": "出类拔萃的学生"
+  },
+  {
+    "word": "drought",
+    "phonetic": "draʊt",
+    "meaning": "干旱",
+    "example": "...a country where drought and famines have killed up to two million people during the last eighteen years.",
+    "example_cn": "…过去18年来干旱和饥荒致死达两百万人的一个国家。"
+  },
+  {
+    "word": "null",
+    "phonetic": "nʌl",
+    "meaning": "无效的，无意义的",
+    "example": "The contract was declared null and void.",
+    "example_cn": "该合同被宣布无效。"
+  },
+  {
+    "word": "fetch",
+    "phonetic": "fetʃ",
+    "meaning": "(去)取，拿来；(货物)售的(价钱)",
+    "example": "Sylvia fetched a towel from the bathroom.",
+    "example_cn": "西尔维娅从浴室拿来一条毛巾。"
+  },
+  {
+    "word": "harness",
+    "phonetic": "'hɑːnɪs",
+    "meaning": "上挽具；治理；利用",
+    "example": "We can harness the power of the wind to generate electricity.",
+    "example_cn": "我们可以利用风力发电。"
+  },
+  {
+    "word": "trivial",
+    "phonetic": "'trɪvɪəl",
+    "meaning": "琐碎的，不重要的；平常的，平凡的",
+    "example": "a trivial sum",
+    "example_cn": "一笔极小的金额"
+  },
+  {
+    "word": "ease",
+    "phonetic": "iːz",
+    "meaning": "减轻，放松，小心移置；舒适",
+    "example": "They won with ease.",
+    "example_cn": "他们轻松获胜。"
+  },
+  {
+    "word": "furnish",
+    "phonetic": "'fɜːnɪʃ",
+    "meaning": "供应，用家具装备房子",
+    "example": "Having bought the house, they couldn’t afford to furnish it.",
+    "example_cn": "买下房子后，他们没有钱买家具了。"
+  },
+  {
+    "word": "paraphernalia",
+    "phonetic": ",pærəfə'neɪlɪə",
+    "meaning": "随身用品；贴身用品",
+    "example": "...a large courtyard full of builders' paraphernalia.",
+    "example_cn": "…一个充满建筑装备的大院子"
+  },
+  {
+    "word": "extent",
+    "phonetic": "ɪk'stent; ek-",
+    "meaning": "广度，长度，程度",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "instrumental",
+    "phonetic": "ɪnstrʊ'ment(ə)l",
+    "meaning": "起作用的，有助于，乐器的",
+    "example": "He was instrumental in developing links with European organizations.",
+    "example_cn": "他在建立与欧洲各组织之间的联系中起了重要作用。"
+  },
+  {
+    "word": "exorbitant",
+    "phonetic": "ɪg'zɔːbɪt(ə)nt",
+    "meaning": "要价过高的，过分的",
+    "example": "Exorbitant housing prices have created an acute shortage of affordable housing for the poor.",
+    "example_cn": "过高的房价使穷人负担得起的房源严重短缺。"
+  },
+  {
+    "word": "combustible",
+    "phonetic": "kəm'bʌstɪb(ə)l",
+    "meaning": "易燃的，可燃的",
+    "example": "The ability of coal to release a combustible gas has long been known.",
+    "example_cn": "煤能够释放易燃气体这一点早已为人所知。"
+  },
+  {
+    "word": "address",
+    "phonetic": "ə'dres",
+    "meaning": "住址；致词",
+    "example": "What’s your new address?",
+    "example_cn": "你的新地址是什么？"
+  },
+  {
+    "word": "junk",
+    "phonetic": "dʒʌŋk",
+    "meaning": "旧货，假货",
+    "example": "Consumers will not have to junk their old cassettes to use the new format.",
+    "example_cn": "消费者们将不必为了使用新制式而丢掉他们的老盒式磁带。"
+  },
+  {
+    "word": "reputation",
+    "phonetic": "repjʊ'teɪʃ(ə)n",
+    "meaning": "名誉，名声",
+    "example": "Alice Munro has a reputation for being a very depressing writer.",
+    "example_cn": "艾丽斯•门罗有文风抑郁的名声。"
+  },
+  {
+    "word": "obstruct",
+    "phonetic": "əb'strʌkt",
+    "meaning": "阻塞，堵塞；妨碍",
+    "example": "A small aircraft was obstructing the runway.",
+    "example_cn": "一架小型飞机堵住了跑道。"
+  },
+  {
+    "word": "enclosure",
+    "phonetic": "ɪn'kləʊʒə; en-",
+    "meaning": "围栏；附件",
+    "example": "the enclosure of arable land for pasture",
+    "example_cn": "将耕地圈起来用作牧场"
+  },
+  {
+    "word": "telecommunication",
+    "phonetic": ",telɪkəmjuːnɪ'keɪʃ(ə)n",
+    "meaning": "电信，电信学",
+    "example": "If large media and telecommunication companies decide to close their offerings to the web, I am convinced the web will route around it.",
+    "example_cn": "如果大型媒体和电信公司决定停止向万维网提供内容，我很确信万维网会绕过这一点。"
+  },
+  {
+    "word": "custodian",
+    "phonetic": "kʌ'stəʊdɪən",
+    "meaning": "保管人，监护人；公共建筑看守",
+    "example": "a custodian at the stadium",
+    "example_cn": "体育场看门人"
+  },
+  {
+    "word": "meditate",
+    "phonetic": "'medɪteɪt",
+    "meaning": "深思，仔细思考",
+    "example": "On the day her son began school, she meditated on the uncertainties of his future.",
+    "example_cn": "在她儿子入学那天，她深思了有关他未来的种种不确定因素。"
+  },
+  {
+    "word": "oblige",
+    "phonetic": "ə'blaɪdʒ",
+    "meaning": "(以誓言或契约等)束缚某人；施惠",
+    "example": "It’s always a good idea to oblige important clients.",
+    "example_cn": "能满足重要客户的请求总是好的。"
+  },
+  {
+    "word": "versus",
+    "phonetic": "'vɜːsəs",
+    "meaning": "[略作v或vs](诉讼或比赛中)对",
+    "example": "the New York Knicks versus the LA Lakers",
+    "example_cn": "纽约尼克斯队对洛杉矶湖人队"
+  },
+  {
+    "word": "timidity",
+    "phonetic": "tɪ'mɪdətɪ",
+    "meaning": "胆怯",
+    "example": "They mocked at my timidity.",
+    "example_cn": "他们耻笑我胆小。"
+  },
+  {
+    "word": "volatile",
+    "phonetic": "'vɒlətaɪl",
+    "meaning": "(液体)易挥发的；(人)反复无常的",
+    "example": "an increasingly volatile political situation",
+    "example_cn": "日益动荡的政治局势"
+  },
+  {
+    "word": "indignant",
+    "phonetic": "ɪn'dɪgnənt",
+    "meaning": "义愤的，愤慨的",
+    "example": "an indignant reply",
+    "example_cn": "愤慨的回复"
+  },
+  {
+    "word": "seal",
+    "phonetic": "sil",
+    "meaning": "海豹；封蜡，封印；印记",
+    "example": "The window was sealed shut.",
+    "example_cn": "这扇窗户被封了起来。"
+  },
+  {
+    "word": "sovereign",
+    "phonetic": "'sɒvrɪn",
+    "meaning": "主权的；最高的",
+    "example": "Lithuania and Armenia signed a treaty in Vilnius recognizing each other as independent sovereign states.",
+    "example_cn": "立陶宛和亚美尼亚在维尔纽斯签订了一份互相承认各自为独立主权国家的协定。"
+  },
+  {
+    "word": "cute",
+    "phonetic": "kjuːt",
+    "meaning": "漂亮的，逗人喜爱的",
+    "example": "a cute little puppy",
+    "example_cn": "一只逗人爱的小狗"
+  },
+  {
+    "word": "navigation",
+    "phonetic": "nævɪ'geɪʃ(ə)n",
+    "meaning": "航行；驾驶",
+    "example": "compasses and other instruments of navigation",
+    "example_cn": "罗盘及其他导航仪器"
+  },
+  {
+    "word": "shock",
+    "phonetic": "ʃɒk",
+    "meaning": "(使)震惊",
+    "example": "She was shaking with shock and humiliation.",
+    "example_cn": "她又是震惊，又是羞辱，身体直发抖。"
+  },
+  {
+    "word": "account",
+    "phonetic": "ə'kaʊnt",
+    "meaning": "账目；帐户；计算",
+    "example": "My salary is paid into my bank account.",
+    "example_cn": "我的工资直接存入我的银行账户。"
+  },
+  {
+    "word": "main",
+    "phonetic": "meɪn",
+    "meaning": "(自来水、煤气等)总管道，干线",
+    "example": "The report found that many of Yorkshire’s water mains needed replacing.",
+    "example_cn": "报告中说约克郡的很多自来水总管道需要更换。"
+  },
+  {
+    "word": "repertoire",
+    "phonetic": "'repətwɑː",
+    "meaning": "全部剧目，全部节目",
+    "example": "the behavioural repertoire of infants",
+    "example_cn": "婴幼儿的行为能力"
+  },
+  {
+    "word": "void",
+    "phonetic": "vɒɪd",
+    "meaning": "空的，空虚的",
+    "example": "Her eyes were void of all expression.",
+    "example_cn": "她的眼神一片茫然。"
+  },
+  {
+    "word": "regarding",
+    "phonetic": "rɪ'gɑːdɪŋ",
+    "meaning": "关于",
+    "example": "Regarding your recent inquiry, I have enclosed a copy of our new brochure.",
+    "example_cn": "关于你最近的咨询，我随信附上一本我们最新的手册。"
+  },
+  {
+    "word": "contract",
+    "phonetic": "'kɒntrækt",
+    "meaning": "合同，契约",
+    "example": "Employees who refuse to relocate are in breach of contract (= have done something not allowed by their contracts ) .",
+    "example_cn": "员工拒绝调动岗位是违反合约的。"
+  },
+  {
+    "word": "resolve",
+    "phonetic": "rɪ'zɒlv",
+    "meaning": "解决；决定",
+    "example": "Barnet was desperate for money to resolve his financial problems.",
+    "example_cn": "巴尼特急需钱来解决他的经济问题。"
+  },
+  {
+    "word": "virtuous",
+    "phonetic": "'vɜːtjʊəs; -tʃʊəs",
+    "meaning": "有德行的; 善良的",
+    "example": "a virtuous man",
+    "example_cn": "品行端正的男子"
+  },
+  {
+    "word": "incredible",
+    "phonetic": "ɪn'kredɪb(ə)l",
+    "meaning": "难以置信的，惊人的",
+    "example": "It’s incredible that he survived the fall.",
+    "example_cn": "他跌下去竟然能够生还，真不可思议。"
+  },
+  {
+    "word": "compensate",
+    "phonetic": "'kɒmpenseɪt",
+    "meaning": "赔偿，补偿",
+    "example": "Because my left eye is so weak, my right eye has to work harder to compensate.",
+    "example_cn": "因为我左眼视力差，右眼就要辛苦点来弥补一下。"
+  },
+  {
+    "word": "hysterical",
+    "phonetic": "hɪ'sterɪk(ə)l",
+    "meaning": "歇斯底里的, 狂热的",
+    "example": "Janet became hysterical and began screaming.",
+    "example_cn": "珍妮特歇斯底里起来，开始尖叫。"
+  },
+  {
+    "word": "hug",
+    "phonetic": "hʌg",
+    "meaning": "紧抱，拥抱",
+    "example": "We stood there crying and hugging each other.",
+    "example_cn": "我们站在那里哭着互相拥抱。"
+  },
+  {
+    "word": "inhabit",
+    "phonetic": "ɪn'hæbɪt",
+    "meaning": "居住于",
+    "example": "The woods are inhabited by many wild animals.",
+    "example_cn": "很多野生动物栖居在这片森林里。"
+  },
+  {
+    "word": "tweezers",
+    "phonetic": "'twiːzəz",
+    "meaning": "镊子",
+    "example": "She was plucking her eyebrows with a pair of tweezers .",
+    "example_cn": "她正拿着一把小镊子在拔眉毛。"
+  },
+  {
+    "word": "oversee",
+    "phonetic": "əʊvə'siː",
+    "meaning": "监督，监管",
+    "example": "A team leader was appointed to oversee the project.",
+    "example_cn": "任命了一位组长来监管该工程。"
+  },
+  {
+    "word": "lateral",
+    "phonetic": "'læt(ə)r(ə)l",
+    "meaning": "侧面的；旁边的",
+    "example": "The wall is weak and requires lateral support.",
+    "example_cn": "墙体不坚固，需要从侧面加以支撑。"
+  },
+  {
+    "word": "scroll",
+    "phonetic": "skrəʊl",
+    "meaning": "卷轴; 纸卷",
+    "example": "Ancient scrolls were found in caves by the Dead Sea.",
+    "example_cn": "在死海边的洞穴里发现了古代的卷轴。"
+  },
+  {
+    "word": "outset",
+    "phonetic": "'aʊtset",
+    "meaning": "开始，开端",
+    "example": "It was clear from the outset that there were going to be problems.",
+    "example_cn": "从一开始就很清楚会有问题出现的。"
+  },
+  {
+    "word": "locker",
+    "phonetic": "'lɒkə",
+    "meaning": "(公共场所存衣帽的)小橱柜",
+    "example": "a meat locker",
+    "example_cn": "肉类冷藏间"
+  },
+  {
+    "word": "imperial",
+    "phonetic": "ɪm'pɪərɪəl",
+    "meaning": "帝国的，皇帝的",
+    "example": "Britain’s imperial expansion in the 19th century",
+    "example_cn": "19世纪英帝国的扩张"
+  },
+  {
+    "word": "upkeep",
+    "phonetic": "'ʌpkiːp",
+    "meaning": "保养费，维修费",
+    "example": "Poorer people find it hard to pay for their pet’s upkeep.",
+    "example_cn": "经济不宽裕的人难以负担养宠物的开销。"
+  },
+  {
+    "word": "voluntary",
+    "phonetic": "'vɒlənt(ə)rɪ",
+    "meaning": "自愿的，志愿的；有意的",
+    "example": "Workers are being encouraged to take voluntary redundancy.",
+    "example_cn": "工人被鼓励主动离职。"
+  },
+  {
+    "word": "relentless",
+    "phonetic": "rɪ'lentlɪs",
+    "meaning": "无情的，不仁慈的，残酷的",
+    "example": "her relentless determination to succeed",
+    "example_cn": "她要成功的坚定决心"
+  },
+  {
+    "word": "glide",
+    "phonetic": "glaɪd",
+    "meaning": "滑动，滑翔",
+    "example": "Waiters glide between tightly packed tables bearing trays of pasta.",
+    "example_cn": "侍者们托着一盘盘的意大利面食在拥挤的餐桌间自如穿行。"
+  },
+  {
+    "word": "splendid",
+    "phonetic": "'splendɪd",
+    "meaning": "壮丽的，辉煌的",
+    "example": "All the rooms have splendid views.",
+    "example_cn": "所有的房间都能看到漂亮的景致。"
+  },
+  {
+    "word": "freak",
+    "phonetic": "friːk",
+    "meaning": "怪诞的思想、行动或事件；畸形的",
+    "example": "These glasses make me look like a freak.",
+    "example_cn": "我戴这副眼镜看上去像个怪人。"
+  },
+  {
+    "word": "dynamic",
+    "phonetic": "daɪ'næmɪk",
+    "meaning": "精力充沛的；动力的",
+    "example": "dynamic and ambitious people",
+    "example_cn": "精力充沛且雄心勃勃的人"
+  },
+  {
+    "word": "cardinal",
+    "phonetic": "'kɑːd(ɪ)n(ə)l",
+    "meaning": "主要的，基本的",
+    "example": "Having clean hands is one of the cardinal rules when preparing food.",
+    "example_cn": "双手洁净是准备食物时的一项最基本要求。"
+  },
+  {
+    "word": "lace",
+    "phonetic": "leɪs",
+    "meaning": "鞋带；花边",
+    "example": "a handkerchief trimmed with lace",
+    "example_cn": "饰有蕾丝花边的手绢"
+  },
+  {
+    "word": "derelict",
+    "phonetic": "'derəlɪkt",
+    "meaning": "被抛弃的",
+    "example": "Her body was found dumped in a derelict warehouse less than a mile from her home.",
+    "example_cn": "她的尸体被发现丢在离她家不到一英里的一座废弃的仓库里。"
+  },
+  {
+    "word": "viable",
+    "phonetic": "'vaiəbl",
+    "meaning": "能活的，能生存的",
+    "example": "viable seeds",
+    "example_cn": "可存活的种子"
+  },
+  {
+    "word": "fusion",
+    "phonetic": "'fjuːʒ(ə)n",
+    "meaning": "熔合，熔接",
+    "example": "His previous fusions of jazz, pop and African melodies have proved highly successful.",
+    "example_cn": "他先前对爵士乐、流行乐和非洲音乐旋律的融合已经证明是非常成功的。"
+  },
+  {
+    "word": "recede",
+    "phonetic": "rɪ'siːd",
+    "meaning": "后退；向后倾斜",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "prophecy",
+    "phonetic": "'prɒfɪsɪ",
+    "meaning": "预言，预言能力",
+    "example": "She had the gift of prophecy.",
+    "example_cn": "她有预言的天赋。"
+  },
+  {
+    "word": "ego",
+    "phonetic": "'iːgəʊ; 'e-",
+    "meaning": "自我，自己，个人思考和感觉能力",
+    "example": "That promotion really boosted her ego (= made her feel better about herself ).",
+    "example_cn": "那次晋升确实增强了她的自信心。"
+  },
+  {
+    "word": "muscular",
+    "phonetic": "'mʌskjʊlə",
+    "meaning": "肌肉的；肌肉发达的",
+    "example": "She was fast and strong, with a slender, muscular body.",
+    "example_cn": "她动作敏捷，身体强壮，身材苗条，肌肉结实。"
+  },
+  {
+    "word": "exterior",
+    "phonetic": "ɪk'stɪərɪə; ek-",
+    "meaning": "外部的；外来的，外表",
+    "example": "The dome is tiled on the exterior.",
+    "example_cn": "穹顶表面铺了瓦片。"
+  },
+  {
+    "word": "accommodate",
+    "phonetic": "ə'kɒmədeɪt",
+    "meaning": "提供住宿；使适应",
+    "example": "The island was used to accommodate child refugees.",
+    "example_cn": "该岛用于收容儿童难民。"
+  },
+  {
+    "word": "violate",
+    "phonetic": "'vaɪəleɪt",
+    "meaning": "违犯，侵犯",
+    "example": "34 protesters were arrested for violating criminal law.",
+    "example_cn": "34名抗议者因违反刑法而被逮捕。"
+  },
+  {
+    "word": "jealous",
+    "phonetic": "'dʒeləs",
+    "meaning": "妒忌的；妒羡的",
+    "example": "She got insanely jealous and there was a terrible fight.",
+    "example_cn": "她变得过分地猜忌，接着是一场激烈的打斗。"
+  },
+  {
+    "word": "initiate",
+    "phonetic": "ɪ'nɪʃɪeɪt",
+    "meaning": "创始，着手，介绍某人为(会员等)",
+    "example": "They have decided to initiate legal proceedings against the newspaper.",
+    "example_cn": "他们决定向该报提起法律诉讼。"
+  },
+  {
+    "word": "concrete",
+    "phonetic": "'kɒŋkriːt",
+    "meaning": "混凝土",
+    "example": "The posts have to be set in concrete.",
+    "example_cn": "这些柱子必须固定在混凝土中。"
+  },
+  {
+    "word": "unrest",
+    "phonetic": "ʌn'rest",
+    "meaning": "不安；动荡",
+    "example": "There is growing unrest throughout the country.",
+    "example_cn": "全国各地日益动荡不安。"
+  },
+  {
+    "word": "apply",
+    "phonetic": "ə'plaɪ",
+    "meaning": "要求，申请",
+    "example": "We need to apply for planning permission to build a garage.",
+    "example_cn": "我们建车库需要申请规划许可。"
+  },
+  {
+    "word": "havoc",
+    "phonetic": "'hævək",
+    "meaning": "大灾难，浩劫",
+    "example": "policies that would wreak havoc on the country’s economy",
+    "example_cn": "会危害该国经济的政策"
+  },
+  {
+    "word": "poster",
+    "phonetic": "'pəʊstə",
+    "meaning": "招贴画，广告；广告画",
+    "example": "A team of volunteers were putting up posters .",
+    "example_cn": "一队志愿者正在张贴海报。"
+  },
+  {
+    "word": "entangle",
+    "phonetic": "ɪn'tæŋg(ə)l; en-",
+    "meaning": "缠住，套住",
+    "example": "The blade of the oar had entangled itself with the strap of her bag.",
+    "example_cn": "桨叶和她包的带子紧紧缠在了一起。"
+  },
+  {
+    "word": "purge",
+    "phonetic": "pɜːdʒ",
+    "meaning": "净化，洗清",
+    "example": "Anorexics may overeat before purging themselves or vomiting.",
+    "example_cn": "厌食症患者会在暴饮暴食之后服用泻药或者把吃下去的东西呕吐出来。"
+  },
+  {
+    "word": "sponsor",
+    "phonetic": "'spɒnsə",
+    "meaning": "发起(人)；主办(人)",
+    "example": "Dozens of companies, including Hewlett-Packard, are sponsoring the event.",
+    "example_cn": "包括惠普在内的许多公司都在赞助这项赛事。"
+  },
+  {
+    "word": "title",
+    "phonetic": "'taɪt(ə)l",
+    "meaning": "标题；题目；称号；法律权利，所有权",
+    "example": "\"Patience and Sarah\" was first published in 1969 under the title \"A Place for Us.\"",
+    "example_cn": "《耐心与萨拉》于1969年以《我们的地方》为书名首次出版。"
+  },
+  {
+    "word": "steamer",
+    "phonetic": "'stiːmə",
+    "meaning": "汽锅，汽船，轮船",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "scorn",
+    "phonetic": "skɔːn",
+    "meaning": "轻蔑；蔑视",
+    "example": "Researchers greeted the proposal with scorn.",
+    "example_cn": "研究者们对这个提议报以轻蔑的态度。"
+  },
+  {
+    "word": "inertia",
+    "phonetic": "ɪ'nɜːʃə",
+    "meaning": "呆滞，迟钝，惯性",
+    "example": "political inertia",
+    "example_cn": "政治上的保守"
+  },
+  {
+    "word": "audition",
+    "phonetic": "ɔː'dɪʃ(ə)n",
+    "meaning": "试听；试演；面试",
+    "example": "...an audition for a Broadway musical.",
+    "example_cn": "…一部百老汇歌舞剧的试演。"
+  },
+  {
+    "word": "meadow",
+    "phonetic": "'medəʊ",
+    "meaning": "草地",
+    "example": "The meadow has been ploughed up.",
+    "example_cn": "那片草地已用犁翻过。"
+  },
+  {
+    "word": "pamper",
+    "phonetic": "'pæmpə",
+    "meaning": "纵容，娇惯",
+    "example": "She spent her childhood as the pampered daughter of a wealthy family.",
+    "example_cn": "她出身于一个富裕家庭，从小娇生惯养。"
+  },
+  {
+    "word": "memorandum",
+    "phonetic": "memə'rændəm",
+    "meaning": "备忘录；便函",
+    "example": "...a memorandum from the Department of Defense on its role.",
+    "example_cn": "…一份来自国防部的有关其角色的备忘录。"
+  },
+  {
+    "word": "reluctant",
+    "phonetic": "rɪ'lʌkt(ə)nt",
+    "meaning": "不愿意的，勉强的",
+    "example": "She gave a reluctant smile.",
+    "example_cn": "她勉强笑了笑。"
+  },
+  {
+    "word": "ragged",
+    "phonetic": "'rægɪd",
+    "meaning": "褴褛的，外形参差不齐的",
+    "example": "Crowds of ragged children played among the rocks.",
+    "example_cn": "一群群破衣烂衫的孩子在岩石间玩耍。"
+  },
+  {
+    "word": "tentacle",
+    "phonetic": "'tentək(ə)l",
+    "meaning": "(动物)触角",
+    "example": "Free speech is being gradually eroded year after year by new tentacles of government control.",
+    "example_cn": "言论自由正被政府控制的新触角逐渐侵蚀。"
+  },
+  {
+    "word": "territorial",
+    "phonetic": ",terɪ'tɔːrɪəl",
+    "meaning": "领土的，领地的",
+    "example": "a territorial dispute",
+    "example_cn": "领土争端"
+  },
+  {
+    "word": "album",
+    "phonetic": "'ælbəm",
+    "meaning": "集邮册；相片册",
+    "example": "a photograph album",
+    "example_cn": "相册"
+  },
+  {
+    "word": "restore",
+    "phonetic": "rɪ'stɔː",
+    "meaning": "恢复；归还",
+    "example": "She was hoping that the Mediterranean climate would restore her to full health.",
+    "example_cn": "她希望地中海的气候能使她的身体完全复原。"
+  },
+  {
+    "word": "creep",
+    "phonetic": "kriːp",
+    "meaning": "爬行；缓慢移行；(时间)悄悄过去；蔓延",
+    "example": "He crept back up the stairs, trying to avoid the ones that creaked.",
+    "example_cn": "他蹑手蹑脚地回楼上，尽量避开那些嘎吱作响的梯级。"
+  },
+  {
+    "word": "make",
+    "phonetic": "meɪk",
+    "meaning": "做",
+    "example": "I’m going to show you how to make a box for your tools.",
+    "example_cn": "我来教你怎么做一个箱子存放工具。"
+  },
+  {
+    "word": "attach",
+    "phonetic": "ə'tætʃ",
+    "meaning": "系上；附上；依恋；认为",
+    "example": "It’s easy to become attached to the children you work with.",
+    "example_cn": "你很容易就会喜欢上工作中接触到的孩子。"
+  },
+  {
+    "word": "galaxy",
+    "phonetic": "'gæləksɪ",
+    "meaning": "星系；一群人",
+    "example": "Astronomers have discovered a distant galaxy.",
+    "example_cn": "天文学家们发现了一个遥远的星系。"
+  },
+  {
+    "word": "encounter",
+    "phonetic": "ɪn'kaʊntə; en-",
+    "meaning": "遭遇，意外地遇到",
+    "example": "The doctor had encountered several similar cases in the past.",
+    "example_cn": "那位医生过去曾碰到过好几个类似病例。"
+  },
+  {
+    "word": "suitcase",
+    "phonetic": "'suːtkeɪs",
+    "meaning": "衣箱",
+    "example": "It did not take Andrew long to pack a suitcase.",
+    "example_cn": "安德鲁没有用多长时间就整理好了手提箱。"
+  },
+  {
+    "word": "stall",
+    "phonetic": "stɔːl",
+    "meaning": "分隔栏；售货摊；前排座位",
+    "example": "a market stall",
+    "example_cn": "市场摊位"
+  },
+  {
+    "word": "staff",
+    "phonetic": "stɑːf",
+    "meaning": "木棍；杆；工作人员",
+    "example": "10 staff were allocated to the task.",
+    "example_cn": "10名员工被分派做这项任务。"
+  },
+  {
+    "word": "curtail",
+    "phonetic": "kɜː'teɪl",
+    "meaning": "截短，削减",
+    "example": "The new law will curtail police powers.",
+    "example_cn": "这条新法规将削弱警方的权力。"
+  },
+  {
+    "word": "wail",
+    "phonetic": "weɪl",
+    "meaning": "vi大声哀号，恸哭；呼啸，尖啸",
+    "example": "‘But what shall I do?’ Bernard wailed.",
+    "example_cn": "“但我该怎么办呢？”伯纳德哭喊道。"
+  },
+  {
+    "word": "thereby",
+    "phonetic": "ðeə'baɪ",
+    "meaning": "借以，从而",
+    "example": "This gives you the opportunity to pray for and bless the other thereby blessing yourself.",
+    "example_cn": "它其实是给了你一个机会，去为他人祈祷和祝福，从而赐福给你自己。"
+  },
+  {
+    "word": "mediocre",
+    "phonetic": ",miːdɪ'əʊkə",
+    "meaning": "平庸的，平常的",
+    "example": "I thought the book was pretty mediocre.",
+    "example_cn": "我认为这本书非常一般。"
+  },
+  {
+    "word": "valley",
+    "phonetic": "'vælɪ",
+    "meaning": "深谷，山谷",
+    "example": "the San Fernando Valley",
+    "example_cn": "圣费尔南多山谷"
+  },
+  {
+    "word": "tolerance",
+    "phonetic": "'tɒl(ə)r(ə)ns",
+    "meaning": "容忍；宽恕",
+    "example": "...his tolerance and understanding of diverse human nature.",
+    "example_cn": "…他对各种人性的宽容和理解。"
+  },
+  {
+    "word": "renowned",
+    "phonetic": "rɪ'naʊnd",
+    "meaning": "有名望的，声誉鹊起的",
+    "example": "The area is renowned for its Romanesque churches.",
+    "example_cn": "这个地区以其罗马式教堂闻名。"
+  },
+  {
+    "word": "conspiracy",
+    "phonetic": "kən'spɪrəsɪ",
+    "meaning": "阴谋，同谋",
+    "example": "There were many conspiracy theories (= beliefs that something is the result of a conspiracy ) surrounding Princess Diana’s death.",
+    "example_cn": "围绕戴安娜王妃之死有许多阴谋论。"
+  },
+  {
+    "word": "protocol",
+    "phonetic": "'prəʊtəkɒl",
+    "meaning": "礼仪，礼节；外交礼节",
+    "example": "a breach of diplomatic protocol",
+    "example_cn": "违反外交礼节"
+  },
+  {
+    "word": "picnic",
+    "phonetic": "'pɪknɪk",
+    "meaning": "野餐",
+    "example": "We decided to have a picnic down by the lake.",
+    "example_cn": "我们决定在湖边野餐。"
+  },
+  {
+    "word": "dazzle",
+    "phonetic": "'dæz(ə)l",
+    "meaning": "眩目，耀眼",
+    "example": "a deer dazzled by the headlights",
+    "example_cn": "被车头灯光照得目眩的鹿"
+  },
+  {
+    "word": "malnutrition",
+    "phonetic": "mælnjʊ'trɪʃ(ə)n",
+    "meaning": "营养不良",
+    "example": "refugees suffering from malnutrition",
+    "example_cn": "营养不良的难民"
+  },
+  {
+    "word": "plight",
+    "phonetic": "plaɪt",
+    "meaning": "困境; 苦境",
+    "example": "the country’s economic plight",
+    "example_cn": "该国的经济困境"
+  },
+  {
+    "word": "afflict",
+    "phonetic": "ə'flɪkt",
+    "meaning": "使痛苦，使苦恼",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "detergent",
+    "phonetic": "dɪ'tɜːdʒ(ə)nt",
+    "meaning": "去垢剂，清洁剂",
+    "example": "...a brand of detergent.",
+    "example_cn": "…一种品牌的清洁剂。"
+  },
+  {
+    "word": "engross",
+    "phonetic": "ɪn'grəʊs; en-",
+    "meaning": "占用；吸引",
+    "example": "The scene was stunning, and for a time engrossed all our attention.",
+    "example_cn": "景色非常美丽，一时间把我们都完全吸引住了。"
+  },
+  {
+    "word": "score",
+    "phonetic": "skɔː",
+    "meaning": "刻痕；记分；乐谱",
+    "example": "a musical score",
+    "example_cn": "乐谱"
+  },
+  {
+    "word": "awkward",
+    "phonetic": "'ɔːkwəd",
+    "meaning": "难使用的，笨拙的；尴尬的",
+    "example": "I hoped he would stop asking awkward questions .",
+    "example_cn": "我希望他不要再问令人难堪的问题。"
+  },
+  {
+    "word": "preserve",
+    "phonetic": "prɪ'zɜːv",
+    "meaning": "保护；保存",
+    "example": "We must encourage the planting of new trees and preserve our existing woodlands.",
+    "example_cn": "我们必须鼓励栽种新树木，同时也要保护现有的林地。"
+  },
+  {
+    "word": "fruition",
+    "phonetic": "frʊ'ɪʃ(ə)n",
+    "meaning": "实现；完成",
+    "example": "Some of the current FSA investigations are expected to reach fruition in the next six months, one person said.",
+    "example_cn": "一人说，目前正在进行的部分金融服务管理局调查有望在未来六个月完成。"
+  },
+  {
+    "word": "cane",
+    "phonetic": "keɪn",
+    "meaning": "手杖，茎；甘蔗",
+    "example": "Children knew that if they misbehaved they would get the cane .",
+    "example_cn": "孩子们知道，如果调皮捣蛋的话就会挨藤条。"
+  },
+  {
+    "word": "inhibit",
+    "phonetic": "ɪn'hɪbɪt",
+    "meaning": "禁止，抑制；阻止",
+    "example": "An unhappy family life may inhibit children’s learning.",
+    "example_cn": "不幸福的家庭生活可能会阻碍儿童的学习。"
+  },
+  {
+    "word": "pilot",
+    "phonetic": "'paɪlət",
+    "meaning": "试验；飞行员",
+    "example": "an airline pilot",
+    "example_cn": "航空公司飞行员"
+  },
+  {
+    "word": "logic",
+    "phonetic": "'lɒdʒɪk",
+    "meaning": "逻辑，逻辑学，条理性",
+    "example": "There isa certain logicin their choice of architect.",
+    "example_cn": "他们对建筑师的选择是有一定道理的。"
+  },
+  {
+    "word": "singular",
+    "phonetic": "'sɪŋgjʊlə",
+    "meaning": "非凡的，卓越的",
+    "example": "He showed a singular lack of tact in the way he handled the situation.",
+    "example_cn": "他处理这局面的方式显得极不得体。"
+  },
+  {
+    "word": "hell",
+    "phonetic": "hel",
+    "meaning": "地狱；阴间；苦境",
+    "example": "War is hell.",
+    "example_cn": "战争是人间地狱。"
+  },
+  {
+    "word": "practical",
+    "phonetic": "'præktɪk(ə)l",
+    "meaning": "实行的；注重实际的，实用的",
+    "example": "Candidates should have training and practical experience in basic electronics.",
+    "example_cn": "应征者应该具备基础电子学方面的培训和实践经验。"
+  },
+  {
+    "word": "shuttle",
+    "phonetic": "'ʃʌt(ə)l",
+    "meaning": "梭，滑梭",
+    "example": "He took the Washington - New York shuttle.",
+    "example_cn": "他乘坐华盛顿－纽约的往返班机。"
+  },
+  {
+    "word": "offset",
+    "phonetic": "'ɒfset",
+    "meaning": "抵销；补偿",
+    "example": "“By investing in it, we can count it as an offset,” she said.",
+    "example_cn": "她说：“通过对其投资，我们可以把它视为一项补偿。”"
+  },
+  {
+    "word": "destiny",
+    "phonetic": "'destɪnɪ",
+    "meaning": "命运",
+    "example": "She always had a strong sense of destiny .",
+    "example_cn": "她向来很相信天意。"
+  },
+  {
+    "word": "disorder",
+    "phonetic": "dɪs'ɔːdə",
+    "meaning": "混乱，骚动，(身心)失调",
+    "example": "severe eating disorders such as bulimia and anorexia",
+    "example_cn": "像贪食症和厌食症这类严重的进食障碍"
+  },
+  {
+    "word": "denial",
+    "phonetic": "dɪ'naɪ(ə)l",
+    "meaning": "拒绝，否认，否定",
+    "example": "It seems clear that despite official denials, differences of opinion lay behind the ambassador's decision to quit.",
+    "example_cn": "很清楚，尽管官方否认，人们对大使决定辞职还是有不同看法。"
+  },
+  {
+    "word": "spin",
+    "phonetic": "spɪn",
+    "meaning": "纺纱，编结；编造故事",
+    "example": "She spun a story about a trip to Athens to meet one of the authors.",
+    "example_cn": "她编了一个故事，说是去雅典见了其中的一位作者。"
+  },
+  {
+    "word": "onset",
+    "phonetic": "'ɒnset",
+    "meaning": "进攻；开始，发作",
+    "example": "the onset of winter",
+    "example_cn": "冬天的来临"
+  },
+  {
+    "word": "native",
+    "phonetic": "'neɪtɪv",
+    "meaning": "天真的，幼稚的",
+    "example": "her native wit",
+    "example_cn": "她天生的机智风趣"
+  },
+  {
+    "word": "overwrought",
+    "phonetic": "əʊvə'rɔːt",
+    "meaning": "过分劳累的，过度兴奋的",
+    "example": "Clara was tired and overwrought after all the problems of the last few days.",
+    "example_cn": "经历了过去几天的重重困难之后，克拉拉既疲惫又紧张。"
+  },
+  {
+    "word": "roast",
+    "phonetic": "rəʊst",
+    "meaning": "烤(的)，烘(的)",
+    "example": "Are you going to roast the chicken?",
+    "example_cn": "这鸡你是准备烤的吗？"
+  },
+  {
+    "word": "survey",
+    "phonetic": "ˈsəːveɪ; (for v.) səˈveɪ",
+    "meaning": "环视，眺望；测量；勘定；检查；概述",
+    "example": "a survey of modern English literature",
+    "example_cn": "现代英国文学概论"
+  },
+  {
+    "word": "profile",
+    "phonetic": "'prəʊfaɪl",
+    "meaning": "侧面；轮廓",
+    "example": "Dani has a lovely profile.",
+    "example_cn": "达尼的侧面轮廓很好看。"
+  },
+  {
+    "word": "offspring",
+    "phonetic": "'ɒfsprɪŋ",
+    "meaning": "子孙后代；动物的幼仔",
+    "example": "a lion and its offspring",
+    "example_cn": "一头狮子和它的幼崽"
+  },
+  {
+    "word": "practicable",
+    "phonetic": "'præktɪkəb(ə)l",
+    "meaning": "可实行的；能用的，可行的",
+    "example": "The only practicable course of action is to sell the company.",
+    "example_cn": "唯一可行的做法是把公司卖掉。"
+  },
+  {
+    "word": "discharge",
+    "phonetic": "dɪs'tʃɑːdʒ",
+    "meaning": "卸货；排出(液体，气体)；释放",
+    "example": "Hospitals now tend to discharge patients earlier than in the past.",
+    "example_cn": "与过去相比，现在医院更趋向于让病人早些出院。"
+  },
+  {
+    "word": "chorus",
+    "phonetic": "'kɔːrəs",
+    "meaning": "合唱；齐声说",
+    "example": "I sing with the university chorus.",
+    "example_cn": "我在大学合唱队里唱歌。"
+  },
+  {
+    "word": "statute",
+    "phonetic": "'stætjuːt; -tʃuːt",
+    "meaning": "法令，法规",
+    "example": "Protection for the consumer is laid down by statute (= established by law ) .",
+    "example_cn": "保障消费者权益已有法律明文规定。"
+  },
+  {
+    "word": "latitude",
+    "phonetic": "'lætɪtjuːd",
+    "meaning": "纬度；地区；(言论，行动的)自由",
+    "example": "The birds breed in northern latitudes.",
+    "example_cn": "这些鸟在北纬地区繁殖。"
+  },
+  {
+    "word": "rot",
+    "phonetic": "rɒt",
+    "meaning": "腐掉",
+    "example": "Candy will rot your teeth.",
+    "example_cn": "吃糖会腐蚀牙齿。"
+  },
+  {
+    "word": "phase",
+    "phonetic": "feɪz",
+    "meaning": "阶段；月的盈亏；方面;相位vt按计划进行",
+    "example": "a new drug that is in the experimental phase",
+    "example_cn": "处于试验阶段的一种新药"
+  },
+  {
+    "word": "ruffle",
+    "phonetic": "'rʌf(ə)l",
+    "meaning": "扰乱，打扰",
+    "example": "He ruffled her hair affectionately.",
+    "example_cn": "他亲昵地拨弄她的头发。"
+  },
+  {
+    "word": "diverse",
+    "phonetic": "daɪ'vɜːs; 'daɪvɜːs",
+    "meaning": "多种多样的",
+    "example": "subjects as diverse as pop music and archaeology",
+    "example_cn": "像流行音乐和考古学这样各不相同的学科"
+  },
+  {
+    "word": "wicked",
+    "phonetic": "'wɪkɪd",
+    "meaning": "坏的；邪恶的",
+    "example": "the wicked stepmother in ‘Hansel and Gretel’",
+    "example_cn": "《糖果屋》中那个恶毒的继母"
+  },
+  {
+    "word": "omit",
+    "phonetic": "ə(ʊ)'mɪt",
+    "meaning": "疏忽，忘记；省略；遗漏",
+    "example": "Please don’t omit any details, no matter how trivial they may seem.",
+    "example_cn": "请不要忽略任何细节，不管它多细小。"
+  },
+  {
+    "word": "diploma",
+    "phonetic": "dɪ'pləʊmə",
+    "meaning": "毕业证书，文凭",
+    "example": "I’m hoping to get my teaching diploma this year.",
+    "example_cn": "我希望今年能拿到教师证书。"
+  },
+  {
+    "word": "crack",
+    "phonetic": "kræk",
+    "meaning": "裂缝，破裂声；v使破裂；噼啪作响；解开",
+    "example": "She opened the door a crack and peeped into the room.",
+    "example_cn": "她把门打开一条缝，往房间里偷看。"
+  },
+  {
+    "word": "remittance",
+    "phonetic": "rɪ'mɪt(ə)ns",
+    "meaning": "汇款(海外)，汇款额",
+    "example": "Please enclose your remittance, making checks payable to Valley Technology Services.",
+    "example_cn": "请随信附上您的汇款，支票收款方为瓦利科技服务公司。"
+  },
+  {
+    "word": "vibrate",
+    "phonetic": "vaɪ'breɪt",
+    "meaning": "摆动；振动",
+    "example": "The floor was vibrating to the beat of the music.",
+    "example_cn": "地板随着音乐的节奏在颤动。"
+  },
+  {
+    "word": "controversy",
+    "phonetic": "'kɒntrəvɜːsɪ; kən'trɒvəsɪ",
+    "meaning": "论战",
+    "example": "a political controversy",
+    "example_cn": "政治争议"
+  },
+  {
+    "word": "microbe",
+    "phonetic": "'maɪkrəʊb",
+    "meaning": "微生物",
+    "example": "...a type of bacteria that include the microbes responsible for tuberculosis and leprosy.",
+    "example_cn": "…包括引起结核病和麻风病的微生物在内的一类细菌。"
+  },
+  {
+    "word": "frustrate",
+    "phonetic": "frʌ'streɪt; 'frʌs-",
+    "meaning": "挫败；阻挠",
+    "example": "Their attempts to speak to him were frustrated by the guards.",
+    "example_cn": "他们想跟他说话，但被警卫拦住了。"
+  },
+  {
+    "word": "omen",
+    "phonetic": "'əʊmən",
+    "meaning": "预兆，征兆",
+    "example": "The car won’t start. Do you think it’s an omen?",
+    "example_cn": "汽车发动不起来。你觉得这是某种预兆吗？"
+  },
+  {
+    "word": "fraught",
+    "phonetic": "frɔːt",
+    "meaning": "充满的；伴随的",
+    "example": "The earliest operations employing this technique were fraught with dangers.",
+    "example_cn": "最早采用这一技术的手术充满了危险。"
+  },
+  {
+    "word": "disclose",
+    "phonetic": "dɪs'kləʊz",
+    "meaning": "透露，泄露",
+    "example": "Some companies have already voluntarily disclosed similar information .",
+    "example_cn": "一些公司已经主动透露了类似的信息。"
+  },
+  {
+    "word": "superb",
+    "phonetic": "suː'pɜːb; sjuː-",
+    "meaning": "壮丽的，头等的",
+    "example": "The food was superb.",
+    "example_cn": "食物好吃极了。"
+  },
+  {
+    "word": "talented",
+    "phonetic": "'tæləntɪd",
+    "meaning": "有才能的，有才干的",
+    "example": "a talented actor",
+    "example_cn": "一名很有天赋的演员"
+  },
+  {
+    "word": "hydrogen",
+    "phonetic": "'haɪdrədʒ(ə)n",
+    "meaning": "氢气",
+    "example": "Water contains hydrogen and oxygen.",
+    "example_cn": "水含有氢和氧。"
+  },
+  {
+    "word": "stagnant",
+    "phonetic": "'stægnənt",
+    "meaning": "不流动的；不变的，不景气的",
+    "example": "a stagnant pond",
+    "example_cn": "死水塘"
+  },
+  {
+    "word": "obstacle",
+    "phonetic": "'ɒbstək(ə)l",
+    "meaning": "障碍",
+    "example": "The tax puts obstacles in the way of companies trying to develop trade overseas.",
+    "example_cn": "这项税收为想在海外发展贸易的公司设置了障碍。"
+  },
+  {
+    "word": "pour",
+    "phonetic": "pɔː",
+    "meaning": "(液体)倒,注,灌；流入，流出\"",
+    "example": "She poured coffee for everyone.",
+    "example_cn": "她为每个人都倒了咖啡。"
+  },
+  {
+    "word": "respiration",
+    "phonetic": "respɪ'reɪʃ(ə)n",
+    "meaning": "呼吸作用；一次呼吸；植物光合作用",
+    "example": "His respiration grew fainter throughout the day.",
+    "example_cn": "一天当中，他的呼吸越来越微弱。"
+  },
+  {
+    "word": "aware",
+    "phonetic": "ə'weə",
+    "meaning": "知道的，意识的",
+    "example": "Mr Braley has been made aware of the need for absolute secrecy.",
+    "example_cn": "布雷利先生被告知需要绝对保密。"
+  },
+  {
+    "word": "sectional",
+    "phonetic": "'sekʃ(ə)n(ə)l",
+    "meaning": "各部分组成的，各阶层或不同部分的",
+    "example": "community groups seeking to protect sectional interests",
+    "example_cn": "致力保护群体利益的社区组织"
+  },
+  {
+    "word": "crisis",
+    "phonetic": "'kraɪsɪs",
+    "meaning": "转折点；危机",
+    "example": "The country now faces an economic crisis .",
+    "example_cn": "该国目前正面临一场经济危机。"
+  },
+  {
+    "word": "procure",
+    "phonetic": "prə'kjʊə",
+    "meaning": "(努力)取得；获得",
+    "example": "It remained very difficult to procure food, fuel, and other daily necessities.",
+    "example_cn": "当时仍然很难获得食品、燃料和其他日用必需品。"
+  },
+  {
+    "word": "trigger",
+    "phonetic": "'trɪgə",
+    "meaning": "(枪)扳机",
+    "example": "A man pointed a gun at them and pulled the trigger.",
+    "example_cn": "一个男人用枪指着他们，扣动了扳机。"
+  },
+  {
+    "word": "discrete",
+    "phonetic": "dɪ'skriːt",
+    "meaning": "分离的，不相关联的",
+    "example": "The change happens in a series of discrete steps.",
+    "example_cn": "这个变化在一系列分离的步骤中发生。"
+  },
+  {
+    "word": "stabilize",
+    "phonetic": "'steɪbəlaɪz",
+    "meaning": "使稳定，使坚固，使安定",
+    "example": "The patient’s condition has now stabilized.",
+    "example_cn": "病人的情况现已稳定下来了。"
+  },
+  {
+    "word": "nursery",
+    "phonetic": "'nɜːs(ə)rɪ",
+    "meaning": "保育室，托儿所",
+    "example": "He has painted murals in his children's nursery.",
+    "example_cn": "他在他家的育儿室画上了壁画。"
+  },
+  {
+    "word": "apt",
+    "phonetic": "æpt",
+    "meaning": "聪明的；合适的；易于的",
+    "example": "‘Love at first sight’ is a very apt description of how he felt when he saw her.",
+    "example_cn": "用“一见钟情”来形容他见到她时的感觉再恰当不过。"
+  },
+  {
+    "word": "whip",
+    "phonetic": "wɪp",
+    "meaning": "鞭子；政党的组织秘书",
+    "example": "The coachman cracked his whip and the carriage lurched forward.",
+    "example_cn": "马车夫甩了一记响鞭，马车猛然向前冲去。"
+  },
+  {
+    "word": "protest",
+    "phonetic": "'prəʊtest",
+    "meaning": "抗议；申明",
+    "example": "‘I don’t see why I should take the blame for this!’ she protested.",
+    "example_cn": "“我不明白为什么我要对此承担责任！”她抗议道。"
+  },
+  {
+    "word": "thigh",
+    "phonetic": "θaɪ",
+    "meaning": "大腿，股",
+    "example": "chicken thighs",
+    "example_cn": "鸡腿"
+  },
+  {
+    "word": "trickle",
+    "phonetic": "'trɪk(ə)l",
+    "meaning": "(使)滴流，(使)细流",
+    "example": "The water in the stream had been reduced to a trickle.",
+    "example_cn": "小溪里的水已只剩下一股细流。"
+  },
+  {
+    "word": "reward",
+    "phonetic": "rɪ'wɔːd",
+    "meaning": "奖赏",
+    "example": "The school has a system of rewards and punishments to encourage good behaviour.",
+    "example_cn": "学校有奖惩制度以鼓励良好行为。"
+  },
+  {
+    "word": "outlaw",
+    "phonetic": "'aʊtlɔː",
+    "meaning": "被剥夺公民权者",
+    "example": "The bill would have outlawed several types of guns.",
+    "example_cn": "这项法案将全面禁用几种枪支。"
+  },
+  {
+    "word": "chisel",
+    "phonetic": "'tʃɪz(ə)l",
+    "meaning": "凿子，錾子；凿，雕",
+    "example": "He set out to chisel a dog out of sandstone.",
+    "example_cn": "他开始用凿子将砂岩雕刻成一只狗。"
+  },
+  {
+    "word": "ideal",
+    "phonetic": "aɪ'dɪəl; aɪ'diːəl",
+    "meaning": "理想的事物；理想",
+    "example": "Walt Disney stayed true to his ideals.",
+    "example_cn": "沃尔特·迪斯尼坚持他的理想。"
+  },
+  {
+    "word": "rivet",
+    "phonetic": "'rɪvɪt",
+    "meaning": "铆钉",
+    "example": "The West Ham crest features two crossed rivet hammers and the club has been known has the Hammers ever since",
+    "example_cn": "球队的队徽上有两个交叉的铆钉锤，这也让人们把球队和铁锤联系在一起。"
+  },
+  {
+    "word": "equitable",
+    "phonetic": "'ekwɪtəb(ə)l",
+    "meaning": "公平的；公正的",
+    "example": "an equitable distribution of food supplies",
+    "example_cn": "所供应食品的合理分配"
+  },
+  {
+    "word": "thesaurus",
+    "phonetic": "θɪ'sɔːrəs",
+    "meaning": "词典，同类词汇编",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "penetrate",
+    "phonetic": "'penɪtreɪt",
+    "meaning": "穿过；透过",
+    "example": "bullets that penetrate thick armour plating",
+    "example_cn": "穿过厚装甲的子弹"
+  },
+  {
+    "word": "dilate",
+    "phonetic": "daɪ'leɪt; dɪ-",
+    "meaning": "使膨胀，扩大",
+    "example": "dilated pupils",
+    "example_cn": "扩大的瞳孔"
+  },
+  {
+    "word": "participate",
+    "phonetic": "pɑː'tɪsɪpeɪt",
+    "meaning": "参与，分享",
+    "example": "Some members refused to participate.",
+    "example_cn": "有些会员拒绝参加。"
+  },
+  {
+    "word": "provision",
+    "phonetic": "prə'vɪʒ(ə)n",
+    "meaning": "准备；供应；条款",
+    "example": "The agreement includes a provision for each side to check the other side’s weapons.",
+    "example_cn": "协议有项规定，允许双方互查武器。"
+  },
+  {
+    "word": "emphasize",
+    "phonetic": "'emfəsaɪz",
+    "meaning": "强调，加强的语气",
+    "example": "The report emphasizes the importance of improving safety standards.",
+    "example_cn": "报告强调了改进安全标准的重要性。"
+  },
+  {
+    "word": "plank",
+    "phonetic": "plæŋk",
+    "meaning": "厚板，板材，地板",
+    "example": "a long plank of wood",
+    "example_cn": "一长条厚木板"
+  },
+  {
+    "word": "rig",
+    "phonetic": "rɪg",
+    "meaning": "给船装帆;为提供必要装备",
+    "example": "The ship was fully rigged and ready to sail.",
+    "example_cn": "船已装备就绪，等待起航。"
+  },
+  {
+    "word": "pedal",
+    "phonetic": "'ped(ə)l",
+    "meaning": "脚噔，踏板；踩踏板",
+    "example": "She put her foot down on the accelerator pedal.",
+    "example_cn": "她踩下了油门踏板。"
+  },
+  {
+    "word": "inert",
+    "phonetic": "ɪ'nɜːt",
+    "meaning": "无活动能力的；惰性的",
+    "example": "inert gases",
+    "example_cn": "惰性气体"
+  },
+  {
+    "word": "tactic",
+    "phonetic": "'tæktɪk",
+    "meaning": "策略；战术",
+    "example": "You have probably heard of this tactic before.",
+    "example_cn": "你以前也可能听说过这个策略。"
+  },
+  {
+    "word": "plague",
+    "phonetic": "pleɪg",
+    "meaning": "瘟疫；麻烦，祸患",
+    "example": "drops in population levels due to plagues and famines",
+    "example_cn": "瘟疫和饥荒造成的人口水平下降"
+  },
+  {
+    "word": "deserve",
+    "phonetic": "dɪ'zɜːv",
+    "meaning": "应得，应受",
+    "example": "What have I done to deserve this?",
+    "example_cn": "我做了什么事，要得到这样的报应？"
+  },
+  {
+    "word": "communication",
+    "phonetic": "kəmjuːnɪ'keɪʃ(ə)n",
+    "meaning": "通讯，交往，交流，传达的消息；交通",
+    "example": "Good communication is vital in a large organization.",
+    "example_cn": "在大机构里良好的沟通是极为重要的。"
+  },
+  {
+    "word": "clinic",
+    "phonetic": "'klɪnɪk",
+    "meaning": "诊所，门诊所",
+    "example": "an appointment at an outpatient clinic",
+    "example_cn": "门诊预约"
+  },
+  {
+    "word": "nickel",
+    "phonetic": "'nɪk(ə)l",
+    "meaning": "[化]镍；美国五分镍币",
+    "example": "...a large glass jar filled with pennies, nickels, dimes, and quarters.",
+    "example_cn": "…一个装满1分、5分、10分和25分硬币的大玻璃罐。"
+  },
+  {
+    "word": "orderly",
+    "phonetic": "'ɔːd(ə)lɪ",
+    "meaning": "整齐的；有秩序的；有条不紊的",
+    "example": "She needs to organize her ideas in a more orderly way.",
+    "example_cn": "她需要把自己的想法组织得更有条理些。"
+  },
+  {
+    "word": "faith",
+    "phonetic": "feɪθ",
+    "meaning": "信任，信仰",
+    "example": "People have lost faith in the government.",
+    "example_cn": "人们已失去了对政府的信心。"
+  },
+  {
+    "word": "upset",
+    "phonetic": "ʌp'set",
+    "meaning": "倾覆，打乱",
+    "example": "The chemicals upset the balance of the environment.",
+    "example_cn": "这些化学品破坏了环境的平衡。"
+  },
+  {
+    "word": "sabotage",
+    "phonetic": "'sæbətɑːʒ",
+    "meaning": "故意毁坏，故意破坏，阴谋",
+    "example": "The terrorists were planning acts of sabotage to destabilize the country.",
+    "example_cn": "恐怖分子在策划破坏国家安定的行动。"
+  },
+  {
+    "word": "slice",
+    "phonetic": "slaɪs",
+    "meaning": "片，部分",
+    "example": "pizza slices",
+    "example_cn": "比萨块"
+  },
+  {
+    "word": "fantasy",
+    "phonetic": "'fæntəsɪ; -zɪ",
+    "meaning": "幻想，怪念头",
+    "example": "I used to have fantasies about living in Paris with an artist.",
+    "example_cn": "我过去常幻想着在巴黎与一位艺术家同住。"
+  },
+  {
+    "word": "expire",
+    "phonetic": "ɪk'spaɪə; ek-",
+    "meaning": "满期，到期",
+    "example": "My passport expires next week.",
+    "example_cn": "我的护照下周就到期了。"
+  },
+  {
+    "word": "manacle",
+    "phonetic": "'mænək(ə)l",
+    "meaning": "手铐",
+    "example": "His hands were manacled behind his back.",
+    "example_cn": "他的双手被铐在了身后。"
+  },
+  {
+    "word": "discipline",
+    "phonetic": "'dɪsɪplɪn",
+    "meaning": "训练，纪律，戒律，惩罚",
+    "example": "The book gives parents advice on discipline.",
+    "example_cn": "这本书指导父母如何管教孩子。"
+  },
+  {
+    "word": "foul",
+    "phonetic": "faʊl",
+    "meaning": "恶臭的；邪恶的；暴风雨的n犯规v弄脏",
+    "example": "He woke up with a foul taste in his mouth.",
+    "example_cn": "他醒过来，嘴里一股臭味。"
+  },
+  {
+    "word": "sacred",
+    "phonetic": "'seɪkrɪd",
+    "meaning": "神圣的",
+    "example": "a sacred vow",
+    "example_cn": "神圣的誓言"
+  },
+  {
+    "word": "suspect",
+    "phonetic": "ˈsʌspekt; (for v.) səˈspekt",
+    "meaning": "疑有,猜想;觉得可疑",
+    "example": "She strongly suspected he was lying to her.",
+    "example_cn": "她非常怀疑他在对她撒谎。"
+  },
+  {
+    "word": "face",
+    "phonetic": "feɪs",
+    "meaning": "脸，表情",
+    "example": "She had a beautiful face.",
+    "example_cn": "她面容秀美。"
+  },
+  {
+    "word": "narrative",
+    "phonetic": "'nærətɪv",
+    "meaning": "故事；叙述",
+    "example": "At several points in the narrative the two stories cross.",
+    "example_cn": "叙述中两条故事线多次交织在一起。"
+  },
+  {
+    "word": "oblong",
+    "phonetic": "'ɒblɒŋ",
+    "meaning": "长方形(的)",
+    "example": "...an oblong table.",
+    "example_cn": "...一张长方形桌子。"
+  },
+  {
+    "word": "sacrifice",
+    "phonetic": "'sækrɪfaɪs",
+    "meaning": "献祭；牺牲",
+    "example": "The minister stressed the need for economic sacrifice.",
+    "example_cn": "部长强调了在经济上作出牺牲的必要性。"
+  },
+  {
+    "word": "pacify",
+    "phonetic": "'pæsɪfaɪ",
+    "meaning": "抚慰；平静；平安；绥靖",
+    "example": "‘You’re right,’ Rita said, in order to pacify him.",
+    "example_cn": "“你是对的。”丽塔安抚他道。"
+  },
+  {
+    "word": "cocaine",
+    "phonetic": "kə(ʊ)'keɪn",
+    "meaning": "可卡因，古柯碱",
+    "example": "The police report said she was doing cocaine.",
+    "example_cn": "警方报告说她正在吸可卡因。"
+  },
+  {
+    "word": "interpret",
+    "phonetic": "ɪn'tɜːprɪt",
+    "meaning": "解释，说明，认为的意思；口译",
+    "example": "They spoke good Spanish, and promised to interpret for me.",
+    "example_cn": "他们西班牙语说得很好，答应替我翻译。"
+  },
+  {
+    "word": "conducive",
+    "phonetic": "kən'djuːsɪv",
+    "meaning": "有助于的；有益于的",
+    "example": "an environment conducive to learning",
+    "example_cn": "有助于学习的环境"
+  },
+  {
+    "word": "tremble",
+    "phonetic": "'tremb(ə)l",
+    "meaning": "发抖，震颤",
+    "example": "His lip started to tremble and then he started to cry.",
+    "example_cn": "他的嘴唇开始颤抖，接着就哭了起来。"
+  },
+  {
+    "word": "rack",
+    "phonetic": "ræk",
+    "meaning": "行李架",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "carton",
+    "phonetic": "'kɑːt(ə)n",
+    "meaning": "纸板箱，塑料箱",
+    "example": "a milk carton",
+    "example_cn": "牛奶盒"
+  },
+  {
+    "word": "perish",
+    "phonetic": "'perɪʃ",
+    "meaning": "灭亡，使痛苦；腐朽",
+    "example": "Hundreds perished when the ship went down.",
+    "example_cn": "轮船沉没，数百人罹难。"
+  },
+  {
+    "word": "scatter",
+    "phonetic": "'skætə",
+    "meaning": "打散；撒；散布",
+    "example": "The sound of gunfire made the crowd scatter in all directions.",
+    "example_cn": "枪声使人群四散奔逃。"
+  },
+  {
+    "word": "tension",
+    "phonetic": "'tenʃ(ə)n",
+    "meaning": "紧张局势；情绪紧张；不安状态",
+    "example": "The tension was becoming unbearable, and I wanted to scream.",
+    "example_cn": "这种紧张变得难以忍受，我真想大声尖叫。"
+  },
+  {
+    "word": "exclude",
+    "phonetic": "ɪk'skluːd; ek-",
+    "meaning": "把某人排除在外，排除(可能性等)",
+    "example": "a special diet that excludes dairy products",
+    "example_cn": "不包含奶制品的特别食谱"
+  },
+  {
+    "word": "flake",
+    "phonetic": "fleɪk",
+    "meaning": "薄片；撒落",
+    "example": "chocolate flakes",
+    "example_cn": "巧克力薄片"
+  },
+  {
+    "word": "linger",
+    "phonetic": "'lɪŋgə",
+    "meaning": "逗留，徘徊",
+    "example": "I spent a week at Kandersteg and could happily have lingered on.",
+    "example_cn": "我在坎德施泰格逗留了一个星期，本来还可以开开心心地多待几天。"
+  },
+  {
+    "word": "plug",
+    "phonetic": "plʌg",
+    "meaning": "塞子，栓，插头；通电",
+    "example": "the bath plug",
+    "example_cn": "浴缸塞子"
+  },
+  {
+    "word": "truce",
+    "phonetic": "truːs",
+    "meaning": "休战",
+    "example": "They agreed to call a truce .",
+    "example_cn": "他们同意宣布休战。"
+  },
+  {
+    "word": "issue",
+    "phonetic": "'ɪʃuː; 'ɪsjuː",
+    "meaning": "出版，问题，发行",
+    "example": "Abortion is a highly controversial issue.",
+    "example_cn": "堕胎是个很有争议的话题。"
+  },
+  {
+    "word": "schedule",
+    "phonetic": "ˈʃɛdjuːl",
+    "meaning": "时间表；列表",
+    "example": "How can he fit everything into his busy schedule ?",
+    "example_cn": "他是怎么把所有的事情都排进自己忙碌的时间表的？"
+  },
+  {
+    "word": "yard",
+    "phonetic": "jɑːd",
+    "meaning": "院，场地；码",
+    "example": "a hundred yards away",
+    "example_cn": "100码外"
+  },
+  {
+    "word": "navigable",
+    "phonetic": "'nævɪgəb(ə)l",
+    "meaning": "(江河、海洋)可航行的，可通航的",
+    "example": "...the navigable portion of the Nile.",
+    "example_cn": "...尼罗河的适航河段。"
+  },
+  {
+    "word": "vehement",
+    "phonetic": "ˈvi:əmənt",
+    "meaning": "感情强烈的；热烈的；(人)有强烈感情的",
+    "example": "She suddenly became very vehement and agitated, jumping around and shouting.",
+    "example_cn": "她突然变得十分激动和不安，四处暴跳并大喊大叫。"
+  },
+  {
+    "word": "eliminate",
+    "phonetic": "ɪ'lɪmɪneɪt",
+    "meaning": "消灭，消除",
+    "example": "a ruthless dictator who eliminated all his rivals",
+    "example_cn": "铲除所有异己的残酷独裁者"
+  },
+  {
+    "word": "prejudice",
+    "phonetic": "'predʒʊdɪs",
+    "meaning": "偏见，成见；(法律)损害，伤害",
+    "example": "Women still face prejudice in the workplace.",
+    "example_cn": "女性在职场中仍然面临歧视。"
+  },
+  {
+    "word": "dual",
+    "phonetic": "'djuːəl",
+    "meaning": "二重的，双的",
+    "example": "a dual system of education",
+    "example_cn": "二元[双元]教育体系"
+  },
+  {
+    "word": "essential",
+    "phonetic": "ɪ'senʃ(ə)l",
+    "meaning": "本质(的)，必要(的)",
+    "example": "She packed a few essentials.",
+    "example_cn": "她把几件生活必需品装进箱子。"
+  },
+  {
+    "word": "promote",
+    "phonetic": "prə'məʊt",
+    "meaning": "开放；促进，宣传",
+    "example": "You don't have to sacrifice environmental protection to promote economic growth.",
+    "example_cn": "你们没有必要牺牲环保来促进经济增长。"
+  },
+  {
+    "word": "appreciate",
+    "phonetic": "ə'priːʃɪeɪt; -sɪ-",
+    "meaning": "欣赏，感激；涨价",
+    "example": "Thanks ever so much for your help, I really appreciate it.",
+    "example_cn": "多谢你的帮助，我真的很感激。"
+  },
+  {
+    "word": "motto",
+    "phonetic": "'mɒtəʊ",
+    "meaning": "座右铭，箴言",
+    "example": "‘Be prepared’ is the motto of the Boy Scouts.",
+    "example_cn": "“时刻准备着”是童子军的格言。"
+  },
+  {
+    "word": "toddle",
+    "phonetic": "'tɒd(ə)l",
+    "meaning": "(如小孩)蹒跚学步",
+    "example": "...once your baby starts toddling.",
+    "example_cn": "...一旦你的小孩开始蹒跚学步。"
+  },
+  {
+    "word": "feud",
+    "phonetic": "fjuːd",
+    "meaning": "长期不和；争吵",
+    "example": "Insults only served to inflame the feud.",
+    "example_cn": "侮辱只是起到了加剧长期不和的作用。"
+  },
+  {
+    "word": "census",
+    "phonetic": "'sensəs",
+    "meaning": "人口调查",
+    "example": "a traffic census",
+    "example_cn": "交通状况调查"
+  },
+  {
+    "word": "archaic",
+    "phonetic": "ɑː'keɪɪk",
+    "meaning": "(语言、词汇等)古代的，已不通用的",
+    "example": "archaic words",
+    "example_cn": "古词"
+  },
+  {
+    "word": "dissolve",
+    "phonetic": "dɪ'zɒlv",
+    "meaning": "使液化，融化；使解散",
+    "example": "Stir until the sugar dissolves.",
+    "example_cn": "一直搅拌到糖溶解掉。"
+  },
+  {
+    "word": "carrier",
+    "phonetic": "'kærɪə",
+    "meaning": "运货人；带菌者；运输军队的交通工具",
+    "example": "an international carrier",
+    "example_cn": "跨国运输公司"
+  },
+  {
+    "word": "cue",
+    "phonetic": "kjuː",
+    "meaning": "提示，暗示",
+    "example": "She stood nervously in the wings waiting for her cue.",
+    "example_cn": "她紧张地站在台侧等待出场的提示。"
+  },
+  {
+    "word": "impromptu",
+    "phonetic": "ɪm'prɒm(p)tjuː",
+    "meaning": "无准备的(地)；即兴的(地)",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "amaze",
+    "phonetic": "ə'meɪz",
+    "meaning": "使惊奇",
+    "example": "Dave amazed his friends by suddenly getting married.",
+    "example_cn": "戴夫突然结婚，令朋友们非常吃惊。"
+  },
+  {
+    "word": "weary",
+    "phonetic": "'wɪərɪ",
+    "meaning": "疲倦的，困乏的；令人厌倦的",
+    "example": "She found Rachel in the kitchen, looking old and weary.",
+    "example_cn": "她发现雷切尔在厨房里，看上去苍老而疲惫。"
+  },
+  {
+    "word": "assurance",
+    "phonetic": "ə'ʃʊər(ə)ns",
+    "meaning": "自信；承诺；保险",
+    "example": "the calm assurance with which she handled the horse",
+    "example_cn": "她对付马儿时的从容镇定"
+  },
+  {
+    "word": "automation",
+    "phonetic": "ɔːtə'meɪʃ(ə)n",
+    "meaning": "自动化，自动操作",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "undertake",
+    "phonetic": "ʌndə'teɪk",
+    "meaning": "同意，答应；着手做某事",
+    "example": "He undertook to pay the money back in six months.",
+    "example_cn": "他保证在六个月之内还钱。"
+  },
+  {
+    "word": "pessimism",
+    "phonetic": "'pesɪmɪz(ə)m",
+    "meaning": "悲观；悲观主义",
+    "example": "...universal pessimism about the economy.",
+    "example_cn": "…对经济形势普遍的悲观看法。"
+  },
+  {
+    "word": "proxy",
+    "phonetic": "'prɒksɪ",
+    "meaning": "代理权，代表权；代理人",
+    "example": "You can vote by proxy.",
+    "example_cn": "你可以请人代你投票。"
+  },
+  {
+    "word": "heal",
+    "phonetic": "hiːl",
+    "meaning": "治愈；和解",
+    "example": "a preacher who claims that he can heal the sick",
+    "example_cn": "自称可以治病的传道士"
+  },
+  {
+    "word": "stale",
+    "phonetic": "steɪl",
+    "meaning": "食品不新鲜的；陈旧的",
+    "example": "French bread goes stale (= becomes stale ) very quickly.",
+    "example_cn": "法式面包极易变味。"
+  },
+  {
+    "word": "destructive",
+    "phonetic": "dɪ'strʌktɪv",
+    "meaning": "破坏的，破坏性的",
+    "example": "the destructive power of modern weapons",
+    "example_cn": "现代武器的破坏力"
+  },
+  {
+    "word": "pounce",
+    "phonetic": "paʊns",
+    "meaning": "突然袭击；抓住",
+    "example": "The cat was hiding in the bushes, ready to pounce.",
+    "example_cn": "猫躲在灌木丛中，准备扑上去。"
+  },
+  {
+    "word": "deliver",
+    "phonetic": "dɪ'lɪvə",
+    "meaning": "投递，解救；发表；接生",
+    "example": "The king delivered a televised speech to the nation on November 5.",
+    "example_cn": "国王在11月5日向全国发表了电视讲话。"
+  },
+  {
+    "word": "defy",
+    "phonetic": "dɪ'faɪ",
+    "meaning": "公然反抗，蔑视，拒绝服从",
+    "example": "This was the first (and last) time that I dared to defy my mother.",
+    "example_cn": "这是我第一次（也是最后一次）胆敢违抗我母亲。"
+  },
+  {
+    "word": "delegate",
+    "phonetic": "ˈdɛlɪˌɡeɪt; -ɡɪt; (for v.,) ˈdɛlɪˌɡeɪt",
+    "meaning": "委派为代表，授权",
+    "example": "A good manager knows when to delegate.",
+    "example_cn": "一个好的经理知道何时该放权。"
+  },
+  {
+    "word": "evade",
+    "phonetic": "ɪ'veɪd",
+    "meaning": "回避, 躲避\"",
+    "example": "I could tell that he was trying to evade the issue.",
+    "example_cn": "我看得出他在极力回避这个问题。"
+  },
+  {
+    "word": "hilarious",
+    "phonetic": "hɪ'leərɪəs",
+    "meaning": "狂欢的，热闹的",
+    "example": "a hilarious story",
+    "example_cn": "极有趣的故事"
+  },
+  {
+    "word": "septic",
+    "phonetic": "'septɪk",
+    "meaning": "使腐败的",
+    "example": "Put some anti-septic cream on it.",
+    "example_cn": "涂上一些防止败血症的药膏。"
+  },
+  {
+    "word": "pave",
+    "phonetic": "peɪv",
+    "meaning": "铺(路等)",
+    "example": "a paved courtyard",
+    "example_cn": "地面铺砌过的院子"
+  },
+  {
+    "word": "roar",
+    "phonetic": "rɔː",
+    "meaning": "吼叫；轰鸣，怒吼",
+    "example": "We heard a lion roar.",
+    "example_cn": "我们听到狮子在吼叫。"
+  },
+  {
+    "word": "literature",
+    "phonetic": "'lɪt(ə)rətʃə",
+    "meaning": "文学，文学作品，文献，著作",
+    "example": "He has read many of the major works of literature.",
+    "example_cn": "他读过许多重要的文学作品。"
+  },
+  {
+    "word": "historic",
+    "phonetic": "hɪ'stɒrɪk",
+    "meaning": "有历史意义的",
+    "example": "a historic meeting of world leaders",
+    "example_cn": "具有历史意义的世界领导人会议"
+  },
+  {
+    "word": "tune",
+    "phonetic": "tjuːn",
+    "meaning": "曲调，旋律；协调，调动",
+    "example": "That’s a nice tune.",
+    "example_cn": "那曲调很美。"
+  },
+  {
+    "word": "aggressive",
+    "phonetic": "ə'gresɪv",
+    "meaning": "侵略的，有闯劲的",
+    "example": "A successful businessman has to be aggressive.",
+    "example_cn": "成功的实业家必须得有股冲劲。"
+  },
+  {
+    "word": "identification",
+    "phonetic": "aɪ,dentɪfɪ'keɪʃ(ə)n",
+    "meaning": "认出，识别；身分证明",
+    "example": "Do you have any identification?",
+    "example_cn": "你有什么身份证明文件吗？"
+  },
+  {
+    "word": "fuss",
+    "phonetic": "fʌs",
+    "meaning": "大惊，小怪",
+    "example": "James said he’d better be getting back or there’d be a fuss .",
+    "example_cn": "詹姆斯说他最好回来，否则就会有人小题大做了。"
+  },
+  {
+    "word": "geometry",
+    "phonetic": "dʒɪ'ɒmɪtrɪ",
+    "meaning": "几何学",
+    "example": "...the very ordered way in which mathematics and geometry describe nature.",
+    "example_cn": "…数学和几何学描述自然的条理性。"
+  },
+  {
+    "word": "transit",
+    "phonetic": "'trænsɪt; 'trɑːns-; -nz-",
+    "meaning": "运输，搬运",
+    "example": "baggage that is lost or damaged in transit",
+    "example_cn": "在运输过程中丢失或损坏的行李"
+  },
+  {
+    "word": "potent",
+    "phonetic": "'pəʊt(ə)nt",
+    "meaning": "有力的，有效的",
+    "example": "potent drugs",
+    "example_cn": "强效药物"
+  },
+  {
+    "word": "transition",
+    "phonetic": "træn'zɪʃ(ə)n; trɑːn-; -'sɪʃ-",
+    "meaning": "转变，过渡",
+    "example": "Making the transition from youth to adulthood can be very painful.",
+    "example_cn": "从青少年过渡到成年有时是一个非常痛苦的过程。"
+  },
+  {
+    "word": "commotion",
+    "phonetic": "kə'məʊʃ(ə)n",
+    "meaning": "混乱，动乱",
+    "example": "They heard a commotion downstairs.",
+    "example_cn": "他们听见楼下一阵骚动。"
+  },
+  {
+    "word": "tropic",
+    "phonetic": "'trɒpɪk",
+    "meaning": "回归线",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "assert",
+    "phonetic": "ə'sɜːt",
+    "meaning": "宣称；维护",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "malleable",
+    "phonetic": "'mælɪəb(ə)l",
+    "meaning": "(金属)可锻的;有延展性的;(性格)可训练的",
+    "example": "malleable steel",
+    "example_cn": "展性钢"
+  },
+  {
+    "word": "resolution",
+    "phonetic": "rezə'luːʃ(ə)n",
+    "meaning": "坚决，坚定；决定，决议；决心，解决",
+    "example": "a resolution calling for a ban on dumping nuclear waste",
+    "example_cn": "要求禁止倾倒核废物的决议"
+  },
+  {
+    "word": "fleet",
+    "phonetic": "fliːt",
+    "meaning": "舰队；船队",
+    "example": "the US seventh fleet",
+    "example_cn": "美国第七舰队"
+  },
+  {
+    "word": "summary",
+    "phonetic": "'sʌm(ə)rɪ",
+    "meaning": "摘要，概要",
+    "example": "A brief summary is given on a separate sheet.",
+    "example_cn": "摘要另写一页。"
+  },
+  {
+    "word": "irony",
+    "phonetic": "'aɪrənɪ",
+    "meaning": "反话，冷嘲，讽刺性的事件、情况等",
+    "example": "Life is full of little ironies.",
+    "example_cn": "生活中充满了小小的讽刺。"
+  },
+  {
+    "word": "perspective",
+    "phonetic": "pə'spektɪv",
+    "meaning": "透视；透视画法；视角，观点",
+    "example": "the artist’s use of perspective",
+    "example_cn": "那位画家对透视法的运用"
+  },
+  {
+    "word": "polar",
+    "phonetic": "'pəʊlə",
+    "meaning": "南(北)极的；极端相反的",
+    "example": "As our climate warms up, the polar ice caps will begin to melt.",
+    "example_cn": "随着地球气候逐渐变暖，极地的冰冠将开始融化。"
+  },
+  {
+    "word": "attendant",
+    "phonetic": "ə'tend(ə)nt",
+    "meaning": "服务员；仆人",
+    "example": "a car park attendant",
+    "example_cn": "停车场的服务员"
+  },
+  {
+    "word": "handicap",
+    "phonetic": "'hændɪkæp",
+    "meaning": "妨碍",
+    "example": "The charity is handicapped by lack of funds.",
+    "example_cn": "这个慈善机构因为缺乏资金难以开展工作。"
+  },
+  {
+    "word": "eligible",
+    "phonetic": "'elɪdʒɪb(ə)l",
+    "meaning": "合格的，适宜的",
+    "example": "Stephen was regarded as an eligible bachelor.",
+    "example_cn": "斯蒂芬被认为是一个钻石王老五。"
+  },
+  {
+    "word": "crooked",
+    "phonetic": "'krʊkɪd",
+    "meaning": "弯曲的，欺诈的",
+    "example": "Your tie’s crooked.",
+    "example_cn": "你的领带歪了。"
+  },
+  {
+    "word": "diplomatic",
+    "phonetic": "dɪplə'mætɪk",
+    "meaning": "外交的；外交手腕的",
+    "example": "Diplomatic efforts to end the fighting began on October 25.",
+    "example_cn": "停战的外交努力于10月25日开始。"
+  },
+  {
+    "word": "plough",
+    "phonetic": "plaʊ",
+    "meaning": "犁，犁形器具；犁地",
+    "example": "In those days the land was plowed by oxen.",
+    "example_cn": "在那个年代是用公牛来犁地的。"
+  },
+  {
+    "word": "riot",
+    "phonetic": "'raɪət",
+    "meaning": "暴乱；骚动；放纵",
+    "example": "urban riots",
+    "example_cn": "城市骚乱"
+  },
+  {
+    "word": "absorb",
+    "phonetic": "əb'zɔːb; -'sɔːb",
+    "meaning": "吸收；吸引",
+    "example": "Plants absorb nutrients from the soil.",
+    "example_cn": "植物从土壤中吸收养分。"
+  },
+  {
+    "word": "parody",
+    "phonetic": "'pærədɪ",
+    "meaning": "模仿，拙劣的模仿",
+    "example": "Her performance contains a strong element of self-parody (= when someone makes fun of their own style ) .",
+    "example_cn": "她的表演包含了强烈的自嘲元素。"
+  },
+  {
+    "word": "gear",
+    "phonetic": "gɪə",
+    "meaning": "齿轮的；轮的、杠杆等装置的",
+    "example": "The typical career pattern was geared to men whose wives didn’t work.",
+    "example_cn": "这种典型的职业模式是为妻子不工作的男性设计的。"
+  },
+  {
+    "word": "errand",
+    "phonetic": "'er(ə)nd",
+    "meaning": "差使；差事",
+    "example": "Everybody rushing about on some incomprehensible errand someone forced him to do at pain of death.",
+    "example_cn": "大家都忍受着死亡的痛苦被迫地抢着做一些令人难以理解的差事。"
+  },
+  {
+    "word": "microcosm",
+    "phonetic": "'maɪkrə(ʊ)kɒz(ə)m",
+    "meaning": "微观世界；缩影",
+    "example": "Kitchell says the city was a microcosm of all American culture during the '60s.",
+    "example_cn": "基切尔说这个城市曾经是60年代所有美国文化的一个缩影。"
+  },
+  {
+    "word": "inapt",
+    "phonetic": "ɪn'æpt",
+    "meaning": "不适当的，不合适的",
+    "example": "a very inapt comment",
+    "example_cn": "很不恰当的评论"
+  },
+  {
+    "word": "decent",
+    "phonetic": "'diːs(ə)nt",
+    "meaning": "正当的，合适的；文雅的，尚可的",
+    "example": "a decent burial",
+    "example_cn": "得体的葬礼"
+  },
+  {
+    "word": "coeducation",
+    "phonetic": "'kəʊ,edjuːkeɪʃən",
+    "meaning": "男女同校",
+    "example": "It is true that a majority of faculty members voted in favor of coeducation, arguing that it would encourage more students to apply to Grove.",
+    "example_cn": "确实有大部分员工投票赞成男女同校，认为这会使更多的学生申请Grove。"
+  },
+  {
+    "word": "utility",
+    "phonetic": "juːˈtɪlɪtɪ",
+    "meaning": "有用，实用；公用事业(煤气，水电)",
+    "example": "Does your rent include utilities?",
+    "example_cn": "你的房租包括公用事业费吗？"
+  },
+  {
+    "word": "sterling",
+    "phonetic": "'stɜːlɪŋ",
+    "meaning": "金银标准成份的，货真价实的，纯正的",
+    "example": "Ella has done some sterling work.",
+    "example_cn": "埃拉做了一些出色的工作。"
+  },
+  {
+    "word": "ominous",
+    "phonetic": "'ɒmɪnəs",
+    "meaning": "不祥的，不吉利的",
+    "example": "‘How long will she be ill?’ he asked. There was an ominous silence.",
+    "example_cn": "“她的病多久会好？”他问。大家的沉默让人感觉不妙。"
+  },
+  {
+    "word": "erect",
+    "phonetic": "ɪ'rekt",
+    "meaning": "建立，使竖立",
+    "example": "an imposing town hall, erected in 1892",
+    "example_cn": "一座气势宏伟的市政厅，建于1892年"
+  },
+  {
+    "word": "immigrant",
+    "phonetic": "'ɪmɪgr(ə)nt",
+    "meaning": "移民，侨民",
+    "example": "an illegal immigrant",
+    "example_cn": "非法移民"
+  },
+  {
+    "word": "periphery",
+    "phonetic": "pə'rɪf(ə)rɪ",
+    "meaning": "(圆体的)外面；周围",
+    "example": "extremists on the periphery of the animal rights movement",
+    "example_cn": "处于动物权利运动边缘的极端分子"
+  },
+  {
+    "word": "execute",
+    "phonetic": "'eksɪkjuːt",
+    "meaning": "实行，贯彻，实施；处死；演奏",
+    "example": "13 people were summarily executed (= killed without any trial or legal process ) by the guerrillas.",
+    "example_cn": "有13人被游击队员就地处决。"
+  },
+  {
+    "word": "arbitrary",
+    "phonetic": "'ɑːbɪt(rə)rɪ",
+    "meaning": "任性的，专断的",
+    "example": "an arbitrary decision",
+    "example_cn": "武断的决定"
+  },
+  {
+    "word": "good",
+    "phonetic": "gʊd",
+    "meaning": "好的，好事",
+    "example": "Stay away from Jerry – he’s no good.",
+    "example_cn": "离杰里远点——他不是什么好东西。"
+  },
+  {
+    "word": "interact",
+    "phonetic": "ɪntər'ækt",
+    "meaning": "干预，干涉，触犯，妨碍",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "spectacular",
+    "phonetic": "spek'tækjʊlə",
+    "meaning": "壮观的",
+    "example": "a mountainous area with spectacular scenery",
+    "example_cn": "景色壮丽的山区"
+  },
+  {
+    "word": "layman",
+    "phonetic": "'leɪmən",
+    "meaning": "俗人，外行，门外汉",
+    "example": "To the layman (= laymen in general ) all these plants look pretty similar.",
+    "example_cn": "对外行的人来说，这些植物看起来都很相似。"
+  },
+  {
+    "word": "rust",
+    "phonetic": "rʌst",
+    "meaning": "锈，生锈；荒废",
+    "example": "There were large patches of rust on the car.",
+    "example_cn": "车上有大片锈斑。"
+  },
+  {
+    "word": "elderly",
+    "phonetic": "'eldəlɪ",
+    "meaning": "年纪相当大的",
+    "example": "a retirement village for the elderly",
+    "example_cn": "供老人退休后居住的村子"
+  },
+  {
+    "word": "prolong",
+    "phonetic": "prə'lɒŋ",
+    "meaning": "延长，拖延",
+    "example": "I was trying to think of some way to prolong the conversation.",
+    "example_cn": "我在想方设法拖长这次谈话。"
+  },
+  {
+    "word": "whereby",
+    "phonetic": "weə'baɪ",
+    "meaning": "凭什么，靠那个，借以",
+    "example": "a proposal whereby EU citizens would be allowed to reside anywhere in the EU",
+    "example_cn": "允许欧盟公民在欧盟任何地方居住的一项提议"
+  },
+  {
+    "word": "jog",
+    "phonetic": "dʒɒg",
+    "meaning": "轻推，轻撞，缓步前进，漫跑",
+    "example": "I go jogging every morning.",
+    "example_cn": "我每天早晨都去慢跑。"
+  },
+  {
+    "word": "persist",
+    "phonetic": "pə'sɪst",
+    "meaning": "坚持；持续",
+    "example": "‘I don’t think it’s right,’ John persisted.",
+    "example_cn": "“我认为那不对。”约翰坚持说道。"
+  },
+  {
+    "word": "settle",
+    "phonetic": "'set(ə)l",
+    "meaning": "定居，停留；解决；支付",
+    "example": "We hope the factions will be able to settle their differences (= agree to stop arguing ) by peaceful means.",
+    "example_cn": "我们希望各派系能以和平方式解决分歧。"
+  },
+  {
+    "word": "hawk",
+    "phonetic": "hɔːk",
+    "meaning": "鹰，骗子；鹰派成员",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "heritage",
+    "phonetic": "'herɪtɪdʒ",
+    "meaning": "传统，遗产",
+    "example": "the importance of preserving the national heritage",
+    "example_cn": "保护民族遗产的重要性"
+  },
+  {
+    "word": "pad",
+    "phonetic": "pæd",
+    "meaning": "垫子；拍纸簿",
+    "example": "Keep a telephone pad and a pen to hand.",
+    "example_cn": "手边准备一本电话记事簿和一支笔。"
+  },
+  {
+    "word": "ongoing",
+    "phonetic": "'ɒngəʊɪŋ",
+    "meaning": "继续的",
+    "example": "their ongoing search for a new director",
+    "example_cn": "他们仍在寻找一个新主任"
+  },
+  {
+    "word": "souvenir",
+    "phonetic": ",suːvə'nɪə",
+    "meaning": "纪念品",
+    "example": "a souvenir shop",
+    "example_cn": "纪念品商店"
+  },
+  {
+    "word": "pastime",
+    "phonetic": "'pɑːstaɪm",
+    "meaning": "消遣，娱乐",
+    "example": "Reading was her favourite pastime.",
+    "example_cn": "阅读是她最喜爱的消遣方式。"
+  },
+  {
+    "word": "foster",
+    "phonetic": "'fɒstə",
+    "meaning": "养育，领养",
+    "example": "The couple wanted to adopt a black child they had been fostering.",
+    "example_cn": "那对夫妇想收养他们代养的一个黑人小孩。"
+  },
+  {
+    "word": "exaggerate",
+    "phonetic": "ɪg'zædʒəreɪt; eg-",
+    "meaning": "夸大，夸张",
+    "example": "I couldn’t sleep for three days – I’m not exaggerating.",
+    "example_cn": "我三天没睡觉了——一点不夸张。"
+  },
+  {
+    "word": "gracious",
+    "phonetic": "'greɪʃəs",
+    "meaning": "亲切的，和善的；任慈的",
+    "example": "Sibyl was the most gracious, helpful, and generous person to work with.",
+    "example_cn": "西比尔非常和蔼，乐于助人，而且为人慷慨，和她共事最愉快。"
+  },
+  {
+    "word": "familiar",
+    "phonetic": "fə'mɪlɪə",
+    "meaning": "熟悉的，通晓的；亲密的，常见的",
+    "example": "a familiar tune",
+    "example_cn": "熟悉的曲调"
+  },
+  {
+    "word": "physiological",
+    "phonetic": ",fɪzɪə'lɒdʒɪkəl",
+    "meaning": "生理学的",
+    "example": "If so, this would add to a growing list of physiological and biological markers of sexual orientation.",
+    "example_cn": "如果是这样，这可能会给生理和生物学上的性取向标记增加一长串名单。"
+  },
+  {
+    "word": "warehouse",
+    "phonetic": "'weəhaʊs",
+    "meaning": "仓库",
+    "example": "I stored up the old furniture in the warehouse.",
+    "example_cn": "我把旧家具存放在了仓库里。"
+  },
+  {
+    "word": "solitary",
+    "phonetic": "'sɒlɪt(ə)rɪ",
+    "meaning": "独居的，孤独的，惟一的；荒凉的",
+    "example": "the solitary goal of the match",
+    "example_cn": "这场比赛的唯一入球"
+  },
+  {
+    "word": "complication",
+    "phonetic": "kɒmplɪ'keɪʃ(ə)n",
+    "meaning": "结构复杂，麻烦",
+    "example": "The fact that the plane was late added a further complication to our journey.",
+    "example_cn": "飞机误点给我们的旅行带来了更大的麻烦。"
+  },
+  {
+    "word": "redeem",
+    "phonetic": "rɪ'diːm",
+    "meaning": "买回，赎回；补偿；补救",
+    "example": "Olivier’s performance redeemed an otherwise second-rate play.",
+    "example_cn": "奥利维尔的表演补救了一出本是二流水平的戏。"
+  },
+  {
+    "word": "turnover",
+    "phonetic": "'tɜːnəʊvə",
+    "meaning": "营业收入；营业额；人员调整，人员更替率",
+    "example": "The company had a turnover of $3.8 million.",
+    "example_cn": "那个公司拥有380万美元的营业额。"
+  },
+  {
+    "word": "sanction",
+    "phonetic": "'sæŋ(k)ʃ(ə)n",
+    "meaning": "批准，认可，赞许；制裁",
+    "example": "a resolution to impose sanctions (= start using sanctions ) on DPRK",
+    "example_cn": "对朝鲜实施制裁的决议"
+  },
+  {
+    "word": "motivate",
+    "phonetic": "'məʊtɪveɪt",
+    "meaning": "促动；激发",
+    "example": "A good teacher has to be able to motivate her students.",
+    "example_cn": "好教师必须能够激发学生的积极性。"
+  },
+  {
+    "word": "thorn",
+    "phonetic": "θɔːn",
+    "meaning": "刺，荆棘",
+    "example": "a long, low hedge of thorns",
+    "example_cn": "一长排矮矮的荆棘树篱"
+  },
+  {
+    "word": "involve",
+    "phonetic": "ɪn'vɒlv",
+    "meaning": "使陷入，使卷入，包含",
+    "example": "What will the job involve?",
+    "example_cn": "这份工作包括什么？"
+  },
+  {
+    "word": "architect",
+    "phonetic": "'ɑːkɪtekt",
+    "meaning": "建筑师；设计师",
+    "example": "James Madison was the principal architect of the constitution.",
+    "example_cn": "詹姆斯·麦迪逊是该宪法的主设计师。"
+  },
+  {
+    "word": "particle",
+    "phonetic": "'pɑːtɪk(ə)l",
+    "meaning": "颗粒，微粒，[语]小品词",
+    "example": "dust particles",
+    "example_cn": "尘埃"
+  },
+  {
+    "word": "accord",
+    "phonetic": "ə'kɔːd",
+    "meaning": "一致，符合",
+    "example": "There was a silence as the women turned with one accord to stare at Doreen.",
+    "example_cn": "那些女人一齐转身盯着多琳看，全场鸦雀无声。"
+  },
+  {
+    "word": "pay",
+    "phonetic": "peɪ",
+    "meaning": "工资",
+    "example": "Staff have been working without pay for the last month.",
+    "example_cn": "上个月员工们干活没拿到工资。"
+  },
+  {
+    "word": "pharmaceutical",
+    "phonetic": ",fɑːmə'suːtɪk(ə)l; -'sjuː-",
+    "meaning": "制药的；药物的",
+    "example": "the pharmaceutical industry",
+    "example_cn": "制药业"
+  },
+  {
+    "word": "insult",
+    "phonetic": "ɪn'sʌlt",
+    "meaning": "侮辱，凌辱",
+    "example": "Nobody insults my family and gets away with it!",
+    "example_cn": "谁也别想侮辱了我的家人之后就这么算了！"
+  },
+  {
+    "word": "tug",
+    "phonetic": "tʌg",
+    "meaning": "用力拉，猛拉，拖拉",
+    "example": "The woman gently tugged his arm.",
+    "example_cn": "那女人轻轻拽了拽他的胳膊。"
+  },
+  {
+    "word": "constituent",
+    "phonetic": "kən'stɪtjʊənt",
+    "meaning": "有选举权的；组成的",
+    "example": "the EU and its constituent members",
+    "example_cn": "欧盟及其成员国"
+  },
+  {
+    "word": "piecemeal",
+    "phonetic": "'piːsmiːl",
+    "meaning": "零碎地，零碎的",
+    "example": "If you have tests, perhaps you could adopt more of the other practices in a piecemeal fashion, but why would you want to?",
+    "example_cn": "如果您有了一些测试，您或许能够进一步零零碎碎地采用更多其它的测试，但您为什么要这样做呢？"
+  },
+  {
+    "word": "decimal",
+    "phonetic": "'desɪm(ə)l",
+    "meaning": "十进法的，小数的",
+    "example": "changing to a decimal system",
+    "example_cn": "改为十进制"
+  },
+  {
+    "word": "starch",
+    "phonetic": "stɑːtʃ",
+    "meaning": "淀粉",
+    "example": "He eats a lot of starch.",
+    "example_cn": "他吃大量含淀粉的食物。"
+  },
+  {
+    "word": "invincible",
+    "phonetic": "ɪn'vɪnsɪb(ə)l",
+    "meaning": "无敌的，不能征服的",
+    "example": "The might of the army is \"invincible,\" according to state media but the refugees are rather cynical about the ill equipped force.",
+    "example_cn": "朝鲜官方媒体称朝鲜的军事力量是“无敌的”，可是朝鲜难民却对装备落后的军队表示出不屑。"
+  },
+  {
+    "word": "anchor",
+    "phonetic": "'æŋkə",
+    "meaning": "锚；危难时可依靠的人或物；用锚泊船",
+    "example": "We dropped anchor a few yards offshore.",
+    "example_cn": "我们在离岸几码远的地方抛锚停航。"
+  },
+  {
+    "word": "avail",
+    "phonetic": "ə'veɪl",
+    "meaning": "有益于，有用",
+    "example": "Guests should feel at liberty to avail themselves of your facilities.",
+    "example_cn": "客人们应可以随意使用你们的设施。"
+  },
+  {
+    "word": "isolate",
+    "phonetic": "'aɪsəleɪt",
+    "meaning": "隔离，孤立",
+    "example": "The town was isolated by the floods.",
+    "example_cn": "洪水使该镇与外界隔绝。"
+  },
+  {
+    "word": "limp",
+    "phonetic": "lɪmp",
+    "meaning": "柔软的，软弱的",
+    "example": "a limp handshake",
+    "example_cn": "无力的握手"
+  },
+  {
+    "word": "represent",
+    "phonetic": "reprɪ'zent",
+    "meaning": "代表；声称",
+    "example": "Mr Kobayashi was chosen to represent the company at the conference.",
+    "example_cn": "小林先生被选中代表公司出席会议。"
+  },
+  {
+    "word": "dissipate",
+    "phonetic": "'dɪsɪpeɪt",
+    "meaning": "消散，消失；浪费，挥霍",
+    "example": "As he thought it over, his anger gradually dissipated.",
+    "example_cn": "他想明白后，怒气就渐渐消了。"
+  },
+  {
+    "word": "intersection",
+    "phonetic": "ɪntə'sekʃ(ə)n",
+    "meaning": "交**点，十字街口",
+    "example": "We crossed at a busy intersection.",
+    "example_cn": "我们穿过了一个繁忙的道路交叉口。"
+  },
+  {
+    "word": "complement",
+    "phonetic": "'kɒmplɪm(ə)nt",
+    "meaning": "补足物，船上的定员；补语",
+    "example": "The green wallpaper is the perfect complement to the old pine of the dresser.",
+    "example_cn": "绿色墙纸是旧松木梳妆台的完美衬托。"
+  },
+  {
+    "word": "vacuum",
+    "phonetic": "'vækjʊəm",
+    "meaning": "真空",
+    "example": "His presence should fill the power vacuum that has been developing over the past few days.",
+    "example_cn": "他的出现应该能填补过去几天中形成的权力空缺。"
+  },
+  {
+    "word": "personal",
+    "phonetic": "'pɜːs(ə)n(ə)l",
+    "meaning": "个人的；身体的",
+    "example": "My personal view is that we shouldn’t offer him the job.",
+    "example_cn": "我个人认为我们不该给他这份工作。"
+  },
+  {
+    "word": "sulphur",
+    "phonetic": "'sʌlfə",
+    "meaning": "(化学)硫",
+    "example": "Burning sulphur creates poisonous fumes.",
+    "example_cn": "燃烧的硫磺会产生有毒烟雾。"
+  },
+  {
+    "word": "stride",
+    "phonetic": "straɪd",
+    "meaning": "大踏步走",
+    "example": "Paco reached the door in only three strides.",
+    "example_cn": "帕科三大步就走到了门口。"
+  },
+  {
+    "word": "linen",
+    "phonetic": "'lɪnɪn",
+    "meaning": "亚麻布，衬衣裤",
+    "example": "a linen jacket",
+    "example_cn": "亚麻布夹克"
+  },
+  {
+    "word": "grip",
+    "phonetic": "grɪp",
+    "meaning": "紧握，抓紧，握力；柄",
+    "example": "Hold the microphone in a firm grip and keep it still.",
+    "example_cn": "紧紧握住麦克风不要让它动。"
+  },
+  {
+    "word": "sake",
+    "phonetic": "seɪk",
+    "meaning": "缘故；目的",
+    "example": "He moved to the seaside for the sake of his health.",
+    "example_cn": "他为了健康而迁居海滨。"
+  },
+  {
+    "word": "piety",
+    "phonetic": "'paɪətɪ",
+    "meaning": "虔诚",
+    "example": "an act of Christian piety",
+    "example_cn": "表达基督徒虔诚的行为"
+  },
+  {
+    "word": "concern",
+    "phonetic": "kən'sɜːn",
+    "meaning": "所关切的事；企业；关心v影响,涉及,关心",
+    "example": "He was moved by her obvious concern.",
+    "example_cn": "她明显的关心使他感动。"
+  },
+  {
+    "word": "intuition",
+    "phonetic": "ɪntjʊ'ɪʃ(ə)n",
+    "meaning": "直觉，直觉知识",
+    "example": "feminine intuition",
+    "example_cn": "女性的直觉"
+  },
+  {
+    "word": "troupe",
+    "phonetic": "truːp",
+    "meaning": "剧团，戏班",
+    "example": "...troupes of travelling actors.",
+    "example_cn": "…巡回演出的演员剧团。"
+  },
+  {
+    "word": "panel",
+    "phonetic": "'pæn(ə)l",
+    "meaning": "镶板，控制板；座谈小组；镶饰",
+    "example": "He assembled a panel of scholars to advise him.",
+    "example_cn": "他集结了一个学者小组为他出谋划策。"
+  },
+  {
+    "word": "ascent",
+    "phonetic": "ə'sent",
+    "meaning": "上升，上坡",
+    "example": "the first ascent of Qomolangma",
+    "example_cn": "首次攀登珠穆朗玛峰"
+  },
+  {
+    "word": "anthem",
+    "phonetic": "'ænθəm",
+    "meaning": "赞美诗，圣歌",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "traverse",
+    "phonetic": "'trævəs; trə'vɜːs",
+    "meaning": "横越，穿过",
+    "example": "two minutes to traverse the park",
+    "example_cn": "两分钟横穿公园"
+  },
+  {
+    "word": "qualify",
+    "phonetic": "'kwɒlɪfaɪ",
+    "meaning": "(使)合格",
+    "example": "Free school lunches are given to children who qualify.",
+    "example_cn": "符合条件的儿童可获得免费的学生午餐。"
+  },
+  {
+    "word": "manifold",
+    "phonetic": "'mænɪfəʊld",
+    "meaning": "多样的；种种的",
+    "example": "The reasons for this situation are manifold.",
+    "example_cn": "出现这种情况原因是多方面的。"
+  },
+  {
+    "word": "oriental",
+    "phonetic": "ɔːrɪ'ent(ə)l; ɒr-",
+    "meaning": "东方的；东方人",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "fracture",
+    "phonetic": "'fræktʃə",
+    "meaning": "碎片，片断；分数",
+    "example": "At least one-third of all women over ninety have sustained a hip fracture.",
+    "example_cn": "90岁以上的妇女中至少有1/3遭受过髋骨骨折。"
+  },
+  {
+    "word": "snap",
+    "phonetic": "snæp",
+    "meaning": "out",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "capture",
+    "phonetic": "'kæptʃə",
+    "meaning": "捕获，俘虏，夺得；战利品",
+    "example": "Government troops have succeeded in capturing the rebel leader.",
+    "example_cn": "政府军已经成功抓获叛乱分子的头目。"
+  },
+  {
+    "word": "kidney",
+    "phonetic": "'kɪdnɪ",
+    "meaning": "肾，腰子",
+    "example": "a kidney transplant",
+    "example_cn": "肾脏移植"
+  },
+  {
+    "word": "disaster",
+    "phonetic": "dɪ'zɑːstə",
+    "meaning": "灾难，祸患",
+    "example": "One hundred and twenty people died in China’s worst air disaster .",
+    "example_cn": "有120人在中国这起最惨烈的空难事故中丧生。"
+  },
+  {
+    "word": "customary",
+    "phonetic": "'kʌstəm(ə)rɪ",
+    "meaning": "通常的；惯例的",
+    "example": "Barbara answered with her customary enthusiasm.",
+    "example_cn": "芭芭拉以惯有的热情作了回答。"
+  },
+  {
+    "word": "tentative",
+    "phonetic": "'tentətɪv",
+    "meaning": "暂时的；试验性的",
+    "example": "I passed on my tentative conclusions to the police.",
+    "example_cn": "我把我的初步结论递交给了警方。"
+  },
+  {
+    "word": "figure",
+    "phonetic": "'fɪgə",
+    "meaning": "数字，算术，图形，人物",
+    "example": "a natural ability with figures",
+    "example_cn": "算术天赋"
+  },
+  {
+    "word": "undergo",
+    "phonetic": "ʌndə'gəʊ",
+    "meaning": "经历，遭受",
+    "example": "The country has undergone massive changes recently.",
+    "example_cn": "这个国家最近经历了巨大的变化。"
+  },
+  {
+    "word": "sprawl",
+    "phonetic": "sprɔːl",
+    "meaning": "植物蔓生；城市无计划扩张",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "trek",
+    "phonetic": "trek",
+    "meaning": "长途跋涉；旅行",
+    "example": "...trekking through the jungles.",
+    "example_cn": "…徒步穿越丛林。"
+  },
+  {
+    "word": "equation",
+    "phonetic": "ɪ'kweɪʒ(ə)n",
+    "meaning": "方程式，等式",
+    "example": "In the equation 2x + 1 = 7, what is x?",
+    "example_cn": "在方程式2x+1=7中，x的值为多少？"
+  },
+  {
+    "word": "mould",
+    "phonetic": "məʊld",
+    "meaning": "模子，模型；模制品",
+    "example": "Another method, used especially for figures, was to pour the clay into a mould.",
+    "example_cn": "另一个方法是把黏土倒入模具中，尤其用于铸造人像。"
+  },
+  {
+    "word": "depict",
+    "phonetic": "dɪ'pɪkt",
+    "meaning": "描写，描绘",
+    "example": "a book depicting life in pre-revolutionary Russia",
+    "example_cn": "描写革命前俄国人生活的一本书"
+  },
+  {
+    "word": "grease",
+    "phonetic": "griːs",
+    "meaning": "动物脂肪；油脂状物",
+    "example": "His hair is thick with grease.",
+    "example_cn": "他的头发油腻腻的。"
+  },
+  {
+    "word": "insolvent",
+    "phonetic": "ɪn'sɒlv(ə)nt",
+    "meaning": "无偿债能力的",
+    "example": "The company was later declared insolvent (= officially said to be insolvent ).",
+    "example_cn": "公司随后被宣布破产。"
+  },
+  {
+    "word": "misery",
+    "phonetic": "'mɪz(ə)rɪ",
+    "meaning": "悲惨，痛苦的事",
+    "example": "She looked away so that Tom wouldn’t see her misery.",
+    "example_cn": "她扭过头去，不让汤姆看到自己的痛苦。"
+  },
+  {
+    "word": "zeal",
+    "phonetic": "ziːl",
+    "meaning": "热心，热情",
+    "example": "...his zeal for teaching.",
+    "example_cn": "…他对教学的热衷。"
+  },
+  {
+    "word": "erupt",
+    "phonetic": "ɪ'rʌpt",
+    "meaning": "喷发，爆发",
+    "example": "Violence erupted after police shot a student during the demonstration.",
+    "example_cn": "警察向示威人群中的一名学生开枪，暴乱随之发生。"
+  },
+  {
+    "word": "compliance",
+    "phonetic": "kəm'plaɪəns",
+    "meaning": "遵守，依从",
+    "example": "Inspectors were sent to visit nuclear sites and verify compliance with the treaty.",
+    "example_cn": "监察员被派去参观核址并核实条约的遵守情况。"
+  },
+  {
+    "word": "apparent",
+    "phonetic": "ə'pær(ə)nt",
+    "meaning": "明显的，表面上的",
+    "example": "The difference in quality was immediately apparent .",
+    "example_cn": "质量的差异显而易见。"
+  },
+  {
+    "word": "ore",
+    "phonetic": "ɔː",
+    "meaning": "矿石",
+    "example": "iron ore",
+    "example_cn": "铁矿石"
+  },
+  {
+    "word": "temper",
+    "phonetic": "'tempə",
+    "meaning": "心情；怒气，脾气",
+    "example": "That temper of hers will get her into trouble one of these days.",
+    "example_cn": "她那种脾气早晚会让她惹麻烦的。"
+  },
+  {
+    "word": "atlas",
+    "phonetic": "",
+    "meaning": "地图册；图表集",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "fuse",
+    "phonetic": "fjuːz",
+    "meaning": "导火线，引信，保险丝",
+    "example": "two 13 amp fuses",
+    "example_cn": "两根13安培的保险丝"
+  },
+  {
+    "word": "antecedent",
+    "phonetic": ",æntɪ'siːd(ə)nt",
+    "meaning": "先行的；祖先；履历",
+    "example": "historical antecedents",
+    "example_cn": "历史先例"
+  },
+  {
+    "word": "inflict",
+    "phonetic": "ɪn'flɪkt",
+    "meaning": "使遭受，强加",
+    "example": "Detectives warned that the men could inflict serious injury.",
+    "example_cn": "警探提醒说这些人可能会造成严重伤害。"
+  },
+  {
+    "word": "glossary",
+    "phonetic": "'glɒs(ə)rɪ",
+    "meaning": "词汇表；术语汇编",
+    "example": "A glossary of terms is included for the reader's convenience.",
+    "example_cn": "为了方便读者，还收录了术语汇编。"
+  },
+  {
+    "word": "declare",
+    "phonetic": "dɪ'kleə",
+    "meaning": "宣告，声明；断言；申报应纳税物品",
+    "example": "A state of emergency has been declared.",
+    "example_cn": "已宣布进入紧急状态。"
+  },
+  {
+    "word": "generate",
+    "phonetic": "'dʒenəreɪt",
+    "meaning": "使产生，使发生",
+    "example": "a useful technique for generating new ideas",
+    "example_cn": "能产生新创意的有用技术"
+  },
+  {
+    "word": "regeneration",
+    "phonetic": "rɪdʒenə'reɪʃn",
+    "meaning": "新生，更新",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "jagged",
+    "phonetic": "'dʒægɪd",
+    "meaning": "边缘不整齐的，参差不齐的",
+    "example": "the broken bottle’s jagged edge",
+    "example_cn": "碎瓶子的锯齿状边缘"
+  },
+  {
+    "word": "impressive",
+    "phonetic": "ɪm'presɪv",
+    "meaning": "给人深刻印象的，惊人的",
+    "example": "The figures certainly look impressive.",
+    "example_cn": "这些数字看上去确实很可观。"
+  },
+  {
+    "word": "parallel",
+    "phonetic": "'pærəlel",
+    "meaning": "平行的，相当的",
+    "example": "Lines AB and CD are parallel. AB",
+    "example_cn": "线与CD线平行。"
+  },
+  {
+    "word": "patio",
+    "phonetic": "'pætɪəʊ",
+    "meaning": "天井",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "overdue",
+    "phonetic": "əʊvə'djuː",
+    "meaning": "过期未付的",
+    "example": "an overdue gas bill",
+    "example_cn": "逾期未付的煤气账单"
+  },
+  {
+    "word": "amount",
+    "phonetic": "ə'maʊnt",
+    "meaning": "等于；总数；数量",
+    "example": "Please pay the full amount (=  of money  ) by the end of the month.",
+    "example_cn": "请在月底前全额付清。"
+  },
+  {
+    "word": "cast",
+    "phonetic": "kɑːst",
+    "meaning": "投，掷，抛；铸造；扮演角色",
+    "example": "the shade cast by low-hanging branches",
+    "example_cn": "低垂的树枝投下的阴影"
+  },
+  {
+    "word": "lodging",
+    "phonetic": "'lɒdʒɪŋ",
+    "meaning": "寄宿，住所；(大学生的)校外宿舍",
+    "example": "It’s £90 a week for board and lodging (= meals and a room ).",
+    "example_cn": "食宿费每周90英镑。"
+  },
+  {
+    "word": "dingy",
+    "phonetic": "'dɪn(d)ʒɪ",
+    "meaning": "脏的，邋遢的",
+    "example": "a dingy room",
+    "example_cn": "阴暗邋遢的房间"
+  },
+  {
+    "word": "temperament",
+    "phonetic": "'temp(ə)rəm(ə)nt",
+    "meaning": "性情，气质",
+    "example": "His impulsive temperament regularly got him into difficulties.",
+    "example_cn": "他容易冲动的性格经常使他陷入困境。"
+  },
+  {
+    "word": "shabby",
+    "phonetic": "'ʃæbɪ",
+    "meaning": "破旧的，褴褛的，卑鄙的，不公平的",
+    "example": "Hugh’s jacket was old and shabby.",
+    "example_cn": "休的夹克衫又旧又破。"
+  },
+  {
+    "word": "foremost",
+    "phonetic": "'fɔːməʊst",
+    "meaning": "最重要的(地)，第一流的(地)",
+    "example": "The foremost of these is other people.",
+    "example_cn": "这其中最重要的就是身边的人。"
+  },
+  {
+    "word": "merge",
+    "phonetic": "mɜːdʒ",
+    "meaning": "(企业)兼并，合并",
+    "example": "The company plans to merge its subsidiaries in the US.",
+    "example_cn": "该公司计划合并其在美国的几家子公司。"
+  },
+  {
+    "word": "attorney",
+    "phonetic": "ə'tɜːnɪ",
+    "meaning": "律师",
+    "example": "...a prosecuting attorney.",
+    "example_cn": "…一位公诉律师。"
+  },
+  {
+    "word": "militant",
+    "phonetic": "'mɪlɪt(ə)nt",
+    "meaning": "好斗的",
+    "example": "militant political activists",
+    "example_cn": "激进的政治活动家"
+  },
+  {
+    "word": "wrinkle",
+    "phonetic": "'rɪŋkl",
+    "meaning": "皱纹",
+    "example": "Her face was a mass of wrinkles.",
+    "example_cn": "她的脸上布满皱纹。"
+  },
+  {
+    "word": "maintain",
+    "phonetic": "meɪn'teɪn; mən'teɪn",
+    "meaning": "维持；抚养；坚持；维修",
+    "example": "Careers Officers maintain contact with young people when they have left school.",
+    "example_cn": "年轻人离开学校以后，职业指导员和他们保持联系。"
+  },
+  {
+    "word": "editorial",
+    "phonetic": "edɪ'tɔːrɪəl",
+    "meaning": "社论",
+    "example": "In an editorial, The New York Times suggests the victory could turn nasty.",
+    "example_cn": "在一篇社论中，《纽约时报》认为该胜利会转成恶梦。"
+  },
+  {
+    "word": "kin",
+    "phonetic": "kɪn",
+    "meaning": "家族、亲属",
+    "example": "We’ll have to notify the next of kin of his death.",
+    "example_cn": "我们得把他去世的消息通知他的直系亲属。"
+  },
+  {
+    "word": "contend",
+    "phonetic": "kən'tend",
+    "meaning": "斗争，竞争，争论",
+    "example": "Inevitably, fights break out between the members of contending groups.",
+    "example_cn": "争权夺利的几个团体之间不可避免地发生了打斗。"
+  },
+  {
+    "word": "partition",
+    "phonetic": "pɑː'tɪʃ(ə)n",
+    "meaning": "分开，分割",
+    "example": "...fighting which followed the partition of India.",
+    "example_cn": "…印度分裂后的争斗。"
+  },
+  {
+    "word": "outbreak",
+    "phonetic": "'aʊtbreɪk",
+    "meaning": "(战争、愤怒等)爆发",
+    "example": "a cholera outbreak",
+    "example_cn": "霍乱的爆发"
+  },
+  {
+    "word": "authoritative",
+    "phonetic": "ɔː'θɒrɪtətɪv; -,teɪtɪv",
+    "meaning": "有权威的；命令的；可靠的",
+    "example": "the most authoritative work on English surnames",
+    "example_cn": "有关英语姓氏的最权威著作"
+  },
+  {
+    "word": "slippery",
+    "phonetic": "'slɪp(ə)rɪ",
+    "meaning": "表面光滑的，(人)不老实的，不可靠的",
+    "example": "In places, the path can be wet and slippery.",
+    "example_cn": "路上有些地方可能又湿又滑。"
+  },
+  {
+    "word": "goal",
+    "phonetic": "gəʊl",
+    "meaning": "(足球)球门；得分；目标",
+    "example": "Your goal as a parent is to help your child become an independent adult.",
+    "example_cn": "身为父母，你的目标就是要培养孩子成为独立的成年人。"
+  },
+  {
+    "word": "outstrip",
+    "phonetic": "aʊt'strɪp",
+    "meaning": "胜过，超过",
+    "example": "We outstripped all our competitors in sales last year.",
+    "example_cn": "去年我们的销售额超过了所有竞争对手。"
+  },
+  {
+    "word": "preceding",
+    "phonetic": "prɪ'siːdɪŋ",
+    "meaning": "在前的，在先的",
+    "example": "As we saw in the preceding chapter, groups can be powerful agents of socialization.",
+    "example_cn": "如我们在前一章所见，团组可以是社会化的有力动因。"
+  },
+  {
+    "word": "transform",
+    "phonetic": "træns'fɔːm; trɑːns-; -nz-",
+    "meaning": "改变(形状性质等)",
+    "example": "Increased population has transformed the landscape.",
+    "example_cn": "人口的增加使景观发生了变化。"
+  },
+  {
+    "word": "skim",
+    "phonetic": "skɪm",
+    "meaning": "浏览，略读；掠过，抹去",
+    "example": "Julie skimmed the sports page.",
+    "example_cn": "朱莉浏览了体育版。"
+  },
+  {
+    "word": "insure",
+    "phonetic": "ɪn'ʃɔː; ɪn'ʃʊə",
+    "meaning": "给…保险",
+    "example": "Have you insured the contents of your home?",
+    "example_cn": "你给家庭财产投保了吗？"
+  },
+  {
+    "word": "debris",
+    "phonetic": "'debriː; 'deɪbriː",
+    "meaning": "碎片，瓦砾堆",
+    "example": "She was hit by flying debris from the blast.",
+    "example_cn": "她被爆炸产生的飞散碎片击中。"
+  },
+  {
+    "word": "hemisphere",
+    "phonetic": "'hemɪsfɪə",
+    "meaning": "半球，(地球的)半球",
+    "example": "the Northern hemisphere",
+    "example_cn": "北半球"
+  },
+  {
+    "word": "dominant",
+    "phonetic": "'dɒmɪnənt",
+    "meaning": "支配的，统治的",
+    "example": "...a change which would maintain his party's dominant position in Scotland.",
+    "example_cn": "…巩固他的政党在苏格兰支配地位的一场变革。"
+  },
+  {
+    "word": "antonym",
+    "phonetic": "'æntənɪm",
+    "meaning": "反义词",
+    "example": "a dictionary of synonyms and antonyms",
+    "example_cn": "同义词和反义词词典"
+  },
+  {
+    "word": "emerge",
+    "phonetic": "ɪ'mɜːdʒ",
+    "meaning": "出现，浮现，暴露",
+    "example": "The flowers emerge in the spring.",
+    "example_cn": "花儿在春天开放。"
+  },
+  {
+    "word": "squeeze",
+    "phonetic": "skwiːz",
+    "meaning": "榨，挤",
+    "example": "She smiled as he squeezed her hand.",
+    "example_cn": "他捏了捏她的手，她笑了。"
+  },
+  {
+    "word": "nicety",
+    "phonetic": "'naɪsɪtɪ",
+    "meaning": "细微的区别及差异",
+    "example": "social niceties",
+    "example_cn": "社交上的细节"
+  },
+  {
+    "word": "role",
+    "phonetic": "rəʊl",
+    "meaning": "角色，任务",
+    "example": "She has just landed the lead role in their latest production.",
+    "example_cn": "她刚在他们最新的作品中取得了主角。"
+  },
+  {
+    "word": "remind",
+    "phonetic": "rɪ'maɪnd",
+    "meaning": "提醒",
+    "example": "Yes, I’ll be there. Thanks for reminding me.",
+    "example_cn": "是的，我会去那里的。 谢谢提醒。"
+  },
+  {
+    "word": "torture",
+    "phonetic": "'tɔːtʃə",
+    "meaning": "拷打，折磨，使受剧烈痛苦",
+    "example": "He died after five days of excruciating torture.",
+    "example_cn": "遭受了五天的严刑拷打之后，他死了。"
+  },
+  {
+    "word": "condense",
+    "phonetic": "kən'dens",
+    "meaning": "浓缩；冷凝；精简",
+    "example": "the mist which condensed on every cold surface",
+    "example_cn": "每个冰冷的表面上凝结的水汽"
+  },
+  {
+    "word": "exclusively",
+    "phonetic": "ɪk'skluːsɪvlɪ",
+    "meaning": "专门地，排除其他地",
+    "example": "...an exclusively male domain.",
+    "example_cn": "…一个由男性独占的领域。"
+  },
+  {
+    "word": "integral",
+    "phonetic": "ˈɪntɪɡrəl",
+    "meaning": "构成整体所必需的，完整的",
+    "example": "Vegetables are an integral part of our diet.",
+    "example_cn": "蔬菜是我们膳食中不可缺少的一部分。"
+  },
+  {
+    "word": "token",
+    "phonetic": "'təʊk(ə)n",
+    "meaning": "标专，记号；象征性的",
+    "example": "After normalization of attributes, you can count on every token in an attribute being separated from its neighbors by whitespace.",
+    "example_cn": "在属性规范化后，可以依靠的属性中的每个记号是通过空白来与其邻居区分开来。"
+  },
+  {
+    "word": "shift",
+    "phonetic": "ʃɪft",
+    "meaning": "转变，移动",
+    "example": "He stopped, shifting his cane to his left hand.",
+    "example_cn": "他停下来，把手杖移到左手。"
+  },
+  {
+    "word": "taxation",
+    "phonetic": "tæk'seɪʃ(ə)n",
+    "meaning": "税制，税项",
+    "example": "the government’s economic and taxation policy",
+    "example_cn": "政府的经济和税收政策"
+  },
+  {
+    "word": "tow",
+    "phonetic": "təʊ",
+    "meaning": "拖；拉",
+    "example": "The ship had to be towed into the harbor.",
+    "example_cn": "那艘轮船不得不被拖进港口。"
+  },
+  {
+    "word": "reliable",
+    "phonetic": "rɪ'laɪəb(ə)l",
+    "meaning": "可靠的，可信赖的",
+    "example": "a birth control method that is cheap and reliable",
+    "example_cn": "既便宜又可靠的避孕方法"
+  },
+  {
+    "word": "deft",
+    "phonetic": "deft",
+    "meaning": "灵巧的，熟练的",
+    "example": "He sketched her with quick, deft strokes.",
+    "example_cn": "他给她画素描，下笔又快又熟练。"
+  },
+  {
+    "word": "potion",
+    "phonetic": "'pəʊʃ(ə)n",
+    "meaning": "(药等的)一服；一剂",
+    "example": "...a magic potion that will make Siegfried forget Brunnhilde and fall in love with Gutrune.",
+    "example_cn": "…一种会使齐格弗里德忘掉布伦希德尔德而爱上古特鲁内娜的魔剂。"
+  },
+  {
+    "word": "disarray",
+    "phonetic": "dɪsə'reɪ",
+    "meaning": "弄乱，扰乱",
+    "example": "The nation is in disarray following rioting led by the military.",
+    "example_cn": "该国发生由军队发动的暴乱后，陷入一片混乱。"
+  },
+  {
+    "word": "overall",
+    "phonetic": "'əʊvərɔːl",
+    "meaning": "包括一切的，全部的",
+    "example": "The overall cost of the exhibition was £400,000.",
+    "example_cn": "展览会的全部费用是40万英镑。"
+  },
+  {
+    "word": "resource",
+    "phonetic": "rɪ'sɔːs; rɪ'zɔːs",
+    "meaning": "资源；机智",
+    "example": "Canada’s vast mineral resources",
+    "example_cn": "加拿大丰富的矿产资源"
+  },
+  {
+    "word": "species",
+    "phonetic": "'spiːʃiːz; -ʃɪz; 'spiːs-",
+    "meaning": "生物的种；种类",
+    "example": "Seven species of birds of prey have been observed.",
+    "example_cn": "已有七种猛禽被观察到。"
+  },
+  {
+    "word": "platform",
+    "phonetic": "'plætfɔːm",
+    "meaning": "月台，站台；讲台；(政党的)政纲，党纲",
+    "example": "The Edinburgh train will depart from platform six.",
+    "example_cn": "开往爱丁堡的火车将从六号站台发车。"
+  },
+  {
+    "word": "elastic",
+    "phonetic": "ɪ'læstɪk",
+    "meaning": "弹性的，有伸缩性的",
+    "example": "the horny elastic pad in a horse’s hoof",
+    "example_cn": "马蹄上粗硬而有弹性的肉掌"
+  },
+  {
+    "word": "tenancy",
+    "phonetic": "'tenənsɪ",
+    "meaning": "租赁；租期",
+    "example": "a six-month tenancy",
+    "example_cn": "六个月的租赁期"
+  },
+  {
+    "word": "minimal",
+    "phonetic": "'mɪnɪm(ə)l",
+    "meaning": "最小的；最低限度的",
+    "example": "The storm caused only minimal damage.",
+    "example_cn": "暴风雨只造成了轻微破坏。"
+  },
+  {
+    "word": "inevitable",
+    "phonetic": "ɪn'evɪtəb(ə)l",
+    "meaning": "不可避免的，照例必有的",
+    "example": "A further escalation of the crisis now seems inevitable.",
+    "example_cn": "危机的进一步升级现在看来已不可避免。"
+  },
+  {
+    "word": "contradict",
+    "phonetic": "kɒntrə'dɪkt",
+    "meaning": "反驳，否认，同矛盾",
+    "example": "Deborah opened her mouth to contradict, but closed it again.",
+    "example_cn": "黛博拉张口想要反驳，但又把嘴闭上了。"
+  },
+  {
+    "word": "subsidy",
+    "phonetic": "'sʌbsɪdɪ",
+    "meaning": "补助金；津贴费",
+    "example": "European farmers are planning a massive demonstration against farm subsidy cuts.",
+    "example_cn": "欧洲的农场主们正在策划一场反对削减农场补贴的大游行。"
+  },
+  {
+    "word": "flare",
+    "phonetic": "fleə",
+    "meaning": "熊熊燃烧，突然燃烧，火光",
+    "example": "The fire flared up again.",
+    "example_cn": "火又忽地旺了起来。"
+  },
+  {
+    "word": "digest",
+    "phonetic": "daɪ'dʒest; dɪ-",
+    "meaning": "消化；领会，融会贯通",
+    "example": "Most babies can digest a wide range of food easily.",
+    "example_cn": "大多数婴儿能轻易地消化很多种食物。"
+  },
+  {
+    "word": "din",
+    "phonetic": "dɪn",
+    "meaning": "喧闹，嘈杂",
+    "example": "They tried to make themselves heard over the din of the crowd.",
+    "example_cn": "他们竭力让自己的声音盖过人群的喧闹声。"
+  },
+  {
+    "word": "shoal",
+    "phonetic": "ʃəʊl",
+    "meaning": "鱼群",
+    "example": "Among them swam shoals of fish.",
+    "example_cn": "在他们之中游动着一群群鱼儿。"
+  },
+  {
+    "word": "hasty",
+    "phonetic": "'heɪstɪ",
+    "meaning": "急速的；匆促的",
+    "example": "He soon regretted his hasty decision.",
+    "example_cn": "他很快就对自己仓促作出的决定感到后悔了。"
+  },
+  {
+    "word": "insulate",
+    "phonetic": "'ɪnsjʊleɪt",
+    "meaning": "使绝缘，使绝热，隔离",
+    "example": "an insulated attic",
+    "example_cn": "隔热[隔音]的阁楼"
+  },
+  {
+    "word": "colony",
+    "phonetic": "'kɒlənɪ",
+    "meaning": "殖民地；侨民",
+    "example": "Algeria was formerly a French colony.",
+    "example_cn": "阿尔及利亚以前是法国的殖民地。"
+  },
+  {
+    "word": "repent",
+    "phonetic": "rɪ'pent",
+    "meaning": "悔悟，后悔",
+    "example": "Those who refuse to repent, he said, will be punished.",
+    "example_cn": "他说，那些不肯悔悟的人将受到惩罚。"
+  },
+  {
+    "word": "illusion",
+    "phonetic": "ɪ'l(j)uːʒ(ə)n",
+    "meaning": "幻象，错觉",
+    "example": "She was under no illusion that he loved her.",
+    "example_cn": "她不再幻想他爱她了。"
+  },
+  {
+    "word": "enrolment",
+    "phonetic": "ɪn'rəʊlm(ə)nt",
+    "meaning": "登记，入学",
+    "example": "Enrolment will take place in September.",
+    "example_cn": "注册将于9月进行。"
+  },
+  {
+    "word": "chaos",
+    "phonetic": "'keɪɒs",
+    "meaning": "混乱，纷乱",
+    "example": "The country was plunged into economic chaos.",
+    "example_cn": "这个国家陷入了经济大混乱。"
+  },
+  {
+    "word": "pine",
+    "phonetic": "paɪn",
+    "meaning": "消瘦，衰弱",
+    "example": "an ancient pine forest",
+    "example_cn": "一片古老的松树林"
+  },
+  {
+    "word": "transfuse",
+    "phonetic": "træns'fjuːz; trɑːns-; -nz-",
+    "meaning": "给输血",
+    "example": "There are no rules about when to transfuse and who to do it to.",
+    "example_cn": "从来没有相关规定，在什么时候什么人应该被输血。"
+  },
+  {
+    "word": "comic",
+    "phonetic": "'kɒmɪk",
+    "meaning": "喜剧的，滑稽的n连环漫画杂志；喜剧演员",
+    "example": "a comic novel",
+    "example_cn": "滑稽小说"
+  },
+  {
+    "word": "infectious",
+    "phonetic": "ɪn'fekʃəs",
+    "meaning": "传染的；感染性的",
+    "example": "infectious diseases",
+    "example_cn": "传染性疾病"
+  },
+  {
+    "word": "liable",
+    "phonetic": "'laɪəb(ə)l",
+    "meaning": "有倾向的；可能遭受的；有责任的",
+    "example": "The car is liable to overheat on long trips.",
+    "example_cn": "这辆汽车跑长途容易过热。"
+  },
+  {
+    "word": "composite",
+    "phonetic": "'kɒmpəzɪt",
+    "meaning": "合成的，复合的",
+    "example": "The author builds up a useful compo-site picture of contemporary consumer culture.",
+    "example_cn": "作者勾勒出了一幅实用的当代消费文化全景图。"
+  },
+  {
+    "word": "moustache",
+    "phonetic": "mə'stɑːʃ",
+    "meaning": "(嘴唇上面的)胡子",
+    "example": "He’s shaved off his moustache.",
+    "example_cn": "他剃去了小胡子。"
+  },
+  {
+    "word": "acquaint",
+    "phonetic": "ə'kweɪnt",
+    "meaning": "使认识；使熟悉",
+    "example": "I need to acquaint myself with the new regulations.",
+    "example_cn": "我得熟悉一下新的规章制度。"
+  },
+  {
+    "word": "adjoin",
+    "phonetic": "ə'dʒɒɪn",
+    "meaning": "贴近，与毗连",
+    "example": "A vacant plot of land adjoins his house.",
+    "example_cn": "有一块空地紧挨着他家。"
+  },
+  {
+    "word": "sphere",
+    "phonetic": "sfɪə",
+    "meaning": "球，球面；天体；(兴趣,活动,势力等)范围 \"",
+    "example": "Because the earth spins, it is not a perfect sphere.",
+    "example_cn": "因为地球旋转，所以它不是个完完全全的球体。"
+  },
+  {
+    "word": "anecdote",
+    "phonetic": "'ænɪkdəʊt",
+    "meaning": "轶事，趣闻",
+    "example": "The book is full of amusing anecdotes about his life in Japan.",
+    "example_cn": "这本书里全是他在日本生活的趣闻轶事。"
+  },
+  {
+    "word": "compartment",
+    "phonetic": "kəm'pɑːtm(ə)nt",
+    "meaning": "分隔间；火车车厢的分隔间",
+    "example": "The bag is divided into separate compartments .",
+    "example_cn": "这个包有一些独立的隔层。"
+  },
+  {
+    "word": "durable",
+    "phonetic": "'djʊərəb(ə)l",
+    "meaning": "耐用的",
+    "example": "Wood is a durable material.",
+    "example_cn": "木头是耐用材料。"
+  },
+  {
+    "word": "growl",
+    "phonetic": "graʊl",
+    "meaning": "嗥叫；轰鸣；咆哮着说",
+    "example": "Their noise modulated to a concerted menacing growl punctuated by sharp yaps.",
+    "example_cn": "它们的喧闹声逐渐变为整齐划一的、带有威胁性的吼叫，还夹杂着刺耳的狂吠。"
+  },
+  {
+    "word": "submit",
+    "phonetic": "səb'mɪt",
+    "meaning": "(使)服从；提交",
+    "example": "In desperation, Mrs. Jones submitted to an operation on her right knee to relieve the pain.",
+    "example_cn": "绝望中，琼斯夫人不得已接受了一次她右膝的手术以减轻疼痛。"
+  },
+  {
+    "word": "arrogant",
+    "phonetic": "'ærəg(ə)nt",
+    "meaning": "傲慢的，自负的",
+    "example": "He was unbearably arrogant.",
+    "example_cn": "他的傲慢让人无法忍受。"
+  },
+  {
+    "word": "persecute",
+    "phonetic": "'pɜːsɪkjuːt",
+    "meaning": "迫害；烦扰",
+    "example": "The Puritans left England to escape being persecuted.",
+    "example_cn": "清教徒离开了英国以躲避迫害。"
+  },
+  {
+    "word": "slot",
+    "phonetic": "slɒt",
+    "meaning": "狭缝；槽沟",
+    "example": "Alan dropped another quarter into the slot on the pay phone.",
+    "example_cn": "艾伦往付费电话的投币口里又塞了一枚 25 分的硬币。"
+  },
+  {
+    "word": "access",
+    "phonetic": "'ækses",
+    "meaning": "通路",
+    "example": "Access is by means of a small door on the right.",
+    "example_cn": "入口是右边的一扇小门。"
+  },
+  {
+    "word": "terrestrial",
+    "phonetic": "tə'restrɪəl",
+    "meaning": "地球上的，陆地的",
+    "example": "...terrestrial life forms.",
+    "example_cn": "…地球上的生命形态。"
+  },
+  {
+    "word": "crater",
+    "phonetic": "'kreɪtə",
+    "meaning": "火山口; 弹坑",
+    "example": "craters on the moon’s surface",
+    "example_cn": "月球表面的坑"
+  },
+  {
+    "word": "charge",
+    "phonetic": "tʃɑːdʒ",
+    "meaning": "指控；控告；冲锋；要价；充电",
+    "example": "Even local nurseries charge $150 a week.",
+    "example_cn": "即便当地的托儿所每周也要收$150的费用。"
+  },
+  {
+    "word": "nurture",
+    "phonetic": "'nɜːtʃə",
+    "meaning": "养育，培育，教养",
+    "example": "plants nurtured in the greenhouse",
+    "example_cn": "在温室里培育的植物"
+  },
+  {
+    "word": "splash",
+    "phonetic": "splæʃ",
+    "meaning": "溅水，泼水；显示，鼓吹",
+    "example": "A lot of people were in the water, swimming or simply splashing about.",
+    "example_cn": "很多人在水里游泳或者只是戏水。"
+  },
+  {
+    "word": "modest",
+    "phonetic": "'mɒdɪst",
+    "meaning": "谦让的，适度的；有礼貌的",
+    "example": "They had spent the night at a modest hotel.",
+    "example_cn": "他们在一家普通的旅馆过夜。"
+  },
+  {
+    "word": "inspiration",
+    "phonetic": "ˌɪnspəˈreɪʃn",
+    "meaning": "灵感，鼓舞人心的人或事，好主意",
+    "example": "The Malvern Hills have provided inspiration for many artists and musicians over the decades.",
+    "example_cn": "几十年来，莫尔文丘陵为很多艺术家和音乐家提供了灵感。"
+  },
+  {
+    "word": "doubtless",
+    "phonetic": "'daʊtlɪs",
+    "meaning": "无疑地",
+    "example": "Doubtless there would be lots of rumours.",
+    "example_cn": "无疑会谣言四起。"
+  },
+  {
+    "word": "version",
+    "phonetic": "'vɜːʃ(ə)n",
+    "meaning": "描述，译文；说法",
+    "example": "Could Donna’s version of what happened that night be correct?",
+    "example_cn": "唐娜对那晚发生的事情的描述是否正确呢？"
+  },
+  {
+    "word": "slack",
+    "phonetic": "slæk",
+    "meaning": "懈怠的；萧条的；呆滞的；松驰的；不紧的",
+    "example": "Keep the rope slack until I tell you to pull it.",
+    "example_cn": "让绳子松着，直到我叫你拉紧。"
+  },
+  {
+    "word": "correlate",
+    "phonetic": "'kɒrəleɪt; -rɪ-",
+    "meaning": "(使)相关联",
+    "example": "Attempts to correlate specific language functions with particular parts of the brain have not advanced very far.",
+    "example_cn": "试图把特定的语言功能和大脑特定区域相联系的努力还没有取得很大进展。"
+  },
+  {
+    "word": "subside",
+    "phonetic": "səb'saɪd",
+    "meaning": "洪水退落；土地下沉；建筑物沉降",
+    "example": "After the heavy rains, part of the road subsided.",
+    "example_cn": "大雨过后，部分路面塌陷了。"
+  },
+  {
+    "word": "donation",
+    "phonetic": "də(ʊ)'neɪʃ(ə)n",
+    "meaning": "捐款，捐赠",
+    "example": "There have been generous donations from EU funds.",
+    "example_cn": "欧盟基金给予了慷慨的捐款。"
+  },
+  {
+    "word": "feel",
+    "phonetic": "fiːl",
+    "meaning": "感觉，摸，感知；同情",
+    "example": "It’s nice fabric - it feels like velvet.",
+    "example_cn": "面料不错——摸上去像丝绒。"
+  },
+  {
+    "word": "piracy",
+    "phonetic": "'paɪrəsɪ",
+    "meaning": "海上掠夺；侵犯版权",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "oscillate",
+    "phonetic": "'ɒsɪleɪt",
+    "meaning": "摆动，振动；踌躇，犹豫",
+    "example": "The stock market is oscillating wildly at the moment.",
+    "example_cn": "股票市场现在正急剧波动。"
+  },
+  {
+    "word": "norm",
+    "phonetic": "nɔːm",
+    "meaning": "标准，规范",
+    "example": "Joyce’s style of writing was a striking departure from the literary norm.",
+    "example_cn": "乔伊斯的写作风格与传统的文学风格大相径庭。"
+  },
+  {
+    "word": "trample",
+    "phonetic": "'træmp(ə)l",
+    "meaning": "踩，践踏；蔑视，粗暴对待",
+    "example": "Their in-terests and rights had been trampled underfoot .",
+    "example_cn": "他们的利益和权利都被踩在了脚下。"
+  },
+  {
+    "word": "compliment",
+    "phonetic": "'kɒmplɪm(ə)nt",
+    "meaning": "敬意，赞扬；问候",
+    "example": "With the compliments of J. Smith & Son. J.",
+    "example_cn": "史密斯父子公司敬赠。"
+  },
+  {
+    "word": "genuine",
+    "phonetic": "'dʒenjʊɪn",
+    "meaning": "真正的，名副其实的",
+    "example": "‘Did he really?’ Her surprise seemed genuine.",
+    "example_cn": "“他真的这样？”她好像是真的惊讶。"
+  },
+  {
+    "word": "fancy",
+    "phonetic": "'fænsɪ",
+    "meaning": "颜色鲜艳的;奇特的n&v想象力,设想,爱好",
+    "example": "Harry took me to a fancy restaurant for our anniversary.",
+    "example_cn": "哈里带我去了一家豪华餐厅，庆祝我们的结婚纪念日。"
+  },
+  {
+    "word": "augment",
+    "phonetic": "ɔːg'ment",
+    "meaning": "增大，增加",
+    "example": "Any surplus was sold to augment their income.",
+    "example_cn": "所有多余的东西被售卖一空来增加他们的收入。"
+  },
+  {
+    "word": "smart",
+    "phonetic": "smɑːt",
+    "meaning": "漂亮的；聪明的；轻快的",
+    "example": "The smart kids get good grades and go off to college.",
+    "example_cn": "聪明的孩子成绩好，可以去上大学。"
+  },
+  {
+    "word": "gaudy",
+    "phonetic": "'gɔːdɪ",
+    "meaning": "绚丽的",
+    "example": "gaudy jewelry",
+    "example_cn": "俗丽的珠宝"
+  },
+  {
+    "word": "generalize",
+    "phonetic": "ˈdʒɛnrəˌlaɪz",
+    "meaning": "概括，归纳",
+    "example": "Critics love to generalize, to formulate trends into which all new work must be fitted, however contradictory.",
+    "example_cn": "评论家喜欢概括，归纳出所有新作品都必须符合的趋势，不管它们是如何地不符。"
+  },
+  {
+    "word": "carpenter",
+    "phonetic": "ˈkɑːpəntə(r)",
+    "meaning": "木工，木匠",
+    "example": "He is a carpenter by profession.",
+    "example_cn": "他以木工为业。"
+  },
+  {
+    "word": "sincere",
+    "phonetic": "sɪn'sɪə",
+    "meaning": "真挚的；诚恳的",
+    "example": "Please accept my sincere apologies .",
+    "example_cn": "请接受我真诚的道歉。"
+  },
+  {
+    "word": "glimmer",
+    "phonetic": "'glɪmə",
+    "meaning": "(发)微光；少许，微量",
+    "example": "a weak glimmering light",
+    "example_cn": "微弱的闪光"
+  },
+  {
+    "word": "muster",
+    "phonetic": "'mʌstə",
+    "meaning": "集合，检阅，集中",
+    "example": "In April 1185, he began to muster an army .",
+    "example_cn": "1185年4月，他开始召集军队。"
+  },
+  {
+    "word": "gene",
+    "phonetic": "dʒiːn",
+    "meaning": "基因",
+    "example": "human genes",
+    "example_cn": "人类基因"
+  },
+  {
+    "word": "devastating",
+    "phonetic": "'devəsteitiŋ",
+    "meaning": "破坏性的，毁灭性的",
+    "example": "It will be a devastating blow for the town if the factory closes.",
+    "example_cn": "如果工厂关闭，对该镇来说将是沉重的打击。"
+  },
+  {
+    "word": "decree",
+    "phonetic": "dɪ'kriː",
+    "meaning": "法令，判决",
+    "example": "The Emperor issued the decree repealing martial law.",
+    "example_cn": "皇帝下诏令取消了军事管制。"
+  },
+  {
+    "word": "reservoir",
+    "phonetic": "'rezəvwɑ: (r)",
+    "meaning": "水库；蓄水池",
+    "example": "All these earthquakes happened when the water level in Zipingpu reservoir was low.",
+    "example_cn": "所有这些地震都发生在紫坪铺水库水位很低的时候。"
+  },
+  {
+    "word": "jeopardize",
+    "phonetic": "'dʒepədaɪz",
+    "meaning": "使受危害，使陷险境",
+    "example": "He has jeopardized his future career.",
+    "example_cn": "他损害了他的前程。"
+  },
+  {
+    "word": "sterilize",
+    "phonetic": "'sterəlaiz",
+    "meaning": "使不结果实；使绝育；使无效；杀菌",
+    "example": "Sterilize the bottles with boiling water.",
+    "example_cn": "用沸水把这些瓶子消毒。"
+  },
+  {
+    "word": "deadlock",
+    "phonetic": "'dedlɒk",
+    "meaning": "僵局，僵局",
+    "example": "The talks have reached a complete deadlock .",
+    "example_cn": "会谈完全陷入僵局。"
+  },
+  {
+    "word": "chant",
+    "phonetic": "tʃɑːnt",
+    "meaning": "圣歌，赞美诗",
+    "example": "...a Gregorian chant.",
+    "example_cn": "…一首格列高利圣歌。"
+  },
+  {
+    "word": "rupture",
+    "phonetic": "'rʌptʃə",
+    "meaning": "破裂",
+    "example": "The pipe will rupture at its weakest point.",
+    "example_cn": "管道最薄弱的地方会破裂的。"
+  },
+  {
+    "word": "ritual",
+    "phonetic": "'rɪtʃʊəl",
+    "meaning": "宗教仪式，典礼；仪式的程序",
+    "example": "ancient pagan rituals",
+    "example_cn": "古老的异教仪式"
+  },
+  {
+    "word": "gaol",
+    "phonetic": "dʒeɪl",
+    "meaning": "监狱，监禁",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "leaflet",
+    "phonetic": "ˈliːflət",
+    "meaning": "散页的印刷品，传单",
+    "example": "Campaigners handed out leaflets on passive smoking.",
+    "example_cn": "发起人分发了关于被动吸烟的传单。"
+  },
+  {
+    "word": "subsequent",
+    "phonetic": "'sʌbsɪkw(ə)nt",
+    "meaning": "接着的，然后的",
+    "example": "These skills were passed on to subsequent generations.",
+    "example_cn": "这些技能代代相传。"
+  },
+  {
+    "word": "aviation",
+    "phonetic": "eɪvɪ'eɪʃ(ə)n",
+    "meaning": "航空(学)",
+    "example": "...the aviation industry.",
+    "example_cn": "…航空工业。"
+  },
+  {
+    "word": "fraud",
+    "phonetic": "frɔːd",
+    "meaning": "诈骗，骗子",
+    "example": "{\"COLLOINEXA\":[\"electoral fraud\"]}",
+    "example_cn": "选举欺诈"
+  },
+  {
+    "word": "initial",
+    "phonetic": "ɪ'nɪʃəl",
+    "meaning": "最初的",
+    "example": "an initial investment of £5,000",
+    "example_cn": "5,000英镑的初始投资"
+  },
+  {
+    "word": "erase",
+    "phonetic": "ɪ'reɪz",
+    "meaning": "擦掉，抹掉",
+    "example": "Some of the names had been accidentally erased.",
+    "example_cn": "有几个名字无意中被擦掉了。"
+  },
+  {
+    "word": "readily",
+    "phonetic": "'redɪlɪ",
+    "meaning": "迅速地；容易地",
+    "example": "Boats are readily available to visitors.",
+    "example_cn": "游客可以很方便地租到船只。"
+  },
+  {
+    "word": "limb",
+    "phonetic": "lɪm",
+    "meaning": "肢；翼；翅膀；大树枝",
+    "example": "She would be able to stretch out her cramped limbs and rest for a few hours.",
+    "example_cn": "她将可以伸开蜷缩的四肢，休息几个小时。"
+  },
+  {
+    "word": "mint",
+    "phonetic": "mɪnt",
+    "meaning": "薄荷；造币厂",
+    "example": "new potatoes sprinkled with chopped mint",
+    "example_cn": "撒上薄荷屑的嫩马铃薯"
+  },
+  {
+    "word": "pitch",
+    "phonetic": "pɪtʃ",
+    "meaning": "球场；声音的高低度；沥青；程度v投掷",
+    "example": "He ran the length of the pitch and scored.",
+    "example_cn": "他跑过全场，得分了。"
+  },
+  {
+    "word": "counter",
+    "phonetic": "'kaʊntə",
+    "meaning": "柜台",
+    "example": "He wondered if the girl behind the counter recognised him.",
+    "example_cn": "他在想柜台后面的那个女孩是否认出了他。"
+  },
+  {
+    "word": "dedicate",
+    "phonetic": "'dedɪkeɪt",
+    "meaning": "奉献，供奉，题献(著作)",
+    "example": "She dedicated her first album to Woody Allen, who she says understands her obsession.",
+    "example_cn": "她把她的第一张唱片献给伍迪·艾伦，她说艾伦理解她的痴迷。"
+  },
+  {
+    "word": "vindicate",
+    "phonetic": "'vɪndɪkeɪt",
+    "meaning": "为辩白；证明正确",
+    "example": "The decision to advertise has been vindicated by the fact that sales have grown.",
+    "example_cn": "销售增长的事实证明做广告宣传的决定是正确的。"
+  },
+  {
+    "word": "current",
+    "phonetic": "'kʌr(ə)nt",
+    "meaning": "当前的；通用的；流行的",
+    "example": "the current President",
+    "example_cn": "现任总统"
+  },
+  {
+    "word": "flaunt",
+    "phonetic": "flɔːnt",
+    "meaning": "夸耀，夸饰",
+    "example": "The rich flaunted their wealth while the poor starved on the streets.",
+    "example_cn": "富人摆阔，穷人却在大街上饿肚子。"
+  },
+  {
+    "word": "parliament",
+    "phonetic": "'pɑːləm(ə)nt",
+    "meaning": "议会，国会",
+    "example": "They demanded a free parliament and press.",
+    "example_cn": "他们要求议会自由和新闻自由。"
+  },
+  {
+    "word": "specification",
+    "phonetic": ",spesɪfɪ'keɪʃ(ə)n",
+    "meaning": "载明，详述；规格，清单，说明书",
+    "example": "The bolts met all the engineering specifications .",
+    "example_cn": "这些螺栓符合所有的工程设计规格。"
+  },
+  {
+    "word": "anniversary",
+    "phonetic": "ænɪ'vɜːs(ə)rɪ",
+    "meaning": "周年纪念",
+    "example": "Jack and Kim celebrated their twentieth wedding anniversary in January.",
+    "example_cn": "1月，杰克和金庆祝了他们的结婚20周年纪念日。"
+  },
+  {
+    "word": "homestay",
+    "phonetic": "'həʊmsteɪ",
+    "meaning": "在当地居民家居住",
+    "example": "You could live in a homestay.",
+    "example_cn": "也可以住在当地人家中。"
+  },
+  {
+    "word": "scan",
+    "phonetic": "skæn",
+    "meaning": "细看；浏览",
+    "example": "He scanned the horizon, but there was no sign of the ship.",
+    "example_cn": "他朝地平线处仔细眺望，但是找不到那艘船的踪影。"
+  },
+  {
+    "word": "grace",
+    "phonetic": "greɪs",
+    "meaning": "恩惠；优美；善意；饭前后祷告",
+    "example": "Lena moved with the grace of a dancer.",
+    "example_cn": "莉娜走路姿势有着舞者般的优美。"
+  },
+  {
+    "word": "cite",
+    "phonetic": "saɪt",
+    "meaning": "引用，传讯；举例",
+    "example": "The passage cited above is from a Robert Frost poem.",
+    "example_cn": "以上的引文出自罗伯特•弗罗斯特的一首诗。"
+  },
+  {
+    "word": "tranquility",
+    "phonetic": "træŋ'kwiləti, træn-",
+    "meaning": "安静，平静",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "severe",
+    "phonetic": "sɪ'vɪə",
+    "meaning": "严重的；严厉的，剧烈的",
+    "example": "His injuries were quite severe.",
+    "example_cn": "他的伤势很严重。"
+  },
+  {
+    "word": "excess",
+    "phonetic": "ɪk'ses; ek-; 'ekses",
+    "meaning": "超越；超过；暴行",
+    "example": "The car reached speeds in excess of 100 miles per hour.",
+    "example_cn": "这辆汽车的时速超过了100英里。"
+  },
+  {
+    "word": "considerate",
+    "phonetic": "kən'sɪd(ə)rət",
+    "meaning": "考虑周到的；体谅别人的",
+    "example": "I think he's the most charming, most considerate man I've ever known.",
+    "example_cn": "我觉得他是我所认识的最有魅力、最体贴的男士。"
+  },
+  {
+    "word": "distort",
+    "phonetic": "dɪ'stɔːt",
+    "meaning": "歪曲，弄歪，曲解",
+    "example": "His account was badly distorted by the press.",
+    "example_cn": "他的话被报界严重歪曲。"
+  },
+  {
+    "word": "corpse",
+    "phonetic": "kɔːps",
+    "meaning": "尸体；被废弃的东西",
+    "example": "The corpse was found by children playing in the woods.",
+    "example_cn": "这具尸体是在林子里玩耍的孩子发现的。"
+  },
+  {
+    "word": "entity",
+    "phonetic": "'entɪtɪ",
+    "meaning": "实体；存在",
+    "example": "The mind exists as a separate entity.",
+    "example_cn": "思想作为一个独立的实体存在。"
+  },
+  {
+    "word": "wander",
+    "phonetic": "'wɒndə",
+    "meaning": "漫游；迷路；离题",
+    "example": "Don’t let any of the kids wander off.",
+    "example_cn": "不要让任何一个小孩走开去。"
+  },
+  {
+    "word": "acute",
+    "phonetic": "ə'kjuːt",
+    "meaning": "厉害的，敏锐的，(疾病等)急性的",
+    "example": "acute arthritis",
+    "example_cn": "急性关节炎"
+  },
+  {
+    "word": "delectable",
+    "phonetic": "dɪ'lektəb(ə)l",
+    "meaning": "使人愉快的；美味的",
+    "example": "Delectable smells rose from the kitchen.",
+    "example_cn": "厨房里传来诱人的香味。"
+  },
+  {
+    "word": "context",
+    "phonetic": "'kɒntekst",
+    "meaning": "上下文，(事情)来龙去脉",
+    "example": "The meaning of ‘mad’ depends on its context. mad",
+    "example_cn": "一词的意义要视上下文而定。"
+  },
+  {
+    "word": "dominate",
+    "phonetic": "'dɒmɪneɪt",
+    "meaning": "统治，支配，俯瞰，俯视",
+    "example": "The industry is dominated by five multinational companies.",
+    "example_cn": "这个行业受五家跨国公司控制。"
+  },
+  {
+    "word": "flyover",
+    "phonetic": "'flaɪəʊvə",
+    "meaning": "公路上的陆桥",
+    "example": "On the flyover near Balintawak station, I peer down at a chessboard of tin roofs.",
+    "example_cn": "在巴林塔瓦克火车站附近的一处立交桥上，我看见桥下如棋盘般的铁皮屋顶。"
+  },
+  {
+    "word": "quaint",
+    "phonetic": "kweɪnt",
+    "meaning": "古雅的；离奇的",
+    "example": "a quaint little village in Yorkshire",
+    "example_cn": "约克郡一个古色古香的小村庄"
+  },
+  {
+    "word": "dispose",
+    "phonetic": "dɪ'spəʊz",
+    "meaning": "处理，处置，除去",
+    "example": "Chinese vases are disposed around the gallery.",
+    "example_cn": "中国花瓶摆放在展馆四周。"
+  },
+  {
+    "word": "regulate",
+    "phonetic": "'regjʊleɪt",
+    "meaning": "管理，控制；调整",
+    "example": "strict rules regulating the use of chemicals in food",
+    "example_cn": "限制化学品在食物中使用的严格规定"
+  },
+  {
+    "word": "antibiotic",
+    "phonetic": ",æntɪbaɪ'ɒtɪk",
+    "meaning": "抗生素；抗菌的",
+    "example": "Your doctor may prescribe antibiotics.",
+    "example_cn": "你的大夫可能会开抗生素。"
+  },
+  {
+    "word": "influence",
+    "phonetic": "'ɪnflʊəns",
+    "meaning": "影响(力)，感化(力)，有影响的人或事",
+    "example": "As a scientist, his influence was immense.",
+    "example_cn": "身为一名科学家，他的影响力极大。"
+  },
+  {
+    "word": "vein",
+    "phonetic": "veɪn",
+    "meaning": "静脉，叶脉；(石头)纹理；矿脉",
+    "example": "the pulmonary vein",
+    "example_cn": "肺静脉"
+  },
+  {
+    "word": "obsession",
+    "phonetic": "əb'seʃ(ə)n",
+    "meaning": "缠住，被困扰；观念固执，死脑筋",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "capital",
+    "phonetic": "'kæpɪt(ə)l",
+    "meaning": "资本，大写字母；首都",
+    "example": "Washington D.C., the capital of the United States",
+    "example_cn": "美国首都华盛顿特区"
+  },
+  {
+    "word": "swerve",
+    "phonetic": "swɜːv",
+    "meaning": "突然转向",
+    "example": "Drivers coming in the opposite direction swerved to avoid the bodies.",
+    "example_cn": "从反方向过来的司机们突然转向以避开这些尸体。"
+  },
+  {
+    "word": "remnant",
+    "phonetic": "'remnənt",
+    "meaning": "残(剩)余",
+    "example": "Beneath the present church were remnants of Roman flooring.",
+    "example_cn": "在目前的这座教堂下面还有残余的古罗马地板。"
+  },
+  {
+    "word": "tilt",
+    "phonetic": "tɪlt",
+    "meaning": "(使)倾斜",
+    "example": "My mother tilted her head and smiled.",
+    "example_cn": "我妈妈歪着头笑了。"
+  },
+  {
+    "word": "pass",
+    "phonetic": "pɑːs",
+    "meaning": "穿过；经过",
+    "example": "The crowd parted to let the truck pass.",
+    "example_cn": "人群分开让卡车通过。"
+  },
+  {
+    "word": "opaque",
+    "phonetic": "ə(ʊ)'peɪk",
+    "meaning": "不透光的，不透明的",
+    "example": "a shower with an opaque glass door",
+    "example_cn": "装有不透明玻璃门的淋浴间"
+  },
+  {
+    "word": "prestige",
+    "phonetic": "pre'stiː(d)ʒ",
+    "meaning": "威信，声望；(由于成功等而产生)显赫",
+    "example": "The king wanted to enhance his prestige through war.",
+    "example_cn": "国王想通过战争来提高自己的威信。"
+  },
+  {
+    "word": "precipice",
+    "phonetic": "'presɪpɪs",
+    "meaning": "悬崖，峭壁",
+    "example": "A loose rock tumbled over the precipice.",
+    "example_cn": "一块松动的岩石从悬崖上滚落下来。"
+  },
+  {
+    "word": "outskirts",
+    "phonetic": "'aʊtskɜːts",
+    "meaning": "(尤指城市)郊区",
+    "example": "Hours later we reached the outskirts of New York.",
+    "example_cn": "数小时后我们到达了纽约市的外围地带。"
+  },
+  {
+    "word": "refusal",
+    "phonetic": "rɪ'fjuːz(ə)l",
+    "meaning": "拒绝",
+    "example": "Her country suffered through her refusal to accept change.",
+    "example_cn": "她的国家因为她拒绝接受变革而受了害。"
+  },
+  {
+    "word": "patrol",
+    "phonetic": "pə'trəʊl",
+    "meaning": "巡逻，巡查",
+    "example": "Armed guards patrolled the grounds.",
+    "example_cn": "武装卫兵巡逻场地。"
+  },
+  {
+    "word": "ambassador",
+    "phonetic": "æm'bæsədə",
+    "meaning": "大使；授权代表",
+    "example": "...the German ambassador to Poland.",
+    "example_cn": "…德国驻波兰大使。"
+  },
+  {
+    "word": "shower",
+    "phonetic": "'ʃaʊə",
+    "meaning": "阵雨；淋浴",
+    "example": "Why does the phone always ring when I’m in the shower?",
+    "example_cn": "为什么电话铃总是在我洗澡的时候响？"
+  },
+  {
+    "word": "dilapidated",
+    "phonetic": "dɪ'læpɪdeɪtɪd",
+    "meaning": "破旧的，坍坏的",
+    "example": "...an old dilapidated barn.",
+    "example_cn": "…一座破旧的谷仓。"
+  },
+  {
+    "word": "description",
+    "phonetic": "dɪ'skrɪpʃ(ə)n",
+    "meaning": "描写，描绘，叙述",
+    "example": "The booklet gives a brief description of each place.",
+    "example_cn": "这本小册子对每一个地方都作了简短的介绍。"
+  },
+  {
+    "word": "ignorance",
+    "phonetic": "'ɪgn(ə)r(ə)ns",
+    "meaning": "无知，愚昧",
+    "example": "Excuse my ignorance, but how does it actually work?",
+    "example_cn": "请原谅我的无知，它究竟是如何运作的？"
+  },
+  {
+    "word": "corps",
+    "phonetic": "kɔːz",
+    "meaning": "技术兵种；军团",
+    "example": "the medical corps",
+    "example_cn": "医疗部队"
+  },
+  {
+    "word": "amphibian",
+    "phonetic": "æm'fɪbɪən",
+    "meaning": "两栖动物；水陆两用飞机和车辆",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "patriotism",
+    "phonetic": "'peɪtrɪətɪz(ə)m",
+    "meaning": "爱国主义，民族主义",
+    "example": "He was a country boy who had joined the army out of a sense of patriotism and adventure.",
+    "example_cn": "他是个乡下小伙子，出于爱国心和冒险精神参了军。"
+  },
+  {
+    "word": "periodical",
+    "phonetic": "pɪərɪ'ɒdɪk(ə)l",
+    "meaning": "周期的；定期的",
+    "example": "She made periodical visits to her dentist.",
+    "example_cn": "她定期去看牙医。"
+  },
+  {
+    "word": "energetic",
+    "phonetic": ",enə'dʒetɪk",
+    "meaning": "精力充沛的；精力旺盛的",
+    "example": "an energetic man",
+    "example_cn": "精力旺盛的男子"
+  },
+  {
+    "word": "promising",
+    "phonetic": "'prɒmɪsɪŋ",
+    "meaning": "有希望的；有出息的",
+    "example": "a promising career in law",
+    "example_cn": "很有前途的法律职业"
+  },
+  {
+    "word": "rim",
+    "phonetic": "rɪm",
+    "meaning": "边；边缘，轮辋",
+    "example": "She looked at him over the rim of her glass.",
+    "example_cn": "她沿玻璃杯口看着他。"
+  },
+  {
+    "word": "put",
+    "phonetic": "pʊt",
+    "meaning": "放",
+    "example": "He put the coffee on the table.",
+    "example_cn": "他把咖啡放在桌上。"
+  },
+  {
+    "word": "artery",
+    "phonetic": "'ɑːtərɪ",
+    "meaning": "动脉，干线",
+    "example": "...Connecticut Ave., one of the main arteries of Washington.",
+    "example_cn": "…康涅狄格大道，华盛顿的主干道之一。"
+  },
+  {
+    "word": "resort",
+    "phonetic": "rɪ'zɔːt",
+    "meaning": "求助",
+    "example": "His punishing work schedule had made him resort to drugs.",
+    "example_cn": "他那累人的工作日程已经使他不得不求助于毒品了。"
+  },
+  {
+    "word": "petal",
+    "phonetic": "'pet(ə)l",
+    "meaning": "花瓣",
+    "example": "rose petals",
+    "example_cn": "玫瑰花瓣"
+  },
+  {
+    "word": "deficiency",
+    "phonetic": "dɪ'fɪʃ(ə)nsɪ",
+    "meaning": "缺乏，不足，不足之数",
+    "example": "They did blood tests on him for signs of vitamin deficiency.",
+    "example_cn": "他们给他做了血检看是否有缺乏维生素的迹象。"
+  },
+  {
+    "word": "locality",
+    "phonetic": "lə(ʊ)'kælɪtɪ",
+    "meaning": "地区，地方",
+    "example": "weather reports from several different localities",
+    "example_cn": "来自几个不同地区的天气报告"
+  },
+  {
+    "word": "handsome",
+    "phonetic": "'hæns(ə)m",
+    "meaning": "漂亮的；大方的",
+    "example": "a row of handsome Georgian houses",
+    "example_cn": "一排宏伟的乔治王朝时期的房子"
+  },
+  {
+    "word": "myriad",
+    "phonetic": "'mɪrɪəd",
+    "meaning": "极大数量",
+    "example": "We’re still studying a myriad of options.",
+    "example_cn": "我们仍在研究各种备选方案。"
+  },
+  {
+    "word": "percussion",
+    "phonetic": "pə'kʌʃ(ə)n",
+    "meaning": "碰撞；震动",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "routine",
+    "phonetic": "ruː'tiːn",
+    "meaning": "例行公事，惯例，常规",
+    "example": "John’s departure had upset their daily routine .",
+    "example_cn": "约翰的离去打乱了他们的日常生活。"
+  },
+  {
+    "word": "strip",
+    "phonetic": "strɪp",
+    "meaning": "剥去；除去；剥夺财产",
+    "example": "Strip the beds and wash the sheets.",
+    "example_cn": "把床单撤下来清洗。"
+  },
+  {
+    "word": "amidst",
+    "phonetic": "ə'mɪdst",
+    "meaning": "=amid",
+    "example": "During some trials, an audible tone was played through the headphones, either amidst white noise or on its own, and afterwards the participants were asked if they had noticed it.",
+    "example_cn": "在一些测试中，耳机里会播放一些可被听见的声音，该声音或混杂于白噪音中，或单独播放，之后，参与者将被问及是否注意到这些声音。"
+  },
+  {
+    "word": "minister",
+    "phonetic": "'mɪnɪstə",
+    "meaning": "照顾，给予帮助",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "funeral",
+    "phonetic": "'fjuːn(ə)r(ə)l",
+    "meaning": "葬礼，丧葬",
+    "example": "The funeral will be held at St. Martin’s Church.",
+    "example_cn": "葬礼将在圣马丁教堂举行。"
+  },
+  {
+    "word": "corrode",
+    "phonetic": "kə'rəʊd",
+    "meaning": "腐蚀，侵蚀",
+    "example": "Acidic water will corrode the pipes.",
+    "example_cn": "酸性水会腐蚀管子。"
+  },
+  {
+    "word": "incidence",
+    "phonetic": "'ɪnsɪd(ə)ns",
+    "meaning": "发生率，影响的方式",
+    "example": "The incidence of breast cancer increases with age.",
+    "example_cn": "乳腺癌的发病率随着年龄的增长而上升。"
+  },
+  {
+    "word": "scheme",
+    "phonetic": "skiːm",
+    "meaning": "安排；计划，阴谋",
+    "example": "a get-rich-quick scheme",
+    "example_cn": "快速致富的手段"
+  },
+  {
+    "word": "rail",
+    "phonetic": "reɪl",
+    "meaning": "栏杆；横杆",
+    "example": "Several passengers were leaning against the ship’s rail.",
+    "example_cn": "几名乘客斜靠在轮船的栏杆上。"
+  },
+  {
+    "word": "ponderous",
+    "phonetic": "'pɒnd(ə)rəs",
+    "meaning": "沉重的，笨重的；(文章)冗长的",
+    "example": "He had a dense, ponderous style.",
+    "example_cn": "他的风格是词藻堆砌、冗长沉闷。"
+  },
+  {
+    "word": "degrade",
+    "phonetic": "dɪ'greɪd",
+    "meaning": "降级，堕落，贬黜",
+    "example": "a movie that degrades women",
+    "example_cn": "贬损女性的影片"
+  },
+  {
+    "word": "confirm",
+    "phonetic": "kən'fɜːm",
+    "meaning": "(权力)使巩固；认可(任命)",
+    "example": "X-rays have confirmed that he has not broken any bones.",
+    "example_cn": "X光片已经证实他没有骨折。"
+  },
+  {
+    "word": "scalpel",
+    "phonetic": "'skælp(ə)l",
+    "meaning": "解剖刀，(外科用)小刀",
+    "example": "I pointed with my scalpel to the chest cavity, where nothing but a black lump of coal squatted in the lipstick-red center.",
+    "example_cn": "我用解剖刀指着她的胸腔，那里只有一团黑乎乎的煤块，伏在唇膏般红色的胸腔中部。"
+  },
+  {
+    "word": "complexion",
+    "phonetic": "kəm'plekʃ(ə)n",
+    "meaning": "肤色；情况；局面；气质",
+    "example": "Drinking water is good for the complexion.",
+    "example_cn": "喝水让气色变好。"
+  },
+  {
+    "word": "outcast",
+    "phonetic": "'aʊtkɑːst",
+    "meaning": "被遗弃的；被遗弃者，被逐出者",
+    "example": "Smokers often feel as though they are being treated as social outcasts.",
+    "example_cn": "吸烟者常常觉得自己遭到社会排斥。"
+  },
+  {
+    "word": "prior",
+    "phonetic": "'praɪə",
+    "meaning": "较早的；更重要的",
+    "example": "You do not need any prior knowledge of the subject.",
+    "example_cn": "你无需事先具备该方面的知识。"
+  },
+  {
+    "word": "pimple",
+    "phonetic": "'pɪmp(ə)l",
+    "meaning": "丘疹，脓疱",
+    "example": "Belushi imitates a giant pimple by squeezing his cheeks and spewing chewed food out of his mouth.",
+    "example_cn": "我们在等候某个毕业生领文凭的同时，可以欣赏像《动物屋》这样与学校有关的经典电影的片断：约翰-贝鲁西模仿一个脸上长满丘疹的巨人，双手挤着脸，从嘴里喷出嚼过的东西。"
+  },
+  {
+    "word": "theft",
+    "phonetic": "θeft",
+    "meaning": "偷盗",
+    "example": "Car theft is on the increase.",
+    "example_cn": "汽车盗窃案在上升。"
+  },
+  {
+    "word": "compose",
+    "phonetic": "kəm'pəʊz",
+    "meaning": "组成，构成；创作；排字；使安静",
+    "example": "Barrington has composed the music for a new production of ‘A Midsummer Night’s Dream’.",
+    "example_cn": "巴林顿为新版的《仲夏夜之梦》谱了曲。"
+  },
+  {
+    "word": "infect",
+    "phonetic": "ɪn'fekt",
+    "meaning": "传染，受影响，受感染",
+    "example": "People with the virus may feel perfectly well, but they can still infect others.",
+    "example_cn": "带有这种病毒的人可能毫无症状，却仍可能传染他人。"
+  },
+  {
+    "word": "symmetry",
+    "phonetic": "'sɪmɪtrɪ",
+    "meaning": "对称；匀称",
+    "example": "...the incredible beauty and symmetry of a snowflake.",
+    "example_cn": "…雪花令人难以置信的美丽和对称。"
+  },
+  {
+    "word": "significant",
+    "phonetic": "sɪg'nɪfɪk(ə)nt",
+    "meaning": "意义深长的；重要的",
+    "example": "His most significant political achievement was the abolition of the death penalty.",
+    "example_cn": "他政治上最重大的成就是废除了死刑。"
+  },
+  {
+    "word": "currency",
+    "phonetic": "'kʌr(ə)nsɪ",
+    "meaning": "通用，流通，货币",
+    "example": "The bank can supply you with foreign currency .",
+    "example_cn": "这家银行能为你提供外币。"
+  },
+  {
+    "word": "prelude",
+    "phonetic": "'preljuːd",
+    "meaning": "序言，序幕",
+    "example": "Living together as a prelude to marriage is now considered acceptable in many countries.",
+    "example_cn": "婚前同居如今在许多国家都已被接受。"
+  },
+  {
+    "word": "typhoon",
+    "phonetic": "taɪ'fuːn",
+    "meaning": "台风，强热带风暴",
+    "example": "The football match have to stand over next week for the typhoon storm.",
+    "example_cn": "由于台风风暴，这场足球赛延期到下个星期举行。"
+  },
+  {
+    "word": "discriminate",
+    "phonetic": "dɪ'skrɪmɪneɪt",
+    "meaning": "区别，区分；岐视",
+    "example": "He is incapable of discriminating between a good idea and a terrible one.",
+    "example_cn": "他没能力在一个好主意和一个坏主意之间进行区分。"
+  },
+  {
+    "word": "drawback",
+    "phonetic": "'drɔːbæk",
+    "meaning": "障碍；不利",
+    "example": "It’s a great city – the only drawback is the weather.",
+    "example_cn": "这是座很不错的城市，唯一的不足就是天气。"
+  },
+  {
+    "word": "vacant",
+    "phonetic": "'veɪk(ə)nt",
+    "meaning": "空的；未被占用的；空虚的，无表情的",
+    "example": "Only a few apartments were still vacant.",
+    "example_cn": "只有几套公寓仍然空着。"
+  },
+  {
+    "word": "track",
+    "phonetic": "træk",
+    "meaning": "行迹；踪迹；跟踪",
+    "example": "The only evidence of pandas was their tracks in the snow.",
+    "example_cn": "有熊猫活动的惟一证据就是它们在雪中的足迹。"
+  },
+  {
+    "word": "culture",
+    "phonetic": "'kʌltʃə",
+    "meaning": "人类能力的高度发展，文化，教养，文明",
+    "example": "We speak Danish at home so that the boys don’t lose touch with their language and culture.",
+    "example_cn": "我们在家说丹麦语，这样男孩子们就不会脱离他们的语言和文化。"
+  },
+  {
+    "word": "excavate",
+    "phonetic": "'ekskəveɪt",
+    "meaning": "挖掘，挖出",
+    "example": "Schliemann excavated the ancient city of Troy.",
+    "example_cn": "谢里曼发掘出特洛伊古城。"
+  },
+  {
+    "word": "fit",
+    "phonetic": "fɪt",
+    "meaning": "(病的)发作，痉挛",
+    "example": "You must be very fit if you do so much running.",
+    "example_cn": "如果你经常这样跑步，身体肯定很健康。"
+  },
+  {
+    "word": "motion",
+    "phonetic": "'məʊʃ(ə)n",
+    "meaning": "运动，动态；手势；眼色，姿势；提议",
+    "example": "Newton’s first law of motion",
+    "example_cn": "牛顿第一运动定律"
+  },
+  {
+    "word": "expel",
+    "phonetic": "ɪk'spel; ek-",
+    "meaning": "驱逐，开除；排出",
+    "example": "More than five-thousand high school students have been expelled for cheating.",
+    "example_cn": "五千多名中学生因考试作弊而被开除。"
+  },
+  {
+    "word": "allowance",
+    "phonetic": "ə'laʊəns",
+    "meaning": "津贴",
+    "example": "Sales staff get a generous mileage allowance or a company car.",
+    "example_cn": "销售人员有优厚的里程补贴或者公司提供的专用汽车。"
+  },
+  {
+    "word": "coward",
+    "phonetic": "'kaʊəd",
+    "meaning": "胆怯者，懦夫",
+    "example": "Try it. Don’t be such a coward.",
+    "example_cn": "试一下，别那么胆小。"
+  },
+  {
+    "word": "germ",
+    "phonetic": "dʒɜːm",
+    "meaning": "幼芽；起源；微生物",
+    "example": "This was the germ of a book.",
+    "example_cn": "这是一本书的创作萌芽。"
+  },
+  {
+    "word": "flash",
+    "phonetic": "flæʃ",
+    "meaning": "闪光，闪现；简讯，浮华",
+    "example": "Lightning flashed overhead.",
+    "example_cn": "头顶上电光闪闪。"
+  },
+  {
+    "word": "subtract",
+    "phonetic": "səb'trækt",
+    "meaning": "减去，扣除",
+    "example": "The pupil could add and subtract but hadn't learned to divide.",
+    "example_cn": "这名小学生能做加法和减法，但还没学会做除法。"
+  },
+  {
+    "word": "glitter",
+    "phonetic": "'glɪtə",
+    "meaning": "闪闪发光，闪光",
+    "example": "The river glittered in the sunlight.",
+    "example_cn": "阳光下河面波光粼粼。"
+  },
+  {
+    "word": "predictable",
+    "phonetic": "prɪ'dɪktəb(ə)l",
+    "meaning": "可预言的",
+    "example": "The snow had a predictable effect on traffic.",
+    "example_cn": "这场雪对交通造成的影响可以预见。"
+  },
+  {
+    "word": "undue",
+    "phonetic": "ʌn'djuː",
+    "meaning": "过分的，过度的",
+    "example": "De Gaulle felt that America had undue influence in Europe.",
+    "example_cn": "戴高乐感到美国在欧洲影响力过大。"
+  },
+  {
+    "word": "dart",
+    "phonetic": "dɑːt",
+    "meaning": "标，镖",
+    "example": "a poisoned dart",
+    "example_cn": "毒镖"
+  },
+  {
+    "word": "coincide",
+    "phonetic": ",kəʊɪn'saɪd",
+    "meaning": "恰好相合，时间巧合；意见一致",
+    "example": "The interests of the US and those of the islanders may not coincide.",
+    "example_cn": "美国的利益和这些岛民的利益可能并不一致。"
+  },
+  {
+    "word": "consecutive",
+    "phonetic": "kən'sekjʊtɪv",
+    "meaning": "连续的，连贯的",
+    "example": "It had rained for four consecutive days.",
+    "example_cn": "雨接连下了四天。"
+  },
+  {
+    "word": "in",
+    "phonetic": "ɪn",
+    "meaning": "favour",
+    "example": "a room furnished in the modern style",
+    "example_cn": "一间以现代风格装饰的房间"
+  },
+  {
+    "word": "gamble",
+    "phonetic": "'gæmb(ə)l",
+    "meaning": "赌博；投机",
+    "example": "Their religion forbids them to drink or gamble.",
+    "example_cn": "他们的宗教禁止饮酒和赌博。"
+  },
+  {
+    "word": "committee",
+    "phonetic": "kə'mɪtɪ",
+    "meaning": "委员会",
+    "example": "a committee meeting",
+    "example_cn": "委员会会议"
+  },
+  {
+    "word": "dumb",
+    "phonetic": "dʌm",
+    "meaning": "哑的；暂不说话的；愚笨的",
+    "example": "What a dumb question.",
+    "example_cn": "多么愚蠢的问题。"
+  },
+  {
+    "word": "hygiene",
+    "phonetic": "'haɪdʒiːn",
+    "meaning": "卫生",
+    "example": "the importance of personal hygiene",
+    "example_cn": "个人卫生的重要性"
+  },
+  {
+    "word": "smother",
+    "phonetic": "'smʌðə",
+    "meaning": "使窒息，使闷死；闷住；抑制；忍住",
+    "example": "A teenage mother was accused of smothering her 3-month-old daughter.",
+    "example_cn": "一个少女妈妈被指控闷死自己三个月大的女儿。"
+  },
+  {
+    "word": "wilderness",
+    "phonetic": "'wɪldənɪs",
+    "meaning": "荒地, 废墟 \"",
+    "example": "...the icy Canadian wilderness.",
+    "example_cn": "…冰封的加拿大荒野。"
+  },
+  {
+    "word": "signal",
+    "phonetic": "'sɪgn(ə)l",
+    "meaning": "(发)信号",
+    "example": "At a prearranged signal the lights went out.",
+    "example_cn": "预定的信号一发出，灯就全灭了。"
+  },
+  {
+    "word": "furnace",
+    "phonetic": "'fɜːnɪs",
+    "meaning": "炉子，熔炉",
+    "example": "We had better fire up the furnace.",
+    "example_cn": "我们最好把炉子生起来。"
+  },
+  {
+    "word": "confess",
+    "phonetic": "kən'fes",
+    "meaning": "承认；向祖父忏悔",
+    "example": "Occasionally people confess to crimes they haven’t committed just to get attention.",
+    "example_cn": "偶尔人们会承认自己并未犯过的罪行，那只是为了引人注意。"
+  },
+  {
+    "word": "minority",
+    "phonetic": "maɪ'nɒrɪtɪ; mɪ-",
+    "meaning": "未成年；少数；少数民族",
+    "example": "Gaelic is still spoken in Ireland by a tiny minority.",
+    "example_cn": "爱尔兰仍有极少数人在说盖尔语。"
+  },
+  {
+    "word": "nostalgia",
+    "phonetic": "nɒ'stældʒə",
+    "meaning": "怀乡病，留恋过去，怀旧",
+    "example": "He looked back on his university days with a certain amount of nostalgia.",
+    "example_cn": "他带着一点留恋，回忆起大学时光。"
+  },
+  {
+    "word": "cautious",
+    "phonetic": "'kɔːʃəs",
+    "meaning": "谨慎的，小心的",
+    "example": "a cautious driver",
+    "example_cn": "一位谨慎的司机"
+  },
+  {
+    "word": "pillow",
+    "phonetic": "'pɪləʊ",
+    "meaning": "枕头",
+    "example": "I’ll be asleep as soon as my head hits the pillow.",
+    "example_cn": "我头一碰到枕头就会睡着。"
+  },
+  {
+    "word": "adjacent",
+    "phonetic": "ə'dʒeɪs(ə)nt",
+    "meaning": "邻接的，邻近的",
+    "example": "We stayed in adjacent rooms.",
+    "example_cn": "我们住在毗连的房间里。"
+  },
+  {
+    "word": "transcript",
+    "phonetic": "'trænskrɪpt; 'trɑːn-",
+    "meaning": "抄本，副本",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "crevice",
+    "phonetic": "'krevɪs",
+    "meaning": "(岩石、墙等)裂缝",
+    "example": "small creatures that hide in crevices in the rock",
+    "example_cn": "藏在岩石缝里的小生物"
+  },
+  {
+    "word": "slander",
+    "phonetic": "'slɑːndə",
+    "meaning": "诽谤，污蔑",
+    "example": "He is being sued for slander .",
+    "example_cn": "他被控犯有口头诽谤罪。"
+  },
+  {
+    "word": "subdue",
+    "phonetic": "səb'djuː",
+    "meaning": "使屈服、征服，克制；使柔和，使安静",
+    "example": "Police managed to subdue the angry crowd.",
+    "example_cn": "警察设法控制住了愤怒的人群。"
+  },
+  {
+    "word": "magnify",
+    "phonetic": "'mægnɪfaɪ",
+    "meaning": "放大，扩大；夸大，夸张",
+    "example": "At the Sheffield arena, the speakers were magnified ten times on a giant screen.",
+    "example_cn": "在谢菲尔德体育馆，演讲者在一个巨大的屏幕上被放大了十倍。"
+  },
+  {
+    "word": "neutralize",
+    "phonetic": "'nju:trəlaiz",
+    "meaning": "使中立；使无效",
+    "example": "a medicine that neutralizes the acid in the stomach",
+    "example_cn": "能中和胃酸的药"
+  },
+  {
+    "word": "stripe",
+    "phonetic": "straɪp",
+    "meaning": "条纹",
+    "example": "a shirt with black and white stripes",
+    "example_cn": "黑白条纹衬衫"
+  },
+  {
+    "word": "suite",
+    "phonetic": "swiːt",
+    "meaning": "一套家具，一套房间，酒店套房",
+    "example": "a honeymoon suite",
+    "example_cn": "蜜月套房"
+  },
+  {
+    "word": "nothing",
+    "phonetic": "'nʌθɪŋ",
+    "meaning": "没有什么；毫不",
+    "example": "I owe him nothing.",
+    "example_cn": "我不欠他什么。"
+  },
+  {
+    "word": "siege",
+    "phonetic": "siːdʒ",
+    "meaning": "围困；围城",
+    "example": "The siege lasted almost four months.",
+    "example_cn": "这次封锁历时近四个月。"
+  },
+  {
+    "word": "consequence",
+    "phonetic": "'kɒnsɪkw(ə)ns",
+    "meaning": "结果，后果；重要性",
+    "example": "I don’t suppose it is of any consequence now.",
+    "example_cn": "现在我觉得这事一点都无所谓了。"
+  },
+  {
+    "word": "manure",
+    "phonetic": "mə'njʊə",
+    "meaning": "粪，肥，肥粒",
+    "example": "...bags of manure.",
+    "example_cn": "…一袋袋的肥料。"
+  },
+  {
+    "word": "mobile",
+    "phonetic": "ˈməʊbaɪl",
+    "meaning": "易动的，运动的；易变的",
+    "example": "a more mobile workforce",
+    "example_cn": "具有更强流动性的劳动力"
+  },
+  {
+    "word": "solidarity",
+    "phonetic": ",sɒlɪ'dærɪtɪ",
+    "meaning": "团结一致",
+    "example": "a gesture of solidarity",
+    "example_cn": "团结的表示"
+  },
+  {
+    "word": "glue",
+    "phonetic": "gluː",
+    "meaning": "胶水，胶",
+    "example": "...a tube of glue.",
+    "example_cn": "…一管胶水。"
+  },
+  {
+    "word": "misguided",
+    "phonetic": ",mɪs'ɡaɪdɪd",
+    "meaning": "误入歧途的",
+    "example": "His parents still clung to the misguided belief that his common sense would keep him out of serious trouble.",
+    "example_cn": "他的父母依然错误地认为他的常识能让他远离大的麻烦。"
+  },
+  {
+    "word": "vigorous",
+    "phonetic": "'vɪg(ə)rəs",
+    "meaning": "强有力的，精力充沛的",
+    "example": "Your dog needs at least 20 minutes of vigorous exercise every day.",
+    "example_cn": "你的狗每天需要进行至少20分钟的剧烈运动。"
+  },
+  {
+    "word": "cricket",
+    "phonetic": "'krɪkɪt",
+    "meaning": "板球；蟋蟀",
+    "example": "The boy traded his knife for a cricket bat.",
+    "example_cn": "那男孩用他的刀子换了一个板球棒。"
+  },
+  {
+    "word": "novice",
+    "phonetic": "'nɒvɪs",
+    "meaning": "新手; 初学者",
+    "example": "The computer course is ideal for novices.",
+    "example_cn": "这门计算机课程非常适合初学者。"
+  },
+  {
+    "word": "likelihood",
+    "phonetic": "'laɪklɪhʊd",
+    "meaning": "可能性",
+    "example": "If I refused, it would in all likelihood mean I’d lose my job.",
+    "example_cn": "如果我拒绝，那我十有八九会丢掉工作。"
+  },
+  {
+    "word": "premium",
+    "phonetic": "'priːmɪəm",
+    "meaning": "保险费；额外费用",
+    "example": "insurance premiums",
+    "example_cn": "保险费"
+  },
+  {
+    "word": "genial",
+    "phonetic": "'dʒiːnɪəl",
+    "meaning": "和蔼的，亲切的，温和的",
+    "example": "a genial smile",
+    "example_cn": "亲切的微笑"
+  },
+  {
+    "word": "ludicrous",
+    "phonetic": "'luːdɪkrəs; 'ljuː-",
+    "meaning": "荒谬的，可笑的",
+    "example": "It is ludicrous to suggest that I was driving under the influence of alcohol.",
+    "example_cn": "说我酒后驾车，这真是太荒唐了。"
+  },
+  {
+    "word": "prestigious",
+    "phonetic": "pre'stɪdʒəs",
+    "meaning": "有威信的；有声望的",
+    "example": "a prestigious literary award",
+    "example_cn": "享有盛名的文学奖"
+  },
+  {
+    "word": "oblique",
+    "phonetic": "ə'bliːk",
+    "meaning": "斜的，偏斜的",
+    "example": "an oblique glance",
+    "example_cn": "斜瞥"
+  },
+  {
+    "word": "overhear",
+    "phonetic": "əʊvə'hɪə",
+    "meaning": "无意中听到，偷听到",
+    "example": "I overheard part of their conversation.",
+    "example_cn": "我碰巧听到了他们谈话的部分内容。"
+  },
+  {
+    "word": "anticipation",
+    "phonetic": "æntɪsɪ'peɪʃ(ə)n",
+    "meaning": "预期；预料",
+    "example": "She waited in eager anticipation for Robert to arrive.",
+    "example_cn": "她急切地期盼着罗伯特到来。"
+  },
+  {
+    "word": "chaste",
+    "phonetic": "tʃeɪst",
+    "meaning": "有道德的；善良的；贞洁的；简朴的",
+    "example": "She led a chaste decent life.",
+    "example_cn": "她过着贞洁正派的生活。"
+  },
+  {
+    "word": "explore",
+    "phonetic": "ɪk'splɔː; ek-",
+    "meaning": "勘察，考查；探索",
+    "example": "Venice is a wonderful city to explore.",
+    "example_cn": "威尼斯是一个美妙的城市，值得好好探究一番。"
+  },
+  {
+    "word": "pungent",
+    "phonetic": "'pʌn(d)ʒ(ə)nt",
+    "meaning": "刺鼻的，刺激性的",
+    "example": "He expressed some fairly pungent criticisms.",
+    "example_cn": "他提出了一针见血的批评。"
+  },
+  {
+    "word": "indulge",
+    "phonetic": "ɪn'dʌldʒ",
+    "meaning": "放纵，沉迷于",
+    "example": "His mother spoiled him, indulging his every whim.",
+    "example_cn": "他母亲对他纵容娇惯，百依百顺。"
+  },
+  {
+    "word": "simplify",
+    "phonetic": "'sɪmplɪfaɪ",
+    "meaning": "简化",
+    "example": "an attempt to simplify the tax system",
+    "example_cn": "简化税制的尝试"
+  },
+  {
+    "word": "vicious",
+    "phonetic": "'vɪʃəs",
+    "meaning": "邪恶的，堕落的；恶意的",
+    "example": "Sarah can be quite vicious at times.",
+    "example_cn": "萨拉有时相当狠毒。"
+  },
+  {
+    "word": "counterbalance",
+    "phonetic": "'kaʊntə,bæl(ə)ns",
+    "meaning": "平衡，平衡力",
+    "example": "...organizations set up as a counterbalance to groups allied to the ANC.",
+    "example_cn": "...作为对与非洲人国民大会联盟团体制衡而成立的各种组织。"
+  },
+  {
+    "word": "kit",
+    "phonetic": "kɪt",
+    "meaning": "(士兵)所有装备，成套工具",
+    "example": "Sally keeps her make-up kit in her bag.",
+    "example_cn": "萨莉把化妆包放在手提包里。"
+  },
+  {
+    "word": "shrub",
+    "phonetic": "ʃrʌb",
+    "meaning": "灌木，灌木丛",
+    "example": "...flowering shrubs.",
+    "example_cn": "…开花的灌木。"
+  },
+  {
+    "word": "sceptical",
+    "phonetic": "'skeptɪk(ə)l",
+    "meaning": "怀疑的，表示疑惑的",
+    "example": "‘You can trust me,’ he said. Jane looked sceptical.",
+    "example_cn": "“你可以相信我。”他说。而简看上去一脸怀疑。"
+  },
+  {
+    "word": "comprise",
+    "phonetic": "kəm'praɪz",
+    "meaning": "(止血用)敷布",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "pathetic",
+    "phonetic": "pə'θetɪk",
+    "meaning": "可怜的，悲惨的；不适当的",
+    "example": "The child looked a pathetic sight.",
+    "example_cn": "那个孩子看上去很可怜。"
+  },
+  {
+    "word": "mall",
+    "phonetic": "mæl; mɔːl; mɒl",
+    "meaning": "大型购物中心",
+    "example": "Let’s meet at the mall and go see a movie.",
+    "example_cn": "我们在购物中心碰头，然后去看电影吧。"
+  },
+  {
+    "word": "manipulate",
+    "phonetic": "mə'nɪpjʊleɪt",
+    "meaning": "熟练地使用；操纵",
+    "example": "He was one of those men who manipulated people.",
+    "example_cn": "他是那种要摆布别人的人。"
+  },
+  {
+    "word": "rational",
+    "phonetic": "'ræʃ(ə)n(ə)l",
+    "meaning": "有推理能力的；合理的",
+    "example": "Parents need to be fully informed so they can make a rational decision.",
+    "example_cn": "父母需要充分了解情况，这样才可以作出合理的决定。"
+  },
+  {
+    "word": "vulnerable",
+    "phonetic": "'vʌln(ə)rəb(ə)l",
+    "meaning": "易受攻击的",
+    "example": "He took advantage of me when I was at my most vulnerable.",
+    "example_cn": "他在我最脆弱的时候利用了我。"
+  },
+  {
+    "word": "heave",
+    "phonetic": "hiːv",
+    "meaning": "用力举起；说出；掷扔",
+    "example": "Michael’s shoulders heaved with silent laughter.",
+    "example_cn": "迈克尔憋着不笑出声来，双肩直抖。"
+  },
+  {
+    "word": "come",
+    "phonetic": "kʌm",
+    "meaning": "来，达到；开始；出现；成为",
+    "example": "Let me know when they come.",
+    "example_cn": "他们来了就告诉我。"
+  },
+  {
+    "word": "justification",
+    "phonetic": "dʒʌstɪfɪ'keɪʃ(ə)n",
+    "meaning": "理由",
+    "example": "Hoggart felt, with some justification, that his colleagues had let him down.",
+    "example_cn": "霍加特觉得同事令他失望，这是有理由的。"
+  },
+  {
+    "word": "arc",
+    "phonetic": "ɑːk",
+    "meaning": "弧",
+    "example": "the arc of a rainbow",
+    "example_cn": "彩虹的弧状"
+  },
+  {
+    "word": "wrestle",
+    "phonetic": "'res(ə)l",
+    "meaning": "摔跤，角斗；斗争，努力",
+    "example": "Police officers wrestled him to the ground .",
+    "example_cn": "警察把他扑倒在地。"
+  },
+  {
+    "word": "treaty",
+    "phonetic": "'triːtɪ",
+    "meaning": "条约；协定",
+    "example": "Both sides have agreed to sign the treaty .",
+    "example_cn": "双方都同意签署该条约。"
+  },
+  {
+    "word": "mammal",
+    "phonetic": "'mæm(ə)l",
+    "meaning": "哺乳动物",
+    "example": "A whale is a kind of mammal.",
+    "example_cn": "鲸是一种哺乳动物。"
+  },
+  {
+    "word": "advocate",
+    "phonetic": "'ædvəkeɪt；-ət",
+    "meaning": "辩护人；倡导者",
+    "example": "He was a strong advocate of free market policies and a multi-party system.",
+    "example_cn": "他是自由市场政策以及多党制的坚定倡导者。"
+  },
+  {
+    "word": "fickle",
+    "phonetic": "'fɪk(ə)l",
+    "meaning": "感情易变的；无常的",
+    "example": "an unpredictable and fickle lover",
+    "example_cn": "一个捉摸不透、三心二意的情人"
+  },
+  {
+    "word": "salute",
+    "phonetic": "sə'l(j)uːt",
+    "meaning": "行礼，敬礼；礼炮",
+    "example": "As they left, the corporal gave them a respectful salute.",
+    "example_cn": "他们离开时，下士恭敬地向他们行礼。"
+  },
+  {
+    "word": "clear",
+    "phonetic": "klɪə",
+    "meaning": "清楚的(地)，清白的(地)",
+    "example": "Snowplows have been out clearing the roads.",
+    "example_cn": "扫雪机已经出动，去清扫路面了。"
+  },
+  {
+    "word": "otherwise",
+    "phonetic": "'ʌðəwaɪz",
+    "meaning": "用其他方法；不同地",
+    "example": "people who smoke or otherwise abuse their bodies",
+    "example_cn": "吸烟或以其他方式糟蹋自己身体的人"
+  },
+  {
+    "word": "arduous",
+    "phonetic": "'ɑːdjʊəs",
+    "meaning": "艰巨的，艰苦的",
+    "example": "...a long, hot and arduous trip.",
+    "example_cn": "…一段漫长、灼热、艰难的旅程。"
+  },
+  {
+    "word": "punctual",
+    "phonetic": "'pʌŋ(k)tʃʊəl; -tjʊəl",
+    "meaning": "严守时刻的；准时的",
+    "example": "She’s always very punctual for appointments.",
+    "example_cn": "她一向准时赴约。"
+  },
+  {
+    "word": "directory",
+    "phonetic": "dɪ'rekt(ə)rɪ; daɪ-",
+    "meaning": "名录",
+    "example": "I couldn’t find your number in the telephone directory.",
+    "example_cn": "我在电话簿上找不到你的电话号码。"
+  },
+  {
+    "word": "vanquish",
+    "phonetic": "'væŋkwɪʃ",
+    "meaning": "征服，击败",
+    "example": "A happy ending is only possible because the hero has first vanquished the dragons.",
+    "example_cn": "只有主人公先把那些恶龙制服，快乐的结局才有可能。"
+  },
+  {
+    "word": "oblivious",
+    "phonetic": "ə'blɪvɪəs",
+    "meaning": "不在意的，忘却的",
+    "example": "She lay motionless where she was, oblivious to pain.",
+    "example_cn": "她一动不动地躺在原地，感觉不到疼痛。"
+  },
+  {
+    "word": "apprentice",
+    "phonetic": "ə'prentɪs",
+    "meaning": "学徒",
+    "example": "The apprentice lingered his work.",
+    "example_cn": "这个徒弟磨洋工。"
+  },
+  {
+    "word": "excursion",
+    "phonetic": "ɪk'skɜːʃ(ə)n; ek-",
+    "meaning": "远足，短途旅行",
+    "example": "a shopping excursion",
+    "example_cn": "购物游"
+  },
+  {
+    "word": "downpour",
+    "phonetic": "'daʊnpɔː",
+    "meaning": "倾盆大雨",
+    "example": "...sheltering from a sudden downpour of rain.",
+    "example_cn": "…躲避一场突如其来的瓢泼大雨。"
+  },
+  {
+    "word": "mandatory",
+    "phonetic": "'mændət(ə)rɪ",
+    "meaning": "命令的；强制性的",
+    "example": "Murder carries a mandatory life sentence .",
+    "example_cn": "谋杀罪依照法律要判无期徒刑。"
+  },
+  {
+    "word": "loom",
+    "phonetic": "luːm",
+    "meaning": "隐隐呈现，赫然耸现",
+    "example": "Vincent loomed over me, as pale and grey as a tombstone.",
+    "example_cn": "文森特赫然出现在我面前，脸色苍白阴沉得像块墓碑。"
+  },
+  {
+    "word": "variant",
+    "phonetic": "'veərɪənt",
+    "meaning": "不同的，变异的",
+    "example": "Note that you must use the same variant of this option for all compiler runs related to the same project.",
+    "example_cn": "注意，对于所有运行的与同一个项目相关的编译器，必须使用这个选项的相同变体。"
+  },
+  {
+    "word": "council",
+    "phonetic": "'kaʊns(ə)l; -sɪl",
+    "meaning": "政务会，理事会；委员会",
+    "example": "the council for civil liberties",
+    "example_cn": "公民自由委员会"
+  },
+  {
+    "word": "meager",
+    "phonetic": "'mi:ɡə",
+    "meaning": "瘦的，不足的，贫乏的",
+    "example": "His meager wage is not enough to support their five children.",
+    "example_cn": "靠他一个人的微薄工资不足以养活他们的五个孩子。"
+  },
+  {
+    "word": "chord",
+    "phonetic": "kɔːd",
+    "meaning": "弦，和弦",
+    "example": "Many of the things she says will strike a chord with other young women.",
+    "example_cn": "她说的许多话都能引起其他年轻女子的共鸣。"
+  },
+  {
+    "word": "tolerable",
+    "phonetic": "'tɒl(ə)rəb(ə)l",
+    "meaning": "可忍受的，可容许的，尚好的",
+    "example": "The apartment is really too small, but it’s tolerable for the time being.",
+    "example_cn": "这套公寓实在太小，不过暂时还能凑合。"
+  },
+  {
+    "word": "fabric",
+    "phonetic": "'fæbrɪk",
+    "meaning": "织物，构造；结构",
+    "example": "our new range of fabrics and wallpapers",
+    "example_cn": "我们新的织物和墙纸系列"
+  },
+  {
+    "word": "setting",
+    "phonetic": "'setɪŋ",
+    "meaning": "镶嵌；环境，背景；(日月)沉落",
+    "example": "I’ve worked with children in various settings, mainly in secondary school.",
+    "example_cn": "我在许多地方教过孩子，主要是在中学。"
+  },
+  {
+    "word": "inference",
+    "phonetic": "'ɪnf(ə)r(ə)ns",
+    "meaning": "推论, 推断 \"",
+    "example": "There were two inferences to be drawn from her letter.",
+    "example_cn": "从她的来信可以得到两种推论。"
+  },
+  {
+    "word": "summon",
+    "phonetic": "'sʌmən",
+    "meaning": "召唤，传唤；鼓起，聚集",
+    "example": "Robert summoned the waiter for the bill.",
+    "example_cn": "罗伯特召唤服务员结账。"
+  },
+  {
+    "word": "observe",
+    "phonetic": "əb'zɜːv",
+    "meaning": "看到；遵守；评论",
+    "example": "Scientists have observed a drop in ozone levels over the Antarctic.",
+    "example_cn": "科学家已经观察到南极洲上方的臭氧浓度有所下降。"
+  },
+  {
+    "word": "exotic",
+    "phonetic": "ɪg'zɒtɪk; eg-",
+    "meaning": "外国种的；奇异的",
+    "example": "exotic birds",
+    "example_cn": "外国的奇异鸟类"
+  },
+  {
+    "word": "superior",
+    "phonetic": "suːˈpɪərɪə",
+    "meaning": "优越的；优良的，较高的",
+    "example": "She had that superior tone of voice.",
+    "example_cn": "她带着那种傲慢的语气。"
+  },
+  {
+    "word": "single",
+    "phonetic": "'sɪŋg(ə)l",
+    "meaning": "单一的；未婚的；单人的",
+    "example": "A single tree gave shade from the sun.",
+    "example_cn": "唯有一棵树遮阴。"
+  },
+  {
+    "word": "spectacle",
+    "phonetic": "'spektək(ə)l",
+    "meaning": "场面；景象；壮观",
+    "example": "a multimedia dance and opera spectacle",
+    "example_cn": "盛大的多媒体舞蹈戏剧表演"
+  },
+  {
+    "word": "equilibrium",
+    "phonetic": ",iːkwɪ'lɪbrɪəm; ,ekwɪ-",
+    "meaning": "平衡，均衡",
+    "example": "The government is anxious not to upset the economic equilibrium.",
+    "example_cn": "政府急切希望不要打乱经济平衡。"
+  },
+  {
+    "word": "soluble",
+    "phonetic": "'sɒljʊb(ə)l",
+    "meaning": "可溶解的",
+    "example": "soluble aspirin",
+    "example_cn": "可溶性阿司匹林"
+  },
+  {
+    "word": "gale",
+    "phonetic": "geɪl",
+    "meaning": "大风，一阵喧闹",
+    "example": "a severe gale",
+    "example_cn": "一阵狂风"
+  },
+  {
+    "word": "crust",
+    "phonetic": "krʌst",
+    "meaning": "面包、饼皮；硬外皮；屯饪",
+    "example": "sandwiches with the crusts cut off",
+    "example_cn": "切去边皮的三明治"
+  },
+  {
+    "word": "junction",
+    "phonetic": "'dʒʌŋ(k)ʃ(ə)n",
+    "meaning": "交**点，接合点",
+    "example": "the junction of Abbot Road and Mill Street",
+    "example_cn": "阿伯特路与米尔街的交叉口"
+  },
+  {
+    "word": "heap",
+    "phonetic": "hiːp",
+    "meaning": "堆；一堆；堆积；许多，大量；装载",
+    "example": "a rubbish heap",
+    "example_cn": "垃圾堆"
+  },
+  {
+    "word": "mourn",
+    "phonetic": "mɔːn",
+    "meaning": "哀悼",
+    "example": "Hundreds of people gathered to mourn the slain president.",
+    "example_cn": "成百上千人聚集在一起悼念遇刺的总统。"
+  },
+  {
+    "word": "hound",
+    "phonetic": "haʊnd",
+    "meaning": "猎狗；卑鄙的人",
+    "example": "A troubled hound was baying the moon.",
+    "example_cn": "一条受惊不安的猎狗正在对月狂吠。"
+  },
+  {
+    "word": "mutation",
+    "phonetic": "mjuː'teɪʃ(ə)n",
+    "meaning": "变化，变异，转变",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "mantle",
+    "phonetic": "'mænt(ə)l",
+    "meaning": "斗篷，披风；覆盖物，(煤气灯)白热罩",
+    "example": "We have the rare opportunity to seize the mantle of national leadership.",
+    "example_cn": "这次是我们担当国家领导职责的天赐良机。"
+  },
+  {
+    "word": "superfluous",
+    "phonetic": "suː'pɜːflʊəs; sjuː-",
+    "meaning": "过剩的，多余的，不必要的",
+    "example": "a modern building with no superfluous decoration",
+    "example_cn": "一栋没有多余装饰的现代建筑"
+  },
+  {
+    "word": "set",
+    "phonetic": "set",
+    "meaning": "(日，月)落，vt放",
+    "example": "This debate should be set in an international context .",
+    "example_cn": "这场辩论应该放在国际大背景下来看。"
+  },
+  {
+    "word": "insert",
+    "phonetic": "ɪn'sɜːt",
+    "meaning": "插入",
+    "example": "He took a small key from his pocket and slowly inserted it into the lock.",
+    "example_cn": "他从衣袋里掏出一把小钥匙，然后缓缓地将其插入锁孔里。"
+  },
+  {
+    "word": "portray",
+    "phonetic": "pɔː'treɪ",
+    "meaning": "描绘；描述",
+    "example": "His most famous painting portrayed the death of Nelson.",
+    "example_cn": "他最著名的画作描绘的是纳尔逊之死。"
+  },
+  {
+    "word": "studio",
+    "phonetic": "'stjuːdɪəʊ",
+    "meaning": "工作室；摄影棚；播音室",
+    "example": "a TV studio",
+    "example_cn": "电视演播室"
+  },
+  {
+    "word": "ashamed",
+    "phonetic": "ə'ʃeɪmd",
+    "meaning": "羞愧的；害臊的",
+    "example": "Everyone cries sometimes – it’s nothing to be ashamed of.",
+    "example_cn": "每个人都会有哭的时候——没什么好难为情的。"
+  },
+  {
+    "word": "arise",
+    "phonetic": "ə'raɪz",
+    "meaning": "发生；起来；出现",
+    "example": "A crisis has arisen in the Foreign Office.",
+    "example_cn": "外交部出现了危机。"
+  },
+  {
+    "word": "repel",
+    "phonetic": "rɪ'pel",
+    "meaning": "击退；使厌恶",
+    "example": "The smell repelled him.",
+    "example_cn": "这气味让他反感。"
+  },
+  {
+    "word": "flux",
+    "phonetic": "flʌks",
+    "meaning": "流动；流",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "raw",
+    "phonetic": "rɔː",
+    "meaning": "生的；未加工的",
+    "example": "raw meat",
+    "example_cn": "生肉"
+  },
+  {
+    "word": "elapse",
+    "phonetic": "ɪ'læps",
+    "meaning": "(时间)流逝",
+    "example": "Several months elapsed before his case was brought to trial.",
+    "example_cn": "过了几个月他的案子才开审。"
+  },
+  {
+    "word": "diffuse",
+    "phonetic": "dɪ'fjuːz",
+    "meaning": "散开，扩散",
+    "example": "Their ideas diffused quickly across Europe.",
+    "example_cn": "他们的观点很快在欧洲传播开来。"
+  },
+  {
+    "word": "delicate",
+    "phonetic": "'delɪkət",
+    "meaning": "细软的 柔嫩的 精美的 微妙的 难办的",
+    "example": "Her wrists and ankles were slim and delicate.",
+    "example_cn": "她的手腕和脚踝长得纤巧优雅。"
+  },
+  {
+    "word": "vow",
+    "phonetic": "vaʊ",
+    "meaning": "誓约，许愿",
+    "example": "Jim made a vow that he would find his wife’s killer.",
+    "example_cn": "吉姆发誓要找到杀害他妻子的凶手。"
+  },
+  {
+    "word": "gist",
+    "phonetic": "dʒɪst",
+    "meaning": "要领",
+    "example": "Don’t worry about all the details as long as you get the gist (= understand the main meaning ) of it.",
+    "example_cn": "不要去管各个细节，只要理解主要意思就行了。"
+  },
+  {
+    "word": "specific",
+    "phonetic": "spə'sɪfɪk",
+    "meaning": "具体的；特定的",
+    "example": "games suitable for specific age groups",
+    "example_cn": "适合特定年龄组的游戏"
+  },
+  {
+    "word": "candidate",
+    "phonetic": "'kændɪdeɪt; -dət",
+    "meaning": "候选人；应试人",
+    "example": "a presidential candidate",
+    "example_cn": "总统候选人"
+  },
+  {
+    "word": "magistrate",
+    "phonetic": "'mædʒɪstrət; -streɪt",
+    "meaning": "地方法官",
+    "example": "She will face a local magistrate on Tuesday.",
+    "example_cn": "她将在星期二面见一位地方治安法官。"
+  },
+  {
+    "word": "accessory",
+    "phonetic": "ək'ses(ə)rɪ",
+    "meaning": "同谋者；附件",
+    "example": "bathroom accessories such as mirrors and towel-rails",
+    "example_cn": "镜子和毛巾架等浴室配件"
+  },
+  {
+    "word": "submarine",
+    "phonetic": "'sʌbməriːn; sʌbmə'riːn",
+    "meaning": "水下的",
+    "example": "The captain dived his submarine deep to escape from the destroyers.",
+    "example_cn": "海军上校使他的潜艇深深下潜以逃避驱逐艇。"
+  },
+  {
+    "word": "thermal",
+    "phonetic": "'θɜːm(ə)l",
+    "meaning": "热的；热量的",
+    "example": "thermal energy",
+    "example_cn": "热能"
+  },
+  {
+    "word": "indelible",
+    "phonetic": "ɪn'delɪb(ə)l",
+    "meaning": "去不掉的，擦不掉的",
+    "example": "Her words left an indelible impression on me for years to come.",
+    "example_cn": "她的话多年来我都难以忘怀。"
+  },
+  {
+    "word": "protract",
+    "phonetic": "prə'trækt",
+    "meaning": "延长，拖延",
+    "example": "Delay always breeds danger; and to protract a great design is often to ruin it.",
+    "example_cn": "推迟经常孕育危险；拖延一个伟大的工程常常意味着毁灭它。"
+  },
+  {
+    "word": "quit",
+    "phonetic": "kwɪt",
+    "meaning": "离开；停止",
+    "example": "He quit his job after an argument with a colleague.",
+    "example_cn": "他和一个同事争吵后就辞职了。"
+  },
+  {
+    "word": "ramble",
+    "phonetic": "'ræmb(ə)l",
+    "meaning": "闲逛，漫步；漫谈；蔓延",
+    "example": "There’s plenty to discover as you ramble around this little island.",
+    "example_cn": "漫步这个小岛，你会有很多新发现。"
+  },
+  {
+    "word": "lash",
+    "phonetic": "læʃ",
+    "meaning": "鞭打，责骂；眼睫毛",
+    "example": "Oliver lashed the horses to go faster.",
+    "example_cn": "奥利弗快马加鞭。"
+  },
+  {
+    "word": "pottery",
+    "phonetic": "'pɒt(ə)rɪ",
+    "meaning": "陶器，陶器制造厂",
+    "example": "Native American pottery",
+    "example_cn": "美洲印第安人的陶器"
+  },
+  {
+    "word": "prosecute",
+    "phonetic": "'prɒsɪkjuːt",
+    "meaning": "告发，起诉",
+    "example": "Shoplifters will be prosecuted.",
+    "example_cn": "在商店行窃者将被起诉。"
+  },
+  {
+    "word": "aggravate",
+    "phonetic": "'ægrəveɪt",
+    "meaning": "使恶化；使加剧；使气恼",
+    "example": "Their money problems were further aggravated by a rise in interest rates.",
+    "example_cn": "由于利率上调，他们的财务问题更加严重。"
+  },
+  {
+    "word": "mediate",
+    "phonetic": "'miːdɪeɪt",
+    "meaning": "调停；居间促成",
+    "example": "The former president has agreed to mediate the peace talks.",
+    "example_cn": "前总统同意就和谈进行斡旋。"
+  },
+  {
+    "word": "conscience",
+    "phonetic": "'kɒnʃ(ə)ns",
+    "meaning": "良心，犯罪感",
+    "example": "Well, at least I can face them all with a clear conscience (= the knowledge that you have done nothing wrong ) .",
+    "example_cn": "好吧，至少我可以问心无愧地面对他们所有人。"
+  },
+  {
+    "word": "scenery",
+    "phonetic": "'siːn(ə)rɪ",
+    "meaning": "风景",
+    "example": "The best part of the trip was the fantastic scenery.",
+    "example_cn": "此次旅行最精彩之处就是那美妙绝伦的风景。"
+  },
+  {
+    "word": "chronic",
+    "phonetic": "'krɒnɪk",
+    "meaning": "(疾病)慢性的",
+    "example": "chronic arthritis",
+    "example_cn": "慢性关节炎"
+  },
+  {
+    "word": "sustain",
+    "phonetic": "sə'steɪn",
+    "meaning": "支撑；支持，维持",
+    "example": "She found it difficult to sustain the children’s interest.",
+    "example_cn": "她发现很难保持孩子们的兴趣。"
+  },
+  {
+    "word": "stuff",
+    "phonetic": "stʌf",
+    "meaning": "原料，材料；素质；东西",
+    "example": "I’ve got some sticky stuff on my shoe.",
+    "example_cn": "我鞋子上有什么黏糊糊的东西。"
+  },
+  {
+    "word": "site",
+    "phonetic": "saɪt",
+    "meaning": "位置",
+    "example": "He said chemical weapons had never been sited in Germany.",
+    "example_cn": "他说从未在德国部署过化学武器。"
+  },
+  {
+    "word": "veteran",
+    "phonetic": "'vet(ə)r(ə)n",
+    "meaning": "老练者；老手；老兵；老式古董车",
+    "example": "a Vietnam veteran",
+    "example_cn": "越战老兵"
+  },
+  {
+    "word": "accompany",
+    "phonetic": "ə'kʌmpənɪ",
+    "meaning": "陪伴，伴奏",
+    "example": "Children under 14 must be accompanied by an adult.",
+    "example_cn": "14岁以下儿童必须有成人陪同。"
+  },
+  {
+    "word": "pace",
+    "phonetic": "peɪs",
+    "meaning": "一步；走或跑的速度",
+    "example": "He quickened his pace , longing to be home.",
+    "example_cn": "他加快步伐，盼望着早点回到家中。"
+  },
+  {
+    "word": "annual",
+    "phonetic": "'ænjʊəl",
+    "meaning": "每年的，一年生的",
+    "example": "The school trip has become an annual event.",
+    "example_cn": "学校组织的旅行成了一年一度的活动。"
+  },
+  {
+    "word": "cosmic",
+    "phonetic": "'kɒzmɪk",
+    "meaning": "宇宙的",
+    "example": "...the cosmic laws governing our world.",
+    "example_cn": "…主宰我们世界的宇宙法则。"
+  },
+  {
+    "word": "majestic",
+    "phonetic": "mə'dʒestɪk",
+    "meaning": "威严的；庄严的",
+    "example": "This lovely village is surrounded by majestic mountain scenery.",
+    "example_cn": "这座美丽的村庄四周山色壮丽。"
+  },
+  {
+    "word": "give",
+    "phonetic": "gɪv",
+    "meaning": "给，付给，允许，供给，传达",
+    "example": "Researchers were given a £10,000 grant to continue their work.",
+    "example_cn": "研究人员得到一万英镑的经费以继续他们的研究。"
+  },
+  {
+    "word": "outspoken",
+    "phonetic": "aʊt'spəʊk(ə)n",
+    "meaning": "直言的，坦率的",
+    "example": "an outspoken critic of the education reforms",
+    "example_cn": "对教育改革直言不讳的批评者"
+  },
+  {
+    "word": "storage",
+    "phonetic": "'stɔːrɪdʒ",
+    "meaning": "仓库，货栈",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "unique",
+    "phonetic": "juː'niːk",
+    "meaning": "唯一的，独一无二的",
+    "example": "Each person’s fingerprints are unique.",
+    "example_cn": "每个人的指纹都是独一无二的。"
+  },
+  {
+    "word": "screw",
+    "phonetic": "skruː",
+    "meaning": "螺旋，螺丝；螺旋浆",
+    "example": "Fix the frame in position and tighten the screws .",
+    "example_cn": "把框子固定在正确位置上，拧紧螺丝。"
+  },
+  {
+    "word": "pore",
+    "phonetic": "pɔː",
+    "meaning": "毛孔",
+    "example": "The size of your pores is determined by the amount of oil they produce.",
+    "example_cn": "毛孔的大小取决于毛孔分泌油脂的多少。"
+  },
+  {
+    "word": "slap",
+    "phonetic": "slæp",
+    "meaning": "拍 ，掌击",
+    "example": "Sarah slapped Aaron across the face.",
+    "example_cn": "萨拉在阿龙的脸上掴了一巴掌。"
+  },
+  {
+    "word": "stick",
+    "phonetic": "stɪk",
+    "meaning": "枝条；木棍",
+    "example": "They collected sticks to start the fire.",
+    "example_cn": "他们捡来树枝生火。"
+  },
+  {
+    "word": "keen",
+    "phonetic": "kiːn",
+    "meaning": "锋利的，尖锐的，强烈的；敏锐的；渴望的",
+    "example": "a keen photographer",
+    "example_cn": "一个摄影迷"
+  },
+  {
+    "word": "status",
+    "phonetic": "'steɪtəs",
+    "meaning": "身份，地位",
+    "example": "These documents have no legal status in Britain.",
+    "example_cn": "这些文件在英国并无法律效力。"
+  },
+  {
+    "word": "lubricate",
+    "phonetic": "'luːbrɪkeɪt",
+    "meaning": "使润滑，使顺利",
+    "example": "Lubricate all moving parts with grease.",
+    "example_cn": "给所有活动部件加润滑油。"
+  },
+  {
+    "word": "overwhelm",
+    "phonetic": "əʊvə'welm",
+    "meaning": "压倒，淹没",
+    "example": "But the various pros and cons should not blindly overwhelm one another.",
+    "example_cn": "但是，众多的利弊得失不应盲目的一个压倒另一个。"
+  },
+  {
+    "word": "pains",
+    "phonetic": "peɪnz",
+    "meaning": "辛苦",
+    "example": "...grey eyes that seemed filled with pain.",
+    "example_cn": "…似乎充满了痛苦的灰色眼睛。"
+  },
+  {
+    "word": "variable",
+    "phonetic": "'veərɪəb(ə)l",
+    "meaning": "可变的，变化的",
+    "example": "Expect variable cloudiness and fog tomorrow.",
+    "example_cn": "预计明天多云有雾，天气多变。"
+  },
+  {
+    "word": "handbook",
+    "phonetic": "'hæn(d)bʊk",
+    "meaning": "手册，便览",
+    "example": "the Fiction Writer’s Handbook",
+    "example_cn": "《小说写作手册》"
+  },
+  {
+    "word": "rigid",
+    "phonetic": "'rɪdʒɪd",
+    "meaning": "僵硬的，不易弯的；严格的",
+    "example": "rigid and authoritarian methods of education",
+    "example_cn": "死板、专断的教育方法"
+  },
+  {
+    "word": "embrace",
+    "phonetic": "ɪm'breɪs; em-",
+    "meaning": "拥抱；利用；包含",
+    "example": "Jack warmly embraced his son.",
+    "example_cn": "杰克热情拥抱他的儿子。"
+  },
+  {
+    "word": "ivory",
+    "phonetic": "'aɪv(ə)rɪ",
+    "meaning": "象牙；象牙制品",
+    "example": "an ivory chess set",
+    "example_cn": "一副象牙国际象棋"
+  },
+  {
+    "word": "radical",
+    "phonetic": "'rædɪk(ə)l",
+    "meaning": "根本的，基本的，政治激进的",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "identity",
+    "phonetic": "aɪ'dentɪtɪ",
+    "meaning": "身份; 同一; 一致；特性",
+    "example": "The identity of the killer is still unknown.",
+    "example_cn": "凶手的身份仍未查明。"
+  },
+  {
+    "word": "prevail",
+    "phonetic": "prɪ'veɪl",
+    "meaning": "流行，盛行",
+    "example": "A similar situation prevails in Canada.",
+    "example_cn": "同样的情况在加拿大也普遍存在。"
+  },
+  {
+    "word": "ferry",
+    "phonetic": "'ferɪ",
+    "meaning": "渡船；渡口，摆渡",
+    "example": "They had recrossed the River Gambia by ferry.",
+    "example_cn": "他们乘船又一次渡过了冈比亚河。"
+  },
+  {
+    "word": "pinpoint",
+    "phonetic": "'pɪnpɒɪnt",
+    "meaning": "精确发现目标",
+    "example": "They have to be able to pinpoint people in order to work, but satellite positioning does not work indoors.",
+    "example_cn": "因为这样的技术必须精确人的位置才可以工作，而目前卫星的定位系统还不能运行到室内。"
+  },
+  {
+    "word": "refreshment",
+    "phonetic": "rɪ'freʃm(ə)nt",
+    "meaning": "点心",
+    "example": "Refreshments will be served after the meeting.",
+    "example_cn": "会后有茶点招待。"
+  },
+  {
+    "word": "essence",
+    "phonetic": "'es(ə)ns",
+    "meaning": "本质，香精",
+    "example": "In essence his message was very simple.",
+    "example_cn": "实质上他想表达的意思很简单。"
+  },
+  {
+    "word": "hail",
+    "phonetic": "heɪl",
+    "meaning": "(下)冰雹；(冰雹般)一阵，落下",
+    "example": "heavy showers of rain and hail",
+    "example_cn": "夹着冰雹的阵阵大雨"
+  },
+  {
+    "word": "litter",
+    "phonetic": "'lɪtə",
+    "meaning": "杂乱物；一胎生下的小动物",
+    "example": "People who drop litter can be fined in some cities.",
+    "example_cn": "在有些城市，乱扔垃圾的人会被罚款。"
+  },
+  {
+    "word": "shiver",
+    "phonetic": "'ʃɪvə",
+    "meaning": "颤抖，哆嗦",
+    "example": "Jake stood shivering in the cold air.",
+    "example_cn": "大冷天里，杰克站着冻得瑟瑟发抖。"
+  },
+  {
+    "word": "portion",
+    "phonetic": "'pɔːʃ(ə)n",
+    "meaning": "一部分，一份，一客",
+    "example": "Do you have any children’s portions?",
+    "example_cn": "你们有儿童餐吗？"
+  },
+  {
+    "word": "courtesy",
+    "phonetic": "'kɜːtɪsɪ",
+    "meaning": "礼貌，谦恭",
+    "example": "It’s a matter of common courtesy to acknowledge letters.",
+    "example_cn": "确认收到来信是起码的礼貌。"
+  },
+  {
+    "word": "feast",
+    "phonetic": "fiːst",
+    "meaning": "筵席，宴请，使享受",
+    "example": "Lunch was a feast of meat and vegetables, cheese, yoghurt and fruit, with unlimited wine.",
+    "example_cn": "午餐是一场盛宴，有肉、蔬菜、奶酪、酸奶和水果，以及不限量的葡萄酒。"
+  },
+  {
+    "word": "propriety",
+    "phonetic": "prə'praɪətɪ",
+    "meaning": "正当行为；正当；适当",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "surplus",
+    "phonetic": "'sɜːpləs",
+    "meaning": "余款，盈余；过剩，剩余)",
+    "example": "Any surplus can be trimmed away.",
+    "example_cn": "多出来的部分可以修剪掉。"
+  },
+  {
+    "word": "odyssey",
+    "phonetic": "'ɔdisi",
+    "meaning": "长途冒险旅行；一连串的冒险",
+    "example": "a spiritual odyssey",
+    "example_cn": "一次精神上的艰难历程"
+  },
+  {
+    "word": "portfolio",
+    "phonetic": "pɔːt'fəʊlɪəʊ",
+    "meaning": "公事包；文件夹；大臣及部长职位",
+    "example": "the foreign affairs portfolio",
+    "example_cn": "外交部长职责"
+  },
+  {
+    "word": "superficial",
+    "phonetic": ",suːpə'fɪʃ(ə)l; ,sjuː-",
+    "meaning": "表面的；表皮的；肤浅的，一知半解的",
+    "example": "They only have the most superficial understanding of prison life.",
+    "example_cn": "他们对监狱生活只有最粗浅的了解。"
+  },
+  {
+    "word": "session",
+    "phonetic": "'seʃ(ə)n",
+    "meaning": "开庭，开庭期；集会；学期",
+    "example": "Board members met in closed session (= with nobody else present ) .",
+    "example_cn": "委员会成员举行了闭门会议。"
+  },
+  {
+    "word": "obliging",
+    "phonetic": "ə'blaɪdʒɪŋ",
+    "meaning": "乐于助人的",
+    "example": "The shop assistant was very obliging.",
+    "example_cn": "店员非常热情。"
+  },
+  {
+    "word": "shutter",
+    "phonetic": "'ʃʌtə",
+    "meaning": "百叶窗；照相机快门",
+    "example": "There are a few things you should check before pressing the shutter release.",
+    "example_cn": "在按快门之前，有几件事情你应该检查。"
+  },
+  {
+    "word": "petty",
+    "phonetic": "'petɪ",
+    "meaning": "小的；次要的",
+    "example": "petty squabbles",
+    "example_cn": "小口角"
+  },
+  {
+    "word": "cripple",
+    "phonetic": "'krɪp(ə)l",
+    "meaning": "跛子；残疾人",
+    "example": "She has gone from being a healthy, fit, and sporty young woman to being a cripple.",
+    "example_cn": "她从一个健康、强壮、爱好体育运动的年轻姑娘变成了一个残疾人。"
+  },
+  {
+    "word": "probation",
+    "phonetic": "prə'beɪʃ(ə)n",
+    "meaning": "试用，试读；见习，试用；缓刑",
+    "example": "The judge sentenced Jennings to three years’ probation.",
+    "example_cn": "法官判詹宁斯三年缓刑。"
+  },
+  {
+    "word": "pendulum",
+    "phonetic": "'pendjʊləm",
+    "meaning": "钟摆",
+    "example": "After several years of Republican government, the pendulum will undoubtedly swing back and voters will elect a Democrat.",
+    "example_cn": "由共和党执政数年后，选民无疑会掉过头来，选出一位民主党人。"
+  },
+  {
+    "word": "exile",
+    "phonetic": "'eksaɪl; 'egz-",
+    "meaning": "流放，离乡背井",
+    "example": "political exiles",
+    "example_cn": "政治流亡者"
+  },
+  {
+    "word": "convince",
+    "phonetic": "kən'vɪns",
+    "meaning": "使信服",
+    "example": "Her arguments didn’t convince everyone, but changes were made.",
+    "example_cn": "她的论点不能说服每个人，但还是引起了一些变化。"
+  },
+  {
+    "word": "righteous",
+    "phonetic": "'raɪtʃəs",
+    "meaning": "正直的，正当的，公正的",
+    "example": "a righteous God",
+    "example_cn": "正义的上帝"
+  },
+  {
+    "word": "champagne",
+    "phonetic": "ʃæm'peɪn",
+    "meaning": "香槟酒",
+    "example": "I drank a cup of champagne.",
+    "example_cn": "我喝了一杯香槟。"
+  },
+  {
+    "word": "appetite",
+    "phonetic": "'æpɪtaɪt",
+    "meaning": "食欲",
+    "example": "Her husband always had a huge appetite.",
+    "example_cn": "她丈夫向来胃口极大。"
+  },
+  {
+    "word": "sophisticated",
+    "phonetic": "sə'fɪstɪkeɪtɪd",
+    "meaning": "老练的，有经验的，世故的；尖端的",
+    "example": "sophisticated software",
+    "example_cn": "很先进的软件"
+  },
+  {
+    "word": "poke",
+    "phonetic": "pəʊk",
+    "meaning": "拨；戳",
+    "example": "Vanessa gave me a playful poke in the ribs.",
+    "example_cn": "瓦妮莎开玩笑地戳了一下我的肋骨。"
+  },
+  {
+    "word": "elevator",
+    "phonetic": "'elɪveɪtə",
+    "meaning": "[美]电梯，升降机",
+    "example": "We’ll have to take the elevator.",
+    "example_cn": "我们只好坐电梯了。"
+  },
+  {
+    "word": "touchy",
+    "phonetic": "'tʌtʃɪ",
+    "meaning": "暴躁的；易怒的",
+    "example": "She is very touchy about her past.",
+    "example_cn": "她对自己的过去非常敏感。"
+  },
+  {
+    "word": "recommendation",
+    "phonetic": ",rekəmen'deɪʃ(ə)n",
+    "meaning": "推荐，介绍；推荐信",
+    "example": "Try to get letters of recommendation from bosses and colleagues.",
+    "example_cn": "设法得到老板和同事的推荐信。"
+  },
+  {
+    "word": "tap",
+    "phonetic": "tæp",
+    "meaning": "龙头；轻拍，轻敲",
+    "example": "(= water that comes out of a tap ) is usually heavily treated with chemicals.",
+    "example_cn": "自来水一般都用化学品严格处理过。"
+  },
+  {
+    "word": "shed",
+    "phonetic": "ʃed",
+    "meaning": "棚；车库",
+    "example": "a tool shed",
+    "example_cn": "工具棚"
+  },
+  {
+    "word": "outweigh",
+    "phonetic": "aʊt'weɪ",
+    "meaning": "比更重，比更重要",
+    "example": "The benefits of the scheme outweigh the disadvantages.",
+    "example_cn": "这项计划利大于弊。"
+  },
+  {
+    "word": "reinforce",
+    "phonetic": "riːɪn'fɔːs",
+    "meaning": "增援；加强",
+    "example": "The film reinforces the idea that women should be pretty and dumb.",
+    "example_cn": "这部影片强化了这个观点——女人要漂亮，而且要笨一些。"
+  },
+  {
+    "word": "loaf",
+    "phonetic": "ləʊf",
+    "meaning": "一块面包，块，团",
+    "example": "a loaf of bread ",
+    "example_cn": "一条面包"
+  },
+  {
+    "word": "feat",
+    "phonetic": "fiːt",
+    "meaning": "技艺，功绩，武艺",
+    "example": "A racing car is an extraordinary feat of engineering.",
+    "example_cn": "赛车是工程学的一项非凡业绩。"
+  },
+  {
+    "word": "cumulative",
+    "phonetic": "'kjuːmjʊlətɪv",
+    "meaning": "累积的，累加的",
+    "example": "Learning is a cumulative process.",
+    "example_cn": "学习是个逐渐积累的过程。"
+  },
+  {
+    "word": "nylon",
+    "phonetic": "'naɪlɒn",
+    "meaning": "尼龙；尼龙长袜",
+    "example": "nylon fabric",
+    "example_cn": "尼龙织物"
+  },
+  {
+    "word": "madden",
+    "phonetic": "'mæd(ə)n",
+    "meaning": "使发疯，使发狂",
+    "example": "The unfortunate animal was maddened with pain.",
+    "example_cn": "那可怜的动物痛得发狂。"
+  },
+  {
+    "word": "technique",
+    "phonetic": "tek'niːk",
+    "meaning": "技术，技能；行家手法",
+    "example": "He’s a great player, with brilliant technique.",
+    "example_cn": "他是个伟大的球员，球技十分精湛。"
+  },
+  {
+    "word": "guideline",
+    "phonetic": "'gaɪdlaɪn",
+    "meaning": "(常作pl)",
+    "example": "This chapter gives you some guidelines to help you in your work.",
+    "example_cn": "本章将介绍一些指导性原则，为你的工作提供帮助。"
+  },
+  {
+    "word": "hang",
+    "phonetic": "hæŋ",
+    "meaning": "挂，悬挂；吊死；贴，糊",
+    "example": "If he is found guilty, he will almost certainly hang.",
+    "example_cn": "如果被判有罪，他几乎肯定会被处以绞刑。"
+  },
+  {
+    "word": "emotion",
+    "phonetic": "ɪ'məʊʃ(ə)n",
+    "meaning": "感情；情绪；激动",
+    "example": "Her voice was full of emotion.",
+    "example_cn": "她的声音充满了激情。"
+  },
+  {
+    "word": "tuck",
+    "phonetic": "tʌk",
+    "meaning": "缝",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "magnitude",
+    "phonetic": "'mægnɪtjuːd",
+    "meaning": "重要性；大小",
+    "example": "an increase of this order of magnitude",
+    "example_cn": "如此大幅度的增长"
+  },
+  {
+    "word": "cereal",
+    "phonetic": "'sɪərɪəl",
+    "meaning": "各类粮食",
+    "example": "a bowl of breakfast cereal",
+    "example_cn": "一碗早餐麦片"
+  },
+  {
+    "word": "jungle",
+    "phonetic": "'dʒʌŋg(ə)l",
+    "meaning": "丛林，密林",
+    "example": "the Amazon jungle",
+    "example_cn": "亚马孙丛林"
+  },
+  {
+    "word": "misappropriate",
+    "phonetic": "mɪsə'prəʊprɪeɪt",
+    "meaning": "滥用，误用",
+    "example": "He claimed the finance manager had misappropriated company funds.",
+    "example_cn": "他声称财务经理挪用了公司资金。"
+  },
+  {
+    "word": "erosion",
+    "phonetic": "ɪ'rəʊʒ(ə)n",
+    "meaning": "腐蚀，侵蚀",
+    "example": "the problem of soil erosion",
+    "example_cn": "水土流失的问题"
+  },
+  {
+    "word": "hijack",
+    "phonetic": "'haɪdʒæk",
+    "meaning": "劫持，劫机，拦路抢劫",
+    "example": "The airliner was hijacked by a group of terrorists.",
+    "example_cn": "该航班被一帮恐怖分子劫持。"
+  },
+  {
+    "word": "meteoric",
+    "phonetic": ",miːtɪ'ɒrɪk",
+    "meaning": "流星的，转瞬即逝的，突然的",
+    "example": "meteoric iron",
+    "example_cn": "陨铁"
+  },
+  {
+    "word": "clearance",
+    "phonetic": "'klɪər(ə)ns",
+    "meaning": "清除，清理，净空；许可",
+    "example": "She’ll race if she gets medical clearance from her doctor.",
+    "example_cn": "如果取得了医生的许可，她就会参加比赛。"
+  },
+  {
+    "word": "scrape",
+    "phonetic": "skreɪp",
+    "meaning": "刮, 擦\"",
+    "example": "Scrape the carrots and slice them thinly.",
+    "example_cn": "把这些胡萝卜去皮切成薄片。"
+  },
+  {
+    "word": "sicken",
+    "phonetic": "'sɪk(ə)n",
+    "meaning": "(使)生气；(使)厌恶",
+    "example": "The thought of such cruelty sickened her.",
+    "example_cn": "想到如此残忍的行为，她就很愤慨。"
+  },
+  {
+    "word": "statue",
+    "phonetic": "'stætjuː; -tʃuː",
+    "meaning": "雕像",
+    "example": "Churchill’s statue stands outside the parliament building.",
+    "example_cn": "丘吉尔的塑像矗立在议会大厦外。"
+  },
+  {
+    "word": "occupy",
+    "phonetic": "'ɒkjʊpaɪ",
+    "meaning": "居住；占",
+    "example": "He occupies the house without paying any rent.",
+    "example_cn": "他住在这幢房子里，没有付一分钱房租。"
+  },
+  {
+    "word": "nil",
+    "phonetic": "nɪl",
+    "meaning": "无；零",
+    "example": "The new machine reduced labour costs to almost nil.",
+    "example_cn": "新机器把劳动成本几乎降到零。"
+  },
+  {
+    "word": "culminate",
+    "phonetic": "'kʌlmɪneɪt",
+    "meaning": "使达高潮，使结束",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "file",
+    "phonetic": "faɪl",
+    "meaning": "锉，锉刀；文件夹；归档；纵列",
+    "example": "She pulled a blue file from the shelf.",
+    "example_cn": "她从架子上拉出一个蓝色文件夹。"
+  },
+  {
+    "word": "ghastly",
+    "phonetic": "gɑːs(t)lɪ",
+    "meaning": "苍白的；可怕的；令人不快的",
+    "example": "a ghastly accident",
+    "example_cn": "可怕的事故"
+  },
+  {
+    "word": "ugly",
+    "phonetic": "'ʌglɪ",
+    "meaning": "险恶的，丑陋的",
+    "example": "a very ugly man",
+    "example_cn": "非常丑陋的男子"
+  },
+  {
+    "word": "chip",
+    "phonetic": "tʃɪp",
+    "meaning": "片屑，薄片；集成电路",
+    "example": "the age of the silicon chip",
+    "example_cn": "芯片时代"
+  },
+  {
+    "word": "occurrence",
+    "phonetic": "ə'kʌr(ə)ns",
+    "meaning": "发生；出现",
+    "example": "Complaints seemed to be an everyday occurrence.",
+    "example_cn": "投诉似乎成了天天发生的事。"
+  },
+  {
+    "word": "propel",
+    "phonetic": "prə'pel",
+    "meaning": "推进",
+    "example": "a boat propelled by a small motor",
+    "example_cn": "由小马达驱动的小船"
+  },
+  {
+    "word": "once",
+    "phonetic": "wʌns",
+    "meaning": "一旦",
+    "example": "Once I get him a job, he’ll be fine.",
+    "example_cn": "一旦我帮他找到了工作，他就会好的。"
+  },
+  {
+    "word": "approach",
+    "phonetic": "ə'prəʊtʃ",
+    "meaning": "接近，着手处理",
+    "example": "As I approached the house, I noticed a light on upstairs.",
+    "example_cn": "我走近那幢房子的时候注意到楼上有灯光。"
+  },
+  {
+    "word": "overture",
+    "phonetic": "'əʊvətj(ʊ)ə",
+    "meaning": "提议，建议；序曲",
+    "example": "They began making overtures to the Irish government.",
+    "example_cn": "他们开始向爱尔兰政府表示友好。"
+  },
+  {
+    "word": "wholesale",
+    "phonetic": "'həʊlseɪl",
+    "meaning": "批发",
+    "example": "He does wholesale business, while his brother is engaged in retail business.",
+    "example_cn": "他经营批发生意， 他弟弟则经营零售生意。"
+  },
+  {
+    "word": "stationery",
+    "phonetic": "'steɪʃ(ə)n(ə)rɪ",
+    "meaning": "文具",
+    "example": "...envelopes and other office stationery.",
+    "example_cn": "…信封及其他办公文具。"
+  },
+  {
+    "word": "liquor",
+    "phonetic": "'lɪkə",
+    "meaning": "酒；酒类",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "legend",
+    "phonetic": "'ledʒ(ə)nd",
+    "meaning": "传说，传奇，传奇文学；地图图例",
+    "example": "Local legend has it that (= says that ) the island was the original Garden of Eden.",
+    "example_cn": "当地传说这个岛就是伊甸园的原型。"
+  },
+  {
+    "word": "contaminate",
+    "phonetic": "kən'tæmɪneɪt",
+    "meaning": "弄脏；污染",
+    "example": "Drinking water supplies are believed to have been contaminated.",
+    "example_cn": "据信饮用水已受到污染。"
+  },
+  {
+    "word": "loll",
+    "phonetic": "lɒl",
+    "meaning": "懒洋洋地倚靠,(头等)垂下n游手好闲的人\"",
+    "example": "He was lolling on the sofa in the shadows near the fire.",
+    "example_cn": "他懒洋洋地躺在炉火边一个背光的沙发上。"
+  },
+  {
+    "word": "inspire",
+    "phonetic": "ɪn'spaɪə",
+    "meaning": "激励，鼓励，灌注以创造力",
+    "example": "We need someone who can inspire the team.",
+    "example_cn": "我们需要一个能鼓舞团队士气的人。"
+  },
+  {
+    "word": "constant",
+    "phonetic": "'kɒnst(ə)nt",
+    "meaning": "不变的；经常的；坚定的",
+    "example": "There was a constant stream of visitors to the house.",
+    "example_cn": "参观这幢房子的游客川流不息。"
+  },
+  {
+    "word": "perimeter",
+    "phonetic": "pə'rɪmɪtə",
+    "meaning": "周边，周长，周界",
+    "example": "...the perimeter of the airport.",
+    "example_cn": "…机场周边。"
+  },
+  {
+    "word": "neurotic",
+    "phonetic": "njʊə'rɒtɪk",
+    "meaning": "神经病的，神经过敏的",
+    "example": "He seemed a neurotic, self-obsessed man.",
+    "example_cn": "他似乎是个神经过敏又自恋的人。"
+  },
+  {
+    "word": "assemble",
+    "phonetic": "ə'semb(ə)l",
+    "meaning": "聚集；装配",
+    "example": "A large crowd had assembled outside the American embassy.",
+    "example_cn": "一大群人聚集在美国大使馆外。"
+  },
+  {
+    "word": "origin",
+    "phonetic": "'ɒrɪdʒɪn",
+    "meaning": "起源，血统",
+    "example": "The tradition has its origins in the Middle Ages.",
+    "example_cn": "这一传统源于中世纪。"
+  },
+  {
+    "word": "hurl",
+    "phonetic": "hɜːl",
+    "meaning": "猛掷，猛投",
+    "example": "Demonstrators were hurling bricks through the windows.",
+    "example_cn": "示威者在向窗里掷砖块。"
+  },
+  {
+    "word": "coed",
+    "phonetic": "'kəʊed; kəʊ'ed",
+    "meaning": "男女同校的学生",
+    "example": "...two University of Florida coeds.",
+    "example_cn": "...两名佛罗里达大学的女生。"
+  },
+  {
+    "word": "upright",
+    "phonetic": "'ʌpraɪt",
+    "meaning": "垂直的，直立的；正直的",
+    "example": "Katie was still awake, sitting bolt upright(= sitting with her back very straight ) staring at the television.",
+    "example_cn": "凯蒂还醒着，坐得笔直，眼睛盯着电视。"
+  },
+  {
+    "word": "volcano",
+    "phonetic": "vɒl'keɪnəʊ",
+    "meaning": "火山",
+    "example": "Pompeii was destroyed when the volcano erupted in 79 AD.",
+    "example_cn": "庞贝城于公元79年在火山爆发中毁灭。"
+  },
+  {
+    "word": "momentous",
+    "phonetic": "mə(ʊ)'mentəs",
+    "meaning": "重要的，重大的",
+    "example": "a momentous decision",
+    "example_cn": "重大决定"
+  },
+  {
+    "word": "amid",
+    "phonetic": "ə'mɪd",
+    "meaning": "在当中",
+    "example": "The dollar has fallen in value amid rumors of weakness in the US economy.",
+    "example_cn": "在一片美国经济疲软的传言中，美元贬值了。"
+  },
+  {
+    "word": "fierce",
+    "phonetic": "fɪəs",
+    "meaning": "凶猛的，狂热的，强烈的，愤怒的",
+    "example": "fierce fighting in the city",
+    "example_cn": "城里的激烈战斗"
+  },
+  {
+    "word": "grill",
+    "phonetic": "grɪl",
+    "meaning": "(烤肉用的)烤架",
+    "example": "Pop it under the grill for five minutes.",
+    "example_cn": "把它放在烤架下烤五分钟。"
+  },
+  {
+    "word": "primary",
+    "phonetic": "'praɪm(ə)rɪ",
+    "meaning": "最初的；首要的",
+    "example": "Our primary concern is to provide the refugees with food and health care.",
+    "example_cn": "我们的头等大事是向难民提供食品和医疗。"
+  },
+  {
+    "word": "flexible",
+    "phonetic": "'fleksɪb(ə)l",
+    "meaning": "易弯曲的；柔软的，灵活的",
+    "example": "We can be flexible about your starting date.",
+    "example_cn": "你具体从哪天开始，我们可以灵活一点。"
+  },
+  {
+    "word": "affiliate",
+    "phonetic": "ə'fɪlɪeɪt",
+    "meaning": "使加入，接受为分支机构",
+    "example": "She affiliated herself with the Impressionist school of painting.",
+    "example_cn": "她加入了印象主义画派。"
+  },
+  {
+    "word": "famine",
+    "phonetic": "'fæmɪn",
+    "meaning": "饥荒",
+    "example": "the great potato famine in Ireland",
+    "example_cn": "爱尔兰严重的土豆荒"
+  },
+  {
+    "word": "say",
+    "phonetic": "seɪ",
+    "meaning": "说",
+    "example": "‘I’m so tired,’ she said.",
+    "example_cn": "“我太累了。”她说。"
+  },
+  {
+    "word": "undoubtedly",
+    "phonetic": "ʌn'daʊtɪdlɪ",
+    "meaning": "无疑地，必是地",
+    "example": "This is undoubtedly important.",
+    "example_cn": "这无疑是重要的。"
+  },
+  {
+    "word": "naval",
+    "phonetic": "'neɪv(ə)l",
+    "meaning": "海军的，军舰的",
+    "example": "a naval officer",
+    "example_cn": "海军军官"
+  },
+  {
+    "word": "uneven",
+    "phonetic": "ʌn'iːv(ə)n",
+    "meaning": "不平坦的，不均匀的",
+    "example": "She walked back carefully over the uneven ground.",
+    "example_cn": "她小心翼翼地从凹凸不平的地面上走回来。"
+  },
+  {
+    "word": "perishable",
+    "phonetic": "'perɪʃəb(ə)l",
+    "meaning": "(尤指食物)易坏的,易腐烂的;易坏之物\"",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "grudge",
+    "phonetic": "grʌdʒ",
+    "meaning": "吝惜，不愿给",
+    "example": "So I never grudge my love.",
+    "example_cn": "所以，我从不吝惜我的爱。"
+  },
+  {
+    "word": "fabulous",
+    "phonetic": "'fæbjʊləs",
+    "meaning": "寓言般的；惊人的，难以置信的",
+    "example": "Crystal clear waters, beautiful white sand beaches, swaying palm trees and fabulous dive sites – that’s why the Maldives, is known for being one of the best tropical holiday destinations in the world.",
+    "example_cn": "清澈透明的海水，美丽的白色沙滩，摇曳生姿的棕榈树，难以置信的的潜水胜地——这就是马尔代夫被誉为世界上最佳热带地区度假地之一的原因。"
+  },
+  {
+    "word": "granary",
+    "phonetic": "'græn(ə)rɪ",
+    "meaning": "谷仓，粮仓",
+    "example": "The Mid-West is the granary of the U.S.",
+    "example_cn": "中西部是美国的粮仓。"
+  },
+  {
+    "word": "psychology",
+    "phonetic": "saɪ'kɒlədʒɪ",
+    "meaning": "心理学",
+    "example": "I understood the psychology of this, but it still hurt.",
+    "example_cn": "我理解这种心理，但这仍然让我感到伤心。"
+  },
+  {
+    "word": "slaughter",
+    "phonetic": "'slɔːtə",
+    "meaning": "屠杀，屠宰",
+    "example": "Hundreds of innocent civilians had been slaughtered by government troops.",
+    "example_cn": "数百名无辜平民遭政府军屠杀。"
+  },
+  {
+    "word": "ingredient",
+    "phonetic": "ɪn'griːdɪənt",
+    "meaning": "(混合物的)组成部分，配料",
+    "example": "Combine all the ingredients in a large bowl.",
+    "example_cn": "把所有食材都放在一个大碗里。"
+  },
+  {
+    "word": "refugee",
+    "phonetic": "refjʊ'dʒiː",
+    "meaning": "避难者，难民",
+    "example": "Refugees were streaming across the border.",
+    "example_cn": "难民正涌过边境。"
+  },
+  {
+    "word": "signify",
+    "phonetic": "'sɪgnɪfaɪ",
+    "meaning": "表示；意味",
+    "example": "Some tribes use special facial markings to signify status.",
+    "example_cn": "有些部落使用特殊的面部标记来表示地位。"
+  },
+  {
+    "word": "convert",
+    "phonetic": "kən'vɜːt",
+    "meaning": "转变，兑换；使改变信仰",
+    "example": "a 19th-century converted barn",
+    "example_cn": "由19世纪谷仓改建的房子"
+  },
+  {
+    "word": "extract",
+    "phonetic": "ˈekstrækt",
+    "meaning": "拔出；榨取；摘录",
+    "example": "You’ll have to have that tooth extracted.",
+    "example_cn": "你得把那颗牙拔掉。"
+  },
+  {
+    "word": "invisible",
+    "phonetic": "ɪn'vɪzɪb(ə)l",
+    "meaning": "看不见的，无形的",
+    "example": "The house was surrounded by trees, and invisible from the road.",
+    "example_cn": "这所房子树木环绕，从路上是看不见的。"
+  },
+  {
+    "word": "contrive",
+    "phonetic": "kən'traɪv",
+    "meaning": "发明; 设计; 设法；造成",
+    "example": "In 1862, a technique was contrived to take a series of photographs showing stages of movement.",
+    "example_cn": "1862年时发明了一种技术，可以拍出一连串展示连续动作的照片。"
+  },
+  {
+    "word": "descend",
+    "phonetic": "dɪ'send",
+    "meaning": "下降；下来；遗传；袭击",
+    "example": "Our plane started to descend.",
+    "example_cn": "我们的飞机开始下降。"
+  },
+  {
+    "word": "perturb",
+    "phonetic": "pə'tɜːb",
+    "meaning": "使不安，烦扰",
+    "example": "What perturbs me is that magazine articles are so much shorter nowadays.",
+    "example_cn": "让我不安的是现在杂志文章都短多了。"
+  },
+  {
+    "word": "instantaneous",
+    "phonetic": ",ɪnst(ə)n'teɪnɪəs",
+    "meaning": "瞬间，霎时",
+    "example": "So, the second method is almost always combined with the first, by checking the fields in instantaneous and then doing a batch validation before the form is submitted.",
+    "example_cn": "所以，第二种方法几乎总是和第一种方法结合在一起，先对域进行瞬时检查，然后在表单被提交之前执行批处理确认。"
+  },
+  {
+    "word": "terrace",
+    "phonetic": "'terəs",
+    "meaning": "斜坡地，梯田；看台，大阶级",
+    "example": "...massive terraces of corn and millet carved into the mountainside like giant steps.",
+    "example_cn": "…山坡上开垦出来种玉米和小米的巨型台阶般的大块大块梯田。"
+  },
+  {
+    "word": "permissible",
+    "phonetic": "pə'mɪsɪb(ə)l",
+    "meaning": "许可的，容许的",
+    "example": "the maximum permissible level of radiation",
+    "example_cn": "允许的最大辐射水平"
+  },
+  {
+    "word": "allegiance",
+    "phonetic": "ə'liːdʒ(ə)ns",
+    "meaning": "忠诚",
+    "example": "an oath of allegiance",
+    "example_cn": "效忠宣誓"
+  },
+  {
+    "word": "plaster",
+    "phonetic": "'plɑːstə",
+    "meaning": "膏药；(涂)灰泥",
+    "example": "The ceiling he had just plastered fell in and knocked him off his ladder.",
+    "example_cn": "他刚抹过灰泥的那块天花板脱落了，把他从梯子上砸了下来。"
+  },
+  {
+    "word": "practically",
+    "phonetic": "'præktɪk(ə)lɪ",
+    "meaning": "实践地；几乎",
+    "example": "I’ve read practically all of his books.",
+    "example_cn": "我差不多读过他所有的书。"
+  },
+  {
+    "word": "infirmary",
+    "phonetic": "ɪn'fɜːm(ə)rɪ",
+    "meaning": "医务，医务室",
+    "example": "All they need now are the keys to the infirmary.",
+    "example_cn": "现在所需要的就是医务室的门钥匙。"
+  },
+  {
+    "word": "distil",
+    "phonetic": "dis'til",
+    "meaning": "蒸馏",
+    "example": "The whisky had been distilled in 1926 and sat quietly maturing until 1987.",
+    "example_cn": "这瓶威士忌是1926年被蒸馏的，存放至1987年酿造成熟。"
+  },
+  {
+    "word": "unanimous",
+    "phonetic": "juː'nænɪməs",
+    "meaning": "一致同意的；全体一致的",
+    "example": "It was decided by a unanimous vote that the school should close.",
+    "example_cn": "关闭学校是大家一致通过的决定。"
+  },
+  {
+    "word": "scissors",
+    "phonetic": "'sɪzəz",
+    "meaning": "剪刀",
+    "example": "a pair of scissors",
+    "example_cn": "一把剪刀"
+  },
+  {
+    "word": "accelerate",
+    "phonetic": "ək'seləreɪt",
+    "meaning": "加速，变快",
+    "example": "measures to accelerate the rate of economic growth",
+    "example_cn": "加快经济增长速度的措施"
+  },
+  {
+    "word": "disable",
+    "phonetic": "dɪs'eɪb(ə)l",
+    "meaning": "使无能力，使伤残",
+    "example": "Carter was permanently disabled in the war.",
+    "example_cn": "卡特在那场战争中成了终生残废。"
+  },
+  {
+    "word": "lapse",
+    "phonetic": "læps",
+    "meaning": "小错，记错；(时间)流逝；[律]权利终止",
+    "example": "He forgot to offer Darren a drink, but Marie did not appear to notice the lapse.",
+    "example_cn": "他忘了给达伦倒饮料，玛丽好像也没有注意到这个疏忽。"
+  },
+  {
+    "word": "antique",
+    "phonetic": "æn'tiːk",
+    "meaning": "古代的；古玩；古物",
+    "example": "The palace is full of priceless antiques.",
+    "example_cn": "宫殿里到处都是价值连城的古董。"
+  },
+  {
+    "word": "crease",
+    "phonetic": "kriːs",
+    "meaning": "折缝，皱痕",
+    "example": "She smoothed the creases from her skirt.",
+    "example_cn": "她捋平裙子上的皱褶。"
+  },
+  {
+    "word": "evolution",
+    "phonetic": ",iːvə'luːʃ(ə)n; 'ev-",
+    "meaning": "演变，进展，进化",
+    "example": "the theory of evolution",
+    "example_cn": "进化论"
+  },
+  {
+    "word": "sow",
+    "phonetic": "səʊ",
+    "meaning": "播种",
+    "example": "Sow the seeds in late March.",
+    "example_cn": "三月底播种。"
+  },
+  {
+    "word": "prodigious",
+    "phonetic": "prə'dɪdʒəs",
+    "meaning": "巨大的，奇妙的",
+    "example": "the artist’s prodigious output",
+    "example_cn": "那位艺术家惊人的高产"
+  },
+  {
+    "word": "embark",
+    "phonetic": "ɪm'bɑːk; em-",
+    "meaning": "上船；从事；开始",
+    "example": "He's embarking on a new career as a writer.",
+    "example_cn": "他正开始一个当作家的新生涯。"
+  },
+  {
+    "word": "questionnaire",
+    "phonetic": "ˌkwestʃəˈneə(r)",
+    "meaning": "问题单，调查表，征求意见表",
+    "example": "Teachers will be asked to fill in a questionnaire.",
+    "example_cn": "教师们将被要求填写一份调查问卷。"
+  },
+  {
+    "word": "voucher",
+    "phonetic": "'vaʊtʃə",
+    "meaning": "凭单，收据",
+    "example": "As a basic business voucher in the economic exchange, invoice is a primitive evidence for financial accounting and an important proof for taxation check.",
+    "example_cn": "发票作为经济交往中基本的商事凭证，是财务会计核算的原始凭证和税务稽查的重要凭据。"
+  },
+  {
+    "word": "puzzle",
+    "phonetic": "'pʌz(ə)l",
+    "meaning": "难题；谜",
+    "example": "The meaning of the poem has always been a puzzle.",
+    "example_cn": "那首诗的含义始终是个谜。"
+  },
+  {
+    "word": "foil",
+    "phonetic": "fɔɪl",
+    "meaning": "金属薄片；陪衬物；钝头剑",
+    "example": "The simple stone floor is the perfect foil for the brightly coloured furnishings.",
+    "example_cn": "朴素的石材地板完美地衬托出色彩鲜艳的家具。"
+  },
+  {
+    "word": "grant",
+    "phonetic": "grɑːnt",
+    "meaning": "同意给予，授予，承认",
+    "example": "Britain could grant Spain’s request .",
+    "example_cn": "英国可能会同意西班牙的请求。"
+  },
+  {
+    "word": "request",
+    "phonetic": "rɪ'kwest",
+    "meaning": "要求；请求",
+    "example": "To request more information, please call our toll free number.",
+    "example_cn": "欲知详情，请拨打我们的免费电话。"
+  },
+  {
+    "word": "subtle",
+    "phonetic": "'sʌt(ə)l",
+    "meaning": "微妙的；难以捉摸的；精明的",
+    "example": "The pictures are similar, but there are subtle differences between them.",
+    "example_cn": "这些图片很相似，但它们之间有细微的差别。"
+  },
+  {
+    "word": "sewer",
+    "phonetic": "'suːə; 'sjuːə",
+    "meaning": "下水道，阴沟",
+    "example": "...the city's sewer system.",
+    "example_cn": "…该城市的下水道系统。"
+  },
+  {
+    "word": "consumption",
+    "phonetic": "kən'sʌm(p)ʃ(ə)n",
+    "meaning": "消费；结核病",
+    "example": "art intended for mass consumption",
+    "example_cn": "供大众消费的艺术品"
+  },
+  {
+    "word": "hence",
+    "phonetic": "hens",
+    "meaning": "从此地，从此时，因此",
+    "example": "The cost of transport is a major expense for an industry. Hence factory location is an important consideration.",
+    "example_cn": "运输成本是企业的一大支出，因此工厂选址是重要的考虑因素。"
+  },
+  {
+    "word": "texture",
+    "phonetic": "'tekstʃə",
+    "meaning": "(织物)组织，结构；(材料)构造，结构",
+    "example": "Matured over 18 months, this cheese has an open, crumbly texture with a strong flavour.",
+    "example_cn": "这种奶酪18个月后发酵成熟，气孔多，组织松脆，味道浓郁。"
+  },
+  {
+    "word": "vary",
+    "phonetic": "'veərɪ",
+    "meaning": "变化",
+    "example": "Quentin’s mood seems to vary according to the weather.",
+    "example_cn": "昆廷的情绪似乎随天气而变化。"
+  },
+  {
+    "word": "fleeting",
+    "phonetic": "'fliːtɪŋ",
+    "meaning": "飞逝的, 短暂的 \"",
+    "example": "Time is fleeting.; Time flies.",
+    "example_cn": "时光飞逝。"
+  },
+  {
+    "word": "hostage",
+    "phonetic": "'hɒstɪdʒ",
+    "meaning": "人质",
+    "example": "The group are holding two tourists hostage (= keeping them as hostages ) .",
+    "example_cn": "这伙人挟持了两名游客作为人质。"
+  },
+  {
+    "word": "pledge",
+    "phonetic": "pledʒ",
+    "meaning": "抵押品，典当物；象征",
+    "example": "He asked her to pledge the house as security for a loan.",
+    "example_cn": "他要她抵押房子作为贷款担保。"
+  },
+  {
+    "word": "pry",
+    "phonetic": "praɪ",
+    "meaning": "细查；探问",
+    "example": "I don’t want to pry , but I need to ask you one or two questions.",
+    "example_cn": "我不想唐突，不过我需要问你一两个问题。"
+  },
+  {
+    "word": "synthesis",
+    "phonetic": "'sɪnθɪsɪs",
+    "meaning": "合成法；综合，合成物",
+    "example": "speech synthesis software",
+    "example_cn": "语音合成软件"
+  },
+  {
+    "word": "distress",
+    "phonetic": "dɪ'stres",
+    "meaning": "悲痛，忧伤；贫苦；危难",
+    "example": "Luke’s behaviour caused his parents great distress.",
+    "example_cn": "卢克的行为使他的父母深感忧虑。"
+  },
+  {
+    "word": "intimidate",
+    "phonetic": "ɪn'tɪmɪdeɪt",
+    "meaning": "恫吓，威胁",
+    "example": "Attempts to intimidate her failed.",
+    "example_cn": "恐吓她的企图失败了。"
+  },
+  {
+    "word": "oppose",
+    "phonetic": "ə'pəʊz",
+    "meaning": "反对，反抗",
+    "example": "Congress is continuing to oppose the President’s health care budget.",
+    "example_cn": "国会继续反对总统的医疗保健预算。"
+  },
+  {
+    "word": "orientate",
+    "phonetic": "'ɔːrɪənteɪt; 'ɒr-",
+    "meaning": "定位；给定位",
+    "example": "The reason for this was that he decided to orientate the map in the direction of the Pole Star since Polaris was the immovable guiding light in which the voyagers of that era placed their trust.",
+    "example_cn": "他之所以要这样做就是因为他决定以北极星的方向来确定地图的方位。 因为北极星是一盏不动的导航灯，那个时代的航海家们主要依靠北极星来导航。"
+  },
+  {
+    "word": "ornament",
+    "phonetic": "'ɔːnəm(ə)nt",
+    "meaning": "装饰(物)",
+    "example": "a shelf covered with books and ornaments",
+    "example_cn": "摆满书籍和装饰品的架子"
+  },
+  {
+    "word": "teem",
+    "phonetic": "tiːm",
+    "meaning": "大量出现，涌现",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "precipitate",
+    "phonetic": "prɪ'sɪpɪteɪt",
+    "meaning": "猛然抛下；突然发生；加速",
+    "example": "The riot was precipitated when four black men were arrested.",
+    "example_cn": "这场骚乱是因为四名黑人男子的被捕而突然引发的。"
+  },
+  {
+    "word": "ordeal",
+    "phonetic": "ɔː'diːəl",
+    "meaning": "(对品格或忍耐力的)严格考验",
+    "example": "They manned themselves for an ordeal.",
+    "example_cn": "他们振奋精神迎接考验。"
+  },
+  {
+    "word": "placid",
+    "phonetic": "'plæsɪd",
+    "meaning": "平静的，安静的",
+    "example": "a large, placid baby",
+    "example_cn": "一个胖胖的、安静的婴儿"
+  },
+  {
+    "word": "conversely",
+    "phonetic": "'kɒnvɜːslɪ; kən'vɜːslɪ",
+    "meaning": "相反地，逆地",
+    "example": "American consumers prefer white eggs; conversely, British buyers like brown eggs.",
+    "example_cn": "美国的消费者喜欢白色的鸡蛋，而英国的消费者却相反，他们喜欢棕色的鸡蛋。"
+  },
+  {
+    "word": "worthwhile",
+    "phonetic": "wɜːθ'waɪl",
+    "meaning": "值得(花时间、精力)的；合算的",
+    "example": "He wanted to do a worthwhile job.",
+    "example_cn": "他想做有意义的工作。"
+  },
+  {
+    "word": "realm",
+    "phonetic": "relm",
+    "meaning": "世界；王国",
+    "example": "Defence of the realm is crucial.",
+    "example_cn": "王国的防御是至关重要的。"
+  },
+  {
+    "word": "vocational",
+    "phonetic": "və(ʊ)'keɪʃ(ə)n(ə)l",
+    "meaning": "职业的；业务的",
+    "example": "vocational qualifications",
+    "example_cn": "职业资格"
+  },
+  {
+    "word": "inaugurate",
+    "phonetic": "ɪ'nɔːgjʊreɪt",
+    "meaning": "为举行就职典礼，为展览会揭幕，开创",
+    "example": "The Turner Prize was inaugurated in 1984.",
+    "example_cn": "特纳奖于1984年正式设立。"
+  },
+  {
+    "word": "loyal",
+    "phonetic": "'lɒɪəl",
+    "meaning": "忠诚的",
+    "example": "a loyal supporter of the team",
+    "example_cn": "球队的忠实支持者"
+  },
+  {
+    "word": "crystal",
+    "phonetic": "'krɪst(ə)l",
+    "meaning": "水晶，水晶饰品，结晶体；最好的玻璃器皿",
+    "example": "a set of six crystal glasses",
+    "example_cn": "六件套水晶玻璃杯"
+  },
+  {
+    "word": "embarrass",
+    "phonetic": "ɪm'bærəs; em-",
+    "meaning": "使为难，使尴尬",
+    "example": "He didn’t want to embarrass her by asking questions.",
+    "example_cn": "他不想提问让她尴尬。"
+  },
+  {
+    "word": "howl",
+    "phonetic": "haʊl",
+    "meaning": "嚎叫，怒吼",
+    "example": "The dogs howled all night.",
+    "example_cn": "那些狗整夜嘷叫。"
+  },
+  {
+    "word": "release",
+    "phonetic": "rɪ'liːs",
+    "meaning": "释放；发表",
+    "example": "Police arrested several men, who were later released.",
+    "example_cn": "警察逮捕了几个人，后来都释放了。"
+  },
+  {
+    "word": "sanity",
+    "phonetic": "'sænɪtɪ",
+    "meaning": "心智健全，神智正常；判断正确",
+    "example": "I began to doubt his sanity.",
+    "example_cn": "我开始怀疑他是否神志正常。"
+  },
+  {
+    "word": "visible",
+    "phonetic": "ˈvɪzəbl",
+    "meaning": "可见的",
+    "example": "The comet is visible to the naked eye (= can be seen without using special equipment ).",
+    "example_cn": "这颗彗星肉眼看得见。"
+  },
+  {
+    "word": "transistor",
+    "phonetic": "træn'zɪstə; trɑːn-; -'sɪ-",
+    "meaning": "晶体管",
+    "example": "Every transistor has at least three electrodes.",
+    "example_cn": "每个晶体管至少有三个电极。"
+  },
+  {
+    "word": "pasture",
+    "phonetic": "'pɑːstʃə",
+    "meaning": "牧场；放牧",
+    "example": "large areas of rough upland pasture",
+    "example_cn": "大片起伏的山地牧场"
+  },
+  {
+    "word": "sprint",
+    "phonetic": "sprɪnt",
+    "meaning": "全速奔跑，冲刺",
+    "example": "Sergeant Horne sprinted to the car.",
+    "example_cn": "霍恩中士冲向那辆汽车。"
+  },
+  {
+    "word": "cradle",
+    "phonetic": "'kreɪd(ə)l",
+    "meaning": "摇篮，策源地；支船架vt把放在摇篮里",
+    "example": "She rocked the cradle to quieten the child.",
+    "example_cn": "她摇动摇篮，让宝宝安静下来。"
+  },
+  {
+    "word": "amateur",
+    "phonetic": "'æmətə; -tʃə; -tjʊə; ,æmə'tɜː",
+    "meaning": "业余爱好者(的)",
+    "example": "a gifted amateur",
+    "example_cn": "有天赋的业余爱好者"
+  },
+  {
+    "word": "determination",
+    "phonetic": "dɪ,tɜːmɪ'neɪʃ(ə)n",
+    "meaning": "决心；决定；确定",
+    "example": "his dogged determination (= very strong determination ) to succeed",
+    "example_cn": "他想要成功的坚定决心"
+  },
+  {
+    "word": "discreet",
+    "phonetic": "dɪ'skriːt",
+    "meaning": "谨慎的，思虑两全的",
+    "example": "He assured her that he would be discreet.",
+    "example_cn": "他向她保证会谨慎行事。"
+  },
+  {
+    "word": "perverse",
+    "phonetic": "pə'vɜːs",
+    "meaning": "刚愎的；坚持错误的，行为反常的",
+    "example": "He gets perverse satisfaction from embarrassing people.",
+    "example_cn": "他通过使人难堪获得变态的满足感。"
+  },
+  {
+    "word": "perpendicular",
+    "phonetic": ",pɜːp(ə)n'dɪkjʊlə",
+    "meaning": "垂直的，成直角的；直立的",
+    "example": "a perpendicular line",
+    "example_cn": "垂直线"
+  },
+  {
+    "word": "scoop",
+    "phonetic": "skuːp",
+    "meaning": "勺，铲子；独家新闻",
+    "example": "a journalist looking for a scoop",
+    "example_cn": "抢独家新闻的记者"
+  },
+  {
+    "word": "refund",
+    "phonetic": "ˈriːfʌnd",
+    "meaning": "归还",
+    "example": "I took the radio back, and they refunded my money .",
+    "example_cn": "我把收音机送回去，他们给我退了款。"
+  },
+  {
+    "word": "productive",
+    "phonetic": "prə'dʌktɪv",
+    "meaning": "能生产的，肥沃的",
+    "example": "the economy’s productive capacity",
+    "example_cn": "该经济体的生产能力"
+  },
+  {
+    "word": "yawn",
+    "phonetic": "jɔːn",
+    "meaning": "打呵欠；张开",
+    "example": "Alan stretched and yawned.",
+    "example_cn": "艾伦伸伸懒腰，打了个呵欠。"
+  },
+  {
+    "word": "kidnap",
+    "phonetic": "'kɪdnæp",
+    "meaning": "诱拐；绑架",
+    "example": "Police appealed for wit­nesses after a woman was kidnapped at gunpoint.",
+    "example_cn": "一名妇女遭到持枪绑架，警方呼吁目击者挺身而出。"
+  },
+  {
+    "word": "emit",
+    "phonetic": "ɪ'mɪt",
+    "meaning": "散发；发射",
+    "example": "The kettle emitted a shrill whistle.",
+    "example_cn": "水壶发出了刺耳的鸣笛声。"
+  },
+  {
+    "word": "accountant",
+    "phonetic": "ə'kaʊnt(ə)nt",
+    "meaning": "会计员",
+    "example": "The boss dropped an accountant from the payroll.",
+    "example_cn": "老板把一名会计师从在职人员名单中除了名。"
+  },
+  {
+    "word": "glamour",
+    "phonetic": "'ɡlæmə",
+    "meaning": "魔力，魅力",
+    "example": "...the glamour of show biz.",
+    "example_cn": "…演艺业的诱惑力。"
+  },
+  {
+    "word": "environment",
+    "phonetic": "ɪn'vaɪrənm(ə)nt; en-",
+    "meaning": "环境",
+    "example": "Some of these chemicals are very damaging to the environment.",
+    "example_cn": "这些化学品中有些对环境非常有害。"
+  },
+  {
+    "word": "stand",
+    "phonetic": "stænd",
+    "meaning": "架；看台；站；立；处于；忍受",
+    "example": "It looks like we’ll have to stand – there are no seats left.",
+    "example_cn": "看来我们只能站着——没有座位了。"
+  },
+  {
+    "word": "likewise",
+    "phonetic": "'laɪkwaɪz",
+    "meaning": "同样地；也",
+    "example": "Nanny put on a shawl and told the girls to do likewise.",
+    "example_cn": "南妮披上披肩，并叫女孩们也这样做。"
+  },
+  {
+    "word": "traitor",
+    "phonetic": "'treɪtə",
+    "meaning": "叛徒，卖国贼",
+    "example": "...rumours that there were traitors among us who were sending messages to the enemy.",
+    "example_cn": "…谣言说我们中有正给敌人送信的叛徒。"
+  },
+  {
+    "word": "grind",
+    "phonetic": "graɪnd",
+    "meaning": "磨碎，折磨，压榨，磨光；苦差使",
+    "example": "a stone for grinding knives and scissors",
+    "example_cn": "磨刀剪的石头"
+  },
+  {
+    "word": "mock",
+    "phonetic": "mɒk",
+    "meaning": "嘲弄，嘲笑",
+    "example": "Opposition MPs mocked the government’s decision.",
+    "example_cn": "反对党议员讥笑政府的这一决策。"
+  },
+  {
+    "word": "vacation",
+    "phonetic": "vəˈkeɪʃn; veɪ-",
+    "meaning": "假期;休庭期;腾空",
+    "example": "We’re planning a vacation in Europe.",
+    "example_cn": "我们正计划去欧洲度假。"
+  },
+  {
+    "word": "marrow",
+    "phonetic": "'mærəʊ",
+    "meaning": "髓，骨髓",
+    "example": "a bone marrow transplant",
+    "example_cn": "骨髓移植"
+  },
+  {
+    "word": "steadfast",
+    "phonetic": "'stedfɑːst; -fəst",
+    "meaning": "坚定的, 不变的，不动摇的 \"",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "assumption",
+    "phonetic": "ə'sʌm(p)ʃ(ə)n",
+    "meaning": "假定之事；承担，担任",
+    "example": "You would be making an assumption that's not based on any fact that you could report.",
+    "example_cn": "你会做出不以你能报道的任何事实为依据的一种假设。"
+  },
+  {
+    "word": "optimum",
+    "phonetic": "'ɒptɪməm",
+    "meaning": "最适宜的",
+    "example": "optimum conditions for growth",
+    "example_cn": "最适宜生长的条件"
+  },
+  {
+    "word": "discrepancy",
+    "phonetic": "dɪs'krep(ə)nsɪ",
+    "meaning": "不一致，差异，不符",
+    "example": "...the discrepancy between press and radio reports.",
+    "example_cn": "…报刊报道与广播报道之间的差异。"
+  },
+  {
+    "word": "presence",
+    "phonetic": "'prez(ə)ns",
+    "meaning": "出席，到场；风采，风度",
+    "example": "Your presence is requested at the club meeting on Friday.",
+    "example_cn": "敬请出席于周五举行的俱乐部会议。"
+  },
+  {
+    "word": "terrain",
+    "phonetic": "təˈreɪn",
+    "meaning": "地面，地形，地图",
+    "example": "rocky terrain",
+    "example_cn": "多石的地形"
+  },
+  {
+    "word": "dine",
+    "phonetic": "daɪn",
+    "meaning": "吃饭，进餐",
+    "example": "He was dining with friends at the Ritz.",
+    "example_cn": "他和朋友在里茨饭店一起进餐。"
+  },
+  {
+    "word": "perfume",
+    "phonetic": "'pɜːfjuːm",
+    "meaning": "香水，香味",
+    "example": "She was wearing the perfume that he’d bought her.",
+    "example_cn": "她擦了他买给她的香水。"
+  },
+  {
+    "word": "echo",
+    "phonetic": "'ekəʊ",
+    "meaning": "回声，反响",
+    "example": "The sound of an engine echoed back from the thick forest.",
+    "example_cn": "从茂密的森林里传来引擎的回声。"
+  },
+  {
+    "word": "cutting",
+    "phonetic": "'kʌtɪŋ",
+    "meaning": "开凿出来的公路，铁路；剪报",
+    "example": "...notice boards crowded with newspaper cuttings.",
+    "example_cn": "…贴满了剪报的布告栏。"
+  },
+  {
+    "word": "momentum",
+    "phonetic": "mə'mentəm",
+    "meaning": "动量；势头",
+    "example": "incentives to maintain the momentum of European integration",
+    "example_cn": "保持欧洲一体化发展势头的激励措施"
+  },
+  {
+    "word": "nowhere",
+    "phonetic": "'nəʊhweə",
+    "meaning": "什么地方都没有",
+    "example": "Nowhere is drug abuse more of a problem than in the US.",
+    "example_cn": "没有什么地方的吸毒问题比美国更严重。"
+  },
+  {
+    "word": "shepherd",
+    "phonetic": "'ʃepəd",
+    "meaning": "牧羊人",
+    "example": "In comparison, a German shepherd has a biting pressure of 750 pounds per square inch.",
+    "example_cn": "相比较，德国牧羊犬在咬牙时每平方英寸大约有750英镑的压力。"
+  },
+  {
+    "word": "superintend",
+    "phonetic": "suːp(ə)rɪn'tend; sjuː-",
+    "meaning": "监督，指挥(工作)",
+    "example": "Meese was to superintend the administration's entire domestic policy.",
+    "example_cn": "米斯要监管政府的所有国内政策。"
+  },
+  {
+    "word": "mythology",
+    "phonetic": "mɪ'θɒlədʒɪ",
+    "meaning": "神话学",
+    "example": "characters from classical mythology",
+    "example_cn": "古典神话中的人物"
+  },
+  {
+    "word": "delinquency",
+    "phonetic": "dɪ'lɪŋkw(ə)nsɪ",
+    "meaning": "过失，为非作歹，失职",
+    "example": "the ever-rising statistics of delinquency and crime",
+    "example_cn": "青少年违法犯罪不断增加的统计数字"
+  },
+  {
+    "word": "relief",
+    "phonetic": "rɪ'liːf",
+    "meaning": "减轻；救济",
+    "example": "Marijuana can provide pain relief for some cancer patients.",
+    "example_cn": "大麻可以为一些癌症患者减轻疼痛。"
+  },
+  {
+    "word": "dole",
+    "phonetic": "dəʊl",
+    "meaning": "施舍，悲哀",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "suspension",
+    "phonetic": "sə'spenʃ(ə)n",
+    "meaning": "悬挂，暂停",
+    "example": "He received a six-month suspension for unprofessional behaviour.",
+    "example_cn": "他因有违职业道德的行为被停职六个月。"
+  },
+  {
+    "word": "laudable",
+    "phonetic": "'lɔːdəb(ə)l",
+    "meaning": "值得称赞的",
+    "example": "a laudable attempt",
+    "example_cn": "值得称道的尝试"
+  },
+  {
+    "word": "snack",
+    "phonetic": "snæk",
+    "meaning": "快餐，小吃",
+    "example": "I grabbed a quick snack.",
+    "example_cn": "我赶紧吃了点零食。"
+  },
+  {
+    "word": "demolish",
+    "phonetic": "dɪ'mɒlɪʃ",
+    "meaning": "拆毁；废除；驳倒",
+    "example": "The entire east wing of the building was demolished in the fire.",
+    "example_cn": "大楼的整个东翼都被大火烧毁了。"
+  },
+  {
+    "word": "whistle",
+    "phonetic": "'wɪs(ə)l",
+    "meaning": "口哨声；哨子",
+    "example": "The lifeguard blew his whistle.",
+    "example_cn": "救生员吹响哨子。"
+  },
+  {
+    "word": "monster",
+    "phonetic": "'mɒnstə",
+    "meaning": "怪物；畸形的动植物；恶人",
+    "example": "the remains of a prehistoric monster",
+    "example_cn": "史前怪兽的遗骸"
+  },
+  {
+    "word": "doctrine",
+    "phonetic": "'dɒktrɪn",
+    "meaning": "教义，教条",
+    "example": "traditional doctrines of divine power",
+    "example_cn": "神力的传统教义"
+  },
+  {
+    "word": "trait",
+    "phonetic": "treɪt; treɪ",
+    "meaning": "特征，品质",
+    "example": "The study found that some alcoholics had clear personality traits showing up early in childhood.",
+    "example_cn": "这项研究发现一些酗酒者早在孩童时就表现出明显的个性特征。"
+  },
+  {
+    "word": "rouse",
+    "phonetic": "raʊz",
+    "meaning": "唤醒，唤起；激励；激起",
+    "example": "His banging roused the neighbours.",
+    "example_cn": "他重重的关门声把邻居都吵醒了。"
+  },
+  {
+    "word": "compatible",
+    "phonetic": "kəm'pætɪb(ə)l",
+    "meaning": "可兼容的，可和谐共存的",
+    "example": "The new software is IBM compatible (= can be used with IBM computers ) .",
+    "example_cn": "这个新软件与IBM的计算机兼容。"
+  },
+  {
+    "word": "deck",
+    "phonetic": "dek",
+    "meaning": "甲板；公共汽车一层的车厢；纸牌",
+    "example": "Eddie returned to the flight deck (= the part of an aircraft where the pilot sits ) .",
+    "example_cn": "埃迪回到了驾驶舱。"
+  },
+  {
+    "word": "gratuity",
+    "phonetic": "grə'tjuːɪtɪ",
+    "meaning": "退职金；小账，小费",
+    "example": "The porter expects a gratuity.",
+    "example_cn": "那个搬运工想要小费。"
+  },
+  {
+    "word": "historian",
+    "phonetic": "hɪ'stɔːrɪən",
+    "meaning": "历史学家",
+    "example": "I am a historian, and I teach in an American university.",
+    "example_cn": "我是一位历史学家，在美国一所大学任教。"
+  },
+  {
+    "word": "desert",
+    "phonetic": "(for v.) dɪ'zɜːt; (for n.) 'dezət",
+    "meaning": "沙漠",
+    "example": "the Sahara Desert",
+    "example_cn": "撒哈拉沙漠"
+  },
+  {
+    "word": "civilian",
+    "phonetic": "sɪ'vɪlj(ə)n",
+    "meaning": "平民，民用的，民间的",
+    "example": "Many innocent civilians were killed during the war.",
+    "example_cn": "许多无辜的平民在战争中丧生。"
+  },
+  {
+    "word": "making",
+    "phonetic": "'meɪkɪŋ",
+    "meaning": "制成",
+    "example": "people involved in decision making at the highest level",
+    "example_cn": "最高层级决策参与者"
+  },
+  {
+    "word": "rough",
+    "phonetic": "rʌf",
+    "meaning": "不平的；粗鲁的，粗略的；刺耳的",
+    "example": "Her hands were rough from hard work.",
+    "example_cn": "她的双手因为干重活而变得很粗糙。"
+  },
+  {
+    "word": "desirable",
+    "phonetic": "dɪ'zaɪərəb(ə)l",
+    "meaning": "值得弄到手的，吸引人的",
+    "example": "The ability to speak a foreign language is highly desirable .",
+    "example_cn": "能说一门外语是非常理想的。"
+  },
+  {
+    "word": "profound",
+    "phonetic": "prə'faʊnd",
+    "meaning": "深的，极深的；渊博的；深奥的",
+    "example": "a profound sense of guilt",
+    "example_cn": "强烈的内疚感"
+  },
+  {
+    "word": "transport",
+    "phonetic": "træn'spɔːt; trɑːn-",
+    "meaning": "运输",
+    "example": "commuters who travel on public transport",
+    "example_cn": "乘坐公共交通车辆上下班的人"
+  },
+  {
+    "word": "provisional",
+    "phonetic": "prə'vɪʒ(ə)n(ə)l",
+    "meaning": "临时的，暂时性的",
+    "example": "a provisional government",
+    "example_cn": "临时政府"
+  },
+  {
+    "word": "fragile",
+    "phonetic": "'frædʒaɪl",
+    "meaning": "脆的；易断的",
+    "example": "Be careful with that vase – it’s very fragile.",
+    "example_cn": "小心那只花瓶——很容易打碎的。"
+  },
+  {
+    "word": "subscribe",
+    "phonetic": "səb'skraɪb",
+    "meaning": "捐款，捐助；订阅；同意，赞成",
+    "example": "My main reason for subscribing to New Scientist is to keep abreast of advances in science.",
+    "example_cn": "我订阅《新科学家》的主要原因是要跟上科学的进步。"
+  },
+  {
+    "word": "queer",
+    "phonetic": "kwɪə",
+    "meaning": "奇怪的，不平常的；可疑的；眩晕的",
+    "example": "She gave a queer laugh.",
+    "example_cn": "她古怪地笑了笑。"
+  },
+  {
+    "word": "decipher",
+    "phonetic": "dɪ'saɪfə",
+    "meaning": "译解(密码等)",
+    "example": "She studied the envelope, trying to decipher the handwriting.",
+    "example_cn": "她仔细地看信封，试图辨认上面的字迹。"
+  },
+  {
+    "word": "imaginative",
+    "phonetic": "ɪ'mædʒɪnətɪv",
+    "meaning": "想象的，有想象力的",
+    "example": "an imaginative use of computer technology",
+    "example_cn": "计算机技术的妙用"
+  },
+  {
+    "word": "inclusive",
+    "phonetic": "ɪn'kluːsɪv",
+    "meaning": "包括的，包含的",
+    "example": "Not everyone shares his vision of an inclusive America.",
+    "example_cn": "不是所有人都同意他的观点，认为美国是个包容性很强的国家。"
+  },
+  {
+    "word": "mushroom",
+    "phonetic": "'mʌʃruːm; -rʊm",
+    "meaning": "蘑菇，迅速发展",
+    "example": "mushroom soup",
+    "example_cn": "蘑菇汤"
+  },
+  {
+    "word": "horrible",
+    "phonetic": "'hɒrəb(ə)l",
+    "meaning": "可怕的，恐怖的；讨厌的",
+    "example": "The weather has been really horrible all week.",
+    "example_cn": "整个星期天气都很糟。"
+  },
+  {
+    "word": "sparkle",
+    "phonetic": "'spɑːk(ə)l",
+    "meaning": "闪光，闪耀",
+    "example": "The sea sparkled in the sun.",
+    "example_cn": "阳光下大海碧波闪耀。"
+  },
+  {
+    "word": "temperate",
+    "phonetic": "'temp(ə)rət",
+    "meaning": "有节制的，不过分的；(气候)温和的",
+    "example": "The Nile Valley keeps a temperate climate throughout the year.",
+    "example_cn": "尼罗河流域全年气候温和。"
+  },
+  {
+    "word": "prerogative",
+    "phonetic": "prɪ'rɒgətɪv",
+    "meaning": "特权",
+    "example": "Arriving late is a woman’s prerogative .",
+    "example_cn": "迟到是女人的特权。"
+  },
+  {
+    "word": "subtitle",
+    "phonetic": "'sʌbtaɪt(ə)l",
+    "meaning": "(书籍)副标题；译文字幕",
+    "example": "a French film with English subtitles",
+    "example_cn": "附有英语字幕的法国电影"
+  },
+  {
+    "word": "torment",
+    "phonetic": "'tɔːment",
+    "meaning": "剧烈痛苦；折磨，烦扰",
+    "example": "The journey must have been a torment for them.",
+    "example_cn": "这次旅途对他们来说一定十分痛苦。"
+  },
+  {
+    "word": "seemingly",
+    "phonetic": "'siːmɪŋlɪ",
+    "meaning": "好像；似乎",
+    "example": "A seemingly endless line of trucks waits in vain to load up.",
+    "example_cn": "看上去没有尽头的一排卡车徒劳地等着装货。"
+  },
+  {
+    "word": "tile",
+    "phonetic": "taɪl",
+    "meaning": "瓦，瓦片",
+    "example": "...a fine building, with a neat little porch and ornamental tiles on the roof.",
+    "example_cn": "…一幢精致建筑，有个整洁的小门廊，屋顶上盖着装饰瓦。"
+  },
+  {
+    "word": "isle",
+    "phonetic": "aɪl",
+    "meaning": "岛，小岛",
+    "example": "the British Isles",
+    "example_cn": "不列颠群岛"
+  },
+  {
+    "word": "enquiry",
+    "phonetic": "ɪn'kwaɪrɪ",
+    "meaning": "询问，打听",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "scout",
+    "phonetic": "skaʊt",
+    "meaning": "侦察员，侦察机，侦察舰",
+    "example": "He sent three scouts ahead to take a look at the bridge.",
+    "example_cn": "他派出三名侦察兵到前面侦察大桥的情况。"
+  },
+  {
+    "word": "ransom",
+    "phonetic": "'ræns(ə)m",
+    "meaning": "赎金，赎救",
+    "example": "The kidnappers were demanding a ransom of $250,000.",
+    "example_cn": "绑匪索取25万美元的赎金。"
+  },
+  {
+    "word": "venerate",
+    "phonetic": "'venəreɪt",
+    "meaning": "崇敬，崇拜",
+    "example": "a symbol of Arab courage, to be venerated for generations",
+    "example_cn": "受到世代尊崇的阿拉伯人勇气的象征"
+  },
+  {
+    "word": "outright",
+    "phonetic": "aʊt'raɪt",
+    "meaning": "断然的；明白无误的",
+    "example": "an outright refusal",
+    "example_cn": "断然拒绝"
+  },
+  {
+    "word": "pageant",
+    "phonetic": "'pædʒ(ə)nt",
+    "meaning": "露天表演，庆典",
+    "example": "...a historical pageant of kings and queens.",
+    "example_cn": "…一场历史上的国王和王后们的盛大庆典。"
+  },
+  {
+    "word": "graph",
+    "phonetic": "grɑːf; græf",
+    "meaning": "曲线图，图表",
+    "example": "Martin showed me a graph of their recent sales.",
+    "example_cn": "马丁给我看了他们最近销售情况的图表。"
+  },
+  {
+    "word": "liner",
+    "phonetic": "'laɪnə",
+    "meaning": "班机，班轮",
+    "example": "...luxury ocean liners.",
+    "example_cn": "…豪华远洋客轮。"
+  },
+  {
+    "word": "notary",
+    "phonetic": "'nəʊt(ə)rɪ",
+    "meaning": "公证人，公证员",
+    "example": "Want to be an assistant judge or notary.",
+    "example_cn": "想成为一名助理法官或公证人。"
+  },
+  {
+    "word": "melody",
+    "phonetic": "'melədɪ",
+    "meaning": "音律；歌曲",
+    "example": "They played some lovely melodies.",
+    "example_cn": "他们演奏了一些动听的曲子。"
+  },
+  {
+    "word": "similar",
+    "phonetic": "'sɪmɪlə",
+    "meaning": "类似的",
+    "example": "We have similar tastes in music.",
+    "example_cn": "我们对音乐的品位相近。"
+  },
+  {
+    "word": "contemporary",
+    "phonetic": "kən'temp(ə)r(ər)ɪ",
+    "meaning": "同时代的，当代的",
+    "example": "She writes a lot of contemporary music for people like Whitney Houston.",
+    "example_cn": "她为惠特尼·休斯敦等人创作大量当代音乐作品。"
+  },
+  {
+    "word": "reckless",
+    "phonetic": "'reklɪs",
+    "meaning": "鲁莽的",
+    "example": "He was accused of causing death by reckless driving .",
+    "example_cn": "他被控因鲁莽驾驶致人死亡。"
+  },
+  {
+    "word": "goad",
+    "phonetic": "gəʊd",
+    "meaning": "刺棒，刺痛物；激励",
+    "example": "The offer of economic aid was a goad to political change.",
+    "example_cn": "提供经济援助是政治改革的推动力。"
+  },
+  {
+    "word": "leak",
+    "phonetic": "liːk",
+    "meaning": "漏洞，泄漏",
+    "example": "There is a leak in the ceiling.",
+    "example_cn": "天花板上有条裂缝。"
+  },
+  {
+    "word": "politic",
+    "phonetic": "'pɒlɪtɪk",
+    "meaning": "精明的；明智的",
+    "example": "Many towns often found it politic to change their allegiance.",
+    "example_cn": "许多城镇经常发现改变拥戴对象不失为明智之举。"
+  },
+  {
+    "word": "register",
+    "phonetic": "'redʒɪstə",
+    "meaning": "登记，注册",
+    "example": "The tanker is registered in Rotterdam.",
+    "example_cn": "这艘油轮是在鹿特丹登记的。"
+  },
+  {
+    "word": "lure",
+    "phonetic": "l(j)ʊə",
+    "meaning": "诱惑(力)；引诱，吸引",
+    "example": "He lured her to his home and shot her with his father's gun.",
+    "example_cn": "他把她诱骗到家里，然后用父亲的枪把她打死。"
+  },
+  {
+    "word": "eventually",
+    "phonetic": "ɪ'ventʃʊəlɪ",
+    "meaning": "终于，最后",
+    "example": "He eventually escaped and made his way back to England.",
+    "example_cn": "他终于逃脱并返回英格兰。"
+  },
+  {
+    "word": "negotiable",
+    "phonetic": "nɪ'gəʊʃəb(ə)l; -ʃɪə-",
+    "meaning": "可谈判的，可(通行)商议的；可兑换现金的",
+    "example": "Part-time barman required. Hours and salary negotiable.",
+    "example_cn": "招聘兼职酒吧男服务员，工作时间及薪金面议。"
+  },
+  {
+    "word": "resonant",
+    "phonetic": "'rez(ə)nənt",
+    "meaning": "反响的；共鸣的",
+    "example": "the violin’s smooth, resonant tone",
+    "example_cn": "小提琴圆润悠扬的音色"
+  },
+  {
+    "word": "attribute",
+    "phonetic": "ə'trɪbjuːt",
+    "meaning": "归因于",
+    "example": "Women tend to attribute their success to external causes such as luck.",
+    "example_cn": "女性往往把她们的成功归因于外因，如运气。"
+  },
+  {
+    "word": "convict",
+    "phonetic": "kən'vɪkt",
+    "meaning": "证明有罪",
+    "example": "a convicted murderer",
+    "example_cn": "已定罪的谋杀犯"
+  },
+  {
+    "word": "assure",
+    "phonetic": "ə'ʃʊə; ə'ʃɔː",
+    "meaning": "断言，使确信；保(人寿)险",
+    "example": "The document is genuine, I can assure you .",
+    "example_cn": "我能向你保证，这文件是真的。"
+  },
+  {
+    "word": "sightseeing",
+    "phonetic": "'saɪtsiːɪŋ",
+    "meaning": "观光，游览",
+    "example": "She swam and sunbathed, went sightseeing and relaxed.",
+    "example_cn": "她游泳，晒日光浴，观光，放松。"
+  },
+  {
+    "word": "latent",
+    "phonetic": "'leɪt(ə)nt",
+    "meaning": "潜在的；潜伏的",
+    "example": "latent aggression",
+    "example_cn": "潜在的侵略"
+  },
+  {
+    "word": "varied",
+    "phonetic": "'veərɪd",
+    "meaning": "各种各样的",
+    "example": "a varied diet",
+    "example_cn": "丰富多样的饮食"
+  },
+  {
+    "word": "override",
+    "phonetic": "əʊvə'raɪd",
+    "meaning": "不理(某人的愿望要求)，不顾",
+    "example": "The EU commission exercised its power to override British policy.",
+    "example_cn": "欧盟委员会行使其权力来否决英国的政策。"
+  },
+  {
+    "word": "raft",
+    "phonetic": "rɑːft",
+    "meaning": "木排，木筏",
+    "example": "...a river trip on bamboo rafts through dense rainforest.",
+    "example_cn": "…一次乘着竹筏穿过茂密雨林的河上旅行。"
+  },
+  {
+    "word": "perceive",
+    "phonetic": "pə'siːv",
+    "meaning": "察觉，发觉",
+    "example": "That morning, he perceived a change in Franca’s mood.",
+    "example_cn": "那天早上，他注意到弗兰卡情绪的变化。"
+  },
+  {
+    "word": "symposium",
+    "phonetic": "sɪm'pəʊzɪəm",
+    "meaning": "专题论文集，讨论会",
+    "example": "He had been taking part in an international symposium on population.",
+    "example_cn": "他那时在参加一个有关人口的国际研讨会。"
+  },
+  {
+    "word": "appropriate",
+    "phonetic": "ə'prəʊprɪət",
+    "meaning": "合适的",
+    "example": "The timing of the announcement was particularly appropriate .",
+    "example_cn": "通告发布的时机很合适。"
+  },
+  {
+    "word": "interior",
+    "phonetic": "ɪn'tɪɜːrɪə",
+    "meaning": "在内的；内部的，内地的，国内的",
+    "example": "The interior walls are all painted white.",
+    "example_cn": "室内墙壁都粉刷成了白色。"
+  },
+  {
+    "word": "scum",
+    "phonetic": "skʌm",
+    "meaning": "泡沫，浮垢，糟粕，渣滓",
+    "example": "a pond covered with green scum",
+    "example_cn": "漂满绿色浮沫的池塘"
+  },
+  {
+    "word": "engagement",
+    "phonetic": "ɪn'geɪdʒm(ə)nt; en-",
+    "meaning": "订婚；约会，交战",
+    "example": "Their engagement was announced in the paper.",
+    "example_cn": "他们订婚的消息在报上公布了。"
+  },
+  {
+    "word": "trap",
+    "phonetic": "træp",
+    "meaning": "陷阱；圈套；双轮轻便马车",
+    "example": "The only way to catch mice is to set a trap .",
+    "example_cn": "抓老鼠的唯一办法就是放置捕鼠器。"
+  },
+  {
+    "word": "transcend",
+    "phonetic": "træn'send; trɑːn-",
+    "meaning": "超出，超过",
+    "example": "The desire for peace transcended political differences.",
+    "example_cn": "对和平的渴望超越了政治分歧。"
+  },
+  {
+    "word": "circumstance",
+    "phonetic": "ˈsɜːkəmstəns; ˈsɜːkəmstɑːns; ˈsɜːkəmstæns",
+    "meaning": "情况，形势；环境；事件",
+    "example": "The Soviet Union had been forced by circumstances to sign a pact with Nazi Germany.",
+    "example_cn": "苏联为形势所迫同纳粹德国签订了一项条约。"
+  },
+  {
+    "word": "authorize",
+    "phonetic": "'ɔ:θəraiz",
+    "meaning": "授权",
+    "example": "an authorized biography",
+    "example_cn": "授权传记"
+  },
+  {
+    "word": "flask",
+    "phonetic": "flɑːsk",
+    "meaning": "细颈瓶，扁形酒瓶",
+    "example": "He took out a metal flask from a canvas bag.",
+    "example_cn": "他从帆布袋里拿出了一个金属水瓶。"
+  },
+  {
+    "word": "spontaneous",
+    "phonetic": "spɒn'teɪnɪəs",
+    "meaning": "自发的；自然产生的",
+    "example": "The crowd gave a spontaneous cheer.",
+    "example_cn": "人群自发地欢呼起来。"
+  },
+  {
+    "word": "penalty",
+    "phonetic": "'pen(ə)ltɪ",
+    "meaning": "处罚，惩罚",
+    "example": "No littering. Penalty $500.",
+    "example_cn": "禁止乱扔垃圾。 违者罚款500美元。"
+  },
+  {
+    "word": "fortify",
+    "phonetic": "'fɔːtɪfaɪ",
+    "meaning": "设防于；增强",
+    "example": "The town was heavily fortified.",
+    "example_cn": "该镇设有重防。"
+  },
+  {
+    "word": "monsoon",
+    "phonetic": "mɒn'suːn",
+    "meaning": "季风，雨季",
+    "example": "...the end of the monsoon.",
+    "example_cn": "…雨季的结束。"
+  },
+  {
+    "word": "retrospect",
+    "phonetic": "'retrəspekt",
+    "meaning": "回顾；回想",
+    "example": "In retrospect, I wonder if we should have done more.",
+    "example_cn": "回过头看，我在想我们是否应该做得更多些。"
+  },
+  {
+    "word": "spit",
+    "phonetic": "spɪt",
+    "meaning": "vi吐(唾沫)",
+    "example": "Billy stood up slowly, rubbed his jaw, and spat blood.",
+    "example_cn": "比利慢慢站起来，揉揉下巴，吐了口血。"
+  },
+  {
+    "word": "negligence",
+    "phonetic": "'neglɪdʒ(ə)ns",
+    "meaning": "疏忽，粗心大意",
+    "example": "negligence in carrying out safety procedures",
+    "example_cn": "执行安全程序时的疏忽"
+  },
+  {
+    "word": "pension",
+    "phonetic": "'penʃ(ə)n",
+    "meaning": "养老金，退休金；给予养老金",
+    "example": "At what age can you start drawing your pension ?",
+    "example_cn": "从多少岁可以开始领取养老金？"
+  },
+  {
+    "word": "enlighten",
+    "phonetic": "ɪn'laɪt(ə)n; en-",
+    "meaning": "启发，开导",
+    "example": "A few dedicated doctors have fought for years to enlighten the profession.",
+    "example_cn": "少数富有献身精神的医生为启蒙这一行业而奋斗多年。"
+  },
+  {
+    "word": "audience",
+    "phonetic": "'ɔːdɪəns",
+    "meaning": "听众，读者；接见",
+    "example": "The audience began clapping and cheering.",
+    "example_cn": "观众开始鼓掌欢呼。"
+  },
+  {
+    "word": "symbolize",
+    "phonetic": "'simbəlaiz",
+    "meaning": "用符号表示；作为象征",
+    "example": "Crime often symbolizes a wider social problem.",
+    "example_cn": "犯罪问题往往反映出更广泛的社会问题。"
+  },
+  {
+    "word": "hobby",
+    "phonetic": "'hɒbɪ",
+    "meaning": "业余爱好",
+    "example": "What are your hobbies?",
+    "example_cn": "你有些什么爱好？"
+  },
+  {
+    "word": "petroleum",
+    "phonetic": "pə'trəʊlɪəm",
+    "meaning": "石油",
+    "example": "petroleum-based products",
+    "example_cn": "石油产品"
+  },
+  {
+    "word": "classical",
+    "phonetic": "'klæsɪk(ə)l",
+    "meaning": "一流的；古典的",
+    "example": "the classical theory of relativity",
+    "example_cn": "经典相对论"
+  },
+  {
+    "word": "thrill",
+    "phonetic": "θrɪl",
+    "meaning": "激动；震颤",
+    "example": "Winning first place must have been quite a thrill.",
+    "example_cn": "赢得第一名肯定让人非常激动。"
+  },
+  {
+    "word": "stadium",
+    "phonetic": "'steɪdɪəm",
+    "meaning": "露天运动场",
+    "example": "the new Olympic Stadium",
+    "example_cn": "新的奥林匹克体育场"
+  },
+  {
+    "word": "tyre",
+    "phonetic": "'taɪə",
+    "meaning": "轮胎",
+    "example": "I had a flat tyre (= all the air went out of it ) on the way home.",
+    "example_cn": "回家的路上我的轮胎瘪了。"
+  },
+  {
+    "word": "review",
+    "phonetic": "rɪ'vjuː",
+    "meaning": "回顾；检查；评论",
+    "example": "The policy comes up for review (= will be reviewed ) in April.",
+    "example_cn": "这项政策将在4月份予以审议。"
+  },
+  {
+    "word": "spoil",
+    "phonetic": "spɒɪl",
+    "meaning": "破坏；宠坏；(食物)变坏",
+    "example": "The whole park is spoiled by litter.",
+    "example_cn": "整个公园环境都给垃圾破坏了。"
+  },
+  {
+    "word": "cucumber",
+    "phonetic": "'kjuːkʌmbə",
+    "meaning": "黄瓜",
+    "example": "The \"gurkophone\" is one of their classics, made from a hollowed cucumber, a pepper and a carrot.",
+    "example_cn": "黄瓜管\"是他们的经典乐器之一,那是用掏空的黄瓜、辣椒和胡萝卜做的。"
+  },
+  {
+    "word": "assign",
+    "phonetic": "ə'saɪn",
+    "meaning": "分配；确定时间或地点；指派",
+    "example": "How much time have you assigned for the meeting?",
+    "example_cn": "你给这个会议定了多长时间？"
+  },
+  {
+    "word": "twist",
+    "phonetic": "twɪst",
+    "meaning": "捻；搓；扭转；盘旋",
+    "example": "She twisted her head sideways and looked toward the door.",
+    "example_cn": "她把头转向一边，朝门口看去。"
+  },
+  {
+    "word": "privacy",
+    "phonetic": "'prɪvəsɪ; 'praɪ-",
+    "meaning": "隐退；秘密",
+    "example": "each individual’s right to privacy",
+    "example_cn": "每个人的隐私权"
+  },
+  {
+    "word": "probe",
+    "phonetic": "prəʊb",
+    "meaning": "医学探针；新闻调查；探测",
+    "example": "Police probed claims that he had sold drugs.",
+    "example_cn": "警方就有人称他贩卖毒品一事进行了调查。"
+  },
+  {
+    "word": "ambition",
+    "phonetic": "æm'bɪʃ(ə)n",
+    "meaning": "雄心，抱负",
+    "example": "He was young and full of ambition.",
+    "example_cn": "他年轻，而且雄心勃勃。"
+  },
+  {
+    "word": "shanty",
+    "phonetic": "'ʃæntɪ",
+    "meaning": "小屋，棚屋；贫民区",
+    "example": "Workers were living in tents and shanties.",
+    "example_cn": "工人们住在帐篷和棚屋里。"
+  },
+  {
+    "word": "devastate",
+    "phonetic": "'devəsteɪt",
+    "meaning": "破坏，蹂躏",
+    "example": "The city centre was devastated by the bomb.",
+    "example_cn": "市中心被这枚炸弹摧毁了。"
+  },
+  {
+    "word": "acknowledge",
+    "phonetic": "ək'nɒlɪdʒ",
+    "meaning": "承认；表示收到信件，表示感谢",
+    "example": "The family acknowledge the need for change.",
+    "example_cn": "全家人都承认需要改变一下。"
+  },
+  {
+    "word": "trail",
+    "phonetic": "treɪl",
+    "meaning": "痕迹，足迹，小径",
+    "example": "The trail led over Boulder Pass before descending to a lake.",
+    "example_cn": "小路越过博尔德山口，然后向下通往湖边。"
+  },
+  {
+    "word": "infant",
+    "phonetic": "'ɪnf(ə)nt",
+    "meaning": "婴儿",
+    "example": "An infant’s skin is very sensitive.",
+    "example_cn": "幼儿的皮肤非常敏感。"
+  },
+  {
+    "word": "appointment",
+    "phonetic": "ə'pɒɪntm(ə)nt",
+    "meaning": "职位；约会",
+    "example": "All consultations are by appointment only .",
+    "example_cn": "就诊必须预约。"
+  },
+  {
+    "word": "auction",
+    "phonetic": "'ɔːkʃ(ə)n",
+    "meaning": "拍卖",
+    "example": "The painting is expected to fetch up to $400,000 at auction.",
+    "example_cn": "这幅画预计在拍卖会上能卖到40万美元。"
+  },
+  {
+    "word": "constrict",
+    "phonetic": "kən'strɪkt",
+    "meaning": "压缩，缩小",
+    "example": "Caffeine constricts the blood vessels in your body.",
+    "example_cn": "咖啡因会使体内的血管收缩。"
+  },
+  {
+    "word": "commercial",
+    "phonetic": "kə'mɜːʃ(ə)l",
+    "meaning": "商业的，贸易的",
+    "example": "Our top priorities must be profit and commercial growth.",
+    "example_cn": "我们必须把利润和贸易增长作为我们的第一要务。"
+  },
+  {
+    "word": "equivocal",
+    "phonetic": "ɪ'kwɪvək(ə)l",
+    "meaning": "暧昧的，可疑的",
+    "example": "His answer was equivocal.",
+    "example_cn": "他的回答模棱两可。"
+  },
+  {
+    "word": "anonymous",
+    "phonetic": "ə'nɒnɪməs",
+    "meaning": "无名的；匿名的",
+    "example": "the anonymous author of a collection of poems",
+    "example_cn": "一本诗集的佚名作者"
+  },
+  {
+    "word": "duplicate",
+    "phonetic": "ˈdjuːplɪkeɪt",
+    "meaning": "完全一样的，复制的",
+    "example": "A duplicate copy should be made for the county record office.",
+    "example_cn": "应该制作一个副本呈交县档案室。"
+  },
+  {
+    "word": "farewell",
+    "phonetic": "feə'wel",
+    "meaning": "再见；临别的，告别的",
+    "example": "Mourners gathered to bid farewell to the victims of the plane tragedy.",
+    "example_cn": "哀悼者来向空难受害者告别。"
+  },
+  {
+    "word": "consumer",
+    "phonetic": "kən'sjuːmə",
+    "meaning": "消费者，用户",
+    "example": "Consumers will soon be paying higher airfares.",
+    "example_cn": "不久消费者就要支付更高的机票价了。"
+  },
+  {
+    "word": "welfare",
+    "phonetic": "'welfeə",
+    "meaning": "幸福，福利；社会保障",
+    "example": "Our only concern is the children’s welfare.",
+    "example_cn": "我们唯一关心的是孩子们的幸福。"
+  },
+  {
+    "word": "tributary",
+    "phonetic": "'trɪbjʊt(ə)rɪ",
+    "meaning": "支流(的)",
+    "example": "...the Napo river, a tributary of the Amazon.",
+    "example_cn": "...纳波河，亚马孙河的一条支流。"
+  },
+  {
+    "word": "measure",
+    "phonetic": "'meʒə",
+    "meaning": "量度，分量，尺寸；量具；行动，步骤",
+    "example": "She soon got the measure of her opponent.",
+    "example_cn": "她很快就掂出了对手的分量。"
+  },
+  {
+    "word": "wording",
+    "phonetic": "'wɜːdɪŋ",
+    "meaning": "措辞",
+    "example": "The two sides failed to agree on the wording of a final report.",
+    "example_cn": "双方未能就一份总结报告的措辞达成一致。"
+  },
+  {
+    "word": "spray",
+    "phonetic": "spreɪ",
+    "meaning": "水花；飞沫；喷射",
+    "example": "The moon was casting a rainbow through the spray from the waterfall.",
+    "example_cn": "月亮在瀑布溅起的水雾中映出了一道彩虹。"
+  },
+  {
+    "word": "fabricate",
+    "phonetic": "'fæbrɪkeɪt",
+    "meaning": "装配，制造，捏造",
+    "example": "The police were accused of fabricating evidence.",
+    "example_cn": "警方被控捏造证据。"
+  },
+  {
+    "word": "eke",
+    "phonetic": "iːk",
+    "meaning": "增加；放长",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "might",
+    "phonetic": "maɪt",
+    "meaning": "力量，强权，势力",
+    "example": "two individuals who took on the might of the English legal system",
+    "example_cn": "挑战英国法律制度权威的两个人"
+  },
+  {
+    "word": "uprising",
+    "phonetic": "'ʌpraɪzɪŋ",
+    "meaning": "叛乱",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "nominee",
+    "phonetic": "nɒmɪ'niː",
+    "meaning": "被提名者，被任命者",
+    "example": "the Democratic Party presidential nominee",
+    "example_cn": "民主党被提名的总统候选人"
+  },
+  {
+    "word": "evict",
+    "phonetic": "ɪ'vɪkt",
+    "meaning": "驱逐",
+    "example": "One cleric resigned over plans to evict the protesters forcibly, arguing that the Church should have been more supportive of their cause.",
+    "example_cn": "一位因为计划强行驱逐示威者而辞职的神职人员辩解说国教会应当给予他们更多的支持。"
+  },
+  {
+    "word": "march",
+    "phonetic": "mɑːtʃ",
+    "meaning": "行进，行军；进展",
+    "example": "The general led his forces on a long march southwards.",
+    "example_cn": "将军率领他的军队朝南长途行军。"
+  },
+  {
+    "word": "extravagant",
+    "phonetic": "ɪk'strævəg(ə)nt; ek-",
+    "meaning": "奢侈的，过分的",
+    "example": "Would it be too extravagant to buy both?",
+    "example_cn": "把两个都买下会不会太奢侈了？"
+  },
+  {
+    "word": "recital",
+    "phonetic": "rɪ'saɪt(ə)l",
+    "meaning": "详述；演奏会；独奏会",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "gush",
+    "phonetic": "gʌʃ",
+    "meaning": "迸发",
+    "example": "Piping-hot water gushed out.",
+    "example_cn": "滚烫的水涌了出来。"
+  },
+  {
+    "word": "cut",
+    "phonetic": "kʌt",
+    "meaning": "割，切，剪，砍，削；离开；(线条)相交",
+    "example": "Do you want me to cut the cake?",
+    "example_cn": "要我切蛋糕吗？"
+  },
+  {
+    "word": "skip",
+    "phonetic": "skɪp",
+    "meaning": "跳；遗漏",
+    "example": "I decided to skip the first chapter.",
+    "example_cn": "我决定跳过第一章。"
+  },
+  {
+    "word": "recession",
+    "phonetic": "rɪ'seʃ(ə)n",
+    "meaning": "后退；撤回；(工商业)衷退，价格暴跌",
+    "example": "the economic recession of the early 1980s",
+    "example_cn": "20世纪80年代初的经济衰退"
+  },
+  {
+    "word": "spur",
+    "phonetic": "spɜː",
+    "meaning": "刺激；鞭策",
+    "example": "The crowd’s reaction only acted as a spur.",
+    "example_cn": "人群的反应不过起了刺激作用。"
+  },
+  {
+    "word": "attain",
+    "phonetic": "ə'teɪn",
+    "meaning": "取得，得到",
+    "example": "More women are attaining positions of power.",
+    "example_cn": "越来越多的女性获得要职。"
+  },
+  {
+    "word": "privilege",
+    "phonetic": "ˈprɪvəlɪdʒ",
+    "meaning": "特权；优惠",
+    "example": "He had no special privileges and was treated just like every other prisoner.",
+    "example_cn": "他不享受特权，待遇和任何其他犯人一样。"
+  },
+  {
+    "word": "abrupt",
+    "phonetic": "ə'brʌpt",
+    "meaning": "突然的，粗暴的",
+    "example": "an abrupt change of plan",
+    "example_cn": "计划的突然改变"
+  },
+  {
+    "word": "withhold",
+    "phonetic": "wɪð'həʊld",
+    "meaning": "制止，扣留，不给予",
+    "example": "I withheld payment until they had completed the work.",
+    "example_cn": "我扣着钱，直到他们完工。"
+  },
+  {
+    "word": "resemblance",
+    "phonetic": "rɪ'zembl(ə)ns",
+    "meaning": "相似，类似",
+    "example": "There was a remarkable resemblance between him and Pete.",
+    "example_cn": "他和皮特有一个惊人的相似之处。"
+  },
+  {
+    "word": "lethal",
+    "phonetic": "'liːθ(ə)l",
+    "meaning": "致死的；致死的",
+    "example": "a lethal dose of heroin",
+    "example_cn": "致命剂量的海洛因"
+  },
+  {
+    "word": "exhort",
+    "phonetic": "ɪg'zɔːt; eg-",
+    "meaning": "劝告",
+    "example": "Kennedy exhorted his listeners to turn away from violence.",
+    "example_cn": "肯尼迪劝告他的听众要远离暴力。"
+  },
+  {
+    "word": "detective",
+    "phonetic": "dɪ'tektɪv",
+    "meaning": "侦探的，发觉者的",
+    "example": "...Arthur Conan Doyle's classic detective novel.",
+    "example_cn": "…阿瑟·柯南·道尔的经典侦探小说。"
+  },
+  {
+    "word": "synthetic",
+    "phonetic": "sɪn'θetɪk",
+    "meaning": "人工合成的",
+    "example": "synthetic chemicals",
+    "example_cn": "合成化学品"
+  },
+  {
+    "word": "collaboration",
+    "phonetic": "kəlæbə'reɪʃn",
+    "meaning": "协作，合作",
+    "example": "The company is building the centre in collaboration with the Institute of Offshore Engineering.",
+    "example_cn": "该公司正与海洋工程学院合建这座中心。"
+  },
+  {
+    "word": "henceforth",
+    "phonetic": "hens'fɔːθ; 'hensfɔːθ",
+    "meaning": "同义于 henceforward今后",
+    "example": "multiple sclerosis (henceforth referred to as MS)",
+    "example_cn": "多发性硬化（以下称为MS）"
+  },
+  {
+    "word": "dull",
+    "phonetic": "dʌl",
+    "meaning": "阴暗的，迟钝的，沉闷的，钝的",
+    "example": "Life is never dull when Elizabeth is here.",
+    "example_cn": "有伊丽莎白在这里生活绝不会无聊。"
+  },
+  {
+    "word": "choke",
+    "phonetic": "tʃəʊk",
+    "meaning": "闷塞，压抑，闷死",
+    "example": "Weeds were choking the stream.",
+    "example_cn": "野草将溪流堵塞了。"
+  },
+  {
+    "word": "legal",
+    "phonetic": "'liːg(ə)l",
+    "meaning": "法律的",
+    "example": "What the company has done is perfectly legal.",
+    "example_cn": "公司所做的这一切完全合法。"
+  },
+  {
+    "word": "furious",
+    "phonetic": "'fjʊərɪəs",
+    "meaning": "狂怒的",
+    "example": "She was absolutely furious .",
+    "example_cn": "她怒不可遏。"
+  },
+  {
+    "word": "pivot",
+    "phonetic": "'pɪvət",
+    "meaning": "中枢，轴；辩论的要点",
+    "example": "Forming the pivot of the exhibition is a large group of watercolours.",
+    "example_cn": "构成这个展览核心的是一大批水彩画。"
+  },
+  {
+    "word": "timber",
+    "phonetic": "'tɪmbə",
+    "meaning": "木材，木料；树木，树林",
+    "example": "a bench made of timber",
+    "example_cn": "木制长椅"
+  },
+  {
+    "word": "orbit",
+    "phonetic": "'ɔːbɪt",
+    "meaning": "天体轨道；势力范围",
+    "example": "Mars and Earth have orbits which change with time.",
+    "example_cn": "火星和地球的轨道随着时间而发生改变。"
+  },
+  {
+    "word": "pharmacy",
+    "phonetic": "'fɑːməsɪ",
+    "meaning": "制药，配药；药房；药店",
+    "example": "an all-night pharmacy",
+    "example_cn": "通宵药店"
+  },
+  {
+    "word": "subject",
+    "phonetic": "ˈsʌbdʒɪkt",
+    "meaning": "国民；主题",
+    "example": "Paul has strong opinions on most subjects.",
+    "example_cn": "保罗在大多数问题上观点激烈。"
+  },
+  {
+    "word": "fry",
+    "phonetic": "fraɪ",
+    "meaning": "油煎，油炒",
+    "example": "Fry the potatoes, covered, for about 20 minutes.",
+    "example_cn": "盖上盖，将马铃薯煎20分钟左右。"
+  },
+  {
+    "word": "diligent",
+    "phonetic": "'dɪlɪdʒ(ə)nt",
+    "meaning": "勤奋的",
+    "example": "a diligent student",
+    "example_cn": "勤勉的学生"
+  },
+  {
+    "word": "quantitative",
+    "phonetic": "'kwɒntɪ,tətɪv; -,teɪtɪv",
+    "meaning": "量的，定量的",
+    "example": "...the advantages of quantitative and qualitative research.",
+    "example_cn": "…定量和定性研究的优点。"
+  },
+  {
+    "word": "monetary",
+    "phonetic": "'mʌnɪt(ə)rɪ",
+    "meaning": "货币的；钱的",
+    "example": "the government’s tight monetary policy",
+    "example_cn": "政府从紧的货币政策"
+  },
+  {
+    "word": "deviate",
+    "phonetic": "'diːvɪeɪt",
+    "meaning": "背离，偏离",
+    "example": "They stopped you as soon as you deviated from the script.",
+    "example_cn": "你一偏离剧本，他们就会叫停。"
+  },
+  {
+    "word": "clip",
+    "phonetic": "klɪp",
+    "meaning": "剪短；猛击，痛打",
+    "example": "The hedges had just been clipped.",
+    "example_cn": "树篱刚修剪过。"
+  },
+  {
+    "word": "maniac",
+    "phonetic": "'meɪnɪæk",
+    "meaning": "疯子，躁狂者",
+    "example": "He drove like a maniac to the hospital.",
+    "example_cn": "他像个疯子似的开车去医院。"
+  },
+  {
+    "word": "optical",
+    "phonetic": "'ɒptɪk(ə)l",
+    "meaning": "视觉的，眼睛的，光学的",
+    "example": "microscopes and other optical instruments",
+    "example_cn": "显微镜和其他光学仪器"
+  },
+  {
+    "word": "classify",
+    "phonetic": "'klæsɪfaɪ",
+    "meaning": "把分类(归类)；分等级",
+    "example": "We’d classify Drabble’s novels under ‘Romance’.",
+    "example_cn": "我们把德拉布尔的小说归类为“言情小说”。"
+  },
+  {
+    "word": "metaphor",
+    "phonetic": "'metəfə; -fɔː",
+    "meaning": "隐喻，暗喻",
+    "example": "She uses some wonderful images and metaphors in her writing.",
+    "example_cn": "她在作品中用了一些绝妙的比喻和暗喻。"
+  },
+  {
+    "word": "slender",
+    "phonetic": "'slendə",
+    "meaning": "细长的，苗条的；纤弱的，微小的，微薄的",
+    "example": "She is slender and stylish.",
+    "example_cn": "她身材修长，穿着时髦。"
+  },
+  {
+    "word": "desolate",
+    "phonetic": "'des(ə)lət",
+    "meaning": "荒芜的",
+    "example": "a desolate landscape",
+    "example_cn": "荒凉的景色"
+  },
+  {
+    "word": "wit",
+    "phonetic": "wɪt",
+    "meaning": "智力，才智",
+    "example": "Alone and penniless, I was forced to live on my wits.",
+    "example_cn": "孤身一人又身无分文，我只得靠我的机智来过活。"
+  },
+  {
+    "word": "hand",
+    "phonetic": "hænd",
+    "meaning": "手；掌握；责任；人手；指针",
+    "example": "Steve gripped the steering wheel tightly with both hands.",
+    "example_cn": "史蒂夫双手紧握方向盘。"
+  },
+  {
+    "word": "odd",
+    "phonetic": "ɒd",
+    "meaning": "古怪的，奇数的；单独的；零头的；临时的",
+    "example": "It was an odd thing to say.",
+    "example_cn": "这话说得很奇怪。"
+  },
+  {
+    "word": "dispatch",
+    "phonetic": "dɪˈspætʃ",
+    "meaning": "派遣，发送，迅速办理，急件",
+    "example": "Goods are normally dispatched within 24 hours.",
+    "example_cn": "货物一般在24小时内派送。"
+  },
+  {
+    "word": "tangle",
+    "phonetic": "'tæŋg(ə)l",
+    "meaning": "缠结；混乱(交通)",
+    "example": "My hair tangles easily.",
+    "example_cn": "我的头发很容易打结。"
+  },
+  {
+    "word": "associate",
+    "phonetic": "ə'səʊʃɪeɪt; -sɪeɪt",
+    "meaning": "伙伴，同事，同伴",
+    "example": "one of his business associates",
+    "example_cn": "他的一个生意伙伴"
+  },
+  {
+    "word": "slip",
+    "phonetic": "slɪp",
+    "meaning": "滑，失误",
+    "example": "Wright slipped but managed to keep hold of the ball.",
+    "example_cn": "赖特滑了一下，但球还抓在手里。"
+  },
+  {
+    "word": "retreat",
+    "phonetic": "rɪ'triːt",
+    "meaning": "撤退",
+    "example": "The rebels retreated to the mountains.",
+    "example_cn": "叛乱分子撤退到山区。"
+  },
+  {
+    "word": "revelation",
+    "phonetic": "revə'leɪʃ(ə)n",
+    "meaning": "揭示，揭露",
+    "example": "...following the revelation of his affair with a former secretary.",
+    "example_cn": "…在他和前任秘书的风流韵事被揭露之后。"
+  },
+  {
+    "word": "defeat",
+    "phonetic": "dɪ'fiːt",
+    "meaning": "打败，战胜",
+    "example": "She was a woman who hated to admit defeat.",
+    "example_cn": "她是个不愿认输的女人。"
+  },
+  {
+    "word": "slab",
+    "phonetic": "slæb",
+    "meaning": "(石材、木材)板，片",
+    "example": "a concrete slab",
+    "example_cn": "水泥板"
+  },
+  {
+    "word": "lobby",
+    "phonetic": "'lɒbɪ",
+    "meaning": "门廊；院外活动集团",
+    "example": "a hotel lobby",
+    "example_cn": "宾馆大堂"
+  },
+  {
+    "word": "administration",
+    "phonetic": "ədmɪnɪ'streɪʃ(ə)n",
+    "meaning": "管理，经营；行政",
+    "example": "We’re looking for someone with experience in administration.",
+    "example_cn": "我们正在寻找一个有管理经验的人。"
+  },
+  {
+    "word": "efficient",
+    "phonetic": "ɪ'fɪʃ(ə)nt",
+    "meaning": "能胜任的，效率高的",
+    "example": "a very efficient secretary",
+    "example_cn": "效率高的秘书"
+  },
+  {
+    "word": "throbbing",
+    "phonetic": "'θrɒbɪŋ",
+    "meaning": "跳动的，悸动的",
+    "example": "I shall not be at peace,' moaned Catherine, recalled to a sense of physical weakness by the violent, unequal throbbing of her heart, which beat visibly and audibly under this excess of agitation.",
+    "example_cn": "“我不会得到安息的，”凯瑟琳哀哭着，感到她身体的衰弱，因为在这场过度的激动下，她的心猛烈地、不规则地跳动着，甚至跳得能觉察出来。"
+  },
+  {
+    "word": "lawn",
+    "phonetic": "lɔːn",
+    "meaning": "草地，草坪",
+    "example": "I spent all morning mowing the lawn (= cutting the grass ).",
+    "example_cn": "我整个上午都在修剪草坪。"
+  },
+  {
+    "word": "superstition",
+    "phonetic": ",suːpə'stɪʃ(ə)n; ,sjuː-",
+    "meaning": "迷信，迷信行为",
+    "example": "the old superstition that walking under a ladder is unlucky",
+    "example_cn": "认为从梯子下面穿过不吉利的古老迷信"
+  },
+  {
+    "word": "exceedingly",
+    "phonetic": "ɪk'siːdɪŋlɪ; ek-",
+    "meaning": "非常, 极端地\"",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "pillar",
+    "phonetic": "'pɪlə",
+    "meaning": "柱；栋梁",
+    "example": "Mr Fitzwilliam had been seen as a pillar of the community.",
+    "example_cn": "菲茨威廉先生已被视为社区的骨干。"
+  },
+  {
+    "word": "spokesman",
+    "phonetic": "'spəʊksmən",
+    "meaning": "发言人",
+    "example": "a White House spokesman",
+    "example_cn": "白宫发言人"
+  },
+  {
+    "word": "avert",
+    "phonetic": "ə'vɜːt",
+    "meaning": "避开，防止",
+    "example": "The tragedy could have been averted if the crew had followed safety procedures.",
+    "example_cn": "如果乘务人员按照安全规则操作，这场悲剧是可以避免的。"
+  },
+  {
+    "word": "cash",
+    "phonetic": "kæʃ",
+    "meaning": "现金，钱款",
+    "example": "Cash was taken during a burglary of the apartment.",
+    "example_cn": "在一次公寓盗窃案中现金被盗。"
+  },
+  {
+    "word": "grin",
+    "phonetic": "grɪn",
+    "meaning": "露齿而笑，咧嘴一笑",
+    "example": "He came into the room with a friendly grin on his face .",
+    "example_cn": "他走进房间，脸上带着亲切的微笑。"
+  },
+  {
+    "word": "stroke",
+    "phonetic": "strəʊk",
+    "meaning": "击；划；一笔；中风",
+    "example": "She died following a massive stroke.",
+    "example_cn": "她重度中风后去世了。"
+  },
+  {
+    "word": "applicant",
+    "phonetic": "'æplɪk(ə)nt",
+    "meaning": "请求者，申请者",
+    "example": "We have had lots of applicants for these positions.",
+    "example_cn": "对这些职位我们已有了很多申请人。"
+  },
+  {
+    "word": "pull",
+    "phonetic": "pʊl",
+    "meaning": "拉，拖，拔",
+    "example": "Mom! Davey’s pulling my hair!",
+    "example_cn": "妈妈! 戴维拽我的头发！"
+  },
+  {
+    "word": "secondary",
+    "phonetic": "'sek(ə)nd(ə)rɪ",
+    "meaning": "第二的，中级的；次要的",
+    "example": "the novel’s secondary characters",
+    "example_cn": "这本小说中的次要人物"
+  },
+  {
+    "word": "indicative",
+    "phonetic": "ɪn'dɪkətɪv",
+    "meaning": "指示的；表示的",
+    "example": "His action is indicative of growing concern about the shortage of skilled labour.",
+    "example_cn": "他的行为显示对于熟练工人短缺现象的日益关注。"
+  },
+  {
+    "word": "wither",
+    "phonetic": "'wɪðə",
+    "meaning": "使枯萎,使凋谢；使人感觉羞愧或迷惑 \"",
+    "example": "The flowers in Isabel's room had withered.",
+    "example_cn": "伊莎贝尔房间里的花朵已经枯萎了。"
+  },
+  {
+    "word": "commuter",
+    "phonetic": "kə'mjuːtə(r)",
+    "meaning": "乘公交车辆上下班者",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "distribute",
+    "phonetic": "dɪ'strɪbjuːt; 'dɪstrɪbjuːt",
+    "meaning": "分发，分配，散布",
+    "example": "a man distributing leaflets to passers-by",
+    "example_cn": "一个向路人派发传单的男子"
+  },
+  {
+    "word": "excrement",
+    "phonetic": "'ekskrɪm(ə)nt",
+    "meaning": "排泄物，粪便",
+    "example": "The cage smelled of excrement.",
+    "example_cn": "这个笼子闻起来有粪便味。"
+  },
+  {
+    "word": "intelligible",
+    "phonetic": "ɪn'telɪdʒɪb(ə)l",
+    "meaning": "可理解的，明白的",
+    "example": "His reply was barely intelligible.",
+    "example_cn": "他的回复几乎让人听不懂。"
+  },
+  {
+    "word": "contempt",
+    "phonetic": "kən'tem(p)t",
+    "meaning": "轻蔑；不尊敬，轻视",
+    "example": "The public is treated with contempt by broadcasters.",
+    "example_cn": "公众受到了节目主持人的轻蔑对待。"
+  },
+  {
+    "word": "palm",
+    "phonetic": "pɑːm",
+    "meaning": "手掌，棕榈",
+    "example": "He held the pebble in the palm of his hand .",
+    "example_cn": "他把那颗卵石握在手心里。"
+  },
+  {
+    "word": "trauma",
+    "phonetic": "'trɔːmə; 'traʊmə",
+    "meaning": "损伤，精神创伤",
+    "example": "traumas such as death or divorce",
+    "example_cn": "死亡、离婚等的巨大痛苦"
+  },
+  {
+    "word": "shelter",
+    "phonetic": "'ʃeltə",
+    "meaning": "隐蔽处；掩蔽，遮蔽；避难所",
+    "example": "The men took shelter in a bombed-out farmhouse.",
+    "example_cn": "那些男人躲在一间被炸毁的农舍里。"
+  },
+  {
+    "word": "disregard",
+    "phonetic": "dɪsrɪ'gɑːd",
+    "meaning": "不理，漠视",
+    "example": "He ordered the jury to disregard the witness’s last statement.",
+    "example_cn": "他指示陪审团忽略证人的最后一句话。"
+  },
+  {
+    "word": "perennial",
+    "phonetic": "pə'renɪəl",
+    "meaning": "终年的,四季不断的,持久的",
+    "example": "...a low-growing perennial.",
+    "example_cn": "…一种长不高的多年生植物。"
+  },
+  {
+    "word": "ownership",
+    "phonetic": "'əʊnəʃɪp",
+    "meaning": "所有权",
+    "example": "The price of home ownership is increasing.",
+    "example_cn": "房价在不断上涨。"
+  },
+  {
+    "word": "antagonism",
+    "phonetic": "æn'tæg(ə)nɪz(ə)m",
+    "meaning": "反对，不喜欢",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "provided",
+    "phonetic": "prə'vaɪdɪd",
+    "meaning": "假如，如果",
+    "example": "He can come with us, provided he pays for his own meals.",
+    "example_cn": "只要他付自己的饭钱，就可以跟我们一起来。"
+  },
+  {
+    "word": "evoke",
+    "phonetic": "ɪ'vəʊk",
+    "meaning": "唤起；引起",
+    "example": "The photographs evoked strong memories of our holidays in France.",
+    "example_cn": "那些照片勾起了我们到法国度假的深刻回忆。"
+  },
+  {
+    "word": "clarity",
+    "phonetic": "'klærɪtɪ",
+    "meaning": "清澈，明晰",
+    "example": "Letters may be edited for length and clarity.",
+    "example_cn": "信件可能要加以修改以求篇幅合适，意思明了。"
+  },
+  {
+    "word": "revolve",
+    "phonetic": "rɪ'vɒlv",
+    "meaning": "使旋转；使绕转",
+    "example": "The wheel began to revolve.",
+    "example_cn": "轮子开始旋转。"
+  },
+  {
+    "word": "ambiguity",
+    "phonetic": "æmbɪ'gjuːɪtɪ",
+    "meaning": "模棱两可；多义词句",
+    "example": "legal ambiguities",
+    "example_cn": "法律上含混不清的地方"
+  },
+  {
+    "word": "charter",
+    "phonetic": "'tʃɑːtə",
+    "meaning": "特许状，凭照，宪章；租赁",
+    "example": "The town’s charter was granted in 1838.",
+    "example_cn": "该镇的特许状是1838年颁发的。"
+  },
+  {
+    "word": "grid",
+    "phonetic": "grɪd",
+    "meaning": "高压输电线路网；地图坐标方格；格栅",
+    "example": "Its streets were laid out in a grid pattern.",
+    "example_cn": "那里的街道是棋盘式的布局。"
+  },
+  {
+    "word": "notation",
+    "phonetic": "nəʊ'teɪʃ(ə)n",
+    "meaning": "(数学、音乐)的一套符号",
+    "example": "Musical notation was conceived for the C major scale and each line and space represents a note in this scale.",
+    "example_cn": "乐谱为C大音阶而构思，在这个音阶中的每一个线和间都代表一个音符。"
+  },
+  {
+    "word": "slit",
+    "phonetic": "slɪt",
+    "meaning": "狭长的切口；裂缝",
+    "example": "light shining through a slit in the door",
+    "example_cn": "透过门缝照进来的光线"
+  },
+  {
+    "word": "hardware",
+    "phonetic": "'hɑːdweə",
+    "meaning": "金属日用器皿，计算机硬件",
+    "example": "...a shop from which an uncle had sold hardware and timber.",
+    "example_cn": "…一家叔叔曾经在那里卖五金器具和木材的店铺。"
+  },
+  {
+    "word": "mercy",
+    "phonetic": "'mɜːsɪ",
+    "meaning": "怜悯；宽恕",
+    "example": "He showed no mercy to his enemies.",
+    "example_cn": "他对敌人毫不仁慈。"
+  },
+  {
+    "word": "diameter",
+    "phonetic": "daɪ'æmɪtə",
+    "meaning": "直径",
+    "example": "...a tube less than a fifth of the diameter of a human hair.",
+    "example_cn": "…一根直径不到头发五分之一的微管。"
+  },
+  {
+    "word": "empirical",
+    "phonetic": "em'pɪrɪk(ə)l; ɪm-",
+    "meaning": "经验主义的",
+    "example": "{\"COLLOINEXA\":[\"empirical evidence\"]}",
+    "example_cn": "实验证据"
+  },
+  {
+    "word": "standard",
+    "phonetic": "'stændəd",
+    "meaning": "标准；旗帜",
+    "example": "Students have to reach a certain standard or they won’t pass.",
+    "example_cn": "学生必须达到某一标准，否则无法通过。"
+  },
+  {
+    "word": "gown",
+    "phonetic": "gaʊn",
+    "meaning": "长袍；长外衣",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "filter",
+    "phonetic": "'fɪltə",
+    "meaning": "滤器，滤光器",
+    "example": "filter cigarettes (= with a filter at the end )",
+    "example_cn": "过滤嘴香烟"
+  },
+  {
+    "word": "fester",
+    "phonetic": "'festə",
+    "meaning": "脓疮，(怨恨等)郁积，恶化",
+    "example": "The dispute can be traced back to resentments which have festered for centuries.",
+    "example_cn": "这一争端可以追溯到积累了好几个世纪的仇怨。"
+  },
+  {
+    "word": "doom",
+    "phonetic": "duːm",
+    "meaning": "毁灭，死亡",
+    "example": "The plan was doomed from the start .",
+    "example_cn": "这个计划一开始就注定要失败。"
+  },
+  {
+    "word": "dub",
+    "phonetic": "dʌb",
+    "meaning": "(以某种称号)授予；给起绰号；复制",
+    "example": "It was dubbed into Spanish for Mexican audiences.",
+    "example_cn": "它已为墨西哥观众配成西班牙语了。"
+  },
+  {
+    "word": "matrimony",
+    "phonetic": "'mætrɪmənɪ",
+    "meaning": "婚姻，结婚，婚姻生活",
+    "example": "They were joined together in holy matrimony .",
+    "example_cn": "他们通过神圣的婚姻结合在一起。"
+  },
+  {
+    "word": "sanitary",
+    "phonetic": "'sænɪt(ə)rɪ",
+    "meaning": "清洁的，保健的，卫生的",
+    "example": "Diseases were spread through poor sanitary conditions .",
+    "example_cn": "疾病因卫生条件很差而传播开来。"
+  },
+  {
+    "word": "enrich",
+    "phonetic": "ɪn'rɪtʃ; en-",
+    "meaning": "使丰富，加料于，增进",
+    "example": "Add fertilizer to enrich the soil.",
+    "example_cn": "施上肥料使土壤肥沃。"
+  },
+  {
+    "word": "frontier",
+    "phonetic": "'frʌntɪə; frʌn'tɪə",
+    "meaning": "国境；尖端；新领域",
+    "example": "a novel about a family’s struggle on the American frontier",
+    "example_cn": "描写一家人在美国边远地区奋斗的小说"
+  },
+  {
+    "word": "equity",
+    "phonetic": "'ekwɪtɪ",
+    "meaning": "公平；公正；无固定利息的股票",
+    "example": "a society run on the principles of equity and justice",
+    "example_cn": "以公平、正义为原则的社会"
+  },
+  {
+    "word": "generous",
+    "phonetic": "'dʒen(ə)rəs",
+    "meaning": "慷慨的，丰盛的",
+    "example": "a generous glass of wine",
+    "example_cn": "一大杯葡萄酒"
+  },
+  {
+    "word": "juvenile",
+    "phonetic": "'dʒuːvənaɪl",
+    "meaning": "青少年的，幼稚的",
+    "example": "juvenile crime",
+    "example_cn": "少年犯罪"
+  },
+  {
+    "word": "fend",
+    "phonetic": "fend",
+    "meaning": "抵挡",
+    "example": "She raised her arm up to fend branches from her eyes.",
+    "example_cn": "她抬起胳膊将树枝从她眼前挡开。"
+  },
+  {
+    "word": "longitude",
+    "phonetic": "'lɒn(d)ʒɪtjuːd; 'lɒŋgɪ-",
+    "meaning": "经度",
+    "example": "The town lies at longitude 12˚ east.",
+    "example_cn": "这个镇位于东经12度。"
+  },
+  {
+    "word": "sting",
+    "phonetic": "stɪŋ",
+    "meaning": "刺；刺痛",
+    "example": "He was stung by a bee.",
+    "example_cn": "他被蜜蜂蜇了。"
+  },
+  {
+    "word": "escalate",
+    "phonetic": "'eskəleɪt",
+    "meaning": "升级，逐渐发展",
+    "example": "The fighting on the border is escalating.",
+    "example_cn": "边境地区的战事在不断升级。"
+  },
+  {
+    "word": "poverty",
+    "phonetic": "'pɒvətɪ",
+    "meaning": "贫困，贫穷",
+    "example": "Millions of elderly people live in poverty .",
+    "example_cn": "数百万老年人生活在贫困之中。"
+  },
+  {
+    "word": "cassette",
+    "phonetic": "kə'set",
+    "meaning": "磁带盒；照相软片盒",
+    "example": "His two albums released on cassette have sold 10 million copies.",
+    "example_cn": "他以磁带形式发行的两张专辑已售出1000万份。"
+  },
+  {
+    "word": "date",
+    "phonetic": "deɪt",
+    "meaning": "日期；约会",
+    "example": "The date on the letter was 30th August 1962.",
+    "example_cn": "信上的日期是1962年8月30日。"
+  },
+  {
+    "word": "hedge",
+    "phonetic": "hedʒ",
+    "meaning": "围树篱；障碍；躲闪；推诿",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "hospitality",
+    "phonetic": "hɒspɪ'tælɪtɪ",
+    "meaning": "好客，殷勤",
+    "example": "Thanks for your hospitality over the past few weeks.",
+    "example_cn": "感谢你几周来的热情款待。"
+  },
+  {
+    "word": "declaration",
+    "phonetic": "deklə'reɪʃ(ə)n",
+    "meaning": "宣布，宣言；声明",
+    "example": "a ceasefire declaration",
+    "example_cn": "停火声明"
+  },
+  {
+    "word": "detest",
+    "phonetic": "dɪ'test",
+    "meaning": "痛恨, 憎恶\"",
+    "example": "The two men detested each other.",
+    "example_cn": "两个男人互相厌恶。"
+  },
+  {
+    "word": "incite",
+    "phonetic": "ɪn'saɪt",
+    "meaning": "激励；煽动",
+    "example": "They were charged with inciting racial hatred.",
+    "example_cn": "他们被指控煽动种族仇恨。"
+  },
+  {
+    "word": "innovation",
+    "phonetic": "ˌɪnəˈveɪʃn",
+    "meaning": "创新，改革",
+    "example": "We must encourage innovation if the company is to remain competitive.",
+    "example_cn": "公司要想保持竞争力，就必须鼓励革新。"
+  },
+  {
+    "word": "liability",
+    "phonetic": "laɪə'bɪlɪtɪ",
+    "meaning": "义务；不利；阻碍；债务",
+    "example": "The company had assets of $138 million and liabilities of $120.5 million.",
+    "example_cn": "该公司有1.38亿美元资产和1.205亿美元的负债。"
+  },
+  {
+    "word": "strenuous",
+    "phonetic": "'strenjʊəs",
+    "meaning": "费劲的，用力的",
+    "example": "a strenuous climb",
+    "example_cn": "艰难的攀登"
+  },
+  {
+    "word": "principal",
+    "phonetic": "'prɪnsəp(ə)l",
+    "meaning": "主要的",
+    "example": "His principal reason for making the journey was to visit his family.",
+    "example_cn": "他那次旅程的首要目的是探访家人。"
+  },
+  {
+    "word": "exhaust",
+    "phonetic": "ɪg'zɔːst; eg-",
+    "meaning": "排气",
+    "example": "exhaust fumes",
+    "example_cn": "排出的废气"
+  },
+  {
+    "word": "drain",
+    "phonetic": "dreɪn",
+    "meaning": "排水，耗尽",
+    "example": "Huge imports were draining the country’s currency reserves.",
+    "example_cn": "大量的进口正在耗尽该国的货币储备。"
+  },
+  {
+    "word": "export",
+    "phonetic": "ˈekspɔːt；ɪkˈ-",
+    "meaning": "输出，出口",
+    "example": "Italian food has been exported all over the world.",
+    "example_cn": "意大利食品已传遍世界。"
+  },
+  {
+    "word": "log",
+    "phonetic": "lɒg",
+    "meaning": "原木，圆木",
+    "example": "a roaring log fire",
+    "example_cn": "原木燃烧的熊熊大火"
+  },
+  {
+    "word": "superstructure",
+    "phonetic": "'suːpəstrʌktʃə; 'sjuː-",
+    "meaning": "上层建筑；统治阶层",
+    "example": "the whole superstructure of capitalism",
+    "example_cn": "资本主义的整个上层建筑"
+  },
+  {
+    "word": "taboo",
+    "phonetic": "tə'buː",
+    "meaning": "(宗教迷信)禁忌",
+    "example": "The topic of addiction remains something of a taboo in our family.",
+    "example_cn": "毒瘾在我们家依然是个有些忌讳的话题。"
+  },
+  {
+    "word": "spatial",
+    "phonetic": "'speɪʃ(ə)l",
+    "meaning": "空间的，关于空间的",
+    "example": "...the spatial distribution of black employment and population in South Africa.",
+    "example_cn": "…南非黑人就业和人口的空间分布。"
+  },
+  {
+    "word": "objection",
+    "phonetic": "əb'dʒekʃ(ə)n",
+    "meaning": "厌恶，反对；反对的理由",
+    "example": "Her objection was that he was too young.",
+    "example_cn": "她反对的理由是他太小。"
+  },
+  {
+    "word": "tornado",
+    "phonetic": "tɔː'neɪdəʊ",
+    "meaning": "飓风，龙卷风",
+    "example": "The tornado rubbished the whole village.",
+    "example_cn": "龙卷风毁掉了整个村庄。"
+  },
+  {
+    "word": "pin",
+    "phonetic": "pɪn",
+    "meaning": "大头针",
+    "example": "...necklaces, bracelets, and pins.",
+    "example_cn": "…项链、手镯和胸针。"
+  },
+  {
+    "word": "style",
+    "phonetic": "staɪl",
+    "meaning": "风格；文体；式样",
+    "example": "an attempt to use Japanese management style in a European business",
+    "example_cn": "将日本的管理方式用于欧洲企业的尝试"
+  },
+  {
+    "word": "ultimatum",
+    "phonetic": "ʌltɪ'meɪtəm",
+    "meaning": "最后通牒",
+    "example": "The club gave him an ultimatum – either he apologized, or he would be expelled from the team.",
+    "example_cn": "俱乐部给他下了最后通牒——要么道歉，要么等着被开除出队。"
+  },
+  {
+    "word": "presentation",
+    "phonetic": "prez(ə)n'teɪʃ(ə)n",
+    "meaning": "赠送；提出；显示；描述",
+    "example": "We will begin a series of presentations to help the public fully understand our system.",
+    "example_cn": "我们将进行一系列的说明，帮助公众充分了解我们的制度。"
+  },
+  {
+    "word": "neglect",
+    "phonetic": "nɪ'glekt",
+    "meaning": "忽视，搁置未做",
+    "example": "Many of these ideas have been neglected by modern historians.",
+    "example_cn": "这些观点有许多都被现代的历史学家忽略了。"
+  },
+  {
+    "word": "carrot",
+    "phonetic": "'kærət",
+    "meaning": "胡萝卜",
+    "example": "grated carrots",
+    "example_cn": "磨碎的胡萝卜"
+  },
+  {
+    "word": "linear",
+    "phonetic": "'lɪnɪə",
+    "meaning": "线的，直线的，长度的",
+    "example": "a linear diagram",
+    "example_cn": "线形图"
+  },
+  {
+    "word": "sweater",
+    "phonetic": "'swetə",
+    "meaning": "厚运行衫，毛线衫",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "precarious",
+    "phonetic": "prɪ'keərɪəs",
+    "meaning": "不稳定的，不安全的",
+    "example": "Her health remained precarious, despite the treatment.",
+    "example_cn": "她尽管接受了治疗，但健康状况还是不稳定。"
+  },
+  {
+    "word": "amends",
+    "phonetic": "ə'men(d)z",
+    "meaning": "(pl)赔偿，道歉",
+    "example": "to make amends",
+    "example_cn": ""
+  },
+  {
+    "word": "approval",
+    "phonetic": "ə'pruːv(ə)l",
+    "meaning": "允许，赞同；批准",
+    "example": "The president has already given his approval to the plan.",
+    "example_cn": "总统已经批准了这个计划。"
+  },
+  {
+    "word": "faculty",
+    "phonetic": "'fæk(ə)ltɪ",
+    "meaning": "才能；(大学的)系科；学院全体教员",
+    "example": "the Engineering Faculty",
+    "example_cn": "工程学院"
+  },
+  {
+    "word": "avoid",
+    "phonetic": "ə'vɒɪd",
+    "meaning": "避免，逃避",
+    "example": "Road safety is taught to young children to avoid road accidents.",
+    "example_cn": "小孩子受到道路安全知识的教育，以避免交通事故。"
+  },
+  {
+    "word": "chat",
+    "phonetic": "tʃæt",
+    "meaning": "闲谈; 聊天",
+    "example": "She was enjoying their friendly little chat .",
+    "example_cn": "她很喜欢他们那种友好的闲聊。"
+  },
+  {
+    "word": "surpass",
+    "phonetic": "sə'pɑːs",
+    "meaning": "超过，超越，胜过",
+    "example": "He had surpassed all our expectations .",
+    "example_cn": "他超越了我们所有的预期。"
+  },
+  {
+    "word": "appliance",
+    "phonetic": "ə'plaɪəns",
+    "meaning": "用具，设备，装置",
+    "example": "The device most often used to do this is a load balancer, which is an appliance that accepts requests from the outside world and hands them off to the next available application server.",
+    "example_cn": "进行这一操作最常用的设备是一个负载均衡器，这是一个从外部接收请求并将它们移交给下一个可用应用程序服务器的装置。"
+  },
+  {
+    "word": "despise",
+    "phonetic": "dɪ'spaɪz",
+    "meaning": "鄙视，看不起",
+    "example": "She despised her neighbours.",
+    "example_cn": "她看不起她的邻居。"
+  },
+  {
+    "word": "plunge",
+    "phonetic": "plʌn(d)ʒ",
+    "meaning": "投入，插入；跳水",
+    "example": "...a plunge into cold water.",
+    "example_cn": "…向着冰冷的水中的纵身一跳。"
+  },
+  {
+    "word": "disguise",
+    "phonetic": "dɪs'gaɪz",
+    "meaning": "假扮；隐蔽；掩饰",
+    "example": "He escaped across the border disguised as a priest.",
+    "example_cn": "他装扮成神父越境逃走了。"
+  },
+  {
+    "word": "deflect",
+    "phonetic": "dɪ'flekt",
+    "meaning": "偏斜",
+    "example": "He deflected the blow with his forearm.",
+    "example_cn": "他用前臂挡开了打来的一拳。"
+  },
+  {
+    "word": "optional",
+    "phonetic": "'ɒpʃ(ə)n(ə)l",
+    "meaning": "非强制的，自愿的，自发的",
+    "example": "three optional courses",
+    "example_cn": "三门选修课"
+  },
+  {
+    "word": "elementary",
+    "phonetic": "elɪ'ment(ə)rɪ",
+    "meaning": "基本的，初级的",
+    "example": "the elementary principles of justice and democracy",
+    "example_cn": "正义和民主的基本信条"
+  },
+  {
+    "word": "mar",
+    "phonetic": "mɑː",
+    "meaning": "毁坏，弄糟",
+    "example": "Their wedding was marred by the death of Jenny’s mother a week earlier.",
+    "example_cn": "一周之前珍妮母亲的过世使他们的婚礼蒙上了一层阴影。"
+  },
+  {
+    "word": "compute",
+    "phonetic": "kəm'pjuːt",
+    "meaning": "计算，估计",
+    "example": "Final results had not yet been computed.",
+    "example_cn": "最终的结果还未计算出来。"
+  },
+  {
+    "word": "dramatic",
+    "phonetic": "drə'mætɪk",
+    "meaning": "戏剧性的，戏剧的",
+    "example": "the amateur dramatic society",
+    "example_cn": "业余剧团"
+  },
+  {
+    "word": "maim",
+    "phonetic": "meɪm",
+    "meaning": "残害，使残废",
+    "example": "Landmines still kill or maim about 300 people every month.",
+    "example_cn": "地雷每个月仍造成约300人死伤。"
+  },
+  {
+    "word": "partial",
+    "phonetic": "'pɑːʃ(ə)l",
+    "meaning": "不完全的；偏袒的",
+    "example": "The exhibition was only a partial success.",
+    "example_cn": "那次展会只获得部分成功。"
+  },
+  {
+    "word": "launch",
+    "phonetic": "lɔːntʃ",
+    "meaning": "使(船)下水，发射,开始,开办",
+    "example": "The organization has launched a campaign to raise $150,000.",
+    "example_cn": "为了筹集15万美元，该组织发起了一场募捐活动。"
+  },
+  {
+    "word": "hearing",
+    "phonetic": "'hɪərɪŋ",
+    "meaning": "听力，听力所及距离，被听到机会；审讯",
+    "example": "a child with a hearing disability",
+    "example_cn": "有听力障碍的儿童"
+  },
+  {
+    "word": "mighty",
+    "phonetic": "'maɪtɪ",
+    "meaning": "强大的，强有力的，巨大的，浩大的",
+    "example": "the mighty Mississippi river",
+    "example_cn": "浩荡的密西西比河"
+  },
+  {
+    "word": "striking",
+    "phonetic": "'straɪkɪŋ",
+    "meaning": "引人注目的，显著的",
+    "example": "a dark man with striking features",
+    "example_cn": "相貌出众、肤色黝黑的男子"
+  },
+  {
+    "word": "counterpart",
+    "phonetic": "'kaʊntəpɑːt",
+    "meaning": "对应的物或人",
+    "example": "As soon as he heard what was afoot, he telephoned his German and Italian counterparts to protest.",
+    "example_cn": "他一听到在进行中的事，马上就给德国和意大利相应人员打电话抗议。"
+  },
+  {
+    "word": "unilateral",
+    "phonetic": "juːnɪ'læt(ə)r(ə)l",
+    "meaning": "单方面的；片面的",
+    "example": "a unilateral declaration of independence",
+    "example_cn": "单方面宣布独立"
+  },
+  {
+    "word": "ruinous",
+    "phonetic": "'ruːɪnəs",
+    "meaning": "毁灭性的，破坏性的",
+    "example": "a ruinous civil war",
+    "example_cn": "一场毁灭性的内战"
+  },
+  {
+    "word": "jumble",
+    "phonetic": "'dʒʌmb(ə)l",
+    "meaning": "混杂，杂乱，混乱",
+    "example": "The photographs were all jumbled up.",
+    "example_cn": "照片乱七八糟地堆在一起。"
+  },
+  {
+    "word": "instalment",
+    "phonetic": "ɪn'stɔːlm(ə)nt",
+    "meaning": "分期连载，分期支付的款子",
+    "example": "the second instalment of a loan",
+    "example_cn": "一项贷款的第二期还款"
+  },
+  {
+    "word": "refreshing",
+    "phonetic": "rɪ'freʃɪŋ",
+    "meaning": "使精力恢复的；使耳目一新的",
+    "example": "It made a refreshing change to talk to someone new.",
+    "example_cn": "和刚认识的人谈话感觉很新鲜。"
+  },
+  {
+    "word": "notch",
+    "phonetic": "nɒtʃ",
+    "meaning": "(V字形)槽口，缺口",
+    "example": "Cut a notch near one end of the stick.",
+    "example_cn": "在手杖的一端刻一个V形记号。"
+  },
+  {
+    "word": "correspondent",
+    "phonetic": "kɒrɪ'spɒnd(ə)nt",
+    "meaning": "记者，通信者",
+    "example": "Our correspondent in South Africa sent this report.",
+    "example_cn": "我们的驻南非记者发来这份报道。"
+  },
+  {
+    "word": "peril",
+    "phonetic": "'perɪl; -r(ə)l",
+    "meaning": "(严重的)危险；危险的事物",
+    "example": "a voyage that was fraught with peril",
+    "example_cn": "历尽艰险的旅程"
+  },
+  {
+    "word": "agency",
+    "phonetic": "'eɪdʒ(ə)nsɪ",
+    "meaning": "代理商(社)",
+    "example": "We had to hire maids through an agency.",
+    "example_cn": "我们得通过代理公司雇用女佣。"
+  },
+  {
+    "word": "elated",
+    "phonetic": "ɪ'leɪtɪd",
+    "meaning": "欢欣鼓舞的",
+    "example": "He felt elated and mildly drunk.",
+    "example_cn": "他感到欢欣鼓舞，而且喝得有点醉了。"
+  },
+  {
+    "word": "critical",
+    "phonetic": "'krɪtɪk(ə)l",
+    "meaning": "危急的；批评的；苛求的，关键的",
+    "example": "He made some highly critical remarks.",
+    "example_cn": "他发表了一些严厉的批判性言论。"
+  },
+  {
+    "word": "picturesque",
+    "phonetic": ",pɪktʃə'resk",
+    "meaning": "似画的，生动的",
+    "example": "a quiet fishing village with a picturesque harbour",
+    "example_cn": "拥有一座美丽港口的宁静渔村"
+  },
+  {
+    "word": "tacit",
+    "phonetic": "'tæsɪt",
+    "meaning": "心照不宣的",
+    "example": "a tacit agreement between the three big companies",
+    "example_cn": "三家大公司之间的默契"
+  },
+  {
+    "word": "controversial",
+    "phonetic": "kɒntrə'vɜːʃ(ə)l",
+    "meaning": "引起争论的",
+    "example": "the controversial issue of welfare reform",
+    "example_cn": "福利改革这一有争议的话题"
+  },
+  {
+    "word": "mucous",
+    "phonetic": "'mjuːkəs",
+    "meaning": "黏液的，似黏液的",
+    "example": "We evolved to stay away from poo, from bodily fluids, from mucous, from foods that have gone off, from worms in the garden.",
+    "example_cn": "我们进化到如此阶段：避开屎，避开体液，避开粘液，不要碰变质的食物，不要动花园的虫子。"
+  },
+  {
+    "word": "perpetual",
+    "phonetic": "pə'petʃʊəl; -tjʊəl",
+    "meaning": "永久的；永恒的",
+    "example": "the perpetual snows of the mountaintops",
+    "example_cn": "山顶的终年积雪"
+  },
+  {
+    "word": "porous",
+    "phonetic": "'pɔːrəs",
+    "meaning": "多孔的，能渗透的",
+    "example": "porous material",
+    "example_cn": "渗透性材料"
+  },
+  {
+    "word": "whirl",
+    "phonetic": "wɜːl",
+    "meaning": "使旋转；眩晕",
+    "example": "Not receiving an answer, she whirled around.",
+    "example_cn": "没有得到答复，她猛地转过身来。"
+  },
+  {
+    "word": "swell",
+    "phonetic": "swel",
+    "meaning": "使膨胀；使增强，使壮大，使隆起",
+    "example": "The wind swelled the sails.",
+    "example_cn": "风鼓起了船帆。"
+  },
+  {
+    "word": "gross",
+    "phonetic": "grəʊs",
+    "meaning": "粗俗的；过胖的；总的；毛的",
+    "example": "a gross profit of $5 million",
+    "example_cn": "500万美元的毛利"
+  },
+  {
+    "word": "defile",
+    "phonetic": "dɪ'faɪl",
+    "meaning": "弄脏，污损",
+    "example": "Hallam’s tomb had been defiled and looted.",
+    "example_cn": "哈勒姆的坟墓遭到了亵渎和洗劫。"
+  },
+  {
+    "word": "virtually",
+    "phonetic": "ˈvəːtʃʊəli",
+    "meaning": "实际上，事实上",
+    "example": "Virtually all the children come to school by bus.",
+    "example_cn": "几乎所有的孩子都乘公交车上学。"
+  },
+  {
+    "word": "equivalent",
+    "phonetic": "ɪ'kwɪv(ə)l(ə)nt",
+    "meaning": "相等的，相同",
+    "example": "The word has no equivalent in English.",
+    "example_cn": "这个单词在英语中没有对应词。"
+  },
+  {
+    "word": "forte",
+    "phonetic": "'fɔːteɪ; 'fɔːtɪ; fɔːt",
+    "meaning": "长处，特长",
+    "example": "Moscow-based Kaspersky Lab has long been a magnet for Russia's young computer geniuses, luring them away from their usual forte, hacking, to viral analysis.",
+    "example_cn": "总部位于莫斯科的卡巴斯基实验室许久以来就是吸引俄罗斯年轻计算机英才的一块磁石，诱使他们远离自己平常的黑客特长，转而从事病毒分析。"
+  },
+  {
+    "word": "tamper",
+    "phonetic": "'tæmpə",
+    "meaning": "干预，乱弄",
+    "example": "Don't tamper with my business.",
+    "example_cn": "别干预我的事。"
+  },
+  {
+    "word": "prone",
+    "phonetic": "prəʊn",
+    "meaning": "俯伏的；有倾向",
+    "example": "His eyes shifted to the prone body on the floor.",
+    "example_cn": "他的视线移向了趴在地上的尸体。"
+  },
+  {
+    "word": "estimate",
+    "phonetic": "'estɪmeɪt",
+    "meaning": "n.",
+    "example": "We just need an estimate of the number of people who will come.",
+    "example_cn": "我们只需估算一下有多少人会来。"
+  },
+  {
+    "word": "uniform",
+    "phonetic": "'juːnɪfɔːm",
+    "meaning": "不变的，一贯的",
+    "example": "Grade A eggs must be of uniform size.",
+    "example_cn": "A 级鸡蛋必须大小相同。"
+  },
+  {
+    "word": "pupil",
+    "phonetic": "'pjuːpɪl; -p(ə)l",
+    "meaning": "瞳孔，瞳仁",
+    "example": "The sick man's pupils were dilated.",
+    "example_cn": "病人的瞳孔放大了。"
+  },
+  {
+    "word": "ambulance",
+    "phonetic": "'æmbjʊl(ə)ns",
+    "meaning": "救护车",
+    "example": "the ambulance service",
+    "example_cn": "救护车服务"
+  },
+  {
+    "word": "shallow",
+    "phonetic": "'ʃæləʊ",
+    "meaning": "浅的；肤浅的",
+    "example": "a shallow river",
+    "example_cn": "浅河"
+  },
+  {
+    "word": "fume",
+    "phonetic": "fjuːm",
+    "meaning": "烟，汽",
+    "example": "...car exhaust fumes.",
+    "example_cn": "…汽车尾气。"
+  },
+  {
+    "word": "disc",
+    "phonetic": "dɪsk",
+    "meaning": "圆盘，圆面，磁盘；椎间盘",
+    "example": "three keys attached to a metal disc",
+    "example_cn": "穿在金属圆盘上的三把钥匙"
+  },
+  {
+    "word": "emergency",
+    "phonetic": "ɪ'mɜːdʒ(ə)nsɪ",
+    "meaning": "紧急情况，突发事件",
+    "example": "Lifeguards are trained to deal with emergencies.",
+    "example_cn": "救生员接受过应对紧急情况的训练。"
+  },
+  {
+    "word": "geology",
+    "phonetic": "dʒɪ'ɒlədʒɪ",
+    "meaning": "地质学；地质",
+    "example": "He was visiting professor of geology at the University of Georgia.",
+    "example_cn": "他曾是佐治亚大学的地质学客座教授。"
+  },
+  {
+    "word": "stem",
+    "phonetic": "stem",
+    "meaning": "茎",
+    "example": "long-stemmed wine glasses",
+    "example_cn": "高脚酒杯"
+  },
+  {
+    "word": "prey",
+    "phonetic": "preɪ",
+    "meaning": "捕食；被捕食的动物",
+    "example": "a tiger stalking its prey",
+    "example_cn": "潜行跟踪猎物的老虎"
+  },
+  {
+    "word": "frost",
+    "phonetic": "frɒst",
+    "meaning": "严寒，霜v结霜;使(玻璃)具有光泽的表面",
+    "example": "the risk of frost damage to crops",
+    "example_cn": "庄稼遭受霜冻灾害的危险"
+  },
+  {
+    "word": "gravel",
+    "phonetic": "'græv(ə)l",
+    "meaning": "沙砾，碎石",
+    "example": "a gravel path",
+    "example_cn": "石子小道"
+  },
+  {
+    "word": "dividend",
+    "phonetic": "'dɪvɪdend",
+    "meaning": "红利，股息",
+    "example": "The first quarter dividend has been increased by nearly 4 percent.",
+    "example_cn": "第一季度的股息增加了近4％。"
+  },
+  {
+    "word": "pump",
+    "phonetic": "pʌmp",
+    "meaning": "泵，抽水机vt&vi抽取；盘问；灌注",
+    "example": "...pumps that circulate the fuel around in the engine.",
+    "example_cn": "…使燃料在发动机内循环的压泵。"
+  },
+  {
+    "word": "strain",
+    "phonetic": "streɪn",
+    "meaning": "拉紧，紧张，拉力；劳累",
+    "example": "I couldn’t look after him any more; the strain was too much for me.",
+    "example_cn": "我不能再照看他了，压力太大。"
+  },
+  {
+    "word": "nibble",
+    "phonetic": "'nɪb(ə)l",
+    "meaning": "啃，一点一点咬",
+    "example": "He nibbled the biscuit cautiously.",
+    "example_cn": "他小心地啃着饼干。"
+  },
+  {
+    "word": "ally",
+    "phonetic": "'ælaɪ",
+    "meaning": "同盟者，伙伴；结盟",
+    "example": "a meeting of the European allies",
+    "example_cn": "欧洲盟国会议"
+  },
+  {
+    "word": "facilitate",
+    "phonetic": "fə'sɪlɪteɪt",
+    "meaning": "使便利",
+    "example": "Modern inventions facilitate housework.",
+    "example_cn": "许多现代发明便利了家务劳动。"
+  },
+  {
+    "word": "twig",
+    "phonetic": "twɪg",
+    "meaning": "嫩枝, 细枝 \"",
+    "example": "There is the bird, sitting on a twig halfway up the tree.",
+    "example_cn": "鸟儿在那里，栖息在树中段的一根细枝上。"
+  },
+  {
+    "word": "gape",
+    "phonetic": "geɪp",
+    "meaning": "张口，张开，裂开",
+    "example": "The front door was missing. A hole gaped in the roof.",
+    "example_cn": "前门没有了，屋顶裂开一个洞。"
+  },
+  {
+    "word": "ample",
+    "phonetic": "'æmp(ə)l",
+    "meaning": "宽敞的，丰富的",
+    "example": "an ample bosom",
+    "example_cn": "丰满的胸部"
+  },
+  {
+    "word": "contingency",
+    "phonetic": "kən'tɪndʒ(ə)nsɪ",
+    "meaning": "偶然，偶然事件",
+    "example": "a contingency plan",
+    "example_cn": "应变计划"
+  },
+  {
+    "word": "validity",
+    "phonetic": "və'lɪdɪtɪ",
+    "meaning": "有效，正当",
+    "example": "So that satisfies the definition of validity.",
+    "example_cn": "所以这满足了有效性的定义。"
+  },
+  {
+    "word": "monotonous",
+    "phonetic": "mə'nɒt(ə)nəs",
+    "meaning": "单调的，无变化的",
+    "example": "a monotonous diet",
+    "example_cn": "单调的饮食"
+  },
+  {
+    "word": "peel",
+    "phonetic": "piːl",
+    "meaning": "剥皮；皮",
+    "example": "Peel and dice the potatoes.",
+    "example_cn": "把马铃薯去皮并切成丁。"
+  },
+  {
+    "word": "lay",
+    "phonetic": "leɪ",
+    "meaning": "放，放置，安置；下蛋",
+    "example": "He laid his hand on my shoulder.",
+    "example_cn": "他把一只手搭在我的肩上。"
+  },
+  {
+    "word": "leap",
+    "phonetic": "liːp",
+    "meaning": "扑向，欣然接受",
+    "example": "He threw a stick into the river and the dog went after it in a flying leap.",
+    "example_cn": "他把一根枝条扔到河里，那条狗一个飞跃就追了过去。"
+  },
+  {
+    "word": "necessitate",
+    "phonetic": "nɪ'sesɪteɪt",
+    "meaning": "使成为必需",
+    "example": "Lack of money necessitated a change of plan.",
+    "example_cn": "由于缺乏资金，只能改变计划。"
+  },
+  {
+    "word": "conviction",
+    "phonetic": "kən'vɪkʃ(ə)n",
+    "meaning": "定罪；深信",
+    "example": "It was a reasonable explanation, but his voice lacked conviction .",
+    "example_cn": "这解释合情合理，只是他的语气不坚定。"
+  },
+  {
+    "word": "dread",
+    "phonetic": "dred",
+    "meaning": "畏惧；恐惧",
+    "example": "I’ve got an interview tomorrow and I’m dreading it.",
+    "example_cn": "明天我要去面试，我正担心呢。"
+  },
+  {
+    "word": "script",
+    "phonetic": "skrɪpt",
+    "meaning": "手迹，笔迹; 手稿; 剧本",
+    "example": "a diary entry written in neat black script",
+    "example_cn": "用工整的黑色字写下的一则日记"
+  },
+  {
+    "word": "devote",
+    "phonetic": "dɪ'vəʊt",
+    "meaning": "把奉献给",
+    "example": "He decided to devote the rest of his life to scientific investigation.",
+    "example_cn": "他决定把余生奉献给科学研究。"
+  },
+  {
+    "word": "supersonic",
+    "phonetic": "suːpə'sɒnɪk; sjuː-",
+    "meaning": "超声的，超声速的",
+    "example": "supersonic aircraft",
+    "example_cn": "超音速飞机"
+  },
+  {
+    "word": "scale",
+    "phonetic": "skeɪl",
+    "meaning": "鳞；尺度；等级；比例规模；天平",
+    "example": "A structural survey revealed the full scale of the damage.",
+    "example_cn": "结构检验揭示了实际受损程度。"
+  },
+  {
+    "word": "alien",
+    "phonetic": "'eɪlɪən",
+    "meaning": "外侨；外国人的；不相容的",
+    "example": "illegal aliens entering the country.",
+    "example_cn": "非法入境的外国人"
+  },
+  {
+    "word": "axis",
+    "phonetic": "'æksɪs",
+    "meaning": "(plaxes)轴，轴心",
+    "example": "The Earth rotates on an axis between the north and south poles.",
+    "example_cn": "地球绕着南北两极之间的地轴自转。"
+  },
+  {
+    "word": "fluent",
+    "phonetic": "'fluːənt",
+    "meaning": "说话流利的，(演说等)流畅的",
+    "example": "He spoke in fluent Italian.",
+    "example_cn": "他用流利的意大利语讲话。"
+  },
+  {
+    "word": "design",
+    "phonetic": "dɪ'zaɪn",
+    "meaning": "设计，构思；设计制图术",
+    "example": "The new plane is in its final design stage.",
+    "example_cn": "这种新型飞机正处于最后的设计阶段。"
+  },
+  {
+    "word": "mundane",
+    "phonetic": "'mʌndeɪn; mʌn'deɪn",
+    "meaning": "世间的；世俗的",
+    "example": "Initially, the work was pretty mundane.",
+    "example_cn": "刚开始，这工作非常乏味。"
+  },
+  {
+    "word": "withdraw",
+    "phonetic": "wɪð'drɔː",
+    "meaning": "收回，取回；撤回；撤退",
+    "example": "calls for Britain to withdraw from the European Union",
+    "example_cn": "要求英国退出欧盟的呼声"
+  },
+  {
+    "word": "synchronize",
+    "phonetic": "'siŋkrənaiz",
+    "meaning": "使同时发生，使同步发生",
+    "example": "It was virtually impossible to synchronize our lives so as to take vacations and weekends together.",
+    "example_cn": "为了一起度假和过周末而要让我们的生活同步几乎是不可能的。"
+  },
+  {
+    "word": "individual",
+    "phonetic": "ɪndɪ'vɪdjʊ(ə)l",
+    "meaning": "个人的，个别的；个体的",
+    "example": "Each individual leaf on the tree is different.",
+    "example_cn": "树上每片叶子都不相同。"
+  },
+  {
+    "word": "afford",
+    "phonetic": "ə'fɔːd",
+    "meaning": "冒险；得起；供给",
+    "example": "The room affords a beautiful view over the city.",
+    "example_cn": "这房间可以俯瞰城市美景。"
+  },
+  {
+    "word": "light",
+    "phonetic": "laɪt",
+    "meaning": "明亮的；轻的；不重要的",
+    "example": "We’ll keep on looking while it’s still light.",
+    "example_cn": "我们会趁天亮继续寻找。"
+  },
+  {
+    "word": "perceptible",
+    "phonetic": "pə'septɪb(ə)l",
+    "meaning": "察觉得到的，看得出的",
+    "example": "a small but perceptible change",
+    "example_cn": "微小但可以察觉的变化"
+  },
+  {
+    "word": "luxury",
+    "phonetic": "'lʌkʃ(ə)rɪ",
+    "meaning": "奢侈，奢侈品",
+    "example": "He was leading a life of luxury in Australia.",
+    "example_cn": "他在澳大利亚过着豪华舒适的生活。"
+  },
+  {
+    "word": "derive",
+    "phonetic": "dɪ'raɪv",
+    "meaning": "得到，起源于",
+    "example": "Mr. Ying is one of those happy people who derive pleasure from helping others.",
+    "example_cn": "英先生是那种助人为乐的快活人。"
+  },
+  {
+    "word": "executive",
+    "phonetic": "ɪg'zekjʊtɪv; eg-",
+    "meaning": "执行的，行政的",
+    "example": "a commission with executive powers",
+    "example_cn": "有执行权的委员会"
+  },
+  {
+    "word": "soar",
+    "phonetic": "sɔː",
+    "meaning": "鸟高飞，翱翔；[喻]高涨，猛增",
+    "example": "Her temperature soared.",
+    "example_cn": "她的体温骤然升高。"
+  },
+  {
+    "word": "abundance",
+    "phonetic": "ə'bʌnd(ə)ns",
+    "meaning": "丰富",
+    "example": "This area of Mexico has an abundance of safe beaches and a pleasing climate.",
+    "example_cn": "墨西哥的这个地区有大量的安全沙滩与宜人的气候。"
+  },
+  {
+    "word": "susceptible",
+    "phonetic": "sə'septɪb(ə)l",
+    "meaning": "敏感的；易受感动的",
+    "example": "A lot of TV advertising is aimed at susceptible young children.",
+    "example_cn": "很多电视广告瞄准了易受影响的幼儿。"
+  },
+  {
+    "word": "automatic",
+    "phonetic": "ɔːtə'mætɪk",
+    "meaning": "自动的，无意识的",
+    "example": "an automatic weapon",
+    "example_cn": "自动武器"
+  },
+  {
+    "word": "corrupt",
+    "phonetic": "kə'rʌpt",
+    "meaning": "腐败的，贪污的",
+    "example": "Corrupt judges have taken millions of dollars in bribes.",
+    "example_cn": "腐败的法官接受了几百万美元的贿赂。"
+  },
+  {
+    "word": "multilateral",
+    "phonetic": "mʌltɪ'læt(ə)r(ə)l",
+    "meaning": "多边的；多国参加的",
+    "example": "a multilateral arms treaty",
+    "example_cn": "多边军火协定"
+  },
+  {
+    "word": "formulate",
+    "phonetic": "'fɔːmjʊleɪt",
+    "meaning": "精确地表达；制订；用公式表示",
+    "example": "We are studying the situation but have not formulated any response yet.",
+    "example_cn": "我们正在研究形势，但尚未考虑好如何回应。"
+  },
+  {
+    "word": "facet",
+    "phonetic": "'fæsɪt; -et",
+    "meaning": "刻面，(问题的)一个方面",
+    "example": "The issues are complex and multi-faceted.",
+    "example_cn": "这些问题很复杂，涉及诸多方面。"
+  },
+  {
+    "word": "supersede",
+    "phonetic": ",suːpə'siːd; ,sjuː-",
+    "meaning": "代替",
+    "example": "Their map has since been superseded by photographic atlases.",
+    "example_cn": "他们的地图从此被摄影地图册取代。"
+  },
+  {
+    "word": "hostile",
+    "phonetic": "'hɒstaɪl",
+    "meaning": "敌对的，敌方的，不友好的",
+    "example": "Southampton fans gave their former coach a hostile reception .",
+    "example_cn": "南安普敦队的球迷对球队的前任教练很不友善。"
+  },
+  {
+    "word": "solo",
+    "phonetic": "'səʊləʊ",
+    "meaning": "独唱，独奏",
+    "example": "a gorgeous piano solo",
+    "example_cn": "一首极其美妙的钢琴独奏曲"
+  },
+  {
+    "word": "ruthless",
+    "phonetic": "'ruːθlɪs",
+    "meaning": "残忍的，无情的",
+    "example": "a ruthless dictator",
+    "example_cn": "无情的独裁者"
+  },
+  {
+    "word": "click",
+    "phonetic": "klɪk",
+    "meaning": "咔嗒一声",
+    "example": "The door clicked shut behind me.",
+    "example_cn": "门在我身后咔嗒一声关上了。"
+  },
+  {
+    "word": "contest",
+    "phonetic": "'kɒntest",
+    "meaning": "争论，争义，斗争",
+    "example": "His wife is contesting a seat on the council.",
+    "example_cn": "他妻子在角逐市政会的一个席位。"
+  },
+  {
+    "word": "agreeable",
+    "phonetic": "ə'griːəb(ə)l",
+    "meaning": "令人愉快的；乐于同意的",
+    "example": "We spent a most agreeable couple of hours.",
+    "example_cn": "我们非常愉快地度过了几个小时。"
+  },
+  {
+    "word": "tube",
+    "phonetic": "tjuːb",
+    "meaning": "管；(伦敦)地下铁道",
+    "example": "a tube of toothpaste",
+    "example_cn": "一管牙膏"
+  },
+  {
+    "word": "flourish",
+    "phonetic": "'flʌrɪʃ",
+    "meaning": "繁荣，挥舞",
+    "example": "The economy is booming and small businesses are flourishing.",
+    "example_cn": "经济繁荣，小企业蒸蒸日上。"
+  },
+  {
+    "word": "detect",
+    "phonetic": "dɪ'tekt",
+    "meaning": "发现，发觉；侦察",
+    "example": "Many forms of cancer can be cured if detected early.",
+    "example_cn": "如果发现得早，许多种癌症都可以治愈。"
+  },
+  {
+    "word": "tarnish",
+    "phonetic": "'tɑːnɪʃ",
+    "meaning": "(尤指金属表面)失去光泽；玷污",
+    "example": "His regime was tarnished by human rights abuses.",
+    "example_cn": "他的政权因践踏人权而形象受损。"
+  },
+  {
+    "word": "counterfeit",
+    "phonetic": "'kaʊntəfɪt; -fiːt",
+    "meaning": "伪造的",
+    "example": "He admitted possessing and delivering counterfeit currency.",
+    "example_cn": "他承认持有和运送了假币。"
+  },
+  {
+    "word": "chew",
+    "phonetic": "tʃuː",
+    "meaning": "嚼；咀嚼",
+    "example": "This meat’s so tough I can hardly chew it!",
+    "example_cn": "这肉太老了，我几乎嚼不动！"
+  },
+  {
+    "word": "devour",
+    "phonetic": "dɪ'vaʊə",
+    "meaning": "狼吞虎咽地吃；挥霍，耗尽",
+    "example": "The boys devoured their pancakes.",
+    "example_cn": "男孩子们狼吞虎咽地把薄煎饼吃了。"
+  },
+  {
+    "word": "offend",
+    "phonetic": "ə'fend",
+    "meaning": "犯罪；冒犯；攻击",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "item",
+    "phonetic": "'aɪtəm",
+    "meaning": "条款，项目，一条(新闻)",
+    "example": "He opened the cardboard box and took out each item.",
+    "example_cn": "他打开纸板箱把里面的物品一一拿出来。"
+  },
+  {
+    "word": "confidence",
+    "phonetic": "'kɒnfɪd(ə)ns",
+    "meaning": "信任，信心，自信",
+    "example": "I felt I was doing well and my confidence began to grow.",
+    "example_cn": "我觉得自己干得不错，自信心就开始增加了。"
+  },
+  {
+    "word": "cosy",
+    "phonetic": "'kəʊzɪ",
+    "meaning": "温暖而舒适的，安逸的",
+    "example": "The living room was warm and cosy .",
+    "example_cn": "客厅暖和又舒适。"
+  },
+  {
+    "word": "suck",
+    "phonetic": "sʌk",
+    "meaning": "吸，舔",
+    "example": "They waited in silence and sucked their sweets.",
+    "example_cn": "他们静静地等着，吮着糖果。"
+  },
+  {
+    "word": "employment",
+    "phonetic": "ɪm'plɒɪm(ə)nt; em-",
+    "meaning": "职业；雇用；使用",
+    "example": "She was offered employment in the sales office.",
+    "example_cn": "她获聘在销售部工作。"
+  },
+  {
+    "word": "amend",
+    "phonetic": "ə'mend",
+    "meaning": "改进，修正",
+    "example": "The law was amended to include women.",
+    "example_cn": "该法律经修改把女性也包括在内。"
+  },
+  {
+    "word": "update",
+    "phonetic": "ʌp'deɪt",
+    "meaning": "使现代化；使靠最近",
+    "example": "plans to update manufacturing procedures",
+    "example_cn": "更新生产流程的计划"
+  },
+  {
+    "word": "vengeance",
+    "phonetic": "'ven(d)ʒ(ə)ns",
+    "meaning": "报仇",
+    "example": "a desire for vengeance",
+    "example_cn": "复仇的愿望"
+  },
+  {
+    "word": "factor",
+    "phonetic": "'fæktə",
+    "meaning": "因素，要素",
+    "example": "The rise in crime is mainly due to social and economic factors.",
+    "example_cn": "犯罪率上升主要由社会和经济因素造成。"
+  },
+  {
+    "word": "abort",
+    "phonetic": "ə'bɔːt",
+    "meaning": "取消；流产",
+    "example": "The disease causes pregnant animals to abort.",
+    "example_cn": "这种疾病会导致怀孕的动物流产。"
+  },
+  {
+    "word": "scapegoat",
+    "phonetic": "'skeɪpgəʊt",
+    "meaning": "替罪羊",
+    "example": "I don't think I deserve to be made the scapegoat for a couple of bad results.",
+    "example_cn": "我认为我不该为出现的一些不良后果充当替罪羊。"
+  },
+  {
+    "word": "imposing",
+    "phonetic": "ɪm'pəʊzɪŋ",
+    "meaning": "壮观的，气势雄伟的",
+    "example": "an imposing building",
+    "example_cn": "宏伟的建筑"
+  },
+  {
+    "word": "toll",
+    "phonetic": "təʊl",
+    "meaning": "(道路，桥梁)通行费；损失，代价；税收",
+    "example": "You can pay a toll to drive on Pike's Peak Highway or relax and take the Pike's Peak Cog Railway.",
+    "example_cn": "你可以付通行费开车上派克斯峰公路，或者放松一下，乘坐派克斯峰齿轨式火车。"
+  },
+  {
+    "word": "irritate",
+    "phonetic": "'ɪrɪteɪt",
+    "meaning": "激怒；使烦躁，使感到不适",
+    "example": "It really irritates me when he doesn’t help around the house.",
+    "example_cn": "家里的事情他一点都不帮忙，真让我恼火。"
+  },
+  {
+    "word": "assassination",
+    "phonetic": "əˌsæsɪˈneɪʃn",
+    "meaning": "暗杀",
+    "example": "He narrowly escaped an assassination attempt (=  when someone tries but fails to kill someone else  ) .",
+    "example_cn": "他在一次暗杀行动中死里逃生。"
+  },
+  {
+    "word": "subjective",
+    "phonetic": "səb'dʒektɪv",
+    "meaning": "主观的",
+    "example": "As a critic, he is far too subjective.",
+    "example_cn": "作为评论家，他过于主观。"
+  },
+  {
+    "word": "surgery",
+    "phonetic": "'sɜːdʒ(ə)rɪ",
+    "meaning": "外科，外科手术",
+    "example": "Dr. Hanson is in surgery.",
+    "example_cn": "汉森医生在手术室。"
+  },
+  {
+    "word": "yoke",
+    "phonetic": "jəʊk",
+    "meaning": "牛轭；枷锁；纽带",
+    "example": "People are still suffering under the yoke of slavery.",
+    "example_cn": "人们仍然生活在奴隶制的枷锁之下。"
+  },
+  {
+    "word": "multiply",
+    "phonetic": "'mʌltɪplaɪ",
+    "meaning": "[数]乘；增加，增多；繁殖",
+    "example": "The amount of information available has multiplied.",
+    "example_cn": "可获得的信息大大增加了。"
+  },
+  {
+    "word": "overthrow",
+    "phonetic": "əʊvə'θrəʊ",
+    "meaning": "击败，推翻，使毁灭",
+    "example": "Rebels were already making plans to overthrow the government.",
+    "example_cn": "反叛者已在密谋颠覆政府。"
+  },
+  {
+    "word": "soak",
+    "phonetic": "səʊk",
+    "meaning": "浸，使浸透；淋湿",
+    "example": "Soak the clothes in cold water.",
+    "example_cn": "把衣服浸泡在冷水里。"
+  },
+  {
+    "word": "poise",
+    "phonetic": "pɒɪz",
+    "meaning": "平衡，保持平衡",
+    "example": "Louisa seems to have much more poise and confidence.",
+    "example_cn": "路易莎似乎更加沉着自信了。"
+  },
+  {
+    "word": "interim",
+    "phonetic": "'ɪnt(ə)rɪm",
+    "meaning": "临时的，暂时的",
+    "example": "an interim report",
+    "example_cn": "中期报告"
+  },
+  {
+    "word": "prompt",
+    "phonetic": "prɒm(p)t",
+    "meaning": "迅速的",
+    "example": "Prompt action must be taken.",
+    "example_cn": "必须立即采取行动。"
+  },
+  {
+    "word": "applaud",
+    "phonetic": "ə'plɔːd",
+    "meaning": "鼓掌欢迎；赞成",
+    "example": "The audience applauded loudly.",
+    "example_cn": "观众掌声雷动。"
+  },
+  {
+    "word": "adequate",
+    "phonetic": "'ædɪkwət",
+    "meaning": "充分的；可胜任的",
+    "example": "Farmers have been slow to make adequate provision for their retirement.",
+    "example_cn": "农民们迟迟没有为退休做好适当安排。"
+  },
+  {
+    "word": "amplify",
+    "phonetic": "'æmplɪfaɪ",
+    "meaning": "详述；引申；增强",
+    "example": "These stories only amplified her fears.",
+    "example_cn": "这些故事徒增了她的恐惧感。"
+  },
+  {
+    "word": "cling",
+    "phonetic": "klɪŋ",
+    "meaning": "抱紧，坚守",
+    "example": "Instead, he appears determined to cling to power.",
+    "example_cn": "反而，他看来坚决要握紧权力不放。"
+  },
+  {
+    "word": "jail",
+    "phonetic": "dʒeɪl",
+    "meaning": "监狱; 监禁",
+    "example": "He’s been in jail for three months already.",
+    "example_cn": "他已经入狱三个月。"
+  },
+  {
+    "word": "paradox",
+    "phonetic": "'pærədɒks",
+    "meaning": "似是而非的论点；看似悖谬实则正确的观点",
+    "example": "The paradox is that fishermen would catch more fish if they fished less.",
+    "example_cn": "悖论就是: 如果渔夫减少捕鱼，反而会打到更多的鱼。"
+  },
+  {
+    "word": "flock",
+    "phonetic": "flɒk",
+    "meaning": "(鸟兽)群，一群人；群集",
+    "example": "They kept a small flock of sheep.",
+    "example_cn": "他们养了一小群绵羊。"
+  },
+  {
+    "word": "divert",
+    "phonetic": "daɪ'vɜːt; dɪ-",
+    "meaning": "转向",
+    "example": "The high street is closed and traffic is being diverted .",
+    "example_cn": "大街封闭，车辆正改道而行。"
+  },
+  {
+    "word": "filth",
+    "phonetic": "fɪlθ",
+    "meaning": "污秽，淫猥",
+    "example": "I don’t know how you can watch that filth!",
+    "example_cn": "我不知道你怎么会看那种淫秽的东西！"
+  },
+  {
+    "word": "enquire",
+    "phonetic": "ɪn'kwaɪə",
+    "meaning": "询问，打听",
+    "example": "I am writing to confirm /enquire/inform you…",
+    "example_cn": "我写信是要确认/询问/通知你…"
+  },
+  {
+    "word": "haste",
+    "phonetic": "heɪst",
+    "meaning": "急速，仓促",
+    "example": "I soon regretted my haste.",
+    "example_cn": "我很快就对自己的仓促感到后悔。"
+  },
+  {
+    "word": "attractive",
+    "phonetic": "ə'træktɪv",
+    "meaning": "有吸引力的，讨人喜欢的",
+    "example": "an attractive young woman",
+    "example_cn": "妩媚动人的年轻女子"
+  },
+  {
+    "word": "plantation",
+    "phonetic": "plæn'teɪʃ(ə)n; plɑːn-",
+    "meaning": "种植园",
+    "example": "a rubber plantation",
+    "example_cn": "橡胶园"
+  },
+  {
+    "word": "reclaim",
+    "phonetic": "rɪ'kleɪm",
+    "meaning": "开垦，开拓；要求归还",
+    "example": "This land will be reclaimed for a new airport.",
+    "example_cn": "这块土地将被开发用来建新机场。"
+  },
+  {
+    "word": "muddle",
+    "phonetic": "'mʌd(ə)l",
+    "meaning": "使混乱；弄糟",
+    "example": "Someone’s muddled up all the papers on my desk.",
+    "example_cn": "有人把我桌上的文件全都弄乱了。"
+  },
+  {
+    "word": "metallic",
+    "phonetic": "mɪ'tælɪk",
+    "meaning": "金属的",
+    "example": "The key turned in the lock with a loud metallic click.",
+    "example_cn": "钥匙在锁里转动发出金属撞击的咔嗒声。"
+  },
+  {
+    "word": "obvious",
+    "phonetic": "'ɒbvɪəs",
+    "meaning": "明显的，清楚的",
+    "example": "The obvious way of reducing pollution is to use cars less.",
+    "example_cn": "减少污染显而易见的办法就是少用汽车。"
+  },
+  {
+    "word": "sentiment",
+    "phonetic": "'sentɪm(ə)nt",
+    "meaning": "思想感情；情操；情绪",
+    "example": "Public sentiment rapidly turned anti-American.",
+    "example_cn": "公众的情绪迅速转向反美。"
+  },
+  {
+    "word": "harass",
+    "phonetic": "'hærəs; hə'ræs",
+    "meaning": "使烦恼, 折磨，骚扰\"",
+    "example": "A number of black youths have complained of being harassed by the police.",
+    "example_cn": "一些黑人青年投诉称受到警察骚扰。"
+  },
+  {
+    "word": "constrain",
+    "phonetic": "kən'streɪn",
+    "meaning": "强迫；限制；克制",
+    "example": "Poor soil has constrained the level of crop production.",
+    "example_cn": "贫瘠的土地限制了农作物的产量。"
+  },
+  {
+    "word": "wretched",
+    "phonetic": "'retʃɪd",
+    "meaning": "不幸的，可怜的；令人难受的",
+    "example": "the poor, wretched girl",
+    "example_cn": "极其不幸的可怜姑娘"
+  },
+  {
+    "word": "resent",
+    "phonetic": "rɪ'zent",
+    "meaning": "怨恨",
+    "example": "Paul resented the fact that Carol didn’t trust him.",
+    "example_cn": "保罗非常气愤，因为卡萝尔不信任他。"
+  },
+  {
+    "word": "offence",
+    "phonetic": "ə'fens",
+    "meaning": "犯罪，犯规；冒犯",
+    "example": "His solicitor said he committed the offence because he was heavily in debt.",
+    "example_cn": "他的律师说他犯罪是因为欠下巨债。"
+  },
+  {
+    "word": "go",
+    "phonetic": "gəʊ",
+    "meaning": "without",
+    "example": "The governor went further by agreeing that all policy announcements should be made first in the House.",
+    "example_cn": "该州长进一步同意所有政策的宣布都应首先在议院进行。"
+  },
+  {
+    "word": "precise",
+    "phonetic": "prɪ'saɪs",
+    "meaning": "精确的",
+    "example": "precise sales figures",
+    "example_cn": "准确的销售数据"
+  },
+  {
+    "word": "overlap",
+    "phonetic": "əʊvə'læp",
+    "meaning": "与…互搭，与重叠，与部分相同",
+    "example": "When the bag is folded, the bottom overlaps one side.",
+    "example_cn": "把包折叠起来时，其底部与一边就重合了。"
+  },
+  {
+    "word": "episode",
+    "phonetic": "'epɪsəʊd",
+    "meaning": "一系列事件中的一个事件",
+    "example": "Watch next week’s thrilling episode!",
+    "example_cn": "请收看下周精彩的一集！"
+  },
+  {
+    "word": "malice",
+    "phonetic": "'mælɪs",
+    "meaning": "恶意，怨恨",
+    "example": "James bore her no malice (= did not feel any malice towards her ) .",
+    "example_cn": "詹姆斯对她并无恶意。"
+  },
+  {
+    "word": "palatable",
+    "phonetic": "'pælətəb(ə)l",
+    "meaning": "可口的，美味的；惬意的",
+    "example": "a very palatable wine",
+    "example_cn": "口感极佳的酒"
+  },
+  {
+    "word": "carve",
+    "phonetic": "kɑːv",
+    "meaning": "雕刻；切(熟肉等)",
+    "example": "carved wooden chairs",
+    "example_cn": "木雕椅子"
+  },
+  {
+    "word": "mentality",
+    "phonetic": "men'tælɪtɪ",
+    "meaning": "智力，心理状态",
+    "example": "a get-rich-quick mentality",
+    "example_cn": "一夜暴富的心态"
+  },
+  {
+    "word": "proposition",
+    "phonetic": "prɒpə'zɪʃ(ə)n",
+    "meaning": "陈述，主张；报价",
+    "example": "The proposition that democracies do not fight each other is based on a tiny historical sample.",
+    "example_cn": "民主国家间互不交战的观点是基于一个微不足道的历史实例。"
+  },
+  {
+    "word": "steep",
+    "phonetic": "stiːp",
+    "meaning": "陡峭的",
+    "example": "The road became rocky and steep.",
+    "example_cn": "路变得崎岖陡峭起来。"
+  },
+  {
+    "word": "hitchhike",
+    "phonetic": "'hɪtʃhaɪk",
+    "meaning": "免费搭乘他人便车",
+    "example": "Neff hitchhiked to New York during his Christmas holiday.",
+    "example_cn": "内夫在圣诞节休假期间搭免费便车去了纽约。"
+  },
+  {
+    "word": "tumour",
+    "phonetic": "'tju:mə",
+    "meaning": "肿瘤",
+    "example": "a brain tumour",
+    "example_cn": "脑瘤"
+  },
+  {
+    "word": "alliance",
+    "phonetic": "ə'laɪəns",
+    "meaning": "联盟，同盟",
+    "example": "independent organizations and alliances",
+    "example_cn": "独立组织和联盟"
+  },
+  {
+    "word": "chic",
+    "phonetic": "ʃiːk",
+    "meaning": "漂亮(的)，时式(的)",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "denomination",
+    "phonetic": "dɪ,nɒmɪ'neɪʃ(ə)n",
+    "meaning": "命名 取名 单位",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "frown",
+    "phonetic": "fraʊn",
+    "meaning": "皱眉，不赞成",
+    "example": "She frowned as she read the letter.",
+    "example_cn": "她看着信皱起了眉头。"
+  },
+  {
+    "word": "coerce",
+    "phonetic": "kəʊ'ɜːs",
+    "meaning": "强迫，迫使",
+    "example": "Potter had argued that the government coerced him into pleading guilty.",
+    "example_cn": "波特曾争辩说是政府胁迫他认罪。"
+  },
+  {
+    "word": "cumbersome",
+    "phonetic": "'kʌmbəs(ə)m",
+    "meaning": "笨重的，不便携带的",
+    "example": "a large cumbersome machine",
+    "example_cn": "大而笨重的机器"
+  },
+  {
+    "word": "credit",
+    "phonetic": "'kredɪt",
+    "meaning": "信任，信誉；存款；信用贷款",
+    "example": "The store agreed to let him have credit.",
+    "example_cn": "商店同意他赊购。"
+  },
+  {
+    "word": "rhythm",
+    "phonetic": "'rɪð(ə)m",
+    "meaning": "韵律，格律；有规律的反复(循环)，周期性",
+    "example": "Begin to listen to your own body rhythms.",
+    "example_cn": "开始聆听你自己身体的规律性变化。"
+  },
+  {
+    "word": "crash",
+    "phonetic": "kræʃ",
+    "meaning": "碰撞，坠毁，冲过",
+    "example": "The jet crashed after take-off.",
+    "example_cn": "这架喷气式飞机起飞后就坠毁了。"
+  },
+  {
+    "word": "toneless",
+    "phonetic": "'təʊnlɪs",
+    "meaning": "单调的，沉闷的",
+    "example": "‘I’m sorry,’ he said, in a flat toneless voice.",
+    "example_cn": "“对不起。”他以淡淡的声调说道。"
+  },
+  {
+    "word": "vomit",
+    "phonetic": "'vɒmɪt",
+    "meaning": "呕吐；大量喷出",
+    "example": "He had swallowed so much sea water he wanted to vomit.",
+    "example_cn": "他呛了这么多海水，所以想吐。"
+  },
+  {
+    "word": "electrician",
+    "phonetic": ",ɪlek'trɪʃ(ə)n; ,el-; ,iːl-",
+    "meaning": "电工，电学家",
+    "example": "I've heard an electrician got hurt when he hiked.",
+    "example_cn": "我听说有个电工在高空检修电线时摔伤了。"
+  },
+  {
+    "word": "articulate",
+    "phonetic": "ɑ:'tɪkjʊleɪt",
+    "meaning": "发音清晰的；说话表达力强",
+    "example": "Many people are unable to articulate the unhappiness they feel.",
+    "example_cn": "许多人都表达不出内心的痛苦。"
+  },
+  {
+    "word": "porch",
+    "phonetic": "pɔːtʃ",
+    "meaning": "门廊，走廊",
+    "example": "He was standing on the porch, waving as we drove away.",
+    "example_cn": "我们开车离开的时候，他站在走廊上向我们挥手。"
+  },
+  {
+    "word": "fortnight",
+    "phonetic": "'fɔːtnaɪt",
+    "meaning": "两星期",
+    "example": "a fortnight’s holiday",
+    "example_cn": "十四天的假期"
+  },
+  {
+    "word": "arouse",
+    "phonetic": "ə'raʊz",
+    "meaning": "唤醒；唤起",
+    "example": "His revolutionary work in linguistics has aroused intense scholarly interest.",
+    "example_cn": "他在语言学方面的革命性著作引起了强烈的学术兴趣。"
+  },
+  {
+    "word": "champion",
+    "phonetic": "'tʃæmpɪən",
+    "meaning": "战士；拥护者；冠军",
+    "example": "the world heavyweight boxing champion",
+    "example_cn": "世界重量级拳击冠军"
+  },
+  {
+    "word": "hazard",
+    "phonetic": "'hæzəd",
+    "meaning": "危险，危害，冒险；做出",
+    "example": "That pile of rubbish is a fire hazard (= something that is likely to cause a fire ).",
+    "example_cn": "那堆垃圾是火灾隐患。"
+  },
+  {
+    "word": "clause",
+    "phonetic": "klɔːz",
+    "meaning": "条款，从句",
+    "example": "A confidentiality clause was added to the contract.",
+    "example_cn": "合同中加上了一项保密条款。"
+  },
+  {
+    "word": "enthusiastic",
+    "phonetic": "ɪn,θjuːzɪ'æstɪk; en-",
+    "meaning": "热情的，热心的",
+    "example": "an enthusiastic supporter of reform",
+    "example_cn": "改革的热心支持者"
+  },
+  {
+    "word": "original",
+    "phonetic": "ə'rɪdʒɪn(ə)l; ɒ-",
+    "meaning": "起源；原件，原稿",
+    "example": "The colours are much more striking in the original.",
+    "example_cn": "原作的色彩要鲜艳得多。"
+  },
+  {
+    "word": "output",
+    "phonetic": "'aʊtpʊt",
+    "meaning": "产量；产出",
+    "example": "Output is up 30% on last year.",
+    "example_cn": "产量比去年提高了30%。"
+  },
+  {
+    "word": "plausible",
+    "phonetic": "'plɔːzɪb(ə)l",
+    "meaning": "似乎有道理的",
+    "example": "His story certainly sounds plausible.",
+    "example_cn": "他的叙述听上去当然很合理。"
+  },
+  {
+    "word": "nausea",
+    "phonetic": "ˈnɔ:ziə",
+    "meaning": "恶心，晕船",
+    "example": "I was overcome with a feeling of nausea.",
+    "example_cn": "我感到一阵恶心。"
+  },
+  {
+    "word": "discount",
+    "phonetic": "'dɪskaʊnt",
+    "meaning": "折扣",
+    "example": "They are often available at a discount.",
+    "example_cn": "它们经常可以以折扣价买到。"
+  },
+  {
+    "word": "thunder",
+    "phonetic": "'θʌndə",
+    "meaning": "雷，雷声；轰隆声",
+    "example": "We were woken in the night by thunder.",
+    "example_cn": "晚上我们被雷声惊醒。"
+  },
+  {
+    "word": "outcome",
+    "phonetic": "'aʊtkʌm",
+    "meaning": "结果，后果",
+    "example": "People who had heard the evidence at the trial were surprised at the outcome.",
+    "example_cn": "在审判过程中听过证词的人都对此结果感到吃惊。"
+  },
+  {
+    "word": "dial",
+    "phonetic": "'daɪəl",
+    "meaning": "表面，钟面；拨号盘",
+    "example": "The lighted dial of her watch said 1.20.",
+    "example_cn": "她手表上的夜光表面显示时间为1点20分。"
+  },
+  {
+    "word": "confidential",
+    "phonetic": "kɒnfɪ'denʃ(ə)l",
+    "meaning": "机密的；信任的",
+    "example": "a confidential government report",
+    "example_cn": "一份机密的政府报告"
+  },
+  {
+    "word": "hinge",
+    "phonetic": "hɪn(d)ʒ",
+    "meaning": "合页，铰链，关键",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "adore",
+    "phonetic": "ə'dɔː",
+    "meaning": "崇拜；非常喜爱",
+    "example": "I simply adore chocolate.",
+    "example_cn": "我简直太喜欢巧克力了。"
+  },
+  {
+    "word": "finite",
+    "phonetic": "'faɪnaɪt",
+    "meaning": "有限的，限定的",
+    "example": "the earth’s finite resources",
+    "example_cn": "地球有限的资源"
+  },
+  {
+    "word": "masculine",
+    "phonetic": "'mæskjʊlɪn",
+    "meaning": "男性的，阳性的",
+    "example": "They’re nice curtains, but I’d prefer something a little more masculine.",
+    "example_cn": "这些窗帘很好，但我更喜欢男性化一点的。"
+  },
+  {
+    "word": "mutter",
+    "phonetic": "'mʌtə",
+    "meaning": "轻声低语；怨言",
+    "example": "\"God knows,\" she muttered, \"what's happening in that madman's mind.\"",
+    "example_cn": "“天知道，”她低声抱怨，“那个疯子脑子里正在想什么。”"
+  },
+  {
+    "word": "competition",
+    "phonetic": "kɒmpɪ'tɪʃ(ə)n",
+    "meaning": "比赛，比赛会",
+    "example": "Going to trade fairs is an ideal opportunity to size up the competition .",
+    "example_cn": "参加商品交易会是估量竞争规模的理想机会。"
+  },
+  {
+    "word": "recipient",
+    "phonetic": "rɪ'sɪpɪənt",
+    "meaning": "接受者",
+    "example": "...the largest recipient of U.S. foreign aid.",
+    "example_cn": "…最大的美国对外援助接受方。"
+  },
+  {
+    "word": "embargo",
+    "phonetic": "em'bɑːgəʊ; ɪm-",
+    "meaning": "禁止贸易",
+    "example": "Several countries embargoed arms shipments to Yugoslavia.",
+    "example_cn": "好几个国家对南斯拉夫实行武器禁运。"
+  },
+  {
+    "word": "digital",
+    "phonetic": "'dɪdʒɪt(ə)l",
+    "meaning": "数字的，计数的",
+    "example": "digital TV",
+    "example_cn": "数字电视"
+  },
+  {
+    "word": "scholarship",
+    "phonetic": "'skɒləʃɪp",
+    "meaning": "学问；奖学金",
+    "example": "Her latest publication is a fine piece of scholarship.",
+    "example_cn": "她最新出版的作品是一部优秀的学术著作。"
+  },
+  {
+    "word": "impose",
+    "phonetic": "ɪm'pəʊz",
+    "meaning": "把…强加于；征(税)，利用",
+    "example": "Parents should beware of imposing their own tastes on their children.",
+    "example_cn": "父母应该提防把自己的兴趣强加给孩子。"
+  },
+  {
+    "word": "complex",
+    "phonetic": "'kɒmpleks",
+    "meaning": "复杂的",
+    "example": "a complex system of highways",
+    "example_cn": "复杂的公路网"
+  },
+  {
+    "word": "consent",
+    "phonetic": "kən'sent",
+    "meaning": "同意，允许",
+    "example": "He took the car without the owner’s consent .",
+    "example_cn": "他没有得到车主的许可就把车开走了。"
+  },
+  {
+    "word": "hubbub",
+    "phonetic": "'hʌbʌb",
+    "meaning": "吵闹，喧哗",
+    "example": "the hubbub from the market",
+    "example_cn": "市场的嘈杂声"
+  },
+  {
+    "word": "shaft",
+    "phonetic": "ʃɑːft",
+    "meaning": "矛；矿井；车辕；轴；光线",
+    "example": "a drive shaft",
+    "example_cn": "驱动轴"
+  },
+  {
+    "word": "caption",
+    "phonetic": "'kæpʃ(ə)n",
+    "meaning": "报纸文章的标题；照片说明",
+    "example": "The local paper featured me standing on a stepladder with a caption, \"Wendy climbs the ladder to success.\"",
+    "example_cn": "当地的报纸刊登了一幅我站在活梯上的特写，下面写着：“温迪登上了成功之梯。”"
+  },
+  {
+    "word": "harbour",
+    "phonetic": "ˈhɑ:bə(r)",
+    "meaning": "港，港口，安全处，避难所",
+    "example": "as they sailed into Portsmouth Harbour",
+    "example_cn": "当他们驶入朴次茅斯港的时候"
+  },
+  {
+    "word": "tumble",
+    "phonetic": "'tʌmb(ə)l",
+    "meaning": "跌倒，跌落；摇摇欲坠；使倾覆",
+    "example": "Oil prices have tumbled.",
+    "example_cn": "石油价格猛跌。"
+  },
+  {
+    "word": "sink",
+    "phonetic": "sɪŋk",
+    "meaning": "洗涤漕",
+    "example": "Dirty plates were piled high in the sink.",
+    "example_cn": "脏盘子在洗涤槽里堆得很高。"
+  },
+  {
+    "word": "patron",
+    "phonetic": "'peɪtr(ə)n",
+    "meaning": "赞助人；资助人；老顾客，主顾",
+    "example": "a wealthy patron",
+    "example_cn": "富有的赞助人"
+  },
+  {
+    "word": "flu",
+    "phonetic": "fluː",
+    "meaning": "流感",
+    "example": "Steven’s still in bed with flu .",
+    "example_cn": "史蒂文患了流感，仍卧病在床。"
+  },
+  {
+    "word": "column",
+    "phonetic": "'kɒləm",
+    "meaning": "柱; 柱状物；书报上的栏；纵列",
+    "example": "He writes a weekly column for ‘The Times’.",
+    "example_cn": "他每周为《泰晤士报》写一篇专栏文章。"
+  },
+  {
+    "word": "overrun",
+    "phonetic": "əʊvə'rʌn",
+    "meaning": "否决，驳回",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "etiquette",
+    "phonetic": "'etɪket; etɪ'ket",
+    "meaning": "礼仪, 礼节 \"",
+    "example": "strict rules of professional etiquette",
+    "example_cn": "严格的行规"
+  },
+  {
+    "word": "deduct",
+    "phonetic": "dɪ'dʌkt",
+    "meaning": "扣除，减去",
+    "example": "The company deducted this payment from his compensation.",
+    "example_cn": "公司从他的补偿金中扣除了这笔款项。"
+  },
+  {
+    "word": "dense",
+    "phonetic": "dens",
+    "meaning": "浓密的，密集的；愚笨的",
+    "example": "a dense rurally-based population",
+    "example_cn": "居住在乡村的密集人口"
+  },
+  {
+    "word": "tinge",
+    "phonetic": "tɪn(d)ʒ",
+    "meaning": "(较淡)着色于，染色；使带有气息",
+    "example": "Pink tinged her cheeks.",
+    "example_cn": "她面色粉红。"
+  },
+  {
+    "word": "congruent",
+    "phonetic": "'kɒŋgrʊənt",
+    "meaning": "适合的，一致的，全等的",
+    "example": "They want to work in an organization whose values are congruent with their own.",
+    "example_cn": "他们想在一家与他们自己的价值观相同的组织里工作。"
+  },
+  {
+    "word": "crouch",
+    "phonetic": "kraʊtʃ",
+    "meaning": "蹲伏",
+    "example": "He crouched in the shadows near the doorway.",
+    "example_cn": "他蹲在门道近旁的阴暗处。"
+  },
+  {
+    "word": "conserve",
+    "phonetic": "kən'sɜːv",
+    "meaning": "保存，保藏",
+    "example": "We must conserve our woodlands for future generations.",
+    "example_cn": "我们必须为子孙后代保护林地。"
+  },
+  {
+    "word": "fahrenheit",
+    "phonetic": "'færən'haɪt",
+    "meaning": "华氏温度计",
+    "example": "He was asked for the boiling point of water in Fahrenheit.",
+    "example_cn": "有人问他华氏温标下水的沸点。"
+  },
+  {
+    "word": "corporation",
+    "phonetic": "kɔːpə'reɪʃ(ə)n",
+    "meaning": "市镇自治机关；法人；公司",
+    "example": "He works for a large American corporation.",
+    "example_cn": "他在一家美国大公司工作。"
+  },
+  {
+    "word": "quench",
+    "phonetic": "kwen(t)ʃ",
+    "meaning": "熄灭，扑灭",
+    "example": "a desperate bid to quench the raging flames",
+    "example_cn": "为扑灭熊熊大火而不顾一切的努力"
+  },
+  {
+    "word": "alarm",
+    "phonetic": "ə'lɑːm",
+    "meaning": "警报，惊慌",
+    "example": "I forgot to set the burglar alarm.",
+    "example_cn": "我忘记打开防盗警报器了。"
+  },
+  {
+    "word": "nasty",
+    "phonetic": "'nɑːstɪ",
+    "meaning": "令人作呕的，令人不快的，下流的",
+    "example": "I went to school with him e_SEnD he was nasty then and he’s nasty now.",
+    "example_cn": "我和他一起上过学他那时很讨厌，现在还是很讨厌。"
+  },
+  {
+    "word": "shovel",
+    "phonetic": "'ʃʌv(ə)l",
+    "meaning": "铁锨，铲",
+    "example": "...a coal shovel.",
+    "example_cn": "…一把煤铲。"
+  },
+  {
+    "word": "suspicious",
+    "phonetic": "sə'spɪʃəs",
+    "meaning": "可疑的，疑心的",
+    "example": "His reluctance to answer my questions made me suspicious .",
+    "example_cn": "他不愿回答我的问题，这引起我的怀疑。"
+  },
+  {
+    "word": "trunk",
+    "phonetic": "trʌŋk",
+    "meaning": "树干；人躯干；大衣箱",
+    "example": "He left his bicycle leaning against a tree trunk .",
+    "example_cn": "他把他的自行车斜靠在树干上。"
+  },
+  {
+    "word": "ovation",
+    "phonetic": "ə(ʊ)'veɪʃ(ə)n",
+    "meaning": "热烈欢迎，欢呼",
+    "example": "The Chancellor’s entrance was greeted with a standing ovation (= everyone stood up ).",
+    "example_cn": "总理进来时，全体起立鼓掌欢迎。"
+  },
+  {
+    "word": "saddle",
+    "phonetic": "'sæd(ə)l",
+    "meaning": "马鞍，鞍座；鞍状山脊",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "tragedy",
+    "phonetic": "'trædʒɪdɪ",
+    "meaning": "悲剧；惨事",
+    "example": "The tragedy happened as they were returning home from a night out.",
+    "example_cn": "悲剧发生在他们夜里外出归来的路上。"
+  },
+  {
+    "word": "meteorology",
+    "phonetic": ",miːtɪə'rɒlədʒɪ",
+    "meaning": "气象学",
+    "example": "This is a book about meteorology.",
+    "example_cn": "这本书是讲气象的。"
+  },
+  {
+    "word": "saturate",
+    "phonetic": "'sætʃəreɪt",
+    "meaning": "浸透，浸湿；使满，使饱和",
+    "example": "Water poured through the hole, saturating the carpet.",
+    "example_cn": "水从洞里流进来，浸湿了地毯。"
+  },
+  {
+    "word": "elbow",
+    "phonetic": "'elbəʊ",
+    "meaning": "肘；衣服肘部",
+    "example": "He slipped and fell, badly bruising an elbow.",
+    "example_cn": "他滑倒了，严重挫伤了一只胳膊肘。"
+  },
+  {
+    "word": "formidable",
+    "phonetic": "'fɔːmɪdəb(ə)l; fɔː'mɪd-",
+    "meaning": "可怕的，难以对付的",
+    "example": "The building is grey, formidable, not at all picturesque.",
+    "example_cn": "那幢建筑呈灰色，气势凛然，与漂亮沾不上边。"
+  },
+  {
+    "word": "structural",
+    "phonetic": "'strʌktʃ(ə)r(ə)l",
+    "meaning": "结构的，构造的",
+    "example": "structural changes in the computer industry",
+    "example_cn": "电脑行业的结构性改变"
+  },
+  {
+    "word": "kindle",
+    "phonetic": "'kɪnd(ə)l",
+    "meaning": "点燃，引起，激发",
+    "example": "The Second World War kindled his enthusiasm for politics.",
+    "example_cn": "第二次世界大战激发了他的政治热情。"
+  },
+  {
+    "word": "decline",
+    "phonetic": "dɪ'klaɪn",
+    "meaning": "下降，衰退，减弱；拒绝",
+    "example": "The number of staff has declined from 217,000 to 114,000.",
+    "example_cn": "员工人数已从217000人减少到114000人。"
+  },
+  {
+    "word": "enroll",
+    "phonetic": "ɪn'rəʊl",
+    "meaning": "招收，入伍，入学",
+    "example": "The school will enroll new students in August.",
+    "example_cn": "这所学校将于八月份招收新生."
+  },
+  {
+    "word": "slope",
+    "phonetic": "sləʊp",
+    "meaning": "斜线，斜度；倾斜面，斜坡",
+    "example": "a steep slope",
+    "example_cn": "陡坡"
+  },
+  {
+    "word": "distend",
+    "phonetic": "dɪ'stend",
+    "meaning": "(使)扩张；膨胀",
+    "example": "Through this incision, the abdominal cavity is distended with carbon dioxide gas.",
+    "example_cn": "通过此切口，二氧化碳气体把胸腔充得肿胀起来。"
+  },
+  {
+    "word": "exert",
+    "phonetic": "ɪg'zɜːt; eg-",
+    "meaning": "发挥，行使，尽力",
+    "example": "He has exerted himself tirelessly on behalf of the charity.",
+    "example_cn": "他为这个慈善组织奋斗不懈。"
+  },
+  {
+    "word": "appreciable",
+    "phonetic": "ə'priːʃəb(ə)l; -ʃɪə-",
+    "meaning": "可见的；明显的",
+    "example": "There’s no appreciable change in the patient’s condition.",
+    "example_cn": "病人的状况没有明显改变。"
+  },
+  {
+    "word": "aggregate",
+    "phonetic": "'ægrɪgət; (for v.) ˈægrɪgeɪt",
+    "meaning": "共计，合计",
+    "example": "(=  as a group or in total  ) , women outlive men by 7 or more years.",
+    "example_cn": "总体来看，女性比男性多活七年或以上。"
+  },
+  {
+    "word": "thirst",
+    "phonetic": "θɜːst",
+    "meaning": "渴；渴望",
+    "example": "Ice water is the only thing that really quenches my thirst (= gets rid of it ) .",
+    "example_cn": "只有冰水才能让我真正解渴。"
+  },
+  {
+    "word": "hurricane",
+    "phonetic": "'hʌrɪk(ə)n; -keɪn",
+    "meaning": "飓风",
+    "example": "The hurricane devastated a large section of the coast.",
+    "example_cn": "飓风毁坏了沿海地区的大部分。"
+  },
+  {
+    "word": "miracle",
+    "phonetic": "'mɪrək(ə)l",
+    "meaning": "奇迹",
+    "example": "It’s a miracle you weren’t killed!",
+    "example_cn": "你没有死真是奇迹！"
+  },
+  {
+    "word": "nightmare",
+    "phonetic": "'naɪtmeə",
+    "meaning": "恶梦；可怕的经历",
+    "example": "All the victims still suffered nightmares.",
+    "example_cn": "所有的受害者仍为恶梦所扰。"
+  },
+  {
+    "word": "opposite",
+    "phonetic": "'ɒpəzɪt; -sɪt",
+    "meaning": "对面的；相反的，对立的",
+    "example": "I thought the medicine would make him sleep, but it had the opposite effect.",
+    "example_cn": "我以为这药会让他睡觉，但是它却起了反作用。"
+  },
+  {
+    "word": "dedicated",
+    "phonetic": "'dedɪkeɪtɪd",
+    "meaning": "献身的，一心一意的，热诚的",
+    "example": "a dedicated and thoughtful teacher",
+    "example_cn": "一位富有敬业精神、待人体贴的教师"
+  },
+  {
+    "word": "tender",
+    "phonetic": "'tendə",
+    "meaning": "脆弱的，娇嫩的；温柔的",
+    "example": "Continue cooking until the meat is tender.",
+    "example_cn": "把肉一直烧到松软为止。"
+  },
+  {
+    "word": "pervert",
+    "phonetic": "pə'vɜːt",
+    "meaning": "误用，使人堕落",
+    "example": "TV violence perverts the minds of young children.",
+    "example_cn": "电视暴力腐蚀了孩子们的心灵。"
+  },
+  {
+    "word": "idiot",
+    "phonetic": "'ɪdɪət",
+    "meaning": "白痴",
+    "example": "Are you an idiot?",
+    "example_cn": "你是一个白痴吗？"
+  },
+  {
+    "word": "forge",
+    "phonetic": "fɔːdʒ",
+    "meaning": "锻工车间，铁匠店",
+    "example": "Someone stole my credit card and forged my signature.",
+    "example_cn": "有人偷了我的信用卡，并假冒我的签名。"
+  },
+  {
+    "word": "conscious",
+    "phonetic": "'kɒnʃəs",
+    "meaning": "清醒的；故意的",
+    "example": "The driver was still conscious when the ambulance arrived.",
+    "example_cn": "救护车赶到时，司机仍然神志清醒。"
+  },
+  {
+    "word": "concise",
+    "phonetic": "kən'saɪs",
+    "meaning": "简明的，简要的",
+    "example": "Your summary should be as clear and concise as possible.",
+    "example_cn": "你的总结应该尽可能地明白简洁。"
+  },
+  {
+    "word": "cartoon",
+    "phonetic": "kɑː'tuːn",
+    "meaning": "漫画，动画片",
+    "example": "cartoon characters such as Donald Duck",
+    "example_cn": "唐老鸭一类的卡通人物"
+  },
+  {
+    "word": "overtake",
+    "phonetic": "əʊvə'teɪk",
+    "meaning": "超过，赶上；突然降临",
+    "example": "He pulled out to overtake the van.",
+    "example_cn": "他把车驶出所在车道想超过那辆小货车。"
+  },
+  {
+    "word": "layout",
+    "phonetic": "'leɪaʊt",
+    "meaning": "布置，设计",
+    "example": "All the flats in the building had the same layout.",
+    "example_cn": "大楼里所有的公寓布局都是一样的。"
+  },
+  {
+    "word": "outdated",
+    "phonetic": "aʊt'deɪtɪd",
+    "meaning": "过时的，不流行的",
+    "example": "outdated teaching methods",
+    "example_cn": "不合时宜的教学方法"
+  },
+  {
+    "word": "sigh",
+    "phonetic": "saɪ",
+    "meaning": "叹气",
+    "example": "‘Well, there’s nothing we can do about it now,’ she sighed.",
+    "example_cn": "“唉，我们现在对此无能为力。”她叹口气说。"
+  },
+  {
+    "word": "consequent",
+    "phonetic": "'kɒnsɪkw(ə)nt",
+    "meaning": "随之发生的",
+    "example": "the rise in inflation and consequent fall in demand",
+    "example_cn": "通货膨胀的加剧和随之而来的需求下降"
+  },
+  {
+    "word": "chop",
+    "phonetic": "tʃɒp",
+    "meaning": "砍，劈；剁",
+    "example": "He went outside to chop some more wood for the fire.",
+    "example_cn": "他出去再砍些木材来生火。"
+  },
+  {
+    "word": "exposition",
+    "phonetic": "ekspə'zɪʃ(ə)n",
+    "meaning": "阐述，讲解；展览会",
+    "example": "Aristotle was valued because of his clear exposition of rational thought.",
+    "example_cn": "亚里士多德因其对理性思维的清晰阐述而被重视。"
+  },
+  {
+    "word": "outlet",
+    "phonetic": "'aʊtlet",
+    "meaning": "河流等出口，出路；发泄(感情等)的方法",
+    "example": "Her father had found an outlet for his ambition in his work.",
+    "example_cn": "她父亲在工作中找到了施展抱负的途径。"
+  },
+  {
+    "word": "wardrobe",
+    "phonetic": "'wɔːdrəʊb",
+    "meaning": "衣柜，衣橱，全部服装；剧服，行头",
+    "example": "Can you hang these in the wardrobe, please?",
+    "example_cn": "请你把这些衣服挂到衣橱里去好吗？"
+  },
+  {
+    "word": "molecule",
+    "phonetic": "'mɒlɪkjuːl",
+    "meaning": "分子",
+    "example": "The molecules of oxygen gas contain just two atoms.",
+    "example_cn": "氧分子中只有两个原子。"
+  },
+  {
+    "word": "tablet",
+    "phonetic": "'tæblɪt",
+    "meaning": "碑，书板；药片",
+    "example": "She took a couple of headache tablets .",
+    "example_cn": "她吃了几片头痛药。"
+  },
+  {
+    "word": "observatory",
+    "phonetic": "əb'zɜːvət(ə)rɪ",
+    "meaning": "天文台，气象台，了望台",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "distinct",
+    "phonetic": "dɪ'stɪŋ(k)t",
+    "meaning": "不同的，清楚的，独特的",
+    "example": "two entirely distinct languages",
+    "example_cn": "两种完全不同的语言"
+  },
+  {
+    "word": "telex",
+    "phonetic": "'teleks",
+    "meaning": "用户电报；直通专用电传",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "monarchy",
+    "phonetic": "'mɒnəkɪ",
+    "meaning": "君主，最高统治者；君主政体，君主国",
+    "example": "the abolition of the monarchy",
+    "example_cn": "君主制的废除"
+  },
+  {
+    "word": "negative",
+    "phonetic": "'negətɪv",
+    "meaning": "否定的；消极的；负的；阴性的；底片的",
+    "example": "students with a negative attitude to school",
+    "example_cn": "对上学抱消极态度的学生"
+  },
+  {
+    "word": "graze",
+    "phonetic": "greɪz",
+    "meaning": "(牲畜)吃草；放牧；擦过(牲畜)n擦伤",
+    "example": "I fell on the gravel, severely grazing my knee.",
+    "example_cn": "我摔倒在砾石路上，膝盖擦伤得很严重。"
+  },
+  {
+    "word": "starve",
+    "phonetic": "stɑːv",
+    "meaning": "挨饿",
+    "example": "Thousands of people will starve if food doesn’t reach the city.",
+    "example_cn": "如果食品不能运到那座城市，成千上万的人就要饿死。"
+  },
+  {
+    "word": "tide",
+    "phonetic": "taɪd",
+    "meaning": "潮汐，(舆论，公众情绪)潮流趋势",
+    "example": "Is the tide going out or coming in ?",
+    "example_cn": "现在是退潮还是涨潮？"
+  },
+  {
+    "word": "parasite",
+    "phonetic": "'pærəsaɪt",
+    "meaning": "寄生虫，寄生植物；靠他人为生的人",
+    "example": "Kangaroos harbour a vast range of parasites.",
+    "example_cn": "袋鼠身上有各种各样的寄生虫。"
+  },
+  {
+    "word": "layer",
+    "phonetic": "'leɪə",
+    "meaning": "层",
+    "example": "He pulled off layer upon layer of clothing (= many layers of clothing ).",
+    "example_cn": "他把衣服一件件地脱掉。"
+  },
+  {
+    "word": "strengthen",
+    "phonetic": "'streŋθ(ə)n; -ŋkθ(ə)n",
+    "meaning": "加强；巩固",
+    "example": "Our friendship has steadily strengthened over the years.",
+    "example_cn": "我们的友谊逐年加深。"
+  },
+  {
+    "word": "vogue",
+    "phonetic": "vəʊg",
+    "meaning": "流行物，时髦",
+    "example": "Suntanning first came into vogue in the mid-1930s.",
+    "example_cn": "晒黑皮肤最早流行于20世纪30年代中期。"
+  },
+  {
+    "word": "nevertheless",
+    "phonetic": "nevəðə'les",
+    "meaning": "然而，不过，仍然",
+    "example": "What you said was true. It was, nevertheless, a little unkind.",
+    "example_cn": "你说的都是实话，只不过有点刻薄。"
+  },
+  {
+    "word": "chiche",
+    "phonetic": "",
+    "meaning": "陈腐思想，陈词滥调",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "levy",
+    "phonetic": "'levɪ",
+    "meaning": "征收, 征税\"",
+    "example": "...an annual levy on all drivers.",
+    "example_cn": "…向所有司机征收的年税。"
+  },
+  {
+    "word": "encyclopedia",
+    "phonetic": "ɪnˌsaɪkləˈpiːdiə",
+    "meaning": "百科全书",
+    "example": "the Encyclopedia of Music",
+    "example_cn": "音乐百科全书"
+  },
+  {
+    "word": "drainage",
+    "phonetic": "'dreɪnɪdʒ",
+    "meaning": "排水系统，下水道，排水",
+    "example": "A handful of pebbles in the bottom of a flowerpot will help drainage.",
+    "example_cn": "在花盆底下放一把鹅卵石能够帮助排水。"
+  },
+  {
+    "word": "tunnel",
+    "phonetic": "'tʌnl",
+    "meaning": "地道；隧道",
+    "example": "a railway tunnel",
+    "example_cn": "铁路隧道"
+  },
+  {
+    "word": "excel",
+    "phonetic": "ɪk'sel; ek-",
+    "meaning": "杰出，胜过，优于",
+    "example": "You have excelled yourself with the new exhibition.",
+    "example_cn": "你新办的这次展览特别成功。"
+  },
+  {
+    "word": "circuit",
+    "phonetic": "'sɜːkɪt",
+    "meaning": "周游；电路；协会",
+    "example": "an electrical circuit",
+    "example_cn": "电路"
+  },
+  {
+    "word": "thrust",
+    "phonetic": "θrʌst",
+    "meaning": "猛推；冲锋，突击；推力",
+    "example": "He jumped back to avoid another thrust of the knife.",
+    "example_cn": "他往后一闪，躲避再次捅来的一刀。"
+  },
+  {
+    "word": "modify",
+    "phonetic": "'mɒdɪfaɪ",
+    "meaning": "减轻，修改",
+    "example": "The feedback will be used to modify the course for next year.",
+    "example_cn": "这些反馈意见将用于修改明年的课程。"
+  },
+  {
+    "word": "utmost",
+    "phonetic": "'ʌtməʊst",
+    "meaning": "最远的，最大的，极度的",
+    "example": "It is a matter of the utmost urgency to find out what has happened to these people.",
+    "example_cn": "当务之急是弄清楚这些人出了什么事。"
+  },
+  {
+    "word": "endurance",
+    "phonetic": "ɪn'djʊər(ə)ns; en-",
+    "meaning": "忍耐力，忍耐",
+    "example": "She was pushed beyond her powers of endurance.",
+    "example_cn": "她被逼得忍无可忍。"
+  },
+  {
+    "word": "mount",
+    "phonetic": "maʊnt",
+    "meaning": "爬上，骑上；增加",
+    "example": "Tension here is mounting , as we await the final result.",
+    "example_cn": "我们等待着最终结果，这里的气氛也越来越紧张。"
+  },
+  {
+    "word": "consensus",
+    "phonetic": "kən'sensəs",
+    "meaning": "一致，合意",
+    "example": "The EU Council of Finance Ministers failed to reach a consensus on the pace of integration.",
+    "example_cn": "欧盟财政部长会议未能就一体化的进度达成共识。"
+  },
+  {
+    "word": "enforce",
+    "phonetic": "ɪn'fɔːs; en-",
+    "meaning": "强迫服从；实施；加强",
+    "example": "Parking restrictions will be strictly enforced.",
+    "example_cn": "停车限制将会严格执行。"
+  },
+  {
+    "word": "tag",
+    "phonetic": "tæg",
+    "meaning": "标签",
+    "example": "Staff wore name tags and called inmates by their first names.",
+    "example_cn": "工作人员戴着姓名标签，对同僚直呼其名。"
+  },
+  {
+    "word": "concede",
+    "phonetic": "kən'siːd",
+    "meaning": "承认; 给予",
+    "example": "‘That’s the only possible solution.’ ‘Yes, I suppose so,’ Charles conceded.",
+    "example_cn": "“那是唯一可行的解决办法。”“对，我想是。”查尔斯承认道。"
+  },
+  {
+    "word": "grit",
+    "phonetic": "grɪt",
+    "meaning": "粗砂；刚毅，勇气",
+    "example": "If they gave gold medals for grit, Karen would be right up there on the winners' podium.",
+    "example_cn": "如果他们颁发毅力金牌，卡伦应该站在领奖台上。"
+  },
+  {
+    "word": "elevate",
+    "phonetic": "'elɪveɪt",
+    "meaning": "升高，抬起，提高",
+    "example": "Gradually elevate the patient into anupright position.",
+    "example_cn": "把病人慢慢托到直立的位置。"
+  },
+  {
+    "word": "horizon",
+    "phonetic": "hə'raɪz(ə)n",
+    "meaning": "地平线，眼界，视野",
+    "example": "In the distance, the dot of a boat appeared on the horizon.",
+    "example_cn": "远处小黑点般的一条小船出现在地平线上。"
+  },
+  {
+    "word": "crawl",
+    "phonetic": "krɔːl",
+    "meaning": "爬行;缓慢地行进，爬满",
+    "example": "We crawled into bed at 2 am.",
+    "example_cn": "我们凌晨两点爬上了床。"
+  },
+  {
+    "word": "mingle",
+    "phonetic": "'mɪŋg(ə)l",
+    "meaning": "使混合；交往",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "substantial",
+    "phonetic": "səb'stænʃ(ə)l",
+    "meaning": "坚固的，巨大的；富有的",
+    "example": "We have the support of a substantial number of parents.",
+    "example_cn": "我们有相当多家长的支持。"
+  },
+  {
+    "word": "marginal",
+    "phonetic": "'mɑːdʒɪn(ə)l",
+    "meaning": "很少的，微量的",
+    "example": "a marginal increase in the unemployment figures",
+    "example_cn": "失业人数的小幅增加"
+  },
+  {
+    "word": "foresee",
+    "phonetic": "fɔː'siː",
+    "meaning": "预见，预知",
+    "example": "I’ve put your name on the list and I don’t foresee any problems.",
+    "example_cn": "我把你的名字写在名单上了，估计不会有什么问题。"
+  },
+  {
+    "word": "soil",
+    "phonetic": "sɒɪl",
+    "meaning": "弄脏",
+    "example": "She moistenend  the soil round the plant.",
+    "example_cn": "她把植物周围的土壤弄湿。"
+  },
+  {
+    "word": "awful",
+    "phonetic": "'ɔːfʊl",
+    "meaning": "可怕的；糟糕的；极度的",
+    "example": "The weather was awful.",
+    "example_cn": "天气很糟糕。"
+  },
+  {
+    "word": "regime",
+    "phonetic": "reɪ'ʒiːm",
+    "meaning": "政体，政权；政治制度",
+    "example": "The regime got rid of most of its opponents.",
+    "example_cn": "该政权清除了大多数反对者。"
+  },
+  {
+    "word": "divine",
+    "phonetic": "dɪ'vaɪn",
+    "meaning": "神的，极好的",
+    "example": "divine power",
+    "example_cn": "神的力量"
+  },
+  {
+    "word": "assume",
+    "phonetic": "ə'sjuːm",
+    "meaning": "假定；承担；使用",
+    "example": "I think we can safely assume (=  it is almost certain  ) that interest rates will go up again soon.",
+    "example_cn": "我想我们几乎可以肯定，利率很快会再次上调。"
+  },
+  {
+    "word": "Easter",
+    "phonetic": "'i:stə",
+    "meaning": "复活节",
+    "example": "on Easter Sunday",
+    "example_cn": "在复活节星期日"
+  },
+  {
+    "word": "shatter",
+    "phonetic": "'ʃætə",
+    "meaning": "vi粉碎，毁损",
+    "example": "The explosion shattered the building.",
+    "example_cn": "这次爆炸把大楼炸成一片废墟。"
+  },
+  {
+    "word": "inquire",
+    "phonetic": "ɪn'kwaɪə",
+    "meaning": "打听，询问",
+    "example": "‘Why are you doing that?’ the boy inquired.",
+    "example_cn": "“你为什么这么做？”男孩问道。"
+  },
+  {
+    "word": "annuity",
+    "phonetic": "ə'njuːɪtɪ",
+    "meaning": "年金",
+    "example": "He received a paltry annuity of $100.",
+    "example_cn": "他收到了微不足道的100美元年金。"
+  },
+  {
+    "word": "cynical",
+    "phonetic": "'sɪnɪk(ə)l",
+    "meaning": "愤世嫉俗的",
+    "example": "a cynical view of human nature",
+    "example_cn": "认为人性本恶的一种观点"
+  },
+  {
+    "word": "affix",
+    "phonetic": "ə'fɪks",
+    "meaning": "附加；贴上；盖印",
+    "example": "We could reprint at a cost of X, or she had found a service that would affix stickers over the price to correct at a cost of X.",
+    "example_cn": "我们可以按成本价格重新印刷，这将花费X，或根据她找到的一种修正服务，可以重新粘贴上正确的价格，这将花费X。"
+  },
+  {
+    "word": "compress",
+    "phonetic": "kəm'pres",
+    "meaning": "使语言精炼，压缩",
+    "example": "Light silk is best for parachutes, as it compresses well and then expands rapidly.",
+    "example_cn": "轻质丝绸最适合制作降落伞，因为这种面料便于压缩，而且展开迅速。"
+  },
+  {
+    "word": "verge",
+    "phonetic": "vɜːdʒ",
+    "meaning": "边缘，边界",
+    "example": "The car skidded across the road and came to a stop on the grass verge.",
+    "example_cn": "汽车滑过路面，在路缘草带上停了下来。"
+  },
+  {
+    "word": "crumb",
+    "phonetic": "krʌm",
+    "meaning": "面包屑；一点点",
+    "example": "She stood up to brush the crumbs off her uniform.",
+    "example_cn": "她站起来拂去制服上的面包屑。"
+  },
+  {
+    "word": "sustenance",
+    "phonetic": "'sʌst(ə)nəns; -tɪn-",
+    "meaning": "食物，营养",
+    "example": "Without sustenance, the animals will soon die.",
+    "example_cn": "没有食物，动物很快就会死亡。"
+  },
+  {
+    "word": "diminish",
+    "phonetic": "dɪ'mɪnɪʃ",
+    "meaning": "减少，减小，缩小",
+    "example": "The party’s share of the electorate has diminished steadily.",
+    "example_cn": "支持这个政党的选民比例持续下降。"
+  },
+  {
+    "word": "itinerary",
+    "phonetic": "aɪ'tɪn(ə)(rə)rɪ; ɪ-",
+    "meaning": "旅行计划，旅行日记，旅程",
+    "example": "The next place on our itinerary was Sedona.",
+    "example_cn": "我们旅行计划的下一站是塞多纳。"
+  },
+  {
+    "word": "array",
+    "phonetic": "ə'reɪ",
+    "meaning": "展示；一系列",
+    "example": "We visited the local markets and saw wonderful arrays of fruit and vegetables.",
+    "example_cn": "我们参观了当地的市场，看到了漂亮地摆放着的水果蔬菜。"
+  },
+  {
+    "word": "planetarium",
+    "phonetic": ",plænɪ'teərɪəm",
+    "meaning": "天文馆",
+    "example": "The motions of the stars can be approximated in a planetarium.",
+    "example_cn": "星星的运动可在天文馆里模拟。"
+  },
+  {
+    "word": "gland",
+    "phonetic": "glænd",
+    "meaning": "腺",
+    "example": "the pituitary gland",
+    "example_cn": "脑垂体腺"
+  },
+  {
+    "word": "exquisite",
+    "phonetic": "'ekskwɪzɪt; ɪk'skwɪzɪt; ek-",
+    "meaning": "优美的，精巧的",
+    "example": "the most exquisite craftsmanship",
+    "example_cn": "最精美的工艺"
+  },
+  {
+    "word": "deputy",
+    "phonetic": "'depjʊtɪ",
+    "meaning": "代表，代理人",
+    "example": "His brother was acting as his deputy in America.",
+    "example_cn": "他的兄弟充当他在美洲的代理人。"
+  },
+  {
+    "word": "ridiculous",
+    "phonetic": "rɪ'dɪkjʊləs",
+    "meaning": "荒谬的，可笑的",
+    "example": "That’s a ridiculous idea!",
+    "example_cn": "那主意很荒唐！"
+  },
+  {
+    "word": "reconcile",
+    "phonetic": "'rek(ə)nsaɪl",
+    "meaning": "使和解；使复交；调解，调停",
+    "example": "Jonah and his youngest son were, on the surface at least, reconciled.",
+    "example_cn": "乔纳和他小儿子和好了，至少表面上如此。"
+  },
+  {
+    "word": "funnel",
+    "phonetic": "'fʌn(ə)l",
+    "meaning": "漏斗，烟囱",
+    "example": "...a ship with three masts and two funnels.",
+    "example_cn": "…一艘有3根桅杆和2个烟囱的轮船。"
+  },
+  {
+    "word": "shell",
+    "phonetic": "ʃel",
+    "meaning": "壳，剥壳",
+    "example": "They cracked the nuts and removed their shells.",
+    "example_cn": "他们打破坚果并剥掉果壳。"
+  },
+  {
+    "word": "succinct",
+    "phonetic": "sək'sɪŋ(k)t",
+    "meaning": "简明的，扼要的",
+    "example": "a succinct explanation",
+    "example_cn": "简明扼要的解释"
+  },
+  {
+    "word": "eminent",
+    "phonetic": "'emɪnənt",
+    "meaning": "著名的，卓越的",
+    "example": "an eminent lawyer",
+    "example_cn": "杰出的律师"
+  },
+  {
+    "word": "jam",
+    "phonetic": "dʒæm",
+    "meaning": "压紧，夹住，发生故障，塞进",
+    "example": "The second time he fired his gun jammed.",
+    "example_cn": "他开第二枪时，枪卡壳了。"
+  },
+  {
+    "word": "terminate",
+    "phonetic": "'tɜːmɪneɪt",
+    "meaning": "终止，结束",
+    "example": "The court ruled that the contract must be terminated.",
+    "example_cn": "法庭裁决该合同必须终止。"
+  },
+  {
+    "word": "temporary",
+    "phonetic": "'temp(ə)rərɪ",
+    "meaning": "暂时的；临时的",
+    "example": "temporary pain relief",
+    "example_cn": "疼痛的暂时缓解"
+  },
+  {
+    "word": "rage",
+    "phonetic": "reɪdʒ",
+    "meaning": "狂怒",
+    "example": "Sobbing with rage, Carol was taken to the hospital.",
+    "example_cn": "卡罗尔气得呜呜哭，被送往医院。"
+  },
+  {
+    "word": "span",
+    "phonetic": "spæn",
+    "meaning": "跨度；跨越",
+    "example": "Travellers get from one side to the other by walking across a footbridge that spans a little stream.",
+    "example_cn": "旅游者通过一座横跨小溪的人行桥从一边走到另一边。"
+  },
+  {
+    "word": "dialect",
+    "phonetic": "'daɪəlekt",
+    "meaning": "方言，俚语",
+    "example": "the local dialect",
+    "example_cn": "当地方言"
+  },
+  {
+    "word": "proficiency",
+    "phonetic": "prə'fɪʃ(ə)nsɪ",
+    "meaning": "熟练，进步",
+    "example": "I brought her proficiency up to the required level.",
+    "example_cn": "我把她的熟练程度提高到所规定的水平。"
+  },
+  {
+    "word": "pilgrim",
+    "phonetic": "'pɪlgrɪm",
+    "meaning": "香客，朝圣者",
+    "example": "pilgrims visiting a holy shrine",
+    "example_cn": "祭拜圣庙的朝圣者"
+  },
+  {
+    "word": "shrink",
+    "phonetic": "ʃrɪŋk",
+    "meaning": "收缩；退缩；畏缩",
+    "example": "I’m worried about washing that shirt in case it shrinks.",
+    "example_cn": "我不太敢洗那件衬衫，怕它会缩水。"
+  },
+  {
+    "word": "radius",
+    "phonetic": "'reɪdɪəs",
+    "meaning": "半径；以半径度量的面积",
+    "example": "The shock of the explosion was felt over a radius of forty miles.",
+    "example_cn": "爆炸引起的剧烈震动在方圆40英里内都能感觉得到。"
+  },
+  {
+    "word": "oar",
+    "phonetic": "ɔː",
+    "meaning": "桨；橹",
+    "example": "Cold worlds shake from the oar.",
+    "example_cn": "冰冷的世界从桨上摇落。"
+  },
+  {
+    "word": "web",
+    "phonetic": "web",
+    "meaning": "网",
+    "example": "He watched a spider spinning its web.",
+    "example_cn": "他观察一只蜘蛛织网。"
+  },
+  {
+    "word": "diplomat",
+    "phonetic": "'dɪpləmæt",
+    "meaning": "外交家",
+    "example": "French diplomats",
+    "example_cn": "法国外交官"
+  },
+  {
+    "word": "database",
+    "phonetic": "'deɪtəbeɪs",
+    "meaning": "数据库",
+    "example": "customer details held on a database",
+    "example_cn": "存储在数据库内的客户详细信息"
+  },
+  {
+    "word": "standing",
+    "phonetic": "'stændɪŋ",
+    "meaning": "永存的，常务的",
+    "example": "You have to pay standing charges whether or not you use the service.",
+    "example_cn": "无论是否使用这项服务，你都必须一直付费。"
+  },
+  {
+    "word": "cellar",
+    "phonetic": "'selə",
+    "meaning": "地窖；酒窖",
+    "example": "a coal cellar",
+    "example_cn": "煤窖"
+  },
+  {
+    "word": "cooperate",
+    "phonetic": "kəʊ'ɒpəreɪt",
+    "meaning": "合作，协作",
+    "example": "They agreed to co-operate with Brazil on a programme to protect the rain forests.",
+    "example_cn": "他们同意和巴西合作进行一个保护热带雨林的项目。"
+  },
+  {
+    "word": "dictate",
+    "phonetic": "dɪk'teɪt",
+    "meaning": "听写，命令，支配",
+    "example": "Federal funds have to be used as dictated by Washington.",
+    "example_cn": "联邦款项得按照华盛顿规定的途径使用。"
+  },
+  {
+    "word": "partisan",
+    "phonetic": "'pɑːtɪzæn; ,pɑːtɪ'zæn",
+    "meaning": "党派人士",
+    "example": "a media campaign to represent Democrats as angry partisans",
+    "example_cn": "把民主党人描述成愤怒的死硬派的媒体宣传"
+  },
+  {
+    "word": "weed",
+    "phonetic": "wiːd",
+    "meaning": "除草；除去，剔除",
+    "example": "Caspar was weeding the garden.",
+    "example_cn": "卡斯帕正在给花园除草。"
+  },
+  {
+    "word": "chief",
+    "phonetic": "tʃiːf",
+    "meaning": "领袖，部门主任",
+    "example": "Most health chiefs believe the reforms have gone too far.",
+    "example_cn": "大多数卫生部领导人都觉得改革搞得过火了。"
+  },
+  {
+    "word": "lap",
+    "phonetic": "læp",
+    "meaning": "(跑道的)一圈；腰以下及大腿的前面部分",
+    "example": "Rubens Barrichello finished a lap ahead of his team-mate.",
+    "example_cn": "鲁本斯·巴里切罗领先队友一圈跑完全程。"
+  },
+  {
+    "word": "surrender",
+    "phonetic": "sə'rendə",
+    "meaning": "投降，自首；放弃；屈服",
+    "example": "Germany surrendered on May 7th, 1945.",
+    "example_cn": "德国于 1945 年 5 月 7 日投降。"
+  },
+  {
+    "word": "misconceive",
+    "phonetic": "mɪskən'siːv",
+    "meaning": "误解",
+    "example": "Since namely namely misconceive, that explanation clear nice.",
+    "example_cn": "既然是个误会，那解释清楚就好了。"
+  },
+  {
+    "word": "fervent",
+    "phonetic": "'fɜːv(ə)nt",
+    "meaning": "热烈的；热情的",
+    "example": "a fervent appeal for peace",
+    "example_cn": "对和平的强烈呼吁"
+  },
+  {
+    "word": "aisle",
+    "phonetic": "aɪl",
+    "meaning": "通道",
+    "example": "Would you like a window seat or an aisle seat (=  seat next to the aisle  ) ?",
+    "example_cn": "您想要靠窗的座位还是靠过道的座位？"
+  },
+  {
+    "word": "configuration",
+    "phonetic": "kən,fɪgə'reɪʃ(ə)n; -gjʊ-",
+    "meaning": "配置，布局；构造",
+    "example": "...Stonehenge, in southwestern England, an ancient configuration of giant stones.",
+    "example_cn": "…史前巨石柱群，位于英国西南部，是一座古代巨石阵列。"
+  },
+  {
+    "word": "reap",
+    "phonetic": "riːp",
+    "meaning": "收割，收获",
+    "example": "You'll soon begin to reap the benefits of being fitter.",
+    "example_cn": "你很快就会获得身体更健康带来的好处。"
+  },
+  {
+    "word": "missile",
+    "phonetic": "'mɪsaɪl",
+    "meaning": "发射物；导弹",
+    "example": "a nuclear missile",
+    "example_cn": "核导弹"
+  },
+  {
+    "word": "oncoming",
+    "phonetic": "'ɒnkʌmɪŋ",
+    "meaning": "即将来临的；接近的",
+    "example": "He crashed into an oncoming car.",
+    "example_cn": "他撞上了一辆迎面驶来的汽车。"
+  },
+  {
+    "word": "mature",
+    "phonetic": "mə'tʃʊə",
+    "meaning": "成熟的，充分发展的",
+    "example": "Laura is very mature for her age .",
+    "example_cn": "相对她的年龄来说劳拉是很成熟的。"
+  },
+  {
+    "word": "occasion",
+    "phonetic": "ə'keɪʒ(ə)n",
+    "meaning": "的时刻；机会；需要",
+    "example": "I often think fondly of an occasion some years ago in New Orleans.",
+    "example_cn": "我经常深情地想起一些年前在新奥尔良所发生的一幕。"
+  },
+  {
+    "word": "pretentious",
+    "phonetic": "prɪ'tenʃəs",
+    "meaning": "自负的，自命不凡的",
+    "example": "a pretentious film",
+    "example_cn": "矫饰的电影"
+  },
+  {
+    "word": "mischance",
+    "phonetic": "mɪs'tʃɑːns",
+    "meaning": "不幸，灾难",
+    "example": "If by some mischance the government get elected again, I think taxes will rise.",
+    "example_cn": "如果不幸这届政府再次当选，我想税收会提高。"
+  },
+  {
+    "word": "conquer",
+    "phonetic": "'kɒŋkə",
+    "meaning": "征服；攻克",
+    "example": "The Normans conquered England in 1066.",
+    "example_cn": "诺曼人于 1066 年征服英格兰。"
+  },
+  {
+    "word": "nourish",
+    "phonetic": "'nʌrɪʃ",
+    "meaning": "养育，怀有(希望)",
+    "example": "We need to nourish our hopes and dreams.",
+    "example_cn": "我们应该怀有希望和梦想。"
+  },
+  {
+    "word": "tourism",
+    "phonetic": "'tʊərɪz(ə)m",
+    "meaning": "旅游事业",
+    "example": "The country depends on tourism for much of its income.",
+    "example_cn": "该国的大部分收入依靠旅游业。"
+  },
+  {
+    "word": "valuation",
+    "phonetic": "væljʊ'eɪʃ(ə)n",
+    "meaning": "定价，估价；评定的价值",
+    "example": "The property has a valuation of $1.6 billion.",
+    "example_cn": "那处房地产估价为16亿美元。"
+  },
+  {
+    "word": "compromise",
+    "phonetic": "'kɒmprəmaɪz",
+    "meaning": "妥协，折衷",
+    "example": "Compromise is an inevitable part of marriage.",
+    "example_cn": "妥协是婚姻生活中必不可少的。"
+  },
+  {
+    "word": "shield",
+    "phonetic": "ʃiːld",
+    "meaning": "盾；保护者，保护物",
+    "example": "He used his left hand as a shield against the reflecting sunlight.",
+    "example_cn": "他用左手遮挡反射过来的阳光。"
+  },
+  {
+    "word": "greedy",
+    "phonetic": "'griːdɪ",
+    "meaning": "贪吃的；贪婪的",
+    "example": "a greedy and selfish society",
+    "example_cn": "一个贪婪自私的社会"
+  },
+  {
+    "word": "diet",
+    "phonetic": "'daɪət",
+    "meaning": "饮食，规定的饮食，忌食",
+    "example": "Lyn always seems to be on a diet.",
+    "example_cn": "琳恩似乎一直在节食。"
+  },
+  {
+    "word": "pigment",
+    "phonetic": "'pɪgm(ə)nt",
+    "meaning": "颜料，色素",
+    "example": "Melanin is the dark brown pigment of the hair, skin and eyes.",
+    "example_cn": "黑色素是头发、皮肤以及眼睛中的深棕色色素。"
+  },
+  {
+    "word": "ascend",
+    "phonetic": "ə'send",
+    "meaning": "登(山等)；上升",
+    "example": "The plane ascended rapidly.",
+    "example_cn": "飞机迅速爬升。"
+  },
+  {
+    "word": "sour",
+    "phonetic": "saʊə",
+    "meaning": "酸的",
+    "example": "Rachel sampled the wine. It was sour.",
+    "example_cn": "雷切尔尝了尝葡萄酒，是酸的。"
+  },
+  {
+    "word": "fury",
+    "phonetic": "'fjʊərɪ",
+    "meaning": "狂怒，愤怒的爆发",
+    "example": "I was shaking with fury .",
+    "example_cn": "我气得发抖。"
+  },
+  {
+    "word": "guy",
+    "phonetic": "gaɪ",
+    "meaning": "家伙, 人 \"",
+    "example": "Dave’s a nice guy when you get to know him.",
+    "example_cn": "戴夫是个好人，你了解他后就知道了。"
+  },
+  {
+    "word": "nullify",
+    "phonetic": "'nʌlɪfaɪ",
+    "meaning": "使无效，废弃，取消",
+    "example": "Recent inflation could nullify the economic growth of the last several years.",
+    "example_cn": "最近的通货膨胀可能会抵消过去数年的经济增长。"
+  },
+  {
+    "word": "presumption",
+    "phonetic": "prɪ'zʌm(p)ʃ(ə)n",
+    "meaning": "假定，推测；无理，傲慢",
+    "example": "She was enraged by his presumption.",
+    "example_cn": "她被他的放肆激怒了。"
+  },
+  {
+    "word": "stumble",
+    "phonetic": "'stʌmb(ə)l",
+    "meaning": "绊跌，绊倒；结结巴巴说话",
+    "example": "In her hurry, she stumbled and spilled the milk all over the floor.",
+    "example_cn": "匆忙中她绊了一下，把牛奶洒得满地都是。"
+  },
+  {
+    "word": "nucleus",
+    "phonetic": "'njuːklɪəs",
+    "meaning": "核心；原子核",
+    "example": "Neutrons and protons are bound together in the nucleus of an atom.",
+    "example_cn": "在一个原子的核内，中子和质子聚合在一起。"
+  },
+  {
+    "word": "thrive",
+    "phonetic": "θraɪv",
+    "meaning": "兴旺，繁荣",
+    "example": "plants that thrive in tropical rain forests",
+    "example_cn": "在热带雨林蓬勃生长的植物"
+  },
+  {
+    "word": "languid",
+    "phonetic": "'læŋgwɪd",
+    "meaning": "没精打采的，倦怠的",
+    "example": "He greeted Charles with a languid wave of his hand.",
+    "example_cn": "他无精打采地挥挥手，算是和查尔斯打招呼。"
+  },
+  {
+    "word": "homogeneous",
+    "phonetic": ",hɒmə(ʊ)'dʒiːnɪəs; -'dʒen-",
+    "meaning": "同类的，同族的",
+    "example": "a homogeneous society",
+    "example_cn": "同种族人组成的社会"
+  },
+  {
+    "word": "scant",
+    "phonetic": "skænt",
+    "meaning": "不足的，不够多的，缺乏的",
+    "example": "The story has received scant attention in the press.",
+    "example_cn": "这件事没在报界引起多少注意。"
+  },
+  {
+    "word": "versatile",
+    "phonetic": "'vɜːsətaɪl",
+    "meaning": "多才多艺的；技术超群的",
+    "example": "a very versatile performer",
+    "example_cn": "多才多艺的表演者"
+  },
+  {
+    "word": "conspicuous",
+    "phonetic": "kən'spɪkjʊəs",
+    "meaning": "明显的，引人注目的",
+    "example": "The notice must be displayed in a conspicuous place.",
+    "example_cn": "通告一定要贴在显眼的地方。"
+  },
+  {
+    "word": "tighten",
+    "phonetic": "'taɪt(ə)n",
+    "meaning": "(使)变紧，(使)绷紧，扣紧",
+    "example": "Tighten the screws firmly.",
+    "example_cn": "把螺丝拧紧。"
+  },
+  {
+    "word": "haul",
+    "phonetic": "hɔːl",
+    "meaning": "用力拉，拖；捕获量；拖运的距离",
+    "example": "the steam locomotive which hauled the train",
+    "example_cn": "拖动火车的蒸汽机车"
+  },
+  {
+    "word": "rejoice",
+    "phonetic": "rɪ'dʒɒɪs",
+    "meaning": "欣喜，高兴",
+    "example": "Garbo plays the queen, rejoicing in the love she has found with Antonio.",
+    "example_cn": "嘉宝饰演沉浸在与安东尼奥爱情的欣喜中的王后。"
+  },
+  {
+    "word": "comet",
+    "phonetic": "'kɒmɪt",
+    "meaning": "慧星",
+    "example": "Halley’s comet",
+    "example_cn": "哈雷彗星"
+  },
+  {
+    "word": "phonetic",
+    "phonetic": "fə'netɪk",
+    "meaning": "语音的",
+    "example": "a phonetic alphabet",
+    "example_cn": "音标"
+  },
+  {
+    "word": "ambitious",
+    "phonetic": "æm'bɪʃəs",
+    "meaning": "有抱负的",
+    "example": "Alfred was intensely ambitious, obsessed with the idea of becoming rich.",
+    "example_cn": "艾尔弗雷德雄心勃勃，一心想着发财。"
+  },
+  {
+    "word": "abnormal",
+    "phonetic": "æb'nɔːml",
+    "meaning": "反常的；变态的",
+    "example": "abnormal behaviour",
+    "example_cn": "反常行为"
+  },
+  {
+    "word": "maneuver",
+    "phonetic": "mə'nʊvə",
+    "meaning": "调动，机动；演习；策略；总括",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "primitive",
+    "phonetic": "'prɪmɪtɪv",
+    "meaning": "原始的，简单的",
+    "example": "a primitive society",
+    "example_cn": "原始社会"
+  },
+  {
+    "word": "valve",
+    "phonetic": "vælv",
+    "meaning": "阀，活门",
+    "example": "heart valves",
+    "example_cn": "心脏瓣膜"
+  },
+  {
+    "word": "vanity",
+    "phonetic": "ˈvænəti",
+    "meaning": "自大，虚荣；无价值，空虚",
+    "example": "Sabrina had none of the vanity so often associated with beautiful women.",
+    "example_cn": "萨布里娜没有一点漂亮女人经常会有的那种虚荣。"
+  },
+  {
+    "word": "reception",
+    "phonetic": "rɪ'sepʃ(ə)n",
+    "meaning": "接待处；招待会；接收",
+    "example": "It’s an ideal location for a wedding reception .",
+    "example_cn": "这里是举办喜宴的理想地点。"
+  },
+  {
+    "word": "cordial",
+    "phonetic": "'kɔːdɪəl",
+    "meaning": "热诚的，衷心的",
+    "example": "The talks were conducted in a cordial atmosphere.",
+    "example_cn": "会谈在友好的气氛中进行。"
+  },
+  {
+    "word": "noxious",
+    "phonetic": "'nɒkʃəs",
+    "meaning": "有害的，有毒的",
+    "example": "noxious fumes",
+    "example_cn": "有毒烟雾"
+  },
+  {
+    "word": "reimburse",
+    "phonetic": ",riːɪm'bɜːs",
+    "meaning": "偿还；付还",
+    "example": "I'll be happy to reimburse you for any expenses you've had.",
+    "example_cn": "我很乐意报销你的所有花费。"
+  },
+  {
+    "word": "exacerbate",
+    "phonetic": "ɪg'zæsəbeɪt; ek'sæs-",
+    "meaning": "加重；恶化",
+    "example": "The recession has exacerbated this problem.",
+    "example_cn": "经济衰退使这个问题更加严重。"
+  },
+  {
+    "word": "object",
+    "phonetic": "'ɒbdʒɪkt; -dʒekt",
+    "meaning": "物体，目标；目的",
+    "example": "an everyday object such as a spoon",
+    "example_cn": "调羹之类的日常用品"
+  },
+  {
+    "word": "palpitate",
+    "phonetic": "'pælpɪteɪt",
+    "meaning": "心脏急速跳动；人擅抖",
+    "example": "He felt suddenly faint, and his heart began to palpitate.",
+    "example_cn": "他突然感到晕厥，心脏也开始悸动。"
+  },
+  {
+    "word": "tick",
+    "phonetic": "tɪk",
+    "meaning": "(钟表)滴答声；一刹那",
+    "example": "I’ll be with you in a tick (= soon ) .",
+    "example_cn": "我马上就来。"
+  },
+  {
+    "word": "certificate",
+    "phonetic": "səˈtɪfɪkɪt; (for v.,) səˈtɪfɪˌkeɪt",
+    "meaning": "证书，执照",
+    "example": "a degree certificate",
+    "example_cn": "学位证书"
+  },
+  {
+    "word": "exploit",
+    "phonetic": "ɪk'splɒɪt; ek-",
+    "meaning": "英雄行为，辉煌功绩",
+    "example": "Homeworkers can easily be exploited by employers.",
+    "example_cn": "在家工作的人容易被雇主剥削。"
+  },
+  {
+    "word": "vigilant",
+    "phonetic": "'vɪdʒɪl(ə)nt",
+    "meaning": "警戒的；警惕的",
+    "example": "Please remain vigilant at all times and report anything suspicious.",
+    "example_cn": "请时刻保持警惕，有可疑情况随时报告。"
+  },
+  {
+    "word": "grand",
+    "phonetic": "grænd",
+    "meaning": "最重大的；豪华的；傲慢的；美妙的",
+    "example": "the Grand Hotel",
+    "example_cn": "格兰大酒店"
+  },
+  {
+    "word": "congress",
+    "phonetic": "'kɒŋgres",
+    "meaning": "代表会议，(C-)(美国等)议会",
+    "example": "a congress of the ruling Labor Party",
+    "example_cn": "执政党工党的代表大会"
+  },
+  {
+    "word": "academic",
+    "phonetic": "ækə'demɪk",
+    "meaning": "学术的；学校的",
+    "example": "He possessed no academic qualifications.",
+    "example_cn": "他没有学历。"
+  },
+  {
+    "word": "correspond",
+    "phonetic": "kɒrɪ'spɒnd",
+    "meaning": "符合，通信，相当于",
+    "example": "The two halves of the document did not correspond.",
+    "example_cn": "这份文件的前后两部分不相符。"
+  },
+  {
+    "word": "passive",
+    "phonetic": "'pæsɪv",
+    "meaning": "被动的",
+    "example": "Kathy seems to take a very passive role in the relationship.",
+    "example_cn": "凯茜在这一关系中似乎扮演着十分被动的角色。"
+  },
+  {
+    "word": "discord",
+    "phonetic": "'dɪskɔːd",
+    "meaning": "不和，争吵，(声音)不和谐",
+    "example": "marital discord",
+    "example_cn": "婚姻不和"
+  },
+  {
+    "word": "defer",
+    "phonetic": "dɪ'fɜː",
+    "meaning": "推迟，延期",
+    "example": "The committee deferred their decision .",
+    "example_cn": "委员会延期作出决定。"
+  },
+  {
+    "word": "gloomy",
+    "phonetic": "'gluːmɪ",
+    "meaning": "黑暗的；郁闷的",
+    "example": "Anne dismissed these gloomy thoughts from her mind.",
+    "example_cn": "安妮抛开了心里这些沮丧的念头。"
+  },
+  {
+    "word": "fanatic",
+    "phonetic": "fə'nætɪk",
+    "meaning": "狂热的，狂热者",
+    "example": "fanatics who represent a real danger to democracy",
+    "example_cn": "对民主构成很大威胁的狂热分子"
+  },
+  {
+    "word": "trick",
+    "phonetic": "trɪk",
+    "meaning": "诡计；恶作剧；技艺",
+    "example": "Pretending he doesn’t remember is an old trick of his.",
+    "example_cn": "假装不记得是他的老花招了。"
+  },
+  {
+    "word": "abandon",
+    "phonetic": "ə'bænd(ə)n",
+    "meaning": "离弃；放弃",
+    "example": "How could she abandon her own child?",
+    "example_cn": "她怎么能抛弃自己的孩子？"
+  },
+  {
+    "word": "therapy",
+    "phonetic": "'θerəpɪ",
+    "meaning": "治疗；疗法",
+    "example": "new drug therapies",
+    "example_cn": "新的药物疗法"
+  },
+  {
+    "word": "forfeit",
+    "phonetic": "'fɔːfɪt",
+    "meaning": "没收，丧失(物)",
+    "example": "By being absent from the trial, he forfeited the right to appeal.",
+    "example_cn": "因缺席审判，他丧失了上诉权。"
+  },
+  {
+    "word": "execution",
+    "phonetic": ",eksɪ'kjuːʃ(ə)n",
+    "meaning": "演奏技巧；死刑",
+    "example": "a public execution",
+    "example_cn": "当众处死"
+  },
+  {
+    "word": "majority",
+    "phonetic": "mə'dʒɒrɪtɪ",
+    "meaning": "多数；多得票数，法定年龄",
+    "example": "The Labour Party won a huge majority at the last general election.",
+    "example_cn": "工党在上次大选中以巨大的票数优势获胜。"
+  },
+  {
+    "word": "fertile",
+    "phonetic": "'fɜːtaɪl",
+    "meaning": "肥沃的，创造力丰富的，能结果实的",
+    "example": "800 acres of fertile cropland",
+    "example_cn": "800英亩的肥沃耕地"
+  },
+  {
+    "word": "treatment",
+    "phonetic": "'triːtm(ə)nt",
+    "meaning": "对待，待遇；处理，治疗",
+    "example": "Just lately, Kyra has been giving me the silent treatment (= refusing to speak to me because she is angry with me ) .",
+    "example_cn": "就在最近，凯拉一直对我不理不睬。"
+  },
+  {
+    "word": "coin",
+    "phonetic": "kɒɪn",
+    "meaning": "硬币，铸币",
+    "example": "Toss a coin to see who goes first.",
+    "example_cn": "抛硬币决定谁先来。"
+  },
+  {
+    "word": "vertical",
+    "phonetic": "'vɜːtɪk(ə)l",
+    "meaning": "垂直的",
+    "example": "a vertical line ",
+    "example_cn": "垂直线"
+  },
+  {
+    "word": "erroneous",
+    "phonetic": "ɪ'rəʊnɪəs; e-",
+    "meaning": "错误的，不正确的",
+    "example": "His economic predictions are based on some erroneous assumptions.",
+    "example_cn": "他的经济预测是基于错误假设之上的。"
+  },
+  {
+    "word": "alloy",
+    "phonetic": "'ælɒɪ",
+    "meaning": "合金",
+    "example": "Brass is an alloy of copper and zinc.",
+    "example_cn": "黄铜是铜和锌的合金。"
+  },
+  {
+    "word": "feasible",
+    "phonetic": "'fiːzɪb(ə)l",
+    "meaning": "可行的，可信的",
+    "example": "a feasible solution",
+    "example_cn": "可行的解决方法"
+  },
+  {
+    "word": "collide",
+    "phonetic": "kə'laɪd",
+    "meaning": "猛冲，冲突，抵触",
+    "example": "The aims of the negotiators in New York again seem likely to collide with the aims of the warriors in the field.",
+    "example_cn": "纽约谈判者的目标看起来可能再次与战场上勇士们的目标相冲突。"
+  },
+  {
+    "word": "triangle",
+    "phonetic": "'traɪæŋg(ə)l",
+    "meaning": "三角，三角形；三角关系",
+    "example": "a triangle of land",
+    "example_cn": "一块三角地"
+  },
+  {
+    "word": "innumerable",
+    "phonetic": "ɪ'njuːm(ə)rəb(ə)l",
+    "meaning": "数不清的",
+    "example": "She’s served on innumerable committees.",
+    "example_cn": "她在多个委员会担任委员。"
+  },
+  {
+    "word": "holocaust",
+    "phonetic": "'hɒləkɔːst",
+    "meaning": "大破坏",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "dawn",
+    "phonetic": "dɔːn",
+    "meaning": "黎明；开始；发生",
+    "example": "When dawn broke (= the first light of the day appeared ) , we were still 50 miles from Calcutta.",
+    "example_cn": "破晓的时候，我们离加尔各答还有50英里。"
+  },
+  {
+    "word": "adverse",
+    "phonetic": "'ædvɜːs",
+    "meaning": "不利的；劣的",
+    "example": "They fear it could have an adverse effect on global financial markets.",
+    "example_cn": "他们担心这会对全球金融市场产生不利影响。"
+  },
+  {
+    "word": "prescription",
+    "phonetic": "prɪ'skrɪpʃ(ə)n",
+    "meaning": "规定，指定；药方，处方",
+    "example": "We are trying to cut the price of prescription drugs .",
+    "example_cn": "我们正努力降低处方药的价格。"
+  },
+  {
+    "word": "notorious",
+    "phonetic": "nə(ʊ)'tɔːrɪəs",
+    "meaning": "自名昭著的，声名狼藉的",
+    "example": "a notorious computer hacker",
+    "example_cn": "声名狼藉的电脑黑客"
+  },
+  {
+    "word": "obnoxious",
+    "phonetic": "əb'nɒkʃəs",
+    "meaning": "非常讨厌的；可憎的",
+    "example": "She’s really obnoxious.",
+    "example_cn": "她这人真讨厌。"
+  },
+  {
+    "word": "desperate",
+    "phonetic": "'desp(ə)rət",
+    "meaning": "绝望的；不顾一切的；危急的",
+    "example": "I had no money left and was desperate.",
+    "example_cn": "我身无分文，已经走投无路了。"
+  },
+  {
+    "word": "reign",
+    "phonetic": "reɪn",
+    "meaning": "(君主)统治，存在，现存",
+    "example": "George VI reigned from 1936 to 1952.",
+    "example_cn": "乔治六世于1936年至1952年在位。"
+  },
+  {
+    "word": "lane",
+    "phonetic": "leɪn",
+    "meaning": "小径，行车道，巷",
+    "example": "a quiet country lane",
+    "example_cn": "一条宁静的乡间小路"
+  },
+  {
+    "word": "cruise",
+    "phonetic": "kruːz",
+    "meaning": "巡航；以节省燃料的速度前进",
+    "example": "We were cruising along at 50 miles per hour.",
+    "example_cn": "我们以每小时50英里的速度平稳行驶。"
+  },
+  {
+    "word": "fastidious",
+    "phonetic": "fæ'stɪdɪəs",
+    "meaning": "难讨好的，爱挑剔的",
+    "example": "people who are fastidious about personal hygiene",
+    "example_cn": "十分讲究个人卫生的人"
+  },
+  {
+    "word": "expertise",
+    "phonetic": ",ekspɜː'tiːz",
+    "meaning": "专门知识，专门技能",
+    "example": "She was not an accountant and didn't have the expertise to verify all of the financial details.",
+    "example_cn": "她不是会计，不具有核查所有这些财政细目的专业知识。"
+  },
+  {
+    "word": "restless",
+    "phonetic": "ˈrestləs",
+    "meaning": "焦躁不安的",
+    "example": "After a few weeks in Marseille, I grew restless and decided to move on.",
+    "example_cn": "在马赛住了几星期后，我开始待不住了，决定换个地方。"
+  },
+  {
+    "word": "undo",
+    "phonetic": "ʌn'duː",
+    "meaning": "解开，拨开；败坏(名声，成果)",
+    "example": "The screws can be undone by hand.",
+    "example_cn": "这些螺丝可以用手拧开。"
+  },
+  {
+    "word": "courier",
+    "phonetic": "'kʊrɪə",
+    "meaning": "(旅行)服务员；信使；送急件的人",
+    "example": "...a motorcycle courier.",
+    "example_cn": "…一名骑摩托车的信使。"
+  },
+  {
+    "word": "grab",
+    "phonetic": "græb",
+    "meaning": "掠夺, 攫取, 抓取\"",
+    "example": "I grabbed my bag and ran off.",
+    "example_cn": "我抓起我的包就跑。"
+  },
+  {
+    "word": "frantic",
+    "phonetic": "'fræntɪk",
+    "meaning": "激动得发狂似的；狂暴的",
+    "example": "A bird had been locked in and was by now quite frantic.",
+    "example_cn": "一只鸟被关了起来，到现在它都非常狂躁。"
+  },
+  {
+    "word": "yacht",
+    "phonetic": "jɒt",
+    "meaning": "小帆船，快艇；帆船",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "doze",
+    "phonetic": "dəʊz",
+    "meaning": "打盹儿，小睡",
+    "example": "Grandad was dozing in his chair.",
+    "example_cn": "爷爷在椅子上打瞌睡。"
+  },
+  {
+    "word": "relapse",
+    "phonetic": "rɪ'læps",
+    "meaning": "(病等)复发",
+    "example": "She had a relapse and died soon after.",
+    "example_cn": "她旧病复发，不久就去世了。"
+  },
+  {
+    "word": "contact",
+    "phonetic": "'kɒntækt",
+    "meaning": "接触",
+    "example": "Does that metal pit after contact with acid?",
+    "example_cn": "那种金属同酸接触后是否会起凹点?"
+  },
+  {
+    "word": "astound",
+    "phonetic": "ə'staʊnd",
+    "meaning": "使震惊",
+    "example": "If we did all the things we are capable of, we would literally astound ourselves.",
+    "example_cn": "如果我们所做的都是我们擅长的事情，我们最终将使自己大吃一惊。"
+  },
+  {
+    "word": "ostensible",
+    "phonetic": "ɒ'stensɪb(ə)l",
+    "meaning": "(指理由)表面的；假装的",
+    "example": "The ostensible purpose of these meetings was to gather information on financial strategies.",
+    "example_cn": "这些会议声称旨在收集金融策略方面的信息。"
+  },
+  {
+    "word": "equal",
+    "phonetic": "'i:kwəl",
+    "meaning": "相等的，相等于，相等匹敌",
+    "example": "Two plus two equals four.",
+    "example_cn": "二加二等于四。"
+  },
+  {
+    "word": "terminal",
+    "phonetic": "'tɜːmɪn(ə)l",
+    "meaning": "终点站；航空枢纽",
+    "example": "the airport’s passenger terminal",
+    "example_cn": "机场航站楼"
+  },
+  {
+    "word": "fall",
+    "phonetic": "fɔːl",
+    "meaning": "落下，降落，倒坍，垂下",
+    "example": "The tree was about to fall.",
+    "example_cn": "那棵树快要倒下了。"
+  },
+  {
+    "word": "alleviate",
+    "phonetic": "ə'liːvɪeɪt",
+    "meaning": "减轻(痛苦等)",
+    "example": "measures to alleviate poverty",
+    "example_cn": "扶贫措施"
+  },
+  {
+    "word": "sociable",
+    "phonetic": "'səʊʃəb(ə)l",
+    "meaning": "友好的，喜好交际的",
+    "example": "a pleasant, sociable couple",
+    "example_cn": "一对和善且喜欢与人交往的夫妇"
+  },
+  {
+    "word": "wholesome",
+    "phonetic": "'həʊls(ə)m",
+    "meaning": "健康的，有益于健康的",
+    "example": "good wholesome fun",
+    "example_cn": "健康有益的娱乐"
+  },
+  {
+    "word": "cube",
+    "phonetic": "kjuːb",
+    "meaning": "立方(体)",
+    "example": "a sugar cube",
+    "example_cn": "一块方糖"
+  },
+  {
+    "word": "provoke",
+    "phonetic": "prə'vəʊk",
+    "meaning": "激怒；引起",
+    "example": "The novel has provoked fierce debate in the US.",
+    "example_cn": "那部小说在美国引发了激烈的争论。"
+  },
+  {
+    "word": "acquire",
+    "phonetic": "ə'kwaɪə",
+    "meaning": "取得；获得",
+    "example": "Manning hoped to acquire valuable works of art as cheaply as possible.",
+    "example_cn": "曼宁希望以尽可能低的价格买到有价值的艺术品。"
+  },
+  {
+    "word": "resemble",
+    "phonetic": "rɪ'zemb(ə)l",
+    "meaning": "类似，像",
+    "example": "It’s amazing how closely Brian and Steve resemble each other.",
+    "example_cn": "布赖恩和史蒂夫真是惊人地相像。"
+  },
+  {
+    "word": "coherent",
+    "phonetic": "kə(ʊ)'hɪər(ə)nt",
+    "meaning": "黏着的；连贯的",
+    "example": "The three years of the course are planned as a coherent whole.",
+    "example_cn": "这三年的课程是作为连贯的整体来安排的。"
+  },
+  {
+    "word": "margin",
+    "phonetic": "'mɑːdʒɪn",
+    "meaning": "(页边)空白；边缘；(时间，金钱)多余",
+    "example": "the western margin of southern Africa",
+    "example_cn": "非洲南部的西隅"
+  },
+  {
+    "word": "depart",
+    "phonetic": "dɪ'pɑːt",
+    "meaning": "离开，启程",
+    "example": "Flights by Air Europe depart Gatwick on Tuesdays.",
+    "example_cn": "欧洲航空公司的航班每逢周二从盖特威克机场起飞。"
+  },
+  {
+    "word": "mode",
+    "phonetic": "məʊd",
+    "meaning": "方法；样式",
+    "example": "Set the monitor to 256 colour mode.",
+    "example_cn": "把显示器调成256色彩模式。"
+  },
+  {
+    "word": "preliminary",
+    "phonetic": "prɪ'lɪmɪn(ə)rɪ",
+    "meaning": "初步的，开端的",
+    "example": "the preliminary stages of the competition",
+    "example_cn": "竞赛的预赛阶段"
+  },
+  {
+    "word": "intrinsic",
+    "phonetic": "ɪn'trɪnsɪk",
+    "meaning": "固有的，内在的",
+    "example": "the intrinsic interest of the subject",
+    "example_cn": "该话题本身的趣味"
+  },
+  {
+    "word": "enclose",
+    "phonetic": "ɪn'kləʊz; en-",
+    "meaning": "把围起来，把封入信封",
+    "example": "The pool area is enclosed by a six-foot wall.",
+    "example_cn": "游泳区用六英尺高的高墙围了起来。"
+  },
+  {
+    "word": "entail",
+    "phonetic": "ɪn'teɪl; en-",
+    "meaning": "使必需",
+    "example": "A new computer system entails a lot of re-training.",
+    "example_cn": "使用新的计算机系统需要大量的再培训。"
+  },
+  {
+    "word": "heart",
+    "phonetic": "hɑːt",
+    "meaning": "心脏；感情；内心",
+    "example": "Regular exercise is good for the heart.",
+    "example_cn": "经常锻炼对心脏有好处。"
+  },
+  {
+    "word": "positive",
+    "phonetic": "'pɒzɪtɪv",
+    "meaning": "确定的；确信的，实际的；正的；阳性的",
+    "example": "We need to take positive steps to improve the situation of families in poverty.",
+    "example_cn": "我们需要采取积极措施来改善贫困家庭的状况。"
+  },
+  {
+    "word": "collapse",
+    "phonetic": "kə'læps",
+    "meaning": "倒塌；(精神)垮下来",
+    "example": "Uncle Ted’s chair collapsed under his weight.",
+    "example_cn": "椅子承受不了特德叔叔的重量，塌架了。"
+  },
+  {
+    "word": "statesman",
+    "phonetic": "'steɪtsmən",
+    "meaning": "政治家，政客",
+    "example": "a respected elder statesman",
+    "example_cn": "一位受人尊敬的政界元老"
+  },
+  {
+    "word": "jeer",
+    "phonetic": "dʒɪə",
+    "meaning": "嘲笑",
+    "example": "‘You know I’m right!’ she jeered.",
+    "example_cn": "“你知道我是对的！”她嘲笑道。"
+  },
+  {
+    "word": "sack",
+    "phonetic": "sæk",
+    "meaning": "麻袋，解雇",
+    "example": "They’ve never actually given anyone the sack .",
+    "example_cn": "他们从未真的辞退过什么人。"
+  },
+  {
+    "word": "narcotic",
+    "phonetic": "nɑː'kɒtɪk",
+    "meaning": "麻醉剂",
+    "example": "The truth of Johnson’s comment was recently brought home to me by the serene calm of a resident who was treating a particularly complicated narcotic-dependent patient.",
+    "example_cn": "最近，一位住院医生对待一位异常复杂的麻醉药依赖病人的平静态度让我领会到了塞缪尔.约翰逊这句话的真谛。"
+  },
+  {
+    "word": "ponder",
+    "phonetic": "'pɒndə",
+    "meaning": "深思，考虑",
+    "example": "He continued to ponder the problem as he walked home.",
+    "example_cn": "他一边往家走一边继续思考那个问题。"
+  },
+  {
+    "word": "argue",
+    "phonetic": "'ɑːgjuː",
+    "meaning": "不同意；辩论",
+    "example": "She argued the case for changing the law.",
+    "example_cn": "她提出论据，力主修改法律。"
+  },
+  {
+    "word": "sound",
+    "phonetic": "saʊnd",
+    "meaning": "健康的，健全的；可靠的，充分的；彻底的",
+    "example": "a sound understanding of money and banking systems",
+    "example_cn": "对货币和银行业体制的透彻理解"
+  },
+  {
+    "word": "irrigation",
+    "phonetic": "ˌɪrɪˈɡeʃn",
+    "meaning": "灌溉",
+    "example": "Rivers and lakes provide us with water transport and irrigation.",
+    "example_cn": "江河湖泽给我们以舟楫和灌溉之利。"
+  },
+  {
+    "word": "despair",
+    "phonetic": "dɪ'speə",
+    "meaning": "绝望，丧失信心",
+    "example": "The noise from the neighbours used to drive him to despair .",
+    "example_cn": "过去，邻居的噪音常常吵得他心烦意乱。"
+  },
+  {
+    "word": "dentist",
+    "phonetic": "'dentɪst",
+    "meaning": "牙医",
+    "example": "Visit your dentist twice a year for a checkup.",
+    "example_cn": "每年看两次牙医做检查。"
+  },
+  {
+    "word": "focus",
+    "phonetic": "'fəʊkəs",
+    "meaning": "焦点，集中",
+    "example": "His eyes were focussed straight ahead.",
+    "example_cn": "他的双眼盯着正前方。"
+  },
+  {
+    "word": "inundate",
+    "phonetic": "'ɪnʌndeɪt",
+    "meaning": "淹没，泛滥，压倒",
+    "example": "The tidal wave inundated vast areas of cropland.",
+    "example_cn": "海啸淹没了大片农田。"
+  },
+  {
+    "word": "cherish",
+    "phonetic": "'tʃerɪʃ",
+    "meaning": "爱护，抱有(希望)；怀有(情感)",
+    "example": "He genuinely loved and cherished her.",
+    "example_cn": "他真爱并珍惜过她。"
+  },
+  {
+    "word": "pointless",
+    "phonetic": "'pɒɪntlɪs",
+    "meaning": "无意义的，无目标的",
+    "example": "Life just seemed pointless to me.",
+    "example_cn": "生活对我来说简直没什么意义。"
+  },
+  {
+    "word": "rhetoric",
+    "phonetic": "'retərɪk",
+    "meaning": "修辞学",
+    "example": "...the noble institutions of political life, such as political rhetoric, public office, and public service.",
+    "example_cn": "…政治生活中令人尊崇的机制，诸如政治修辞艺术、政府机构以及公益服务。"
+  },
+  {
+    "word": "humanity",
+    "phonetic": "hjʊ'mænɪtɪ",
+    "meaning": "人类；仁慈，仁爱",
+    "example": "We want a clean healthy environment for all humanity .",
+    "example_cn": "我们希望全人类拥有一个干净健康的生存环境。"
+  },
+  {
+    "word": "disgust",
+    "phonetic": "dɪs'gʌst",
+    "meaning": "厌恶，讨厌",
+    "example": "He reached into the bin with a look of disgust on his face.",
+    "example_cn": "他把手伸进垃圾箱，脸上带着厌恶的表情。"
+  },
+  {
+    "word": "wager",
+    "phonetic": "'weɪdʒə",
+    "meaning": "赌注",
+    "example": "There have been various wagers on certain candidates since the senator announced his retirement.",
+    "example_cn": "自从那位参议员宣布引退之后，对某些候选人的打赌猜测纷纷出现。"
+  },
+  {
+    "word": "promise",
+    "phonetic": "'prɒmɪs",
+    "meaning": "诺言；指望；前途",
+    "example": "The post office has promised to resume first class mail delivery to the area on Friday.",
+    "example_cn": "邮局已承诺在星期五恢复该地区第一类邮件的递送。"
+  },
+  {
+    "word": "aspiration",
+    "phonetic": "æspə'reɪʃ(ə)n",
+    "meaning": "渴望；抱负",
+    "example": "a high level of political aspiration",
+    "example_cn": "崇高的政治抱负"
+  },
+  {
+    "word": "fee",
+    "phonetic": "fiː",
+    "meaning": "费，报名费，会费",
+    "example": "You can use the gym and pool for a fee of £35 a month.",
+    "example_cn": "月付35英镑，即可使用健身房和游泳池。"
+  },
+  {
+    "word": "fault",
+    "phonetic": "fɔːlt; fɒlt",
+    "meaning": "缺点；毛病，过错；(地质)断层",
+    "example": "I’m really sorry - it’s all my fault.",
+    "example_cn": "我真的很抱歉——都是我的错。"
+  },
+  {
+    "word": "envy",
+    "phonetic": "'envɪ",
+    "meaning": "忌妒，妒忌的对象；羡慕",
+    "example": "I really envy you and Ian, you seem so happy together.",
+    "example_cn": "我真是羡慕你和伊恩，你俩在一起看起来多幸福。"
+  },
+  {
+    "word": "yield",
+    "phonetic": "jiːld",
+    "meaning": "生产；让步；投降；屈服",
+    "example": "Our research has only recently begun to yield important results.",
+    "example_cn": "直到最近我们的研究才开始取得重要成果。"
+  },
+  {
+    "word": "erratic",
+    "phonetic": "ɪ'rætɪk",
+    "meaning": "古怪的，反复无常的，不稳定的",
+    "example": "His breathing was becoming erratic.",
+    "example_cn": "他的呼吸越来越不均匀。"
+  },
+  {
+    "word": "intent",
+    "phonetic": "ɪn'tent",
+    "meaning": "(目光)不能移的，集中的，专心的，坚决的",
+    "example": "his intent gaze",
+    "example_cn": "他专注的凝视"
+  },
+  {
+    "word": "steak",
+    "phonetic": "steɪk",
+    "meaning": "肉片，鱼片，牛排",
+    "example": "...fresh salmon steaks.",
+    "example_cn": "…新鲜的三文鱼排。"
+  },
+  {
+    "word": "clan",
+    "phonetic": "klæn",
+    "meaning": "氏族，部落；宗派",
+    "example": "the Campbell clan",
+    "example_cn": "坎贝尔家族"
+  },
+  {
+    "word": "anthropology",
+    "phonetic": ",ænθrə'pɒlədʒɪ",
+    "meaning": "人类学",
+    "example": "\"In anthropology, you can't equate third gender with homosexuality,\" he said.",
+    "example_cn": "“在人类学中，你不能将同性恋和第三性别混同，”他说。"
+  },
+  {
+    "word": "credible",
+    "phonetic": "'kredɪb(ə)l",
+    "meaning": "可信任的，可靠的",
+    "example": "Her excuse was barely credible.",
+    "example_cn": "她的借口无法让人信服。"
+  },
+  {
+    "word": "spotlight",
+    "phonetic": "'spɒtlaɪt",
+    "meaning": "聚光灯",
+    "example": "The yard was lit by three huge spotlights.",
+    "example_cn": "院子里亮着三盏巨大的聚光灯。"
+  },
+  {
+    "word": "lag",
+    "phonetic": "læg",
+    "meaning": "走得慢，落后",
+    "example": "Western banks still lag behind financial institutions in most other regions of the country.",
+    "example_cn": "西部地区的银行仍然落后于这个国家其他大部分地区的金融机构。"
+  },
+  {
+    "word": "piston",
+    "phonetic": "'pɪst(ə)n",
+    "meaning": "活塞",
+    "example": "Filling the cylinder with steam pushes the piston out.",
+    "example_cn": "填充汽缸的蒸汽将活塞推出。"
+  },
+  {
+    "word": "comment",
+    "phonetic": "'kɒment",
+    "meaning": "评论；批评",
+    "example": "He was fined for making abusive comments to the referee.",
+    "example_cn": "他因谩骂裁判而被罚款。"
+  },
+  {
+    "word": "metabolism",
+    "phonetic": "mɪ'tæbəlɪz(ə)m",
+    "meaning": "新陈代谢",
+    "example": "This drug speeds up your metabolism.",
+    "example_cn": "这种药物会加快你的新陈代谢。"
+  },
+  {
+    "word": "inclination",
+    "phonetic": "ɪnklɪ'neɪʃ(ə)n",
+    "meaning": "倾向，意愿",
+    "example": "My natural inclination was to say no.",
+    "example_cn": "我生性爱说“不”。"
+  },
+  {
+    "word": "mackintosh",
+    "phonetic": "'mækɪntɒʃ",
+    "meaning": "(英国英语)雨衣；苹果计算机的一种型号",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "appendix",
+    "phonetic": "ə'pendɪks",
+    "meaning": "附录；阑尾",
+    "example": "Christine had to go into hospital to have her appendix out (=  have it removed  ) .",
+    "example_cn": "克里丝蒂娜不得不去医院切除阑尾。"
+  },
+  {
+    "word": "cathedral",
+    "phonetic": "kə'θiːdr(ə)l",
+    "meaning": "总教堂；大教堂",
+    "example": "St Paul’s Cathedral",
+    "example_cn": "圣保罗大教堂"
+  },
+  {
+    "word": "assorted",
+    "phonetic": "ə'sɔːtɪd",
+    "meaning": "各式各样的",
+    "example": "paintbrushes in assorted sizes",
+    "example_cn": "各种大小的画笔"
+  },
+  {
+    "word": "possession",
+    "phonetic": "pə'zeʃ(ə)n",
+    "meaning": "所有，拥有；财产",
+    "example": "That information is not in our possession.",
+    "example_cn": "那则信息不归我们所有。"
+  },
+  {
+    "word": "width",
+    "phonetic": "wɪtθ; wɪdθ",
+    "meaning": "宽阔，宽度",
+    "example": "a covered terrace extending the full width of the house",
+    "example_cn": "和房子同宽的有顶露台"
+  },
+  {
+    "word": "variation",
+    "phonetic": "veərɪ'eɪʃ(ə)n",
+    "meaning": "变化，改变；变量；变异",
+    "example": "Most of his poems are variations on the theme of love.",
+    "example_cn": "他的大部分诗作都是有关爱情主题的形式不同的作品。"
+  },
+  {
+    "word": "commemorate",
+    "phonetic": "kə'meməreɪt",
+    "meaning": "纪念",
+    "example": "a parade to commemorate the town’s bicentenary",
+    "example_cn": "庆祝该镇建立200周年的游行"
+  },
+  {
+    "word": "mosaic",
+    "phonetic": "mə(ʊ)'zeɪɪk",
+    "meaning": "镶嵌细工的，镶嵌工艺品的，嵌花式的",
+    "example": "rooms decorated with wall paintings and mosaics",
+    "example_cn": "用壁画和马赛克装饰的房间"
+  },
+  {
+    "word": "misdeed",
+    "phonetic": "mɪs'diːd",
+    "meaning": "不端行为",
+    "example": "He now repents of his past misdeeds.",
+    "example_cn": "他现在对自己过去犯下的种种恶行感到懊悔。"
+  },
+  {
+    "word": "mitigate",
+    "phonetic": "'mɪtɪgeɪt",
+    "meaning": "使缓和；使镇静",
+    "example": "...ways of mitigating the effects of an explosion.",
+    "example_cn": "…减轻爆炸后果的方法。"
+  },
+  {
+    "word": "mesh",
+    "phonetic": "meʃ",
+    "meaning": "网，筛孔",
+    "example": "The windows were covered in wire mesh to keep out flies.",
+    "example_cn": "窗户上装了铁丝纱网，防止苍蝇飞入。"
+  },
+  {
+    "word": "float",
+    "phonetic": "fləʊt",
+    "meaning": "浮子，浮标，(游行中的)彩车",
+    "example": "We stood and watched the Carnival floats drive past.",
+    "example_cn": "我们站着观看狂欢节彩车经过。"
+  },
+  {
+    "word": "illuminate",
+    "phonetic": "ɪ'l(j)uːmɪneɪt",
+    "meaning": "照亮；用灯装饰；阐明",
+    "example": "A single candle illuminated his face.",
+    "example_cn": "一支蜡烛照亮了他的脸。"
+  },
+  {
+    "word": "quarry",
+    "phonetic": "'kwɒrɪ",
+    "meaning": "采石场；猎物",
+    "example": "a slate quarry",
+    "example_cn": "板岩采石场"
+  },
+  {
+    "word": "compound",
+    "phonetic": "'kɒmpaʊnd",
+    "meaning": "混合物(的)，复合词(的)；院子(的)",
+    "example": "man-made organic compounds",
+    "example_cn": "人造有机化合物"
+  },
+  {
+    "word": "confuse",
+    "phonetic": "kən'fjuːz",
+    "meaning": "使混乱，弄错",
+    "example": "People might well confuse the two products.",
+    "example_cn": "人们很容易混淆这两种产品。"
+  },
+  {
+    "word": "dean",
+    "phonetic": "diːn",
+    "meaning": "(大学)院长，系主任，教务长",
+    "example": "the admissions dean",
+    "example_cn": "招生主任"
+  },
+  {
+    "word": "gossip",
+    "phonetic": "'gɒsɪp",
+    "meaning": "流言蜚语；报上社会新闻；爱传流言的人",
+    "example": "What’s the latest gossip ?",
+    "example_cn": "最近有些什么传闻？"
+  },
+  {
+    "word": "succumb",
+    "phonetic": "sə'kʌm",
+    "meaning": "屈服，屈从，死",
+    "example": "Don't succumb to the temptation to have just one cigarette.",
+    "example_cn": "不要屈服于只抽一支烟的诱惑。"
+  },
+  {
+    "word": "obsess",
+    "phonetic": "əb'ses",
+    "meaning": "使着迷，使烦扰",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "distraction",
+    "phonetic": "dɪ'strækʃ(ə)n",
+    "meaning": "消遣，娱乐，精神涣散",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "miscarriage",
+    "phonetic": "mɪs'kærɪdʒ; 'mɪskærɪdʒ",
+    "meaning": "误判，误罚；流产；失败",
+    "example": "She had two miscarriages before she had her first child.",
+    "example_cn": "她生第一个孩子之前流产了两次。"
+  },
+  {
+    "word": "dormant",
+    "phonetic": "'dɔːm(ə)nt",
+    "meaning": "休眠的，暂死的",
+    "example": "a huge dormant volcano",
+    "example_cn": "一座巨大的休眠火山"
+  },
+  {
+    "word": "economy",
+    "phonetic": "ɪ'kɒnəmɪ",
+    "meaning": "经济；节约",
+    "example": "a successful economy",
+    "example_cn": "发展成功的经济"
+  },
+  {
+    "word": "aesthetic",
+    "phonetic": "iːs'θetɪk; es-",
+    "meaning": "美学的；艺术的",
+    "example": "From an esthetic point of view, it’s a nice design.",
+    "example_cn": "从美学角度看，这是个不错的设计。"
+  },
+  {
+    "word": "facility",
+    "phonetic": "fə'sɪləti",
+    "meaning": "灵巧，熟练；设备",
+    "example": "What recreational facilities are now available?",
+    "example_cn": "什么娱乐设施现在是可用的？"
+  },
+  {
+    "word": "armour",
+    "phonetic": "'ɑːmə",
+    "meaning": "盔甲；装甲部队",
+    "example": "a knight wearing a suit of armour",
+    "example_cn": "全身披挂的骑士"
+  },
+  {
+    "word": "hamper",
+    "phonetic": "'hæmpə",
+    "meaning": "妨碍，阻碍，牵制",
+    "example": "She tried to run, but was hampered by her heavy suitcase.",
+    "example_cn": "她想跑，但沉重的旅行箱拖累了她。"
+  },
+  {
+    "word": "commitment",
+    "phonetic": "kə'mɪtm(ə)nt",
+    "meaning": "所承诺之事",
+    "example": "Are you ready to make a long-term commitment ?",
+    "example_cn": "你是否准备好作出长久的承诺？"
+  },
+  {
+    "word": "professional",
+    "phonetic": "prə'feʃ(ə)n(ə)l",
+    "meaning": "职业的",
+    "example": "This business plan looks very professional.",
+    "example_cn": "这个商业计划看上去很有专业水平。"
+  },
+  {
+    "word": "attack",
+    "phonetic": "ə'tæk",
+    "meaning": "攻击；非难；疾病发作",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "exasperate",
+    "phonetic": "ɪg'zæsp(ə)reɪt; eg-",
+    "meaning": "激怒，使恼火",
+    "example": "It exasperates me to hear comments like that.",
+    "example_cn": "听到那样的评论令我恼怒。"
+  },
+  {
+    "word": "trial",
+    "phonetic": "'traɪəl",
+    "meaning": "试验；试用；审讯，受审",
+    "example": "The trial is due to start next week.",
+    "example_cn": "审理定于下周开始。"
+  },
+  {
+    "word": "mess",
+    "phonetic": "mes",
+    "meaning": "混乱，污垢，杂乱",
+    "example": "What a mess!",
+    "example_cn": "太乱了！"
+  },
+  {
+    "word": "tear",
+    "phonetic": "(for v.) ˈtɛː; (for n.) ˈtɪə",
+    "meaning": "眼泪",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "dose",
+    "phonetic": "dəʊs",
+    "meaning": "(药)一剂，一服",
+    "example": "I quite like Jamie in small doses (= in limited amounts but not a lot or often ) .",
+    "example_cn": "如果偶尔在一起的话，我还是蛮喜欢杰米的。"
+  },
+  {
+    "word": "dreadful",
+    "phonetic": "'dredfʊl; -f(ə)l",
+    "meaning": "令人担心的，遭透的",
+    "example": "We’ve had some dreadful weather lately.",
+    "example_cn": "最近我们这里的天气糟透了。"
+  },
+  {
+    "word": "maternal",
+    "phonetic": "mə'tɜːn(ə)l",
+    "meaning": "母亲的，母系的",
+    "example": "Annie was wonderfully warm and maternal.",
+    "example_cn": "安妮非常亲切慈爱。"
+  },
+  {
+    "word": "feeble",
+    "phonetic": "'fiːb(ə)l",
+    "meaning": "虚弱的，无力的",
+    "example": "His voice sounded feeble and far away.",
+    "example_cn": "他的声音听上去既无力又遥远。"
+  },
+  {
+    "word": "depression",
+    "phonetic": "dɪ'preʃ(ə)n",
+    "meaning": "沮丧 消沉 凹陷 萧条时期",
+    "example": "He never forgot the hardships he witnessed during the Great Depression of the 1930s.",
+    "example_cn": "他从未忘记20世纪30年代经济大萧条时期他所目睹的艰辛。"
+  },
+  {
+    "word": "sparse",
+    "phonetic": "spɑːs",
+    "meaning": "稀少的；稀疏的",
+    "example": "his sparse brown hair",
+    "example_cn": "他那稀疏的棕色头发"
+  },
+  {
+    "word": "polish",
+    "phonetic": "'pɒlɪʃ",
+    "meaning": "磨光，擦光；润饰，使优美",
+    "example": "I spent all afternoon polishing the silver.",
+    "example_cn": "我整个下午都在擦拭银器。"
+  },
+  {
+    "word": "trim",
+    "phonetic": "trɪm",
+    "meaning": "整洁的，整齐的",
+    "example": "trim suburban gardens",
+    "example_cn": "修剪齐整的郊区花园"
+  },
+  {
+    "word": "massacre",
+    "phonetic": "'mæsəkə",
+    "meaning": "大屠杀，残杀",
+    "example": "the only survivor of the massacre",
+    "example_cn": "这场大屠杀的唯一幸存者"
+  },
+  {
+    "word": "waver",
+    "phonetic": "'weɪvə",
+    "meaning": "摆，摇晃；动摇；犹豫不决",
+    "example": "Her voice wavered uncertainly.",
+    "example_cn": "她吞吞吐吐的。"
+  },
+  {
+    "word": "decrepit",
+    "phonetic": "dɪ'krepɪt",
+    "meaning": "老弱的，衰老的",
+    "example": "The buildings were in a decrepit state.",
+    "example_cn": "这些建筑物破旧不堪。"
+  },
+  {
+    "word": "mortgage",
+    "phonetic": "'mɔːgɪdʒ",
+    "meaning": "抵押，按揭，贷款购房",
+    "example": "At this point, such claims have no bearing on the mortgage or housing crisis; they have bearing only on the holders of these securities themselves.",
+    "example_cn": "从这一点上来说，这些贷款凭证与抵押贷款或住房危机没有任何关系，他们只与拥有这些证券的持有者有关。"
+  },
+  {
+    "word": "hypothesis",
+    "phonetic": "haɪ'pɒθɪsɪs",
+    "meaning": "(逻辑)前提，假说",
+    "example": "One hypothesis is that the victim fell asleep while driving.",
+    "example_cn": "一种假设是受害人开车时睡着了。"
+  },
+  {
+    "word": "all",
+    "phonetic": "ɔːl",
+    "meaning": "完全地",
+    "example": "You shouldn’t be sitting here by yourself, all alone.",
+    "example_cn": "你不应该一个人孤零零地坐在这儿。"
+  },
+  {
+    "word": "finance",
+    "phonetic": "faɪ'næns; fɪ-; 'faɪnæns",
+    "meaning": "财政，金融；资金",
+    "example": "leasing and other forms of business finance",
+    "example_cn": "租赁及其他商业金融形式"
+  },
+  {
+    "word": "take",
+    "phonetic": "teɪk",
+    "meaning": "紧跟，尾随",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "legislate",
+    "phonetic": "'ledʒɪsleɪt",
+    "meaning": "立法",
+    "example": "Most member countries have already legislated against excessive overtime.",
+    "example_cn": "大部分成员国已经立法禁止过度加班。"
+  },
+  {
+    "word": "permeate",
+    "phonetic": "'pɜːmɪeɪt",
+    "meaning": "弥漫，透过",
+    "example": "The smell of diesel oil permeated the air.",
+    "example_cn": "空气里充斥着柴油的气味。"
+  },
+  {
+    "word": "cavity",
+    "phonetic": "'kævɪtɪ",
+    "meaning": "洞",
+    "example": "Put herbs inside the body cavity of the fish.",
+    "example_cn": "把香草放进鱼肚里。"
+  },
+  {
+    "word": "definite",
+    "phonetic": "'defɪnɪt",
+    "meaning": "确切的，明确的",
+    "example": "It’s impossible for me to give you a definite answer.",
+    "example_cn": "我不可能给你明确的答复。"
+  },
+  {
+    "word": "skeleton",
+    "phonetic": "'skelɪt(ə)n",
+    "meaning": "骨骼；(建筑物、计划的)骨架；纲要",
+    "example": "We agreed on a skeleton outline of the proposal.",
+    "example_cn": "我们给提案商定了一个基本框架。"
+  },
+  {
+    "word": "quarterly",
+    "phonetic": "'kwɔːtəlɪ",
+    "meaning": "季度的；季刊",
+    "example": "We publish a quarterly journal.",
+    "example_cn": "我们出版一份季刊。"
+  },
+  {
+    "word": "textile",
+    "phonetic": "'tekstaɪl",
+    "meaning": "纺织的，纺织品",
+    "example": "Their main exports are textiles, especially silk and cotton.",
+    "example_cn": "他们的主要出口商品是纺织品，尤其是丝绸和棉布。"
+  },
+  {
+    "word": "conception",
+    "phonetic": "kən'sepʃ(ə)n",
+    "meaning": "概念的形成，概念，想法；怀孕",
+    "example": "the original conception of the book",
+    "example_cn": "此书最初的构想"
+  },
+  {
+    "word": "jury",
+    "phonetic": "'dʒʊərɪ",
+    "meaning": "陪审团",
+    "example": "the members of the jury",
+    "example_cn": "陪审团成员"
+  },
+  {
+    "word": "murmur",
+    "phonetic": "'mɜːmə",
+    "meaning": "低沉连续的声音；诉怨",
+    "example": "The wind murmured through the trees.",
+    "example_cn": "风在林间低语。"
+  },
+  {
+    "word": "virus",
+    "phonetic": "'vaɪrəs",
+    "meaning": "病毒",
+    "example": "children infected with the Aids virus",
+    "example_cn": "感染艾滋病病毒的儿童"
+  },
+  {
+    "word": "gasp",
+    "phonetic": "gɑːsp",
+    "meaning": "喘气，气喘吁吁地说",
+    "example": "‘My leg!’ he gasped. ‘I think it’s broken!’",
+    "example_cn": "“我的腿！”他倒抽一口气喊道，“我觉得腿断了！”"
+  },
+  {
+    "word": "fatal",
+    "phonetic": "'feɪt(ə)l",
+    "meaning": "致命的，命运的，注定的",
+    "example": "potentially fatal diseases",
+    "example_cn": "潜在致命的疾病"
+  },
+  {
+    "word": "altitude",
+    "phonetic": "'æltɪtjuːd",
+    "meaning": "(海拔)高度",
+    "example": "The aircraft had reached its cruising altitude of about 39,000 feet.",
+    "example_cn": "那架飞机已经达到了大约三万九千英尺的巡航高度。"
+  },
+  {
+    "word": "outdo",
+    "phonetic": "aʊt'duː",
+    "meaning": "超过；胜过",
+    "example": "When it comes to speed of response, a small firm can outdo a big company.",
+    "example_cn": "说到反应速度，小公司会胜过大公司。"
+  },
+  {
+    "word": "opinion",
+    "phonetic": "ə'pɪnjən",
+    "meaning": "意见，鉴定",
+    "example": "When choosing an insurance policy it’s best to get an independent opinion.",
+    "example_cn": "选择保险时，最好听听专家的独立意见。"
+  },
+  {
+    "word": "decay",
+    "phonetic": "dɪ'keɪ",
+    "meaning": "腐朽，腐烂，衰微",
+    "example": "Her body was already starting to decay.",
+    "example_cn": "她的尸体已经开始腐烂。"
+  },
+  {
+    "word": "audit",
+    "phonetic": "'ɔːdɪt",
+    "meaning": "审计；查账",
+    "example": "the annual audit",
+    "example_cn": "年度审计"
+  },
+  {
+    "word": "forthcoming",
+    "phonetic": "fɔːθ'kʌmɪŋ",
+    "meaning": "即将出现的；现有的",
+    "example": "the forthcoming elections",
+    "example_cn": "即将到来的选举"
+  },
+  {
+    "word": "anthology",
+    "phonetic": "æn'θɒlədʒɪ",
+    "meaning": "诗集",
+    "example": "an anthology of American literature",
+    "example_cn": "美国文学选集"
+  },
+  {
+    "word": "yarn",
+    "phonetic": "jɑːn",
+    "meaning": "纱线；故事，奇谈",
+    "example": "The old captain would often spin (= tell ) us a yarn about life aboard ship.",
+    "example_cn": "老船长经常会给我们讲一些船上生活的奇闻轶事。"
+  },
+  {
+    "word": "plaintive",
+    "phonetic": "'pleɪntɪv",
+    "meaning": "哀伤的，忧伤的",
+    "example": "They lay on the firm sands, listening to the plaintive cry of the seagulls.",
+    "example_cn": "他们躺在坚实的沙滩上，听着海鸥的哀鸣。"
+  },
+  {
+    "word": "misrepresent",
+    "phonetic": ",mɪsreprɪ'zent",
+    "meaning": "误传，歪曲，曲解",
+    "example": "These statistics grossly misrepresent the reality.",
+    "example_cn": "这些统计资料严重歪曲了实际情况。"
+  },
+  {
+    "word": "warranty",
+    "phonetic": "'wɒr(ə)ntɪ",
+    "meaning": "书面担保书，保证书",
+    "example": "a three-year warranty",
+    "example_cn": "三年的保修期"
+  },
+  {
+    "word": "rigorous",
+    "phonetic": "'rɪg(ə)rəs",
+    "meaning": "严格的，严厉的，严酷的(气候条件)",
+    "example": "a rigorous analysis of defence needs",
+    "example_cn": "对国防需求的缜密分析"
+  },
+  {
+    "word": "auxiliary",
+    "phonetic": "ɔːg'zɪlɪərɪ; ɒg-",
+    "meaning": "辅助的，协助的",
+    "example": "an auxiliary nurse",
+    "example_cn": "助理护士"
+  },
+  {
+    "word": "terse",
+    "phonetic": "tɜːs",
+    "meaning": "(说话，文笔)精炼的，简明的",
+    "example": "Derek’s terse reply ended the conversation.",
+    "example_cn": "德里克的简短回答结束了谈话。"
+  },
+  {
+    "word": "orchard",
+    "phonetic": "'ɔːtʃəd",
+    "meaning": "果园",
+    "example": "a cherry orchard",
+    "example_cn": "樱桃园"
+  },
+  {
+    "word": "dissertation",
+    "phonetic": ",dɪsə'teɪʃ(ə)n",
+    "meaning": "(博士学位)论文，学术演讲，专题论文",
+    "example": "He is currently writing a dissertation on the Somali civil war.",
+    "example_cn": "他正在写一篇关于索马里内战的论文。"
+  },
+  {
+    "word": "vivid",
+    "phonetic": "'vɪvɪd",
+    "meaning": "鲜艳的；活泼的，有生气的；清晰的",
+    "example": "I’ve got vivid memories of that summer.",
+    "example_cn": "我对那年夏天记忆犹新。"
+  },
+  {
+    "word": "grumble",
+    "phonetic": "'grʌmb(ə)l",
+    "meaning": "埋怨，咕哝，发牢骚",
+    "example": "‘This is boring,’ Kathleen grumbled.",
+    "example_cn": "“这真无聊。”凯瑟琳抱怨道。"
+  },
+  {
+    "word": "phenomenon",
+    "phonetic": "fɪ'nɒmɪnən",
+    "meaning": "现象；非凡的人；奇迹(pl-na)",
+    "example": "Homelessness is not a new phenomenon .",
+    "example_cn": "无家可归已不是什么新现象。"
+  },
+  {
+    "word": "rally",
+    "phonetic": "'rælɪ",
+    "meaning": "集合",
+    "example": "About 1,000 people attended the rally in Hyde Park.",
+    "example_cn": "大约有1,000人参加了海德公园的集会。"
+  },
+  {
+    "word": "ceramic",
+    "phonetic": "sɪ'ræmɪk",
+    "meaning": "陶瓷的；陶器的",
+    "example": "This takes a little while to switch all of your plastic storage containers over to ceramic, glass or stainless steel but its definitely worthwhile.",
+    "example_cn": "把你所有的塑料存储容器换成陶瓷的，玻璃的，或者不锈钢的你会浪费你一点时间。 但这绝对是值得的。"
+  },
+  {
+    "word": "tongue",
+    "phonetic": "tʌŋ",
+    "meaning": "舌头；语言；舌状物（火舌）",
+    "example": "Joe ran his tongue over his dry lips.",
+    "example_cn": "乔舔了舔干燥的嘴唇。"
+  },
+  {
+    "word": "initiative",
+    "phonetic": "ɪ'nɪʃɪətɪv; -ʃə-",
+    "meaning": "发端，创始，主动性",
+    "example": "I wish my son would show more initiative.",
+    "example_cn": "我希望我的儿子能表现得再主动一些。"
+  },
+  {
+    "word": "formula",
+    "phonetic": "'fɔːmjʊlə",
+    "meaning": "俗套话；公式，程式",
+    "example": "the formula for calculating distance",
+    "example_cn": "计算距离的公式"
+  },
+  {
+    "word": "incipient",
+    "phonetic": "ɪn'sɪpɪənt",
+    "meaning": "开始的；早期的",
+    "example": "a sign of incipient madness",
+    "example_cn": "精神失常的早期征兆"
+  },
+  {
+    "word": "coincidence",
+    "phonetic": "kəʊ'ɪnsɪd(ə)ns",
+    "meaning": "巧合，符合，巧合的事例",
+    "example": "‘I’m going to Appleby tomorrow.’ ‘ What a coincidence ! I’m going there too.’",
+    "example_cn": "“明天我要去阿普尔比。”“太巧了！我也要去那里。”"
+  },
+  {
+    "word": "envisage",
+    "phonetic": "ɪn'vɪzɪdʒ; en-",
+    "meaning": "想象；期望；设想",
+    "example": "The scheme cost a lot more than we had originally envisaged.",
+    "example_cn": "该计划的花费大大超出了我们最初所预想的数额。"
+  },
+  {
+    "word": "precaution",
+    "phonetic": "prɪ'kɔːʃ(ə)n",
+    "meaning": "预防",
+    "example": "Fire precautions were neglected.",
+    "example_cn": "防火措施被忽视了。"
+  },
+  {
+    "word": "challenge",
+    "phonetic": "'tʃælɪn(d)ʒ",
+    "meaning": "挑战；提出异议",
+    "example": "They threw down the challenge that he couldn’t wash 40 cars in one hour (= invited him to try to do it ) .",
+    "example_cn": "他们激将他，说他不可能在1小时内擦洗40辆汽车。"
+  },
+  {
+    "word": "annihilate",
+    "phonetic": "ə'naɪɪleɪt",
+    "meaning": "歼灭；消灭",
+    "example": "Just one of these bombs could annihilate a city the size of New York.",
+    "example_cn": "这种炸弹只要一颗就能彻底毁灭纽约那么大的一座城市。"
+  },
+  {
+    "word": "addict",
+    "phonetic": "'ædɪkt (for n.); əˈdɪkt (for v.)",
+    "meaning": "使沉迷，使嗜好",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "conservative",
+    "phonetic": "kən'sɜːvətɪv",
+    "meaning": "守旧的，保守的",
+    "example": "a very conservative attitude to education",
+    "example_cn": "对待教育非常守旧的态度"
+  },
+  {
+    "word": "edge",
+    "phonetic": "edʒ",
+    "meaning": "加；边界",
+    "example": "Put the eggs in the centre of the dish, with the vegetables and herbs around the edge.",
+    "example_cn": "把鸡蛋放在盘子中间，盘边一圈放些蔬菜和香草。"
+  },
+  {
+    "word": "rumour",
+    "phonetic": "'ruːmə",
+    "meaning": "传闻；谣传",
+    "example": "U.S. officials are discounting rumours of a coup.",
+    "example_cn": "美国政府官员对一场政变的传闻将信将疑。"
+  },
+  {
+    "word": "misuse",
+    "phonetic": "mɪs'juːz",
+    "meaning": "误用, 滥用；虐待\"",
+    "example": "Even harmless drugs can be misused.",
+    "example_cn": "即使是无毒副作用的药物也有使用不当的时候。"
+  },
+  {
+    "word": "propaganda",
+    "phonetic": "prɒpə'gændə",
+    "meaning": "宣传；宣传方法",
+    "example": "the spreading of political propaganda",
+    "example_cn": "政治宣传的开展"
+  },
+  {
+    "word": "inherit",
+    "phonetic": "ɪn'herɪt",
+    "meaning": "继承，经遗传而得(特性等)",
+    "example": "inherited wealth",
+    "example_cn": "继承的财富"
+  },
+  {
+    "word": "secretion",
+    "phonetic": "sɪ'kriːʃ(ə)n",
+    "meaning": "分泌，分泌物",
+    "example": "These secretions are used by the caterpillar as a defence.",
+    "example_cn": "这些分泌物被毛虫用作自卫武器。"
+  },
+  {
+    "word": "attendance",
+    "phonetic": "ə'tend(ə)ns",
+    "meaning": "到场；出席人数",
+    "example": "We have an average attendance of 4,000 fans per game.",
+    "example_cn": "每场比赛平均有4,000名球迷来观战。"
+  },
+  {
+    "word": "illiterate",
+    "phonetic": "ɪ'lɪt(ə)rət",
+    "meaning": "文盲(的)",
+    "example": "...a subclass of illiterates.",
+    "example_cn": "…文盲阶层。"
+  },
+  {
+    "word": "turmoil",
+    "phonetic": "'tɜːmɒɪl",
+    "meaning": "骚动，骚乱",
+    "example": "She lived through the turmoil of the French Revolution.",
+    "example_cn": "她经历过法国大革命的混乱之后仍旧活着。"
+  },
+  {
+    "word": "denote",
+    "phonetic": "dɪ'nəʊt",
+    "meaning": "是的符号，提示，表示",
+    "example": "What does the word ‘curriculum’ denote that ‘course’ does not?",
+    "example_cn": "curriculum一词的哪些含义是course没有的？"
+  },
+  {
+    "word": "adhere",
+    "phonetic": "əd'hɪə",
+    "meaning": "粘着；忠于；坚持",
+    "example": "But this means they cannot always adhere to the strict codes of practice dictated in UN headquarters.",
+    "example_cn": "但是这就意味着它们无法总是坚持联合国总部规定的严格的实践规章。"
+  },
+  {
+    "word": "pinch",
+    "phonetic": "pɪn(t)ʃ",
+    "meaning": "捏，拧，掐，夹痛，紧压",
+    "example": "We have to stop her pinching her baby brother.",
+    "example_cn": "我们不能让她再掐她小弟弟了。"
+  },
+  {
+    "word": "pulp",
+    "phonetic": "pʌlp",
+    "meaning": "果肉，木浆，纸浆",
+    "example": "Halve the melon and scoop out the pulp.",
+    "example_cn": "把瓜切成两半，挖出瓜瓤。"
+  },
+  {
+    "word": "pierce",
+    "phonetic": "pɪəs",
+    "meaning": "刺穿，戳人；（喻）寒冷刺骨；感动",
+    "example": "Steam the corn until it can easily be pierced with a fork.",
+    "example_cn": "把玉米蒸到用叉子可以轻易扎透。"
+  },
+  {
+    "word": "contribution",
+    "phonetic": "kɒntrɪ'bjuːʃ(ə)n",
+    "meaning": "贡献; 捐献",
+    "example": "a campaign contribution",
+    "example_cn": "竞选捐款"
+  },
+  {
+    "word": "analogy",
+    "phonetic": "ə'nælədʒɪ",
+    "meaning": "类推，类似",
+    "example": "The analogy between music and fragrance has stuck.",
+    "example_cn": "音乐与香味的类比已经深入人心了。"
+  },
+  {
+    "word": "policy",
+    "phonetic": "'pɒləsɪ",
+    "meaning": "政策，保险单",
+    "example": "an insurance policy",
+    "example_cn": "保险单"
+  },
+  {
+    "word": "elegant",
+    "phonetic": "'elɪg(ə)nt",
+    "meaning": "优美的，雅致的",
+    "example": "a tall, elegant young woman",
+    "example_cn": "身材高挑、举止优雅的年轻女子"
+  },
+  {
+    "word": "witness",
+    "phonetic": "ˈwɪtnɪs",
+    "meaning": "目击者；证人；证明",
+    "example": "Police have appealed for witnesses to come forward.",
+    "example_cn": "警方呼吁目击者站出来。"
+  },
+  {
+    "word": "vulgar",
+    "phonetic": "'vʌlgə",
+    "meaning": "粗俗的，趣味不高的，通俗的，庸俗的",
+    "example": "vulgar behaviour",
+    "example_cn": "粗俗的行为"
+  },
+  {
+    "word": "option",
+    "phonetic": "'ɒpʃ(ə)n",
+    "meaning": "选择，可选择的事物",
+    "example": "There are a number of options available.",
+    "example_cn": "有多种选择。"
+  },
+  {
+    "word": "economics",
+    "phonetic": "iːkə'nɒmɪks; ek-",
+    "meaning": "经济学",
+    "example": "a Harvard professor of economics",
+    "example_cn": "哈佛大学的经济学教授"
+  },
+  {
+    "word": "periodically",
+    "phonetic": ",pɪərɪ'ɒdɪkəlɪ",
+    "meaning": "偶然地，定期地",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "roam",
+    "phonetic": "rəʊm",
+    "meaning": "漫步，漫游",
+    "example": "Chickens and geese roam freely in the back yard.",
+    "example_cn": "鸡和鹅在后院随意溜达。"
+  },
+  {
+    "word": "stoop",
+    "phonetic": "stuːp",
+    "meaning": "弯腰，俯身；屈从，堕落，沦为",
+    "example": "We had to stoop to pass through the low entrance.",
+    "example_cn": "我们得弯腰通过那低矮的入口。"
+  },
+  {
+    "word": "extinguish",
+    "phonetic": "ɪk'stɪŋgwɪʃ; ek-",
+    "meaning": "熄灭，扑灭",
+    "example": "Please extinguish all cigarettes.",
+    "example_cn": "请把香烟都熄灭了。"
+  },
+  {
+    "word": "disturbance",
+    "phonetic": "dɪ'stɜːb(ə)ns",
+    "meaning": "打扰，骚动",
+    "example": "There were disturbances in the crowd as fans left the stadium.",
+    "example_cn": "球迷离开体育场时，人群中发生了骚乱。"
+  },
+  {
+    "word": "censor",
+    "phonetic": "'sensə",
+    "meaning": "审查，审查员；删改",
+    "example": "The information given to the press was carefully censored by the Ministry of Defence.",
+    "example_cn": "发布给报界的信息经过了国防部的仔细审查。"
+  },
+  {
+    "word": "lever",
+    "phonetic": "'liːvə",
+    "meaning": "杆，杠杆；施加影响的手段",
+    "example": "Pull this lever to open the gate.",
+    "example_cn": "拉此横杆开启大门。"
+  },
+  {
+    "word": "gang",
+    "phonetic": "gæŋ",
+    "meaning": "一组，一队，(罪犯等)一帮，一群",
+    "example": "Several gangs were operating in the area.",
+    "example_cn": "有好几个犯罪团伙在这个地区活动。"
+  },
+  {
+    "word": "detach",
+    "phonetic": "dɪ'tætʃ",
+    "meaning": "使分开；拆卸；派遣",
+    "example": "Please detach and fill out the application form.",
+    "example_cn": "请撕下申请表并填好。"
+  },
+  {
+    "word": "stimulus",
+    "phonetic": "'stɪmjʊləs",
+    "meaning": "刺激物；鼓励",
+    "example": "At this age, the infant begins to react more to visual stimuli.",
+    "example_cn": "到了这个年龄段，婴儿开始对视觉刺激有了更多的反应。"
+  },
+  {
+    "word": "knot",
+    "phonetic": "nɒt",
+    "meaning": "绳结；结合；树节；海里；小群人",
+    "example": "One lace had broken and been tied in a knot.",
+    "example_cn": "一根带子已经断了，被打成一个结。"
+  },
+  {
+    "word": "tumult",
+    "phonetic": "'tjuːmʌlt",
+    "meaning": "喧哗；激动，混乱；吵闹",
+    "example": "I could simply not be heard in the tumult.",
+    "example_cn": "一片嘈杂声中别人根本听不到我说话。"
+  },
+  {
+    "word": "ardent",
+    "phonetic": "'ɑːd(ə)nt",
+    "meaning": "热心的；热情的",
+    "example": "an ardent supporter of free trade",
+    "example_cn": "自由贸易的热心支持者"
+  },
+  {
+    "word": "ideology",
+    "phonetic": ",aɪdɪ'ɒlədʒɪ; ɪd-",
+    "meaning": "思想，思想体系，意识形态",
+    "example": "the ideologies of fascism and terrorism",
+    "example_cn": "法西斯主义和恐怖主义的意识形态"
+  },
+  {
+    "word": "everlasting",
+    "phonetic": "evə'lɑːstɪŋ",
+    "meaning": "永久的，永恒的",
+    "example": "everlasting fame",
+    "example_cn": "永久的名声"
+  },
+  {
+    "word": "insight",
+    "phonetic": "'ɪnsaɪt",
+    "meaning": "洞察，洞悉，见识",
+    "example": "a woman of great insight",
+    "example_cn": "一位极有眼光的妇女"
+  },
+  {
+    "word": "artificial",
+    "phonetic": "ɑːtɪ'fɪʃ(ə)l",
+    "meaning": "人工的；娇揉造作的",
+    "example": "artificial flowers",
+    "example_cn": "假花"
+  },
+  {
+    "word": "uphold",
+    "phonetic": "ʌp'həʊld",
+    "meaning": "支持；赞成；确认",
+    "example": "a committee that aims to uphold educational standards",
+    "example_cn": "旨在保持教育水准的委员会"
+  },
+  {
+    "word": "constitution",
+    "phonetic": "kɒnstɪ'tjuːʃ(ə)n",
+    "meaning": "宪法；体格；构造",
+    "example": "The right to speak freely is written into the Constitution of the United States.",
+    "example_cn": "言论自由的权利被写入美国宪法。"
+  },
+  {
+    "word": "canvas",
+    "phonetic": "'kænvəs",
+    "meaning": "粗帆布；油画布",
+    "example": "a canvas bag",
+    "example_cn": "帆布包"
+  },
+  {
+    "word": "prominent",
+    "phonetic": "'prɒmɪnənt",
+    "meaning": "突出的，显要的，著名的",
+    "example": "a prominent Russian scientist",
+    "example_cn": "杰出的俄罗斯科学家"
+  },
+  {
+    "word": "flirt",
+    "phonetic": "flɜːt",
+    "meaning": "挥动，调情",
+    "example": "Dad's flirting with all the ladies, or they're all flirting with him, as usual.",
+    "example_cn": "爸爸在和所有的女士打情骂俏，或者说她们都在和他调情，跟平常一样。"
+  },
+  {
+    "word": "duly",
+    "phonetic": "'djuːlɪ",
+    "meaning": "按时地，适当地",
+    "example": "Here are your travel documents, all duly signed.",
+    "example_cn": "这是你的旅行证件，都签好了。"
+  },
+  {
+    "word": "maize",
+    "phonetic": "meɪz",
+    "meaning": "玉米",
+    "example": "We can grow sorghum or maize on this plot.",
+    "example_cn": "这块地可以种高粱或玉米。"
+  },
+  {
+    "word": "insipid",
+    "phonetic": "ɪn'sɪpɪd",
+    "meaning": "无味的，枯燥乏味的；单调的",
+    "example": "an insipid pasta dish",
+    "example_cn": "一盘没有味道的意大利面食"
+  },
+  {
+    "word": "favour",
+    "phonetic": "'feɪvə",
+    "meaning": "好感，赞成，偏爱",
+    "example": "The company has no rules about favouring U.S. citizens during layoffs.",
+    "example_cn": "该公司没有在裁员期间偏袒美国公民的规定。"
+  },
+  {
+    "word": "malignant",
+    "phonetic": "mə'lɪgnənt",
+    "meaning": "恶意的；恶毒的；(疾病)恶性的",
+    "example": "She developed a malignant tumour in her breast.",
+    "example_cn": "她的乳房长了个恶性肿瘤。"
+  },
+  {
+    "word": "systematic",
+    "phonetic": "sɪstə'mætɪk",
+    "meaning": "有系统的，系统的；有计划有步骤的",
+    "example": "They went about their business in a systematic way.",
+    "example_cn": "他们按部就班地做生意。"
+  },
+  {
+    "word": "caustic",
+    "phonetic": "'kɔːstɪk; 'kɒst-",
+    "meaning": "腐蚀性的；刻薄的；苛刻的",
+    "example": "caustic soda (= a chemical used for cleaning things )",
+    "example_cn": "苛性钠，烧碱"
+  },
+  {
+    "word": "inherent",
+    "phonetic": "ɪn'hɪər(ə)nt; -'her(ə)nt",
+    "meaning": "固有的",
+    "example": "Every business has its own inherent risks.",
+    "example_cn": "每笔生意本身都有风险。"
+  },
+  {
+    "word": "wage",
+    "phonetic": "weɪdʒ",
+    "meaning": "周薪",
+    "example": "He earns a good wage.",
+    "example_cn": "他工资挺高。"
+  },
+  {
+    "word": "amuse",
+    "phonetic": "ə'mjuːz",
+    "meaning": "使娱逗，逗…笑",
+    "example": "He made funny faces to amuse the children.",
+    "example_cn": "他做鬼脸逗孩子们开心。"
+  },
+  {
+    "word": "negligible",
+    "phonetic": "'neglɪdʒɪb(ə)l",
+    "meaning": "微不足道的，可以忽视的",
+    "example": "The damage done to his property was negligible.",
+    "example_cn": "对他财产造成的损失微不足道。"
+  },
+  {
+    "word": "air",
+    "phonetic": "eə",
+    "meaning": "空气",
+    "example": "Let’s go outside and get some fresh air.",
+    "example_cn": "我们出去呼吸些新鲜空气吧。"
+  },
+  {
+    "word": "incur",
+    "phonetic": "ɪn'kɜː",
+    "meaning": "招致; 遭受",
+    "example": "The government had also incurred huge debts.",
+    "example_cn": "政府也已承受了大笔债务。"
+  },
+  {
+    "word": "molest",
+    "phonetic": "mə'lest",
+    "meaning": "骚扰；干扰",
+    "example": "men who molest young boys",
+    "example_cn": "猥亵男童的男子"
+  },
+  {
+    "word": "monstrous",
+    "phonetic": "'mɒnstrəs",
+    "meaning": "巨大的；恐怖的；可耻的，丢脸的",
+    "example": "a monstrous nose",
+    "example_cn": "很大的鼻子"
+  },
+  {
+    "word": "edible",
+    "phonetic": "'edɪb(ə)l",
+    "meaning": "可以食用的",
+    "example": "These berries are edible, but those are poisonous.",
+    "example_cn": "这些浆果可以吃，但那些有毒。"
+  },
+  {
+    "word": "offer",
+    "phonetic": "'ɒfə",
+    "meaning": "违犯；伤害的感情",
+    "example": "The offer of talks with Moscow marks a significant change from the previous Western position.",
+    "example_cn": "与莫斯科会谈的提议标志着先前西方立场的一个重大转变。"
+  },
+  {
+    "word": "alternate",
+    "phonetic": "'ɔːltəneɪt; 'ɒl-",
+    "meaning": "交替的，轮流的",
+    "example": "alternate blue and red stripes",
+    "example_cn": "蓝红相间的条纹"
+  },
+  {
+    "word": "tramp",
+    "phonetic": "træmp",
+    "meaning": "徒步远行；长途跋涉",
+    "example": "They put on their coats and tramped through the falling snow.",
+    "example_cn": "他们穿上大衣，在落雪中脚步沉重地缓缓走着。"
+  },
+  {
+    "word": "sprout",
+    "phonetic": "spraʊt",
+    "meaning": "发芽，开始生长；发展",
+    "example": "Move the pots outside when the seeds begin to sprout.",
+    "example_cn": "种子开始发芽时把盆搬到外面去。"
+  },
+  {
+    "word": "tempo",
+    "phonetic": "'tempəʊ",
+    "meaning": "(行动，活动)速度；节拍；节奏",
+    "example": "the easy tempo of island life",
+    "example_cn": "岛上生活的轻松节奏"
+  },
+  {
+    "word": "tough",
+    "phonetic": "tʌf",
+    "meaning": "坚韧的，咬不动的；强壮的；粗暴的",
+    "example": "The EU is taking a tough line with the UK over this issue.",
+    "example_cn": "在这一问题上，欧盟对英国的态度很强硬。"
+  },
+  {
+    "word": "maritime",
+    "phonetic": "'mærɪtaɪm",
+    "meaning": "海上的；海事的；近海的；沿海的",
+    "example": "San Francisco has lost nearly all of its maritime industry.",
+    "example_cn": "旧金山几乎失去了所有海运业。"
+  },
+  {
+    "word": "spark",
+    "phonetic": "spɑːk",
+    "meaning": "(发)火花",
+    "example": "sparks from the fire",
+    "example_cn": "火里飞出的火星"
+  },
+  {
+    "word": "establish",
+    "phonetic": "ɪ'stæblɪʃ; e-",
+    "meaning": "建立，委任；安置；证实；确立",
+    "example": "The city of Boerne was established by German settlers in the 1840s.",
+    "example_cn": "博恩市是德国移民于19世纪40年代建立的。"
+  },
+  {
+    "word": "dim",
+    "phonetic": "dɪm",
+    "meaning": "暗的，看不清楚的，迟钝的",
+    "example": "in the dim light of the early dawn",
+    "example_cn": "在微弱的晨曦里"
+  },
+  {
+    "word": "lodge",
+    "phonetic": "lɒdʒ",
+    "meaning": "供住宿，寄宿；存放；提出",
+    "example": "a building used to lodge prisoners of war",
+    "example_cn": "一座关押战俘的建筑物"
+  },
+  {
+    "word": "rendezvous",
+    "phonetic": "'rɒndɪvuː; -deɪvuː",
+    "meaning": "约会；集会，聚会之地点",
+    "example": "plans for a secret rendezvous",
+    "example_cn": "秘密约会的计划"
+  },
+  {
+    "word": "martyr",
+    "phonetic": "'mɑːtə",
+    "meaning": "烈士，殉难者",
+    "example": "St. Stephen, the first Christian martyr",
+    "example_cn": "圣司提反，第一个基督教殉道者"
+  },
+  {
+    "word": "confront",
+    "phonetic": "kən'frʌnt",
+    "meaning": "使面对；面临",
+    "example": "The problems confronting the new government were enormous.",
+    "example_cn": "新政府面临的难题是巨大的。"
+  },
+  {
+    "word": "neat",
+    "phonetic": "niːt",
+    "meaning": "整洁的；雅致的；灵巧的；纯的；不掺水的",
+    "example": "neat handwriting",
+    "example_cn": "工整的笔迹"
+  },
+  {
+    "word": "rectangle",
+    "phonetic": "'rektæŋg(ə)l",
+    "meaning": "矩形，长方形",
+    "example": "Suppose the width of a rectangle is x metres.",
+    "example_cn": "设长方形的宽是 x 米。"
+  },
+  {
+    "word": "transgress",
+    "phonetic": "trænz'gres; trɑːnz-; -ns-",
+    "meaning": "越越限度；违反(法律规则)",
+    "example": "Orton’s plays transgress accepted social norms.",
+    "example_cn": "奥顿的戏剧违背了公认的社会准则。"
+  },
+  {
+    "word": "verdict",
+    "phonetic": "'vɜːdɪkt",
+    "meaning": "(陪审团)裁决, 定论；意见 \"",
+    "example": "The verdict was ‘not guilty’.",
+    "example_cn": "裁决为“无罪”。"
+  },
+  {
+    "word": "evacuate",
+    "phonetic": "ɪ'vækjʊeɪt",
+    "meaning": "撤离，疏散，排清",
+    "example": "Police evacuated the area.",
+    "example_cn": "警方将该地区人员全部疏散。"
+  },
+  {
+    "word": "remorse",
+    "phonetic": "rɪ'mɔːs",
+    "meaning": "懊悔，悔恨",
+    "example": "Throughout the trial, he had shown no remorse .",
+    "example_cn": "整个审判过程中，他没有表示出一丝悔意。"
+  },
+  {
+    "word": "caution",
+    "phonetic": "'kɔːʃ(ə)n",
+    "meaning": "小心；告诫，警告",
+    "example": "The physician must exercise caution when prescribing antidepressants.",
+    "example_cn": "医师在开抗抑郁药处方时必须谨慎。"
+  },
+  {
+    "word": "subordinate",
+    "phonetic": "sə'bɔːdɪnət",
+    "meaning": "下级的，次要的,从属的",
+    "example": "a subordinate officer",
+    "example_cn": "下级官员"
+  },
+  {
+    "word": "chin",
+    "phonetic": "tʃɪn",
+    "meaning": "下巴，颏",
+    "example": "He rubbed his chin thoughtfully.",
+    "example_cn": "他若有所思地抚摸着下巴。"
+  },
+  {
+    "word": "live",
+    "phonetic": "laɪv；lɪv",
+    "meaning": "活，生活",
+    "example": "Without light, plants couldn’t live.",
+    "example_cn": "没有阳光，植物就无法生存。"
+  },
+  {
+    "word": "global",
+    "phonetic": "'gləʊb(ə)l",
+    "meaning": "全世界的，全球的；综合的",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "revive",
+    "phonetic": "rɪ'vaɪv",
+    "meaning": "苏醒，复活；复兴，再流行",
+    "example": "...an attempt to revive the economy.",
+    "example_cn": "…一次重振经济的尝试。"
+  },
+  {
+    "word": "pesticide",
+    "phonetic": "'pestɪsaɪd",
+    "meaning": "杀虫剂，农药",
+    "example": "This pesticide is diluted with water and applied directly to the fields.",
+    "example_cn": "这种杀虫剂用水稀释后直接施用在田里。"
+  },
+  {
+    "word": "create",
+    "phonetic": "kriː'eɪt",
+    "meaning": "创造；创作；产生；造成",
+    "example": "Some people believe the universe was created by a big explosion.",
+    "example_cn": "有些人认为宇宙是通过一次大爆炸创造出来的。"
+  },
+  {
+    "word": "gloss",
+    "phonetic": "glɒs",
+    "meaning": "光泽，光滑；虚饰；注释",
+    "example": "This gel will add gloss to even the dullest hair.",
+    "example_cn": "用了这种发胶，即使最干枯的头发也会增添光泽。"
+  },
+  {
+    "word": "entreat",
+    "phonetic": "ɪn'triːt; en-",
+    "meaning": "恳求，央求",
+    "example": "He entreated them to delay their departure.",
+    "example_cn": "他恳求他们晚些再走。"
+  },
+  {
+    "word": "detain",
+    "phonetic": "dɪ'teɪn",
+    "meaning": "留住；扣押，拘留",
+    "example": "Two suspects have been detained by the police for questioning .",
+    "example_cn": "两名嫌疑人被警方拘留审问。"
+  },
+  {
+    "word": "tidy",
+    "phonetic": "'taɪdɪ",
+    "meaning": "整洁的；有条理的",
+    "example": "a tidy desk",
+    "example_cn": "整洁的书桌"
+  },
+  {
+    "word": "eloquent",
+    "phonetic": "'eləkwənt",
+    "meaning": "雄辩的",
+    "example": "an eloquent appeal for support",
+    "example_cn": "极具说服力的求助呼吁"
+  },
+  {
+    "word": "attend",
+    "phonetic": "ə'tend",
+    "meaning": "专心；照顾",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "postage",
+    "phonetic": "'pəʊstɪdʒ",
+    "meaning": "邮费，邮资",
+    "example": "How much is the postage for a postcard?",
+    "example_cn": "寄一张明信片的邮资是多少？"
+  },
+  {
+    "word": "postpone",
+    "phonetic": "pəʊs(t)'pəʊn; pə'spəʊn",
+    "meaning": "推迟；延缓",
+    "example": "The match had to be postponed until next week.",
+    "example_cn": "比赛不得不推迟到下周举行。"
+  },
+  {
+    "word": "crisp",
+    "phonetic": "krɪsp",
+    "meaning": "脆的；干脆的",
+    "example": "She kicked at the crisp leaves at her feet.",
+    "example_cn": "她踢着脚边松脆的树叶。"
+  },
+  {
+    "word": "instrument",
+    "phonetic": "'ɪnstrʊm(ə)nt",
+    "meaning": "仪器；器具；乐器",
+    "example": "surgical instruments",
+    "example_cn": "外科(手术)器械"
+  },
+  {
+    "word": "most",
+    "phonetic": "məʊst",
+    "meaning": "大多数，最；最多的(地)",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "situated",
+    "phonetic": "'sɪtjʊeɪtɪd",
+    "meaning": "坐落在的；处于某种境地的",
+    "example": "His hotel is situated in one of the loveliest places on the Loire.",
+    "example_cn": "他的旅馆坐落在卢瓦尔的一个最优美的地方。"
+  },
+  {
+    "word": "notify",
+    "phonetic": "'nəʊtɪfaɪ",
+    "meaning": "通知，报告",
+    "example": "The skipper notified the coastguard of the tragedy.",
+    "example_cn": "船长通知了海岸警卫队这一灾难。"
+  },
+  {
+    "word": "phobia",
+    "phonetic": "'fəʊbɪə",
+    "meaning": "(病态的)恐惧，憎恶",
+    "example": "Some children suffer from school phobia .",
+    "example_cn": "有些儿童对上学有恐惧症。"
+  },
+  {
+    "word": "municipal",
+    "phonetic": "mjʊ'nɪsɪp(ə)l",
+    "meaning": "市的，市政的",
+    "example": "the municipal waste dump",
+    "example_cn": "城市垃圾场"
+  },
+  {
+    "word": "eye",
+    "phonetic": "aɪ",
+    "meaning": "眼睛；看",
+    "example": "He’s got beautiful eyes.",
+    "example_cn": "他有一双漂亮的眼睛。"
+  },
+  {
+    "word": "curl",
+    "phonetic": "kɜːl",
+    "meaning": "卷毛；卷发",
+    "example": "a little boy with beautiful blonde curls",
+    "example_cn": "满头漂亮的金色鬈发的小男孩"
+  },
+  {
+    "word": "vehicle",
+    "phonetic": "ˈviːɪk(ə)l",
+    "meaning": "车辆交通工具；思想媒介",
+    "example": "a description of the stolen vehicle",
+    "example_cn": "对被盗车辆的描述"
+  },
+  {
+    "word": "minus",
+    "phonetic": "'maɪnəs",
+    "meaning": "负的，负号；减",
+    "example": "17 minus 5 is 12 (17–5=12).",
+    "example_cn": "17减5等于12。"
+  },
+  {
+    "word": "scold",
+    "phonetic": "skəʊld",
+    "meaning": "责骂，申斥",
+    "example": "Do not scold the puppy, but simply and firmly say ‘no’.",
+    "example_cn": "不要责骂小狗，但要干脆利落地说“不”。"
+  },
+  {
+    "word": "section",
+    "phonetic": "'sekʃ(ə)n",
+    "meaning": "部分，零件；剖面，横断面，阶层",
+    "example": "The plane’s tail section was found in a cornfield.",
+    "example_cn": "飞机的尾部在玉米田里找到了。"
+  },
+  {
+    "word": "reciprocal",
+    "phonetic": "rɪ'sɪprək(ə)l",
+    "meaning": "相互的；互惠的",
+    "example": "He spoke of the necessity for a reciprocal relationship that would be useful for all sides.",
+    "example_cn": "他谈及需要建立对各方都有益的互惠关系。"
+  },
+  {
+    "word": "category",
+    "phonetic": "'kætɪg(ə)rɪ",
+    "meaning": "种类，类目",
+    "example": "people in the over-45 age category",
+    "example_cn": "属45岁以上年龄组的人"
+  },
+  {
+    "word": "captive",
+    "phonetic": "'kæptɪv",
+    "meaning": "俘虏，迷恋者；被俘虏的，被拴住的",
+    "example": "He described the difficulties of surviving for four months as a captive.",
+    "example_cn": "他讲述了沦为阶下囚的4个月中生存的种种不易。"
+  },
+  {
+    "word": "panic",
+    "phonetic": "'pænɪk",
+    "meaning": "恐慌，惊慌",
+    "example": "a feeling of sheer panic",
+    "example_cn": "惊恐万分的感觉"
+  },
+  {
+    "word": "intact",
+    "phonetic": "ɪn'tækt",
+    "meaning": "未受损的，完整的",
+    "example": "Only the medieval tower had remained intact.",
+    "example_cn": "只有这座中世纪塔楼保存完好。"
+  },
+  {
+    "word": "entry",
+    "phonetic": "ˈɒntreɪ",
+    "meaning": "进入，入口；条目，词条",
+    "example": "There was no sign of a forced entry.",
+    "example_cn": "没有强行闯入的迹象。"
+  },
+  {
+    "word": "inspiring",
+    "phonetic": "ɪn'spaɪərɪŋ",
+    "meaning": "令人振奋的",
+    "example": "inspiring music",
+    "example_cn": "激励人心的音乐"
+  },
+  {
+    "word": "tedious",
+    "phonetic": "'tiːdɪəs",
+    "meaning": "乏味的，沉闷的",
+    "example": "The work was tiring and tedious.",
+    "example_cn": "这工作既累人又枯燥。"
+  },
+  {
+    "word": "cannon",
+    "phonetic": "'kænən",
+    "meaning": "大炮",
+    "example": "The cannons boom, the band plays.",
+    "example_cn": "炮声隆隆，鼓乐齐鸣。"
+  },
+  {
+    "word": "stereo",
+    "phonetic": "'sterɪəʊ; 'stɪərɪəʊ",
+    "meaning": "立体声录音机",
+    "example": "a stereo with good speakers",
+    "example_cn": "扬声器音质好的立体声音响"
+  },
+  {
+    "word": "feedback",
+    "phonetic": "'fiːdbæk",
+    "meaning": "反应，用户反应",
+    "example": "Continue to ask for feedback on your work.",
+    "example_cn": "继续征求对你工作的反馈。"
+  },
+  {
+    "word": "lament",
+    "phonetic": "lə'ment",
+    "meaning": "悲痛，哀悼",
+    "example": "The nation lamented the death of its great war leader.",
+    "example_cn": "举国上下都在哀悼他们伟大的战时领袖。"
+  },
+  {
+    "word": "paradise",
+    "phonetic": "'pærədaɪs",
+    "meaning": "天国；乐园",
+    "example": "The market is a shopper’s paradise.",
+    "example_cn": "这个市场是购物者的乐园。"
+  },
+  {
+    "word": "fountain",
+    "phonetic": "ˈfaʊntən",
+    "meaning": "泉水，喷泉；源泉",
+    "example": "He was a fountain of information on Asian affairs.",
+    "example_cn": "他是亚洲事务的信息源。"
+  },
+  {
+    "word": "acquisition",
+    "phonetic": ",ækwɪ'zɪʃ(ə)n",
+    "meaning": "获得，获得物",
+    "example": "the acquisition of language",
+    "example_cn": "语言的习得"
+  },
+  {
+    "word": "revise",
+    "phonetic": "rɪ'vaɪz",
+    "meaning": "修订；改正",
+    "example": "The college has revised its plans because of local objections.",
+    "example_cn": "由于地方上的反对，学院已经修改了计划。"
+  },
+  {
+    "word": "closet",
+    "phonetic": "'klɒzɪt",
+    "meaning": "小储藏室",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "prolific",
+    "phonetic": "prə'lɪfɪk",
+    "meaning": "多产的，丰富的",
+    "example": "Handel’s prolific output of opera",
+    "example_cn": "韩德尔丰富的歌剧作品"
+  },
+  {
+    "word": "audible",
+    "phonetic": "'ɔːdɪb(ə)l",
+    "meaning": "听得见的",
+    "example": "His voice was barely audible (=  could only just be heard  ) above the roar of the crowd.",
+    "example_cn": "人声嘈杂，几乎听不见他的说话声。"
+  },
+  {
+    "word": "advent",
+    "phonetic": "'ædvənt",
+    "meaning": "降临，出现",
+    "example": "the advent of the computer",
+    "example_cn": "计算机的问世"
+  },
+  {
+    "word": "get",
+    "phonetic": "get",
+    "meaning": "使得，使成为某种状态，开始起来",
+    "example": "I got 98% in my last maths test.",
+    "example_cn": "上一次数学考试我得了98分。"
+  },
+  {
+    "word": "recline",
+    "phonetic": "rɪ'klaɪn",
+    "meaning": "斜倚，躺",
+    "example": "She proceeded to recline on a chaise longue.",
+    "example_cn": "她开始斜靠在一个躺椅上。"
+  },
+  {
+    "word": "pier",
+    "phonetic": "pɪə",
+    "meaning": "桥墩；码头",
+    "example": "a yacht moored at a pier",
+    "example_cn": "停在码头的一艘游艇"
+  },
+  {
+    "word": "menace",
+    "phonetic": "'menəs",
+    "meaning": "危险，威胁",
+    "example": "the growing menace of oil pollution at sea",
+    "example_cn": "日益严重的海洋石油污染"
+  },
+  {
+    "word": "outrageous",
+    "phonetic": "aʊt'reɪdʒəs",
+    "meaning": "残暴的，蛮横的",
+    "example": "outrageous prices",
+    "example_cn": "骇人的价格"
+  },
+  {
+    "word": "fossil",
+    "phonetic": "'fɒs(ə)l; -sɪl",
+    "meaning": "化石",
+    "example": "fossils of early reptiles",
+    "example_cn": "早期爬行动物的化石"
+  },
+  {
+    "word": "ethnic",
+    "phonetic": "'eθnɪk",
+    "meaning": "种族的；人种学的",
+    "example": "The school teaches pupils from different ethnic groups.",
+    "example_cn": "该校教授不同种族的小学生。"
+  },
+  {
+    "word": "marital",
+    "phonetic": "'mærɪt(ə)l",
+    "meaning": "婚姻的，丈夫的",
+    "example": "marital problems",
+    "example_cn": "婚姻问题"
+  },
+  {
+    "word": "wrought",
+    "phonetic": "rɔːt",
+    "meaning": "锤炼的",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "supposedly",
+    "phonetic": "sə'pəʊzɪdlɪ",
+    "meaning": "想象上，恐怕",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "clockwise",
+    "phonetic": "'klɒkwaɪz",
+    "meaning": "顺时针方向地",
+    "example": "Screw the lid on clockwise.",
+    "example_cn": "按顺时针方向拧紧盖子。"
+  },
+  {
+    "word": "sector",
+    "phonetic": "'sektə",
+    "meaning": "战区，防区；(工业等)部门，部分",
+    "example": "...the nation's manufacturing sector.",
+    "example_cn": "…该国的制造部门。"
+  },
+  {
+    "word": "chunk",
+    "phonetic": "tʃʌŋk",
+    "meaning": "厚块",
+    "example": "ice chunks",
+    "example_cn": "大冰块"
+  },
+  {
+    "word": "transplant",
+    "phonetic": "træns'plɑːnt; trɑːns-; -nz-",
+    "meaning": "移植，移种；人工移植(心,胃)；迁移 \"",
+    "example": "heart transplant surgery",
+    "example_cn": "心脏移植手术"
+  },
+  {
+    "word": "radiate",
+    "phonetic": "'reɪdɪeɪt",
+    "meaning": "发射，放射",
+    "example": "The log fire radiated a warm cosy glow.",
+    "example_cn": "燃烧的原木发出温暖舒适的红光。"
+  },
+  {
+    "word": "millennium",
+    "phonetic": "mɪˈlɛnɪəm",
+    "meaning": "一千年，千禧年；太平盛世",
+    "example": "people who have inhabited this land for millennia",
+    "example_cn": "在这片土地上已经居住了数千年的人们"
+  },
+  {
+    "word": "speculate",
+    "phonetic": "'spekjʊleɪt",
+    "meaning": "思索，推测，投机",
+    "example": "She refused to speculate.",
+    "example_cn": "她拒绝猜测。"
+  },
+  {
+    "word": "inept",
+    "phonetic": "ɪ'nept",
+    "meaning": "不适当的",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "lamb",
+    "phonetic": "læm",
+    "meaning": "小羊；羔羊肉",
+    "example": "roast lamb",
+    "example_cn": "烤羊肉"
+  },
+  {
+    "word": "specimen",
+    "phonetic": "'spesɪmɪn",
+    "meaning": "标本，样品，样张；试样",
+    "example": "a blood specimen",
+    "example_cn": "血样"
+  },
+  {
+    "word": "hop",
+    "phonetic": "hɒp",
+    "meaning": "单足跳，弹跳",
+    "example": "a little girl hopping and skipping",
+    "example_cn": "一个蹦蹦跳跳的小女孩"
+  },
+  {
+    "word": "differ",
+    "phonetic": "'dɪfə",
+    "meaning": "不相同，意见不一致",
+    "example": "The two systems differ in many respects.",
+    "example_cn": "这两个系统在许多方面不同。"
+  },
+  {
+    "word": "volunteer",
+    "phonetic": ",vɒlən'tɪə",
+    "meaning": "自愿参加(者)",
+    "example": "Most of the relief work was done by volunteers.",
+    "example_cn": "大部分救援工作都由志愿人员完成。"
+  },
+  {
+    "word": "aquarium",
+    "phonetic": "ə'kweərɪəm",
+    "meaning": "水族馆；养鱼池",
+    "example": "In Amsterdam the girls all stand in the windows shimmering as tantalising as tropical fish beyond the gleam of aquarium glass.",
+    "example_cn": "在阿姆斯特丹，姑娘们都站在窗后，光芒四射柔情撩人宛如水族馆玻璃背后脉脉含情的热带鱼。"
+  },
+  {
+    "word": "supposition",
+    "phonetic": ",sʌpə'zɪʃ(ə)n",
+    "meaning": "假定，想象，猜测",
+    "example": "His version of events is pure supposition .",
+    "example_cn": "他对事情的说法纯属推测。"
+  },
+  {
+    "word": "costume",
+    "phonetic": "'kɒstjuːm",
+    "meaning": "服装式样；戏服",
+    "example": "the film’s lavish costumes and spectacular sets",
+    "example_cn": "影片中奢华的戏装和壮观的场景"
+  },
+  {
+    "word": "fixture",
+    "phonetic": "'fɪkstʃə; -tjə",
+    "meaning": "附属装置；运动项目",
+    "example": "...a detailed list of what fixtures and fittings are included in the purchase price.",
+    "example_cn": "…详细列出的室内设施与装备包括在购买价格中。"
+  },
+  {
+    "word": "strive",
+    "phonetic": "straɪv",
+    "meaning": "斗争，努力，奋斗",
+    "example": "He strives hard to keep himself very fit.",
+    "example_cn": "他努力使自己保持非常的健康。"
+  },
+  {
+    "word": "seclude",
+    "phonetic": "sɪ'kluːd",
+    "meaning": "使隔离；使孤立，使隐退",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "heighten",
+    "phonetic": "'haɪt(ə)n",
+    "meaning": "加高，提高；增大",
+    "example": "There are fears that the march will heighten racial tension.",
+    "example_cn": "有人担心这次游行会加深种族间的紧张局势。"
+  },
+  {
+    "word": "predecessor",
+    "phonetic": "'priːdɪsesə",
+    "meaning": "前任",
+    "example": "Kennedy’s predecessor as President was the war hero Dwight Eisenhower.",
+    "example_cn": "肯尼迪总统的前任是战争英雄德怀特·艾森豪威尔。"
+  },
+  {
+    "word": "aboriginal",
+    "phonetic": "æbə'rɪdʒɪn(ə)l",
+    "meaning": "土著(的)；土生动植物(的)",
+    "example": "He remained fascinated by the Aboriginals' tales.",
+    "example_cn": "他一直对澳大利亚土著人的故事很着迷。"
+  },
+  {
+    "word": "chronological",
+    "phonetic": "krɒnə'lɒdʒɪk(ə)l",
+    "meaning": "按时间顺序的",
+    "example": "We arranged the documents in chronological order .",
+    "example_cn": "我们把这些文件按时序排列。"
+  },
+  {
+    "word": "assault",
+    "phonetic": "ə'sɔːlt; ə'sɒlt",
+    "meaning": "袭击",
+    "example": "a case of robbery and assault",
+    "example_cn": "一宗抢劫袭击案"
+  },
+  {
+    "word": "sober",
+    "phonetic": "'səʊbə",
+    "meaning": "严肃的，认真的，清醒的",
+    "example": "He’s a nice guy when he’s sober.",
+    "example_cn": "他没喝醉时是个不错的家伙。"
+  },
+  {
+    "word": "implement",
+    "phonetic": "'ɪmplɪm(ə)nt",
+    "meaning": "工具，器具",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "quiver",
+    "phonetic": "'kwɪvə",
+    "meaning": "颤动，抖动",
+    "example": "The child was quivering in her arms.",
+    "example_cn": "那孩子在她怀里发抖。"
+  },
+  {
+    "word": "ostentation",
+    "phonetic": ",ɒsten'teɪʃ(ə)n",
+    "meaning": "夸耀，卖弄",
+    "example": "Her lifestyle was remarkably free from ostentation.",
+    "example_cn": "她的生活方式毫不张扬。"
+  },
+  {
+    "word": "compulsory",
+    "phonetic": "kəm'pʌls(ə)rɪ",
+    "meaning": "义务的；强制的",
+    "example": "the threat of compulsory redundancies",
+    "example_cn": "强制性裁员的威胁"
+  },
+  {
+    "word": "hike",
+    "phonetic": "haɪk",
+    "meaning": "徒步旅行；增加；抬起",
+    "example": "a hike in the woods",
+    "example_cn": "林间远足"
+  },
+  {
+    "word": "tackle",
+    "phonetic": "'tæk(ə)l",
+    "meaning": "处理，对付；抓住",
+    "example": "There is more than one way to tackle the problem.",
+    "example_cn": "解决这个问题不止一个办法。"
+  },
+  {
+    "word": "legislation",
+    "phonetic": "ledʒɪs'leɪʃ(ə)n",
+    "meaning": "立法",
+    "example": "This is a very important piece of legislation (= law ).",
+    "example_cn": "这是一条非常重要的法规。"
+  },
+  {
+    "word": "estate",
+    "phonetic": "ɪ'steɪt; e-",
+    "meaning": "房地产；财产",
+    "example": "His estate was valued at $150,000.",
+    "example_cn": "他的遗产价值为15万美元。"
+  },
+  {
+    "word": "interrogate",
+    "phonetic": "ɪn'terəgeɪt",
+    "meaning": "询问，审问",
+    "example": "The police interrogated the suspect for several hours.",
+    "example_cn": "警察盘问了这名嫌疑犯好几个小时。"
+  },
+  {
+    "word": "plummet",
+    "phonetic": "'plʌmɪt",
+    "meaning": "骤然跌落",
+    "example": "House prices have plummeted down.",
+    "example_cn": "房价已经暴跌。"
+  },
+  {
+    "word": "roll",
+    "phonetic": "rəʊl",
+    "meaning": "滚动；卷；隆隆声",
+    "example": "His sleeves were rolled above his elbows.",
+    "example_cn": "他的袖子卷到了胳膊肘的上面。"
+  },
+  {
+    "word": "assimilate",
+    "phonetic": "ə'sɪmɪleɪt",
+    "meaning": "同化；吸收",
+    "example": "It will take time to assimilate all these facts.",
+    "example_cn": "充分掌握所有这些情况需要时间。"
+  },
+  {
+    "word": "harsh",
+    "phonetic": "hɑːʃ",
+    "meaning": "粗糙的；严厉的",
+    "example": "The hostages are being held in harsh conditions.",
+    "example_cn": "人质被拘押在恶劣环境中。"
+  },
+  {
+    "word": "recall",
+    "phonetic": "rɪ'kɔːl",
+    "meaning": "召回；回忆",
+    "example": "You don’t happen to recall his name, do you?",
+    "example_cn": "你不会恰巧还想得起他的名字吧？"
+  },
+  {
+    "word": "electronics",
+    "phonetic": "ɪlek'trɒnɪks; el-",
+    "meaning": "电子学(单数)",
+    "example": "an electronics engineer",
+    "example_cn": "电子工程师"
+  },
+  {
+    "word": "abbreviation",
+    "phonetic": "əbriːvɪ'eɪʃ(ə)n",
+    "meaning": "缩略语",
+    "example": "The abbreviation for Kansas is KS.",
+    "example_cn": "的缩写是。"
+  },
+  {
+    "word": "flee",
+    "phonetic": "fliː",
+    "meaning": "逃走",
+    "example": "His attackers turned and fled.",
+    "example_cn": "袭击他的人转身逃走了。"
+  },
+  {
+    "word": "numb",
+    "phonetic": "nʌm",
+    "meaning": "麻木的，失去知觉的",
+    "example": "My fingers were so numb I could hardly write.",
+    "example_cn": "我的手指麻木得几乎没法写字。"
+  },
+  {
+    "word": "crude",
+    "phonetic": "kruːd",
+    "meaning": "天然的，粗鲁的，粗制的",
+    "example": "a crude estimate of the population available for work",
+    "example_cn": "对劳动力人口的粗略估计"
+  },
+  {
+    "word": "metropolitan",
+    "phonetic": "metrə'pɒlɪt(ə)n",
+    "meaning": "大城市的，大都市的",
+    "example": "a metropolitan area of South Australia",
+    "example_cn": "南澳大利亚的一个都市区"
+  },
+  {
+    "word": "notable",
+    "phonetic": "'nəʊtəb(ə)l",
+    "meaning": "名人；显要人物",
+    "example": "If there are any notable inconsistencies or discrepancies, think through how you are going to explain the situation.",
+    "example_cn": "如果有任何显著的不相符或让人起疑的情况，要想好该如何去解释这个情况。"
+  },
+  {
+    "word": "treble",
+    "phonetic": "'treb(ə)l",
+    "meaning": "三倍(重)的",
+    "example": "But the KGB, in turn, was deceiving the Englishmen, because it really believed that they were playing a treble game and were all traitors to the Communist cause.",
+    "example_cn": "但是克格勃实际上以欺骗回报了英国人，因为他们认为，这几个人在玩三重游戏，实际上是共产主义事业的叛徒。"
+  },
+  {
+    "word": "propagate",
+    "phonetic": "'prɒpəgeɪt",
+    "meaning": "繁殖；增殖；传播，宣传",
+    "example": "The group launched a website to propagate its ideas .",
+    "example_cn": "这个团体建了一个网站来宣扬他们的主张。"
+  },
+  {
+    "word": "converge",
+    "phonetic": "kən'vɜːdʒ",
+    "meaning": "会聚，集中",
+    "example": "The two rivers converge into one near Pittsburgh.",
+    "example_cn": "这两条河在匹兹堡附近汇合。"
+  },
+  {
+    "word": "compel",
+    "phonetic": "kəm'pel",
+    "meaning": "强迫，迫使",
+    "example": "...the introduction of legislation to compel cyclists to wear a helmet.",
+    "example_cn": "…强制骑车人戴头盔的法律的引入。"
+  },
+  {
+    "word": "pointed",
+    "phonetic": "'pɒɪntɪd",
+    "meaning": "尖锐的；率直的",
+    "example": "a pointed beard",
+    "example_cn": "一把山羊胡"
+  },
+  {
+    "word": "swarm",
+    "phonetic": "swɔːm",
+    "meaning": "(昆虫)等一大群",
+    "example": "...a swarm of locusts.",
+    "example_cn": "…一大群蝗虫。"
+  },
+  {
+    "word": "shrewd",
+    "phonetic": "ʃruːd",
+    "meaning": "敏锐的，精明的，准确的",
+    "example": "Malcolm is a shrewd businessman.",
+    "example_cn": "马尔科姆是个精明的商人。"
+  },
+  {
+    "word": "abolish",
+    "phonetic": "ə'bɒlɪʃ",
+    "meaning": "废除",
+    "example": "Slavery was abolished in the US in the 19th century.",
+    "example_cn": "美国于19世纪废除了奴隶制。"
+  },
+  {
+    "word": "imitate",
+    "phonetic": "'ɪmɪteɪt",
+    "meaning": "模仿，模拟，看似",
+    "example": "She was a splendid mimic and loved to imitate Winston Churchill.",
+    "example_cn": "她是个出色的模仿者，喜欢模仿温斯顿·丘吉尔。"
+  },
+  {
+    "word": "waggon",
+    "phonetic": "'wæɡən",
+    "meaning": "货车",
+    "example": "The ragged man drags a waggon of rag fragments.",
+    "example_cn": "那个衣衫褴褛的人拉著一货车破布碎片."
+  },
+  {
+    "word": "definitive",
+    "phonetic": "dɪ'fɪnɪtɪv",
+    "meaning": "决定的，明确的；最后的",
+    "example": "a definitive agreement to buy the company",
+    "example_cn": "收购这家公司的最终协议"
+  },
+  {
+    "word": "imminent",
+    "phonetic": "'ɪmɪnənt",
+    "meaning": "迫近的，紧迫的",
+    "example": "A new trade agreement is imminent.",
+    "example_cn": "一项新的贸易协定即将签署。"
+  },
+  {
+    "word": "dispute",
+    "phonetic": "dɪ'spjuːt; 'dɪspjuːt",
+    "meaning": "争论，争执，质疑",
+    "example": "It is beyond dispute that advances in medicine have enabled people to live longer.",
+    "example_cn": "医学的发展使人们更加长寿，这是无可置疑的。"
+  },
+  {
+    "word": "horticulture",
+    "phonetic": "'hɔːtɪ,kʌltʃə",
+    "meaning": "园艺",
+    "example": "The area has a long tradition of horticulture.",
+    "example_cn": "园艺是这个地区源远流长的传统。"
+  },
+  {
+    "word": "semblance",
+    "phonetic": "'sembləns",
+    "meaning": "外貌，外表",
+    "example": "At least a semblance of normality has been restored to parts of the country.",
+    "example_cn": "这个国家的部分地区至少在表面上已恢复正常。"
+  },
+  {
+    "word": "impair",
+    "phonetic": "ɪm'peə",
+    "meaning": "损害，削弱",
+    "example": "The illness had impaired his ability to think and concentrate.",
+    "example_cn": "这种疾病损害了他的思维能力和注意力。"
+  },
+  {
+    "word": "dismay",
+    "phonetic": "dɪs'meɪ",
+    "meaning": "灰心丧气；惊愕",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "dash",
+    "phonetic": "dæʃ",
+    "meaning": "撞击；冲，短跑；破折号；闯劲",
+    "example": "Suddenly she dashed down to the cellar.",
+    "example_cn": "她猛地朝地窖冲过去。"
+  },
+  {
+    "word": "outlying",
+    "phonetic": "'aʊtlaɪɪŋ",
+    "meaning": "远离中心的，偏僻的",
+    "example": "one of the outlying suburbs",
+    "example_cn": "边远郊区之一"
+  },
+  {
+    "word": "catching",
+    "phonetic": "'kætʃɪŋ",
+    "meaning": "传染性的",
+    "example": "Julia’s enthusiasm was catching.",
+    "example_cn": "朱莉娅的热情很有感染力。"
+  },
+  {
+    "word": "deter",
+    "phonetic": "dɪ'tɜː",
+    "meaning": "阻止，使不敢，吓住",
+    "example": "The company’s financial difficulties have deterred potential investors.",
+    "example_cn": "该公司的财务困境令潜在的投资者望而却步。"
+  },
+  {
+    "word": "influx",
+    "phonetic": "'ɪnflʌks",
+    "meaning": "汇集，流入",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "deplore",
+    "phonetic": "dɪ'plɔː",
+    "meaning": "哀悼, 非难\"",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "pathos",
+    "phonetic": "'peɪθɒs",
+    "meaning": "引起怜悯的因素",
+    "example": "the pathos of the woman trying to keep her lover",
+    "example_cn": "那个女人试图留住爱侣的哀婉之情"
+  },
+  {
+    "word": "namely",
+    "phonetic": "'neɪmlɪ",
+    "meaning": "即；也就是",
+    "example": "Three students were mentioned, namely John, Sarah and Sylvia.",
+    "example_cn": "有三名学生被提到，即约翰、萨拉和西尔维娅。"
+  },
+  {
+    "word": "relinguish",
+    "phonetic": "",
+    "meaning": "放弃；撤回",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "sole",
+    "phonetic": "səʊl",
+    "meaning": "脚底",
+    "example": "The soles of his feet were caked in mud.",
+    "example_cn": "他的脚掌上沾满了泥巴。"
+  },
+  {
+    "word": "thaw",
+    "phonetic": "θɔː",
+    "meaning": "(冰雪)融化；使变得友善",
+    "example": "The lake thawed in March.",
+    "example_cn": "3月里，湖水解冻了。"
+  },
+  {
+    "word": "fling",
+    "phonetic": "flɪŋ",
+    "meaning": "掷，抛；猛烈地移动；投入",
+    "example": "He flung his coat over the back of a chair.",
+    "example_cn": "他把外套扔在椅背上。"
+  },
+  {
+    "word": "sufficient",
+    "phonetic": "sə'fɪʃ(ə)nt",
+    "meaning": "足够的，充分的",
+    "example": "We can only prosecute if there is sufficient evidence.",
+    "example_cn": "有了足够的证据，我们才能提出起诉。"
+  },
+  {
+    "word": "morality",
+    "phonetic": "məˈræləti",
+    "meaning": "道德，美德；伦理体系",
+    "example": "...standards of morality and justice in society.",
+    "example_cn": "…社会中道德和正义的标准。"
+  },
+  {
+    "word": "shave",
+    "phonetic": "ʃeɪv",
+    "meaning": "剃；刮",
+    "example": "He hadn’t shaved for days.",
+    "example_cn": "他已经好几天没刮脸了。"
+  },
+  {
+    "word": "liaison",
+    "phonetic": "lɪ'eɪz(ə)n; -zɒn",
+    "meaning": "联络",
+    "example": "Liaison between police forces and the art world is vital to combat art crime.",
+    "example_cn": "警方和艺术界之间的联络对于打击艺术犯罪是至关重要的。"
+  },
+  {
+    "word": "flip",
+    "phonetic": "flɪp",
+    "meaning": "把往上抛，掷，抽打",
+    "example": "We flipped a coin to see who would go first.",
+    "example_cn": "我们抛硬币决定谁先去。"
+  },
+  {
+    "word": "shear",
+    "phonetic": "ʃɪə",
+    "meaning": "剪",
+    "example": "Her long fair hair had been shorn.",
+    "example_cn": "她长长的金发已经剪掉了。"
+  },
+  {
+    "word": "hover",
+    "phonetic": "'hɒvə",
+    "meaning": "(鸟)盘旋，翱翔，(人)逗留在附近徘徊",
+    "example": "Judith was hovering in the doorway.",
+    "example_cn": "朱迪丝在门口徘徊。"
+  },
+  {
+    "word": "wax",
+    "phonetic": "waks",
+    "meaning": "蜡，蜂蜡",
+    "example": "wax crayons",
+    "example_cn": "蜡笔"
+  },
+  {
+    "word": "gaily",
+    "phonetic": "'geɪlɪ",
+    "meaning": "快乐地，娱乐地",
+    "example": "‘Morning, Albert,’ she called gaily.",
+    "example_cn": "“早安，艾伯特。”她快乐地喊道。"
+  },
+  {
+    "word": "slide",
+    "phonetic": "slaɪd",
+    "meaning": "滑；幻灯片",
+    "example": "a slide show",
+    "example_cn": "幻灯片放映"
+  },
+  {
+    "word": "lump",
+    "phonetic": "lʌmp",
+    "meaning": "团，块，肿块",
+    "example": "Strain the custard to remove lumps.",
+    "example_cn": "滤去牛奶蛋糊里的面块。"
+  },
+  {
+    "word": "inspection",
+    "phonetic": "ɪn'spekʃn",
+    "meaning": "检查；审视，检阅",
+    "example": "An inspection was carried out at the school.",
+    "example_cn": "有人来学校视察了一遍。"
+  },
+  {
+    "word": "arena",
+    "phonetic": "ə'riːnə",
+    "meaning": "竞技场，比赛场所",
+    "example": "a sports arena",
+    "example_cn": "运动场"
+  },
+  {
+    "word": "economical",
+    "phonetic": "iːkə'nɒmɪk(ə)l; ek-",
+    "meaning": "节约的",
+    "example": "A small car is more economical to run.",
+    "example_cn": "开小型汽车比较省油。"
+  },
+  {
+    "word": "magnetic",
+    "phonetic": "mæg'netɪk",
+    "meaning": "有磁性的，有吸引力的",
+    "example": "magnetic forces",
+    "example_cn": "磁力"
+  },
+  {
+    "word": "fluff",
+    "phonetic": "flʌf",
+    "meaning": "(织物上的)绒毛",
+    "example": "He was picking bits of fluff off his trousers.",
+    "example_cn": "他在揪裤子上的绒毛球。"
+  },
+  {
+    "word": "cashier",
+    "phonetic": "kæ'ʃɪə; kə-",
+    "meaning": "出纳员",
+    "example": "The cashier absconded with the money.",
+    "example_cn": "出纳员携款潜逃。"
+  },
+  {
+    "word": "maiden",
+    "phonetic": "'meɪd(ə)n",
+    "meaning": "(文学)少女，未嫁女人",
+    "example": "...stories of noble princes and their brave deeds on behalf of beautiful maidens.",
+    "example_cn": "…高贵的王子以及他们英雄救美的故事。"
+  },
+  {
+    "word": "startle",
+    "phonetic": "'stɑːt(ə)l",
+    "meaning": "使大吃一惊",
+    "example": "Sorry, I didn’t mean to startle you.",
+    "example_cn": "抱歉，我不是故意吓你一跳的。"
+  },
+  {
+    "word": "chill",
+    "phonetic": "tʃɪl",
+    "meaning": "寒冷，扫兴的，(使)感冒",
+    "example": "There was a slight chill in the air .",
+    "example_cn": "空气中有些微的寒意。"
+  },
+  {
+    "word": "reserve",
+    "phonetic": "rɪ'zɜːv",
+    "meaning": "保存；预定",
+    "example": "Do you have to reserve tickets in advance?",
+    "example_cn": "你必须预先订票吗？"
+  },
+  {
+    "word": "substitute",
+    "phonetic": "'sʌbstɪtjuːt",
+    "meaning": "代替人，代用品",
+    "example": "Germany brought on a substitute at half time.",
+    "example_cn": "德国队在比赛半场时换上一名替补队员。"
+  },
+  {
+    "word": "auditorium",
+    "phonetic": "ɔːdɪ'tɔːrɪəm",
+    "meaning": "会堂；礼堂",
+    "example": "...a high school auditorium.",
+    "example_cn": "…一所中学的礼堂。"
+  },
+  {
+    "word": "esteem",
+    "phonetic": "ɪ'stiːm; e-",
+    "meaning": "尊重，珍重",
+    "example": "Peden was greatly esteemed by the people of Ayrshire.",
+    "example_cn": "佩登深受艾尔郡人的尊敬。"
+  },
+  {
+    "word": "creation",
+    "phonetic": "kriː'eɪʃ(ə)n",
+    "meaning": "创作，创造，创造物",
+    "example": "a job creation scheme",
+    "example_cn": "创造就业机会的计划"
+  },
+  {
+    "word": "manifest",
+    "phonetic": "'mænɪfest",
+    "meaning": "明白的，明显的",
+    "example": "a manifest error of judgment",
+    "example_cn": "明显的判断错误"
+  },
+  {
+    "word": "confer",
+    "phonetic": "kən'fɜː",
+    "meaning": "授予(称号，学位等)；协商",
+    "example": "The constitution also confers large powers on Brazil's 25 constituent states.",
+    "example_cn": "宪法还授予巴西25个成员州极大的权力。"
+  },
+  {
+    "word": "underneath",
+    "phonetic": "ʌndə'niːθ",
+    "meaning": "在下面，在底下",
+    "example": "He got out of the car and looked underneath.",
+    "example_cn": "他下车往底下看了看。"
+  },
+  {
+    "word": "hoist",
+    "phonetic": "hɒɪst",
+    "meaning": "升起，扯起，向上推",
+    "example": "The crew hurried to hoist the flag.",
+    "example_cn": "船员们急忙把旗子升起来。"
+  },
+  {
+    "word": "capacity",
+    "phonetic": "kə'pæsɪtɪ",
+    "meaning": "容量；容积；理解力；地位；资格",
+    "example": "The room had seating capacity for about 80.",
+    "example_cn": "这房间能坐80个人左右。"
+  },
+  {
+    "word": "fuel",
+    "phonetic": "fjʊəl",
+    "meaning": "燃料；刺激感情之物",
+    "example": "Coal is one of the cheapest fuels.",
+    "example_cn": "煤是最廉价的燃料之一。"
+  },
+  {
+    "word": "incidentally",
+    "phonetic": "ɪnsɪ'dent(ə)lɪ",
+    "meaning": "偶然地，顺便地",
+    "example": "Quite incidentally, I got some useful information at the party.",
+    "example_cn": "我在聚会上无意中得到了一些有用信息。"
+  },
+  {
+    "word": "giggle",
+    "phonetic": "'gɪg(ə)l",
+    "meaning": "咯咯地笑，傻笑",
+    "example": "If you can’t stop giggling you’ll have to leave the room.",
+    "example_cn": "如果你再咯咯地笑个不停，就给我离开屋子。"
+  },
+  {
+    "word": "escort",
+    "phonetic": "'eskɔːt",
+    "meaning": "护卫者；护航舰",
+    "example": "a police escort ",
+    "example_cn": "警察护卫队"
+  },
+  {
+    "word": "lottery",
+    "phonetic": "'lɒt(ə)rɪ",
+    "meaning": "彩票",
+    "example": "a lottery ticket",
+    "example_cn": "彩票"
+  },
+  {
+    "word": "retain",
+    "phonetic": "rɪ'teɪn",
+    "meaning": "保持，保有；聘请(律师)",
+    "example": "You have the right to retain possession of the goods.",
+    "example_cn": "你有权保留这些物品。"
+  },
+  {
+    "word": "undercharge",
+    "phonetic": "ʌndə'tʃɑːdʒ",
+    "meaning": "潜流；(思想，情绪)暗流",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "synonym",
+    "phonetic": "'sɪnənɪm",
+    "meaning": "同义词",
+    "example": "The term \"industrial democracy\" is often used as a synonym for worker participation.",
+    "example_cn": "“工业民主”这一词语常被用作“工人参与”的同义词。"
+  },
+  {
+    "word": "turf",
+    "phonetic": "tɜːf",
+    "meaning": "草地，草皮",
+    "example": "soft green turf",
+    "example_cn": "柔软的绿色草皮"
+  },
+  {
+    "word": "owe",
+    "phonetic": "əʊ",
+    "meaning": "欠债；感激；由于",
+    "example": "How much do I owe you (= often used to show that you want to pay for something )?",
+    "example_cn": "我该付你多少钱？"
+  },
+  {
+    "word": "deplete",
+    "phonetic": "dɪ'pliːt",
+    "meaning": "耗尽，用尽",
+    "example": "...substances that deplete the ozone layer.",
+    "example_cn": "…消耗臭氧层的物质。"
+  },
+  {
+    "word": "fort",
+    "phonetic": "fɔːt",
+    "meaning": "要塞; 堡垒",
+    "example": "The fort flanked on a swamp.",
+    "example_cn": "堡垒侧面靠着沼泽。"
+  },
+  {
+    "word": "delude",
+    "phonetic": "dɪ'l(j)uːd",
+    "meaning": "欺骗；哄骗",
+    "example": "I was angry with him for trying to delude me.",
+    "example_cn": "他想骗我，因此我很恼火。"
+  },
+  {
+    "word": "ingenious",
+    "phonetic": "ɪn'dʒiːnɪəs",
+    "meaning": "机灵的；制作精巧的，灵巧的",
+    "example": "Many fish have ingenious ways of protecting their eggs from predators.",
+    "example_cn": "很多鱼都有绝妙的方法来保护它们产的卵不被捕食者吃掉。"
+  },
+  {
+    "word": "compare",
+    "phonetic": "kəm'peə",
+    "meaning": "比较，对照；喻为",
+    "example": "The report compares the different types of home computer available.",
+    "example_cn": "这份报告比较了市场上不同类型的家用计算机。"
+  },
+  {
+    "word": "inland",
+    "phonetic": "'ɪnlənd; -lænd",
+    "meaning": "内地的，内陆的",
+    "example": "the largest area of inland water in the southeast",
+    "example_cn": "东南部最大的内陆水域"
+  },
+  {
+    "word": "suppress",
+    "phonetic": "sə'pres",
+    "meaning": "镇压；平定；抑制；隐瞒",
+    "example": "The uprising was ruthlessly suppressed.",
+    "example_cn": "起义受到了残酷的镇压。"
+  },
+  {
+    "word": "terror",
+    "phonetic": "'terə",
+    "meaning": "恐怖",
+    "example": "There was a look of sheer terror (= complete terror ) on his face.",
+    "example_cn": "他脸上的表情异常惊恐。"
+  },
+  {
+    "word": "procedure",
+    "phonetic": "prə'siːdʒə",
+    "meaning": "过程，步骤",
+    "example": "On board, we were given the usual talk on safety procedures (= what to do if an accident happens, or to prevent an accident ) .",
+    "example_cn": "在飞机上，我们听了例行的飞行安全讲解。"
+  },
+  {
+    "word": "pretext",
+    "phonetic": "'priːtekst",
+    "meaning": "借口",
+    "example": "He’ll phone on some pretext or other.",
+    "example_cn": "他会以这样或那样的理由打电话的。"
+  },
+  {
+    "word": "flap",
+    "phonetic": "flæp",
+    "meaning": "拍打，挥动，垂下物；袋盖；慌乱",
+    "example": "the flap of the sails",
+    "example_cn": "船帆的拍动"
+  },
+  {
+    "word": "obsolete",
+    "phonetic": "'ɒbsəliːt",
+    "meaning": "已废弃的，过时的",
+    "example": "obsolete weapons",
+    "example_cn": "已被淘汰的武器"
+  },
+  {
+    "word": "deliberate",
+    "phonetic": "dɪ'lɪb(ə)rət",
+    "meaning": "故意的，从容的",
+    "example": "a deliberate attempt to humiliate her",
+    "example_cn": "对她的故意羞辱"
+  },
+  {
+    "word": "oath",
+    "phonetic": "əʊθ",
+    "meaning": "誓言，誓约",
+    "example": "The president took the oath of office (= made the official public promises that every president makes when starting their job ) .",
+    "example_cn": "总统宣誓就职。"
+  },
+  {
+    "word": "depletion",
+    "phonetic": "dɪ'pliːʃn",
+    "meaning": "取尽，用尽",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "forecast",
+    "phonetic": "'fɔːkɑːst",
+    "meaning": "预测，预报",
+    "example": "The weather forecast is good for tomorrow.",
+    "example_cn": "天气预报说明天是晴天。"
+  },
+  {
+    "word": "sore",
+    "phonetic": "sɔː",
+    "meaning": "疼痛的；恼火的",
+    "example": "I had a sore throat and aching limbs.",
+    "example_cn": "我喉咙疼，四肢酸痛。"
+  },
+  {
+    "word": "metric",
+    "phonetic": "'metrɪk",
+    "meaning": "十进制的，公制的",
+    "example": "a metric tonne",
+    "example_cn": "一公吨"
+  },
+  {
+    "word": "plead",
+    "phonetic": "pliːd",
+    "meaning": "辩护；提出为理由",
+    "example": "He appeared before the committee to plead his case.",
+    "example_cn": "他出现在委员会上为他的案子辩护。"
+  },
+  {
+    "word": "wrench",
+    "phonetic": "ren(t)ʃ",
+    "meaning": "猛扭，猛拉",
+    "example": "I wrenched the packet from his grasp.",
+    "example_cn": "我用力夺过他攥在手里的纸袋。"
+  },
+  {
+    "word": "surgeon",
+    "phonetic": "'sɜːdʒ(ə)n",
+    "meaning": "外科医生",
+    "example": "...a heart surgeon.",
+    "example_cn": "…一位心脏外科医生。"
+  },
+  {
+    "word": "compensation",
+    "phonetic": "kɒmpen'seɪʃ(ə)n",
+    "meaning": "赔偿",
+    "example": "People who are wrongly arrested may be paid compensation .",
+    "example_cn": "被误抓的人有可能得到补偿费。"
+  },
+  {
+    "word": "reference",
+    "phonetic": "'ref(ə)r(ə)ns",
+    "meaning": "证明；出处；参照",
+    "example": "a list of towns, each with a map reference",
+    "example_cn": "一份城镇清单，每个城镇都有地图参照号"
+  },
+  {
+    "word": "huddle",
+    "phonetic": "'hʌd(ə)l",
+    "meaning": "挤作一团，乱堆",
+    "example": "We lay huddled together for warmth.",
+    "example_cn": "我们紧紧挤在一起取暖。"
+  },
+  {
+    "word": "dock",
+    "phonetic": "dɒk",
+    "meaning": "船坞；码头；刑事被告席",
+    "example": "A crowd was waiting at the dock to greet them.",
+    "example_cn": "一群人在码头等着迎接他们。"
+  },
+  {
+    "word": "eccentric",
+    "phonetic": "ɪk'sentrɪk; ek-",
+    "meaning": "古怪(的)，偏执(的)，不同心(的)",
+    "example": "Askew used several names, and had a reputation as an eccentric.",
+    "example_cn": "艾斯丘用过几个名字，并以“怪人”著称。"
+  },
+  {
+    "word": "indefinite",
+    "phonetic": "ɪn'defɪnɪt",
+    "meaning": "模糊的，不明确的，无定限的",
+    "example": "The next day the union voted to begin an indefinite strike.",
+    "example_cn": "第二天工会投票表决决定开始无限期罢工。"
+  },
+  {
+    "word": "coverage",
+    "phonetic": "'kʌv(ə)rɪdʒ",
+    "meaning": "承保险别；新闻报道(范围)；保证金",
+    "example": "live coverage of the match (= the match is broadcast at the same time that it is happening )",
+    "example_cn": "这场比赛的现场直播"
+  },
+  {
+    "word": "stationary",
+    "phonetic": "'steɪʃ(ə)n(ə)rɪ",
+    "meaning": "固定的，定置的；不变动的，不移动的",
+    "example": "How did you manage to drive into a stationary vehicle?",
+    "example_cn": "你是怎么开车的，竟会撞上一辆停着的车子？"
+  },
+  {
+    "word": "maximum",
+    "phonetic": "'mæksɪməm",
+    "meaning": "最大量；最大限度",
+    "example": "We might have a third child, but that’s the absolute maximum .",
+    "example_cn": "我们可能会要第三个孩子，但这绝对是极限了。"
+  },
+  {
+    "word": "edit",
+    "phonetic": "'edɪt",
+    "meaning": "编辑，剪辑",
+    "example": "The newspaper edits letters before printing them.",
+    "example_cn": "这家报社刊登读者来信前先作校订。"
+  },
+  {
+    "word": "somehow",
+    "phonetic": "'sʌmhaʊ",
+    "meaning": "以某种方式",
+    "example": "Don’t worry, we’ll get the money back somehow.",
+    "example_cn": "别担心，我们总会把那些钱拿回来的。"
+  },
+  {
+    "word": "obstinate",
+    "phonetic": "'ɒbstɪnət",
+    "meaning": "顽固的，倔强的，不易屈服的，较难治愈的",
+    "example": "He was the most obstinate man I’ve ever met.",
+    "example_cn": "他是我遇到过的最固执的人。"
+  },
+  {
+    "word": "string",
+    "phonetic": "strɪŋ",
+    "meaning": "线，细绳；弦",
+    "example": "Her key hung on a string around her neck.",
+    "example_cn": "她的钥匙穿了根绳子挂在脖子上。"
+  },
+  {
+    "word": "day",
+    "phonetic": "deɪ",
+    "meaning": "白天，一天",
+    "example": "We spent three days in Paris.",
+    "example_cn": "我们在巴黎度过了三天。"
+  },
+  {
+    "word": "numerous",
+    "phonetic": "'njuːm(ə)rəs",
+    "meaning": "许许多多的",
+    "example": "Numerous attempts have been made to hide the truth.",
+    "example_cn": "为掩盖事实作了很多尝试。"
+  },
+  {
+    "word": "resignation",
+    "phonetic": "rezɪg'neɪʃ(ə)n",
+    "meaning": "辞职书；放弃；听从，顺从",
+    "example": "She gave a sigh of resignation.",
+    "example_cn": "她无奈地叹了一口气。"
+  },
+  {
+    "word": "laden",
+    "phonetic": "'leɪd(ə)n",
+    "meaning": "装满的，载满的",
+    "example": "snow-laden branches",
+    "example_cn": "积满雪的树枝"
+  },
+  {
+    "word": "instinct",
+    "phonetic": "'ɪnstɪŋ(k)t",
+    "meaning": "本能",
+    "example": "Her instinct told her that something was wrong.",
+    "example_cn": "直觉告诉她有些不对劲。"
+  },
+  {
+    "word": "end",
+    "phonetic": "end",
+    "meaning": "末端，尽头，结束",
+    "example": "At last it seemed the war might be coming to an end.",
+    "example_cn": "终于战争似乎即将结束。"
+  },
+  {
+    "word": "extinct",
+    "phonetic": "ɪk'stɪŋkt; ek-",
+    "meaning": "消灭了的，熄灭了的，绝种的",
+    "example": "Dinosaurs have been extinct for millions of years.",
+    "example_cn": "恐龙已灭绝数千万年了。"
+  },
+  {
+    "word": "theme",
+    "phonetic": "θiːm",
+    "meaning": "题目；主题",
+    "example": "The book’s theme is the conflict between love and duty.",
+    "example_cn": "本书的主题是爱与责任之间的冲突。"
+  },
+  {
+    "word": "prologue",
+    "phonetic": "'prəʊlɒg",
+    "meaning": "序言；开端",
+    "example": "The prologue to the novel is written in the form of a newspaper account.",
+    "example_cn": "该小说的前言是以新闻报道的形式写的。"
+  },
+  {
+    "word": "diagram",
+    "phonetic": "'daɪəgræm",
+    "meaning": "图解",
+    "example": "...a circuit diagram.",
+    "example_cn": "…电路图。"
+  },
+  {
+    "word": "fitting",
+    "phonetic": "'fɪtɪŋ",
+    "meaning": "适合的，恰当的",
+    "example": "I thought the memorial was a fitting tribute to the President.",
+    "example_cn": "我认为这座纪念碑恰如其分地表达了对总统的敬意。"
+  },
+  {
+    "word": "install",
+    "phonetic": "ɪnˈstɔ:l",
+    "meaning": "任命；安装，安置",
+    "example": "They’ve installed the new computer network at last.",
+    "example_cn": "他们终于安装了新电脑网络。"
+  },
+  {
+    "word": "dilute",
+    "phonetic": "daɪ'l(j)uːt; dɪ-",
+    "meaning": "使变淡，稀释",
+    "example": "diluted fruit juice",
+    "example_cn": "稀释的果汁"
+  },
+  {
+    "word": "storey",
+    "phonetic": "'stɔːrɪ",
+    "meaning": "房屋的一层",
+    "example": "A staircase leads to the upper storey .",
+    "example_cn": "有一段楼梯通往上面一层。"
+  },
+  {
+    "word": "odds",
+    "phonetic": "ɒdz",
+    "meaning": "可能，机会",
+    "example": "(= it is likely ) that he will commit the same crime again.",
+    "example_cn": "他可能还会犯同样的罪行。"
+  },
+  {
+    "word": "swirl",
+    "phonetic": "swɜːl",
+    "meaning": "打旋，旋动",
+    "example": "The river had become a swirling torrent.",
+    "example_cn": "河水变成了翻滚的洪流。"
+  },
+  {
+    "word": "reassure",
+    "phonetic": "riːə'ʃʊə",
+    "meaning": "使放心，使消除疑虑",
+    "example": "Teachers reassured anxious parents.",
+    "example_cn": "老师们安慰焦急的父母。"
+  },
+  {
+    "word": "casualty",
+    "phonetic": "'kæʒjʊəltɪ; -zj-",
+    "meaning": "伤亡人员",
+    "example": "We have had our first casualty. One runner has dropped out with cramp.",
+    "example_cn": "我们有了第一位伤员，有一位队员因腿部痉挛退出了。"
+  },
+  {
+    "word": "match",
+    "phonetic": "mætʃ",
+    "meaning": "火柴；比赛；对手；婚姻;相称v相当,相配",
+    "example": "It’s our last match of the season.",
+    "example_cn": "这是我们本赛季最后一场比赛。"
+  },
+  {
+    "word": "decade",
+    "phonetic": "'dekeɪd; dɪ'keɪd",
+    "meaning": "十年",
+    "example": "...the last decade of the nineteenth century.",
+    "example_cn": "…19世纪的最后10年。"
+  },
+  {
+    "word": "exceed",
+    "phonetic": "ɪk'siːd; ek-",
+    "meaning": "比大，超出",
+    "example": "Working hours must not exceed 42 hours a week.",
+    "example_cn": "工作时间每周不得超过42小时。"
+  },
+  {
+    "word": "tutor",
+    "phonetic": "'tjuːtə",
+    "meaning": "私人教师；[英]大学导师",
+    "example": "The children were educated at home by a succession of tutors.",
+    "example_cn": "这些孩子在家接受教育，连续请过几任家庭教师。"
+  },
+  {
+    "word": "proximity",
+    "phonetic": "prɒk'sɪmɪtɪ",
+    "meaning": "最近，接近",
+    "example": "Here the rich and the poor live in close proximity (= very near to each other ) .",
+    "example_cn": "在这里，富人和穷人比邻而居。"
+  },
+  {
+    "word": "cosmopolitan",
+    "phonetic": ",kɒzmə'pɒlɪt(ə)n",
+    "meaning": "全世界的，世界主义的",
+    "example": "a vibrant, cosmopolitan city",
+    "example_cn": "一个充满活力的国际性都市"
+  },
+  {
+    "word": "Christian",
+    "phonetic": "'krɪstɪən; -tʃ(ə)n",
+    "meaning": "基督教的；基督教徒",
+    "example": "He was a devout Christian.",
+    "example_cn": "他曾是一个虔诚的基督教徒。"
+  },
+  {
+    "word": "catalyst",
+    "phonetic": "'kæt(ə)lɪst",
+    "meaning": "催化剂；造成变化的人或事",
+    "example": "I very much hope that this case will prove to be a catalyst for change.",
+    "example_cn": "我非常希望这件事终将成为促成变化的催化剂。"
+  },
+  {
+    "word": "consign",
+    "phonetic": "kən'saɪn",
+    "meaning": "运送；交付",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "lease",
+    "phonetic": "liːs",
+    "meaning": "出租",
+    "example": "I’m interested in leasing your cottage.",
+    "example_cn": "我有兴趣租下你的小屋。"
+  },
+  {
+    "word": "wane",
+    "phonetic": "weɪn",
+    "meaning": "月亮变小，月亏；衰退",
+    "example": "My enthusiasm for the project was waning.",
+    "example_cn": "我对这个项目的热情逐渐减退了。"
+  },
+  {
+    "word": "quota",
+    "phonetic": "'kwəʊtə",
+    "meaning": "配额，限额(进口及移民人数)",
+    "example": "The government has decided to scrap quotas on car imports.",
+    "example_cn": "政府决定取消汽车进口配额。"
+  },
+  {
+    "word": "depress",
+    "phonetic": "dɪ'pres",
+    "meaning": "降低，使沮丧；使萧条",
+    "example": "The thought of taking the exam again depressed him.",
+    "example_cn": "想到要补考，他就心情沮丧。"
+  },
+  {
+    "word": "clarify",
+    "phonetic": "'klærɪfaɪ",
+    "meaning": "澄清，使液体清洁",
+    "example": "Reporters asked him to clarify his position (= say exactly what his beliefs are ) on welfare reform.",
+    "example_cn": "记者们要求他阐明他在福利改革问题上的立场。"
+  },
+  {
+    "word": "extreme",
+    "phonetic": "ɪk'striːm; ek-",
+    "meaning": "极度的，尽头的",
+    "example": "Extreme poverty still exists in many rural areas.",
+    "example_cn": "许多农村地区仍处于赤贫状态。"
+  },
+  {
+    "word": "radar",
+    "phonetic": "'reɪdɑː",
+    "meaning": "雷达",
+    "example": "The coastline can now be monitored by radar.",
+    "example_cn": "现在能用雷达监测海岸线了。"
+  },
+  {
+    "word": "pertain",
+    "phonetic": "pə'teɪn",
+    "meaning": "附属；有关",
+    "example": "...matters pertaining to naval district defence.",
+    "example_cn": "…与海军区域防卫有关的问题。"
+  },
+  {
+    "word": "given",
+    "phonetic": "'gɪv(ə)n",
+    "meaning": "假设的；约定的；同意的",
+    "example": "On any given day in the Houston area, half the hospital beds are empty.",
+    "example_cn": "在休斯敦地区，任何一天医院的床位都有一半是空的。"
+  },
+  {
+    "word": "seismic",
+    "phonetic": "'saɪzmɪk",
+    "meaning": "地震的，地震强度的",
+    "example": "increased seismic activity",
+    "example_cn": "越来越频繁的地震活动"
+  },
+  {
+    "word": "summit",
+    "phonetic": "'sʌmɪt",
+    "meaning": "顶点，高峰；峰会(最高级会谈)",
+    "example": "But are these the summit of our values, of our aspirations of society?",
+    "example_cn": "但这些是我们的价值观、我们对社会的抱负的顶点吗？"
+  },
+  {
+    "word": "nautical",
+    "phonetic": "'nɔːtɪk(ə)l",
+    "meaning": "航海的，船舶的，海员的",
+    "example": "nautical equipment",
+    "example_cn": "航海装备"
+  },
+  {
+    "word": "licence",
+    "phonetic": "'laɪsəns",
+    "meaning": "许可，特许，执照；放纵",
+    "example": "The dealers applied for an export licence.",
+    "example_cn": "经销商申请了出口许可证。"
+  },
+  {
+    "word": "target",
+    "phonetic": "'tɑːgɪt",
+    "meaning": "靶，标；批评对象；指标",
+    "example": "There is no target date for completion of the new project.",
+    "example_cn": "这个新的项目何时完工没有预定日期。"
+  },
+  {
+    "word": "analytical",
+    "phonetic": "ænə'lɪtɪk(ə)l",
+    "meaning": "分析的；分解的",
+    "example": "She’s got an analytical mind.",
+    "example_cn": "她思维缜密。"
+  },
+  {
+    "word": "jerk",
+    "phonetic": "dʒɜːk",
+    "meaning": "急动，急停",
+    "example": "Wilcox jerked his head to indicate that they should move on.",
+    "example_cn": "威尔科克斯扭扭头，示意他们该走了。"
+  },
+  {
+    "word": "rescue",
+    "phonetic": "'reskjuː",
+    "meaning": "援救；营救",
+    "example": "Survivors of the crash were rescued by helicopter.",
+    "example_cn": "空难的生还者被直升机救了出来。"
+  },
+  {
+    "word": "couch",
+    "phonetic": "kaʊtʃ",
+    "meaning": "长沙发",
+    "example": "Tom offered to sleep on the couch.",
+    "example_cn": "汤姆说他来睡沙发。"
+  },
+  {
+    "word": "strategic",
+    "phonetic": "strə'tiːdʒɪk",
+    "meaning": "战略的，战略方针的",
+    "example": "UN forces made a strategic withdrawal.",
+    "example_cn": "联合国部队作了战略性撤退。"
+  },
+  {
+    "word": "impulse",
+    "phonetic": "'ɪmpʌls",
+    "meaning": "推动，冲力，冲动",
+    "example": "The eye converts light signals to nerve impulses.",
+    "example_cn": "眼睛把光信号转变成神经冲动。"
+  },
+  {
+    "word": "ultraviolet",
+    "phonetic": "ʌltrə'vaɪələt",
+    "meaning": "紫外线的",
+    "example": "Ozone in the stratosphere is important because it absorbs some of the Sun’s dangerous ultraviolet radiation.",
+    "example_cn": " 在平流层的臭氧是重要的，因为它吸收了一些太阳中危险的紫外线辐射。"
+  },
+  {
+    "word": "melodious",
+    "phonetic": "mɪ'ləʊdɪəs",
+    "meaning": "音调悦耳的，旋律的",
+    "example": "He spoke in a quiet melodious voice.",
+    "example_cn": "他说话的声音轻柔悦耳。"
+  },
+  {
+    "word": "crucial",
+    "phonetic": "'kruːʃ(ə)l",
+    "meaning": "决定性的；紧要关头的",
+    "example": "The conservation of tropical forests is of crucial importance .",
+    "example_cn": "保护热带雨林至关重要。"
+  },
+  {
+    "word": "commodity",
+    "phonetic": "kə'mɒdɪtɪ",
+    "meaning": "日用品，商品",
+    "example": "agricultural commodities",
+    "example_cn": "农业商品"
+  },
+  {
+    "word": "conceive",
+    "phonetic": "kən'siːv",
+    "meaning": "想出(主意)；怀孕",
+    "example": "Scientists first conceived the idea of the atomic bomb in the 1930’s.",
+    "example_cn": "在20世纪30年代，科学家第一次有了原子弹的设想。"
+  },
+  {
+    "word": "monopoly",
+    "phonetic": "mə'nɒp(ə)lɪ",
+    "meaning": "垄断，专卖权",
+    "example": "a monopoly in copper trading",
+    "example_cn": "对铜交易的垄断"
+  },
+  {
+    "word": "weird",
+    "phonetic": "wɪəd",
+    "meaning": "怪诞的；离奇的，古怪的；超自然的",
+    "example": "A really weird thing happened last night.",
+    "example_cn": "昨晚发生了一件非常奇怪的事。"
+  },
+  {
+    "word": "stereotype",
+    "phonetic": "'sterɪə(ʊ)taɪp; 'stɪərɪə(ʊ)-",
+    "meaning": "典型的榜样，样本",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "smooth",
+    "phonetic": "smuːð",
+    "meaning": "光滑的；平稳的",
+    "example": "Her skin felt smooth and cool.",
+    "example_cn": "她的皮肤摸上去又滑又凉。"
+  },
+  {
+    "word": "clumsy",
+    "phonetic": "'klʌmzɪ",
+    "meaning": "笨拙的；愚笨的",
+    "example": "A clumsy waiter spilled wine all over her new skirt.",
+    "example_cn": "一名笨手笨脚的服务员把葡萄酒洒得她新裙子上到处都是。"
+  },
+  {
+    "word": "portable",
+    "phonetic": "'pɔːtəb(ə)l",
+    "meaning": "手提式的，便携式的",
+    "example": "a portable radio",
+    "example_cn": "便携式收音机"
+  },
+  {
+    "word": "voltage",
+    "phonetic": "'vəʊltɪdʒ; 'vɒltɪdʒ",
+    "meaning": "电压",
+    "example": "The systems are getting smaller and using lower voltages.",
+    "example_cn": "这些系统正变得更小而且使用更低的电压。"
+  },
+  {
+    "word": "nuisance",
+    "phonetic": "'njuːs(ə)ns",
+    "meaning": "麻烦事，讨厌的人",
+    "example": "He could be a bit of a nuisance when he was drunk.",
+    "example_cn": "他喝醉时会是一个有点令人讨厌的人。"
+  },
+  {
+    "word": "intensify",
+    "phonetic": "ɪn'tensɪfaɪ",
+    "meaning": "加强; 加剧",
+    "example": "In Junethe civil war intensified.",
+    "example_cn": "6月份内战更加激烈了。"
+  },
+  {
+    "word": "retrieve",
+    "phonetic": "rɪ'triːv",
+    "meaning": "再获得；挽回；挽救",
+    "example": "The general made one last desperate effort to retrieve the situation.",
+    "example_cn": "将军为挽回局面而孤注一掷。"
+  },
+  {
+    "word": "fist",
+    "phonetic": "fɪst",
+    "meaning": "拳头",
+    "example": "She held the money tightly in her fist.",
+    "example_cn": "她把钱紧紧地攥在手中。"
+  },
+  {
+    "word": "twinkle",
+    "phonetic": "'twɪŋk(ə)l",
+    "meaning": "闪烁，闪耀；闪闪发光",
+    "example": "stars twinkling in the sky",
+    "example_cn": "天空中闪烁的星星"
+  },
+  {
+    "word": "orchestra",
+    "phonetic": "'ɔːkɪstrə",
+    "meaning": "管弦乐队",
+    "example": "He directed an orchestra.",
+    "example_cn": "他指挥一个管弦乐队。"
+  },
+  {
+    "word": "conform",
+    "phonetic": "kən'fɔːm",
+    "meaning": "遵从，符合",
+    "example": "the pressure on schoolchildren to conform",
+    "example_cn": "小学生要顺应社会的压力"
+  },
+  {
+    "word": "fallible",
+    "phonetic": "'fælɪb(ə)l",
+    "meaning": "易犯错误的，错误难免的",
+    "example": "Humans are fallible.",
+    "example_cn": "人孰无过。"
+  },
+  {
+    "word": "fatigue",
+    "phonetic": "fə'tiːg",
+    "meaning": "疲劳，(金属)疲劳，杂役",
+    "example": "{\"COLLOINEXA\":[\"metal fatigue\"]}",
+    "example_cn": "金属疲劳"
+  },
+  {
+    "word": "practitioner",
+    "phonetic": "præk'tɪʃ(ə)nə",
+    "meaning": "实践者，从事者；(医生或律师等)开业者",
+    "example": "one of golf’s most experienced practitioners",
+    "example_cn": "最有经验的高尔夫球员之一"
+  },
+  {
+    "word": "Catholic",
+    "phonetic": "kæθəlɪk",
+    "meaning": "天主教教徒",
+    "example": "At least nine out of ten Mexicans are baptized Catholics.",
+    "example_cn": "至少十分之九的墨西哥人是受过洗礼的天主教徒。"
+  },
+  {
+    "word": "comedy",
+    "phonetic": "'kɒmɪdɪ",
+    "meaning": "喜剧；一出喜剧，喜剧性事件",
+    "example": "a career in stand-up comedy",
+    "example_cn": "单口喜剧表演职业"
+  },
+  {
+    "word": "originate",
+    "phonetic": "ə'rɪdʒɪneɪt; ɒ-",
+    "meaning": "发生，发起；发明",
+    "example": "How did the plan originate?",
+    "example_cn": "这个计划最早是怎么想到的？"
+  },
+  {
+    "word": "allocate",
+    "phonetic": "'æləkeɪt",
+    "meaning": "分配，配给",
+    "example": "Tickets are limited and will be allocated to those who apply first.",
+    "example_cn": "票数有限，将分配给那些先申请的人。"
+  },
+  {
+    "word": "junior",
+    "phonetic": "'dʒuːnɪə",
+    "meaning": "较年幼者",
+    "example": "She now lives with actor Denis Lawson, 10 years her junior.",
+    "example_cn": "她现在和比她小10岁的演员丹尼斯·劳森同居。"
+  },
+  {
+    "word": "cupboard",
+    "phonetic": "'kʌbəd",
+    "meaning": "碗橱",
+    "example": "It’s in the kitchen cupboard.",
+    "example_cn": "它在厨房的碗柜里。"
+  },
+  {
+    "word": "moped",
+    "phonetic": "'məʊped",
+    "meaning": "机动脚踏车",
+    "example": "Look at that family on a moped!",
+    "example_cn": "看看脚踏车上的那一家子！"
+  },
+  {
+    "word": "plus",
+    "phonetic": "plʌs",
+    "meaning": "加，加号",
+    "example": "Three plus six equals nine (3+6=9).",
+    "example_cn": "3 加6等于9。"
+  },
+  {
+    "word": "optimism",
+    "phonetic": "'ɒptɪmɪz(ə)m",
+    "meaning": "乐观，乐观主义",
+    "example": "There are grounds for cautious optimism.",
+    "example_cn": "有理由保持谨慎乐观。"
+  },
+  {
+    "word": "embody",
+    "phonetic": "ɪm'bɒdɪ; em-",
+    "meaning": "体现；使具体化",
+    "example": "She embodies everything I admire in a teacher.",
+    "example_cn": "她具备了我所钦佩的教师该具备的一切素质。"
+  },
+  {
+    "word": "wedge",
+    "phonetic": "wedʒ",
+    "meaning": "楔子，楔形物",
+    "example": "Garnish with lemon wedges.",
+    "example_cn": "用几角柠檬片作装饰。"
+  },
+  {
+    "word": "ceremony",
+    "phonetic": "'serɪmənɪ",
+    "meaning": "典礼，仪式；礼节",
+    "example": "a wedding ceremony",
+    "example_cn": "婚礼"
+  },
+  {
+    "word": "suicide",
+    "phonetic": "'s(j)uːɪsaɪd",
+    "meaning": "自杀",
+    "example": "More people commit suicide at Christmas than at any other time.",
+    "example_cn": "圣诞节期间自杀的人比其他任何时候都多。"
+  },
+  {
+    "word": "swear",
+    "phonetic": "sweə",
+    "meaning": "郑重地说；强调；发誓",
+    "example": "I never touched your purse, I swear!",
+    "example_cn": "我绝对没有碰过你的钱包，我发誓！"
+  },
+  {
+    "word": "considerable",
+    "phonetic": "kən'sɪd(ə)rəb(ə)l",
+    "meaning": "相当大的；重要的",
+    "example": "Michael has already spent considerable time in Barcelona.",
+    "example_cn": "迈克尔在巴塞罗那已经待了相当长的时间了。"
+  },
+  {
+    "word": "judicial",
+    "phonetic": "dʒuː'dɪʃ(ə)l",
+    "meaning": "法庭(官)的, 审判的 \"",
+    "example": "...an independent judicial system.",
+    "example_cn": "…一个独立的司法体系。"
+  },
+  {
+    "word": "catastrophe",
+    "phonetic": "kə'tæstrəfɪ",
+    "meaning": "大灾难，大祸",
+    "example": "From all points of view, war would be a catastrophe.",
+    "example_cn": "从各个方面来看，战争都会是一场灾难。"
+  },
+  {
+    "word": "hose",
+    "phonetic": "həʊz",
+    "meaning": "输水软管；长统袜",
+    "example": "Water in the engine compartment is sucked away by a hose.",
+    "example_cn": "发动机舱里的水由一条软管吸走。"
+  },
+  {
+    "word": "minimum",
+    "phonetic": "'mɪnɪməm",
+    "meaning": "[pl~s,-ma]最少量；最低限度\"",
+    "example": "At a minimum, we must recruit two new teachers.",
+    "example_cn": "我们最起码应该招两名新教师。"
+  },
+  {
+    "word": "domestic",
+    "phonetic": "də'mestɪk",
+    "meaning": "家的，家庭的，本国的",
+    "example": "Unfortunately his domestic life wasn’t very happy.",
+    "example_cn": "不幸的是，他的家庭生活并不幸福。"
+  },
+  {
+    "word": "deficit",
+    "phonetic": "'defɪsɪt; 'diː-",
+    "meaning": "空额，赤字",
+    "example": "the country’s widening budget deficit",
+    "example_cn": "这个国家日益严重的预算赤字"
+  },
+  {
+    "word": "leave",
+    "phonetic": "liːv",
+    "meaning": "离开，遗忘；保持一定状态；留下",
+    "example": "My baby gets upset when I leave the room.",
+    "example_cn": "我一离开房间宝宝就会不安。"
+  },
+  {
+    "word": "abuse",
+    "phonetic": "ə'bjuːz",
+    "meaning": "滥用；恶习；辱骂",
+    "example": "A self-monitoring tax system is clearly open to abuse (=  able to be used wrongly  ) .",
+    "example_cn": "自我监督的税收制度明显会被滥用。"
+  },
+  {
+    "word": "feature",
+    "phonetic": "'fiːtʃə",
+    "meaning": "脸一部分，面貌，特征，特写，故事片",
+    "example": "Air bags are a standard feature in most new cars.",
+    "example_cn": "气囊是大多数新车的标准配置。"
+  },
+  {
+    "word": "escalator",
+    "phonetic": "'eskəleɪtə",
+    "meaning": "自动扶梯",
+    "example": "Take the escalator to the third floor and it's the last office on the left.",
+    "example_cn": "乘电梯到4楼，左边最后的那个办公室就是。"
+  },
+  {
+    "word": "domain",
+    "phonetic": "də(ʊ)'meɪn",
+    "meaning": "领土，领域，范围",
+    "example": "Looking after the house was viewed as a woman’s domain.",
+    "example_cn": "料理家务被认为是女性的份内之事。"
+  },
+  {
+    "word": "expand",
+    "phonetic": "ɪk'spænd; ek-",
+    "meaning": "使扩大，展开，膨胀",
+    "example": "Water expands as it freezes.",
+    "example_cn": "水结冰时会膨胀。"
+  },
+  {
+    "word": "corresponding",
+    "phonetic": ",kɒrɪ'spɒndɪŋ",
+    "meaning": "一致的，相同的，相应的",
+    "example": "The war and the corresponding fall in trade have had a devastating effect on the country.",
+    "example_cn": "战争以及由此所导致的贸易量下降对这个国家产生了致命的影响。"
+  },
+  {
+    "word": "deem",
+    "phonetic": "diːm",
+    "meaning": "认为，视为",
+    "example": "French and German were deemed essential.",
+    "example_cn": "法语和德语被认为是必需的。"
+  },
+  {
+    "word": "passion",
+    "phonetic": "'pæʃ(ə)n",
+    "meaning": "激情",
+    "example": "His eyes were burning with passion.",
+    "example_cn": "他的眼中欲火燃烧。"
+  },
+  {
+    "word": "flour",
+    "phonetic": "'flaʊə",
+    "meaning": "面粉",
+    "example": "He added some flour to thicken the soup.",
+    "example_cn": "他加了一些面粉使汤浓些。"
+  },
+  {
+    "word": "collision",
+    "phonetic": "kə'lɪʒ(ə)n",
+    "meaning": "碰，幢;冲突",
+    "example": "Two people were killed in a head-on collision (= between two vehicles that are moving directly towards each other ) on highway 218.",
+    "example_cn": "218号公路上有两辆汽车迎面相撞，两人死亡。"
+  },
+  {
+    "word": "ascribe",
+    "phonetic": "ə'skraɪb",
+    "meaning": "归因于，把归于",
+    "example": "An autopsy eventually ascribed the baby's death to sudden infant death syndrome.",
+    "example_cn": "一次尸检最终把这名婴儿的死亡归因于婴儿猝死综合症。"
+  },
+  {
+    "word": "infest",
+    "phonetic": "ɪn'fest",
+    "meaning": "大批出动，成群出现(鼠类及害虫)",
+    "example": "...pests like aphids which infest cereal crops.",
+    "example_cn": "…像蚜虫那样大肆侵害谷类作物的害虫。"
+  },
+  {
+    "word": "intervene",
+    "phonetic": "ɪntə'viːn",
+    "meaning": "插入，介入，干涉，(时间)介于",
+    "example": "The army will have to intervene to prevent further fighting.",
+    "example_cn": "军队将不得不干预以阻止进一步的战斗。"
+  },
+  {
+    "word": "rectify",
+    "phonetic": "'rektɪfaɪ",
+    "meaning": "纠正；矫正",
+    "example": "I did my best to rectify the situation, but the damage was already done.",
+    "example_cn": "我竭尽全力去挽回局面，但损害已经造成了。"
+  },
+  {
+    "word": "temptation",
+    "phonetic": "tem(p)'teɪʃ(ə)n",
+    "meaning": "引诱，诱惑",
+    "example": "Resist the temptation to buy the item until you’re certain you need it.",
+    "example_cn": "要抵挡住购买的诱惑，除非你确有需要。"
+  },
+  {
+    "word": "smash",
+    "phonetic": "smæʃ",
+    "meaning": "打碎；打破；击溃",
+    "example": "Vandals had smashed all the windows.",
+    "example_cn": "破坏分子打碎了所有的窗子。"
+  },
+  {
+    "word": "explosive",
+    "phonetic": "ɪk'spləʊsɪv; ek-",
+    "meaning": "爆炸(的)，爆发性(的)",
+    "example": "...one-hundred-and-fifty pounds of Semtex explosive.",
+    "example_cn": "…150磅的塞姆汀塑料炸药。"
+  },
+  {
+    "word": "coach",
+    "phonetic": "kəʊtʃ",
+    "meaning": "辅导，训练",
+    "example": "Nigel coaches a cricket team in his spare time.",
+    "example_cn": "奈杰尔业余时间担任一个板球队的教练。"
+  },
+  {
+    "word": "induce",
+    "phonetic": "ɪn'djuːs",
+    "meaning": "导致；引起",
+    "example": "Doctors said surgery could induce a heart attack.",
+    "example_cn": "医生们说手术可能导致心脏病。"
+  },
+  {
+    "word": "curb",
+    "phonetic": "kɜːb",
+    "meaning": "勒马的皮带；控制，约束",
+    "example": "measures to curb the spread of the virus",
+    "example_cn": "控制病毒扩散的措施"
+  },
+  {
+    "word": "untold",
+    "phonetic": "ʌn'təʊld",
+    "meaning": "数不清的，无数的",
+    "example": "The rumours will do untold damage to his reputation.",
+    "example_cn": "这些谣言会给他的名声造成无法估计的损害。"
+  },
+  {
+    "word": "predisposition",
+    "phonetic": "priːdɪspə'zɪʃn",
+    "meaning": "倾向，趋势，偏好",
+    "example": "There is a thin dividing line between educating the public and creating a predisposition to panic.",
+    "example_cn": "教育公众和营造恐慌倾向之间只有细小的区别。"
+  },
+  {
+    "word": "climax",
+    "phonetic": "'klaɪmæks",
+    "meaning": "顶点；小说等的高潮",
+    "example": "The festival reaches its climax with the traditional boat-burning ceremony.",
+    "example_cn": "传统的烧船仪式将节庆活动推向了高潮。"
+  },
+  {
+    "word": "remedy",
+    "phonetic": "'remɪdɪ",
+    "meaning": "治疗，补救；纠正",
+    "example": "The problems in our schools do not have a simple remedy.",
+    "example_cn": "我们学校的问题没有简单的解决办法。"
+  },
+  {
+    "word": "archives",
+    "phonetic": "'a:kaivz",
+    "meaning": "(pl)档案室",
+    "example": "...the State Library's archives.",
+    "example_cn": "…国立图书馆的档案。"
+  },
+  {
+    "word": "magnificent",
+    "phonetic": "mæg'nɪfɪs(ə)nt",
+    "meaning": "宏伟的，壮丽的",
+    "example": "a magnificent performance",
+    "example_cn": "气势恢宏的演出"
+  },
+  {
+    "word": "toil",
+    "phonetic": "tɒɪl",
+    "meaning": "辛劳工作，艰难地行动",
+    "example": "People who toiled in dim, dank factories were too exhausted to enjoy their family life.",
+    "example_cn": "在阴暗潮湿的工厂里苦作的人们精疲力竭了，无法享受家庭生活。"
+  },
+  {
+    "word": "mortal",
+    "phonetic": "'mɔːt(ə)l",
+    "meaning": "必有一死的；致命的；极大的",
+    "example": "The computer has dealt a mortal blow to traditional printing methods.",
+    "example_cn": "计算机 给了传统的印刷方法一记致命的打击。"
+  },
+  {
+    "word": "flutter",
+    "phonetic": "'flʌtə",
+    "meaning": "振翼，颤动，(心脏)不规则跳动",
+    "example": "A small bird fluttered past the window.",
+    "example_cn": "一只小鸟拍打着翅膀飞过窗前。"
+  },
+  {
+    "word": "obscure",
+    "phonetic": "əb'skjʊə",
+    "meaning": "暗的，不清楚的；费解的vt使阴暗,使难解",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "deposit",
+    "phonetic": "dɪ'pɒzɪt",
+    "meaning": "存款；定金；沉淀，沉积",
+    "example": "fatty deposits on the heart",
+    "example_cn": "心脏上沉积的脂肪层"
+  },
+  {
+    "word": "dignity",
+    "phonetic": "'dɪgnɪtɪ",
+    "meaning": "高贵，尊贵，高位",
+    "example": "Prisoners should be treated with regard for human dignity .",
+    "example_cn": "对待囚犯应该考虑到人的尊严。"
+  },
+  {
+    "word": "lucrative",
+    "phonetic": "'luːkrətɪv",
+    "meaning": "有利的，赚钱的",
+    "example": "Thousands of ex-army officers have found lucrative jobs in private security firms.",
+    "example_cn": "成千上万的退役军官在私人保安公司找到了薪水丰厚的工作。"
+  },
+  {
+    "word": "hint",
+    "phonetic": "hɪnt",
+    "meaning": "暗示，提示",
+    "example": "There have been hints that he may take up coaching.",
+    "example_cn": "他暗示过可能会出任教练。"
+  },
+  {
+    "word": "resilience",
+    "phonetic": "rɪ'zɪlɪəns",
+    "meaning": "回弹，弹性",
+    "example": "And I think what we're seeing in the economy now is the inherent resilience of the American economy and the American people.",
+    "example_cn": "而且我认为，我认为，在经济方面，我们现在看到的是美国经济和美国人民一直以来所固有的弹性。"
+  },
+  {
+    "word": "sequence",
+    "phonetic": "'siːkw(ə)ns",
+    "meaning": "(事件、观念等的)系列；顺序；关联",
+    "example": "Be careful to perform the actions in the correct sequence .",
+    "example_cn": "注意要按正确的顺序来完成动作。"
+  },
+  {
+    "word": "aptitude",
+    "phonetic": "'æptɪtjuːd",
+    "meaning": "才能；能力",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "scrap",
+    "phonetic": "skræp",
+    "meaning": "碎片，碎屑；少许，少量",
+    "example": "a rug made out of old scraps of material",
+    "example_cn": "用旧零碎材料拼做的一块小地毯"
+  },
+  {
+    "word": "asset",
+    "phonetic": "'æset",
+    "meaning": "财产，资产",
+    "example": "the value of a company’s assets",
+    "example_cn": "公司的资产价值"
+  },
+  {
+    "word": "throng",
+    "phonetic": "θrɒŋ",
+    "meaning": "人群，群众",
+    "example": "She got lost in the throng.",
+    "example_cn": "她在人群中迷路了。"
+  },
+  {
+    "word": "postmortem",
+    "phonetic": "pəust'mɔ:təm",
+    "meaning": "，验尸，尸体解剖；事后的，死后的",
+    "example": "A postmortem was carried out to establish the cause of death.",
+    "example_cn": "进行了尸检以确定死因。"
+  },
+  {
+    "word": "time",
+    "phonetic": "taɪm",
+    "meaning": "时间",
+    "example": "Einstein changed the way we think about space and time.",
+    "example_cn": "爱因斯坦改变了我们的时空概念。"
+  },
+  {
+    "word": "elsewhere",
+    "phonetic": "els'weə; 'elsweə",
+    "meaning": "在别处，向别处",
+    "example": "She is becoming famous in Australia and elsewhere.",
+    "example_cn": "她在澳大利亚和其他地方渐渐出名了。"
+  },
+  {
+    "word": "monologue",
+    "phonetic": "'mɒn(ə)lɒg",
+    "meaning": "戏剧的独白；滔滔不绝",
+    "example": "Henry looked up, then continued his monologue.",
+    "example_cn": "亨利抬起头，然后继续他的长篇独白。"
+  },
+  {
+    "word": "property",
+    "phonetic": "'prɒpətɪ",
+    "meaning": "财产；房产；性质",
+    "example": "The hotel is not responsible for any loss or damage to guests’ personal property .",
+    "example_cn": "宾馆对住客个人财物的丢失和损坏概不负责。"
+  },
+  {
+    "word": "displace",
+    "phonetic": "dɪs'pleɪs",
+    "meaning": "转移，取代",
+    "example": "Coal has been displaced by natural gas as a major source of energy.",
+    "example_cn": "作为一种主要能源，煤的地位已为天然气所取代。"
+  },
+  {
+    "word": "identical",
+    "phonetic": "aɪ'dentɪk(ə)l",
+    "meaning": "同一的，完全相似的",
+    "example": "four identical houses",
+    "example_cn": "四幢一模一样的房子"
+  },
+  {
+    "word": "gorgeous",
+    "phonetic": "'gɔːdʒəs",
+    "meaning": "华丽的，灿烂的；宜人的；可喜的",
+    "example": "...gorgeous mountain scenery.",
+    "example_cn": "…壮观的山间景色。"
+  },
+  {
+    "word": "withstand",
+    "phonetic": "wɪð'stænd",
+    "meaning": "抵抗，反抗",
+    "example": "...armoured vehicles designed to withstand chemical attack.",
+    "example_cn": "…设计来抵御化学攻击的装甲车。"
+  },
+  {
+    "word": "deluge",
+    "phonetic": "'deljuːdʒ",
+    "meaning": "洪水，暴雨；使泛滥",
+    "example": "There was a deluge of requests for interviews and statements.",
+    "example_cn": "对接受访谈和发表声明的要求铺天盖地地涌来。"
+  },
+  {
+    "word": "immerse",
+    "phonetic": "ɪ'mɜːs",
+    "meaning": "沉浸，沉浸于",
+    "example": "He left school at 16 and immersed himself in the Labour Party.",
+    "example_cn": "他16岁离开学校投身工党。"
+  },
+  {
+    "word": "glorious",
+    "phonetic": "'glɔːrɪəs",
+    "meaning": "辉煌的；壮丽的，光荣的",
+    "example": "a truly glorious future",
+    "example_cn": "无比美好的将来"
+  },
+  {
+    "word": "sponge",
+    "phonetic": "spʌn(d)ʒ",
+    "meaning": "海绵(状物)，松糕",
+    "example": "a Victoria sponge",
+    "example_cn": "维多利亚海绵蛋糕"
+  },
+  {
+    "word": "glimpse",
+    "phonetic": "glɪm(p)s",
+    "meaning": "一瞥，匆匆一看",
+    "example": "I glimpsed a figure at the window.",
+    "example_cn": "我瞥见窗前有个身影。"
+  },
+  {
+    "word": "consult",
+    "phonetic": "kən'sʌlt",
+    "meaning": "请教；咨询，查阅",
+    "example": "If symptoms persist, consult a doctor without delay.",
+    "example_cn": "如果症状持续的话，马上咨询医生。"
+  },
+  {
+    "word": "humdrum",
+    "phonetic": "'hʌmdrʌm",
+    "meaning": "单调的，枯燥的",
+    "example": "...her lawyer husband, trapped in a humdrum but well-paid job.",
+    "example_cn": "...她整天做着单调乏味的工作但收入颇丰的律师丈夫。"
+  },
+  {
+    "word": "crown",
+    "phonetic": "kraʊn",
+    "meaning": "王冠，王权；顶部",
+    "example": "a hat with a high crown",
+    "example_cn": "高顶帽"
+  },
+  {
+    "word": "trend",
+    "phonetic": "trend",
+    "meaning": "倾向，趋势",
+    "example": "The current trend is towards more part-time employment.",
+    "example_cn": "当前的趋势是雇用更多的兼职人员。"
+  },
+  {
+    "word": "stretch",
+    "phonetic": "stretʃ",
+    "meaning": "伸长，拉长；滥用，曲解",
+    "example": "The procession stretched for several miles.",
+    "example_cn": "游行队伍延伸了数英里。"
+  },
+  {
+    "word": "pollinate",
+    "phonetic": "'pɒlɪneɪt",
+    "meaning": "授以花粉",
+    "example": "flowers pollinated by bees",
+    "example_cn": "由蜜蜂授粉的花"
+  },
+  {
+    "word": "article",
+    "phonetic": "'ɑːtɪk(ə)l",
+    "meaning": "物品；文章；条款；[语]冠词",
+    "example": "The paper’s leading article (=  the main article  ) described the government as weak.",
+    "example_cn": "该报社论称政府软弱。"
+  },
+  {
+    "word": "haven",
+    "phonetic": "'heɪv(ə)n",
+    "meaning": "安全处所，避难所",
+    "example": "...Lake Baringo, a freshwater haven for a mixed variety of birds.",
+    "example_cn": "…百瑞高湖，一个适合各种鸟类的淡水栖息地。"
+  },
+  {
+    "word": "adopt",
+    "phonetic": "ə'dɒpt",
+    "meaning": "收养；采用",
+    "example": "Sally was adopted when she was four.",
+    "example_cn": "莎莉四岁时被人收养。"
+  },
+  {
+    "word": "protrude",
+    "phonetic": "prə'truːd",
+    "meaning": "突出；伸出",
+    "example": "...a huge round mass of smooth rock protruding from the water.",
+    "example_cn": "…从水中突出来的一块光滑的圆形巨石。"
+  },
+  {
+    "word": "chapel",
+    "phonetic": "'tʃæp(ə)l",
+    "meaning": "小教堂；殡仪馆",
+    "example": "Bethan goes to chapel every Sunday.",
+    "example_cn": "贝唐每个星期天都去教堂做礼拜。"
+  },
+  {
+    "word": "fake",
+    "phonetic": "feɪk",
+    "meaning": "假货，骗子",
+    "example": "The painting was judged a fake.",
+    "example_cn": "这幅画被鉴定为赝品。"
+  },
+  {
+    "word": "moist",
+    "phonetic": "mɒɪst",
+    "meaning": "(表面)潮湿的，湿润的",
+    "example": "Make sure the soil is moist before planting the seeds.",
+    "example_cn": "播种之前要确保土壤湿润。"
+  },
+  {
+    "word": "regardless",
+    "phonetic": "rɪ'gɑːdlɪs",
+    "meaning": "不注意的，不顾的",
+    "example": "The new tax laws were rammed through regardless of the opposition of the majority of the people.",
+    "example_cn": "不顾大多数人民的反对，新的税法强行通过了。"
+  },
+  {
+    "word": "slate",
+    "phonetic": "sleɪt",
+    "meaning": "板岩，石板",
+    "example": "There were several slates missing from the roof.",
+    "example_cn": "房顶有几块石板瓦掉了。"
+  },
+  {
+    "word": "glow",
+    "phonetic": "gləʊ",
+    "meaning": "光辉",
+    "example": "She had a healthy glow in her cheeks.",
+    "example_cn": "她脸上泛着健康的红晕。"
+  },
+  {
+    "word": "federation",
+    "phonetic": "fedə'reɪʃ(ə)n",
+    "meaning": "联邦, 联盟, 同盟 \"",
+    "example": "the National Federation of Women’s Institutes",
+    "example_cn": "〔英国及英联邦国家〕妇女协会全国联合会"
+  },
+  {
+    "word": "cunning",
+    "phonetic": "'kʌnɪŋ",
+    "meaning": "狡猾(的)，精巧(的)",
+    "example": "the tiger’s ferocity and cunning",
+    "example_cn": "老虎的凶猛和狡诈"
+  },
+  {
+    "word": "gust",
+    "phonetic": "gʌst",
+    "meaning": "阵风，(感情的)迸发",
+    "example": "A gust of wind drove down the valley.",
+    "example_cn": "一阵狂风掠过山谷。"
+  },
+  {
+    "word": "chore",
+    "phonetic": "tʃɔː",
+    "meaning": "日常工作；琐碎烦人的杂务",
+    "example": "everyday chores like shopping and housework",
+    "example_cn": "购物和做家务之类的日常琐事"
+  },
+  {
+    "word": "absurd",
+    "phonetic": "əb'sɜːd",
+    "meaning": "可笑的，荒谬的",
+    "example": "It seems an absurd idea.",
+    "example_cn": "这似乎是个荒唐的想法。"
+  },
+  {
+    "word": "surge",
+    "phonetic": "sɜːdʒ",
+    "meaning": "波动，汹涌，澎湃",
+    "example": "A wave surged up towards them.",
+    "example_cn": "一个浪头向他们涌来。"
+  },
+  {
+    "word": "survival",
+    "phonetic": "sə'vaɪv(ə)l",
+    "meaning": "幸存者，残存；幸存",
+    "example": "The doctors gave him a one in ten chance of survival .",
+    "example_cn": "医生说他有十分之一的生存希望。"
+  },
+  {
+    "word": "ignite",
+    "phonetic": "ɪg'naɪt",
+    "meaning": "点燃，使燃烧",
+    "example": "The petrol tank suddenly ignited.",
+    "example_cn": "油箱突然着火了。"
+  },
+  {
+    "word": "gigantic",
+    "phonetic": "dʒaɪ'gæntɪk",
+    "meaning": "巨大的；庞大的",
+    "example": "a gigantic skyscraper",
+    "example_cn": "摩天大楼"
+  },
+  {
+    "word": "prospect",
+    "phonetic": "'prɒspekt",
+    "meaning": "景色；前景",
+    "example": "Unfortunately, there is little prospect of seeing these big questions answered.",
+    "example_cn": "遗憾的是，几乎没有可能看到这些重大问题得到解答。"
+  },
+  {
+    "word": "term",
+    "phonetic": "tɜːm",
+    "meaning": "期；学期；条件",
+    "example": "Teachers often feel overworked in term time (= during the term ) .",
+    "example_cn": "教师在学期内经常觉得工作担子过重。"
+  },
+  {
+    "word": "refrain",
+    "phonetic": "rɪ'freɪn",
+    "meaning": "抑制",
+    "example": "Mrs. Hardie refrained from making any comment.",
+    "example_cn": "哈迪太太忍住了没做任何评论。"
+  },
+  {
+    "word": "equator",
+    "phonetic": "ɪ'kweɪtə",
+    "meaning": "赤道",
+    "example": "The United States is north of the equator.",
+    "example_cn": "美国位于赤道以北。"
+  },
+  {
+    "word": "slam",
+    "phonetic": "slæm",
+    "meaning": "砰地关上；猛击",
+    "example": "We heard a car door slam.",
+    "example_cn": "我们听到有车门砰的一声关上了。"
+  },
+  {
+    "word": "render",
+    "phonetic": "'rendə",
+    "meaning": "提供，报答；表演，演奏；翻译",
+    "example": "an obligation to render assistance to those in need",
+    "example_cn": "为有困难的人提供援助的义务"
+  },
+  {
+    "word": "whatever",
+    "phonetic": "wɒt'evə",
+    "meaning": "任何的，无论什么样的",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "steer",
+    "phonetic": "stɪə",
+    "meaning": "驾驶",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "affection",
+    "phonetic": "ə'fekʃ(ə)n",
+    "meaning": "友好；爱情",
+    "example": "She thought of him with affection.",
+    "example_cn": "她怀着喜爱想起了他。"
+  },
+  {
+    "word": "hold",
+    "phonetic": "həʊld",
+    "meaning": "握，抓；支持；装得下；认为；举行",
+    "example": "This year’s conference will be held at the Hilton Hotel.",
+    "example_cn": "今年的会议将在希尔顿酒店召开。"
+  },
+  {
+    "word": "lull",
+    "phonetic": "lʌl",
+    "meaning": "使安静，变平静",
+    "example": "The hum of the tyres on the road lulled her to sleep.",
+    "example_cn": "一路上滚滚的车轮声使她昏昏欲睡。"
+  },
+  {
+    "word": "invaluable",
+    "phonetic": "ɪn'væljʊ(ə)b(ə)l",
+    "meaning": "无价的, 无法估价的 \"",
+    "example": "The internet is an invaluable source of information.",
+    "example_cn": "因特网是十分有价值的信息来源。"
+  },
+  {
+    "word": "plagiarize",
+    "phonetic": "'pleɪdʒəraɪz",
+    "meaning": "剽窃，抄袭（别人学说、著作）",
+    "example": "He accused other scientists of plagiarizing his research.",
+    "example_cn": "他指控其他科学家剽窃他的研究成果。"
+  },
+  {
+    "word": "acid",
+    "phonetic": "'æsɪd",
+    "meaning": "酸的；尖刻的",
+    "example": "a juicy apple with a slightly acid flavour",
+    "example_cn": "一个多汁、略带酸味的苹果"
+  },
+  {
+    "word": "mutual",
+    "phonetic": "'mjuːtʃʊəl; -tjʊəl",
+    "meaning": "相互的，共有的，共同的",
+    "example": "I didn’t like Dev, and the feeling seemed to be mutual.",
+    "example_cn": "我不喜欢德夫，他好像也不喜欢我。"
+  },
+  {
+    "word": "publicity",
+    "phonetic": "pʌb'lɪsɪtɪ",
+    "meaning": "公开，宣传",
+    "example": "Much advance publicity was given to the talks.",
+    "example_cn": "会谈之前做了大量的宣传。"
+  },
+  {
+    "word": "grate",
+    "phonetic": "greɪt",
+    "meaning": "火炉，炉格",
+    "example": "A wood fire burned in the grate.",
+    "example_cn": "柴火在炉栅里燃烧。"
+  },
+  {
+    "word": "administer",
+    "phonetic": "əd'mɪnɪstə",
+    "meaning": "管理，支配；给予",
+    "example": "The money will be administered by local charities.",
+    "example_cn": "这笔资金将由当地慈善机构管理。"
+  },
+  {
+    "word": "restrain",
+    "phonetic": "rɪ'streɪn",
+    "meaning": "限制，约束",
+    "example": "Wally gripped my arm, partly to restrain me and partly to reassure me.",
+    "example_cn": "沃利抓住了我的胳膊，部分是想制止我，部分是想安慰我。"
+  },
+  {
+    "word": "martial",
+    "phonetic": "'mɑːʃ(ə)l",
+    "meaning": "战争的；军事的",
+    "example": "martial music",
+    "example_cn": "军乐"
+  },
+  {
+    "word": "veil",
+    "phonetic": "veɪl",
+    "meaning": "面纱；掩饰物",
+    "example": "She lifted her veil with both hands.",
+    "example_cn": "她用双手揭开面纱。"
+  },
+  {
+    "word": "inflation",
+    "phonetic": "ɪn'fleɪʃ(ə)n",
+    "meaning": "通货膨胀",
+    "example": "Inflation is now at over 16%.",
+    "example_cn": "通货膨胀率现已超过16%。"
+  },
+  {
+    "word": "previous",
+    "phonetic": "'priːvɪəs",
+    "meaning": "先前的",
+    "example": "She has a teenage daughter from a previous marriage.",
+    "example_cn": "她有个出自前一次婚姻的十几岁的女儿。"
+  },
+  {
+    "word": "eclipse",
+    "phonetic": "ɪ'klɪps",
+    "meaning": "[天](日，月)蚀",
+    "example": "an eclipse of the sun",
+    "example_cn": "日食"
+  },
+  {
+    "word": "scarcely",
+    "phonetic": "'skeəslɪ",
+    "meaning": "仅仅，几乎不",
+    "example": "The city had scarcely changed in 20 years.",
+    "example_cn": "这座城市20年中几乎没有什么改变。"
+  },
+  {
+    "word": "platitude",
+    "phonetic": "'plætɪtjuːd",
+    "meaning": "陈词滥调",
+    "example": "His excuse was the platitude ‘boys will be boys.’",
+    "example_cn": "他还是那一套理由:“男孩总归是男孩。”"
+  },
+  {
+    "word": "incentive",
+    "phonetic": "ɪn'sentɪv",
+    "meaning": "鼓励，激励，动机",
+    "example": "As an added incentive, there’s a bottle of champagne for the best team.",
+    "example_cn": "给最优秀的队发一瓶香槟作为额外的鼓励。"
+  },
+  {
+    "word": "mire",
+    "phonetic": "maɪə",
+    "meaning": "泥泞，沼泽地",
+    "example": "The wheels got stuck in the mire.",
+    "example_cn": "轮子陷入泥潭里了。"
+  },
+  {
+    "word": "dispel",
+    "phonetic": "dɪ'spel",
+    "meaning": "驱逐，消除",
+    "example": "We want to dispel the myth that you cannot eat well in Britain.",
+    "example_cn": "我们要消除在英国吃不好的误解。"
+  },
+  {
+    "word": "eternal",
+    "phonetic": "ɪ'tɜːn(ə)l; iː-",
+    "meaning": "永久的，不朽的，不停的",
+    "example": "the Christian promise of eternal life",
+    "example_cn": "基督教承诺的永生"
+  },
+  {
+    "word": "stake",
+    "phonetic": "steɪk",
+    "meaning": "木桩；赌注；利害关系",
+    "example": "Young people don’t feel they have a stake in the country’s future.",
+    "example_cn": "年轻人觉得自己与国家的未来没有关系。"
+  },
+  {
+    "word": "harmony",
+    "phonetic": "'hɑːmənɪ",
+    "meaning": "一致，协调，和声",
+    "example": "the gorgeous vocal harmonies on ‘Mexicali Rose’",
+    "example_cn": "《墨西哥玫瑰》的精彩和声演唱"
+  },
+  {
+    "word": "whilst",
+    "phonetic": "waɪlst",
+    "meaning": "=while",
+    "example": "As you lower your pen whilst continuing the motion, you should notice the resulting shape is more regular than it otherwise would have been.",
+    "example_cn": "随着你降低你的笔，同时保持圆周运动，你应该会注意到画出的形状比起不这样做画出的形状要规范的多。"
+  },
+  {
+    "word": "literally",
+    "phonetic": "'lɪt(ə)rəlɪ",
+    "meaning": "照字义地，逐字地",
+    "example": "We've got to get the economy under control or it will literally eat us up.",
+    "example_cn": "我们必须控制住经济，否则它真地就会把我们困住。"
+  },
+  {
+    "word": "ascertain",
+    "phonetic": ",æsə'teɪn",
+    "meaning": "查明，探查",
+    "example": "A postmortem was ordered to try to ascertain the cause of death.",
+    "example_cn": "下令验尸以查明死因。"
+  },
+  {
+    "word": "paralysis",
+    "phonetic": "pə'rælɪsɪs",
+    "meaning": "麻痹，瘫痪；完全无力",
+    "example": "paralysis of the lower body",
+    "example_cn": "下半身瘫痪"
+  },
+  {
+    "word": "timely",
+    "phonetic": "'taɪmlɪ",
+    "meaning": "及时的；适时的",
+    "example": "The fight ended only with the timely arrival of the police.",
+    "example_cn": "幸亏警察及时赶到，打斗总算停止。"
+  },
+  {
+    "word": "worship",
+    "phonetic": "'wə:ʃip",
+    "meaning": "礼拜；崇拜",
+    "example": "The ceremony must take place in a recognized place of worship .",
+    "example_cn": "该仪式必须在获得认可的敬拜场所举行。"
+  },
+  {
+    "word": "idiom",
+    "phonetic": "'ɪdɪəm",
+    "meaning": "习语，成语",
+    "example": "the new musical idiom",
+    "example_cn": "新的音乐风格"
+  },
+  {
+    "word": "safeguard",
+    "phonetic": "'seɪfgɑːd",
+    "meaning": "保护；维护",
+    "example": "technology that will safeguard the environment",
+    "example_cn": "将会保护环境的技术"
+  },
+  {
+    "word": "trumpet",
+    "phonetic": "'trʌmpɪt",
+    "meaning": "喇叭(声)",
+    "example": "Life is something like a trumpet.",
+    "example_cn": "生活有点像一个喇叭。"
+  },
+  {
+    "word": "spill",
+    "phonetic": "spɪl",
+    "meaning": "(使)溢出，(使)溅出",
+    "example": "Katie almost spilled her milk.",
+    "example_cn": "凯蒂差点把牛奶洒出来。"
+  },
+  {
+    "word": "eddy",
+    "phonetic": "'edɪ",
+    "meaning": "漩涡",
+    "example": "The racing river caused swirling eddies.",
+    "example_cn": "湍急的河水形成了许多漩涡。"
+  },
+  {
+    "word": "spectator",
+    "phonetic": "spek'teɪtə",
+    "meaning": "旁观者，观众",
+    "example": "The match attracted over 40,000 spectators.",
+    "example_cn": "这场比赛吸引了四万多名观众。"
+  },
+  {
+    "word": "spectrum",
+    "phonetic": "'spektrəm",
+    "meaning": "系列；光谱",
+    "example": "the electromagnetic spectrum",
+    "example_cn": "电磁（波）谱"
+  },
+  {
+    "word": "ammunition",
+    "phonetic": "æmjʊ'nɪʃ(ə)n",
+    "meaning": "弹药",
+    "example": "He had only seven rounds of ammunition for the revolver.",
+    "example_cn": "他只有7发左轮手枪的弹药。"
+  },
+  {
+    "word": "condolence",
+    "phonetic": "kən'dəʊl(ə)ns",
+    "meaning": "吊唁，慰问；吊慰",
+    "example": "a letter of condolence",
+    "example_cn": "吊唁信"
+  },
+  {
+    "word": "indigenous",
+    "phonetic": "ɪn'dɪdʒɪnəs",
+    "meaning": "土生土长的，本土的",
+    "example": "the many indigenous cultures which existed in Siberia",
+    "example_cn": "存在于西伯利亚的许多当地文化"
+  },
+  {
+    "word": "constitute",
+    "phonetic": "'kɒnstɪtjuːt",
+    "meaning": "组成; 构成; 任命",
+    "example": "We must redefine what constitutes a family.",
+    "example_cn": "我们必须对家庭的构成重新定义。"
+  },
+  {
+    "word": "spouse",
+    "phonetic": "spaʊz; -s",
+    "meaning": "(法律)配偶",
+    "example": "Spouses were invited to the company picnic.",
+    "example_cn": "配偶受到邀请参加公司的野餐会。"
+  },
+  {
+    "word": "plateau",
+    "phonetic": "'plætəʊ",
+    "meaning": "高原",
+    "example": "A broad valley opened up leading to a high, flat plateau of cultivated land.",
+    "example_cn": "一个宽阔的山谷展开，通向一片平坦的高原耕地。"
+  },
+  {
+    "word": "implicit",
+    "phonetic": "ɪm'plɪsɪt",
+    "meaning": "含蓄的，暗示的，无保留的",
+    "example": "...an implicit warning to the Moroccans not to continue or repeat the military actions they began a week ago.",
+    "example_cn": "…叫摩洛哥人不要继续或重复一周前开始的军事行动的含蓄警告。"
+  },
+  {
+    "word": "vegetarian",
+    "phonetic": "vɛdʒɪˈtɛːrɪən",
+    "meaning": "素食者",
+    "example": "Our youngest daughter is a vegetarian.",
+    "example_cn": "我们的小女儿是个素食主义者。"
+  },
+  {
+    "word": "genetic",
+    "phonetic": "dʒɪ'netɪk",
+    "meaning": "遗传学的；发生的",
+    "example": "genetic defects",
+    "example_cn": "遗传性缺陷"
+  },
+  {
+    "word": "legitimate",
+    "phonetic": "lɪ'dʒɪtɪmət",
+    "meaning": "合法的，合理的",
+    "example": "That’s a perfectly legitimate question.",
+    "example_cn": "那个问题完全合乎情理。"
+  },
+  {
+    "word": "wisdom",
+    "phonetic": "'wɪzdəm",
+    "meaning": "智慧，才智；明智的思想言论",
+    "example": "a man of great wisdom",
+    "example_cn": "一个有大智慧的男人"
+  },
+  {
+    "word": "retort",
+    "phonetic": "rɪ'tɔːt",
+    "meaning": "反驳，反击",
+    "example": "‘It’s all your fault!’ he retorted.",
+    "example_cn": "“那都是你的错！”他反驳道。"
+  },
+  {
+    "word": "adjust",
+    "phonetic": "ə'dʒʌst",
+    "meaning": "校准，调整",
+    "example": "Check and adjust the brakes regularly.",
+    "example_cn": "经常检查并调节刹车装置。"
+  },
+  {
+    "word": "motel",
+    "phonetic": "məʊ'tel",
+    "meaning": "汽车旅馆",
+    "example": "The gas station just neighbours to the motel.",
+    "example_cn": "加油站就在汽车旅馆的附近。"
+  },
+  {
+    "word": "tendency",
+    "phonetic": "'tend(ə)nsɪ",
+    "meaning": "趋向，趋势",
+    "example": "...the government's tendency to secrecy in recent years.",
+    "example_cn": "…近年来政府的保密倾向。"
+  },
+  {
+    "word": "lunar",
+    "phonetic": "'luːnə",
+    "meaning": "月的，似月的",
+    "example": "studies of the lunar surface",
+    "example_cn": "对月球表面的研究"
+  },
+  {
+    "word": "extend",
+    "phonetic": "ɪk'stend; ek-",
+    "meaning": "伸出，延长；给予；扩大",
+    "example": "Management have agreed to extend the deadline.",
+    "example_cn": "管理层已同意延长最后期限。"
+  },
+  {
+    "word": "journalist",
+    "phonetic": "'dʒɜːn(ə)lɪst",
+    "meaning": "记者，新闻工作者",
+    "example": "a well-known journalist and broadcaster",
+    "example_cn": "一位著名的新闻记者兼播音员"
+  },
+  {
+    "word": "apologetic",
+    "phonetic": "əpɒlə'dʒetɪk",
+    "meaning": "表示歉意的",
+    "example": "The hospital staff were very apologetic but that couldn't really compensate.",
+    "example_cn": "医院员工都深表歉意，但那不能真正补偿。"
+  },
+  {
+    "word": "contradiction",
+    "phonetic": "kɒntrə'dɪkʃ(ə)n",
+    "meaning": "矛盾，对立",
+    "example": "apparent contradictions in the defendant’s testimony",
+    "example_cn": "被告证词中的明显矛盾"
+  },
+  {
+    "word": "meticulous",
+    "phonetic": "mə'tɪkjələs",
+    "meaning": "谨小慎微的；过细的",
+    "example": "He was so meticulous about everything.",
+    "example_cn": "他对任何事情都很小心谨慎。"
+  },
+  {
+    "word": "anyhow",
+    "phonetic": "'enɪhaʊ",
+    "meaning": "不论用何种方法；无论如何",
+    "example": "The scandal could damage her reputation but the press reported it anyhow.",
+    "example_cn": "这宗丑闻可能损害她的名声，不过报纸还是给登了出来。"
+  },
+  {
+    "word": "draft",
+    "phonetic": "drɑːft",
+    "meaning": "草稿；汇票；征兵",
+    "example": "the rough draft of his new novel",
+    "example_cn": "他的新小说的草稿"
+  },
+  {
+    "word": "forerunner",
+    "phonetic": "'fɔːrʌnə",
+    "meaning": "前征，先驱",
+    "example": "...a machine which, in some respects, was the forerunner of the modern helicopter.",
+    "example_cn": "…一台在某些方面是现代直升飞机的前身的机器。"
+  },
+  {
+    "word": "repetition",
+    "phonetic": "repɪ'tɪʃ(ə)n",
+    "meaning": "重复",
+    "example": "Children used to learn by repetition.",
+    "example_cn": "过去小孩子是通过背诵来学习的。"
+  },
+  {
+    "word": "emigrate",
+    "phonetic": "'emɪgreɪt",
+    "meaning": "移居国外",
+    "example": "He emigrated to Belgium.",
+    "example_cn": "他移民去了比利时。"
+  },
+  {
+    "word": "stuffing",
+    "phonetic": "'stʌfɪŋ",
+    "meaning": "填料，填充物，填充剂",
+    "example": "sage and onion stuffing",
+    "example_cn": "洋苏叶和洋葱填料"
+  },
+  {
+    "word": "novel",
+    "phonetic": "'nɒv(ə)l",
+    "meaning": "新奇的",
+    "example": "Protesters found a novel way of demonstrating against steeply rising oil prices.",
+    "example_cn": "抗议者们找到一种新奇的示威方式来反对石油价格的飙升。"
+  },
+  {
+    "word": "observance",
+    "phonetic": "əb'zɜːv(ə)ns",
+    "meaning": "(法律习俗等)遵守；奉行；礼仪，仪式",
+    "example": "the Memorial Day observance",
+    "example_cn": "纪念日的习俗"
+  },
+  {
+    "word": "intellectual",
+    "phonetic": ",ɪntə'lektʃʊəl; -tjʊəl",
+    "meaning": "知识分子",
+    "example": "a leading British intellectual",
+    "example_cn": "一位顶尖的英国知识分子"
+  },
+  {
+    "word": "laundry",
+    "phonetic": "'lɔːndrɪ",
+    "meaning": "洗衣店，要洗的东西",
+    "example": "She did the laundry (= washed the clothes etc ) and hung it out to dry.",
+    "example_cn": "她洗了衣服，然后挂出去晾干。"
+  },
+  {
+    "word": "indemnity",
+    "phonetic": "ɪn'demnɪtɪ",
+    "meaning": "保障，保护；赔偿",
+    "example": "insurance providing indemnity against future liabilities",
+    "example_cn": "对将来的债务提供保障的保险"
+  },
+  {
+    "word": "concentrate",
+    "phonetic": "'kɒns(ə)ntreɪt",
+    "meaning": "集中，全神贯注于；浓缩",
+    "example": "Now please concentrate.",
+    "example_cn": "现在请集中注意力。"
+  },
+  {
+    "word": "impart",
+    "phonetic": "ɪm'pɑːt",
+    "meaning": "告知，透露，给予",
+    "example": "She had information that she couldn’t wait to impart.",
+    "example_cn": "她得到了消息，迫不及待地想告诉别人。"
+  },
+  {
+    "word": "qualitative",
+    "phonetic": "'kwɒlɪtətɪv",
+    "meaning": "质的，定性的",
+    "example": "There are qualitative differences in the way children of different ages and adults think.",
+    "example_cn": "不同年龄的儿童和成人在思维方式上有着质的差异。"
+  },
+  {
+    "word": "exclusive",
+    "phonetic": "ɪk'skluːsɪv; ek-",
+    "meaning": "孤傲的；不愿吸收新会员的；索价高昂的",
+    "example": "Bel Air is an exclusive suburb of Los Angeles.",
+    "example_cn": "贝莱尔是洛杉矶郊外一处高级住宅区。"
+  },
+  {
+    "word": "somewhat",
+    "phonetic": "'sʌmwɒt",
+    "meaning": "有点儿",
+    "example": "Things have changed somewhat since then.",
+    "example_cn": "从那时候起，情况就有些不一样了。"
+  },
+  {
+    "word": "appeal",
+    "phonetic": "ə'piːl",
+    "meaning": "呼吁，上诉；吸引(力)",
+    "example": "The girl’s family have made a public appeal for help to try and catch her killer.",
+    "example_cn": "那名遇害女孩的家人吁请公众协助捉拿凶手。"
+  },
+  {
+    "word": "even",
+    "phonetic": "'iːv(ə)n",
+    "meaning": "甚至还",
+    "example": "Most companies have suffered a drop in their profits, even very large companies.",
+    "example_cn": "大多数公司的利润都出现下滑，甚至连很大的公司也不例外。"
+  },
+  {
+    "word": "intricate",
+    "phonetic": "'ɪntrɪkət",
+    "meaning": "复杂的，错综的",
+    "example": "intricate patterns",
+    "example_cn": "繁复的图案"
+  },
+  {
+    "word": "outfit",
+    "phonetic": "'aʊtfɪt",
+    "meaning": "装备，全部用品",
+    "example": "She bought a new outfit for the party.",
+    "example_cn": "她为了这次派对买了套新衣服。"
+  },
+  {
+    "word": "continuity",
+    "phonetic": ",kɒntɪ'njuːɪtɪ",
+    "meaning": "继续性",
+    "example": "...a tank designed to ensure continuity of fuel supply during aerobatics.",
+    "example_cn": "…为特技飞行中确保持续供油而设计的油箱。"
+  },
+  {
+    "word": "expenditure",
+    "phonetic": "ɪk'spendɪtʃə; ek-",
+    "meaning": "支出，花费，消费量",
+    "example": "huge cuts in public expenditure ",
+    "example_cn": "大幅度削减公共开支"
+  },
+  {
+    "word": "sauce",
+    "phonetic": "sɔːs",
+    "meaning": "调味汁，酱油；莽撞，冒失",
+    "example": "spaghetti sauces",
+    "example_cn": "意大利面酱"
+  },
+  {
+    "word": "impact",
+    "phonetic": "'ɪmpækt",
+    "meaning": "碰撞，撞击，撞击力",
+    "example": "The force of the impact knocked the breath out of her.",
+    "example_cn": "撞击力使她喘不过气来。"
+  },
+  {
+    "word": "personality",
+    "phonetic": "pɜːsə'nælɪtɪ",
+    "meaning": "个性；(有名的)人物",
+    "example": "Despite their different personalities, they became the best of friends.",
+    "example_cn": "尽管个性不同，他们还是成了最好的朋友。"
+  },
+  {
+    "word": "inhabitant",
+    "phonetic": "ɪn'hæbɪt(ə)nt",
+    "meaning": "居民",
+    "example": "a city of six million inhabitants",
+    "example_cn": "有600万居民的城市"
+  },
+  {
+    "word": "hardy",
+    "phonetic": "'hɑːdɪ",
+    "meaning": "勇敢的，果断的，吃苦的",
+    "example": "hardy mountain goats",
+    "example_cn": "能适应恶劣环境的石山羊"
+  },
+  {
+    "word": "vessel",
+    "phonetic": "'ves(ə)l",
+    "meaning": "容器；船",
+    "example": "a fishing vessel",
+    "example_cn": "渔船"
+  },
+  {
+    "word": "convention",
+    "phonetic": "kən'venʃ(ə)n",
+    "meaning": "会议，协定；惯例；习俗",
+    "example": "a teachers’ convention",
+    "example_cn": "教师大会"
+  },
+  {
+    "word": "coupon",
+    "phonetic": "'kuːpɒn",
+    "meaning": "证明持券人有某种权利的卡片，票证，赠券",
+    "example": "The coupon entitles you to ten cents off your next purchase.",
+    "example_cn": "这张优惠券可以让你在下次购物时节省10分钱。"
+  },
+  {
+    "word": "grim",
+    "phonetic": "grɪm",
+    "meaning": "严格的，严厉的",
+    "example": "‘I’ll survive,’ he said with a grim smile.",
+    "example_cn": "“我死不了。”他阴笑着说。"
+  },
+  {
+    "word": "groa",
+    "phonetic": "",
+    "meaning": "呻吟，呻吟着表示;承受重压发出的声音",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "invest",
+    "phonetic": "ɪn'vest",
+    "meaning": "投资，购买；授予",
+    "example": "I’ve got a few thousand dollars I’m looking to invest.",
+    "example_cn": "我有几千美元想作投资。"
+  },
+  {
+    "word": "crumble",
+    "phonetic": "'krʌmb(ə)l",
+    "meaning": "弄碎，灭亡，消失",
+    "example": "Under the pressure, the flint crumbled into fragments.",
+    "example_cn": "在压力作用下，燧石裂成了碎片。"
+  },
+  {
+    "word": "overhaul",
+    "phonetic": "əʊvə'hɔːl",
+    "meaning": "彻底检修；赶上",
+    "example": "A mechanic is coming to overhaul the engine.",
+    "example_cn": "一名机修工要来彻底检修引擎。"
+  },
+  {
+    "word": "commend",
+    "phonetic": "kə'mend",
+    "meaning": "委托保管；称赞",
+    "example": "The paper was highly commended in the UK Press Awards.",
+    "example_cn": "该报获得了“英国新闻奖”的高度褒奖。"
+  },
+  {
+    "word": "peculiar",
+    "phonetic": "pɪ'kjuːlɪə",
+    "meaning": "特殊的",
+    "example": "Punks, soldiers, hippies, and Sumo wrestlers all have distinct hair styles, peculiar to their group.",
+    "example_cn": "朋克摇滚歌手、士兵、嬉皮士和相扑手都留着他们那个群体特有的独特发型。"
+  },
+  {
+    "word": "commonwealth",
+    "phonetic": "'kɒmənwelθ",
+    "meaning": "全体国民；联邦",
+    "example": "...the Asian, Caribbean and African members of the commonwealth.",
+    "example_cn": "…英联邦在亚洲、加勒比海和非洲的成员国。"
+  },
+  {
+    "word": "deceive",
+    "phonetic": "dɪ'siːv",
+    "meaning": "欺骗，诓骗",
+    "example": "He had been deceived by a young man claiming to be the son of a millionaire.",
+    "example_cn": "他被一个自称是百万富翁之子的年轻人骗了。"
+  },
+  {
+    "word": "lax",
+    "phonetic": "læks",
+    "meaning": "疏忽的，不严格的",
+    "example": "One of the problem areas is lax security for airport personnel.",
+    "example_cn": "其中一个问题是对机场人员的安全措施不严格。"
+  },
+  {
+    "word": "default",
+    "phonetic": "dɪ'fɔːlt; 'diːfɔːlt",
+    "meaning": "拖欠，违约；不出庭",
+    "example": "the risk of default by borrowers",
+    "example_cn": "借款人不偿还欠款的风险"
+  },
+  {
+    "word": "monitor",
+    "phonetic": "'mɒnɪtə",
+    "meaning": "班长；监视器",
+    "example": "a heart monitor",
+    "example_cn": "心脏监测仪"
+  },
+  {
+    "word": "intermediate",
+    "phonetic": ",ɪntə'miːdɪət",
+    "meaning": "中间的；中间物",
+    "example": "If you must use descendant selectors, prefer child selectors, which at least only require evaluation of one additional node, not all the intermediate nodes up to an ancestor.",
+    "example_cn": "如果您必须使用后代选择器，尽量使用子代选择器，这最少只需评估一个额外的节点，而非中间直至祖先的所有节点。"
+  },
+  {
+    "word": "nominal",
+    "phonetic": "'nɒmɪn(ə)l",
+    "meaning": "名义上的，有名无实的；极微的；象征性的",
+    "example": "A nominal charge is made for use of the tennis courts.",
+    "example_cn": "使用这些网球场只是象征性地收取费用。"
+  },
+  {
+    "word": "deadly",
+    "phonetic": "'dedlɪ",
+    "meaning": "致命的，殊死的",
+    "example": "a deadly poison",
+    "example_cn": "致命的毒药"
+  },
+  {
+    "word": "exterminate",
+    "phonetic": "ɪk'stɜːmɪneɪt; ek-",
+    "meaning": "灭绝，根除",
+    "example": "Staff use the poison to exterminate moles and rabbits.",
+    "example_cn": "员工用毒药来消灭鼹鼠和野兔。"
+  },
+  {
+    "word": "contrast",
+    "phonetic": "'kɒntrɑːst",
+    "meaning": "使对比，形成对照",
+    "example": "an essay comparing and contrasting (= showing how two things are similar and different ) Verdi and Wagner and their operas",
+    "example_cn": "把威尔第和瓦格纳以及他们的歌剧进行比较和对照的一篇文章"
+  },
+  {
+    "word": "presumably",
+    "phonetic": "prɪ'zjuːməblɪ",
+    "meaning": "假定地；也许",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "conservatory",
+    "phonetic": "kən'sɜːvət(ə)rɪ",
+    "meaning": "温室；公立艺术学校",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "embed",
+    "phonetic": "ɪm'bed; em-",
+    "meaning": "把嵌入，使扎根于社会，使深留脑中",
+    "example": "Feelings of guilt are deeply embedded in her personality.",
+    "example_cn": "负罪感在她的性格里根深蒂固。"
+  },
+  {
+    "word": "available",
+    "phonetic": "ə'veɪləb(ə)l",
+    "meaning": "可获得的，可用的",
+    "example": "Tickets are available from the box office.",
+    "example_cn": "售票处有票出售。"
+  },
+  {
+    "word": "arctic",
+    "phonetic": "'ɑːktɪk",
+    "meaning": "北极的",
+    "example": "The bathroom, with its spartan pre-war facilities, is positively arctic.",
+    "example_cn": "这个有简陋战前设施的浴室实在冷极了。"
+  },
+  {
+    "word": "onlooker",
+    "phonetic": "'ɒnlʊkə",
+    "meaning": "旁观者",
+    "example": "A crowd of onlookers had gathered at the scene of the accident.",
+    "example_cn": "一群旁观者围聚在事故现场。"
+  },
+  {
+    "word": "hinder",
+    "phonetic": "'hɪndə",
+    "meaning": "阻碍，阻止",
+    "example": "His career has been hindered by injury.",
+    "example_cn": "由于受伤，他的事业受到了阻碍。"
+  },
+  {
+    "word": "relay",
+    "phonetic": "'riːleɪ",
+    "meaning": "替班；转播；接力赛跑",
+    "example": "the 100 metres relay",
+    "example_cn": "一百米接力赛"
+  },
+  {
+    "word": "medieval",
+    "phonetic": "ˌmediˈi:vl",
+    "meaning": "中古的，中世纪的",
+    "example": "These spices were first brought to Italy from the East in medieval times.",
+    "example_cn": "这些香料最早是在中世纪时从东方被带到了意大利。"
+  },
+  {
+    "word": "commit",
+    "phonetic": "kə'mɪt",
+    "meaning": "犯(罪);干(坏事)；把交托给",
+    "example": "Women commit fewer crimes than men.",
+    "example_cn": "女性犯罪比男性少。"
+  },
+  {
+    "word": "halt",
+    "phonetic": "hɔːlt",
+    "meaning": "(途中)暂停，停止，终止",
+    "example": "Heavy snowfalls brought traffic to a halt (= made it stop moving ).",
+    "example_cn": "大雪使得交通陷于停顿。"
+  },
+  {
+    "word": "conservation",
+    "phonetic": "kɒnsə'veɪʃ(ə)n",
+    "meaning": "保存，保护",
+    "example": "wildlife conservation",
+    "example_cn": "野生生物保护"
+  },
+  {
+    "word": "illustrate",
+    "phonetic": "'ɪləstreɪt",
+    "meaning": "举例或以图表说明，配以插图",
+    "example": "Let me give an example to illustrate the point.",
+    "example_cn": "让我举个例子来说明这一点。"
+  },
+  {
+    "word": "function",
+    "phonetic": "'fʌŋ(k)ʃ(ə)n",
+    "meaning": "职责，作用；正式社会集会",
+    "example": "The nervous system regulates our bodily functions (= eating, breathing, going to the toilet etc ) .",
+    "example_cn": "神经系统控制着我们身体的功能。"
+  },
+  {
+    "word": "scent",
+    "phonetic": "sent",
+    "meaning": "气味，香味；香水",
+    "example": "a yellow rose with a lovely scent",
+    "example_cn": "香气怡人的黄玫瑰"
+  },
+  {
+    "word": "entertainment",
+    "phonetic": "entə'teɪnm(ə)nt",
+    "meaning": "娱乐，招待，表演",
+    "example": "The town provides a wide choice of entertainment.",
+    "example_cn": "该镇提供各式各样的娱乐活动。"
+  },
+  {
+    "word": "pregnant",
+    "phonetic": "'pregnənt",
+    "meaning": "怀孕的；意义深远的",
+    "example": "care for pregnant women",
+    "example_cn": "孕妇保健"
+  },
+  {
+    "word": "invert",
+    "phonetic": "ɪn'vɜːt",
+    "meaning": "倒转，上下倒置",
+    "example": "Invert the cake onto a serving plate.",
+    "example_cn": "把蛋糕倒扣过来放到一个盘子上。"
+  },
+  {
+    "word": "sturdy",
+    "phonetic": "'stɜːdɪ",
+    "meaning": "强健的，坚实的",
+    "example": "That chair doesn’t look very sturdy.",
+    "example_cn": "那把椅子看上去不太结实。"
+  },
+  {
+    "word": "spring",
+    "phonetic": "sprɪŋ",
+    "meaning": "跳，发芽",
+    "example": "He sprang to his feet, grabbing his keys off the coffee table.",
+    "example_cn": "他跳了起来，从咖啡桌上抓起他的钥匙。"
+  },
+  {
+    "word": "scorch",
+    "phonetic": "skɔːtʃ",
+    "meaning": "烧焦，烤焦，枯萎",
+    "example": "The walls had been blackened and scorched by fire.",
+    "example_cn": "这些墙被大火熏黑了。"
+  },
+  {
+    "word": "panorama",
+    "phonetic": "pænə'rɑːmə",
+    "meaning": "全景，全方位，整体效应",
+    "example": "Horton looked out over a panorama of fertile valleys and gentle hills.",
+    "example_cn": "霍顿眺望着那一片肥沃山谷和平缓山脉的景象。"
+  },
+  {
+    "word": "content",
+    "phonetic": "kən'tent",
+    "meaning": "满意(的)，满足(的)；使满意(足)",
+    "example": "Empty the contents of the pan into the sieve.",
+    "example_cn": "将平锅里的东西全部倒入漏勺。"
+  },
+  {
+    "word": "tar",
+    "phonetic": "tɑː",
+    "meaning": "焦油，沥青",
+    "example": "high tar cigarettes",
+    "example_cn": "高焦香烟"
+  },
+  {
+    "word": "migrate",
+    "phonetic": "maɪ'greɪt; 'maɪgreɪt",
+    "meaning": "迁移；移居",
+    "example": "People migrate to cities like Jakarta in search of work.",
+    "example_cn": "人们移居到雅加达这样的城市找工作。"
+  },
+  {
+    "word": "magnate",
+    "phonetic": "'mægneɪt",
+    "meaning": "达官，显贵",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "deaf",
+    "phonetic": "def",
+    "meaning": "聋的；不愿听的",
+    "example": "communication between deaf and hearing people",
+    "example_cn": "失聪者和听力正常者之间的交流"
+  },
+  {
+    "word": "contribute",
+    "phonetic": "kən'trɪbjuːt; 'kɒntrɪbjuːt",
+    "meaning": "贡献；促成；投稿",
+    "example": "Stress is a contributing factor in many illnesses.",
+    "example_cn": "压力是许多疾病的致病因素。"
+  },
+  {
+    "word": "remarkable",
+    "phonetic": "rɪ'mɑːkəb(ə)l",
+    "meaning": "不平常的；出色的",
+    "example": "She has made remarkable progress.",
+    "example_cn": "她取得了显著的进步。"
+  },
+  {
+    "word": "affect",
+    "phonetic": "ə'fekt",
+    "meaning": "影响",
+    "example": "the areas affected by the hurricane",
+    "example_cn": "受飓风影响的地区"
+  },
+  {
+    "word": "fellowship",
+    "phonetic": "'felə(ʊ)ʃɪp",
+    "meaning": "交情；团体；奖学金",
+    "example": "...the National Schizophrenia Fellowship.",
+    "example_cn": "…全国精神分裂协会。"
+  },
+  {
+    "word": "pester",
+    "phonetic": "'pestə",
+    "meaning": "烦扰，纠缠",
+    "example": "She’d been pestered by reporters for days.",
+    "example_cn": "几天来她一直受到记者们的纠缠。"
+  },
+  {
+    "word": "frugal",
+    "phonetic": "'fruːg(ə)l",
+    "meaning": "俭朴的，花钱少的",
+    "example": "As children we were taught to be frugal and hard-working.",
+    "example_cn": "我们小时候被教育要节俭和勤劳。"
+  },
+  {
+    "word": "clamp",
+    "phonetic": "klæmp",
+    "meaning": "螺丝钳，用钳夹；取缔",
+    "example": "He returned, only to discover his car had been clamped.",
+    "example_cn": "他回来了，不料发现自己的汽车被上了夹钳。"
+  },
+  {
+    "word": "masterpiece",
+    "phonetic": "'mɑːstəpiːs",
+    "meaning": "杰作；名著",
+    "example": "Mary Shelley was just 18 when she wrote the horror masterpiece ‘Frankenstein’.",
+    "example_cn": "玛丽•雪莱创作《科学怪人》这部恐怖小说名作的时候年仅18岁。"
+  },
+  {
+    "word": "cultivate",
+    "phonetic": "'kʌltɪveɪt",
+    "meaning": "耕作; 培养",
+    "example": "The land was too rocky to cultivate.",
+    "example_cn": "这块地石头太多，无法耕作。"
+  },
+  {
+    "word": "split",
+    "phonetic": "splɪt",
+    "meaning": "劈开，使裂开；分离",
+    "example": "The branch split under their weight.",
+    "example_cn": "树枝承受不住他们的重量断裂了。"
+  },
+  {
+    "word": "concession",
+    "phonetic": "kən'seʃ(ə)n",
+    "meaning": "让步，让与物",
+    "example": "The British were not prepared to make any concessions .",
+    "example_cn": "英国人没有打算作出让步。"
+  },
+  {
+    "word": "idle",
+    "phonetic": "'aɪd(ə)l",
+    "meaning": "闲着的，空闲的；懒的；无根据的",
+    "example": "Go and wake up that idle brother of yours.",
+    "example_cn": "去把你那懒哥哥叫起来。"
+  },
+  {
+    "word": "pragmatic",
+    "phonetic": "præg'mætɪk",
+    "meaning": "重实效的，实际的",
+    "example": "Williams took a more pragmatic approach to management problems.",
+    "example_cn": "威廉斯在管理问题上采用的是一种更务实的做法。"
+  },
+  {
+    "word": "dilemma",
+    "phonetic": "dɪ'lemə; daɪ-",
+    "meaning": "进退两难的境地，困境",
+    "example": "a moral dilemma",
+    "example_cn": "道德上进退两难的窘境"
+  },
+  {
+    "word": "lavish",
+    "phonetic": "'lævɪʃ",
+    "meaning": "慷慨的，过度的，大量的",
+    "example": "a royal palace on a lavish scale",
+    "example_cn": "庞大的皇宫"
+  },
+  {
+    "word": "series",
+    "phonetic": "'sɪəriːz; -rɪz",
+    "meaning": "连续，系列",
+    "example": "the series of events that led to the outbreak of war",
+    "example_cn": "导致战争爆发的一系列事件"
+  },
+  {
+    "word": "strait",
+    "phonetic": "streɪt",
+    "meaning": "海峡；困难，窘迫",
+    "example": "the Bering Strait",
+    "example_cn": "白令海峡"
+  },
+  {
+    "word": "sarcasm",
+    "phonetic": "'sɑːkæz(ə)m",
+    "meaning": "讽刺，挖苦，嘲笑",
+    "example": "‘Good of you to arrive on time,’ George said, with heavy sarcasm (= very clear sarcasm ) .",
+    "example_cn": "“你到得真准时啊。”乔治不加掩饰地挖苦道。"
+  },
+  {
+    "word": "sensitive",
+    "phonetic": "'sensɪtɪv",
+    "meaning": "敏感的；过敏的，容易生气的；仪器灵敏的",
+    "example": "a very sensitive child",
+    "example_cn": "一个很敏感的小孩"
+  },
+  {
+    "word": "rely",
+    "phonetic": "rɪ'laɪ",
+    "meaning": "依赖",
+    "example": "They relied heavily on the advice of their professional advisers.",
+    "example_cn": "他们非常依赖专业顾问的建议。"
+  },
+  {
+    "word": "enterprise",
+    "phonetic": "'entəpraɪz",
+    "meaning": "艰巨的事业；事业心，企业",
+    "example": "commercial enterprises such as banks and food manufacturers",
+    "example_cn": "银行和食品制造厂等商业企业"
+  },
+  {
+    "word": "garbage",
+    "phonetic": "'gɑːbɪdʒ",
+    "meaning": "垃圾，污物",
+    "example": "Can you take out the garbage when you go?",
+    "example_cn": "你走的时候把垃圾带出去好吗？"
+  },
+  {
+    "word": "postscript",
+    "phonetic": "'pəʊs(t)skrɪpt",
+    "meaning": "信件中附笔，附言",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "segregate",
+    "phonetic": "'segrɪgeɪt",
+    "meaning": "隔开；分离",
+    "example": "A large detachment of police was used to segregate the two rival camps of protesters.",
+    "example_cn": "一大队分遣警察被派来隔离两群敌对的抗议者。"
+  },
+  {
+    "word": "cylinder",
+    "phonetic": "'sɪlɪndə",
+    "meaning": "圆桶，汽缸",
+    "example": "a four-cylinder engine",
+    "example_cn": "四汽缸引擎"
+  },
+  {
+    "word": "surcharge",
+    "phonetic": "'sɜːtʃɑːdʒ",
+    "meaning": "额外费用，过高的要价",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "ensue",
+    "phonetic": "ɪn'sjuː; en-",
+    "meaning": "跟着发生；结果是",
+    "example": "If the Europeans did not reduce subsidies, a trade war would ensue.",
+    "example_cn": "如果欧洲不减少补贴，贸易战将随即爆发。"
+  },
+  {
+    "word": "pant",
+    "phonetic": "pænt",
+    "meaning": "气喘，喘息；气喘吁吁地说",
+    "example": "He came in panting after running up the steps.",
+    "example_cn": "他跑上台阶，气喘吁吁地走了进来。"
+  },
+  {
+    "word": "stern",
+    "phonetic": "stɜːn",
+    "meaning": "严厉的，严格的",
+    "example": "sterner penalties for drug offences",
+    "example_cn": "对毒品犯罪的更为严厉的惩罚"
+  },
+  {
+    "word": "steady",
+    "phonetic": "'stedɪ",
+    "meaning": "稳定的，不变的",
+    "example": "Paul is making steady progress.",
+    "example_cn": "保罗逐渐在进步。"
+  },
+  {
+    "word": "abstract",
+    "phonetic": "'æbstrækt",
+    "meaning": "抽象的",
+    "example": "By the age of seven, children are capable of thinking in abstract terms .",
+    "example_cn": "儿童到了七岁就具有抽象思维的能力。"
+  },
+  {
+    "word": "clue",
+    "phonetic": "kluː",
+    "meaning": "线索",
+    "example": "Police have found a vital clue .",
+    "example_cn": "警方发现了至关重要的线索。"
+  },
+  {
+    "word": "thorough",
+    "phonetic": "'θʌrə",
+    "meaning": "彻底的；详尽的",
+    "example": "The doctor gave him a thorough check-up.",
+    "example_cn": "医生给他做了一次全面的体检。"
+  },
+  {
+    "word": "alphabetical",
+    "phonetic": "ælfə'betɪk(ə)l",
+    "meaning": "按字母表顺序的",
+    "example": "The files are arranged in alphabetical order .",
+    "example_cn": "这些文件按字母顺序排列。"
+  },
+  {
+    "word": "democracy",
+    "phonetic": "dɪ'mɒkrəsɪ",
+    "meaning": "民主，民主政体，民主社会",
+    "example": "a return to democracy after 16 years of military rule",
+    "example_cn": "16年军人统治后民主制度的恢复"
+  },
+  {
+    "word": "seep",
+    "phonetic": "siːp",
+    "meaning": "液体渗出",
+    "example": "Radioactive water had seeped into underground reservoirs.",
+    "example_cn": "放射性水已渗入了地下蓄水池。"
+  },
+  {
+    "word": "distinction",
+    "phonetic": "dɪ'stɪŋ(k)ʃ(ə)n",
+    "meaning": "差别，区分；卓著，荣誉",
+    "example": "Eliot’s distinction as a poet",
+    "example_cn": "艾略特作为诗人的杰出才能"
+  },
+  {
+    "word": "indicator",
+    "phonetic": "'ɪndɪkeɪtə",
+    "meaning": "指示者，指示物",
+    "example": "All the main economic indicators suggest that trade is improving.",
+    "example_cn": "所有主要的经济指标都表明贸易情况正在改善。"
+  },
+  {
+    "word": "persevere",
+    "phonetic": "pɜːsɪ'vɪə",
+    "meaning": "锲而不舍",
+    "example": "It can be tricky at first, but persevere.",
+    "example_cn": "一开始会有些棘手，不过要坚持。"
+  },
+  {
+    "word": "literacy",
+    "phonetic": "'lɪt(ə)rəsɪ",
+    "meaning": "识字，读写能力",
+    "example": "a new adult literacy campaign",
+    "example_cn": "新一轮成人识字[扫盲]运动"
+  },
+  {
+    "word": "affirm",
+    "phonetic": "ə'fɜːm",
+    "meaning": "断定，肯定",
+    "example": "The court affirmed that the information can be made public under the Freedom of Information Act.",
+    "example_cn": "法院公开肯定了此信息能依据《自由信息法案》公之于众。"
+  },
+  {
+    "word": "denounce",
+    "phonetic": "dɪ'naʊns",
+    "meaning": "谴责，斥责",
+    "example": "The group denounced the failure by the authorities to take action.",
+    "example_cn": "该团体谴责当局没有采取行动。"
+  },
+  {
+    "word": "defect",
+    "phonetic": "'diːfekt; dɪ'fekt",
+    "meaning": "缺点，欠缺",
+    "example": "All the cars are tested for defects before they leave the factory.",
+    "example_cn": "所有汽车在出厂前都经过品质检验。"
+  },
+  {
+    "word": "knit",
+    "phonetic": "nɪt",
+    "meaning": "编织；紧密结合",
+    "example": "My grandmother taught me how to knit.",
+    "example_cn": "我祖母教过我编织。"
+  },
+  {
+    "word": "marvelous",
+    "phonetic": "ˈmɑːvələs",
+    "meaning": "令人惊奇的；创造奇迹的",
+    "example": "",
+    "example_cn": ""
+  },
+  {
+    "word": "haunt",
+    "phonetic": "hɔːnt",
+    "meaning": "常去；(鬼，魂)常出没于",
+    "example": "The pub is said to be haunted by the ghost of a former landlord.",
+    "example_cn": "据说这个酒吧里经常有一位前任房主的鬼魂出没。"
+  },
+  {
+    "word": "preach",
+    "phonetic": "priːtʃ",
+    "meaning": "传教；讲道；劝诫；鼓吹",
+    "example": "He traveled the southern states, preaching the gospel .",
+    "example_cn": "他游历南方各州宣讲福音。"
+  },
+  {
+    "word": "tariff",
+    "phonetic": "'tærɪf",
+    "meaning": "(酒店)价目表；关税税率",
+    "example": "America wants to eliminate tariffs on items such as electronics.",
+    "example_cn": "美国想要取消电子类产品的关税。"
+  },
+  {
+    "word": "prime",
+    "phonetic": "praɪm",
+    "meaning": "主要的；最好的",
+    "example": "Smoking is the prime cause of lung disease.",
+    "example_cn": "抽烟是引发肺部疾病的首要原因。"
+  },
+  {
+    "word": "mist",
+    "phonetic": "mɪst",
+    "meaning": "薄雾；朦胧",
+    "example": "We could just see the outline of the house through the mist.",
+    "example_cn": "薄雾中我们只能看到房子的轮廓。"
+  },
+  {
+    "word": "agony",
+    "phonetic": "'ægənɪ",
+    "meaning": "极度痛苦",
+    "example": "the agony of arthritis",
+    "example_cn": "关节炎的剧烈疼痛"
+  },
+  {
+    "word": "pick",
+    "phonetic": "pɪk",
+    "meaning": "镐；挑选；选择",
+    "example": "Have a look at the menu and take your pick .",
+    "example_cn": "看看菜单再作选择吧。"
+  },
+  {
+    "word": "tournament",
+    "phonetic": "'tʊənəm(ə)nt",
+    "meaning": "比赛，联赛",
+    "example": "She is aching to join in the tournament.",
+    "example_cn": "她渴望参加比赛。"
+  },
+  {
+    "word": "genius",
+    "phonetic": "'dʒiːnɪəs",
+    "meaning": "天才，天才人物，才华",
+    "example": "The film reveals Fellini’s genius.",
+    "example_cn": "这部影片展现了费里尼的天赋。"
+  },
+  {
+    "word": "flicker",
+    "phonetic": "'flɪkə",
+    "meaning": "闪烁，摇曳，闪现",
+    "example": "The overhead lights flickered momentarily.",
+    "example_cn": "头顶灯闪了一会儿。"
+  },
+  {
+    "word": "hierarchy",
+    "phonetic": "'haɪərɑːkɪ",
+    "meaning": "等级制度",
+    "example": "a rigid social hierarchy",
+    "example_cn": "严格的社会等级制度"
+  },
+  {
+    "word": "distinguish",
+    "phonetic": "dɪ'stɪŋgwɪʃ",
+    "meaning": "区别，识别；使显赫",
+    "example": "Could he distinguish right from wrong?",
+    "example_cn": "他能辨别是非吗？"
+  },
+  {
+    "word": "chamber",
+    "phonetic": "'tʃeɪmbə",
+    "meaning": "房间；议院；贸易团体；弹膛",
+    "example": "the Queen’s private chambers",
+    "example_cn": "女王的寝宫"
+  },
+  {
+    "word": "credentials",
+    "phonetic": "krə'dɛnʃlz",
+    "meaning": "信任状，证书",
+    "example": "The commissioner presented his credentials to the State Department.",
+    "example_cn": "该委员向国务院递交了他的任职资格证书。"
+  },
+  {
+    "word": "invigilate",
+    "phonetic": "ɪn'vɪdʒɪleɪt",
+    "meaning": "监考",
+    "example": "Different is, the exam in the life often does not have person invigilate.",
+    "example_cn": "不同的是，生活中的考试常常是没有人监考的。"
+  },
+  {
+    "word": "recover",
+    "phonetic": "rɪ'kʌvə",
+    "meaning": "重新找到；复原，痊愈",
+    "example": "It was some hours before she recovered consciousness .",
+    "example_cn": "过了几个小时她才恢复知觉。"
+  },
+  {
+    "word": "artillery",
+    "phonetic": "ɑː'tɪlərɪ",
+    "meaning": "火炮，干线",
+    "example": "Using tanks and heavy artillery, they seized the town.",
+    "example_cn": "他们使用坦克和重炮攻下了这座城市。"
+  },
+  {
+    "word": "ventilate",
+    "phonetic": "'ventɪleɪt",
+    "meaning": "使空气流通；通风",
+    "example": "Ventilate the room properly when stripping paint.",
+    "example_cn": "在刮漆的时候要适当地使房间通风。"
+  },
+  {
+    "word": "reproach",
+    "phonetic": "rɪ'prəʊtʃ",
+    "meaning": "责备，指责",
+    "example": "‘You don’t need me,’ she said quietly, without reproach.",
+    "example_cn": "“你不需要我。”她语气平静，没有丝毫责备。"
+  },
+  {
+    "word": "dump",
+    "phonetic": "dʌmp",
+    "meaning": "倒垃圾，倾销",
+    "example": "We dumped our bags at the nearby Grand Hotel and hurried toward the market.",
+    "example_cn": "我们把包扔在附近的格兰德旅馆，急匆匆地向市场赶去。"
+  },
+  {
+    "word": "volume",
+    "phonetic": "'vɒljuːm",
+    "meaning": "卷，容积；音量；大量",
+    "example": "the volume of trade",
+    "example_cn": "贸易量"
+  },
+  {
+    "word": "coalition",
+    "phonetic": ",kəʊə'lɪʃ(ə)n",
+    "meaning": "结合，联盟，联合",
+    "example": "the centre-right coalition government",
+    "example_cn": "政治上中间偏右的联合政府"
+  },
+  {
+    "word": "opening",
+    "phonetic": "'əʊp(ə)nɪŋ",
+    "meaning": "口，孔；开始；张开；职位空缺",
+    "example": "There are very few openings in scientific research.",
+    "example_cn": "科学研究领域很少有职位空缺。"
+  },
+  {
+    "word": "hit",
+    "phonetic": "hɪt",
+    "meaning": "打击，巨大的成功",
+    "example": "First a house took a direct hit and then the rocket exploded.",
+    "example_cn": "首先一幢房子被直接击中，接着火箭弹爆炸了。"
+  },
+  {
+    "word": "substantiate",
+    "phonetic": "səb'stænʃɪeɪt",
+    "meaning": "证实；证明",
+    "example": "Katzen offered little evidence to substantiate his claims .",
+    "example_cn": "卡曾拿不出什么证据来证明他的说法。"
+  },
+  {
+    "word": "allege",
+    "phonetic": "ə'ledʒ",
+    "meaning": "断言；宣称",
+    "example": "She alleged that there was rampant drug use among the male members of the group.",
+    "example_cn": "她指称该组织中有大量的男性成员吸毒。"
+  },
+  {
+    "word": "prescribe",
+    "phonetic": "prɪ'skraɪb",
+    "meaning": "吩咐使用",
+    "example": "Planning, as they employ the term, means: plans made by others will prescribe to me what I am to do and how to do it.",
+    "example_cn": "按照他们使用这个词的方式，“计划”的意思是指：由他人所制定的计划将规定我应该做什么以及如何做。"
+  },
+  {
+    "word": "expend",
+    "phonetic": "ɪk'spend; ek-",
+    "meaning": "消费，用尽",
+    "example": "Children expend a lot of energy and may need more high-energy food than adults.",
+    "example_cn": "孩子们耗能多，可能比成人需要更多高能量的食物。"
+  },
+  {
+    "word": "thoughtful",
+    "phonetic": "'θɔːtfʊl; -f(ə)l",
+    "meaning": "深思的，关心的",
+    "example": "Paul is very thoughtful.",
+    "example_cn": "保罗非常体贴人。"
+  },
+  {
+    "word": "poultry",
+    "phonetic": "'pəʊltrɪ",
+    "meaning": "家禽；家禽肉",
+    "example": "...a poultry farm.",
+    "example_cn": "…一个家禽饲养场。"
+  },
+  {
+    "word": "cater",
+    "phonetic": "'keɪtə",
+    "meaning": "供应伙食；提供娱乐节目",
+    "example": "...a full-service restaurant equipped to cater large events.",
+    "example_cn": "…一家承办大型活动及提供全方位服务的饭店。"
+  }
 ];
