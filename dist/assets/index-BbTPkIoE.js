@@ -55,7 +55,7 @@
       </button>
       <button class="home__stats-btn" data-nav="stats">📊 学习统计</button>
     </div>
-  `,e.querySelectorAll("[data-nav]").forEach(t=>t.addEventListener("click",()=>c(t.dataset.nav)))}let I=!1;function pe(){return new Promise(e=>{if(I)return e();if(speechSynthesis.getVoices().length)return I=!0,e();speechSynthesis.onvoiceschanged=()=>{I=!0,e()}})}function x(e,n="en-US"){if(!window.speechSynthesis)return;const a=window.speechSynthesis;a.cancel();const t=new SpeechSynthesisUtterance(e);t.lang=n,t.rate=.85,t.pitch=1,t.volume=1,a.paused&&a.resume();const i=()=>{a.speak(t)};pe().then(()=>{setTimeout(i,50)})}let h=0,y=!1;function ce(){const e=document.getElementById("page-flashcard");h=W("flashcard").index,y=!1,e.innerHTML=`
+  `,e.querySelectorAll("[data-nav]").forEach(t=>t.addEventListener("click",()=>c(t.dataset.nav)))}let I=!1;function pe(e){if(I)return;if(e.getVoices().length){I=!0;return}e.onvoiceschanged=()=>{I=!0}}function x(e,n="en-US"){const a=window.speechSynthesis;if(!a)return;a.cancel();const t=new SpeechSynthesisUtterance(e);t.lang=n,t.rate=.85,t.pitch=1,t.volume=1,pe(a),a.speak(t)}let h=0,y=!1;function ce(){const e=document.getElementById("page-flashcard");h=W("flashcard").index,y=!1,e.innerHTML=`
     <div class="page-header">
       <button class="page-header__back" data-nav="home">←</button>
       <span class="page-header__title">闪卡模式</span>
