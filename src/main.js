@@ -5,6 +5,7 @@ import { renderFlashcard } from './pages/flashcard.js';
 import { renderQuiz } from './pages/quiz.js';
 import { renderSpelling } from './pages/spelling.js';
 import { renderStats } from './pages/stats.js';
+import { renderBrowse } from './pages/browse.js';
 
 initStore();
 initRouter({
@@ -12,5 +13,6 @@ initRouter({
   flashcard: renderFlashcard,
   quiz: renderQuiz,
   spelling: renderSpelling,
-  stats: renderStats
+  stats: renderStats,
+  browse: renderBrowse
 });

@@ -1,4 +1,4 @@
-const pages = ['home', 'flashcard', 'quiz', 'spelling', 'stats'];
+const pages = ['home', 'flashcard', 'quiz', 'spelling', 'stats', 'browse'];
 let currentPage = 'home';
 let renderers = {};
 

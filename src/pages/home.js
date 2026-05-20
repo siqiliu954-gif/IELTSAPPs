@@ -38,6 +38,13 @@ export function renderHome() {
       </button>
     </div>
     <div class="home__footer">
+      <button class="home__card" data-nav="browse" style="margin-bottom:12px">
+        <div class="home__card-icon" style="background:#F3E5F5;color:#9C27B0">📖</div>
+        <div>
+          <div class="home__card-title">词汇浏览</div>
+          <div class="home__card-desc">搜索单词 · 查看释义例句</div>
+        </div>
+      </button>
       <button class="home__stats-btn" data-nav="stats">📊 学习统计</button>
     </div>
   `;
