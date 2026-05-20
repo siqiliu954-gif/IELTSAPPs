@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node -e \"const f=require('fs'),h=f.readFileSync('dist/index.html','utf8').replace(/type='module' /g,'').replace(/crossorigin /g,'');f.writeFileSync('dist/index.html',h)\"",
     "preview": "vite preview"
   },
   "devDependencies": {
